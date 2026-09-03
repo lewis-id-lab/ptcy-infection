@@ -113,6 +113,38 @@ plot <- PRISMA_flowdiagram(
 )
 ```
 
+### Journal colours
+
+The package writes its colour arguments straight into the Graphviz source
+unquoted, so a hex value such as `#B20D35` is a DOT syntax error and only X11
+colour names get through. The diagram is therefore built with the defaults and
+recoloured afterwards, by rewriting those names in the DOT with quoted hex.
+
+```{r}
+#| label: recolour
+lancet_red   <- "#B20D35"   # sampled from the journal's own PDF
+lancet_tint  <- "#F7DFDF"
+lancet_dark  <- "#2D2D2D"
+
+dot <- plot$x$diagram
+
+# The title bar and the Identification / Screening / Included rails.
+dot <- gsub("Goldenrod1",      sprintf('"%s"', lancet_red),  dot, fixed = TRUE)
+dot <- gsub("LightSteelBlue2", sprintf('"%s"', lancet_tint), dot, fixed = TRUE)
+
+# White text on the crimson bar. This has to go on the title node itself, not on
+# the `node [...]` defaults block above it -- a fontcolor set there cascades to
+# every node declared afterwards and turns the whole diagram's text white.
+# `style = "rounded,filled"` is unique to the title bar; the rails use
+# `"filled,rounded"`, the other order.
+stopifnot(sum(gregexpr('style = "rounded,filled"', dot, fixed = TRUE)[[1]] > 0) == 1)
+dot <- sub('style = "rounded,filled"',
+           'style = "rounded,filled", fontcolor = "white"', dot, fixed = TRUE)
+
+stopifnot(!grepl("Goldenrod1|LightSteelBlue2", dot))
+plot$x$diagram <- dot
+```
+
 ```{r}
 #| label: export
 #| output: false

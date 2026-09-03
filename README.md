@@ -12,7 +12,7 @@ website that publishes the computational notebooks alongside the article.
 ## Quick start
 
 ```bash
-quarto render      # article + appendix, in every format, into _manuscript/
+quarto render      # article + appendix + preview, into _manuscript/
 quarto preview     # live preview while editing
 ```
 
@@ -24,6 +24,7 @@ quarto preview     # live preview while editing
 | `_manuscript/index.pdf` | article, PDF with line numbers |
 | `_manuscript/appendix.docx` | supplementary appendix, Word |
 | `_manuscript/appendix.pdf` | supplementary appendix, PDF |
+| `_manuscript/index-preview.pdf` | typeset reading copy — *not for submission* |
 
 plus `_manuscript/index.html`, the manuscript website, which links the notebooks and
 offers the other formats for download.
@@ -81,7 +82,13 @@ index.qmd                     the article
 appendix.qmd                  the supplementary appendix
 references.bib                bibliography (recovered from the Zotero fields in the ODT)
 _quarto.yml                   project config: formats, notebook list, post-render hook
-scripts/render-appendix.sh    builds the appendix on every full render
+scripts/render-extras.sh      builds the appendix and preview on a full render
+
+_extensions/lancet-haematology-preview/
+  _extension.yml              typeset preview format (two-column, journal livery)
+  lancet-preview.tex          geometry, colours, masthead, panel, title block
+  lancet-preview.lua          lifts Summary full width, floats the panel
+  partials/before-body.tex    the opening title block
 
 _extensions/lancet-haematology/
   _extension.yml              the custom journal format
@@ -138,6 +145,40 @@ matching how the journal counts. Adjust the limits under `lancet:` in
 already uses middle dots, so the conversion is off by default. If you paste in new
 numbers with plain decimal points, set `middot: true` in the extension and the filter
 will convert them (it skips version-like runs such as `2.23.0`).
+
+## The typeset preview
+
+`_manuscript/index-preview.pdf` approximates the printed journal: two columns on
+the 210 x 282 mm trim, the crimson masthead and rules, affiliations in the opening
+page's left margin, the Research in context panel as a tinted full-width float, and
+the journal's footer line.
+
+**It is not a submission format.** Journals want a plain manuscript — one column,
+double spaced, line numbered — which is what `_manuscript/index.pdf` is. Use the
+preview to judge length and to see how the article reads in print; send the plain one.
+
+Two things it necessarily gets wrong. The journal sets Shaker2Lancet and
+ScalaLancetPro, both proprietary; Lato and XCharter stand in. And the article's
+tables and figures drop to a single column at the "Tables" heading, because pandoc
+emits tables as `longtable`, which LaTeX cannot typeset in two-column mode — the
+journal also runs its large tables full width, so this reads as intended.
+
+Colours are sampled from the reference PDF rather than guessed: crimson `#B20D35`,
+panel tint `#F7DFDF`.
+
+## Figure style
+
+Figures use the same crimson. The forest plots (`notebooks/forest-plots.qmd`) drop
+the gridlines, mark study rows with crimson squares and the pooled estimate with a
+crimson diamond, and set titles in the sans face. The PRISMA diagram
+(`notebooks/prisma-flow.qmd`) takes the crimson title bar and tinted stage rails.
+
+One wrinkle worth knowing if you edit the PRISMA colours: the `PRISMA2020` package
+writes its colour arguments into the Graphviz source unquoted, so a hex value is a
+DOT syntax error and only X11 colour names get through. The notebook therefore
+builds with the defaults and rewrites the colours in the generated DOT. The white
+title-bar text has to be set on the title node itself — putting `fontcolor` in the
+`node [...]` defaults block turns every label in the diagram white.
 
 ## Where the content came from
 

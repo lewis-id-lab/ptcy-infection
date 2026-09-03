@@ -1,10 +1,11 @@
 project:
   type: manuscript
   output-dir: _manuscript
-  # A manuscript project renders only the article and its notebooks, so the
-  # supplementary appendix is built by this hook. See scripts/render-appendix.sh.
+  # A manuscript project renders only the article and its notebooks, and it can
+  # carry only one pdf format. The appendix and the typeset preview are built by
+  # this hook instead. See scripts/render-extras.sh.
   post-render:
-    - scripts/render-appendix.sh
+    - scripts/render-extras.sh
 
 manuscript:
   article: index.qmd

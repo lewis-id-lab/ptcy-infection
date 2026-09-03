@@ -1,0 +1,44 @@
+title: Lancet Haematology (typeset preview)
+author: Russell E Lewis
+version: 1.0.0
+quarto-required: ">=1.4.0"
+
+# A reading copy that approximates the journal's printed layout: two columns,
+# the crimson masthead, the tinted Research in context panel.
+#
+# This is NOT a submission format. Journals want a plain manuscript --
+# double spaced, line numbered, one column -- which is what the
+# `lancet-haematology` extension's pdf and docx formats produce. Use this one
+# to see how the article reads in print, and to judge length.
+
+contributes:
+  formats:
+    pdf:
+      # Distinct name: this format must not overwrite the submission PDF, which
+      # the lancet-haematology extension writes to index.pdf.
+      output-file: index-preview
+      csl: the-lancet.csl
+      lang: en-GB
+      number-sections: false
+      link-citations: true
+      citeproc: true
+
+      documentclass: article
+      classoption: [twocolumn]
+      fontsize: 8.6pt
+      papersize: a4
+      indent: true
+      colorlinks: true
+      linkcolor: lancetred
+      citecolor: lancetred
+      urlcolor: lancetred
+
+      filters:
+        - lancet-preview.lua
+      include-in-header:
+        - lancet-preview.tex
+      template-partials:
+        - partials/before-body.tex
+
+      default-image-extension: pdf
+      fig-pos: tb

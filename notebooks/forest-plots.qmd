@@ -42,19 +42,31 @@ studies <- read_csv(here("data", "studies.csv"), show_col_types = FALSE) |>
   select(study_id, first_author, pub_year)
 pooled  <- read_csv(here("data", "models", "Table2_setB.csv"), show_col_types = FALSE)
 
-# ── house palette, matching the analysis repository ──
-navy <- "#2b5c8a"; steel <- "#6b7d8d"; grey <- "#808080"; dark <- "#1a2a3a"
+# ── Lancet Haematology palette ──
+# lancet_red is sampled from the journal's own PDF; the greys are the neutrals
+# it sets rules and secondary text in.
+lancet_red  <- "#b20d35"
+lancet_dark <- "#2d2d2d"
+lancet_grey <- "#8c8c8c"
 
+
+# The journal draws forest plots on a clean white field: no grid, a single
+# baseline rule, titles in the sans face, everything else out of the way.
 theme_forest <- function(base_size = 10) {
   theme_minimal(base_size = base_size) +
-    theme(panel.grid.major.y = element_blank(),
-          panel.grid.minor   = element_blank(),
-          panel.grid.major.x = element_line(colour = "#e8eaec", linewidth = .3),
-          axis.line.x  = element_line(colour = dark, linewidth = .4),
-          axis.ticks.x = element_line(colour = dark, linewidth = .3),
-          plot.title    = element_text(face = "bold", colour = dark, hjust = 0),
-          plot.subtitle = element_text(colour = steel, hjust = 0, size = rel(.9)),
-          plot.caption  = element_text(colour = grey, hjust = 0, size = rel(.8)),
+    theme(panel.grid        = element_blank(),
+          axis.line.x  = element_line(colour = lancet_dark, linewidth = .4),
+          axis.ticks.x = element_line(colour = lancet_dark, linewidth = .3),
+          axis.ticks.length.x = unit(2.5, "pt"),
+          axis.text    = element_text(colour = lancet_dark),
+          axis.title.x = element_text(colour = lancet_dark, size = rel(.9),
+                                      margin = margin(t = 6)),
+          plot.title    = element_text(face = "bold", colour = lancet_dark,
+                                       hjust = 0, size = rel(1.05)),
+          plot.subtitle = element_text(colour = lancet_grey, hjust = 0, size = rel(.85)),
+          plot.caption  = element_text(colour = lancet_grey, hjust = 0, size = rel(.75)),
+          plot.title.position = "plot",
+          plot.caption.position = "plot",
           plot.background  = element_rect(fill = "white", colour = NA),
           panel.background = element_rect(fill = "white", colour = NA))
 }
@@ -109,11 +121,14 @@ forest <- function(analytic_file, slug, title, subtitle = NULL) {
   pd$slab <- factor(pd$slab, levels = c("Bayesian pooled (M1)", levels(es$slab)))
 
   ggplot(pd, aes(or, slab)) +
-    geom_vline(xintercept = 1, linetype = "dashed", colour = grey, linewidth = .4) +
+    geom_vline(xintercept = 1, linetype = "dashed",
+               colour = lancet_grey, linewidth = .35) +
+    # study rows: crimson squares, the journal's forest-plot marker
     geom_pointrange(data = filter(pd, !pooled), aes(xmin = lo, xmax = hi),
-                    size = .3, linewidth = .4, colour = navy) +
+                    shape = 15, size = .3, linewidth = .4, colour = lancet_red) +
+    # pooled row: a filled diamond, larger and in the same crimson
     geom_pointrange(data = filter(pd, pooled), aes(xmin = lo, xmax = hi),
-                    shape = 18, size = .8, linewidth = .8, colour = dark) +
+                    shape = 18, size = .95, linewidth = .8, colour = lancet_red) +
     scale_x_log10() +
     labs(x = "Odds ratio (log scale)", y = NULL, title = title,
          subtitle = subtitle %||% sprintf("k = %d, N = %s, τ = %.2f",

@@ -1,0 +1,136 @@
+% ---------------------------------------------------------------------------
+% Lancet Haematology typeset preview.
+%
+% Approximates the journal's printed layout so the authors can see the article
+% roughly as it would appear in print. It is NOT a submission format -- the
+% journal wants a plain double-spaced, line-numbered manuscript, which is what
+% `lancet-haematology-pdf` produces.
+%
+% The journal sets its text in Shaker2Lancet (sans) and ScalaLancetPro (serif),
+% both proprietary. XCharter and Lato stand in: humanist, similar colour on the
+% page, and freely redistributable.
+% ---------------------------------------------------------------------------
+
+% Loaded through fontspec rather than the XCharter/lato packages: under
+% LuaLaTeX those load the OpenType faces without TeX's dash ligatures, so
+% pandoc's "--" and "---" would print literally instead of as en and em dashes.
+\usepackage{fontspec}
+\setmainfont{XCharter}[Ligatures=TeX]
+\setsansfont{Lato}[Ligatures=TeX]
+
+\usepackage{xcolor}
+\definecolor{lancetred}{HTML}{B20D35}    % sampled from the journal's own PDF
+\definecolor{lancetpanel}{HTML}{F7DFDF}
+
+% ── page geometry ──────────────────────────────────────────────────────────
+% The journal's trim is 210 x 282 mm, with a wide left margin on the opening
+% page carrying the citation line and affiliations.
+\usepackage{geometry}
+\geometry{
+  paperwidth=210mm, paperheight=282mm,
+  left=37mm, textwidth=156mm, right=17mm,
+  marginparsep=7mm, marginparwidth=25mm,
+  top=26mm, bottom=18mm,
+  headsep=7mm, footskip=11mm,
+}
+\reversemarginpar                        % affiliations sit in the left margin
+\setlength{\columnsep}{6mm}
+
+% ── masthead, running head, foot ───────────────────────────────────────────
+\usepackage{fancyhdr}
+
+\newcommand{\lancetmasthead}[1]{%
+  \textcolor{lancetred}{\rule[-1.1ex]{3.2mm}{4.4ex}}\hspace{2mm}%
+  {\sffamily\bfseries\large #1}%
+}
+\newcommand{\lancetfootline}{%
+  \sffamily\footnotesize www.thelancet.com/haematology\quad Vol 13\quad \journalissue}
+\providecommand{\journalissue}{}
+
+% Header and footer run the full measure, margin column included, as they do in
+% the journal -- hence the offsets on the left.
+\newcommand{\lancetoffsets}{%
+  \fancyhfoffset[L]{\dimexpr\marginparwidth+\marginparsep\relax}}
+
+\fancypagestyle{lancet}{%
+  \fancyhf{}\lancetoffsets
+  \fancyhead[R]{\lancetmasthead{Articles}}
+  \fancyfoot[L]{\lancetfootline}
+  \fancyfoot[R]{\sffamily\footnotesize e\thepage}
+  \renewcommand{\footrulewidth}{0pt}
+  \renewcommand{\headrule}{%
+    \vskip1.8mm{\color{lancetred}\rule{\headwidth}{0.7pt}}}
+}
+
+% The opening page carries its masthead inside the title block, so the running
+% head is suppressed there -- otherwise "Articles" appears twice.
+\fancypagestyle{lancetfirst}{%
+  \fancyhf{}\lancetoffsets
+  \renewcommand{\headrule}{}          % the title block draws its own rule
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+  \fancyfoot[L]{\sffamily\footnotesize e\thepage}
+  \fancyfoot[R]{\lancetfootline}
+}
+\pagestyle{lancet}
+
+% ── headings ───────────────────────────────────────────────────────────────
+\usepackage{titlesec}
+\titleformat{\section}{\sffamily\bfseries\color{lancetred}\normalsize}{}{0pt}{}
+\titlespacing*{\section}{0pt}{2.2ex plus .3ex}{0.5ex}
+\titleformat{\subsection}{\sffamily\bfseries\normalsize}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{1.6ex plus .2ex}{0.3ex}
+\titleformat{\subsubsection}{\sffamily\bfseries\small}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{1.2ex plus .2ex}{0.2ex}
+
+% ── body text ──────────────────────────────────────────────────────────────
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+\linespread{1.03}
+\hyphenpenalty=200                       % narrow columns still need to hyphenate
+\tolerance=2000
+\emergencystretch=1em
+
+% ── Research in context panel ──────────────────────────────────────────────
+% Set in a figure* so it spans both columns and floats to the top of a page,
+% which is where the journal puts it.
+\usepackage[most]{tcolorbox}
+\newtcolorbox{lancetpanelbox}{
+  colback=lancetpanel, colframe=lancetpanel,
+  boxrule=0pt, arc=0pt, outer arc=0pt,
+  left=4mm, right=4mm, top=3mm, bottom=3mm,
+  fontupper=\sffamily\small,
+}
+\newcommand{\panelheading}[1]{%
+  {\sffamily\bfseries\color{lancetred}\small #1\par\vspace{0.9ex}}}
+\newcommand{\panelsubheading}[1]{%
+  \vspace{0.9ex}{\sffamily\bfseries\small #1\par\vspace{0.2ex}}}
+
+% ── title block ────────────────────────────────────────────────────────────
+\newcommand{\lancettitle}[1]{%
+  {\sffamily\bfseries\fontsize{19}{22.5}\selectfont\raggedright #1\par}}
+\newcommand{\lancetauthors}[1]{%
+  \vspace{2.4ex}{\sffamily\color{lancetred}\small\raggedright #1\par}}
+\newcommand{\lancetsummaryhead}{%
+  \vspace{3.2ex}{\sffamily\bfseries\color{lancetred}\normalsize Summary\par}\vspace{0.7ex}}
+\newcommand{\summarylabel}[1]{{\sffamily\bfseries\color{lancetred}#1}\hspace{0.45em}}
+% Affiliations sit in the opening page's left margin. \marginpar would anchor
+% them to whichever paragraph emitted them -- on this article the first body
+% paragraph, two-thirds down the page, so the block ran off the bottom. Placing
+% it absolutely on page 1 keeps it where the journal puts it, level with the
+% summary.
+\usepackage{eso-pic}
+\newcommand{\lancetmargin}[1]{%
+  \AddToShipoutPictureBG*{%
+    \AtPageLowerLeft{%
+      \put(\LenToUnit{12mm},\LenToUnit{\dimexpr\paperheight-102mm\relax}){%
+        \begin{minipage}[t]{25mm}%
+          \raggedright\sffamily\fontsize{7}{8.6}\selectfont
+          \hyphenpenalty=0 \emergencystretch=2em #1%
+        \end{minipage}}}}}
+
+% ── captions ───────────────────────────────────────────────────────────────
+\usepackage{caption}
+\captionsetup{
+  font={sf,footnotesize}, labelfont={sf,bf,footnotesize},
+  labelsep=period, justification=raggedright, singlelinecheck=false}

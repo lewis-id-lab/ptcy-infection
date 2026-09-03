@@ -1,0 +1,37 @@
+$-- Lancet-style opening block: masthead, full-width title, authors, summary.
+$-- In twocolumn mode \twocolumn[...] is what spans both columns, so everything
+$-- that must run full width has to sit inside these brackets.
+\twocolumn[%
+  \begin{@twocolumnfalse}
+  \thispagestyle{lancetfirst}
+  \vspace*{-4mm}
+  {\sffamily\bfseries\Large\lancetmasthead{Articles}\par}
+  \vspace{1.5mm}
+  {\color{lancetred}\rule{\textwidth}{0.7pt}}
+  \vspace{7mm}
+
+  \lancettitle{$title$}
+$if(by-author)$
+  \lancetauthors{$for(by-author)$$it.name.literal$$sep$, $endfor$}
+$endif$
+
+$if(abstract)$
+  \lancetsummaryhead
+  {\small $abstract$}
+$endif$
+  \vspace{5mm}
+  \end{@twocolumnfalse}
+]
+
+$-- Affiliations and correspondence go in the outer margin of page 1.
+$if(by-author)$
+\lancetmargin{%
+$for(by-author)$
+$for(it.affiliations)$
+$if(it.department)$$it.department$, $endif$$it.name$$if(it.city)$, $it.city$$endif$$if(it.country)$, $it.country$$endif$\par\vspace{0.4ex}
+$endfor$
+$endfor$
+$for(by-author/allbutlast)$$endfor$
+$for(by-author)$$if(it.attributes.corresponding)$\vspace{1ex}Correspondence to:\\ $it.name.literal$$if(it.email)$\\ \textcolor{lancetred}{$it.email$}$endif$\par$endif$$endfor$
+}
+$endif$
