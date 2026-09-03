@@ -1,0 +1,13 @@
+study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_ci_pct,comp_ci_pct,ptcy_steroid_pct,comp_steroid_pct
+10,3,aGVHD,grade_III_IV,D+100,22,21,596.0,1626.0,,,,,,
+44,3,aGVHD,grade_III_IV,D+100,44,45,99.0,130.0,3.0,8.0,4.0,9.0,14.0,47.0
+100,3,aGVHD,grade_III_IV,D+100,116,115,124.0,160.0,4.0,21.0,3.3,13.0,9.8,19.0
+146,3,aGVHD,grade_III_IV,D+100,167,168,148.0,237.0,13.0,14.0,,,22.0,30.0
+203,3,aGVHD,grade_III_IV,D+100,210,211,99.0,252.0,4.0,38.0,4.0,15.0,16.0,33.0
+243,3,aGVHD,grade_III_IV,D+100,241,242,269.0,246.0,16.0,15.0,6.0,6.0,40.0,48.0
+253,3,aGVHD,grade_III_IV,D+100,261,260,65.0,24.0,2.0,1.0,3.1,4.2,,
+272,3,aGVHD,grade_III_IV,D+100,286,287,1707.0,286.0,179.0,17.0,10.0,5.0,33.0,24.0
+397,3,aGVHD,grade_III_IV,D+100,444,445,44.0,22.0,1.0,0.0,2.3,0.0,18.2,18.2
+425,3,aGVHD,grade_III_IV,D+100,474,473,23.0,5.0,0.0,1.0,0.0,,0.0,
+431,3,aGVHD,grade_III_IV,D+100,480,481,32.0,46.0,3.0,15.0,9.7,32.4,22.1,42.9
+461,3,aGVHD,grade_III_IV,D+100,518,519,21.0,42.0,2.0,8.0,10.0,19.0,24.0,29.0

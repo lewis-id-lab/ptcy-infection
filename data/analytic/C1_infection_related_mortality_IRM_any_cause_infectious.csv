@@ -1,0 +1,16 @@
+study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_ci_pct,comp_ci_pct,ptcy_steroid_pct,comp_steroid_pct
+2,1,infection_related_mortality,IRM_any_cause_infectious,D+365_1yr,1,2,214.0,217.0,8.0,10.0,,,,
+6,1,infection_related_mortality,IRM_any_cause_infectious,D+365_1yr,10,11,68.0,97.0,11.0,10.0,,,60.0,80.0
+375,1,infection_related_mortality,IRM_any_cause_infectious,D+365_1yr,414,415,27.0,28.0,6.0,11.0,15.0,34.0,29.6,39.3
+432,1,infection_related_mortality,IRM_any_cause_infectious,D+365_1yr,482,483,25.0,15.0,0.0,1.0,0.0,6.7,12.5,35.7
+45,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,46,47,54.0,59.0,10.0,9.0,,,63.0,53.0
+52,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,58,59,270.0,209.0,13.0,21.0,,,29.2,44.4
+57,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,63,64,278.0,1018.0,114.0,253.0,,,28.0,27.0
+166,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,172,173,30.0,31.0,3.0,2.0,,,16.7,25.8
+261,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,271,272,91.0,38.0,5.0,5.0,,,19.0,11.0
+263,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,275,276,489.0,211.0,33.0,4.0,,,24.4,31.4
+268,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,279,281,374.0,742.0,131.0,193.0,,,,
+287,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,309,310,118.0,1202.0,5.0,72.0,,,25.2,22.9
+296,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,319,320,169.0,688.0,12.0,75.0,,,29.6,36.1
+301,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,328,329,64.0,205.0,8.0,20.0,,,45.0,59.0
+399,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,446,447,241.0,848.0,17.0,44.0,,,25.0,36.0

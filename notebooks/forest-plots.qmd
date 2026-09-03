@@ -1,0 +1,244 @@
+---
+title: "Forest plots"
+subtitle: "Source notebook for figures 2–4"
+author: "PTCy meta-analysis collaboration"
+format:
+  html:
+    toc: true
+    code-fold: show
+    fig-width: 8
+    fig-height: 9
+    fig-dpi: 300
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+The figures in the article are drawn from two ingredients that come from different
+places:
+
+- **the study rows** — raw per-study odds ratios with Wald 95% CIs, computed here
+  directly from the extracted event counts in `data/analytic/`, with a 0·5 continuity
+  correction applied only to studies with a zero cell;
+- **the pooled row** — the Bayesian random-effects posterior (model M1), taken from the
+  exported summaries in `data/models/Table2_setB.csv`.
+
+The study rows are *not* per-study Bayesian estimates. M1 has a single shared treatment
+effect with a random intercept for study-level baseline risk only, so individual studies
+have no treatment-effect posterior of their own.
+
+```{r}
+#| label: setup
+library(dplyr)
+library(tidyr)
+library(readr)
+library(ggplot2)
+library(stringr)
+
+here <- function(...) file.path(if (basename(getwd()) == "notebooks") ".." else ".", ...)
+
+studies <- read_csv(here("data", "studies.csv"), show_col_types = FALSE) |>
+  select(study_id, first_author, pub_year)
+pooled  <- read_csv(here("data", "models", "Table2_setB.csv"), show_col_types = FALSE)
+
+# ── house palette, matching the analysis repository ──
+navy <- "#2b5c8a"; steel <- "#6b7d8d"; grey <- "#808080"; dark <- "#1a2a3a"
+
+theme_forest <- function(base_size = 10) {
+  theme_minimal(base_size = base_size) +
+    theme(panel.grid.major.y = element_blank(),
+          panel.grid.minor   = element_blank(),
+          panel.grid.major.x = element_line(colour = "#e8eaec", linewidth = .3),
+          axis.line.x  = element_line(colour = dark, linewidth = .4),
+          axis.ticks.x = element_line(colour = dark, linewidth = .3),
+          plot.title    = element_text(face = "bold", colour = dark, hjust = 0),
+          plot.subtitle = element_text(colour = steel, hjust = 0, size = rel(.9)),
+          plot.caption  = element_text(colour = grey, hjust = 0, size = rel(.8)),
+          plot.background  = element_rect(fill = "white", colour = NA),
+          panel.background = element_rect(fill = "white", colour = NA))
+}
+```
+
+```{r}
+#| label: functions
+
+# Wald log-OR and CI from a 2x2 table, with 0.5 added only where a cell is zero.
+study_or <- function(d) {
+  d |>
+    mutate(zero = ptcy_e == 0 | comp_e == 0 |
+                  ptcy_e == ptcy_n | comp_e == comp_n,
+           a = ptcy_e + 0.5 * zero, b = ptcy_n - ptcy_e + 0.5 * zero,
+           c = comp_e + 0.5 * zero, d2 = comp_n - comp_e + 0.5 * zero,
+           yi = log((a / b) / (c / d2)),
+           sei = sqrt(1/a + 1/b + 1/c + 1/d2),
+           or = exp(yi), lo = exp(yi - 1.96 * sei), hi = exp(yi + 1.96 * sei)) |>
+    filter(is.finite(or), is.finite(lo), is.finite(hi))
+}
+
+# The adopted analysis is Set B: one publication per cohort per outcome. Only the
+# outcomes affected by deduplication were refitted, so data/models/ is a partial overlay
+# -- prefer the Set B dataset for a slug, and fall back to the full analytic dataset for
+# the outcomes deduplication left untouched.
+resolve_data <- function(analytic_file, slug) {
+  setb <- here("data", "models", paste0("data_", slug, ".csv"))
+  if (file.exists(setb)) return(setb)
+  here("data", "analytic", analytic_file)
+}
+
+forest <- function(analytic_file, slug, title, subtitle = NULL) {
+  f <- resolve_data(analytic_file, slug)
+  if (!file.exists(f)) { message("missing: ", analytic_file); return(invisible(NULL)) }
+  message("  ", slug, " <- ", sub("^.*/", "", f))
+
+  es <- read_csv(f, show_col_types = FALSE) |>
+    study_or() |>
+    left_join(studies, by = "study_id") |>
+    mutate(slab = sprintf("%s (%s)", first_author, pub_year))
+  # multi-arm studies contribute more than one row: keep the labels distinct
+  es$slab <- make.unique(es$slab, sep = " – ")
+  es <- es |> arrange(yi) |> mutate(slab = factor(slab, levels = slab))
+
+  p <- pooled |> filter(slug == !!slug, model == "m1")
+  stopifnot(nrow(p) == 1)
+
+  pd <- bind_rows(
+    es |> transmute(slab = as.character(slab), or, lo, hi, pooled = FALSE),
+    tibble(slab = "Bayesian pooled (M1)", or = p$or_median,
+           lo = p$ci_low, hi = p$ci_high, pooled = TRUE))
+  pd$slab <- factor(pd$slab, levels = c("Bayesian pooled (M1)", levels(es$slab)))
+
+  ggplot(pd, aes(or, slab)) +
+    geom_vline(xintercept = 1, linetype = "dashed", colour = grey, linewidth = .4) +
+    geom_pointrange(data = filter(pd, !pooled), aes(xmin = lo, xmax = hi),
+                    size = .3, linewidth = .4, colour = navy) +
+    geom_pointrange(data = filter(pd, pooled), aes(xmin = lo, xmax = hi),
+                    shape = 18, size = .8, linewidth = .8, colour = dark) +
+    scale_x_log10() +
+    labs(x = "Odds ratio (log scale)", y = NULL, title = title,
+         subtitle = subtitle %||% sprintf("k = %d, N = %s, τ = %.2f",
+                                          p$k, format(p$n_total, big.mark = " "), p$tau),
+         caption = "Study rows: raw per-study OR with Wald 95% CI. Diamond: Bayesian posterior median with 95% CrI.") +
+    theme_forest() +
+    theme(axis.text.y = element_text(
+      face = ifelse(levels(pd$slab) == "Bayesian pooled (M1)", "bold", "plain"),
+      size = rel(.85)))
+}
+
+`%||%` <- function(a, b) if (is.null(a)) b else a
+```
+
+## Figure 2 — overall survival (comparison 1)
+
+```{r}
+#| label: fig-os
+#| fig-cap: "Forest plot for overall survival, comparison 1 (PTCy vs CNI + MTX/MMF)."
+#| fig-height: 10
+forest("C1_overall_mortality_OS_event.csv", "c1_os",
+       "Overall survival — PTCy vs CNI + MTX/MMF")
+```
+
+## Figure 3 — CMV reactivation
+
+```{r}
+#| label: fig-cmv-c1
+#| fig-cap: "CMV any-reactivation, comparison 1 (PTCy vs CNI + MTX/MMF)."
+#| fig-height: 7
+forest("C1_CMV_any_reactivation.csv", "c1_cmv",
+       "CMV reactivation — PTCy vs CNI + MTX/MMF")
+```
+
+```{r}
+#| label: fig-cmv-c2
+#| fig-cap: "CMV any-reactivation, comparison 2 (PTCy vs ATG). The direction reverses relative to comparison 1."
+#| fig-height: 5
+forest("C2_CMV_any_reactivation.csv", "c2_cmv",
+       "CMV reactivation — PTCy vs ATG")
+```
+
+## Figure 4 — bacterial, fungal, and BK viral infection
+
+```{r}
+#| label: fig-bsi
+#| fig-cap: "Bloodstream infection, any pathogen (comparison 1)."
+#| fig-height: 4
+forest("C1_BSI_any_pathogen.csv", "c1_bsi",
+       "Bloodstream infection, any pathogen — PTCy vs CNI + MTX/MMF")
+```
+
+```{r}
+#| label: fig-ifi
+#| fig-cap: "Invasive fungal infection, any (comparison 1). Note the very large τ."
+#| fig-height: 4
+forest("C1_IFI_any_EORTC_MSG_proven_probable_combined.csv", "c1_ifi_any",
+       "Invasive fungal infection, any — PTCy vs CNI + MTX/MMF")
+```
+
+Panel C of figure 4 in the article is BK virus reactivation. The BK analytic dataset was
+not part of the `02_extraction/analytic/` export in the analysis repository, so it is not
+reproduced here — the pooled estimate is still carried in table 2
+(`c1_bk`, k = 11, OR 2·48 [1·82–3·38]). To add the panel, export the BK pairs from
+`outcomes.csv` into `data/analytic/C1_BK_virus_reactivation.csv` with the same columns
+as the other files and call `forest()` on it.
+
+## Acute GVHD grade II–IV
+
+```{r}
+#| label: fig-agvhd
+#| fig-cap: "Acute GVHD grade II–IV (comparison 1)."
+#| fig-height: 8
+forest("C1_aGVHD_grade_II_IV.csv", "c1_agvhd",
+       "Acute GVHD grade II–IV — PTCy vs CNI + MTX/MMF")
+```
+
+## Exporting the article figures
+
+Two of the article's figures changed when the manuscript moved to Set B: overall
+survival (comparison 1) and the comparison 2 panel of the CMV figure. Both are exported
+here in all three renditions so that `index.qmd` picks up the right one per output
+format, and so that the figures cannot disagree with table 2.
+
+The remaining article figures — the comparison 1 CMV panel, and the whole of figure 4
+(BSI, IFI, BK) — were unaffected by deduplication, so the originals from the analysis
+repository are kept.
+
+```{r}
+#| label: export-figures
+#| output: false
+
+export <- function(plot, stem, w = 7, h = 9) {
+  for (dev in c("png", "pdf", "svg")) {
+    ggsave(here("figures", paste0(stem, ".", dev)), plot,
+           width = w, height = h, dpi = 300,
+           device = dev, bg = "white")
+  }
+  invisible(stem)
+}
+
+export(forest("C1_overall_mortality_OS_event.csv", "c1_os",
+              "Overall survival — PTCy vs CNI + MTX/MMF"),
+       "Figure2_OS_forest_setB", w = 7, h = 9)
+
+export(forest("C2_CMV_any_reactivation.csv", "c2_cmv",
+              "CMV reactivation — PTCy vs ATG"),
+       "Figure3b_CMV_C2_forest_setB", w = 7, h = 4.5)
+
+# Panel A of the CMV figure is unchanged by deduplication, but the repository ships it
+# baked into the same two-panel image as panel B, so it is redrawn here to keep both
+# panels on one source and one visual style.
+export(forest("C1_CMV_any_reactivation.csv", "c1_cmv",
+              "CMV reactivation — PTCy vs CNI + MTX/MMF"),
+       "Figure3a_CMV_C1_forest_setB", w = 7, h = 6.5)
+```
+
+## Available analytic datasets
+
+```{r}
+#| label: tbl-analytic
+tibble(file = list.files(here("data", "analytic"), pattern = "[.]csv$")) |>
+  filter(!str_starts(file, "_")) |>
+  rowwise() |>
+  mutate(k = nrow(read_csv(here("data", "analytic", file), show_col_types = FALSE))) |>
+  ungroup() |>
+  knitr::kable()
+```

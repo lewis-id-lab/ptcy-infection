@@ -1,0 +1,13 @@
+study_id,comparison,category,subtype,timepoint_used,tp_early,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_steroid_pct,comp_steroid_pct
+66,2,CMV,any_reactivation,D+100,0,76,77,28,28,17,23,25,50
+363,2,CMV,any_reactivation,D+100,0,403,404,22,58,7,23,15,50
+366,2,CMV,any_reactivation,D+100,0,407,406,73,74,39,23,46,33
+430,2,CMV,any_reactivation,D+180,1,478,479,16,20,12,14,25,40
+6,2,CMV,any_reactivation,D+365_1yr,1,10,12,40,156,17,76,60,48
+75,2,CMV,any_reactivation,D+365_1yr,1,87,88,41,93,4,33,65.9,52.8
+137,2,CMV,any_reactivation,D+365_1yr,1,156,158,330,74,194,36,41.8,37.8
+122,2,CMV,any_reactivation,end_of_followup,1,143,144,110,35,51,24,17.3,31.4
+136,2,CMV,any_reactivation,end_of_followup,1,154,155,82,89,46,41,22,25
+167,2,CMV,any_reactivation,end_of_followup,1,174,176,8,8,3,0,13,44
+254,2,CMV,any_reactivation,end_of_followup,1,262,263,25,51,5,22,24.4,52.9
+299,2,CMV,any_reactivation,end_of_followup,1,323,324,22,28,12,16,14,35

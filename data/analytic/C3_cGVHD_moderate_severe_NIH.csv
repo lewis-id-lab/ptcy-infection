@@ -1,0 +1,14 @@
+study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_ci_pct,comp_ci_pct,ptcy_steroid_pct,comp_steroid_pct
+100,3,cGVHD,moderate_severe_NIH,D+365_1yr,116,115,124.0,160.0,29.0,46.0,23.0,29.0,9.8,19.0
+253,3,cGVHD,moderate_severe_NIH,D+365_1yr,261,260,65.0,24.0,24.0,5.0,36.5,18.9,,
+397,3,cGVHD,moderate_severe_NIH,D+365_1yr,444,445,44.0,22.0,10.0,3.0,23.2,15.6,18.2,18.2
+437,3,cGVHD,moderate_severe_NIH,D+365_1yr,490,489,17.0,16.0,2.0,5.0,,,11.8,31.3
+460,3,cGVHD,moderate_severe_NIH,D+365_1yr,516,517,31.0,36.0,3.0,14.0,11.2,40.1,17.0,40.2
+461,3,cGVHD,moderate_severe_NIH,D+365_1yr,518,519,21.0,42.0,2.0,14.0,10.0,31.0,24.0,29.0
+10,3,cGVHD,moderate_severe_NIH,D+730_2yr,22,21,613.0,1679.0,,,,,,
+44,3,cGVHD,moderate_severe_NIH,D+730_2yr,44,45,99.0,130.0,19.0,22.0,22.0,19.0,14.0,47.0
+146,3,cGVHD,moderate_severe_NIH,D+730_2yr,167,168,148.0,237.0,16.0,55.0,11.0,23.0,22.0,30.0
+243,3,cGVHD,moderate_severe_NIH,D+730_2yr,241,242,269.0,246.0,24.0,20.0,9.0,8.0,40.0,48.0
+244,3,cGVHD,moderate_severe_NIH,D+730_2yr,245,244,246.0,306.0,22.0,34.0,9.0,11.0,52.0,42.0
+418,3,cGVHD,moderate_severe_NIH,D+730_2yr,462,463,33.0,25.0,2.0,4.0,6.0,17.0,18.0,17.0
+431,3,cGVHD,moderate_severe_NIH,D+730_2yr,480,481,32.0,46.0,4.0,20.0,13.9,43.9,22.1,42.9

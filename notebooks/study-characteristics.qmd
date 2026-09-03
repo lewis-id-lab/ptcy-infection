@@ -1,0 +1,181 @@
+---
+title: "Study and arm characteristics"
+subtitle: "Source notebook for table 1"
+author: "PTCy meta-analysis collaboration"
+format:
+  html:
+    toc: true
+    code-fold: show
+    df-print: kable
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+This notebook rebuilds table 1 of the article directly from the extraction database, so
+every count in the published table can be traced to the rows it came from.
+
+Inputs, copied verbatim from `02_extraction/` of the analysis repository
+(<https://github.com/Russlewisbo/ptcy_metaanalys>):
+
+| File | Rows | Contents |
+|:-----|-----:|:---------|
+| `data/studies.csv` | 251 | one row per included publication |
+| `data/arms.csv` | 525 | one row per treatment arm |
+| `data/rob.csv` | — | ROBINS-I / RoB 2 judgements |
+
+```{r}
+#| label: setup
+library(dplyr)
+library(tidyr)
+library(readr)
+library(knitr)
+
+here <- function(...) file.path(if (basename(getwd()) == "notebooks") ".." else ".", ...)
+
+studies <- read_csv(here("data", "studies.csv"), show_col_types = FALSE)
+arms    <- read_csv(here("data", "arms.csv"),    show_col_types = FALSE)
+rob     <- read_csv(here("data", "rob.csv"),     show_col_types = FALSE)
+
+comparative <- studies |> filter(study_design != "single_arm_descriptive_excluded")
+
+# Several numeric fields are stored as free text in the extraction database: they hold
+# "NR" and per-subgroup strings such as "27 (MSD/MUD); 62.5 (haplo)". Take the leading
+# number, and always report how many values could not be parsed rather than silently
+# dropping them.
+as_num <- function(x) {
+  if (is.numeric(x)) return(x)
+  suppressWarnings(as.numeric(sub("^[^0-9.-]*(-?[0-9.]+).*$", "\\1", x)))
+}
+
+cat(sprintf(
+  "studies: %d (comparative %d, single-arm descriptive %d)\narms: %d (PTCy %d, comparator %d)\n",
+  nrow(studies), nrow(comparative), nrow(studies) - nrow(comparative),
+  nrow(arms), sum(arms$arm_role == "PTCy_arm"), sum(arms$arm_role == "comparator_arm")))
+```
+
+## Study-level counts
+
+```{r}
+#| label: tbl-study-level
+#| tbl-cap: "Study-level characteristics, recomputed from `studies.csv`."
+
+pct <- function(n, d) sprintf("%d (%d%%)", n, round(100 * n / d))
+
+fu <- as_num(comparative$follow_up_median_months)
+cat(sprintf("follow-up parsed for %d of %d comparative studies (%d not reported/unparseable)\n",
+            sum(!is.na(fu)), length(fu), sum(is.na(fu))))
+
+design <- comparative |> count(study_design)
+n_comp <- nrow(comparative)
+
+tibble(
+  Characteristic = c(
+    "Studies included in the review",
+    "  Comparative (≥2 arms)",
+    "  Single-arm descriptive",
+    "Total patients",
+    "Randomised controlled trials",
+    "  Retrospective cohort",
+    "  Registry analysis",
+    "  Prospective cohort",
+    "Publication year, median (IQR)",
+    "Follow-up, months, median (IQR)"),
+  Value = c(
+    as.character(nrow(studies)),
+    as.character(n_comp),
+    as.character(nrow(studies) - n_comp),
+    format(sum(arms$n_patients, na.rm = TRUE), big.mark = " "),
+    pct(design$n[design$study_design == "RCT"], n_comp),
+    pct(design$n[design$study_design == "retrospective_cohort"], n_comp),
+    pct(design$n[design$study_design == "registry"], n_comp),
+    pct(design$n[design$study_design == "prospective_cohort"], n_comp),
+    with(comparative, sprintf("%d (%d–%d)",
+         median(pub_year, na.rm = TRUE),
+         quantile(pub_year, .25, na.rm = TRUE),
+         quantile(pub_year, .75, na.rm = TRUE))),
+    sprintf("%.0f (%.0f–%.0f)", median(fu, na.rm = TRUE),
+            quantile(fu, .25, na.rm = TRUE), quantile(fu, .75, na.rm = TRUE)))
+) |> kable()
+```
+
+## Arm-level characteristics
+
+Continuous variables are summarised as the median of the arm-level values; the IQR
+therefore describes between-arm variability, not between-patient variability.
+
+```{r}
+#| label: tbl-arm-level
+#| tbl-cap: "Arm-level characteristics by arm role, recomputed from `arms.csv`."
+
+med_iqr <- function(x, d = 1) {
+  x <- as_num(x)
+  x <- x[!is.na(x)]
+  if (!length(x)) return("—")
+  q <- quantile(x, c(.25, .5, .75))
+  sprintf("%.*f (%.*f–%.*f)", d, q[2], d, q[1], d, q[3])
+}
+
+# a categorical "predominant" column summarised as n (%) within arm role
+cat_rows <- function(col, labels) {
+  arms |>
+    mutate(lvl = .data[[col]]) |>
+    count(arm_role, lvl) |>
+    group_by(arm_role) |>
+    mutate(txt = sprintf("%d (%d%%)", n, round(100 * n / sum(n)))) |>
+    ungroup() |>
+    select(arm_role, lvl, txt) |>
+    pivot_wider(names_from = arm_role, values_from = txt) |>
+    filter(lvl %in% names(labels)) |>
+    mutate(lvl = unname(labels[lvl])) |>
+    rename(Characteristic = lvl)
+}
+
+num_row <- function(label, col, d = 1) {
+  s <- arms |> group_by(arm_role) |> summarise(v = med_iqr(.data[[col]], d), .groups = "drop")
+  tibble(Characteristic = label,
+         PTCy_arm       = s$v[s$arm_role == "PTCy_arm"],
+         comparator_arm = s$v[s$arm_role == "comparator_arm"])
+}
+
+donor <- c(haplo = "  Haploidentical", mud = "  MUD (10/10)", mmud = "  MMUD (9/10 or lower)",
+           msd = "  MSD", ucb = "  UCB")
+graft <- c(pbsc = "  PBSC", bm = "  BM", ucb = "  UCB")
+cond  <- c(mac = "  MAC", ric = "  RIC", nma = "  NMA")
+
+bind_rows(
+  num_row("Patients per arm, median (IQR)", "n_patients", 0),
+  num_row("Age, years, median (IQR)",       "age_median_years"),
+  num_row("Male, %",                        "pct_male"),
+  tibble(Characteristic = "Donor type (predominant)", PTCy_arm = "", comparator_arm = ""),
+  cat_rows("donor_predominant", donor),
+  tibble(Characteristic = "Graft source (predominant)", PTCy_arm = "", comparator_arm = ""),
+  cat_rows("graft_predominant", graft),
+  tibble(Characteristic = "Conditioning (predominant)", PTCy_arm = "", comparator_arm = ""),
+  cat_rows("conditioning_predominant", cond),
+  num_row("CMV R+, %",           "cmv_recipient_pos_pct"),
+  num_row("Steroid exposure, %", "systemic_steroid_for_gvhd_exposure_pct")
+) |>
+  replace_na(list(PTCy_arm = "—", comparator_arm = "—")) |>
+  rename(`PTCy arms` = PTCy_arm, `Comparator arms` = comparator_arm) |>
+  kable(align = "lrr")
+```
+
+## Risk of bias
+
+```{r}
+#| label: tbl-rob
+#| tbl-cap: "Overall risk-of-bias judgements."
+
+rob_col <- intersect(c("overall_judgement", "overall", "rob_overall"), names(rob))[1]
+if (!is.na(rob_col)) {
+  rob |>
+    count(Judgement = .data[[rob_col]]) |>
+    mutate(`n (%)` = sprintf("%d (%d%%)", n, round(100 * n / sum(n)))) |>
+    select(-n) |>
+    kable()
+} else {
+  cat("Columns present in rob.csv:", paste(names(rob), collapse = ", "), "\n")
+}
+```

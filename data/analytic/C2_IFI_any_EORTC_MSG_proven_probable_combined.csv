@@ -1,0 +1,4 @@
+study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_ci_pct,comp_ci_pct,ptcy_steroid_pct,comp_steroid_pct
+136,2,IFI_any,EORTC_MSG_proven_probable_combined,end_of_followup,154,155,82.0,89.0,5.0,14.0,,,22.0,25.0
+167,2,IFI_any,EORTC_MSG_proven_probable_combined,end_of_followup,174,176,16.0,16.0,6.0,3.0,,,13.0,44.0
+137,2,IFI_any,EORTC_MSG_proven_probable_combined,D+365_1yr,156,158,330.0,74.0,31.0,0.0,9.3,0.0,41.8,37.8

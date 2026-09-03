@@ -1,0 +1,60 @@
+title: Lancet Haematology
+author: Russell E. Lewis
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+
+    # ── settings shared by every output of this format ──────────────────
+    common:
+      csl: the-lancet.csl
+      filters:
+        - lancet-haematology.lua
+      lang: en-GB
+      number-sections: false
+      link-citations: true
+      citations-hover: false
+      reference-location: document
+      # Lancet numbers references in order of first appearance in the text
+      citeproc: true
+      # house-style knobs read by the lua filter
+      lancet:
+        # Lancet sets decimals with a middle dot (0·79, not 0.79).
+        # The prose already uses · — leave off unless you paste in new
+        # numbers with plain decimal points, then flip to true.
+        middot: false
+        # word-count limits checked at render time (Articles)
+        summary-words: 300
+        body-words: 4500
+
+    # ── submission Word file ────────────────────────────────────────────
+    docx:
+      reference-doc: lancet-reference.docx
+      fig-align: left
+      # Word cannot place SVG reliably; use the 300-dpi PNG renditions
+      default-image-extension: png
+
+    # ── reviewer-friendly PDF ───────────────────────────────────────────
+    pdf:
+      documentclass: article
+      papersize: a4
+      geometry:
+        - margin=1in
+      fontsize: 12pt
+      linestretch: 2
+      indent: false
+      colorlinks: true
+      include-in-header:
+        text: |
+          \usepackage{lineno}
+          \linenumbers
+          \usepackage[document]{ragged2e}
+      default-image-extension: pdf
+
+    # ── screen preview ──────────────────────────────────────────────────
+    html:
+      theme: cosmo
+      css: styles.css
+      toc: true
+      toc-depth: 2
+      default-image-extension: svg

@@ -1,0 +1,3 @@
+study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_ci_pct,comp_ci_pct,ptcy_steroid_pct,comp_steroid_pct
+397,3,CMV,any_reactivation,D+100,444,445,44.0,22.0,4.0,2.0,9.1,9.1,18.2,18.2
+437,3,CMV,any_reactivation,D+100,490,489,17.0,16.0,9.0,13.0,,,11.8,31.3

@@ -1,0 +1,24 @@
+# Quarto
+/_manuscript/
+/.quarto/
+/_freeze/
+*_files/
+
+# single-file renders land at the project root instead of _manuscript/
+/appendix.docx
+/appendix.pdf
+/appendix.html
+/index.docx
+/index.pdf
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# OS
+.DS_Store
+
+**/*.quarto_ipynb
+/site_libs/

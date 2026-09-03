@@ -1,0 +1,18 @@
+<script>
+// The "Other Formats" links are plain <a href="index.pdf">. Chrome follows them into
+// its built-in PDF viewer, whose URL is chrome-extension://mhjfbmdg.../index.html --
+// an internal scheme no other application can open. If anything then hands that URL
+// off to the system (an --app= window, an external-protocol prompt), the receiving
+// browser reports "The address wasn't understood".
+//
+// Marking these links as downloads sidesteps the viewer entirely: the file is saved,
+// and the user opens it in whatever PDF reader they actually want.
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('a[href$=".pdf"], a[href$=".docx"]').forEach(function (a) {
+    var href = a.getAttribute("href");
+    if (/^[a-z]+:/i.test(href)) return;          // leave absolute/external links alone
+    a.setAttribute("download", href.split("/").pop());
+    a.setAttribute("title", "Download " + href.split("/").pop());
+  });
+});
+</script>

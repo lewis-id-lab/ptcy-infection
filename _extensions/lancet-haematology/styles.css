@@ -1,0 +1,19 @@
+/* Screen preview approximating Lancet's printed measure. */
+body { font-family: Georgia, "Times New Roman", serif; }
+.quarto-title-block .quarto-title-meta { font-size: 0.9rem; }
+main { max-width: 46rem; line-height: 1.7; }
+h1, h2, h3 { font-family: "Helvetica Neue", Arial, sans-serif; letter-spacing: -0.01em; }
+h2 { border-bottom: 1px solid #d8dbe0; padding-bottom: .3rem; margin-top: 2.2rem; }
+
+/* The Research in context panel is boxed in the journal. */
+.panel {
+  border: 1px solid #b9c0c8; border-left: 4px solid #2b5c8a;
+  background: #f7f9fb; padding: 1rem 1.25rem; margin: 1.75rem 0;
+  font-size: 0.94rem;
+}
+.panel > :first-child { margin-top: 0; }
+.panel h3 { font-size: 1rem; margin-top: 1rem; }
+
+figure figcaption { font-size: 0.88rem; color: #444; }
+table { font-size: 0.9rem; }
+caption, .table-caption { text-align: left; font-size: 0.9rem; }

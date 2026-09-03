@@ -1,0 +1,39 @@
+project:
+  type: manuscript
+  output-dir: _manuscript
+  # A manuscript project renders only the article and its notebooks, so the
+  # supplementary appendix is built by this hook. See scripts/render-appendix.sh.
+  post-render:
+    - scripts/render-appendix.sh
+
+manuscript:
+  article: index.qmd
+  notebooks:
+    - notebook: notebooks/prisma-flow.qmd
+      title: "PRISMA 2020 flow diagram (figure 1)"
+    - notebook: notebooks/study-characteristics.qmd
+      title: "Study and arm characteristics (table 1)"
+    - notebook: notebooks/pooled-estimates.qmd
+      title: "Pooled Bayesian estimates (table 2)"
+    - notebook: notebooks/forest-plots.qmd
+      title: "Forest plots (figures 2-4)"
+  resources:
+    - data/**
+    - figures/**
+
+bibliography: references.bib
+
+format:
+  # manuscript website + the two submission targets
+  html:
+    # Make the "Other Formats" links save the file instead of opening Chrome's
+    # built-in PDF viewer. See assets/force-download.html.
+    include-after-body: assets/force-download.html
+  lancet-haematology-docx: default
+  lancet-haematology-pdf: default
+
+execute:
+  echo: false
+  warning: false
+  message: false
+  freeze: auto
