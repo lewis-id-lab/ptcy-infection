@@ -495,7 +495,11 @@ verified the underlying data reported in the manuscript.
 Individual study-level data extracted for this systematic review,
 including the complete extraction database and analytic datasets, are
 available on a public GitHub repository
-(<https://github.com/Russlewisbo/ptcy_metaanalys>). The study protocol
+(<https://github.com/Russlewisbo/ptcy_metaanalys>). The manuscript
+source, including the notebooks that generate every table and figure,
+is available at <https://github.com/lewis-id-lab/ptcy-infection>, with a
+rendered version for review at
+<https://lewis-id-lab.github.io/ptcy-infection/>. The study protocol
 is registered with PROSPERO (CRD420261372156).
 
 ## Use of artificial intelligence
