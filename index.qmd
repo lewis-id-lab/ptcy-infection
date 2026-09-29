@@ -327,16 +327,17 @@ Acute GVHD grade II–IV was substantially reduced (k = 28, 0·67
 \[0·59–0·78\]), as was moderate-to-severe chronic GVHD (k = 19, 0·47
 \[0·38–0·57\]).
 
-CMV reactivation increased (k = 22, 1·26 [1·07–1·47]; @fig-cmv). This
-effect was steroid-independent (M2 1·25 [1·01–1·54]) and strengthened in
-post-2020 studies (k = 17, 1·53 [1·28–1·85]) and haploidentical-dominant
-cohorts (k = 12, 1·38 [1·12–1·71]). BSI was elevated (k = 6, 1·87
-[1·33–2·62]) and BK virus reactivation showed the largest infection
-effect (k = 11, 2·48 [1·82–3·38]; @fig-infections). Conversely, IFI was
-reduced (k = 6, 0·43 [0·29–0·63]), though extreme heterogeneity was
-present (τ = 1·53). Infection-related mortality was elevated in patients
-receiving PTCy versus CNI with MTX or MMF, with a credible interval that
-reached the null (k = 13, 1·19 \[1·00–1·43\]).
+CMV reactivation increased in the PTCy group (k = 22, 1·26 [1·07–1·47];
+@fig-cmv). This effect was steroid-independent (M2 1·25 [1·01–1·54]) and
+strengthened in post-2020 studies (k = 17, 1·53 [1·28–1·85]) and
+haploidentical-dominant cohorts (k = 12, 1·38 [1·12–1·71]). BSI were
+also elevated with PTCy prophylaxis (k = 6, 1·87 [1·33–2·62]) . BK virus
+infection reactivation was associated with the largest infection effect
+(k = 11, 2·48 [1·82–3·38]; @fig-infections). Conversely, IFI was reduced
+(k = 6, 0·43 [0·29–0·63]), though extreme heterogeneity was present (τ =
+1·53). Infection-related mortality was elevated in patients receiving
+PTCy versus CNI with MTX or MMF, with a credible interval that reached
+the null (k = 13, 1·19 \[1·00–1·43\]).
 
 ### Comparison 2: PTCy versus ATG
 
@@ -570,7 +571,7 @@ conditioning. NMA = non-myeloablative. NR = not reported.
 {{< pagebreak >}}
 
 | Outcome | Comparison | Model | k | N | OR (95% CrI) | τ | GRADE |
-|:--------|:--------|:--------|--------:|--------:|:--------|--------:|:--------|
+|:---|:---|:---|---:|---:|:---|---:|:---|
 | Overall survival | C1 | M1 | 35 | 10 133 | 0·84 (0·76–0·92) | 0·66 | Low |
 |  | C1 | M2 | 28 | 10 133 | 1·04 (0·89–1·22) | 0·60 | — |
 |  | C2 | M1 | 9 | 12 791 | 0·83 (0·75–0·92) | 0·50 | Low |
