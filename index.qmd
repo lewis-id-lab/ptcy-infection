@@ -53,51 +53,43 @@ editor:
 
 ## Summary
 
-**Background.** Post-transplant cyclophosphamide (PTCy) is increasingly
-used for graft-versus-host disease (GVHD) prophylaxis after allogeneic
-haematopoietic stem-cell transplantation (allo-HSCT), but its effects on
-infection outcomes relative to longer-stablished prophylaxis approaches
-have not been systematically quantified. We aimed to evaluate infection
-outcomes in the context of overall survival, incidence of common
-infections, relapse and non-relapse related mortality, and GVHD for PTCy
-versus other common prophylaxis approaches.
+**Background.** Post-transplant cyclophosphamide (PTCy) is used for
+graft-versus-host disease (GVHD) prophylaxis after allogeneic
+haematopoietic stem-cell transplantation (allo-HSCT), but its infection
+effects versus longer-established prophylaxis have not been
+systematically quantified. We evaluated infection outcomes alongside
+survival, relapse and non-relapse mortality, and GVHD.
 
 **Methods.** In this systematic review and Bayesian meta-analysis, we
-searched EMBASE, PubMed, and SCOPUS from database inception to April 30,
-2026 for studies comparing PTCy-based GVHD prophylaxis with alternative
-regimens in adult allo-HSCT recipients. We defined three pre-specified
-comparisons: PTCy versus calcineurin inhibitor (CNI) plus methotrexate
-or mycophenolate (comparison 1 \[C1\]); PTCy versus anti-thymocyte
-globulin (ATG; comparison 2 \[C2\]); and within-PTCy regimen variants
-(comparison 3 \[C3\]). The primary outcome was overall survival (OS).
-Secondary outcomes included non-relapse mortality (NRM), acute GVHD
-grade II–IV, CMV reactivation, bloodstream infection (BSI), and invasive
-fungal infection (IFI). We used Bayesian random-effects
-binomial-logistic models with a GVHD-mediation analysis (steroid
-exposure as mediator). This study is registered with PROSPERO,
-CRD420261372156.
+searched EMBASE, PubMed, and SCOPUS from inception to April 30, 2026
+for studies comparing PTCy-based GVHD prophylaxis with alternative
+regimens in adult allo-HSCT recipients. Comparisons were pre-specified:
+PTCy versus calcineurin inhibitor (CNI) plus methotrexate or
+mycophenolate (C1); PTCy versus anti-thymocyte globulin (ATG; C2); and
+within-PTCy regimen variants (C3). The primary outcome was overall
+survival (OS); secondary outcomes were non-relapse mortality (NRM),
+acute GVHD grade II–IV, CMV reactivation, bloodstream infection (BSI),
+and invasive fungal infection (IFI). We fitted Bayesian random-effects
+binomial-logistic models. PROSPERO: CRD420261372156.
 
-**Findings.** Of 4145 records identified, 251 studies (525 arms; 177 758
-patients; 14 randomised controlled trials) were included in the
-systematic review and 117 contributed to the meta-analysis. In C1 (83
-studies), PTCy was associated with improved OS (odds ratio 0·84 \[95%
-credible interval 0·76–0·92\]), reduced acute GVHD (0·67 \[0·59–0·78\]),
-but increased CMV reactivation (1·26 \[1·07–1·47\]) and BSI (1·87
-\[1·33–2·62\]). In C2 (42 studies), PTCy improved OS versus ATG (0·83
-\[0·75–0·92\]) with no CMV excess (0·97 \[0·77–1·23\]). The CMV signal
-was steroid-independent and strengthened in post-2020 (letermovis
-prophylaxis) and haploidentical-dominant cohorts, whereas the C1
-survival benefit did not persist after adjustment for steroid exposure
-(1·04 \[0·89–1·22\]). GRADE certainty was low for survival and GVHD
-outcomes, and very low for infection outcomes.
+**Findings.** Of 4145 records, 251 studies (525 arms; 177 758 patients;
+14 randomised trials) were included, 117 in the meta-analysis. In C1 (83 studies), PTCy was associated with improved OS
+(odds ratio 0·84 \[95% credible interval 0·76–0·92\]) and reduced acute
+GVHD (0·67 \[0·59–0·78\]), but increased CMV reactivation
+(1·26 \[1·07–1·47\]) and BSI (1·87 \[1·33–2·62\]). In C2 (42 studies),
+PTCy improved OS versus ATG (0·83 \[0·75–0·92\]) with no CMV excess
+(0·97 \[0·77–1·23\]). The CMV signal was steroid-independent and
+strengthened in post-2020 and haploidentical-dominant cohorts; the C1
+survival benefit did not persist after steroid adjustment
+(1·04 \[0·89–1·22\]). GRADE certainty was low for survival and GVHD,
+very low for infections.
 
 **Interpretation.** PTCy improves survival and reduces GVHD across
-comparator platforms but increases CMV and bacterial infection risk
-relative to less T-cell-depleting regimens. The increased risk of CMV
-disease versus CNI-based but not ATG-based regimens suggests that
-infection risk tracks the depth of T-cell depletion across prophylaxis
-approaches. This reframes PTCy-associated infections as a class effect
-of T-cell-depleting prophylaxis rather than a PTCy-specific limitation.
+comparators but increases CMV and bacterial infection risk versus less
+T-cell-depleting regimens. The CMV excess versus CNI-based but not
+ATG-based regimens suggests infection risk tracks T-cell-depletion
+depth, so that PTCy-associated infections are a class effect of T-cell
+depletion rather than a PTCy-specific limitation.
 
 **Funding.** There was no funding source for this study.
 
@@ -570,7 +562,7 @@ between-arm variability. MUD = matched unrelated donor. MMUD =
 mismatched unrelated donor. MSD = matched sibling donor. PBSC =
 peripheral blood stem cells. BM = bone marrow. UCB = umbilical cord
 blood. MAC = myeloablative conditioning. RIC = reduced-intensity
-conditioning. NMA = non-myeloablative. NR = not reported.
+conditioning. NMA = non-myeloablative. NR = not reported. {#tbl-characteristics}
 
 {{< pagebreak >}}
 
@@ -618,7 +610,7 @@ pre-specified primary and secondary outcomes only. OR \< 1 favours PTCy
 for survival and GVHD outcomes; OR \> 1 indicates elevated risk with
 PTCy for infection outcomes. \*The C2 BK virus model (k = 3) did not
 meet the convergence criteria applied to the other models (appendix p
-18) and is reported as indicative only.
+18) and is reported as indicative only. {#tbl-results}
 
 {{< pagebreak >}}
 
