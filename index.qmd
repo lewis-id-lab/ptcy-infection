@@ -38,208 +38,242 @@ keywords:
   - Bayesian meta-analysis
 funding: "There was no funding source for this study."
 date: last-modified
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
+```{=html}
 <!--
   Correspondence: Prof Russell E Lewis, Department of Molecular Medicine,
   University of Padova, Via Gabelli 63, 35121 Padova, Italy
   russelledward.lewis@unipd.it
 -->
+```
 
 ## Summary
 
-**Background.**
-Post-transplant cyclophosphamide (PTCy) is increasingly used for graft-versus-host
-disease (GVHD) prophylaxis after allogeneic haematopoietic stem-cell transplantation
-(allo-HSCT), but its effects on infection outcomes relative to alternative prophylaxis
-approaches have not been systematically quantified. We aimed to evaluate infection
-outcomes in the context of overall survival, incidence of common infections, relapse
-and non-relapse related mortality, and GVHD for PTCy versus other common prophylaxis
-approaches.
+**Background.** Post-transplant cyclophosphamide (PTCy) is increasingly
+used for graft-versus-host disease (GVHD) prophylaxis after allogeneic
+haematopoietic stem-cell transplantation (allo-HSCT), but its effects on
+infection outcomes relative to longer-stablished prophylaxis approaches
+have not been systematically quantified. We aimed to evaluate infection
+outcomes in the context of overall survival, incidence of common
+infections, relapse and non-relapse related mortality, and GVHD for PTCy
+versus other common prophylaxis approaches.
 
-**Methods.**
-In this systematic review and Bayesian meta-analysis, we searched EMBASE, PubMed, and
-SCOPUS from database inception to April 30, 2026 for studies comparing PTCy-based GVHD
-prophylaxis with alternative regimens in adult allo-HSCT recipients. We defined three
-pre-specified comparisons: PTCy versus calcineurin inhibitor (CNI) plus
-methotrexate or mycophenolate (comparison 1 [C1]); PTCy versus anti-thymocyte globulin
-(ATG; comparison 2 [C2]); and within-PTCy regimen variants (comparison 3 [C3]). The
-primary outcome was overall survival (OS). Secondary outcomes included non-relapse
-mortality (NRM), acute GVHD grade II–IV, CMV reactivation, bloodstream infection (BSI),
-and invasive fungal infection (IFI). We used Bayesian random-effects binomial-logistic
-models with a GVHD-mediation analysis (steroid exposure as mediator). This study is
-registered with PROSPERO, CRD420261372156.
+**Methods.** In this systematic review and Bayesian meta-analysis, we
+searched EMBASE, PubMed, and SCOPUS from database inception to April 30,
+2026 for studies comparing PTCy-based GVHD prophylaxis with alternative
+regimens in adult allo-HSCT recipients. We defined three pre-specified
+comparisons: PTCy versus calcineurin inhibitor (CNI) plus methotrexate
+or mycophenolate (comparison 1 \[C1\]); PTCy versus anti-thymocyte
+globulin (ATG; comparison 2 \[C2\]); and within-PTCy regimen variants
+(comparison 3 \[C3\]). The primary outcome was overall survival (OS).
+Secondary outcomes included non-relapse mortality (NRM), acute GVHD
+grade II–IV, CMV reactivation, bloodstream infection (BSI), and invasive
+fungal infection (IFI). We used Bayesian random-effects
+binomial-logistic models with a GVHD-mediation analysis (steroid
+exposure as mediator). This study is registered with PROSPERO,
+CRD420261372156.
 
-**Findings.**
-Of 4145 records identified, 251 studies (525 arms; 177 758 patients; 14 randomised
-controlled trials) were included in the systematic review and 117 contributed to the
-meta-analysis. In C1 (83 studies), PTCy was associated with improved OS (odds ratio
-0·84 [95% credible interval 0·76–0·92]), reduced acute GVHD (0·67 [0·59–0·78]), but
-increased CMV reactivation (1·26 [1·07–1·47]) and BSI (1·87 [1·33–2·62]). In C2 (42
-studies), PTCy improved OS versus ATG (0·83 [0·75–0·92]) with no CMV excess (0·97
-[0·77–1·23]). The CMV signal was steroid-independent and strengthened in post-2020 and
-haploidentical-dominant cohorts, whereas the C1 survival benefit did not survive
-adjustment for steroid exposure (1·04 [0·89–1·22]). GRADE certainty was low for
-survival and GVHD outcomes, and very low for infection outcomes.
+**Findings.** Of 4145 records identified, 251 studies (525 arms; 177 758
+patients; 14 randomised controlled trials) were included in the
+systematic review and 117 contributed to the meta-analysis. In C1 (83
+studies), PTCy was associated with improved OS (odds ratio 0·84 \[95%
+credible interval 0·76–0·92\]), reduced acute GVHD (0·67 \[0·59–0·78\]),
+but increased CMV reactivation (1·26 \[1·07–1·47\]) and BSI (1·87
+\[1·33–2·62\]). In C2 (42 studies), PTCy improved OS versus ATG (0·83
+\[0·75–0·92\]) with no CMV excess (0·97 \[0·77–1·23\]). The CMV signal
+was steroid-independent and strengthened in post-2020 (letermovis
+prophylaxis) and haploidentical-dominant cohorts, whereas the C1
+survival benefit did not persist after adjustment for steroid exposure
+(1·04 \[0·89–1·22\]). GRADE certainty was low for survival and GVHD
+outcomes, and very low for infection outcomes.
 
-**Interpretation.**
-PTCy improves survival and reduces GVHD across comparator platforms but increases CMV
-and bacterial infection risk relative to less T-cell-depleting regimens. The
-comparative pattern — CMV harm versus CNI-based but not versus ATG-based prophylaxis —
-indicates that infection risk tracks the depth of T-cell depletion across platforms,
-reframing PTCy-associated infections as a class effect of T-cell-depleting prophylaxis
-rather than a PTCy-specific limitation.
+**Interpretation.** PTCy improves survival and reduces GVHD across
+comparator platforms but increases CMV and bacterial infection risk
+relative to less T-cell-depleting regimens. The increased risk of CMV
+disease versus CNI-based but not ATG-based regimens suggests that
+infection risk tracks the depth of T-cell depletion across prophylaxis
+approaches. This reframes PTCy-associated infections as a class effect
+of T-cell-depleting prophylaxis rather than a PTCy-specific limitation.
 
-**Funding.**
-There was no funding source for this study.
+**Funding.** There was no funding source for this study.
 
 ## Research in context
 
-::: {.panel}
-
+::: panel
 ### Evidence before this study
 
-We searched PubMed for systematic reviews and meta-analyses of post-transplant
-cyclophosphamide in allogeneic haematopoietic stem-cell transplantation published from
-database inception to June 1, 2026, using the terms "post-transplant cyclophosphamide"
-AND ("meta-analysis" OR "systematic review"). We identified six comparative
-meta-analyses [@gagelmann2019; @jin2026; @arcuri2019; @arcuri2021; @tang2023; @luo2025]
-encompassing 6–20 studies each. All evaluated survival and GVHD outcomes; only two
-[@jin2026; @tang2023] pooled any infection outcome, each with 2–4 studies per infection
-type. No prior meta-analysis simultaneously evaluated CMV, bacterial, and fungal
-infections alongside survival and GVHD. No prior study compared PTCy against both
-CNI-based and ATG-based comparators in a unified framework, and none has proposed a
-mechanistic explanation for the apparently contradictory infection findings across
-comparator contexts.
+We searched PubMed for systematic reviews and meta-analyses of
+post-transplant cyclophosphamide in allogeneic haematopoietic stem-cell
+transplantation published from database inception to June 1, 2026, using
+the terms "post-transplant cyclophosphamide" AND ("meta-analysis" OR
+"systematic review"). We identified six comparative meta-analyses
+[@gagelmann2019; @jin2026; @arcuri2019; @arcuri2021; @tang2023;
+@luo2025] encompassing 6–20 studies each. All evaluated survival and
+GVHD outcomes; only two [@jin2026; @tang2023] pooled infection outcomes,
+each with 2–4 studies per infection type. No prior meta-analysis
+simultaneously evaluated CMV, bacterial, and fungal infections alongside
+survival and GVHD. No prior study compared PTCy against both CNI-based
+and ATG-based comparators in a unified framework, and none has proposed
+a mechanistic explanation for the apparently contradictory infection
+findings across comparator contexts.
 
-### Added value of this study
+### Added value of this stud
 
-This is a large systematic review and meta-analysis (251 studies, 177 758 patients). It
-is the first to systematically pool CMV, bloodstream infection, and invasive fungal
-infection alongside GVHD and survival within the same analytic framework. Its
-dual-comparator design reveals that the effect of PTCy on CMV reverses direction
-depending on the comparator's own T-cell depletion depth — harmful versus CNI-based
-(odds ratio 1·26) but null versus ATG-based (0·97) — establishing a T-cell depletion
-hierarchy that unifies apparently contradictory findings. Bayesian mediation analysis
-separates the two pathways: the CMV excess is unchanged by adjustment for steroid
-exposure, whereas the survival benefit versus CNI-based prophylaxis does not survive
-it, indicating that survival gain and infection cost travel by different routes.
+In this large systematic review and meta-analysis (251 studies, 177 758
+patients), we were able to systematically pool CMV, bloodstream
+infection, and invasive fungal infection risk in the context of GVHD and
+survival within the same analytic framework. Its dual-comparator design
+reveals that the effect of PTCy on CMV reverses direction depending on
+the comparator's own T-cell depletion depth. Greater infection risk was
+observed versus CNI-based (odds ratio 1·26) but not ATG-based (0·97)
+prophylaxis, suggesting T-cell depletion in general drives infection
+risk. Bayesian mediation analysis demonstrated that excess risk of CMV
+infection is is unchanged by adjustment for steroid exposure, whereas
+the survival benefit of PTCy versus CNI-based prophylaxis is reduced by
+steroid exposure.
 
+```{=html}
 <!-- TODO: this claim was reversed by the switch to the Set B (cohort-deduplicated)
      analysis. The pre-deduplication analysis gave C1 OS M2 = 0·86 (0·77–0·96), read as
      a residual direct survival benefit; Set B gives 1·04 (0·89–1·22) on 28 of 35
      studies. Confirm the reading before submission — see the Discussion. -->
+```
 
+```{=html}
 <!-- TODO: the sensitivity estimates quoted in the Results for post-2020 (k=17, 1·53)
      and haploidentical-dominant (k=12, 1·38) CMV are carried over from the
      pre-deduplication fits. C1 CMV itself was unaffected by deduplication, so they
      are expected to hold, but re-fit them on Set B to confirm. -->
+```
 
+```{=html}
 <!-- TODO: GRADE ratings were assigned against the pre-deduplication estimates. C1
      infection-related mortality in particular now crosses the null (1·19 [1·00–1·43]);
      revisit the certainty assessment for the affected outcomes. -->
+```
 
 ### Implications of all the available evidence
 
-PTCy improves overall survival and reduces GVHD regardless of comparator platform. Its
-infection costs, elevated CMV reactivation and bacteraemia, are attributable to T-cell
-depletion depth and are shared with ATG-based regimens. Clinical strategies to mitigate
-these risks should target T-cell reconstitution (adoptive T-cell therapy, optimised
-letermovir prophylaxis, earlier immunosuppression tapering) rather than PTCy avoidance.
-Within-PTCy regimen variants show no detectable differences, supporting flexibility in
-dose and backbone immunosuppression selection.
-
+PTCy improves overall survival and reduces GVHD regardless of comparator
+prophylaxis. Its infection costs, elevated CMV reactivation and
+bacteraemia, are attributable to T-cell depletion depth and similar to
+ATG-based regimens. Clinical strategies to mitigate these risks should
+target T-cell reconstitution (adoptive T-cell therapy, optimised
+letermovir prophylaxis, earlier immunosuppression tapering) rather than
+PTCy avoidance. Within-PTCy regimen variants show no detectable
+differences, supporting flexibility in dose and backbone
+immunosuppression selection.
 :::
 
 ## Introduction
 
-Post-transplant cyclophosphamide (PTCy) has transformed the practice of allogeneic
-haematopoietic stem-cell transplantation (allo-HSCT) by enabling safe transplantation
-across HLA barriers and simplifying graft-versus-host disease (GVHD)
-prophylaxis.[@odonnell2002] Originally developed for haploidentical
-transplantation,[@luznik2008] PTCy is now widely used across all donor
-types,[@kanakry2016] and the BMT CTN 1703/1801 randomised controlled trial (RCT)
-established its superiority over conventional calcineurin inhibitor (CNI)-based
-prophylaxis for GVHD-free, relapse-free survival.[@bolanosmeade2023]
+Post-transplant cyclophosphamide (PTCy) has transformed the practice of
+allogeneic haematopoietic stem-cell transplantation (allo-HSCT) by
+enabling safe transplantation across HLA barriers and simplifying
+graft-versus-host disease (GVHD) prophylaxis.[@odonnell2002] Originally
+developed for haploidentical transplantation[@luznik2008], PTCy is now
+widely used across all donor types[@kanakry2016] and the BMT CTN
+1703/1801 randomised controlled trial (RCT) established its superiority
+over conventional calcineurin inhibitor (CNI)-based prophylaxis for
+GVHD-free, relapse-free survival.[@bolanosmeade2023]
 
-Uncertainty persists regarding the effects of PTCy on infection risk after transplant.
-CIBMTR registry studies have reported that PTCy-based regimens are associated with
-increased cytomegalovirus (CMV) reactivation,[@goldsmith2021] and a higher incidence of
-bacterial bloodstream infections with comparable or reduced rates of fungal
-infections.[@papanicolaou2024] The excess risk, however, has been difficult to quantify
-overall because prior meta-analyses have been restricted to single comparisons, limited
-to 6–20 studies, and have rarely included infection as a primary outcome. The absence
-of a unified analytic framework spanning multiple comparator contexts raises a
-fundamental question: are infection risks attributable to PTCy itself, or to the depth
-of T-cell depletion inherent to any intensive GVHD prophylaxis platform? Answering this
-question requires simultaneous comparison of PTCy against both less depleting
-(CNI plus methotrexate) and more depleting (anti-thymocyte globulin [ATG]) regimens.
+Uncertainty persists regarding the magnaitude of PTCy on infection risk
+after transplant. CIBMTR registry studies have reported that PTCy-based
+regimens are associated with increased cytomegalovirus (CMV)
+reactivation[@goldsmith2021] and a higher incidence of bacterial
+bloodstream infections with comparable or reduced rates of fungal
+infections.[@papanicolaou2024]. This excess risk, however, has been
+difficult to quantify overall because prior meta-analyses have been
+restricted to single comparisons, limited to 6–20 studies, and have
+rarely included infection as a primary outcome. The absence of a unified
+analytic framework spanning multiple comparator contexts raises a
+fundamental question: are infection risks attributable to PTCy itself,
+or to the depth of T-cell depletion inherent to any intensive GVHD
+prophylaxis ? Answering this question requires simultaneous comparison
+of PTCy against both less depleting (CNI plus methotrexate) and more
+depleting (anti-thymocyte globulin \[ATG\]) regimens.
 
-To address this question, we conducted a systematic review and Bayesian meta-analysis
-to simultaneously evaluate survival, GVHD, and infection outcomes of PTCy-based GVHD
-prophylaxis across three pre-specified comparisons, with a GVHD-mediation analysis to
-decompose the pathways through which PTCy influences clinical outcomes.
+To address this question, we conducted a systematic review and Bayesian
+meta-analysis to simultaneously evaluate survival, GVHD, and infection
+outcomes of PTCy-based GVHD prophylaxis across three pre-specified
+comparisons, with a GVHD-mediation analysis to decompose the pathways
+through which PTCy influences clinical outcomes.
 
 ## Methods
 
 ### Search strategy and selection criteria
 
-This systematic review and meta-analysis was conducted in accordance with PRISMA 2020
-guidelines and registered with PROSPERO (CRD420261372156). We searched EMBASE, PubMed,
-and SCOPUS from database inception to April 30, 2026 for studies comparing PTCy-based
-GVHD prophylaxis with alternative regimens in adult (≥18 years) allo-HSCT recipients.
-The complete search strategy for PubMed is provided in the appendix (pp 2–4). Reference
-lists of included studies and relevant reviews were hand-searched. No language
-restrictions were applied at the search stage; studies not available in English were
-excluded at full-text review.
+This systematic review and meta-analysis was conducted in accordance
+with PRISMA 2020 guidelines and registered with PROSPERO
+(CRD420261372156). We searched EMBASE, PubMed, and SCOPUS from database
+inception to April 30, 2026 for studies comparing PTCy-based GVHD
+prophylaxis with alternative regimens in adult (≥18 years) allo-HSCT
+recipients. The complete search strategy for PubMed is provided in the
+appendix (pp 2–4). Reference lists of included studies and relevant
+reviews were hand-searched. No language restrictions were applied at the
+search stage; studies not available in English were excluded at
+full-text review.
 
-Studies were eligible if they reported at least one pre-specified outcome with
-extractable event counts (numerator and denominator) for at least two arms differing in
-GVHD prophylaxis strategy. Conference abstracts were excluded. We defined three
-pre-specified comparisons: C1, PTCy (with or without CNI or mycophenolate mofetil
-[MMF]) versus CNI plus methotrexate (MTX) or MMF without ATG or T-cell depletion; C2,
-PTCy versus ATG-based prophylaxis; and C3, within-PTCy regimen variants.
+Studies were eligible if they reported at least one pre-specified
+outcome with extractable event counts (numerator and denominator) for at
+least two arms differing in GVHD prophylaxis strategy. Conference
+abstracts were excluded. We defined three pre-specified comparisons: C1,
+PTCy (with or without CNI or mycophenolate mofetil \[MMF\]) versus CNI
+plus methotrexate (MTX) or MMF without ATG or T-cell depletion; C2, PTCy
+versus ATG-based prophylaxis; and C3, within-PTCy regimen variants.
 
-Two reviewers (MS and REL) screened titles and abstracts using the Covidence platform
-and conducted data extraction using a structured template (appendix p 5). AI-assisted
-extraction was used to accelerate data extraction from PDF source documents; all
-AI-extracted values were manually verified against source publications. Risk of bias
-was assessed using ROBINS-I for observational studies and RoB 2 for RCTs. Studies
-sharing patient cohorts were flagged and the most comprehensive publication designated
-as primary for each cohort–outcome combination; all pooled estimates reported here come
-from this cohort-deduplicated dataset, so that no patient contributes more than once to
-any single outcome. The cohort overlap map is provided in the appendix (p 24).
+Two reviewers (MS and REL) screened titles and abstracts using the
+Covidence platform and conducted data extraction using a structured
+template (appendix p 5). AI-data tools (Claude Code, Anthropic, Inc.)
+was used to facilitate data extraction from PDF source documents to a
+data collection form, which were manually verified against source
+publications. Risk of bias was assessed using ROBINS-I for observational
+studies and RoB 2 for RCTs. Studies sharing patient cohorts were flagged
+and the most comprehensive publication was designated as primary
+publication for each cohort–outcome combination. All pooled estimates
+reported here were derived from the from this cohort-deduplicated
+dataset, so that no patient contributes more than once to any single
+outcome. The cohort overlap map is provided in the appendix (p 24).
 
 ### Outcomes
 
-The primary outcome was overall survival (OS). Secondary outcomes included non-relapse
-mortality (NRM), acute GVHD grade II–IV (at day +100), chronic GVHD (moderate to
-severe), CMV reactivation (any), bloodstream infection (BSI, any pathogen), invasive
-fungal infection (IFI, any), relapse-related mortality (RRM), BK virus reactivation,
-and infection-related mortality (IRM).
+The primary outcome was overall survival (OS). Secondary outcomes
+included non-relapse mortality (NRM), acute GVHD grade II–IV (at day
++100), chronic GVHD (moderate to severe), CMV reactivation (any),
+bloodstream infection (BSI, any pathogen), invasive fungal infection
+(IFI, any), relapse-related mortality (RRM), BK virus reactivation, and
+infection-related mortality (IRM).
 
 ### Statistical analysis
 
-We fitted Bayesian random-effects binomial-logistic regression models using `brms`
-(version 2.23.0) with an `rstan` backend in R (version 4.6.0). The primary model (M1)
-estimated the PTCy treatment effect adjusted for timepoint (early [day +100 or +180]
-versus late [≥1 year]) with a random intercept for study. Weakly informative priors were
-specified: N(0, 2·5) on fixed effects, N(0, 1·5) on the intercept, and Student t(3, 0, 1)
-on the between-study standard deviation (τ). Four chains of 4000 iterations (1000
-warmup) were run with `adapt_delta` = 0·95. Convergence was assessed by R̂ and effective
-sample size.
+We fitted Bayesian random-effects binomial-logistic regression models
+using `brms` (version 2.23.0) with an `rstan` backend in R (version
+4.6.0). The primary model (M1) estimated the PTCy treatment effect
+adjusted for timepoint (early \[day +100 or +180\] versus late \[≥1
+year\]) with a random intercept for study. Weakly informative priors
+were specified: N(0, 2·5) on fixed effects, N(0, 1·5) on the intercept,
+and Student t(3, 0, 1) on the between-study standard deviation (τ). Four
+chains of 4000 iterations (1000 warmup) were run with `adapt_delta` =
+0·95. Convergence was assessed by R̂ and effective sample size.
 
-The GVHD-mediation model (M2) added arm-level systemic steroid exposure percentage as a
-covariate, providing an estimate of the PTCy effect independent of GVHD-mediated
-steroid burden. Attenuation of the treatment effect from M1 to M2 was interpreted as
-evidence of steroid-mediated confounding.
+The GVHD-mediation model (M2) added arm-level systemic steroid exposure
+percentage as a covariate, providing an estimate of the PTCy effect
+independent of GVHD-mediated steroid burden. Attenuation of the
+treatment effect from M1 to M2 was interpreted as evidence of
+steroid-mediated confounding.
 
-Pre-specified sensitivity analyses included restriction to post-2020 publications
-(letermovir era), haploidentical-dominant cohorts (≥50% haploidentical donors), and
-leave-one-out analysis. Frequentist random-effects models (restricted maximum
-likelihood [REML], `metafor` version 5.0.1) were fitted as concordance checks.
-Publication bias was assessed using robust Bayesian model-averaging (RoBMA). Certainty
-of evidence was assessed using the GRADE framework adapted for observational evidence.
+Pre-specified sensitivity analyses included restriction to post-2020
+publications (beginning of letermovir prophylaxis),
+haploidentical-dominant cohorts (≥50% haploidentical donors), and
+leave-one-out analysis. Frequentist random-effects models (restricted
+maximum likelihood \[REML\], `metafor` version 5.0.1) were fitted as
+concordance checks. Publication bias was assessed using robust Bayesian
+model-averaging (RoBMA). Certainty of evidence was assessed using the
+GRADE framework adapted for observational evidence.
 
 ### Role of the funding source
 
@@ -249,195 +283,231 @@ There was no funding source for this study.
 
 ### Search results and study characteristics
 
-The database search identified 4145 records (EMBASE 2603, PubMed 1061, SCOPUS 481), of
-which 1220 were duplicates (@fig-prisma). After screening 2925 titles and abstracts,
-517 articles were sought for full-text review; 52 could not be retrieved or were not in
-English. Of 465 full-text articles assessed, 214 were excluded (appendix pp 6–14),
-leaving 251 studies for the systematic review. Of these, 117 studies with extractable
-event counts contributed to the meta-analysis across three comparisons: C1 (83
-studies), C2 (42 studies), and C3 (13 studies).
+The database search identified 4145 records (EMBASE 2603, PubMed 1061,
+SCOPUS 481), of which 1220 were duplicates (@fig-prisma). After
+screening 2925 titles and abstracts, 517 articles were sought for
+full-text review; 52 could not be retrieved or were not in English. Of
+465 full-text articles assessed, 214 were excluded (appendix pp 6–14),
+leaving 251 studies for the systematic review. Of these, 117 studies
+with extractable event counts contributed to the meta-analysis across
+three comparisons: C1 (83 studies), C2 (42 studies), and C3 (13
+studies).
 
-The 225 comparative studies encompassed 520 arms and 177 758 patients (@tbl-characteristics).
-Most were retrospective cohorts (132 [59%]) or registry analyses (62 [28%]); 14 (6%)
-were RCTs. Median publication year was 2023 (IQR 2021–24), with median follow-up of 26
-months (IQR 20–36). PTCy arms were predominantly haploidentical donor transplants (127
-[47%]) whereas comparator arms were predominantly matched unrelated (94 [38%]) or
-matched sibling (54 [22%]) donor transplants.
+The 225 comparative studies encompassed 520 arms and 177 758 patients
+(@tbl-characteristics). Most were retrospective cohorts (132 \[59%\]) or
+registry analyses (62 \[28%\]); 14 (6%) were RCTs. Median publication
+year was 2023 (IQR 2021–24), with median follow-up of 26 months (IQR
+20–36). PTCy arms were predominantly haploidentical donor transplants
+(127 \[47%\]) whereas comparator arms were predominantly matched
+unrelated (94 \[38%\]) or matched sibling (54 \[22%\]) donor
+transplants.
 
 ### Risk of bias
 
-Of 227 observational studies assessed with ROBINS-I, 150 (66%) were at moderate risk of
-bias and 71 (31%) at serious risk, primarily due to confounding by donor type and
-conditioning intensity (appendix pp 15–17). Of 14 RCTs assessed with RoB 2, 11 had some
-concerns (predominantly unblinded outcome assessment), two were at high risk, and one
-was at low risk of bias.
+Of 227 observational studies assessed with ROBINS-I, 150 (66%) were at
+moderate risk of bias and 71 (31%) at serious risk, primarily due to
+confounding by donor type and conditioning intensity (appendix pp
+15–17). Of 14 RCTs assessed with RoB 2, 11 had some concerns
+(predominantly unblinded outcome assessment), two were at high risk, and
+one was at low risk of bias.
 
 ### Comparison 1: PTCy versus CNI plus MTX or MMF
 
-PTCy was associated with improved OS (k = 35, odds ratio 0·84 [95% credible interval
-0·76–0·92]; @fig-os). Adjusting for steroid exposure abolished the association (M2 1·04
-[0·89–1·22], k = 28), indicating that the survival advantage is mediated through GVHD
-suppression and the steroid burden that follows it rather than through an additional
-direct effect. NRM showed a non-significant trend toward benefit (k = 12, 0·88
-[0·66–1·18]). Relapse-related mortality was reduced (k = 34, 0·86 [0·77–0·97]), and this
-estimate was unchanged by steroid adjustment (M2 0·85 [0·73–0·99], k = 27).
+PTCy was associated with improved OS (k = 35, odds ratio 0·84 [95%
+credible interval 0·76–0·92]; @fig-os). Adjusting for steroid exposure
+diminished the association (M2 1·04 [0·89–1·22], k = 28), suggesting
+that the survival advantage is mediated through GVHD suppression and the
+steroid burden that follows it rather than through an additional direct
+effect of PTCy. NRM showed a non-significant trend toward benefit (k =
+12, 0·88 \[0·66–1·18\]). Relapse-related mortality was reduced (k = 34,
+0·86 \[0·77–0·97\]), and this estimate was unchanged by steroid
+adjustment (M2 0·85 \[0·73–0·99\], k = 27).
 
-Acute GVHD grade II–IV was substantially reduced (k = 28, 0·67 [0·59–0·78]), as was
-moderate-to-severe chronic GVHD (k = 19, 0·47 [0·38–0·57]).
+Acute GVHD grade II–IV was substantially reduced (k = 28, 0·67
+\[0·59–0·78\]), as was moderate-to-severe chronic GVHD (k = 19, 0·47
+\[0·38–0·57\]).
 
-CMV reactivation was increased (k = 22, 1·26 [1·07–1·47]; @fig-cmv). This effect was
-steroid-independent (M2 1·25 [1·01–1·54]) and strengthened in post-2020 studies (k = 17,
-1·53 [1·28–1·85]) and haploidentical-dominant cohorts (k = 12, 1·38 [1·12–1·71]). BSI
-was elevated (k = 6, 1·87 [1·33–2·62]) and BK virus reactivation showed the largest
-infection effect (k = 11, 2·48 [1·82–3·38]; @fig-infections). Conversely, IFI was
-reduced (k = 6, 0·43 [0·29–0·63]), though with extreme heterogeneity (τ = 1·53).
-Infection-related mortality was elevated, with a credible interval that reached the null
-(k = 13, 1·19 [1·00–1·43]).
+CMV reactivation increased (k = 22, 1·26 [1·07–1·47]; @fig-cmv). This
+effect was steroid-independent (M2 1·25 [1·01–1·54]) and strengthened in
+post-2020 studies (k = 17, 1·53 [1·28–1·85]) and haploidentical-dominant
+cohorts (k = 12, 1·38 [1·12–1·71]). BSI was elevated (k = 6, 1·87
+[1·33–2·62]) and BK virus reactivation showed the largest infection
+effect (k = 11, 2·48 [1·82–3·38]; @fig-infections). Conversely, IFI was
+reduced (k = 6, 0·43 [0·29–0·63]), though extreme heterogeneity was
+present (τ = 1·53). Infection-related mortality was elevated in patients
+receiving PTCy versus CNI with MTX or MMF, with a credible interval that
+reached the null (k = 13, 1·19 \[1·00–1·43\]).
 
 ### Comparison 2: PTCy versus ATG
 
-PTCy improved OS versus ATG (k = 9, odds ratio 0·83 [0·75–0·92]), with negligible
-steroid-mediated attenuation (M2 0·81 [0·70–0·93], k = 8). Acute GVHD was reduced (k = 8,
-0·63 [0·47–0·83]). NRM could not be assessed (k = 2). CMV reactivation was not
-significantly different (k = 12, 0·97 [0·77–1·23]), contrasting with the excess seen in
-C1, and was likewise unaffected by steroid adjustment (M2 1·00 [0·79–1·26]).
-Infection-related mortality was not increased (k = 7, 0·90 [0·74–1·09]).
+PTCy improved OS versus ATG (k = 9, odds ratio 0·83 \[0·75–0·92\]), with
+negligible steroid-mediated attenuation (M2 0·81 \[0·70–0·93\], k = 8).
+Acute GVHD was reduced (k = 8, 0·63 \[0·47–0·83\]). NRM could not be
+assessed (k = 2). CMV reactivation was not significantly different (k =
+12, 0·97 \[0·77–1·23\]), contrasting with the excess seen in C1, and was
+likewise unaffected by steroid adjustment (M2 1·00 \[0·79–1·26\]).
+Infection-related mortality was not increased (k = 7, 0·90
+\[0·74–1·09\]).
 
 ### Comparison 3: within-PTCy variants
 
-No significant differences were detected between PTCy-based regimen variants for any
-outcome (OS 1·11, NRM 0·96, acute GVHD 1·00, chronic GVHD 0·67, relapse-related
-mortality 0·80; all credible intervals crossed the null; k = 4–7 per outcome).
+No significant differences were detected between PTCy-based regimen
+variants for any outcome (OS 1·11, NRM 0·96, acute GVHD 1·00, chronic
+GVHD 0·67, relapse-related mortality 0·80; all credible intervals
+crossed the null; k = 4–7 per outcome).
 
 ### Certainty of evidence
 
-GRADE certainty was low for C1 OS, C1 acute GVHD, C1 CMV, C2 OS, and C2 acute GVHD, and
-very low for C1 NRM, C1 BSI, C1 IFI, C2 CMV, and C2 BSI (@tbl-results). No outcome
-achieved moderate or high certainty. The C1 CMV robustness upgrade was supported by
-steroid independence and consistent direction across two sensitivity analyses.
+GRADE certainty was low for C1 OS, C1 acute GVHD, C1 CMV, C2 OS, and C2
+acute GVHD, and very low for C1 NRM, C1 BSI, C1 IFI, C2 CMV, and C2 BSI
+(@tbl-results). No outcome achieved moderate or high certainty. The C1
+CMV robustness upgrade was supported by steroid independence and
+consistent direction across two sensitivity analyses.
 
 ## Discussion
 
-This systematic review and meta-analysis encompassing 251 studies, 525 arms, and over
-177 000 patients is a comprehensive evaluation of infection risks with PTCy-based GVHD
-prophylaxis. Its dual-comparator design and simultaneous analysis of survival, GVHD,
-and infection outcomes within a unified Bayesian framework enables a mechanistic
-interpretation that has not been possible in prior single-comparison reviews.
+This systematic review and meta-analysis encompassing 251 studies, 525
+arms, and over 177 000 patients is a comprehensive evaluation of
+infection risks with PTCy-based GVHD prophylaxis. Its dual-comparator
+design and simultaneous analysis of survival, GVHD, and infection
+outcomes within a unified Bayesian framework enables a mechanistic
+interpretation that has not been possible in prior single-comparison
+reviews.
 
-The survival and GVHD findings are unequivocal in direction and consistent across
-comparators. PTCy reduces acute GVHD grade II–IV by approximately one-third versus CNI
-plus MTX or MMF (odds ratio 0·67) and by a similar margin versus ATG (0·63), with
-correspondingly large reductions in chronic GVHD. Overall survival is improved by
-approximately 16% in both comparisons (C1 0·84; C2 0·83). These findings align with and
-extend the BMT CTN 1703 RCT, which established the superiority of PTCy in the
-matched-donor setting.[@bolanosmeade2023] The present analysis confirms that this
-advantage generalises across donor types, conditioning regimens, and geographic
-settings.
+The survival and GVHD findings are unequivocal in direction and
+consistent across comparators. PTCy reduces acute GVHD grade II–IV by
+approximately one-third versus CNI plus MTX or MMF (odds ratio 0·67) and
+by a similar margin versus ATG (0·63), with correspondingly large
+reductions in chronic GVHD. Overall survival is improved by
+approximately 16% in both comparisons (C1 0·84; C2 0·83). These findings
+align with and extend the BMT CTN 1703 RCT, which established the
+superiority of PTCy in the matched-donor setting.[@bolanosmeade2023] The
+present analysis confirms that this advantage generalises across donor
+types, conditioning regimens, and geographic settings.
 
-The central conceptual contribution of this analysis is the resolution of apparently
-contradictory infection findings into a coherent mechanistic framework. PTCy
-administered on days +3 and +4 after transplant eliminates alloreactive T cells (the
-intended GVHD-preventive effect), but simultaneously depletes the nascent
-pathogen-specific T-cell repertoire (an unintended immunological cost). In C1, this
-T-cell depletion manifests as increased CMV reactivation (odds ratio 1·26) and BSI
-(1·87). Neither association is attenuated by adjusting for steroid exposure (CMV M2
-1·25 [1·01–1·54]), confirming that these infection risks operate through a pathway
-orthogonal to the GVHD–steroid cascade.
+The central conceptual contribution of this analysis is the resolution
+of apparently contradictory infection findings into a coherent
+mechanistic framework. PTCy administered on days +3 and +4 after
+transplant eliminates alloreactive T cells (the intended GVHD-preventive
+effect), but simultaneously depletes the nascent pathogen-specific
+T-cell repertoire (an unintended immunological cost). In C1, this T-cell
+depletion manifests as increased CMV reactivation (odds ratio 1·26) and
+BSI (1·87). Neither association is attenuated by adjusting for steroid
+exposure (CMV M2 1·25 \[1·01–1·54\]), confirming that these infection
+risks operate through a pathway orthogonal to the GVHD–steroid cascade.
 
-The survival benefit behaves in the opposite way. Adjusting for steroid exposure removes
-it entirely (C1 OS M2 1·04 [0·89–1·22]), placing the survival advantage of PTCy on the
-GVHD–steroid pathway rather than alongside it. Taken together, the two results dissociate
-benefit from harm: what PTCy gains in survival it gains by suppressing GVHD and the
-steroid burden that follows, while what it costs in CMV and bacteraemia it costs through
-T-cell depletion, independently. That the reduction in relapse-related mortality (0·86)
-is likewise unmoved by steroid adjustment (0·85) suggests a third, separate contribution
-from the graft-versus-tumour effect. This mediation analysis rests on arm-level steroid
-exposure, is available for 28 of the 35 studies contributing to the survival model, and
-should be read as hypothesis-generating.
+The survival benefit behaves in the opposite way. Adjusting for steroid
+exposure removes it entirely (C1 OS M2 1·04 \[0·89–1·22\]), placing the
+survival advantage of PTCy on the GVHD–steroid pathway rather than
+alongside it. Taken together, the two results dissociate benefit from
+harm: what PTCy gains in survival it gains by suppressing GVHD and the
+steroid burden that follows, while what it costs in CMV and bacteraemia
+it costs through T-cell depletion, independently. That the reduction in
+relapse-related mortality (0·86) is likewise unmoved by steroid
+adjustment (0·85) suggests a third, separate contribution from the
+graft-versus-tumour effect. This mediation analysis rests on arm-level
+steroid exposure, is available for 28 of the 35 studies contributing to
+the survival model, and should be read as hypothesis-generating.
 
+```{=html}
 <!-- TODO: this paragraph was rewritten when the manuscript moved to the Set B
      (cohort-deduplicated) analysis. Under the pre-deduplication fits, C1 OS M2 was
      0·86 (0·77–0·96), and the paper argued for a residual direct survival benefit
      beyond GVHD suppression. Set B gives 1·04 (0·89–1·22), which does not support
      that claim. Confirm this reading with the co-authors before submission. -->
+```
 
-The C2 analysis provides a critical test of this framework. If CMV excess were an
-intrinsic property of cyclophosphamide, it should persist regardless of comparator.
-Instead, PTCy shows no CMV excess versus ATG (C2 odds ratio 0·97 [0·77–1·23]),
-consistent with the prediction that infection risk tracks the relative depth of T-cell
-depletion between arms. This pattern — harmful versus less-depleting, null versus
-more-depleting — establishes a T-cell depletion hierarchy (CNI-based < PTCy < ATG) that
-reframes PTCy-associated infections as a class effect of T-cell-depleting prophylaxis
-rather than a drug-specific limitation.
+The C2 analysis provides a critical test of this framework. If CMV
+excess were an intrinsic property of cyclophosphamide, it should persist
+regardless of comparator. Instead, PTCy shows no CMV excess versus ATG
+(C2 odds ratio 0·97 \[0·77–1·23\]), consistent with the prediction that
+infection risk tracks the relative depth of T-cell depletion between
+arms. This pattern — harmful versus less-depleting, null versus
+more-depleting — establishes a T-cell depletion hierarchy (CNI-based \<
+PTCy \< ATG) that reframes PTCy-associated infections as a class effect
+of T-cell-depleting prophylaxis rather than a drug-specific limitation.
 
-Several limitations warrant discussion. First, the evidence base is predominantly
-observational, and no outcome exceeded low certainty under GRADE assessment. Selection
-bias, confounding by donor type, and centre-level practice variation are inherent
-limitations that cannot be fully addressed by meta-regression. Second, the
-steroid-mediation analysis uses arm-level rather than individual-patient data, limiting
-causal inference. Third, infection outcome definitions varied across studies (for
-example, any CMV reactivation versus clinically significant CMV infection; any positive
-blood culture versus BSI requiring intensive care), introducing measurement
-heterogeneity. Fourth, the IFI signal (odds ratio 0·43), while statistically
-significant, is driven by extreme heterogeneity (τ = 1·53) and probably reflects
-confounding by antifungal prophylaxis practices rather than a direct effect of PTCy.
-Fifth, cohort deduplication removes the largest registry publications from several
-outcomes where a smaller series reports the same patients in more detail, so the pooled
-totals for survival and chronic GVHD rest on fewer patients than the size of the review
-would suggest.
+Several limitations warrant discussion. First, the evidence base is
+predominantly observational, and no outcome exceeded low certainty under
+GRADE assessment. Selection bias, confounding by donor type, and
+centre-level practice variation are inherent limitations that cannot be
+fully addressed by meta-regression. Second, the steroid-mediation
+analysis uses arm-level rather than individual-patient data, limiting
+causal inference. Third, infection outcome definitions varied across
+studies (for example, any CMV reactivation versus clinically significant
+CMV infection; any positive blood culture versus BSI requiring intensive
+care), introducing measurement heterogeneity. Fourth, the IFI signal
+(odds ratio 0·43), while statistically significant, is driven by extreme
+heterogeneity (τ = 1·53) and probably reflects confounding by antifungal
+prophylaxis practices rather than a direct effect of PTCy. Fifth, cohort
+deduplication removes the largest registry publications from several
+outcomes where a smaller series reports the same patients in more
+detail, so the pooled totals for survival and chronic GVHD rest on fewer
+patients than the size of the review would suggest.
 
-The within-PTCy comparison (C3) found no detectable differences between regimen
-variants for any outcome, supporting clinical flexibility in PTCy dosing and backbone
-immunosuppression selection. However, statistical power was limited (k = 4–7) and
-equivalence cannot be concluded.
+The within-PTCy comparison (C3) found no detectable differences between
+regimen variants for any outcome, supporting clinical flexibility in
+PTCy dosing and backbone immunosuppression selection. However,
+statistical power was limited (k = 4–7) and equivalence cannot be
+concluded.
 
-These findings have direct clinical implications. For centres already using PTCy, the
-infection costs are quantitatively modest (CMV odds ratio 1·26) and are shared with
-ATG-based regimens, which carry at least comparable T-cell depletion liability.
-Clinical strategies to mitigate these costs should target T-cell reconstitution
-(adoptive T-cell therapies, letermovir prophylaxis, earlier immunosuppression tapering)
-rather than PTCy avoidance. The strengthening of the CMV signal in post-2020 studies
-(odds ratio 1·53), despite widespread letermovir adoption, suggests that
-pharmacological CMV prophylaxis alone does not fully offset the reconstitution delay.
-For NRM, optimising GVHD control remains a key strategy, as approaches towards reducing
-GVHD severity and attendant steroid exposure should translate into NRM benefit.
+These findings have direct clinical implications. For centres already
+using PTCy, the infection costs are quantitatively modest (CMV odds
+ratio 1·26) and are shared with ATG-based regimens, which carry at least
+comparable T-cell depletion liability. Clinical strategies to mitigate
+these costs should target T-cell reconstitution (adoptive T-cell
+therapies, letermovir prophylaxis, earlier immunosuppression tapering)
+rather than PTCy avoidance. The strengthening of the CMV signal in
+post-2020 studies (odds ratio 1·53), despite widespread letermovir
+adoption, suggests that pharmacological CMV prophylaxis alone does not
+fully offset the reconstitution delay. For NRM, optimising GVHD control
+remains a key strategy, as approaches towards reducing GVHD severity and
+attendant steroid exposure should translate into NRM benefit.
 
-In conclusion, PTCy improves overall survival and reduces GVHD across comparator
-regimens. Its infection costs are attributable to the depth of T-cell depletion — a
-mechanistic property shared with ATG — and are best addressed through strategies
-targeting immune reconstitution. The present analysis provides a unified framework for
-interpreting the benefit–harm balance of PTCy and should inform guideline development,
+In conclusion, PTCy improves overall survival and reduces GVHD across
+comparator regimens. Its infection costs are attributable to the depth
+of T-cell depletion — a mechanistic property shared with ATG — and are
+best addressed through strategies targeting immune reconstitution. The
+present analysis provides a unified framework for interpreting the
+benefit–harm balance of PTCy and should inform guideline development,
 clinical counselling, and the design of future trials.
 
 ## Contributors
 
-REL, MS, and DPK developed the study protocol. REL and MS performed the searches, data
-extraction, risk of bias assessment, and statistical analysis, and wrote the first draft
-of the report. MS verified the extracted data. DPK revised the manuscript. All authors
-had full access to all the data in the study and had final responsibility for the
-decision to submit for publication. REL and MS directly accessed and verified the
-underlying data reported in the manuscript.
+REL, MS, and DPK developed the study protocol. REL and MS performed the
+searches, data extraction, risk of bias assessment, and statistical
+analysis, and wrote the first draft of the report. MS verified the
+extracted data. DPK revised the manuscript. All authors had full access
+to all the data in the study and had final responsibility for the
+decision to submit for publication. REL and MS directly accessed and
+verified the underlying data reported in the manuscript.
 
 ## Declaration of interests
 
+```{=html}
 <!-- TODO: required by the journal — one statement per author, or
      "We declare no competing interests." -->
+```
 
 ## Data sharing
 
-Individual study-level data extracted for this systematic review, including the
-complete extraction database and analytic datasets, are available on a public GitHub
-repository (<https://github.com/Russlewisbo/ptcy_metaanalys>). The study protocol is
-registered with PROSPERO (CRD420261372156).
+Individual study-level data extracted for this systematic review,
+including the complete extraction database and analytic datasets, are
+available on a public GitHub repository
+(<https://github.com/Russlewisbo/ptcy_metaanalys>). The study protocol
+is registered with PROSPERO (CRD420261372156).
 
 ## Use of artificial intelligence
 
-AI-assisted extraction was performed to accelerate data extraction from PDF source
-documents; all AI-extracted values were manually verified against source publications.
+AI-assisted extraction was performed to accelerate data extraction from
+PDF source documents; all AI-extracted values were manually verified
+against source publications.
 
+```{=html}
 <!-- TODO: the Methods and this statement named different tools in the source
      document (Claude Cowork vs Posit Assistant). Name the one actually used,
      with version and vendor, in both places. -->
+```
 
 ## References
 
@@ -448,47 +518,40 @@ documents; all AI-extracted values were manually verified against source publica
 
 ## Tables
 
-: Characteristics of included studies. Data are n (%) or median (IQR) unless otherwise
-stated. \*Median of arm-level values; IQR reflects between-arm variability.
-MUD = matched unrelated donor. MMUD = mismatched unrelated donor. MSD = matched sibling
-donor. PBSC = peripheral blood stem cells. BM = bone marrow. UCB = umbilical cord blood.
-MAC = myeloablative conditioning. RIC = reduced-intensity conditioning.
-NMA = non-myeloablative. NR = not reported. {#tbl-characteristics}
-
 | Characteristic | PTCy arms (n=272) | Comparator arms (n=248) |
-|:---------------|:------------------|:------------------------|
-| **Studies** | | |
-| Comparative (≥2 arms) | 225 | |
-| Single-arm descriptive | 26 | |
+|:---|:---|:---|
+| **Studies** |  |  |
+| Comparative (≥2 arms) | 225 |  |
+| Single-arm descriptive | 26 |  |
 | Arms | 272 | 248 |
-| Total patients | 177 758 | |
-| RCTs | 14 (6%) | |
-| **Study design** | | |
-| Retrospective cohort | 132 (59%) | |
-| Registry analysis | 62 (28%) | |
-| Prospective cohort | 17 (8%) | |
-| Publication year, median (IQR) | 2023 (2021–24) | |
-| Follow-up, months, median (IQR) | 26 (20–36) | |
-| **ROBINS-I overall judgement (n=227)** | | |
-| Moderate | 150 (66%) | |
-| Serious | 71 (31%) | |
-| High | 6 (3%) | |
-| **Arm-level characteristics** | | |
+| Total patients | 177 758 |  |
+| RCTs | 14 (6%) |  |
+| **Study design** |  |  |
+| Retrospective cohort | 132 (59%) |  |
+| Registry analysis | 62 (28%) |  |
+| Prospective cohort | 17 (8%) |  |
+| Publication year, median (IQR) | 2023 (2021–24) |  |
+| Follow-up, months, median (IQR) | 26 (20–36) |  |
+| **ROBINS-I overall judgement (n=227)** |  |  |
+| Moderate | 150 (66%) |  |
+| Serious | 71 (31%) |  |
+| High | 6 (3%) |  |
+| **Arm-level characteristics** |  |  |
 | Patients per arm, median (IQR) | 99 (46–212) | 120 (51–375) |
 | Age, years, median (IQR)\* | 52·0 (44·9–58·0) | 53·0 (43·0–57·9) |
 | Male, %\* | 57·1 (54·0–61·5) | 57·4 (53·0–61·8) |
-| **Donor type (predominant)** | | |
+| **Donor type (predominant)** |  |  |
 | Haploidentical | 127 (47%) | 36 (15%) |
 | MUD (10/10) | 64 (24%) | 94 (38%) |
 | MMUD (9/10 or lower) | 29 (11%) | 28 (11%) |
 | MSD | 29 (11%) | 54 (22%) |
 | Mixed / other / NR | 23 (8%) | 36 (15%) |
-| **Graft source (predominant)** | | |
+| **Graft source (predominant)** |  |  |
 | PBSC | 204 (75%) | 181 (73%) |
 | BM | 31 (11%) | 11 (4%) |
 | UCB | — | 18 (7%) |
 | Mixed / NR | 37 (14%) | 38 (15%) |
-| **Conditioning (predominant)** | | |
+| **Conditioning (predominant)** |  |  |
 | RIC | 110 (40%) | 85 (34%) |
 | MAC | 106 (39%) | 119 (48%) |
 | NMA | 7 (3%) | 3 (1%) |
@@ -496,96 +559,111 @@ NMA = non-myeloablative. NR = not reported. {#tbl-characteristics}
 | CMV R+, %\* | 74·8 (65·8–80·1) | 69·4 (59·5–81·3) |
 | Steroid exposure, %\* | 26·6 (20·0–32·7) | 34·5 (28·5–43·5) |
 
+: Characteristics of included studies. Data are n (%) or median (IQR)
+unless otherwise stated. \*Median of arm-level values; IQR reflects
+between-arm variability. MUD = matched unrelated donor. MMUD =
+mismatched unrelated donor. MSD = matched sibling donor. PBSC =
+peripheral blood stem cells. BM = bone marrow. UCB = umbilical cord
+blood. MAC = myeloablative conditioning. RIC = reduced-intensity
+conditioning. NMA = non-myeloablative. NR = not reported.
+
 {{< pagebreak >}}
 
-: Bayesian meta-analysis results: outcomes by comparison. Estimates are from the
-cohort-deduplicated dataset, in which one publication per cohort contributes to each
-outcome. M1 = primary model adjusted for timepoint. M2 = steroid-mediation model, fitted
-on the subset of studies reporting arm-level steroid exposure. k = number of paired
-studies. N = total patients across all arms. τ = between-study standard deviation
-(posterior median). CrI = credible interval. GRADE ratings are shown for pre-specified
-primary and secondary outcomes only. OR < 1 favours PTCy for survival and GVHD outcomes;
-OR > 1 indicates elevated risk with PTCy for infection outcomes. \*The C2 BK virus model
-(k = 3) did not meet the convergence criteria applied to the other models (appendix p 18)
-and is reported as indicative only. {#tbl-results}
-
 | Outcome | Comparison | Model | k | N | OR (95% CrI) | τ | GRADE |
-|:--------|:-----------|:------|--:|--:|:-------------|--:|:------|
+|:--------|:--------|:--------|--------:|--------:|:--------|--------:|:--------|
 | Overall survival | C1 | M1 | 35 | 10 133 | 0·84 (0·76–0·92) | 0·66 | Low |
-| | C1 | M2 | 28 | 10 133 | 1·04 (0·89–1·22) | 0·60 | — |
-| | C2 | M1 | 9 | 12 791 | 0·83 (0·75–0·92) | 0·50 | Low |
-| | C2 | M2 | 8 | 12 791 | 0·81 (0·70–0·93) | 0·67 | — |
-| | C3 | M1 | 6 | 4746 | 1·11 (0·95–1·30) | 0·84 | — |
+|  | C1 | M2 | 28 | 10 133 | 1·04 (0·89–1·22) | 0·60 | — |
+|  | C2 | M1 | 9 | 12 791 | 0·83 (0·75–0·92) | 0·50 | Low |
+|  | C2 | M2 | 8 | 12 791 | 0·81 (0·70–0·93) | 0·67 | — |
+|  | C3 | M1 | 6 | 4746 | 1·11 (0·95–1·30) | 0·84 | — |
 | Non-relapse mortality | C1 | M1 | 12 | 1309 | 0·88 (0·66–1·18) | 0·69 | Very low |
-| | C1 | M2 | 12 | 1309 | 0·90 (0·59–1·36) | 0·56 | — |
-| | C2 | M1 | — | — | k=2, not assessed | — | — |
-| | C3 | M1 | 5 | 2529 | 0·96 (0·74–1·24) | 1·11 | — |
+|  | C1 | M2 | 12 | 1309 | 0·90 (0·59–1·36) | 0·56 | — |
+|  | C2 | M1 | — | — | k=2, not assessed | — | — |
+|  | C3 | M1 | 5 | 2529 | 0·96 (0·74–1·24) | 1·11 | — |
 | Relapse-related mortality | C1 | M1 | 34 | 11 121 | 0·86 (0·77–0·97) | 0·47 | — |
-| | C1 | M2 | 27 | 11 121 | 0·85 (0·73–0·99) | 0·55 | — |
-| | C2 | M1 | 10 | 17 182 | 0·79 (0·69–0·89) | 0·14 | — |
-| | C3 | M1 | 6 | 692 | 0·80 (0·50–1·27) | 0·31 | — |
+|  | C1 | M2 | 27 | 11 121 | 0·85 (0·73–0·99) | 0·55 | — |
+|  | C2 | M1 | 10 | 17 182 | 0·79 (0·69–0·89) | 0·14 | — |
+|  | C3 | M1 | 6 | 692 | 0·80 (0·50–1·27) | 0·31 | — |
 | Acute GVHD II–IV | C1 | M1 | 28 | 4197 | 0·67 (0·59–0·78) | 0·67 | Low |
-| | C2 | M1 | 8 | 1039 | 0·63 (0·47–0·83) | 0·53 | Low |
-| | C3 | M1 | 7 | 2450 | 1·00 (0·80–1·25) | 0·75 | — |
+|  | C2 | M1 | 8 | 1039 | 0·63 (0·47–0·83) | 0·53 | Low |
+|  | C3 | M1 | 7 | 2450 | 1·00 (0·80–1·25) | 0·75 | — |
 | Chronic GVHD mod–severe | C1 | M1 | 19 | 2840 | 0·47 (0·38–0·57) | 0·77 | — |
-| | C2 | M1 | 6 | 905 | 0·79 (0·55–1·14) | 0·89 | — |
+|  | C2 | M1 | 6 | 905 | 0·79 (0·55–1·14) | 0·89 | — |
 | Chronic GVHD any | C1 | M1 | 8 | 1732 | 0·23 (0·18–0·30) | 0·52 | — |
-| | C3 | M1 | 4 | 383 | 0·67 (0·39–1·14) | 0·31 | — |
+|  | C3 | M1 | 4 | 383 | 0·67 (0·39–1·14) | 0·31 | — |
 | CMV reactivation | C1 | M1 | 22 | 3328 | 1·26 (1·07–1·47) | 0·73 | Low |
-| | C1 | M2 | 22 | 3328 | 1·25 (1·01–1·54) | 0·74 | — |
-| | C2 | M1 | 12 | 1511 | 0·97 (0·77–1·23) | 0·63 | Very low |
-| | C2 | M2 | 12 | 1511 | 1·00 (0·79–1·26) | 0·72 | — |
+|  | C1 | M2 | 22 | 3328 | 1·25 (1·01–1·54) | 0·74 | — |
+|  | C2 | M1 | 12 | 1511 | 0·97 (0·77–1·23) | 0·63 | Very low |
+|  | C2 | M2 | 12 | 1511 | 1·00 (0·79–1·26) | 0·72 | — |
 | Bloodstream infection | C1 | M1 | 6 | 806 | 1·87 (1·33–2·62) | 0·88 | Very low |
 | Invasive fungal infection | C1 | M1 | 6 | 2243 | 0·43 (0·29–0·63) | 1·53 | Very low |
 | BK virus | C1 | M1 | 11 | 1333 | 2·48 (1·82–3·38) | 1·00 | — |
-| | C2\* | M1 | 3 | 313 | 2·44 (1·40–4·26) | 0·39 | — |
+|  | C2\* | M1 | 3 | 313 | 2·44 (1·40–4·26) | 0·39 | — |
 | Infection-related mortality | C1 | M1 | 13 | 5504 | 1·19 (1·00–1·43) | 0·82 | — |
-| | C2 | M1 | 7 | 13 346 | 0·90 (0·74–1·09) | 0·58 | — |
+|  | C2 | M1 | 7 | 13 346 | 0·90 (0·74–1·09) | 0·58 | — |
+
+: Bayesian meta-analysis results: outcomes by comparison. Estimates are
+from the cohort-deduplicated dataset, in which one publication per
+cohort contributes to each outcome. M1 = primary model adjusted for
+timepoint. M2 = steroid-mediation model, fitted on the subset of studies
+reporting arm-level steroid exposure. k = number of paired studies. N =
+total patients across all arms. τ = between-study standard deviation
+(posterior median). CrI = credible interval. GRADE ratings are shown for
+pre-specified primary and secondary outcomes only. OR \< 1 favours PTCy
+for survival and GVHD outcomes; OR \> 1 indicates elevated risk with
+PTCy for infection outcomes. \*The C2 BK virus model (k = 3) did not
+meet the convergence criteria applied to the other models (appendix p
+18) and is reported as indicative only.
 
 {{< pagebreak >}}
 
 ## Figures
 
-![**Study selection (PRISMA 2020 flow diagram).** 4145 records were identified from
-databases (EMBASE 2603, PubMed 1061, SCOPUS 481) and 1220 duplicates removed. 2925
-records were screened and 2408 excluded at title and abstract. 517 reports were sought
-for retrieval; 52 were not retrieved or not in English. 465 full-text reports were
-assessed and 214 excluded (appendix pp 6–14). 251 studies were included in the
-systematic review; 117 with extractable event counts were included in the
-meta-analysis (C1 83 studies; C2 42 studies; C3 13 studies).](figures/Figure1_PRISMA_flow_diagram){#fig-prisma}
+![**Study selection (PRISMA 2020 flow diagram).** 4145 records were
+identified from databases (EMBASE 2603, PubMed 1061, SCOPUS 481) and
+1220 duplicates removed. 2925 records were screened and 2408 excluded at
+title and abstract. 517 reports were sought for retrieval; 52 were not
+retrieved or not in English. 465 full-text reports were assessed and 214
+excluded (appendix pp 6–14). 251 studies were included in the systematic
+review; 117 with extractable event counts were included in the
+meta-analysis (C1 83 studies; C2 42 studies; C3 13
+studies).](figures/Figure1_PRISMA_flow_diagram){#fig-prisma}
 
 {{< pagebreak >}}
 
-![**Forest plot — overall survival, comparison 1 (PTCy vs CNI + MTX/MMF).** Study rows
-are raw per-study odds ratios with Wald 95% CIs, computed from the extracted event
-counts; the diamond is the pooled Bayesian random-effects posterior median with 95%
-credible interval (primary model M1). k = 35 after cohort
+![**Forest plot — overall survival, comparison 1 (PTCy vs CNI +
+MTX/MMF).** Study rows are raw per-study odds ratios with Wald 95% CIs,
+computed from the extracted event counts; the diamond is the pooled
+Bayesian random-effects posterior median with 95% credible interval
+(primary model M1). k = 35 after cohort
 deduplication.](figures/Figure2_OS_forest_setB){#fig-os}
 
 {{< pagebreak >}}
 
-::: {#fig-cmv layout-ncol=1}
+::: {#fig-cmv layout-ncol="1"}
+![Comparison 1: PTCy vs CNI + MTX/MMF (k = 22, odds ratio 1·26
+\[1·07–1·47\])](figures/Figure3a_CMV_C1_forest_setB){#fig-cmv-a}
 
-![Comparison 1: PTCy vs CNI + MTX/MMF (k = 22, odds ratio 1·26 [1·07–1·47])](figures/Figure3a_CMV_C1_forest_setB){#fig-cmv-a}
+![Comparison 2: PTCy vs ATG (k = 12, 0·97
+\[0·77–1·23\])](figures/Figure3b_CMV_C2_forest_setB){#fig-cmv-b}
 
-![Comparison 2: PTCy vs ATG (k = 12, 0·97 [0·77–1·23])](figures/Figure3b_CMV_C2_forest_setB){#fig-cmv-b}
-
-**Forest plots — CMV reactivation.** Individual study odds ratios for any CMV
-reactivation, with the pooled Bayesian posterior median and 95% credible interval. CMV
-excess is seen against CNI-based prophylaxis but not against ATG, consistent with a
-T-cell depletion depth hierarchy.
-
+**Forest plots — CMV reactivation.** Individual study odds ratios for
+any CMV reactivation, with the pooled Bayesian posterior median and 95%
+credible interval. CMV excess is seen against CNI-based prophylaxis but
+not against ATG, consistent with a T-cell depletion depth hierarchy.
 :::
 
 {{< pagebreak >}}
 
-![**Forest plots — bacterial, fungal, and BK viral infection risk (comparison 1).**
-Individual study odds ratios (raw per-study estimates) and pooled Bayesian
-random-effects posterior median with 95% credible interval (primary model M1), shown
-with the posterior density above each pooled row. Panel A: bloodstream infection, any
-pathogen (k = 6, odds ratio 1·87 [1·33–2·62]). Panel B: invasive fungal infection, any
-(k = 6, 0·43 [0·29–0·63]; τ = 1·53). Panel C: BK virus reactivation (k = 11, 2·48
-[1·82–3·38]), the largest infection effect observed. All panels are comparison 1 (PTCy
-versus CNI plus MTX or MMF); insufficient studies were available to fit the
-corresponding comparison 2 models for BSI and IFI. None of these three outcomes was
-affected by cohort deduplication.](figures/Figure4_infections_forest){#fig-infections}
+![**Forest plots — bacterial, fungal, and BK viral infection risk
+(comparison 1).** Individual study odds ratios (raw per-study estimates)
+and pooled Bayesian random-effects posterior median with 95% credible
+interval (primary model M1), shown with the posterior density above each
+pooled row. Panel A: bloodstream infection, any pathogen (k = 6, odds
+ratio 1·87 \[1·33–2·62\]). Panel B: invasive fungal infection, any (k =
+6, 0·43 \[0·29–0·63\]; τ = 1·53). Panel C: BK virus reactivation (k =
+11, 2·48 \[1·82–3·38\]), the largest infection effect observed. All
+panels are comparison 1 (PTCy versus CNI plus MTX or MMF); insufficient
+studies were available to fit the corresponding comparison 2 models for
+BSI and IFI. None of these three outcomes was affected by cohort
+deduplication.](figures/Figure4_infections_forest){#fig-infections}
