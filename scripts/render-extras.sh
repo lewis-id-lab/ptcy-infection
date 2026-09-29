@@ -29,10 +29,20 @@ cd "$(dirname "$0")/.."
 OUT="${QUARTO_PROJECT_OUTPUT_DIR:-_manuscript}"
 mkdir -p "$OUT"
 
+# appendix.qmd is registered as a manuscript notebook so it appears in the
+# site's Notebooks section, and Quarto renders registered notebooks only to
+# their HTML preview -- a direct `--to lancet-haematology-*` render silently
+# produces nothing. Render the submission copies from a staging copy outside
+# the project instead.
+STAGE="$(mktemp -d)"
+trap 'rm -rf "$STAGE"' EXIT
+cp appendix.qmd "$STAGE"/
+cp -r _extensions figures "$STAGE"/
+
 for fmt in docx pdf; do
   echo "[extras] rendering appendix.qmd -> lancet-haematology-$fmt"
-  quarto render appendix.qmd --to "lancet-haematology-$fmt" --quiet
-  mv -f "appendix.$fmt" "$OUT/appendix.$fmt"
+  (cd "$STAGE" && quarto render appendix.qmd --to "lancet-haematology-$fmt" --quiet)
+  mv -f "$STAGE/appendix.$fmt" "$OUT/appendix.$fmt"
   echo "[extras] wrote $OUT/appendix.$fmt"
 done
 

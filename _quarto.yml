@@ -18,6 +18,8 @@ manuscript:
       title: "Pooled Bayesian estimates (table 2)"
     - notebook: notebooks/forest-plots.qmd
       title: "Forest plots (figures 2-4)"
+    - notebook: appendix.qmd
+      title: "Supplementary appendix"
   resources:
     - data/**
     - figures/**

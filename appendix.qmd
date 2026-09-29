@@ -14,22 +14,8 @@ crossref:
 This appendix forms part of the article and has not been edited by the journal. It is
 referenced in the main text as "the appendix".
 
-::: {.callout-note appearance="simple"}
-**Scope note.** The article reports the cohort-deduplicated analysis, in which one
-publication per cohort contributes to each outcome. Sections S1–S6 and S9–S13 apply to
-that analysis. The convergence diagnostics in S7 and the supplementary forest plots in
-S8 were produced from the pre-deduplication fits and have not yet been regenerated;
-where an outcome was affected by deduplication its k and pooled estimate in those two
-sections will not match table 2 of the article. The outcomes affected are C1 overall
-survival, C1 relapse-related mortality, C1 chronic GVHD (moderate to severe), C1
-infection-related mortality, C2 overall survival, C2 acute GVHD, and C2 CMV
-reactivation.
-:::
-
-<!-- TODO: regenerate S7 (MCMC diagnostics) and S8 (supplementary forest plots) from
-     the Set B fits in 03_models/set_b/ of the analysis repository, then delete the
-     scope note above. Everything else in this appendix is already Set B or is
-     unaffected by deduplication. -->
+All results reported in this appendix are from the cohort-deduplicated (Set B)
+analysis, in which one publication per cohort contributes to each outcome.
 
 ## S1. Search strategy
 
@@ -214,13 +200,10 @@ All Bayesian models were fitted with `brms` v2.23.0 and the `rstan` backend. R̂
 number of divergent transitions are reported for every fitted model. Values are the
 worst case (maximum R̂, minimum ESS) across all model parameters.
 
-The diagnostics below are from the pre-deduplication fits; see the scope note at the
-head of this appendix.
-
 | Model | Max R̂ | Min bulk ESS | Min tail ESS | Divergences |
 |:------|------:|-------------:|-------------:|------------:|
-| OS M1 | 1·0021 | 1289 | 2891 | 0 |
-| OS M2 | 1·0020 | 2579 | 4642 | 0 |
+| OS M1 | 1·0037 | 1729 | 2962 | 0 |
+| OS M2 | 1·0022 | 2645 | 4217 | 0 |
 | NRM M1 | 1·0017 | 4176 | 5261 | 0 |
 | NRM M2 | 1·0017 | 3061 | 4066 | 0 |
 | aGVHD M1 | 1·0012 | 2178 | 3317 | 0 |
@@ -228,20 +211,20 @@ head of this appendix.
 | CMV M2 | 1·0008 | 3323 | 4990 | 0 |
 | BSI M1 | 1·0011 | 3643 | 5034 | 0 |
 | IFI M1 | 1·0021 | 2795 | 4074 | 0 |
-| RRM M1 | 1·0006 | 3872 | 5960 | 0 |
+| RRM M1 | 1·0011 | 3161 | 3767 | 0 |
 | BK M1 | 1·0013 | 3099 | 4143 | 0 |
-| IRM M1 | 1·0017 | 2491 | 3652 | 0 |
+| IRM M1 | 1·0010 | 2965 | 4257 | 0 |
 
 : MCMC convergence diagnostics, comparison 1 models. {#tbl-s7a-i}
 
 | Model | Max R̂ | Min bulk ESS | Min tail ESS | Divergences |
 |:------|------:|-------------:|-------------:|------------:|
-| OS M1 | 1·0007 | 3103 | 4585 | 0 |
-| OS M2 | 1·0009 | 3494 | 5306 | 0 |
+| OS M1 | 1·0030 | 3185 | 4841 | 0 |
+| OS M2 | 1·0011 | 3714 | 5136 | 0 |
 | NRM M1 | 1·0035 | 2876 | 2293 | 0 |
-| aGVHD M1 | 1·0015 | 3260 | 4723 | 0 |
-| CMV M1 | 1·0012 | 3693 | 5243 | 0 |
-| CMV M2 | 1·0008 | 3384 | 5554 | 0 |
+| aGVHD M1 | 1·0010 | 3191 | 4855 | 0 |
+| CMV M1 | 1·0020 | 3436 | 5356 | 0 |
+| CMV M2 | 1·0007 | 3321 | 5570 | 0 |
 | RRM M1 | 1·0002 | 3225 | 4933 | 0 |
 | BK M1 | 1·0592 | 67 | 17 | 0 |
 
@@ -275,11 +258,7 @@ over- or under-prediction is evident in any model.
 
 Individual study odds ratios with 95% CIs and the pooled frequentist random-effects
 estimate (`metafor`, REML), shown alongside the Bayesian estimates reported in the main
-text as concordance checks.
-
-These plots are from the pre-deduplication fits; see the scope note at the head of this
-appendix. For the deduplicated version of the two forest plots that changed, see the
-*Forest plots* notebook accompanying the article.
+text as concordance checks. All plots are from the cohort-deduplicated datasets.
 
 ![Overall survival, frequentist REML concordance check for figure 2 of the main text.](figures/FigureS8a_OS_forest_frequentist){#fig-s8a-os}
 
