@@ -415,10 +415,12 @@ excess were an intrinsic property of cyclophosphamide, it should persist
 regardless of comparator. Instead, PTCy shows no CMV excess versus ATG
 (C2 odds ratio 0·97 \[0·77–1·23\]), consistent with the prediction that
 infection risk tracks the relative depth of T-cell depletion between
-arms. This pattern — harmful versus less-depleting, null versus
-more-depleting — establishes a T-cell depletion hierarchy (CNI-based \<
-PTCy \< ATG) that reframes PTCy-associated infections as a class effect
-of T-cell-depleting prophylaxis rather than a drug-specific limitation.
+arms. PTCy sits between the two comparators in depleting depth:
+infection risk is increased relative to less T-cell-depleting CNI-based
+regimens, but not relative to more-depleting ATG. This hierarchy
+(CNI-based \< PTCy \< ATG) reframes PTCy-associated infections as a
+class effect of T-cell-depleting prophylaxis rather than a
+drug-specific limitation.
 
 Several limitations warrant discussion. First, the evidence base is
 predominantly observational, and no outcome exceeded low certainty under
