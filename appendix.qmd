@@ -1,0 +1,328 @@
+---
+title: "Supplementary appendix"
+subtitle: "Post-transplant cyclophosphamide as graft-versus-host disease prophylaxis after allogeneic haematopoietic stem-cell transplantation: a systematic review and Bayesian meta-analysis of infection risk"
+author:
+  - name: Marta Stanzani
+  - name: Dimitrios P Kontoyiannis
+  - name: Russell E Lewis
+number-sections: false
+crossref:
+  fig-prefix: figure
+  tbl-prefix: table
+---
+
+This appendix forms part of the article and has not been edited by the journal. It is
+referenced in the main text as "the appendix".
+
+All results reported in this appendix are from the cohort-deduplicated (Set B)
+analysis, in which one publication per cohort contributes to each outcome.
+
+## S1. Search strategy
+
+| Field | Content |
+|:------|:--------|
+| Databases searched | PubMed/MEDLINE, EMBASE (Elsevier), SCOPUS |
+| Search dates | Database inception to **[FINAL SEARCH DATE — to be taken from the Covidence/RIS export log]** |
+| Records retrieved | PubMed 1061; EMBASE 2603; SCOPUS 481 (total 4145) |
+| Date limits applied | **[to be confirmed — sources conflict]** |
+| Language limit | English |
+| Publication types excluded via filter | None. Conference abstracts, editorials, letters, and case reports were excluded at screening rather than by search filter, to minimise inappropriate exclusion |
+| Other sources searched | Reference list screening of included studies and prior systematic reviews; forward citation tracking (Web of Science) for key index publications; PROSPERO search for related and ongoing reviews |
+| Deduplication and management | RIS export from each database, imported into Covidence for deduplication and screening |
+| Search piloted against | Eight known included publications (Holtan 2022, Moiseev 2016, Tang 2023, Papanicolaou 2023, Salas 2023, Massoud 2021, Meyer 2024, Shaffer 2024) to verify recall |
+
+: Search parameters. {#tbl-s1-parameters}
+
+The protocol specifies three concept blocks combined with AND, each block an OR of
+controlled vocabulary terms and free-text synonyms.
+
+### PubMed/MEDLINE
+
+```
+#1  Allogeneic HCT population
+    ("Hematopoietic Stem Cell Transplantation"[Mesh] OR "Bone Marrow Transplantation"[Mesh]
+     OR "allogeneic stem cell transplant*"[tiab] OR "allo-HCT"[tiab] OR "allo-HSCT"[tiab]
+     OR "haploidentical"[tiab] OR "HLA-matched"[tiab] OR "matched unrelated donor"[tiab]
+     OR "mismatched unrelated donor"[tiab])
+
+#2  PTCy intervention
+    ("post-transplant cyclophosphamide"[tiab] OR "post-transplantation cyclophosphamide"[tiab]
+     OR "posttransplant cyclophosphamide"[tiab] OR "posttransplantation cyclophosphamide"[tiab]
+     OR "PTCy"[tiab] OR "PT-Cy"[tiab] OR "PTCY"[tiab]
+     OR ("Cyclophosphamide"[Mesh] AND "Graft vs Host Disease"[Mesh]))
+
+#3  Infection outcomes
+    ("Infections"[Mesh] OR "Bacterial Infections"[Mesh] OR "Virus Diseases"[Mesh]
+     OR "Mycoses"[Mesh] OR "Bacteremia"[Mesh] OR "Sepsis"[Mesh]
+     OR "Cytomegalovirus Infections"[Mesh] OR "Invasive Fungal Infections"[Mesh]
+     OR "bacterial infection*"[tiab] OR "viral infection*"[tiab] OR "fungal infection*"[tiab]
+     OR "BSI"[tiab] OR "sepsis"[tiab] OR "CMV"[tiab] OR "EBV"[tiab] OR "HHV-6"[tiab]
+     OR "BK virus"[tiab] OR "aspergillosis"[tiab] OR "candida"[tiab] OR "mucormycosis"[tiab]
+     OR "mold"[tiab] OR "yeast"[tiab] OR "mortality"[tiab])
+
+#4  #1 AND #2 AND #3
+    Filters: Humans; English
+```
+
+### EMBASE (Emtree)
+
+```
+#1  Allogeneic HCT population
+    ('bone marrow transplantation'/exp OR 'stem cell transplantation'/exp
+     OR 'allogeneic stem cell transplant*':ti,ab OR 'allo-hct':ti,ab OR 'allo-hsct':ti,ab
+     OR haploidentical:ti,ab OR 'hla-matched':ti,ab OR 'matched unrelated donor':ti,ab
+     OR 'mismatched unrelated donor':ti,ab)
+
+#2  PTCy intervention
+    ('post-transplant cyclophosphamide':ti,ab OR 'post-transplantation cyclophosphamide':ti,ab
+     OR 'posttransplant cyclophosphamide':ti,ab OR 'posttransplantation cyclophosphamide':ti,ab
+     OR ptcy:ti,ab OR 'pt-cy':ti,ab
+     OR ('cyclophosphamide'/exp AND 'graft versus host reaction'/exp))
+
+#3  Infection outcomes
+    ('infection'/exp OR 'bacterial infection'/exp OR 'virus infection'/exp OR 'mycosis'/exp
+     OR 'bacteremia'/exp OR 'sepsis'/exp OR 'cytomegalovirus infection'/exp
+     OR 'invasive fungal infection'/exp
+     OR 'bacterial infection*':ti,ab OR 'viral infection*':ti,ab OR 'fungal infection*':ti,ab
+     OR bsi:ti,ab OR sepsis:ti,ab OR cmv:ti,ab OR ebv:ti,ab OR 'hhv-6':ti,ab
+     OR 'bk virus':ti,ab OR aspergillosis:ti,ab OR candida:ti,ab OR mucormycosis:ti,ab
+     OR mold:ti,ab OR yeast:ti,ab OR mortality:ti,ab)
+
+#4  #1 AND #2 AND #3 AND [humans]/lim AND [english]/lim
+```
+
+### SCOPUS
+
+```
+TITLE-ABS-KEY(
+  ("allogeneic stem cell transplant*" OR "allo-HCT" OR "allo-HSCT"
+   OR "hematopoietic stem cell transplantation" OR "bone marrow transplantation"
+   OR haploidentical OR "HLA-matched" OR "matched unrelated donor"
+   OR "mismatched unrelated donor")
+  AND
+  ("post-transplant cyclophosphamide" OR "post-transplantation cyclophosphamide"
+   OR "posttransplant cyclophosphamide" OR "posttransplantation cyclophosphamide"
+   OR PTCy OR "PT-Cy" OR (cyclophosphamide AND "graft versus host disease"))
+  AND
+  (infection* OR "bacterial infection*" OR "viral infection*" OR "fungal infection*"
+   OR BSI OR sepsis OR bacteremia OR CMV OR "cytomegalovirus infection*" OR EBV
+   OR "HHV-6" OR "BK virus" OR aspergillosis OR candida OR mucormycosis OR mold
+   OR yeast OR "invasive fungal infection*" OR mortality)
+) AND LANGUAGE(english)
+```
+
+{{< pagebreak >}}
+
+## S2. Studies excluded at full-text screening (n=214)
+
+| Exclusion reason | n |
+|:-----------------|--:|
+| Conference abstract | 116 |
+| Single-arm or no PTCy contrast | 41 |
+| Review, not primary study | 21 |
+| Duplicate publication | 13 |
+| Systematic review or meta-analysis | 11 |
+| Non-eligible population | 5 |
+| Protocol or survey only | 4 |
+| Other | 3 |
+| **Total** | **214** |
+
+: Reasons for exclusion at full-text screening. {#tbl-s2-exclusions}
+
+## S3. Characteristics of included studies
+
+Full study-level (table S4a, 251 rows) and arm-level (table S4b, 525 rows)
+characteristics are provided as supplementary data files
+(`Table_S4a_study_characteristics.csv`, `Table_S4b_arm_characteristics.csv`), and are
+reproduced from the extraction database in the accompanying notebook
+*Study and arm characteristics*.
+
+{{< pagebreak >}}
+
+## S5. Risk of bias
+
+| Domain | Low | Moderate | Serious |
+|:-------|----:|---------:|--------:|
+| D1 Confounding | 0 | 83 | 128 |
+| D2 Selection of participants | 26 | 140 | 45 |
+| D3 Classification of interventions | 51 | 155 | 5 |
+| D4 Deviations from intended interventions | 193 | 18 | 0 |
+| D5 Missing data | 70 | 140 | 1 |
+| D6 Measurement of outcomes | 101 | 101 | 2 |
+| D7 Selection of the reported result | 161 | 42 | 1 |
+
+: ROBINS-I domain-level risk of bias, counts by judgement (n = 211 comparative
+observational studies; single-arm descriptive studies excluded). {#tbl-s5c-robins}
+
+![ROBINS-I traffic-light plot for all comparative observational studies.](figures/FigureS5a_ROBINS_traffic_light){#fig-s5a}
+
+![ROBINS-I domain-level summary.](figures/FigureS5b_ROBINS_domain_summary){#fig-s5b}
+
+![RoB 2 summary for the 14 randomised controlled trials.](figures/FigureS5c_RoB2_summary){#fig-s5c}
+
+Full justification narratives are available in `rob.csv`, submitted as a supplementary
+data file.
+
+{{< pagebreak >}}
+
+## S6. Model specification and priors
+
+Primary model (M1), for study $s$, arm $i$:
+
+$$
+\text{events}_i \mid n_i \sim \text{Binomial}\!\left(n_i,\ \text{logit}^{-1}\!\left(\alpha + \beta_{\text{PTCy}} x_i + \beta_{\text{tp}} t_i + u_{s[i]}\right)\right),
+\qquad u_s \sim \mathcal{N}(0, \tau^2)
+$$
+
+where $x_i$ indicates a PTCy arm and $t_i$ indicates a late (≥1 year) rather than early
+(day +100 or +180) timepoint.
+
+| Parameter | Prior |
+|:----------|:------|
+| Fixed effects (β) | N(0, 2·5) |
+| Intercept (α) | N(0, 1·5) |
+| Between-study SD (τ) | Student t(3, 0, 1), half |
+
+: Prior specification for the primary model. {#tbl-s6-priors}
+
+The steroid-mediation model (M2) adds arm-level systemic steroid exposure percentage,
+mean-centred, as an additional fixed effect.
+
+MCMC: four chains × 4000 iterations (1000 warmup), `adapt_delta` = 0·95, giving 12 000
+post-warmup draws per model.
+
+{{< pagebreak >}}
+
+## S7. MCMC diagnostics
+
+All Bayesian models were fitted with `brms` v2.23.0 and the `rstan` backend. R̂
+(threshold < 1·01), bulk and tail effective sample size (ESS; threshold > 400), and the
+number of divergent transitions are reported for every fitted model. Values are the
+worst case (maximum R̂, minimum ESS) across all model parameters.
+
+| Model | Max R̂ | Min bulk ESS | Min tail ESS | Divergences |
+|:------|------:|-------------:|-------------:|------------:|
+| OS M1 | 1·0037 | 1729 | 2962 | 0 |
+| OS M2 | 1·0022 | 2645 | 4217 | 0 |
+| NRM M1 | 1·0017 | 4176 | 5261 | 0 |
+| NRM M2 | 1·0017 | 3061 | 4066 | 0 |
+| aGVHD M1 | 1·0012 | 2178 | 3317 | 0 |
+| CMV M1 | 1·0011 | 2814 | 4158 | 0 |
+| CMV M2 | 1·0008 | 3323 | 4990 | 0 |
+| BSI M1 | 1·0011 | 3643 | 5034 | 0 |
+| IFI M1 | 1·0021 | 2795 | 4074 | 0 |
+| RRM M1 | 1·0011 | 3161 | 3767 | 0 |
+| BK M1 | 1·0013 | 3099 | 4143 | 0 |
+| IRM M1 | 1·0010 | 2965 | 4257 | 0 |
+
+: MCMC convergence diagnostics, comparison 1 models. {#tbl-s7a-i}
+
+| Model | Max R̂ | Min bulk ESS | Min tail ESS | Divergences |
+|:------|------:|-------------:|-------------:|------------:|
+| OS M1 | 1·0030 | 3185 | 4841 | 0 |
+| OS M2 | 1·0011 | 3714 | 5136 | 0 |
+| NRM M1 | 1·0035 | 2876 | 2293 | 0 |
+| aGVHD M1 | 1·0010 | 3191 | 4855 | 0 |
+| CMV M1 | 1·0020 | 3436 | 5356 | 0 |
+| CMV M2 | 1·0007 | 3321 | 5570 | 0 |
+| RRM M1 | 1·0002 | 3225 | 4933 | 0 |
+| BK M1 | 1·0592 | 67 | 17 | 0 |
+
+: MCMC convergence diagnostics, comparison 2 models. {#tbl-s7a-ii}
+
+All models except C2 BK achieved R̂ < 1·01 with zero divergent transitions and bulk ESS
+above 1000. The C2 BK model (k = 3) did not converge to that standard (R̂ = 1·0592, bulk
+ESS 67, tail ESS 17) and its posterior should be read as indicative only.
+
+<!-- TODO: the source document asserted "All models achieved R̂ ≤ 1.005" and "minimum
+     bulk ESS exceeds 1,000 across all models", which the C2 BK row contradicts.
+     The text above states what the table shows; confirm before submission, and
+     decide whether to report or drop the C2 BK estimate. -->
+
+![Trace plots for `b_ptcy_binary` (top) and `sd_study_id__Intercept` (τ, bottom) in OS M1 (left) and CMV M1 (right). All four chains mix well across the full post-warmup phase.](figures/FigureS7b_trace_plots){#fig-s7b}
+
+![Posterior densities of τ (between-study SD) for comparison 1 M1 models. The half-Student t(3, 0, 1) prior common to all models is shown in grey. IFI shows the widest τ posterior, consistent with the structural heterogeneity identified in the leave-one-out analysis (S9).](figures/FigureS7c_tau_posteriors){#fig-s7c}
+
+![Posterior predictive checks, comparison 1. Each point is one study arm: the observed event proportion against its posterior predictive mean, over 500 posterior draws. The dashed line is the identity.](figures/FigureS7d_i_ppc_C1){#fig-s7d-i}
+
+![Posterior predictive checks, comparison 2. Layout and interpretation as in @fig-s7d-i.](figures/FigureS7d_ii_ppc_C2){#fig-s7d-ii}
+
+All models show adequate calibration, with points clustered near the identity line and
+symmetric scatter. The C1 IFI model (k = 6) shows the widest scatter, consistent with
+its large τ posterior (@fig-s7c) and the heterogeneity identified in S9. No systematic
+over- or under-prediction is evident in any model.
+
+{{< pagebreak >}}
+
+## S8. Forest plots
+
+Individual study odds ratios with 95% CIs and the pooled frequentist random-effects
+estimate (`metafor`, REML), shown alongside the Bayesian estimates reported in the main
+text as concordance checks. All plots are from the cohort-deduplicated datasets.
+
+![Overall survival, frequentist REML concordance check for figure 2 of the main text.](figures/FigureS8a_OS_forest_frequentist){#fig-s8a-os}
+
+![CMV any-reactivation, frequentist REML concordance check for figure 3 of the main text.](figures/FigureS8a_CMV_forest_frequentist){#fig-s8a-cmv}
+
+![Acute GVHD grade II–IV.](figures/FigureS8b_aGVHD_forest){#fig-s8b}
+
+![Non-relapse mortality.](figures/FigureS8c_NRM_forest){#fig-s8c}
+
+![Relapse-related mortality.](figures/FigureS8d_RRM_forest){#fig-s8d}
+
+![Chronic GVHD, moderate to severe.](figures/FigureS8e_cGVHD_forest){#fig-s8e}
+
+![Bloodstream infection, any pathogen.](figures/FigureS8f_BSI_forest){#fig-s8f}
+
+![Invasive fungal infection, any.](figures/FigureS8g_IFI_forest){#fig-s8g}
+
+![BK virus reactivation.](figures/FigureS8h_BK_forest){#fig-s8h}
+
+![Infection-related mortality.](figures/FigureS8i_IRM_forest){#fig-s8i}
+
+![Comparison 3, within-PTCy regimen variants, all outcomes.](figures/FigureS8j_C3_forest){#fig-s8j}
+
+{{< pagebreak >}}
+
+## S9. Sensitivity analyses
+
+![CMV sensitivity models, comparison 1: primary model, post-2020 restriction, and haploidentical-dominant restriction.](figures/FigureS9a_CMV_sensitivity){#fig-s9a}
+
+![IFI leave-one-out analysis, comparison 1 (frequentist REML).](figures/FigureS9b_IFI_leave_one_out){#fig-s9b}
+
+Full frequentist results for all models are provided in `freq_results_setB.csv`, a
+supplementary data file, which carries the deduplicated fits where deduplication
+applied and the original fits otherwise (see its `source` column). Direction was concordant between Bayesian and frequentist
+estimates for every outcome. Two framework-specific differences are worth noting: C1 BSI
+(Bayesian odds ratio 1·87 versus frequentist 1·29 [0·61–2·73]) and C1 IFI (0·43 versus
+0·60 [0·21–1·74]), both reflecting the influence of informative priors at small k.
+
+{{< pagebreak >}}
+
+## S10. Publication bias
+
+Robust Bayesian model-averaging (RoBMA) models were fitted for all outcomes with k ≥ 6.
+
+<!-- TODO: the source document records this section as "Full interpretation is pending
+     and will be completed prior to final submission." Complete it before submitting. -->
+
+## S11. GRADE certainty-of-evidence profiles
+
+![GRADE certainty-of-evidence profiles for the pre-specified primary and secondary outcomes.](figures/TableS11_GRADE_profiles){#fig-s11}
+
+## S12. Cohort overlap
+
+![Cohort overlap map. Studies sharing patient cohorts were flagged and the most comprehensive publication designated as primary for each cohort–outcome combination (Set B, the adopted analysis).](figures/FigureS12_cohort_overlap_map){#fig-s12}
+
+## S13. PROSPERO registration
+
+The study protocol was registered with PROSPERO (CRD420261372156) before data
+extraction. Protocol amendments were: (1) a Bayesian rather than frequentist primary
+analysis framework; (2) addition of BK virus reactivation, infection-related mortality,
+and relapse-related mortality as secondary outcomes; and (3) addition of the
+steroid-mediation (M2) model.
+
+## S14. PRISMA 2020 checklist
+
+<!-- TODO: attach the completed PRISMA 2020 checklist with page and section references
+     for each item before submission. -->
