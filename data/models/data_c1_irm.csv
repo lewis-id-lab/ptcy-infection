@@ -1,0 +1,14 @@
+study_id,comparison,category,subtype,timepoint_used,tp_early,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_steroid_pct,comp_steroid_pct
+45,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,0,46,47,54,59,10,9,63,53
+52,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,0,58,59,270,209,13,21,29.2,44.4
+166,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,0,172,173,30,31,3,2,16.7,25.8
+261,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,0,271,272,91,38,5,5,19,11
+263,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,0,275,276,489,211,33,4,24.4,31.4
+268,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,0,279,281,374,742,131,193,NA,NA
+296,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,0,319,320,169,688,12,75,29.6,36.1
+301,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,0,328,329,64,205,8,20,45,59
+399,1,infection_related_mortality,IRM_any_cause_infectious,end_of_followup,0,446,447,241,848,17,44,25,36
+2,1,infection_related_mortality,IRM_any_cause_infectious,D+365_1yr,1,1,2,214,217,8,10,NA,NA
+6,1,infection_related_mortality,IRM_any_cause_infectious,D+365_1yr,1,10,11,68,97,11,10,60,80
+375,1,infection_related_mortality,IRM_any_cause_infectious,D+365_1yr,1,414,415,27,28,6,11,29.6,39.3
+432,1,infection_related_mortality,IRM_any_cause_infectious,D+365_1yr,1,482,483,25,15,0,1,12.5,35.7

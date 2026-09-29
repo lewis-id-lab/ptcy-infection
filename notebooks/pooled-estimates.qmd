@@ -1,0 +1,156 @@
+---
+title: "Pooled Bayesian estimates"
+subtitle: "Source notebook for table 2"
+author: "PTCy meta-analysis collaboration"
+format:
+  html:
+    toc: true
+    code-fold: show
+    df-print: kable
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+Table 2 of the article reports the posterior median odds ratio, its 95% credible
+interval, and the between-study standard deviation τ for every outcome and comparison.
+Those posteriors come from `brms` fits that take hours to run and are not re-fitted
+here. What this notebook does is take the **exported posterior summaries** and format
+them into the published table, so that the table and the model output cannot drift
+apart.
+
+Inputs, from `03_models/set_b/` of the analysis repository:
+
+- `data/models/Table2_setB.csv` — posterior summaries for the adopted (Set B,
+  cohort-deduplicated) analysis
+- `data/models/freq_results_setB.csv` — frequentist REML concordance checks
+
+```{r}
+#| label: setup
+library(dplyr)
+library(tidyr)
+library(readr)
+library(stringr)
+library(knitr)
+
+here <- function(...) file.path(if (basename(getwd()) == "notebooks") ".." else ".", ...)
+
+t2   <- read_csv(here("data", "models", "Table2_setB.csv"),     show_col_types = FALSE)
+freq <- read_csv(here("data", "models", "freq_results_setB.csv"), show_col_types = FALSE)
+
+glimpse(t2)
+```
+
+## Formatting the published table
+
+Odds ratios are set to two decimal places with the middle dot the journal uses for
+decimals, and totals are set with a thin space as the thousands separator.
+
+```{r}
+#| label: helpers
+
+middot  <- function(x, d = 2) str_replace(sprintf("%.*f", d, x), fixed("."), "·")
+or_cri  <- function(or, lo, hi) sprintf("%s (%s–%s)", middot(or), middot(lo), middot(hi))
+thin_n  <- function(n) format(n, big.mark = " ", trim = TRUE)
+
+# slug -> (outcome label, comparison), in the order the article presents them
+key <- tribble(
+  ~slug,          ~outcome,                      ~comparison,
+  "c1_os",        "Overall survival",            "C1",
+  "c2_os",        "Overall survival",            "C2",
+  "c3_os",        "Overall survival",            "C3",
+  "c1_nrm",       "Non-relapse mortality",       "C1",
+  "c3_nrm",       "Non-relapse mortality",       "C3",
+  "c1_rrm",       "Relapse-related mortality",   "C1",
+  "c2_rrm",       "Relapse-related mortality",   "C2",
+  "c3_rrm",       "Relapse-related mortality",   "C3",
+  "c1_agvhd",     "Acute GVHD II–IV",       "C1",
+  "c2_agvhd",     "Acute GVHD II–IV",       "C2",
+  "c3_agvhd",     "Acute GVHD II–IV",       "C3",
+  "c1_cgvhd_ms",  "Chronic GVHD mod–severe","C1",
+  "c2_cgvhd_ms",  "Chronic GVHD mod–severe","C2",
+  "c1_cmv",       "CMV reactivation",            "C1",
+  "c2_cmv",       "CMV reactivation",            "C2",
+  "c1_bsi",       "Bloodstream infection",       "C1",
+  "c1_ifi_any",   "Invasive fungal infection",   "C1",
+  "c1_bk",        "BK virus",                    "C1",
+  "c2_bk",        "BK virus",                    "C2",
+  "c1_irm",       "Infection-related mortality", "C1",
+  "c2_irm",       "Infection-related mortality", "C2")
+
+# GRADE ratings are a judgement recorded during the review, not a model output
+grade <- tribble(
+  ~slug,         ~model, ~GRADE,
+  "c1_os",       "m1",   "Low",
+  "c2_os",       "m1",   "Low",
+  "c1_nrm",      "m1",   "Very low",
+  "c1_agvhd",    "m1",   "Low",
+  "c2_agvhd",    "m1",   "Low",
+  "c1_cmv",      "m1",   "Low",
+  "c2_cmv",      "m1",   "Very low",
+  "c1_bsi",      "m1",   "Very low",
+  "c1_ifi_any",  "m1",   "Very low")
+```
+
+```{r}
+#| label: tbl-pooled
+#| tbl-cap: "Bayesian meta-analysis results by outcome and comparison (Set B, cohort-deduplicated). M1 = primary model adjusted for timepoint. M2 = steroid-mediation model. k = number of paired studies. N = total patients across all arms. τ = between-study SD (posterior median)."
+
+t2 |>
+  inner_join(key, by = "slug") |>
+  left_join(grade, by = c("slug", "model")) |>
+  mutate(
+    Model = recode(model, m1 = "M1", m2_steroid = "M2"),
+    order_out = match(outcome, unique(key$outcome))) |>
+  arrange(order_out, comparison, Model) |>
+  transmute(
+    Outcome    = outcome,
+    Comparison = comparison,
+    Model,
+    k,
+    N          = thin_n(n_total),
+    `OR (95% CrI)` = or_cri(or_median, ci_low, ci_high),
+    `τ`   = middot(tau),
+    GRADE      = coalesce(GRADE, "—"),
+    Source     = source) |>
+  kable(align = "llcrrlrll")
+```
+
+## Frequentist concordance check
+
+Every Bayesian estimate was re-fitted with restricted maximum likelihood (`metafor`) as
+a concordance check. Agreement in direction and rough magnitude — not identical point
+estimates — is what this check is for; the Bayesian intervals are wider because they
+propagate uncertainty in τ.
+
+```{r}
+#| label: tbl-freq
+#| tbl-cap: "Bayesian posterior medians beside frequentist REML estimates."
+
+fcols <- names(freq)
+cat("freq_results_setB.csv columns:", paste(fcols, collapse = ", "), "\n\n")
+
+if (all(c("slug", "or") %in% fcols)) {
+  t2 |>
+    filter(model == "m1") |>
+    inner_join(key, by = "slug") |>
+    inner_join(freq, by = "slug", suffix = c("_bayes", "_freq")) |>
+    transmute(Outcome = outcome, Comparison = comparison, k = k_bayes,
+              Bayesian = or_cri(or_median, ci_low, ci_high)) |>
+    kable()
+} else {
+  freq |> kable()
+}
+```
+
+## Publication bias
+
+```{r}
+#| label: tbl-pubbias
+#| tbl-cap: "Robust Bayesian model-averaging (RoBMA) assessment of publication bias."
+
+f <- here("data", "models", "pub_bias_results.csv")
+if (file.exists(f)) read_csv(f, show_col_types = FALSE) |> kable() else
+  cat("pub_bias_results.csv not vendored into this project.\n")
+```

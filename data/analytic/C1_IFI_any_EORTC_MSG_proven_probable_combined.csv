@@ -1,0 +1,7 @@
+study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_ci_pct,comp_ci_pct,ptcy_steroid_pct,comp_steroid_pct
+7,1,IFI_any,EORTC_MSG_proven_probable_combined,end_of_followup,14,15,86.0,125.0,7.0,39.0,,,,
+166,1,IFI_any,EORTC_MSG_proven_probable_combined,end_of_followup,172,173,30.0,31.0,5.0,4.0,16.7,12.9,16.7,25.8
+167,1,IFI_any,EORTC_MSG_proven_probable_combined,end_of_followup,174,175,16.0,16.0,6.0,1.0,,,13.0,50.0
+219,1,IFI_any,EORTC_MSG_proven_probable_combined,end_of_followup,224,225,80.0,500.0,12.0,78.0,,,,
+399,1,IFI_any,EORTC_MSG_proven_probable_combined,end_of_followup,446,447,241.0,848.0,0.0,6.0,,,25.0,36.0
+410,1,IFI_any,EORTC_MSG_proven_probable_combined,end_of_followup,456,457,110.0,160.0,8.0,46.0,,,18.2,40.4

@@ -1,0 +1,9 @@
+study_id,comparison,category,subtype,timepoint_used,tp_early,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_steroid_pct,comp_steroid_pct
+6,2,aGVHD,grade_II_IV,D+100,0,10,12,68,280,26,80,60,48
+24,2,aGVHD,grade_II_IV,D+100,0,31,32,69,90,15,53,21.7,58.9
+49,2,aGVHD,grade_II_IV,D+100,0,50,51,93,81,54,42,58,52
+66,2,aGVHD,grade_II_IV,D+100,0,76,77,28,28,7,14,25,50
+86,2,aGVHD,grade_II_IV,D+100,0,101,102,22,37,4,12,18,32
+122,2,aGVHD,grade_II_IV,D+100,0,143,144,110,35,19,11,17.3,31.4
+299,2,aGVHD,grade_II_IV,D+100,0,323,324,22,40,3,19,14,35
+430,2,aGVHD,grade_II_IV,D+180,1,478,479,16,20,4,8,25,40

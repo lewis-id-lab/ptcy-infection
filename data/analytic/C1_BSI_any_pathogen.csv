@@ -1,0 +1,14 @@
+study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_ci_pct,comp_ci_pct,ptcy_steroid_pct,comp_steroid_pct
+5,1,BSI,any_pathogen,D+100,6,8,75.0,89.0,,,,,,
+6,1,BSI,any_pathogen,D+100,10,11,68.0,97.0,30.0,22.0,,,60.0,80.0
+9,1,BSI,any_pathogen,D+100,19,20,200.0,130.0,76.0,24.0,37.0,18.5,,
+88,1,BSI,any_pathogen,D+100,104,105,40.0,40.0,4.0,3.0,,,15.0,39.8
+89,1,BSI,any_pathogen,D+100,106,108,434.0,121.0,,,,,,
+111,1,BSI,any_pathogen,D+100,130,128,78.0,210.0,38.0,47.0,48.7,22.4,16.0,40.6
+166,1,BSI,any_pathogen,D+100,172,173,30.0,31.0,8.0,7.0,26.7,22.6,16.7,25.8
+382,1,BSI,any_pathogen,D+100,421,422,403.0,1605.0,,,,,,
+335,1,BSI,any_pathogen,D+180,366,367,88.0,73.0,15.0,3.0,16.5,4.3,18.2,26.0
+337,1,BSI,any_pathogen,D+180,371,370,127.0,84.0,71.0,25.0,55.7,29.8,23.3,35.7
+216,1,BSI,any_pathogen,end_of_followup,220,221,55.0,75.0,4.0,7.0,,,18.4,19.32
+432,1,BSI,any_pathogen,end_of_followup,482,483,25.0,15.0,6.0,9.0,24.0,60.0,12.5,35.7
+338,1,BSI,any_pathogen,D+30,373,374,95.0,177.0,41.0,24.0,43.2,13.6,,

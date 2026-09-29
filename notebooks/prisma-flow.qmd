@@ -1,0 +1,178 @@
+---
+title: "PRISMA 2020 flow diagram"
+subtitle: "Source notebook for figure 1"
+author: "PTCy meta-analysis collaboration"
+format:
+  html:
+    toc: true
+    code-fold: show
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+Figure 1 is built with the
+[PRISMA2020](https://github.com/prisma-flowdiagram/PRISMA2020) package, which draws the
+canonical PRISMA 2020 flow diagram from a counts file. The earlier version of this
+figure was a hand-drawn Mermaid flowchart and did not follow the standard layout.
+
+All counts live in `data/prisma_flow.csv`, which is the package's own template with the
+`n` column filled in. To correct a number, edit that file and re-render — nothing here
+hard-codes a count.
+
+```{r}
+#| label: setup
+library(PRISMA2020)
+library(readr)
+library(dplyr)
+library(knitr)
+
+here <- function(...) file.path(if (basename(getwd()) == "notebooks") ".." else ".", ...)
+
+flow <- read_csv(here("data", "prisma_flow.csv"), show_col_types = FALSE)
+```
+
+## The counts
+
+```{r}
+#| label: tbl-counts
+#| tbl-cap: "Counts driving the diagram. Blank rows are suppressed in the figure."
+flow |>
+  filter(!is.na(n), n != "", n != "0") |>
+  select(Field = data, Count = n) |>
+  kable()
+```
+
+### Arithmetic check
+
+The flow only makes sense if each stage reconciles. This fails the render if it does
+not, so the figure cannot silently drift out of step with the Results text.
+
+```{r}
+#| label: check
+# The template's `data` column is NA on the title-box rows, so `flow$data == key`
+# would return NA padding alongside the match. Match on identity instead.
+field <- function(key) {
+  v <- flow$n[which(flow$data == key)]
+  stopifnot(length(v) == 1)
+  v
+}
+n <- function(key) as.numeric(field(key))
+
+identified <- n("database_results")
+dupes      <- n("duplicates")
+screened   <- n("records_screened")
+excl_ta    <- n("records_excluded")
+sought     <- n("dbr_sought_reports")
+notret     <- n("dbr_notretrieved_reports")
+assessed   <- n("dbr_assessed")
+included   <- n("new_studies")
+
+# "Reason, n; Reason, n; ..." -> the numbers
+reasons  <- strsplit(field("dbr_excluded"), ";")[[1]]
+excl_ft  <- sum(as.numeric(sub("^.*,\\s*", "", reasons)))
+
+# per-database counts must add up to the database total
+dbs      <- strsplit(field("database_specific_results"), ";")[[1]]
+db_total <- sum(as.numeric(sub("^.*,\\s*", "", dbs)))
+
+checks <- tibble::tribble(
+  ~step,                                   ~lhs,                  ~rhs,
+  "per-database counts = total",            db_total,              identified,
+  "identified - duplicates = screened",     identified - dupes,    screened,
+  "screened - excluded = sought",           screened - excl_ta,    sought,
+  "sought - not retrieved = assessed",      sought - notret,       assessed,
+  "assessed - excluded = included",         assessed - excl_ft,    included
+) |> mutate(ok = lhs == rhs)
+
+print(as.data.frame(checks))
+stopifnot(all(checks$ok))
+cat("\nall stages reconcile; full-text exclusion reasons sum to ", excl_ft, "\n", sep = "")
+```
+
+## The diagram
+
+`previous = FALSE` because there is no earlier version of this review, and
+`other = FALSE` because although reference lists and citation tracking were searched
+(appendix p 2), those yields were not recorded separately and so cannot be shown as a
+second identification column.
+
+```{r}
+#| label: build
+plot <- PRISMA_flowdiagram(
+  PRISMA_data(as.data.frame(flow)),
+  interactive       = FALSE,
+  previous          = FALSE,   # no previous version of this review
+  other             = FALSE,   # other-methods yields not separately recorded
+  detail_databases  = TRUE,    # show the EMBASE / PubMed / SCOPUS split
+  meta_analysis     = TRUE,    # show the 117 studies carried into the models
+  side_boxes        = TRUE,
+  fontsize          = 10,
+  font              = "Helvetica"
+)
+```
+
+### Journal colours
+
+The package writes its colour arguments straight into the Graphviz source
+unquoted, so a hex value such as `#B20D35` is a DOT syntax error and only X11
+colour names get through. The diagram is therefore built with the defaults and
+recoloured afterwards, by rewriting those names in the DOT with quoted hex.
+
+```{r}
+#| label: recolour
+lancet_red   <- "#B20D35"   # sampled from the journal's own PDF
+lancet_tint  <- "#F7DFDF"
+lancet_dark  <- "#2D2D2D"
+
+dot <- plot$x$diagram
+
+# The title bar and the Identification / Screening / Included rails.
+dot <- gsub("Goldenrod1",      sprintf('"%s"', lancet_red),  dot, fixed = TRUE)
+dot <- gsub("LightSteelBlue2", sprintf('"%s"', lancet_tint), dot, fixed = TRUE)
+
+# White text on the crimson bar. This has to go on the title node itself, not on
+# the `node [...]` defaults block above it -- a fontcolor set there cascades to
+# every node declared afterwards and turns the whole diagram's text white.
+# `style = "rounded,filled"` is unique to the title bar; the rails use
+# `"filled,rounded"`, the other order.
+stopifnot(sum(gregexpr('style = "rounded,filled"', dot, fixed = TRUE)[[1]] > 0) == 1)
+dot <- sub('style = "rounded,filled"',
+           'style = "rounded,filled", fontcolor = "white"', dot, fixed = TRUE)
+
+stopifnot(!grepl("Goldenrod1|LightSteelBlue2", dot))
+plot$x$diagram <- dot
+```
+
+```{r}
+#| label: export
+#| output: false
+# PRISMA_save writes one file per call and infers nothing from the extension.
+for (ft in c("PNG", "PDF", "SVG")) {
+  PRISMA_save(
+    plot,
+    filename  = here("figures", paste0("Figure1_PRISMA_flow_diagram.", tolower(ft))),
+    filetype  = ft,
+    overwrite = TRUE
+  )
+}
+```
+
+```{r}
+#| label: fig-prisma-preview
+#| fig-cap: "Figure 1 as exported."
+knitr::include_graphics(here("figures", "Figure1_PRISMA_flow_diagram.png"))
+```
+
+## Reproducing this
+
+`PRISMA2020` pulls in `DiagrammeRsvg`, which needs `V8`, which needs a libv8 the
+distribution may not package. If `install.packages("V8")` fails at the configure step,
+use the package's own fallback, which downloads a static build and needs no root:
+
+```r
+Sys.setenv(DOWNLOAD_STATIC_LIBV8 = 1)
+install.packages("V8")
+install.packages("PRISMA2020")
+```

@@ -1,0 +1,11 @@
+category,subtype,timepoint,k_C1,k_C2,k_C3
+overall_mortality,OS_event,D+365_1yr,104,42,16
+NRM,NRM_overall,D+365_1yr,52,19,9
+aGVHD,grade_II_IV,D+100,97,42,16
+aGVHD,grade_III_IV,D+100,78,33,11
+cGVHD,moderate_severe_NIH,D+365_1yr,55,23,12
+CMV,any_reactivation,D+100,20,9,2
+BSI,any_pathogen,D+100,10,5,0
+IFI_mold,EORTC_MSG_proven_probable,D+180,4,0,0
+IFI_any,EORTC_MSG_proven_probable_combined,end_of_followup,6,3,1
+infection_related_mortality,IRM_any_cause_infectious,D+365_1yr,15,8,2

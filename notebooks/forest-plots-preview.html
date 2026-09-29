@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.10.18">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <meta name="author" content="PTCy meta-analysis collaboration">
+
+    <title>Forest plots</title>
+    <style>
+      /* Default styles provided by pandoc.
+      ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+      */
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: 1.5em;}
+      div.column{flex: auto;}
+      @media screen {
+      div.columns{gap: min(4vw, 1.5em);}
+      div.column{overflow-x: auto;}
+      }
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+      /* CSS for syntax highlighting */
+      html { -webkit-text-size-adjust: 100%; }
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+        }
+      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "../index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="../site_libs/manuscript-notebook/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-62e2d20df198e8a01bb734742f2e28cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+     
+      </head>
+
+  <body class="quarto-notebook quarto-light">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Forest plots (figures 2-4)</h6>
+
+            <a href="../notebooks/forest-plots.qmd" class="btn btn-primary quarto-download-embed" download="forest-plots.qmd">Download Source</a>
+          </div>
+
+     <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Forest plots</h1>
+            <p class="subtitle lead">Source notebook for figures 2–4</p>
+          </div>
+
+    
+    <div class="quarto-title-meta-container">
+      <div class="quarto-title-meta-column-start">
+        
+        <div class="quarto-title-meta">
+
+                <div>
+            <div class="quarto-title-meta-heading">Author</div>
+            <div class="quarto-title-meta-contents">
+                        <p>PTCy meta-analysis collaboration </p>
+                      </div>
+          </div>
+                
+          
+                
+              </div>
+      </div>
+      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      </div>
+    </div>
+
+
+
+    <div class="quarto-other-links-text-target">
+    </div>  </div>
+</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#figure-2-overall-survival-comparison-1" id="toc-figure-2-overall-survival-comparison-1" class="nav-link active" data-scroll-target="#figure-2-overall-survival-comparison-1">Figure 2 — overall survival (comparison 1)</a></li>
+  <li><a href="#figure-3-cmv-reactivation" id="toc-figure-3-cmv-reactivation" class="nav-link" data-scroll-target="#figure-3-cmv-reactivation">Figure 3 — CMV reactivation</a></li>
+  <li><a href="#figure-4-bacterial-fungal-and-bk-viral-infection" id="toc-figure-4-bacterial-fungal-and-bk-viral-infection" class="nav-link" data-scroll-target="#figure-4-bacterial-fungal-and-bk-viral-infection">Figure 4 — bacterial, fungal, and BK viral infection</a></li>
+  <li><a href="#acute-gvhd-grade-iiiv" id="toc-acute-gvhd-grade-iiiv" class="nav-link" data-scroll-target="#acute-gvhd-grade-iiiv">Acute GVHD grade II–IV</a></li>
+  <li><a href="#exporting-the-article-figures" id="toc-exporting-the-article-figures" class="nav-link" data-scroll-target="#exporting-the-article-figures">Exporting the article figures</a></li>
+  <li><a href="#available-analytic-datasets" id="toc-available-analytic-datasets" class="nav-link" data-scroll-target="#available-analytic-datasets">Available analytic datasets</a></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">      
+
+       <p>The figures in the article are drawn from two ingredients that come from different places:</p>
+<ul>
+<li><strong>the study rows</strong> — raw per-study odds ratios with Wald 95% CIs, computed here directly from the extracted event counts in <code>data/analytic/</code>, with a 0·5 continuity correction applied only to studies with a zero cell;</li>
+<li><strong>the pooled row</strong> — the Bayesian random-effects posterior (model M1), taken from the exported summaries in <code>data/models/Table2_setB.csv</code>.</li>
+</ul>
+<p>The study rows are <em>not</em> per-study Bayesian estimates. M1 has a single shared treatment effect with a random intercept for study-level baseline risk only, so individual studies have no treatment-effect posterior of their own.</p>
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>here <span class="ot">&lt;-</span> <span class="cf">function</span>(...) <span class="fu">file.path</span>(<span class="cf">if</span> (<span class="fu">basename</span>(<span class="fu">getwd</span>()) <span class="sc">==</span> <span class="st">"notebooks"</span>) <span class="st">".."</span> <span class="cf">else</span> <span class="st">"."</span>, ...)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>studies <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"studies.csv"</span>), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(study_id, first_author, pub_year)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>pooled  <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"models"</span>, <span class="st">"Table2_setB.csv"</span>), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co"># ── Lancet Haematology palette ──</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># lancet_red is sampled from the journal's own PDF; the greys are the neutrals</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># it sets rules and secondary text in.</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>lancet_red  <span class="ot">&lt;-</span> <span class="st">"#b20d35"</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>lancet_dark <span class="ot">&lt;-</span> <span class="st">"#2d2d2d"</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>lancet_grey <span class="ot">&lt;-</span> <span class="st">"#8c8c8c"</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="co"># The journal draws forest plots on a clean white field: no grid, a single</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="co"># baseline rule, titles in the sans face, everything else out of the way.</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>theme_forest <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">base_size =</span> <span class="dv">10</span>) {</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> base_size) <span class="sc">+</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">panel.grid        =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>          <span class="at">axis.line.x  =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> lancet_dark, <span class="at">linewidth =</span> .<span class="dv">4</span>),</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>          <span class="at">axis.ticks.x =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> lancet_dark, <span class="at">linewidth =</span> .<span class="dv">3</span>),</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>          <span class="at">axis.ticks.length.x =</span> <span class="fu">unit</span>(<span class="fl">2.5</span>, <span class="st">"pt"</span>),</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>          <span class="at">axis.text    =</span> <span class="fu">element_text</span>(<span class="at">colour =</span> lancet_dark),</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>          <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">colour =</span> lancet_dark, <span class="at">size =</span> <span class="fu">rel</span>(.<span class="dv">9</span>),</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">t =</span> <span class="dv">6</span>)),</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>          <span class="at">plot.title    =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">colour =</span> lancet_dark,</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">size =</span> <span class="fu">rel</span>(<span class="fl">1.05</span>)),</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>          <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">colour =</span> lancet_grey, <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">size =</span> <span class="fu">rel</span>(.<span class="dv">85</span>)),</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>          <span class="at">plot.caption  =</span> <span class="fu">element_text</span>(<span class="at">colour =</span> lancet_grey, <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">size =</span> <span class="fu">rel</span>(.<span class="dv">75</span>)),</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>          <span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>          <span class="at">plot.caption.position =</span> <span class="st">"plot"</span>,</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>          <span class="at">plot.background  =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">colour =</span> <span class="cn">NA</span>),</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>          <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">colour =</span> <span class="cn">NA</span>))</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div></div>
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Wald log-OR and CI from a 2x2 table, with 0.5 added only where a cell is zero.</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>study_or <span class="ot">&lt;-</span> <span class="cf">function</span>(d) {</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  d <span class="sc">|&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">zero =</span> ptcy_e <span class="sc">==</span> <span class="dv">0</span> <span class="sc">|</span> comp_e <span class="sc">==</span> <span class="dv">0</span> <span class="sc">|</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                  ptcy_e <span class="sc">==</span> ptcy_n <span class="sc">|</span> comp_e <span class="sc">==</span> comp_n,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>           <span class="at">a =</span> ptcy_e <span class="sc">+</span> <span class="fl">0.5</span> <span class="sc">*</span> zero, <span class="at">b =</span> ptcy_n <span class="sc">-</span> ptcy_e <span class="sc">+</span> <span class="fl">0.5</span> <span class="sc">*</span> zero,</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>           <span class="at">c =</span> comp_e <span class="sc">+</span> <span class="fl">0.5</span> <span class="sc">*</span> zero, <span class="at">d2 =</span> comp_n <span class="sc">-</span> comp_e <span class="sc">+</span> <span class="fl">0.5</span> <span class="sc">*</span> zero,</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>           <span class="at">yi =</span> <span class="fu">log</span>((a <span class="sc">/</span> b) <span class="sc">/</span> (c <span class="sc">/</span> d2)),</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>           <span class="at">sei =</span> <span class="fu">sqrt</span>(<span class="dv">1</span><span class="sc">/</span>a <span class="sc">+</span> <span class="dv">1</span><span class="sc">/</span>b <span class="sc">+</span> <span class="dv">1</span><span class="sc">/</span>c <span class="sc">+</span> <span class="dv">1</span><span class="sc">/</span>d2),</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>           <span class="at">or =</span> <span class="fu">exp</span>(yi), <span class="at">lo =</span> <span class="fu">exp</span>(yi <span class="sc">-</span> <span class="fl">1.96</span> <span class="sc">*</span> sei), <span class="at">hi =</span> <span class="fu">exp</span>(yi <span class="sc">+</span> <span class="fl">1.96</span> <span class="sc">*</span> sei)) <span class="sc">|&gt;</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="fu">is.finite</span>(or), <span class="fu">is.finite</span>(lo), <span class="fu">is.finite</span>(hi))</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co"># The adopted analysis is Set B: one publication per cohort per outcome. Only the</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co"># outcomes affected by deduplication were refitted, so data/models/ is a partial overlay</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co"># -- prefer the Set B dataset for a slug, and fall back to the full analytic dataset for</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="co"># the outcomes deduplication left untouched.</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>resolve_data <span class="ot">&lt;-</span> <span class="cf">function</span>(analytic_file, slug) {</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>  setb <span class="ot">&lt;-</span> <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"models"</span>, <span class="fu">paste0</span>(<span class="st">"data_"</span>, slug, <span class="st">".csv"</span>))</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">file.exists</span>(setb)) <span class="fu">return</span>(setb)</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"analytic"</span>, analytic_file)</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>forest <span class="ot">&lt;-</span> <span class="cf">function</span>(analytic_file, slug, title, <span class="at">subtitle =</span> <span class="cn">NULL</span>) {</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  f <span class="ot">&lt;-</span> <span class="fu">resolve_data</span>(analytic_file, slug)</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">file.exists</span>(f)) { <span class="fu">message</span>(<span class="st">"missing: "</span>, analytic_file); <span class="fu">return</span>(<span class="fu">invisible</span>(<span class="cn">NULL</span>)) }</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">"  "</span>, slug, <span class="st">" &lt;- "</span>, <span class="fu">sub</span>(<span class="st">"^.*/"</span>, <span class="st">""</span>, f))</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>  es <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(f, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">study_or</span>() <span class="sc">|&gt;</span></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">left_join</span>(studies, <span class="at">by =</span> <span class="st">"study_id"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">slab =</span> <span class="fu">sprintf</span>(<span class="st">"%s (%s)"</span>, first_author, pub_year))</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>  <span class="co"># multi-arm studies contribute more than one row: keep the labels distinct</span></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>  es<span class="sc">$</span>slab <span class="ot">&lt;-</span> <span class="fu">make.unique</span>(es<span class="sc">$</span>slab, <span class="at">sep =</span> <span class="st">" – "</span>)</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>  es <span class="ot">&lt;-</span> es <span class="sc">|&gt;</span> <span class="fu">arrange</span>(yi) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">slab =</span> <span class="fu">factor</span>(slab, <span class="at">levels =</span> slab))</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> pooled <span class="sc">|&gt;</span> <span class="fu">filter</span>(slug <span class="sc">==</span> <span class="sc">!!</span>slug, model <span class="sc">==</span> <span class="st">"m1"</span>)</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stopifnot</span>(<span class="fu">nrow</span>(p) <span class="sc">==</span> <span class="dv">1</span>)</span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>  pd <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(</span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>    es <span class="sc">|&gt;</span> <span class="fu">transmute</span>(<span class="at">slab =</span> <span class="fu">as.character</span>(slab), or, lo, hi, <span class="at">pooled =</span> <span class="cn">FALSE</span>),</span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tibble</span>(<span class="at">slab =</span> <span class="st">"Bayesian pooled (M1)"</span>, <span class="at">or =</span> p<span class="sc">$</span>or_median,</span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>           <span class="at">lo =</span> p<span class="sc">$</span>ci_low, <span class="at">hi =</span> p<span class="sc">$</span>ci_high, <span class="at">pooled =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>  pd<span class="sc">$</span>slab <span class="ot">&lt;-</span> <span class="fu">factor</span>(pd<span class="sc">$</span>slab, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Bayesian pooled (M1)"</span>, <span class="fu">levels</span>(es<span class="sc">$</span>slab)))</span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(pd, <span class="fu">aes</span>(or, slab)) <span class="sc">+</span></span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">1</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>,</span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>               <span class="at">colour =</span> lancet_grey, <span class="at">linewidth =</span> .<span class="dv">35</span>) <span class="sc">+</span></span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a>    <span class="co"># study rows: crimson squares, the journal's forest-plot marker</span></span>
+<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_pointrange</span>(<span class="at">data =</span> <span class="fu">filter</span>(pd, <span class="sc">!</span>pooled), <span class="fu">aes</span>(<span class="at">xmin =</span> lo, <span class="at">xmax =</span> hi),</span>
+<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a>                    <span class="at">shape =</span> <span class="dv">15</span>, <span class="at">size =</span> .<span class="dv">3</span>, <span class="at">linewidth =</span> .<span class="dv">4</span>, <span class="at">colour =</span> lancet_red) <span class="sc">+</span></span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a>    <span class="co"># pooled row: a filled diamond, larger and in the same crimson</span></span>
+<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_pointrange</span>(<span class="at">data =</span> <span class="fu">filter</span>(pd, pooled), <span class="fu">aes</span>(<span class="at">xmin =</span> lo, <span class="at">xmax =</span> hi),</span>
+<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a>                    <span class="at">shape =</span> <span class="dv">18</span>, <span class="at">size =</span> .<span class="dv">95</span>, <span class="at">linewidth =</span> .<span class="dv">8</span>, <span class="at">colour =</span> lancet_red) <span class="sc">+</span></span>
+<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Odds ratio (log scale)"</span>, <span class="at">y =</span> <span class="cn">NULL</span>, <span class="at">title =</span> title,</span>
+<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>         <span class="at">subtitle =</span> subtitle <span class="sc">%||%</span> <span class="fu">sprintf</span>(<span class="st">"k = %d, N = %s, τ = %.2f"</span>,</span>
+<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a>                                          p<span class="sc">$</span>k, <span class="fu">format</span>(p<span class="sc">$</span>n_total, <span class="at">big.mark =</span> <span class="st">" "</span>), p<span class="sc">$</span>tau),</span>
+<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a>         <span class="at">caption =</span> <span class="st">"Study rows: raw per-study OR with Wald 95% CI. Diamond: Bayesian posterior median with 95% CrI."</span>) <span class="sc">+</span></span>
+<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_forest</span>() <span class="sc">+</span></span>
+<span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">axis.text.y =</span> <span class="fu">element_text</span>(</span>
+<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a>      <span class="at">face =</span> <span class="fu">ifelse</span>(<span class="fu">levels</span>(pd<span class="sc">$</span>slab) <span class="sc">==</span> <span class="st">"Bayesian pooled (M1)"</span>, <span class="st">"bold"</span>, <span class="st">"plain"</span>),</span>
+<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a>      <span class="at">size =</span> <span class="fu">rel</span>(.<span class="dv">85</span>)))</span>
+<span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a><span class="st">`</span><span class="at">%||%</span><span class="st">`</span> <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) <span class="cf">if</span> (<span class="fu">is.null</span>(a)) b <span class="cf">else</span> a</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div></div>
+<section id="figure-2-overall-survival-comparison-1" class="level2">
+<h2 class="anchored" data-anchor-id="figure-2-overall-survival-comparison-1">Figure 2 — overall survival (comparison 1)</h2>
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="cell-fig-os" class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">forest</span>(<span class="st">"C1_overall_mortality_OS_event.csv"</span>, <span class="st">"c1_os"</span>,</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>       <span class="st">"Overall survival — PTCy vs CNI + MTX/MMF"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>  c1_os &lt;- data_c1_os.csv</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Vectorized input to `element_text()` is not officially supported.
+ℹ Results may be unexpected or may change in future versions of ggplot2.</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-os" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-os-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="forest-plots_files/figure-html/fig-os-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Forest plot for overall survival, comparison 1 (PTCy vs CNI + MTX/MMF)."><img src="forest-plots_files/figure-html/fig-os-1.png" class="img-fluid figure-img" width="2400"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-os-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Forest plot for overall survival, comparison 1 (PTCy vs CNI + MTX/MMF).
+</figcaption>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+<section id="figure-3-cmv-reactivation" class="level2">
+<h2 class="anchored" data-anchor-id="figure-3-cmv-reactivation">Figure 3 — CMV reactivation</h2>
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="cell-fig-cmv-c1" class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">forest</span>(<span class="st">"C1_CMV_any_reactivation.csv"</span>, <span class="st">"c1_cmv"</span>,</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>       <span class="st">"CMV reactivation — PTCy vs CNI + MTX/MMF"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>  c1_cmv &lt;- C1_CMV_any_reactivation.csv</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Vectorized input to `element_text()` is not officially supported.
+ℹ Results may be unexpected or may change in future versions of ggplot2.</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-cmv-c1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cmv-c1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="forest-plots_files/figure-html/fig-cmv-c1-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="CMV any-reactivation, comparison 1 (PTCy vs CNI + MTX/MMF)."><img src="forest-plots_files/figure-html/fig-cmv-c1-1.png" class="img-fluid figure-img" width="2400"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cmv-c1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+CMV any-reactivation, comparison 1 (PTCy vs CNI + MTX/MMF).
+</figcaption>
+</figure>
+</div>
+</div>
+</div></div>
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="cell-fig-cmv-c2" class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">forest</span>(<span class="st">"C2_CMV_any_reactivation.csv"</span>, <span class="st">"c2_cmv"</span>,</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>       <span class="st">"CMV reactivation — PTCy vs ATG"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>  c2_cmv &lt;- data_c2_cmv.csv</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Vectorized input to `element_text()` is not officially supported.
+ℹ Results may be unexpected or may change in future versions of ggplot2.</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-cmv-c2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cmv-c2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="forest-plots_files/figure-html/fig-cmv-c2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="CMV any-reactivation, comparison 2 (PTCy vs ATG). The direction reverses relative to comparison 1."><img src="forest-plots_files/figure-html/fig-cmv-c2-1.png" class="img-fluid figure-img" width="2400"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cmv-c2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+CMV any-reactivation, comparison 2 (PTCy vs ATG). The direction reverses relative to comparison 1.
+</figcaption>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+<section id="figure-4-bacterial-fungal-and-bk-viral-infection" class="level2">
+<h2 class="anchored" data-anchor-id="figure-4-bacterial-fungal-and-bk-viral-infection">Figure 4 — bacterial, fungal, and BK viral infection</h2>
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="cell-fig-bsi" class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">forest</span>(<span class="st">"C1_BSI_any_pathogen.csv"</span>, <span class="st">"c1_bsi"</span>,</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>       <span class="st">"Bloodstream infection, any pathogen — PTCy vs CNI + MTX/MMF"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>  c1_bsi &lt;- C1_BSI_any_pathogen.csv</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Vectorized input to `element_text()` is not officially supported.
+ℹ Results may be unexpected or may change in future versions of ggplot2.</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-bsi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bsi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="forest-plots_files/figure-html/fig-bsi-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Bloodstream infection, any pathogen (comparison 1)."><img src="forest-plots_files/figure-html/fig-bsi-1.png" class="img-fluid figure-img" width="2400"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bsi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Bloodstream infection, any pathogen (comparison 1).
+</figcaption>
+</figure>
+</div>
+</div>
+</div></div>
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="cell-fig-ifi" class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">forest</span>(<span class="st">"C1_IFI_any_EORTC_MSG_proven_probable_combined.csv"</span>, <span class="st">"c1_ifi_any"</span>,</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>       <span class="st">"Invasive fungal infection, any — PTCy vs CNI + MTX/MMF"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>  c1_ifi_any &lt;- C1_IFI_any_EORTC_MSG_proven_probable_combined.csv</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Vectorized input to `element_text()` is not officially supported.
+ℹ Results may be unexpected or may change in future versions of ggplot2.</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-ifi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ifi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="forest-plots_files/figure-html/fig-ifi-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Invasive fungal infection, any (comparison 1). Note the very large τ."><img src="forest-plots_files/figure-html/fig-ifi-1.png" class="img-fluid figure-img" width="2400"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ifi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Invasive fungal infection, any (comparison 1). Note the very large τ.
+</figcaption>
+</figure>
+</div>
+</div>
+</div></div>
+<p>Panel C of figure 4 in the article is BK virus reactivation. The BK analytic dataset was not part of the <code>02_extraction/analytic/</code> export in the analysis repository, so it is not reproduced here — the pooled estimate is still carried in table 2 (<code>c1_bk</code>, k = 11, OR 2·48 [1·82–3·38]). To add the panel, export the BK pairs from <code>outcomes.csv</code> into <code>data/analytic/C1_BK_virus_reactivation.csv</code> with the same columns as the other files and call <code>forest()</code> on it.</p>
+</section>
+<section id="acute-gvhd-grade-iiiv" class="level2">
+<h2 class="anchored" data-anchor-id="acute-gvhd-grade-iiiv">Acute GVHD grade II–IV</h2>
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="cell-fig-agvhd" class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">forest</span>(<span class="st">"C1_aGVHD_grade_II_IV.csv"</span>, <span class="st">"c1_agvhd"</span>,</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>       <span class="st">"Acute GVHD grade II–IV — PTCy vs CNI + MTX/MMF"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>  c1_agvhd &lt;- C1_aGVHD_grade_II_IV.csv</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Vectorized input to `element_text()` is not officially supported.
+ℹ Results may be unexpected or may change in future versions of ggplot2.</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-agvhd" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-agvhd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
+<a href="forest-plots_files/figure-html/fig-agvhd-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Acute GVHD grade II–IV (comparison 1)."><img src="forest-plots_files/figure-html/fig-agvhd-1.png" class="img-fluid figure-img" width="2400"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-agvhd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Acute GVHD grade II–IV (comparison 1).
+</figcaption>
+</figure>
+</div>
+</div>
+</div></div>
+</section>
+<section id="exporting-the-article-figures" class="level2">
+<h2 class="anchored" data-anchor-id="exporting-the-article-figures">Exporting the article figures</h2>
+<p>Two of the article’s figures changed when the manuscript moved to Set B: overall survival (comparison 1) and the comparison 2 panel of the CMV figure. Both are exported here in all three renditions so that <code>index.qmd</code> picks up the right one per output format, and so that the figures cannot disagree with table 2.</p>
+<p>The remaining article figures — the comparison 1 CMV panel, and the whole of figure 4 (BSI, IFI, BK) — were unaffected by deduplication, so the originals from the analysis repository are kept.</p>
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [9]:</pre></div><div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>export <span class="ot">&lt;-</span> <span class="cf">function</span>(plot, stem, <span class="at">w =</span> <span class="dv">7</span>, <span class="at">h =</span> <span class="dv">9</span>) {</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (dev <span class="cf">in</span> <span class="fu">c</span>(<span class="st">"png"</span>, <span class="st">"pdf"</span>, <span class="st">"svg"</span>)) {</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggsave</span>(<span class="fu">here</span>(<span class="st">"figures"</span>, <span class="fu">paste0</span>(stem, <span class="st">"."</span>, dev)), plot,</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">width =</span> w, <span class="at">height =</span> h, <span class="at">dpi =</span> <span class="dv">300</span>,</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>           <span class="at">device =</span> dev, <span class="at">bg =</span> <span class="st">"white"</span>)</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">invisible</span>(stem)</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="fu">export</span>(<span class="fu">forest</span>(<span class="st">"C1_overall_mortality_OS_event.csv"</span>, <span class="st">"c1_os"</span>,</span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Overall survival — PTCy vs CNI + MTX/MMF"</span>),</span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>       <span class="st">"Figure2_OS_forest_setB"</span>, <span class="at">w =</span> <span class="dv">7</span>, <span class="at">h =</span> <span class="dv">9</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>  c1_os &lt;- data_c1_os.csv</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Vectorized input to `element_text()` is not officially supported.
+ℹ Results may be unexpected or may change in future versions of ggplot2.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+for 'Wu L (2025) – 1' in 'mbcsToSbcs': - substituted for – (U+2013)</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+conversion failure on 'k = 35, N = 10 133, τ = 0.66' in 'mbcsToSbcs': for τ
+(U+03C4)</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+for 'Overall survival — PTCy vs CNI + MTX/MMF' in 'mbcsToSbcs': - substituted
+for — (U+2014)</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">export</span>(<span class="fu">forest</span>(<span class="st">"C2_CMV_any_reactivation.csv"</span>, <span class="st">"c2_cmv"</span>,</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>              <span class="st">"CMV reactivation — PTCy vs ATG"</span>),</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>       <span class="st">"Figure3b_CMV_C2_forest_setB"</span>, <span class="at">w =</span> <span class="dv">7</span>, <span class="at">h =</span> <span class="fl">4.5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>  c2_cmv &lt;- data_c2_cmv.csv</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Vectorized input to `element_text()` is not officially supported.
+ℹ Results may be unexpected or may change in future versions of ggplot2.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+conversion failure on 'k = 12, N = 1 511, τ = 0.63' in 'mbcsToSbcs': for τ
+(U+03C4)</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+for 'CMV reactivation — PTCy vs ATG' in 'mbcsToSbcs': - substituted for —
+(U+2014)</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Panel A of the CMV figure is unchanged by deduplication, but the repository ships it</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="co"># baked into the same two-panel image as panel B, so it is redrawn here to keep both</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="co"># panels on one source and one visual style.</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="fu">export</span>(<span class="fu">forest</span>(<span class="st">"C1_CMV_any_reactivation.csv"</span>, <span class="st">"c1_cmv"</span>,</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>              <span class="st">"CMV reactivation — PTCy vs CNI + MTX/MMF"</span>),</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>       <span class="st">"Figure3a_CMV_C1_forest_setB"</span>, <span class="at">w =</span> <span class="dv">7</span>, <span class="at">h =</span> <span class="fl">6.5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>  c1_cmv &lt;- C1_CMV_any_reactivation.csv</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Vectorized input to `element_text()` is not officially supported.
+ℹ Results may be unexpected or may change in future versions of ggplot2.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+conversion failure on 'k = 22, N = 3 328, τ = 0.73' in 'mbcsToSbcs': for τ
+(U+03C4)</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+for 'CMV reactivation — PTCy vs CNI + MTX/MMF' in 'mbcsToSbcs': - substituted
+for — (U+2014)</code></pre>
+</div>
+</div></div>
+</section>
+<section id="available-analytic-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="available-analytic-datasets">Available analytic datasets</h2>
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [10]:</pre></div><div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">file =</span> <span class="fu">list.files</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"analytic"</span>), <span class="at">pattern =</span> <span class="st">"[.]csv$"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_starts</span>(file, <span class="st">"_"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">|&gt;</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">k =</span> <span class="fu">nrow</span>(<span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"analytic"</span>, file), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-container"><div class="cell-decorator"><pre>In [11]:</pre></div><div id="tbl-analytic" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-analytic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+<div aria-describedby="tbl-analytic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">file</th>
+<th style="text-align: right;">k</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">C1_aGVHD_grade_II_IV.csv</td>
+<td style="text-align: right;">102</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C1_aGVHD_grade_III_IV.csv</td>
+<td style="text-align: right;">84</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C1_BSI_any_pathogen.csv</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C1_cGVHD_moderate_severe_NIH.csv</td>
+<td style="text-align: right;">56</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C1_CMV_any_reactivation.csv</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C1_IFI_any_EORTC_MSG_proven_probable_combined.csv</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C1_IFI_mold_EORTC_MSG_proven_probable.csv</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C1_infection_related_mortality_IRM_any_cause_infectious.csv</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C1_NRM_NRM_overall.csv</td>
+<td style="text-align: right;">55</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C1_overall_mortality_OS_event.csv</td>
+<td style="text-align: right;">108</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C2_aGVHD_grade_II_IV.csv</td>
+<td style="text-align: right;">43</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C2_aGVHD_grade_III_IV.csv</td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C2_BSI_any_pathogen.csv</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C2_cGVHD_moderate_severe_NIH.csv</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C2_CMV_any_reactivation.csv</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C2_IFI_any_EORTC_MSG_proven_probable_combined.csv</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C2_IFI_mold_EORTC_MSG_proven_probable.csv</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C2_infection_related_mortality_IRM_any_cause_infectious.csv</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C2_NRM_NRM_overall.csv</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C2_overall_mortality_OS_event.csv</td>
+<td style="text-align: right;">44</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C3_aGVHD_grade_II_IV.csv</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C3_aGVHD_grade_III_IV.csv</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C3_BSI_any_pathogen.csv</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C3_cGVHD_moderate_severe_NIH.csv</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C3_CMV_any_reactivation.csv</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C3_IFI_any_EORTC_MSG_proven_probable_combined.csv</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C3_IFI_mold_EORTC_MSG_proven_probable.csv</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C3_infection_related_mortality_IRM_any_cause_infectious.csv</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C3_NRM_NRM_overall.csv</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C3_overall_mortality_OS_event.csv</td>
+<td style="text-align: right;">17</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div></div>
+</div></div>
+</section>
+     </main>
+<!-- /main column -->  <script>
+// The "Other Formats" links are plain <a href="index.pdf">. Chrome follows them into
+// its built-in PDF viewer, whose URL is chrome-extension://mhjfbmdg.../index.html --
+// an internal scheme no other application can open. If anything then hands that URL
+// off to the system (an --app= window, an external-protocol prompt), the receiving
+// browser reports "The address wasn't understood".
+//
+// Marking these links as downloads sidesteps the viewer entirely: the file is saved,
+// and the user opens it in whatever PDF reader they actually want.
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('a[href$=".pdf"], a[href$=".docx"]').forEach(function (a) {
+    var href = a.getAttribute("href");
+    if (/^[a-z]+:/i.test(href)) return;          // leave absolute/external links alone
+    a.setAttribute("download", href.split("/").pop());
+    a.setAttribute("title", "Download " + href.split("/").pop());
+  });
+});
+</script>  <script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script> 
+  
+</body></html>
