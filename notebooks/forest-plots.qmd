@@ -24,9 +24,10 @@ places:
 - **the pooled row** — the Bayesian random-effects posterior (model M1), taken from the
   exported summaries in `data/models/Table2_setB.csv`.
 
-The study rows are *not* per-study Bayesian estimates. M1 has a single shared treatment
-effect with a random intercept for study-level baseline risk only, so individual studies
-have no treatment-effect posterior of their own.
+The study rows are *not* per-study Bayesian estimates. M1 carries a random study
+intercept and a random PTCy-effect slope, so each study does have a (shrunken)
+study-specific effect posterior; the rows shown here are deliberately the raw,
+unshrunken per-study estimates, with pooling left to the Bayesian diamond.
 
 ```{r}
 #| label: setup

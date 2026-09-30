@@ -76,8 +76,8 @@
 <polygon points='332.59,100.68 336.44,100.68 336.44,96.83 332.59,96.83 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 <polygon points='366.21,82.29 370.05,82.29 370.05,78.44 366.21,78.44 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 <polygon points='436.10,63.90 439.95,63.90 439.95,60.05 436.10,60.05 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<line x1='304.82' y1='43.59' x2='328.15' y2='43.59' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
-<polygon points='311.87,43.59 316.57,38.89 321.27,43.59 316.57,48.29 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<line x1='291.66' y1='43.59' x2='336.91' y2='43.59' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
+<polygon points='309.86,43.59 314.56,38.89 319.26,43.59 314.56,48.29 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 </g>
 <g clip-path='url(#cpMC4wMHw1MDQuMDB8MC4wMHw0NjguMDA=)'>
 <text x='79.45' y='413.79' text-anchor='end' style='font-size: 6.80px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='60.84px' lengthAdjust='spacingAndGlyphs'>Camargo JF (2021)</text>
@@ -109,7 +109,7 @@
 <text x='299.46' y='435.10' text-anchor='middle' style='font-size: 8.00px;fill: #2D2D2D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>1.0</text>
 <text x='471.19' y='435.10' text-anchor='middle' style='font-size: 8.00px;fill: #2D2D2D; font-family: "Arial";' textLength='15.58px' lengthAdjust='spacingAndGlyphs'>10.0</text>
 <text x='291.48' y='449.20' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
-<text x='4.98' y='25.78' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='99.58px' lengthAdjust='spacingAndGlyphs'>k = 22, N = 3 328, τ = 0.73</text>
+<text x='4.98' y='25.78' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='99.58px' lengthAdjust='spacingAndGlyphs'>k = 22, N = 3 328, τ = 0.53</text>
 <text x='4.98' y='12.50' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='224.95px' lengthAdjust='spacingAndGlyphs'>CMV reactivation — PTCy vs CNI + MTX/MMF</text>
 <text x='4.98' y='461.44' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='334.83px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI. Diamond: Bayesian posterior median with 95% CrI.</text>
 </g>

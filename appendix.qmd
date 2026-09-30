@@ -156,22 +156,23 @@ Full justification narratives are available in `rob.csv`, submitted as a supplem
 
 Primary model (M1), for study $s$, arm $i$:
 
-$$\text{events}_i \mid n_i \sim \text{Binomial}\!\left(n_i,\ \text{logit}^{-1}\!\left(\alpha + \beta_{\text{PTCy}} x_i + \beta_{\text{tp}} t_i + u_{s[i]}\right)\right),
-\qquad u_s \sim \mathcal{N}(0, \tau^2)$$
+$$\text{events}_i \mid n_i \sim \text{Binomial}\!\left(n_i,\ \text{logit}^{-1}\!\left(\alpha + \big(\beta_{\text{PTCy}} + v_{s[i]}\big)\, x_i + \beta_{\text{tp}}\, t_i + u_{s[i]}\right)\right),
+\qquad (u_s, v_s) \sim \mathcal{N}_2(\mathbf{0}, \boldsymbol{\Sigma})$$
 
-where $x_i$ indicates a PTCy arm and $t_i$ indicates a late (≥1 year) rather than early (day +100 or +180) timepoint.
+where $x_i$ indicates a PTCy arm and $t_i$ indicates a late (≥1 year) rather than early (day +100 or +180) timepoint. Each study contributes a random intercept $u_s$ (baseline-risk variation) and a random PTCy-effect slope $v_s$, so the pooled coefficient $\beta_{\text{PTCy}}$ estimates the average study-level treatment effect and the between-study SD of $v_s$ (reported as τ) quantifies heterogeneity in the PTCy effect. With two arms per study the model is just-identified at study level, so for sparse outcomes (k ≤ 6) the prior on the SD parameters is correspondingly influential.
 
 | Parameter            | Prior                    |
 |:---------------------|:-------------------------|
 | Fixed effects (β)    | N(0, 2·5)                |
 | Intercept (α)        | N(0, 1·5)                |
-| Between-study SD (τ) | Student t(3, 0, 1), half |
+| Between-study SDs (τ) | Student t(3, 0, 1), half |
+| Intercept–slope correlation | LKJ(1)          |
 
 : Prior specification for the primary model.
 
-The steroid-mediation model (M2) adds arm-level systemic steroid exposure percentage, mean-centred, as an additional fixed effect.
+The steroid-mediation model (M2) adds arm-level systemic steroid exposure percentage, mean-centred, as an additional fixed effect, and is fitted on the complete-case subset of studies reporting steroid exposure.
 
-MCMC: four chains × 4000 iterations (1000 warmup), `adapt_delta` = 0·95, giving 12 000 post-warmup draws per model.
+MCMC: four chains × 4000 iterations (1000 warmup), `adapt_delta` = 0·95 (increased to 0·99 where divergent transitions occurred), giving 12 000 post-warmup draws per model.
 
 {{< pagebreak >}}
 
@@ -181,46 +182,45 @@ All Bayesian models were fitted with `brms` v2.23.0 and the `rstan` backend. R̂
 
 | Model    |  Max R̂ | Min bulk ESS | Min tail ESS | Divergences |
 |:---------|-------:|-------------:|-------------:|------------:|
-| OS M1    | 1·0037 |         1729 |         2962 |           0 |
-| OS M2    | 1·0022 |         2645 |         4217 |           0 |
-| NRM M1   | 1·0017 |         4176 |         5261 |           0 |
-| NRM M2   | 1·0017 |         3061 |         4066 |           0 |
-| aGVHD M1 | 1·0012 |         2178 |         3317 |           0 |
-| CMV M1   | 1·0011 |         2814 |         4158 |           0 |
-| CMV M2   | 1·0008 |         3323 |         4990 |           0 |
-| BSI M1   | 1·0011 |         3643 |         5034 |           0 |
-| IFI M1   | 1·0021 |         2795 |         4074 |           0 |
-| RRM M1   | 1·0011 |         3161 |         3767 |           0 |
-| BK M1    | 1·0013 |         3099 |         4143 |           0 |
-| IRM M1   | 1·0010 |         2965 |         4257 |           0 |
+| OS M1    | 1·0013 |         3607 |         5273 |           0 |
+| OS M2    | 1·0010 |         3307 |         4822 |           0 |
+| NRM M1   | 1·0012 |         2757 |         3478 |           0 |
+| NRM M2   | 1·0019 |         3368 |         3145 |           0 |
+| aGVHD M1 | 1·0010 |         2513 |         4276 |           0 |
+| CMV M1   | 1·0026 |         3515 |         5340 |           0 |
+| CMV M2   | 1·0010 |         3162 |         3174 |           0 |
+| BSI M1   | 1·0006 |         3836 |         3961 |           0 |
+| IFI M1   | 1·0020 |         3419 |         4593 |           0 |
+| RRM M1   | 1·0005 |         3486 |         5143 |           0 |
+| BK M1    | 1·0009 |         4015 |         4638 |           0 |
+| IRM M1   | 1·0024 |         3703 |         4281 |           0 |
 
 : MCMC convergence diagnostics, comparison 1 models.
 
 | Model    |  Max R̂ | Min bulk ESS | Min tail ESS | Divergences |
 |:---------|-------:|-------------:|-------------:|------------:|
-| OS M1    | 1·0030 |         3185 |         4841 |           0 |
-| OS M2    | 1·0011 |         3714 |         5136 |           0 |
-| NRM M1   | 1·0035 |         2876 |         2293 |           0 |
-| aGVHD M1 | 1·0010 |         3191 |         4855 |           0 |
-| CMV M1   | 1·0020 |         3436 |         5356 |           0 |
-| CMV M2   | 1·0007 |         3321 |         5570 |           0 |
-| RRM M1   | 1·0002 |         3225 |         4933 |           0 |
-| BK M1    | 1·0592 |           67 |           17 |           0 |
+| OS M1    | 1·0014 |         4373 |         5330 |           0 |
+| OS M2    | 1·0013 |         4091 |         5634 |           0 |
+| NRM M1   | 1·0015 |         4072 |         3913 |           0 |
+| aGVHD M1 | 1·0015 |         5200 |         6650 |           0 |
+| CMV M1   | 1·0006 |         4465 |         6041 |           0 |
+| CMV M2   | 1·0011 |         3605 |         4939 |           0 |
+| RRM M1   | 1·0013 |         1744 |         3186 |           0 |
+| BK M1    | 1·0010 |         3789 |         3323 |           0 |
 
 : MCMC convergence diagnostics, comparison 2 models.
 
-All models except C2 BK achieved R̂ \< 1·01 with zero divergent transitions and bulk ESS above 1000. The C2 BK model (k = 3) did not converge to that standard (R̂ = 1·0592, bulk ESS 67, tail ESS 17) and its posterior should be read as indicative only.
+All models achieved R̂ \< 1·01 with zero divergent transitions and bulk ESS above 1700. The C2 BK model (k = 3) meets the same convergence standard under the random-slope specification, but with three studies its posterior remains heavily prior-influenced and should be read as indicative only.
 
 ```{=html}
-<!-- TODO: the source document asserted "All models achieved R̂ ≤ 1.005" and "minimum
-     bulk ESS exceeds 1,000 across all models", which the C2 BK row contradicts.
-     The text above states what the table shows; confirm before submission, and
-     decide whether to report or drop the C2 BK estimate. -->
+<!-- RESOLVED 2026-09-30: under the random-slope specification the C2 BK model
+     converges (R̂ 1·0010, bulk ESS 3789); the estimate is retained with a
+     prior-influence caveat given k = 3. -->
 ```
 
-![Trace plots for `b_ptcy_binary` (top) and `sd_study_id__Intercept` (τ, bottom) in OS M1 (left) and CMV M1 (right). All four chains mix well across the full post-warmup phase.](figures/FigureS7b_trace_plots){#fig-s7b}
+![Trace plots for `b_ptcy_binary` (top) and the between-study SD of the PTCy effect (τ, bottom) in OS M1 (left) and CMV M1 (right). All four chains mix well across the full post-warmup phase.](figures/FigureS7b_trace_plots){#fig-s7b}
 
-![Posterior densities of τ (between-study SD) for comparison 1 M1 models. The half-Student t(3, 0, 1) prior common to all models is shown in grey. IFI shows the widest τ posterior, consistent with the structural heterogeneity identified in the leave-one-out analysis (S9).](figures/FigureS7c_tau_posteriors){#fig-s7c}
+![Posterior densities of the between-study SD of the PTCy effect (τ) for comparison 1 M1 models. The half-Student t(3, 0, 1) prior common to all models is shown in grey. IFI shows the widest τ posterior, consistent with the structural heterogeneity identified in the leave-one-out analysis (S9).](figures/FigureS7c_tau_posteriors){#fig-s7c}
 
 ![Posterior predictive checks, comparison 1. Each point is one study arm: the observed event proportion against its posterior predictive mean, over 500 posterior draws. The dashed line is the identity.](figures/FigureS7d_i_ppc_C1){#fig-s7d-i}
 
@@ -264,7 +264,7 @@ Individual study odds ratios with 95% CIs and the pooled frequentist random-effe
 
 ![IFI leave-one-out analysis, comparison 1 (frequentist REML).](figures/FigureS9b_IFI_leave_one_out){#fig-s9b}
 
-Full frequentist results for all models are provided in `freq_results_setB.csv`, a supplementary data file, which carries the deduplicated fits where deduplication applied and the original fits otherwise (see its `source` column). Direction was concordant between Bayesian and frequentist estimates for every outcome. Two framework-specific differences are worth noting: C1 BSI (Bayesian odds ratio 1·87 versus frequentist 1·29 \[0·61–2·73\]) and C1 IFI (0·43 versus 0·60 \[0·21–1·74\]), both reflecting the influence of informative priors at small k.
+Full frequentist results for all models are provided in `freq_results_setB.csv`, a supplementary data file, which carries the deduplicated fits where deduplication applied and the original fits otherwise (see its `source` column). Under the random-slope specification, which — like the frequentist REML models — allows the treatment effect to vary across studies, Bayesian and frequentist estimates were concordant in direction for every outcome and closely matched in magnitude: the two outcomes that diverged most under the earlier common-effect (fixed treatment effect) specification, C1 BSI (Bayesian odds ratio 1·42 \[0·57–2·98\] versus frequentist 1·29 \[0·61–2·73\]) and C1 IFI (0·63 \[0·19–2·62\] versus 0·60 \[0·21–1·74\]), now agree. The pre-specified CMV sensitivity analyses estimated a larger effect in post-2020 studies (k = 17, 1·46 \[1·01–2·05\]) and an elevated but imprecise estimate in haploidentical-dominant cohorts (k = 12, 1·34 \[0·90–1·96\]).
 
 {{< pagebreak >}}
 
