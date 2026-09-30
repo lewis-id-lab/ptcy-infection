@@ -224,9 +224,30 @@ infection_panel <- function(key, data_file, title, panel_tag) {
   dens <- density(draws, n = 512)
   ddf <- tibble(or = dens$x, d = dens$y)
 
+  # Match the main-text forest figures (notebooks/forest-plots.qmd): crimson
+  # markers on a clean white field, Lancet Haematology style
+  lancet_red  <- "#b20d35"
+  lancet_dark <- "#2d2d2d"
+  lancet_grey <- "#8c8c8c"
+  theme_lancet <- function(base_size = 9) {
+    theme_minimal(base_size = base_size) +
+      theme(panel.grid = element_blank(),
+            axis.line.x = element_line(colour = lancet_dark, linewidth = .4),
+            axis.ticks.x = element_line(colour = lancet_dark, linewidth = .3),
+            axis.text = element_text(colour = lancet_dark),
+            axis.title.x = element_text(colour = lancet_dark, size = rel(.9)),
+            plot.title = element_text(face = "bold", colour = lancet_dark,
+                                      hjust = 0, size = rel(1.05)),
+            plot.subtitle = element_text(colour = lancet_grey, hjust = 0,
+                                         size = rel(.85)),
+            plot.title.position = "plot",
+            plot.background = element_rect(fill = "white", colour = NA),
+            panel.background = element_rect(fill = "white", colour = NA))
+  }
+
   p_dens <- ggplot(ddf, aes(or, d)) +
-    geom_area(fill = jama_light_blue, alpha = 0.7) +
-    geom_vline(xintercept = 1, linetype = "dashed", colour = jama_grey,
+    geom_area(fill = lancet_red, alpha = 0.25) +
+    geom_vline(xintercept = 1, linetype = "dashed", colour = lancet_grey,
                linewidth = 0.35) +
     coord_cartesian(xlim = range(c(ddf$or, 1))) +
     labs(title = title, subtitle = sprintf(
@@ -236,9 +257,11 @@ infection_panel <- function(key, data_file, title, panel_tag) {
       pooled$med, pooled$lo, pooled$hi,
       median(as_draws_df(fit)$sd_study_id__ptcy_binary)),
       tag = panel_tag) +
-    theme_jama(base_size = 9) +
-    theme(axis.text = element_blank(), axis.title = element_blank(),
-          axis.line = element_blank(), axis.ticks = element_blank(),
+    theme_lancet() +
+    theme(axis.text.x = element_blank(), axis.title.x = element_blank(),
+          axis.line.x = element_blank(), axis.ticks.x = element_blank(),
+          axis.text.y = element_blank(), axis.title.y = element_blank(),
+          axis.ticks.y = element_blank(),
           plot.tag = element_text(face = "bold", size = 14))
 
   pd <- bind_rows(
@@ -251,15 +274,15 @@ infection_panel <- function(key, data_file, title, panel_tag) {
   pd$slab <- factor(pd$slab, levels = c("Bayesian pooled (M1)", levels(es$slab)))
 
   p_for <- ggplot(pd, aes(or, slab)) +
-    geom_vline(xintercept = 1, linetype = "dashed", colour = jama_grey,
+    geom_vline(xintercept = 1, linetype = "dashed", colour = lancet_grey,
                linewidth = 0.35) +
     geom_pointrange(data = filter(pd, !pooled), aes(xmin = lo, xmax = hi),
-                    shape = 15, size = 0.3, linewidth = 0.4, colour = jama_navy) +
+                    shape = 15, size = 0.3, linewidth = 0.4, colour = lancet_red) +
     geom_pointrange(data = filter(pd, pooled), aes(xmin = lo, xmax = hi),
-                    shape = 18, size = 0.8, linewidth = 0.7, colour = jama_dark) +
+                    shape = 18, size = 0.8, linewidth = 0.7, colour = lancet_red) +
     scale_x_log10() +
     labs(x = "Odds ratio (log scale)", y = NULL) +
-    theme_jama(base_size = 9) +
+    theme_lancet() +
     theme(axis.text.y = element_text(size = rel(0.85)))
 
   p_dens / p_for + plot_layout(heights = c(1, 4))
