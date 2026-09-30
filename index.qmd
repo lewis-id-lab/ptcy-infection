@@ -55,13 +55,13 @@ editor:
 
 **Background.** Post-transplant cyclophosphamide (PTCy) is used for
 graft-versus-host disease (GVHD) prophylaxis after allogeneic
-haematopoietic stem-cell transplantation (allo-HSCT), but its infection
-effects versus longer-established prophylaxis have not been
+haematopoietic stem-cell transplantation (allo-HSCT), but its impact on infection
+risk versus longer-established prophylaxis have not been
 systematically quantified. We evaluated infection outcomes alongside
 survival, relapse and non-relapse mortality, and GVHD.
 
 **Methods.** In this systematic review and Bayesian meta-analysis, we
-searched EMBASE, PubMed, and SCOPUS from inception to April 30, 2026 for
+searched EMBASE, PubMed, and SCOPUS from database inception to April 30, 2026 for
 studies comparing PTCy-based GVHD prophylaxis with alternative regimens
 in adult allo-HSCT recipients. Comparisons were pre-specified: PTCy
 versus calcineurin inhibitor (CNI) plus methotrexate or mycophenolate

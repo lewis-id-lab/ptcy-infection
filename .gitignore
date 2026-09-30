@@ -23,3 +23,5 @@
 **/*.quarto_ipynb
 /site_libs/
 .posit/assistant
+
+/.luarc.json
