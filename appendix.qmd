@@ -17,7 +17,7 @@ crossref:
 ## S1. Search strategy
 
 | Field | Content |
-|:-------------------------------|:---------------------------------------|
+|:---|:---|
 | Databases searched | PubMed/MEDLINE, EMBASE (Elsevier), SCOPUS |
 | Search dates | Database inception to January 1999-April 2026 |
 | Records retrieved | PubMed 1061; EMBASE 2603; SCOPUS 481 (total 4145) |
@@ -270,7 +270,7 @@ Every plot shows raw per-study odds ratios with Wald 95% confidence intervals (0
 In the originally submitted analysis the largest Bayesian–frequentist discrepancies were for C1 bloodstream infection (Bayesian odds ratio 1·87 \[1·33–2·62\] versus REML 1·29 \[0·61–2·73\]) and C1 invasive fungal infection (0·43 \[0·29–0·63\] versus 0·60 \[0·21–1·74\]). These gaps were not caused by the N(0, 2·5) priors on the regression coefficients, which are weak relative to the binomial likelihood even at k = 6. They arose because the submitted models fixed the treatment effect across studies (a common-effect specification) while the REML concordance models estimate a between-study variance, and heterogeneity is substantial for both outcomes (I² = 71% and 80%). A common-effect and a random-effects model answer different questions when heterogeneity is present, and at k = 6 the discrepancy is stark. Under the adopted random-slope specification, which — like REML — allows the treatment effect to vary across studies, the two approaches agree closely (BSI: Bayesian 1·42 \[0·57–2·98\] versus REML 1·29 \[0·61–2·73\]; IFI: 0·63 \[0·19–2·62\] versus 0·60 \[0·21–1·74\]). Residual differences across outcomes reflect the different likelihoods (arm-level binomial versus two-stage normal approximation with a 0·5 continuity correction) and the Bayesian propagation of τ uncertainty into wider intervals, not the coefficient priors; the τ-prior sensitivity analysis below confirms that the prior on the between-study SD has little influence even at k = 6.
 
 | Outcome | Comparison | k | Bayesian OR (95% CrI) | Frequentist REML OR (95% CI) | I² |
-|:-----------|:-----------|-----------:|:-----------|:-----------|-----------:|
+|:---|:---|---:|:---|:---|---:|
 | Overall survival | C1 | 35 | 0·76 (0·62–0·93) | 0·79 (0·65–0·94) | 64% |
 | Overall survival | C2 | 9 | 0·75 (0·42–1·31) | 0·73 (0·44–1·21) | 93% |
 | Overall survival | C3 | 6 | 0·92 (0·43–1·63) | 0·92 (0·57–1·49) | 78% |
@@ -335,7 +335,7 @@ M2 is not a mediation analysis: it estimates no indirect effect, and because it 
 The reported M1 uses all studies with outcome data, whereas M2 drops studies without exposure data, so an M1–M2 contrast mixes covariate adjustment with a changed study set. M1 was therefore refitted — specification and priors unchanged — on each outcome's M2 complete-case subset. For C1 overall survival the attenuation is attributable to the covariate rather than the subset: on the same 27 studies M1 gives 0·77 (0·59–0·97) and M2 gives 0·95 (0·70–1·27), against a full-set M1 of 0·76 (0·61–0·93). The same pattern holds for C2 overall survival (matched-set M1 0·69 \[0·36–1·30\] versus M2 0·90 \[0·45–1·74\]). Conversely, the C1 relapse-related-mortality interval crossing the null after steroid adjustment is attributable to the subset rather than the covariate (matched-set M1 0·87 \[0·73–1·02\]; M2 0·85 \[0·71–1·02\]). Fits and per-model summaries are exported in `m1_m2_matched.csv`, a supplementary data file.
 
 | Outcome                      | Model          |   k |      N | OR (95% CrI)     |    τ |
-|:-----------|:-----------|-----------:|-----------:|:-----------|-----------:|
+|:-----------------------------|:---------------|----:|-------:|:-----------------|-----:|
 | C1 Overall survival          | M1 full set    |  34 |  9 836 | 0·76 (0·61–0·93) | 0·46 |
 | C1 Overall survival          | M1 matched set |  27 |  6 728 | 0·77 (0·59–0·97) | 0·50 |
 | C1 Overall survival          | M2             |  27 |  6 728 | 0·95 (0·70–1·27) | 0·49 |
@@ -362,7 +362,7 @@ The reported M1 uses all studies with outcome data, whereas M2 drops studies wit
 PTCy arms are enriched for haploidentical recipients (47% versus 15% of comparator arms overall). Two analyses address the resulting confounding concern for the five main C1 outcomes. First, within-study imbalance is small: the between-arm difference in haploidentical-donor percentage has median 0 in every outcome dataset, so most of the marginal imbalance is between studies — the component absorbed by the study intercepts (and removed entirely in the fixed-intercept sensitivity above). Second, a meta-regression on the between-arm difference and a donor-matched restriction (absolute difference ≤ 15 percentage points) were fitted for each outcome. The meta-regression coefficient is near zero throughout, and the donor-matched overall-survival estimate is stronger, not weaker, than the full-set estimate (0·60 \[0·44–0·80\] versus 0·76 \[0·61–0·93\]), so the C1 survival and GVHD benefits are not driven by studies in which PTCy arms carried more haploidentical recipients. Fits and summaries are exported in `donor_confounding.csv`, a supplementary data file.
 
 | Outcome | Analysis | k | OR (95% CrI) | Δ-haplo coefficient (95% CrI) |
-|:--------------|:--------------|--------------:|:--------------|:--------------|
+|:---|:---|---:|:---|:---|
 | Overall survival | M1 reported | 35 | 0·76 (0·61–0·93) | — |
 | Overall survival | M1 + Δ-haplo meta-regression | 35 | 0·77 (0·62–0·93) | 0·004 (−0·001–0·009) |
 | Overall survival | M1 donor-matched (≤15 pp) | 22 | 0·60 (0·44–0·80) | — |
@@ -400,7 +400,7 @@ The 14 randomised trials contribute to the comparisons unevenly after cohort ded
 Arm-level CMV recipient serostatus was available for only half of the CMV model arms, and directly reported letermovir use for 28 of 44; an enrolment-era proxy (post-2018 versus earlier or era-spanning) is available for all arms and is preferable to publication year, which lags adoption. Adjusting for the era proxy leaves the CMV estimate unchanged (1·23 \[0·90–1·66\]; era coefficient −0·62 \[−1·56–0·31\] on the log-OR scale), as does adjustment for directly reported letermovir use on the reported subset (1·12 \[0·79–1·60\], k = 14) and for the between-arm difference in recipient seropositivity (1·23 \[0·72–1·88\], k = 11; coefficient 0·06 \[−0·03–0·14\] per percentage point). Notably, no arm in the post-2020 sensitivity cohort had letermovir use recorded, and most of these cohorts enrolled before or across the letermovir era, so the larger post-2020 CMV estimate cannot be attributed to — or claimed to persist despite — letermovir adoption. Fits and summaries are exported in `cmv_letermovir.csv`, a supplementary data file.
 
 | Analysis | k | CMV OR (95% CrI) | Covariate coefficient (95% CrI) |
-|:-----------------|-----------------:|:-----------------|:-----------------|
+|:---|---:|:---|:---|
 | M1 reported (any reactivation) | 22 | 1·22 (0·90–1·65) | — |
 | M1 + letermovir era (post-2018 enrolment) | 22 | 1·23 (0·90–1·66) | −0·62 (−1·56–0·31) |
 | M1 + arm-level letermovir use (reported subset) | 14 | 1·12 (0·79–1·60) | −0·02 (−4·94–4·86) |
@@ -413,7 +413,7 @@ Arm-level CMV recipient serostatus was available for only half of the CMV model 
 C1 comparators mix CNI+MTX, CNI+MMF and CNI+MTX+MMF backbones. Splitting by backbone shows the overall-survival benefit concentrated against CNI+MTX comparators (0·53 \[0·33–0·79\], k = 12) and absent against CNI+MMF (1·30 \[0·76–2·29\], k = 5), with CNI+MTX+MMF intermediate (0·85 \[0·56–1·28\], k = 11); the acute GVHD reduction is consistent against CNI+MTX and CNI+MMF (both 0·52) but attenuated against the combined backbone (0·85 \[0·44–1·57\]). Comparator mix therefore contributes to the pooled C1 estimates. Arms receiving PTCy together with ATG are classified as PTCy arms in all three comparisons (54 arms database-wide; 27 C1-eligible, 8 C2-eligible, 17 C3-eligible); three C2 studies include such arms, and excluding them leaves the C2 estimates essentially unchanged (table). Fits and summaries are exported in `comparator_backbone.csv`, a supplementary data file.
 
 | Analysis | k | OR (95% CrI) |
-|:-----------------------|-----------------------:|:-----------------------|
+|:---|---:|:---|
 | C1 OS, comparator CNI+MTX | 12 | 0·53 (0·33–0·79) |
 | C1 OS, comparator CNI+MMF | 5 | 1·30 (0·76–2·29) |
 | C1 OS, comparator CNI+MTX+MMF | 11 | 0·85 (0·56–1·28) |
@@ -445,7 +445,7 @@ The reported CMV outcome is any reactivation, which rises under modern surveilla
 The depletion-depth interpretation in the main text contrasts the C1 and C2 pooled estimates. A formal indirect comparison — the posterior of the ratio of the two pooled odds ratios — is reported below. The two study sets are disjoint except for one three-arm study (Haebe 2023, study 167), whose shared contribution makes the test mildly conservative. The comparisons enrol different populations (predominantly haploidentical in C1, matched-donor in C2), so the contrast is confounded by population as well as comparator.
 
 | Outcome | C1 OR (95% CrI) | C2 OR (95% CrI) | Ratio (95% CrI) | P(C1 \> C2) |
-|:--------------|:--------------|:--------------|:--------------|--------------:|
+|:---|:---|:---|:---|---:|
 | CMV reactivation | 1·22 (0·90–1·65) | 0·86 (0·50–1·42) | 1·43 (0·80–2·63) | 0·89 |
 | BK virus reactivation | 2·39 (1·48–3·66) | 2·49 (1·09–6·03) | 0·95 (0·36–2·44) | 0·46 |
 
@@ -466,7 +466,7 @@ Funnel-plot asymmetry was assessed on the cohort-deduplicated datasets (Egger's 
 Robust Bayesian model-averaging (RoBMA v4.0.0; ensemble of selection-function, PET, and PEESE publication-bias models) was fitted to every outcome with k ≥ 6 on the cohort-deduplicated datasets. Model-averaged estimates and inclusion Bayes factors for the presence of an effect (BF~eff~) and of publication bias (BF~bias~) are shown below. All ensembles converged (R̂ ≤ 1·01; ESS \> 1000).
 
 | Outcome | Comparison | k | Model-averaged OR (95% CrI) | BF~eff~ | BF~bias~ |
-|:----------|:----------|----------:|:--------------------|----------:|----------:|
+|:---|:---|---:|:---|---:|---:|
 | Overall survival | C1 | 35 | 1·00 (0·81–1·19) | 0·20 | 18·6 |
 | Non-relapse mortality | C1 | 12 | 1·00 (0·81–1·29) | 0·21 | 0·73 |
 | Relapse-related mortality | C1 | 34 | 0·95 (0·79–1·00) | 0·60 | 0·85 |
@@ -500,7 +500,7 @@ Three findings stand out. First, publication bias is supported only for the two 
 Certainty was assessed per the GRADE Handbook, adapted for observational evidence (starting certainty LOW). The profiles below were reassessed (2026-09-30) against the cohort-deduplicated, random-slope estimates of table 2 and the Set B publication-bias analyses of S10, and supersede all earlier profiles. Risk-of-bias and indirectness judgements are unchanged from the original assessment; the only risk-of-bias downgrade applied is to C1 NRM (steroid-mediation confounding).
 
 | Outcome | Comparison | k | OR (95% CrI) | Inconsistency | Imprecision | Publication bias | Certainty |
-|:--------|:--------|--------:|:--------|:--------|:--------|:--------|:--------|
+|:---|:---|---:|:---|:---|:---|:---|:---|
 | Overall survival | C1 | 34 | 0·76 (0·61–0·93) | −1 (τ = 0·46) | 0 | −1 (RoBMA BF~bias~ = 18·6; bias-adjusted OR 1·00 \[0·81–1·19\]) | ⊕⊖⊖⊖ VERY LOW |
 | Overall survival | C2 | 9 | 0·75 (0·42–1·31) | −1 (τ = 0·68) | −1 (CrI crosses null) | not assessable | ⊕⊖⊖⊖ VERY LOW |
 | Non-relapse mortality | C1 | 12 | 0·81 (0·46–1·22) | 0 | −1 (CrI crosses null) | 0 | ⊕⊖⊖⊖ VERY LOW |
@@ -518,7 +518,7 @@ Certainty was assessed per the GRADE Handbook, adapted for observational evidenc
 Odds ratios are not relative risks, and relative measures alone can mislead at the event rates seen here. The table below translates each pooled odds ratio into an absolute difference per 1000 patients at the stated baseline risk (the median comparator-arm event proportion across included studies). These are illustrative translations of the odds ratios, not model-based risk estimates, and inherit the very low certainty of the underlying evidence.
 
 | Outcome | Comparison | Assumed baseline risk | OR (95% CrI) | Absolute difference per 1000 (95% CrI) |
-|:--------------|:--------------|--------------:|:--------------|--------------:|
+|:---|:---|---:|:---|---:|
 | Overall survival (mortality) | C1 | 35% | 0·76 (0·61–0·93) | −60 (−102 to −15) |
 | Overall survival (mortality) | C2 | 48% | 0·75 (0·42–1·31) | −71 (−201 to +68) |
 | Non-relapse mortality | C1 | 16% | 0·81 (0·46–1·22) | −26 (−79 to +28) |
@@ -542,7 +542,7 @@ During revision, one publication (Wu 2025, *British Journal of Haematology*; doi
 The pooled study count is smaller than the comparison size for every outcome because the models require a harmonised timepoint with actual event counts per arm, and because cohort deduplication (Set B) retains one publication per cohort. The table below gives, for each outcome, the number of studies with paired-arm outcome records in the extraction database and the number pooled in the reported model.
 
 | Comparison | Outcome | Studies with paired-arm records | Studies pooled |
-|:-----------------|:-----------------|-----------------:|-----------------:|
+|:---|:---|---:|---:|
 | C1 | Overall survival | 116 | 34 |
 | C1 | Non-relapse mortality | 109 | 12 |
 | C1 | Relapse-related mortality | 41 | 34 |
@@ -575,7 +575,7 @@ The pooled study count is smaller than the comparison size for every outcome bec
 Cohort deduplication (Set B) changed seven outcomes; all other outcomes were unaffected. Set A values are the pre-deduplication estimates under the originally submitted common-effect model; Set B values are the reported estimates under the random-slope model (the specification change is documented in S6 and S9). Note that the Set A C1 overall-survival M2 result (0·86 \[0·77–0·96\]) was originally read as a residual direct survival benefit; under Set B the steroid-adjusted estimate is 0·96 \[0·72–1·28\], and M2 is now reported as an appendix-only exploratory analysis (S9).
 
 | Outcome | k, Set A | OR, Set A (common-effect) | k, Set B | OR, Set B (reported) |
-|:--------------|--------------:|:--------------|--------------:|:--------------|
+|:---|---:|:---|---:|:---|
 | C1 Overall survival (M1) | 40 | 0·79 (0·73–0·85) | 34 | 0·76 (0·61–0·93) |
 | C1 Overall survival (M2, appendix-only) | 40 | 0·86 (0·77–0·96) | 27 | 0·95 (0·70–1·27) |
 | C1 Relapse-related mortality | 38 | 0·84 (0·76–0·93) | 34 | 0·87 (0·76–0·99) |
@@ -599,3 +599,34 @@ The study protocol was registered with PROSPERO (CRD420261372156) before data ex
 ```
 
 ## S15. Software and statistical packages used
+
+All analyses were performed in R (versions 4·6·0 and 4·6·1; R: A Language and Environment for Statistical Computing, R Foundation for Statistical Computing, Vienna, Austria) [@rcoreteam2026]. Bayesian models were fitted with Stan via `brms` [@burkner2017; @burkner2018; @carpenter2017]; frequentist concordance models used `metafor` [@viechtbauer2010]; publication-bias assessment used `RoBMA` [@bartos2020]; data manipulation used the `tidyverse` packages [@wickham2019]. Documents were rendered with Quarto (version 1.10.18).
+
+| Package | Version | Role |
+|:---|:---|:---|
+| brms | 2.23.0 | Bayesian binomial-logistic meta-analysis models (M1, M2, and all sensitivity models) |
+| rstan | 2.32.7 | MCMC sampling backend; convergence diagnostics (R̂, effective sample sizes, divergences) |
+| StanHeaders | 2.39.1 | Stan model compilation |
+| posterior | 1.7.0 | Posterior draw handling and summaries |
+| metafor | 5.2.1 | Frequentist REML concordance models, leave-one-out analysis, log-odds-ratio calculations |
+| RoBMA | 4.0.0 | Robust Bayesian model-averaging assessment of publication bias |
+| bayesplot | 1.16.0 | MCMC diagnostic figures (trace plots, posterior densities) |
+| ggplot2 | 4.0.3 | All figures |
+| ggridges | 0.5.7 | τ posterior density figure |
+| patchwork | 1.3.2 | Multi-panel figure composition and forest-plot side tables |
+| scales | 1.4.0 | Axis and percentage formatting |
+| PRISMA2020 | 1.1.5 | PRISMA 2020 flow diagram (figure 1) |
+| knitr | 1.52 | Tables in source notebooks |
+| dplyr | 1.2.1 | Data manipulation |
+| tidyr | 1.3.2 | Data reshaping |
+| readr | 2.2.0 | Data import |
+| purrr | 1.2.2 | Iteration |
+| stringr | 1.6.0 | String formatting |
+| tibble | 3.3.1 | Data frames |
+| forcats | 1.0.1 | Factor handling |
+
+: R packages used in the analysis and manuscript preparation, with versions from the analysis environment. {#tbl-s15}
+
+{{< pagebreak >}}
+
+## References
