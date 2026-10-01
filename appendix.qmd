@@ -593,10 +593,53 @@ The study protocol was registered with PROSPERO (CRD420261372156) before data ex
 
 ## S14. PRISMA 2020 checklist
 
-```{=html}
-<!-- TODO: attach the completed PRISMA 2020 checklist with page and section references
-     for each item before submission. -->
-```
+Locations are given as section, table, figure, and appendix references; page and line numbers will be inserted at proof stage, once pagination is final.
+
+| Section and topic | Item | Checklist item | Location in this manuscript |
+|:---|:---|:---|:---|
+| **Title** | 1 | Identify the report as a systematic review | Title page ("a systematic review and Bayesian meta-analysis of infection risk") |
+| **Abstract** | 2 | Structured summary (PRISMA 2020 for Abstracts) | Summary (Background, Methods, Findings, Interpretation) |
+| **Rationale** | 3 | Rationale for the review in the context of existing knowledge | Introduction, paragraphs 1–3; Research in context panel |
+| **Objectives** | 4 | Explicit statement of objectives and questions | Introduction, final paragraph ("To address this question…"); PROSPERO CRD420261372156 (appendix S13) |
+| **Eligibility criteria** | 5 | Inclusion and exclusion criteria and grouping rationale | Methods — Search strategy and selection criteria; three pre-specified comparisons (C1–C3); appendix S2 (full-text exclusion reasons) |
+| **Information sources** | 6 | Databases, registers, websites, organisations, citation searching, with dates | Methods — Search strategy and selection criteria; appendix S1 (EMBASE, PubMed/MEDLINE, SCOPUS, inception–April 2026); figure 1 |
+| **Search strategy** | 7 | Full search strategies for all sources | Appendix S1 (complete search strings per database, with filters) |
+| **Selection process** | 8 | Methods used to decide inclusion (screeners, independence, automation) | Methods — two reviewers (MS, REL) screening in Covidence; figure 1 |
+| **Data collection process** | 9 | Methods used to collect data (reviewers, forms, verification) | Methods — structured extraction template with AI-assisted extraction and manual verification against source publications |
+| **Data items** | 10 | All variables and outcomes sought; methods for handling multiple measures | Methods — Outcomes; Table 1; appendix S4a/S4b (study- and arm-level data items); extraction database (supplementary data) |
+| **Study risk of bias assessment** | 11 | Tools and process for assessing risk of bias in included studies | Methods — ROBINS-I (observational) and RoB 2 (RCTs), two reviewers; appendix S5 |
+| **Effect measures** | 12 | Effect measures used for each outcome | Methods — Statistical analysis (odds ratios at fixed timepoints; hazard-ratio sensitivity analysis in appendix S9) |
+| **Synthesis methods** | 13a | Processes for deciding which studies were eligible for each synthesis | Methods; appendix S12 (per-outcome attrition from extraction to pooling) |
+| | 13b | Data preparation methods | Methods; appendix S6; analytic datasets and scripts (supplementary data and code) |
+| | 13c | Tabulation or visualisation of individual results and syntheses | Table 2; figures 2–4; appendix S8 forest plots |
+| | 13d | Methods used to synthesise results and rationale for their choice | Methods — Bayesian random-effects binomial-logistic models; appendix S6 (specification, priors, MCMC) |
+| | 13e | Assessment of heterogeneity in effect estimates | Table 2 (τ and 95% prediction intervals); appendix S7; leave-one-out analysis (appendix S9) |
+| | 13f | Assessment of robustness (sensitivity analyses) | Appendix S9 (fixed study intercepts, matched M1/M2 sets, donor-type, RCT-only, serostatus/letermovir, comparator backbone, outcome definitions, τ-prior) |
+| **Reporting bias assessment** | 14 | Methods for assessing risk of bias due to missing results (reporting biases) | Appendix S10 (robust Bayesian model-averaging, RoBMA) |
+| **Certainty assessment** | 15 | Methods for assessing certainty (confidence) in the body of evidence | Methods — GRADE adapted for observational evidence; appendix S11 |
+| **Study selection** | 16a | Results of the search and selection process, ideally with a flow diagram | Figure 1 (PRISMA 2020 flow diagram); Results — Study selection |
+| | 16b | Studies excluded with reasons | Appendix S2 (full-text exclusions with reasons) |
+| **Study characteristics** | 17 | Characteristics of included studies | Table 1; appendix S3–S4 |
+| **Risk of bias in studies** | 18 | Risk-of-bias assessments for each study and domain | Results — Risk of bias; appendix S5; figures S5a–S5c |
+| **Results of individual studies** | 19 | Summary statistics and effect estimates for each study | Figures 2–4 and appendix S8 (per-study odds ratios, events/totals, weights); supplementary data files |
+| **Results of syntheses** | 20a | Results of each synthesis, including summary statistics and certainty | Table 2; Results — Comparisons 1–3 |
+| | 20b | Results of investigations of causes of heterogeneity | Results — Confounding and robustness analyses; appendix S9 |
+| | 20c | Results of sensitivity analyses | Appendix S9 |
+| | 20d | Results of reporting-bias assessment | Appendix S10 |
+| **Reporting biases** | 21 | Assessment of risk of bias due to missing results | Appendix S10 |
+| **Certainty of evidence** | 22 | Assessment of certainty of evidence for each outcome | Results — Certainty of evidence; Table 2 (GRADE column); appendix S11 |
+| **Discussion** | 23a | General interpretation in the context of other evidence | Discussion |
+| | 23b | Limitations of the evidence | Discussion — Limitations |
+| | 23c | Limitations of the review processes | Discussion — Limitations; appendix S12 (cohort deduplication and duplicate-entry removal) |
+| | 23d | Implications for practice, policy, and future research | Discussion — Implications; Conclusions |
+| **Registration and protocol** | 24a | Registration information and protocol access | Methods; appendix S13 (PROSPERO CRD420261372156) |
+| | 24b | Protocol amendments | Appendix S13 (all amendments listed, including the steroid-adjustment model as post-hoc) |
+| | 24c | Protocol access | PROSPERO CRD420261372156; Data sharing statement |
+| **Support** | 25 | Sources of financial or non-financial support, and role of funders | Role of the funding source; Summary — Funding ("no funding source for this study") |
+| **Competing interests** | 26 | Competing interests of review authors | Declaration of interests ("All authors declare no competing interests") |
+| **Availability of data, code, and materials** | 27 | Public access to data, analytic code, and other materials | Data sharing statement (extraction database and analytic datasets on GitHub; manuscript source and notebooks on GitHub Pages); appendix S15 (software) |
+
+: PRISMA 2020 checklist for the review. Page and line references will be completed at proof stage. {#tbl-s14}
 
 ## S15. Software and statistical packages used
 
@@ -625,7 +668,7 @@ All analyses were performed in R (versions 4·6·0 and 4·6·1; R: A Language an
 | tibble | 3.3.1 | Data frames |
 | forcats | 1.0.1 | Factor handling |
 
-: R packages used in the analysis and manuscript preparation, with versions from the analysis environment. {#tbl-s15}
+: R packages used in the analysis and manuscript preparation, with versions from the analysis environment.
 
 {{< pagebreak >}}
 
