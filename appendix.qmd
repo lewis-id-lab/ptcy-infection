@@ -597,49 +597,49 @@ Page and line references are to the typeset submission build: the article PDF (3
 
 | Section and topic | Item | Checklist item | Location (page, line) |
 |:---|:---|:---|:---|
-| **Title** | 1 | Identify the report as a systematic review | p. 1, line 5 (title page) |
-| **Abstract** | 2 | Structured summary (PRISMA 2020 for Abstracts) | p. 1, line 8 – p. 2, line 37 (Summary) |
-| **Rationale** | 3 | Rationale for the review in the context of existing knowledge | p. 4, line 71 (Introduction); p. 2, line 38 (Research in context) |
-| **Objectives** | 4 | Explicit statement of objectives and questions | p. 5, lines 90–94 ("To address this question…"); appendix p. 57 (S13, PROSPERO CRD420261372156) |
-| **Eligibility criteria** | 5 | Inclusion and exclusion criteria and grouping rationale | p. 5, line 95 (Methods — Search strategy and selection criteria); appendix p. 6 (S2) |
-| **Information sources** | 6 | Databases, registers, websites, organisations, citation searching, with dates | p. 5, line 95; appendix p. 1 (S1: EMBASE, PubMed/MEDLINE, SCOPUS, inception–April 2026); p. 28 (figure 1) |
+| **Title** | 1 | Identify the report as a systematic review | p\. 1, line 5 (title page) |
+| **Abstract** | 2 | Structured summary (PRISMA 2020 for Abstracts) | p\. 1, line 8 – p. 2, line 37 (Summary) |
+| **Rationale** | 3 | Rationale for the review in the context of existing knowledge | p\. 4, line 71 (Introduction); p. 2, line 38 (Research in context) |
+| **Objectives** | 4 | Explicit statement of objectives and questions | p\. 5, lines 90–94 ("To address this question…"); appendix p. 57 (S13, PROSPERO CRD420261372156) |
+| **Eligibility criteria** | 5 | Inclusion and exclusion criteria and grouping rationale | p\. 5, line 95 (Methods — Search strategy and selection criteria); appendix p. 6 (S2) |
+| **Information sources** | 6 | Databases, registers, websites, organisations, citation searching, with dates | p\. 5, line 95; appendix p. 1 (S1: EMBASE, PubMed/MEDLINE, SCOPUS, inception–April 2026); p. 28 (figure 1) |
 | **Search strategy** | 7 | Full search strategies for all sources | appendix p. 1 (S1, complete search strings per database) |
-| **Selection process** | 8 | Methods used to decide inclusion (screeners, independence, automation) | p. 5, line 95 (Methods: two reviewers in Covidence); p. 28 (figure 1) |
-| **Data collection process** | 9 | Methods used to collect data (reviewers, forms, verification) | p. 5, line 95 (Methods: structured extraction template, AI-assisted extraction with manual verification) |
-| **Data items** | 10 | All variables and outcomes sought; methods for handling multiple measures | p. 6, line 120 (Methods — Outcomes); p. 22 (Table 1); appendix p. 6 (S3–S4); extraction database (supplementary data) |
-| **Study risk of bias assessment** | 11 | Tools and process for assessing risk of bias in included studies | p. 5, line 95 (Methods: ROBINS-I, RoB 2, two reviewers); appendix p. 7 (S5) |
-| **Effect measures** | 12 | Effect measures used for each outcome | p. 6, line 127 (Methods — Statistical analysis, odds ratios at fixed timepoints); appendix p. 20 (S9, hazard-ratio sensitivity) |
-| **Synthesis methods** | 13a | Processes for deciding which studies were eligible for each synthesis | p. 5, line 95; appendix p. 53 (S12, per-outcome attrition) |
-| | 13b | Data preparation methods | p. 6, line 127; appendix p. 10 (S6); analytic code (Data sharing, p. 17, line 364) |
-| | 13c | Tabulation or visualisation of individual results and syntheses | p. 24 (Table 2); pp. 29–31 (Figures 2–4); appendix p. 16 (S8) |
-| | 13d | Methods used to synthesise results and rationale for their choice | p. 6, line 127 (Bayesian random-effects binomial-logistic models); appendix p. 10 (S6, specification, priors, MCMC) |
-| | 13e | Assessment of heterogeneity in effect estimates | p. 24 (Table 2, τ and 95% prediction intervals); appendix p. 12 (S7); appendix p. 20 (S9) |
-| | 13f | Assessment of robustness (sensitivity analyses) | appendix p. 20 (S9: fixed study intercepts, matched M1/M2 sets, donor-type, RCT-only, serostatus/letermovir, comparator backbone, outcome definitions, τ-prior) |
+| **Selection process** | 8 | Methods used to decide inclusion (screeners, independence, automation) | p\. 5, line 95 (Methods: two reviewers in Covidence); p. 28 (figure 1) |
+| **Data collection process** | 9 | Methods used to collect data (reviewers, forms, verification) | p\. 5, line 95 (Methods: structured extraction template, AI-assisted extraction with manual verification) |
+| **Data items** | 10 | All variables and outcomes sought; methods for handling multiple measures | p\. 6, line 120 (Methods — Outcomes); p. 22 (Table 1); appendix p. 6 (S3–S4); extraction database (supplementary data) |
+| **Study risk of bias assessment** | 11 | Tools and process for assessing risk of bias in included studies | p\. 5, line 95 (Methods: ROBINS-I, RoB 2, two reviewers); appendix p. 7 (S5) |
+| **Effect measures** | 12 | Effect measures used for each outcome | p\. 6, line 127 (Methods — Statistical analysis, odds ratios at fixed timepoints); appendix p. 20 (S9, hazard-ratio sensitivity) |
+| **Synthesis methods** | 13a | Processes for deciding which studies were eligible for each synthesis | p\. 5, line 95; appendix p. 53 (S12, per-outcome attrition) |
+|  | 13b | Data preparation methods | p\. 6, line 127; appendix p. 10 (S6); analytic code (Data sharing, p. 17, line 364) |
+|  | 13c | Tabulation or visualisation of individual results and syntheses | p\. 24 (Table 2); pp. 29–31 (Figures 2–4); appendix p. 16 (S8) |
+|  | 13d | Methods used to synthesise results and rationale for their choice | p\. 6, line 127 (Bayesian random-effects binomial-logistic models); appendix p. 10 (S6, specification, priors, MCMC) |
+|  | 13e | Assessment of heterogeneity in effect estimates | p\. 24 (Table 2, τ and 95% prediction intervals); appendix p. 12 (S7); appendix p. 20 (S9) |
+|  | 13f | Assessment of robustness (sensitivity analyses) | appendix p. 20 (S9: fixed study intercepts, matched M1/M2 sets, donor-type, RCT-only, serostatus/letermovir, comparator backbone, outcome definitions, τ-prior) |
 | **Reporting bias assessment** | 14 | Methods for assessing risk of bias due to missing results (reporting biases) | appendix p. 45 (S10, RoBMA) |
-| **Certainty assessment** | 15 | Methods for assessing certainty (confidence) in the body of evidence | p. 6, line 127 (Methods: GRADE); appendix p. 48 (S11) |
-| **Study selection** | 16a | Results of the search and selection process, ideally with a flow diagram | p. 8, line 167 (Results — Study selection); p. 28 (figure 1) |
-| | 16b | Studies excluded with reasons | appendix p. 6 (S2, full-text exclusions with reasons) |
-| **Study characteristics** | 17 | Characteristics of included studies | p. 22 (Table 1); appendix p. 6 (S3–S4) |
-| **Risk of bias in studies** | 18 | Risk-of-bias assessments for each study and domain | p. 9, line 183 (Results — Risk of bias); appendix pp. 7–9 (S5; figures S5a–S5c) |
+| **Certainty assessment** | 15 | Methods for assessing certainty (confidence) in the body of evidence | p\. 6, line 127 (Methods: GRADE); appendix p. 48 (S11) |
+| **Study selection** | 16a | Results of the search and selection process, ideally with a flow diagram | p\. 8, line 167 (Results — Study selection); p. 28 (figure 1) |
+|  | 16b | Studies excluded with reasons | appendix p. 6 (S2, full-text exclusions with reasons) |
+| **Study characteristics** | 17 | Characteristics of included studies | p\. 22 (Table 1); appendix p. 6 (S3–S4) |
+| **Risk of bias in studies** | 18 | Risk-of-bias assessments for each study and domain | p\. 9, line 183 (Results — Risk of bias); appendix pp. 7–9 (S5; figures S5a–S5c) |
 | **Results of individual studies** | 19 | Summary statistics and effect estimates for each study | pp. 29–31 (Figures 2–4); appendix p. 16 (S8: per-study odds ratios, events/totals, weights); supplementary data files |
-| **Results of syntheses** | 20a | Results of each synthesis, including summary statistics and certainty | p. 24 (Table 2); p. 9, line 190 (Comparison 1); p. 10, line 206 (Comparison 2); p. 10, line 216 (Comparison 3) |
-| | 20b | Results of investigations of causes of heterogeneity | p. 10, line 220 (Confounding and robustness analyses); appendix p. 20 (S9) |
-| | 20c | Results of sensitivity analyses | appendix p. 20 (S9) |
-| | 20d | Results of reporting-bias assessment | appendix p. 45 (S10) |
+| **Results of syntheses** | 20a | Results of each synthesis, including summary statistics and certainty | p\. 24 (Table 2); p. 9, line 190 (Comparison 1); p. 10, line 206 (Comparison 2); p. 10, line 216 (Comparison 3) |
+|  | 20b | Results of investigations of causes of heterogeneity | p\. 10, line 220 (Confounding and robustness analyses); appendix p. 20 (S9) |
+|  | 20c | Results of sensitivity analyses | appendix p. 20 (S9) |
+|  | 20d | Results of reporting-bias assessment | appendix p. 45 (S10) |
 | **Reporting biases** | 21 | Assessment of risk of bias due to missing results | appendix p. 45 (S10) |
-| **Certainty of evidence** | 22 | Assessment of certainty of evidence for each outcome | p. 11, line 235 (Certainty of evidence); p. 24 (Table 2, GRADE column); appendix p. 48 (S11) |
-| **Discussion** | 23a | General interpretation in the context of other evidence | p. 11, line 244 (Discussion) |
-| | 23b | Limitations of the evidence | p. 14, line 307 (Limitations) |
-| | 23c | Limitations of the review processes | p. 14, line 307; appendix p. 53 (S12, cohort deduplication and duplicate-entry removal) |
-| | 23d | Implications for practice, policy, and future research | p. 16, line 346 (Conclusions) |
-| **Registration and protocol** | 24a | Registration information and protocol access | p. 5, line 95 (Methods); appendix p. 57 (S13, PROSPERO CRD420261372156) |
-| | 24b | Protocol amendments | appendix p. 57 (S13, all amendments listed) |
-| | 24c | Protocol access | PROSPERO CRD420261372156; p. 17, line 364 (Data sharing) |
-| **Support** | 25 | Sources of financial or non-financial support, and role of funders | p. 2 (Summary — Funding); p. 8, line 164 (Role of the funding source: none) |
-| **Competing interests** | 26 | Competing interests of review authors | p. 16, line 362 (Declaration of interests) |
-| **Availability of data, code, and materials** | 27 | Public access to data, analytic code, and other materials | p. 17, line 364 (Data sharing: extraction database and analytic datasets on GitHub; manuscript source and notebooks on GitHub Pages); appendix p. 68 (S15, software) |
+| **Certainty of evidence** | 22 | Assessment of certainty of evidence for each outcome | p\. 11, line 235 (Certainty of evidence); p. 24 (Table 2, GRADE column); appendix p. 48 (S11) |
+| **Discussion** | 23a | General interpretation in the context of other evidence | p\. 11, line 244 (Discussion) |
+|  | 23b | Limitations of the evidence | p\. 14, line 307 (Limitations) |
+|  | 23c | Limitations of the review processes | p\. 14, line 307; appendix p. 53 (S12, cohort deduplication and duplicate-entry removal) |
+|  | 23d | Implications for practice, policy, and future research | p\. 16, line 346 (Conclusions) |
+| **Registration and protocol** | 24a | Registration information and protocol access | p\. 5, line 95 (Methods); appendix p. 57 (S13, PROSPERO CRD420261372156) |
+|  | 24b | Protocol amendments | appendix p. 57 (S13, all amendments listed) |
+|  | 24c | Protocol access | PROSPERO CRD420261372156; p. 17, line 364 (Data sharing) |
+| **Support** | 25 | Sources of financial or non-financial support, and role of funders | p\. 2 (Summary — Funding); p. 8, line 164 (Role of the funding source: none) |
+| **Competing interests** | 26 | Competing interests of review authors | p\. 16, line 362 (Declaration of interests) |
+| **Availability of data, code, and materials** | 27 | Public access to data, analytic code, and other materials | p\. 17, line 364 (Data sharing: extraction database and analytic datasets on GitHub; manuscript source and notebooks on GitHub Pages); appendix p. 68 (S15, software) |
 
-: PRISMA 2020 checklist for the review, with page and line references to the typeset submission build. {#tbl-s14}
+: PRISMA 2020 checklist for the review, with page and line references to the typeset submission build.
 
 ## S15. Software and statistical packages used
 
