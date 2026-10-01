@@ -1,0 +1,7 @@
+study_id,comparison,category,subtype,timepoint_used,tp_early,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_steroid_pct,comp_steroid_pct
+6,1,BSI,any_pathogen,D+100,0,10,11,68,97,30,22,60,80
+9,1,BSI,any_pathogen,D+100,0,19,20,200,130,76,24,NA,NA
+88,1,BSI,any_pathogen,D+100,0,104,105,40,40,4,3,15,39.8
+166,1,BSI,any_pathogen,D+100,0,172,173,30,31,8,7,16.7,25.8
+216,1,BSI,any_pathogen,end_of_followup,1,220,221,55,75,4,7,18.4,19.32
+432,1,BSI,any_pathogen,end_of_followup,1,482,483,25,15,6,9,12.5,35.7

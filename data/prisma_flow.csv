@@ -5,15 +5,15 @@ previous_reports,NA,box1,Reports of studies included in previous version of revi
 NA,node6,newstud,Yellow title box; Identification of new studies via databases and registers,Identification of studies via databases,Yellow title box; Identification of new studies via databases and registers,newstud.html,0
 database_results,node7,box2,Records identified from databases,Databases,Records identified from: Databases and Registers,database_results.html,4145
 database_specific_results,NA,box2,Records identified from: specific databases,Specific Databases,NA,database_results.html,"EMBASE, 2603; PubMed, 1061; SCOPUS, 481"
-register_results,NA,box2,Records identified from: Registers,Registers,NA,NA,
-register_specific_results,NA,box2,Records identified from: specific registers,Specific Registers,NA,database_results.html,
+register_results,NA,box2,Records identified from: Registers,Registers,NA,NA,NA
+register_specific_results,NA,box2,Records identified from: specific registers,Specific Registers,NA,database_results.html,NA
 NA,node16,othstud,Grey title box; Identification of new studies via other methods,Identification of new studies via other methods,Grey title box; Identification of new studies via other methods,othstud.html,0
 website_results,node17,box11,Records identified from: Websites,Websites,"Records identified from: Websites, Organisations and Citation Searching",website_results.html,0
-organisation_results,,box11,Records identified from: Organisations,Organisations,NA,NA,0
+organisation_results,NA,box11,Records identified from: Organisations,Organisations,NA,NA,0
 citations_results,NA,box11,Records identified from: Citation searching,Citation searching,NA,NA,0
 duplicates,node8,box3,Duplicate records,Duplicate records,Duplicate records,duplicates.html,1220
-excluded_automatic,NA,box3,Records marked as ineligible by automation tools,Records marked as ineligible by automation tools,NA,NA,
-excluded_other,NA,box3,Records removed for other reasons,Records removed for other reasons,NA,NA,
+excluded_automatic,NA,box3,Records marked as ineligible by automation tools,Records marked as ineligible by automation tools,NA,NA,NA
+excluded_other,NA,box3,Records removed for other reasons,Records removed for other reasons,NA,NA,NA
 records_screened,node9,box4,Records screened (databases and registers),Records screened,Records screened (databases and registers),records_screened.html,2925
 records_excluded,node10,box5,Records excluded (databases and registers),Records excluded,Records excluded (databases and registers),records_excluded.html,2408
 dbr_sought_reports,node11,box6,Reports sought for retrieval (databases and registers),Reports sought for retrieval,Reports sought for retrieval (databases and registers),dbr_sought_reports.html,517
@@ -21,15 +21,15 @@ dbr_notretrieved_reports,node12,box7,Reports not retrieved (databases and regist
 other_sought_reports,node18,box12,Reports sought for retrieval (other),Reports sought for retrieval,Reports sought for retrieval (other),other_sought_reports.html,0
 other_notretrieved_reports,node19,box13,Reports not retrieved (other),Reports not retrieved,Reports not retrieved (other),other_notretrieved_reports.html,0
 dbr_assessed,node13,box8,Reports assessed for eligibility (databases and registers),Reports assessed for eligibility,Reports assessed for eligibility (databases and registers),dbr_assessed.html,465
-dbr_excluded,node14,box9,"Reports excluded (databases and registers): [separate reasons and numbers using ; e.g. Reason1, xxx; Reason2, xxx; Reason3, xxx]",Reports excluded,Reports excluded (databases and registers),dbrexcludedrecords.html,"Conference abstract, 116; Single-arm or no PTCy contrast, 41; Review (not primary study), 21; Duplicate publication, 13; Systematic review or meta-analysis, 11; Non-eligible population, 5; Protocol or survey only, 4; Other, 3"
+dbr_excluded,node14,box9,"Reports excluded (databases and registers): [separate reasons and numbers using ; e.g. Reason1, xxx; Reason2, xxx; Reason3, xxx]",Reports excluded,Reports excluded (databases and registers),dbrexcludedrecords.html,"Conference abstract, 116; Single-arm or no PTCy contrast, 41; Review (not primary study), 21; Duplicate publication, 14; Systematic review or meta-analysis, 11; Non-eligible population, 5; Protocol or survey only, 4; Other, 3"
 other_assessed,node20,box14,Reports assessed for eligibility (other),Reports assessed for eligibility,Reports assessed for eligibility (other),other_assessed.html,0
-other_excluded,node21,box15,"Reports excluded (other): [separate reasons and numbers using ; e.g. Reason1, xxx; Reason2, xxx; Reason3, xxx]",Reports excluded,Reports excluded (other),other_excluded.html,
-new_studies,node15,box10,Studies included in systematic review,Studies included in systematic review,New studies included in review,new_studies.html,251
-new_reports,NA,box10,Reports of new included studies,Reports of new included studies,NA,NA,
-total_studies,node22,box16,Total studies included in review,Total studies included in review,Total studies included in review,total_studies.html,251
-total_reports,NA,box16,Reports of total included studies,Reports of total included studies,NA,NA,
+other_excluded,node21,box15,"Reports excluded (other): [separate reasons and numbers using ; e.g. Reason1, xxx; Reason2, xxx; Reason3, xxx]",Reports excluded,Reports excluded (other),other_excluded.html,NA
+new_studies,node15,box10,Studies included in systematic review,Studies included in systematic review,New studies included in review,new_studies.html,250
+new_reports,NA,box10,Reports of new included studies,Reports of new included studies,NA,NA,NA
+total_studies,node22,box16,Total studies included in review,Total studies included in review,Total studies included in review,total_studies.html,250
+total_reports,NA,box16,Reports of total included studies,Reports of total included studies,NA,NA,NA
 identification,node1,identification,Blue identification box,Identification,Blue identification box,identification.html,0
 screening,node2,screening,Blue screening box,Screening,Blue screening box,screening.html,0
 included,node3,included,Blue included box,Included,Blue included box,included.html,0
-total_studies_ma,node23,box17,Studies included in meta-analysis,Studies included in meta-analysis,Total studies included in meta-analysis,total_studies_meta_analysis.html,106
-total_reports_ma,NA,box17,Reports of total included studies in meta-analysis,Reports of total included studies in meta-analysis,NA,NA,
+total_studies_ma,node23,box17,Studies included in meta-analysis,Studies included in meta-analysis,Total studies included in meta-analysis,total_studies_meta_analysis.html,105
+total_reports_ma,NA,box17,Reports of total included studies in meta-analysis,Reports of total included studies in meta-analysis,NA,NA,NA

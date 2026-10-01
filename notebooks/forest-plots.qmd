@@ -6,7 +6,7 @@ format:
   html:
     toc: true
     code-fold: show
-    fig-width: 8
+    fig-width: 9
     fig-height: 9
     fig-dpi: 300
 execute:
@@ -19,8 +19,8 @@ The figures in the article are drawn from two ingredients that come from differe
 places:
 
 - **the study rows** — raw per-study odds ratios with Wald 95% CIs, computed here
-  directly from the extracted event counts in `data/analytic/`, with a 0·5 continuity
-  correction applied only to studies with a zero cell;
+  directly from the extracted event counts, with a 0·5 continuity correction applied
+  only to studies with a zero cell;
 - **the pooled row** — the Bayesian random-effects posterior (model M1), taken from the
   exported summaries in `data/models/Table2_setB.csv`.
 
@@ -29,6 +29,9 @@ intercept and a random PTCy-effect slope, so each study does have a (shrunken)
 study-specific effect posterior; the rows shown here are deliberately the raw,
 unshrunken per-study estimates, with pooling left to the Bayesian diamond.
 
+Every plot shows, beside the point estimates, the events and totals of each arm and
+the REML inverse-variance weight of each study, as the journal's forest plots require.
+
 ```{r}
 #| label: setup
 library(dplyr)
@@ -36,6 +39,9 @@ library(tidyr)
 library(readr)
 library(ggplot2)
 library(stringr)
+library(metafor)
+library(patchwork)
+library(ggtext)
 
 here <- function(...) file.path(if (basename(getwd()) == "notebooks") ".." else ".", ...)
 
@@ -44,15 +50,10 @@ studies <- read_csv(here("data", "studies.csv"), show_col_types = FALSE) |>
 pooled  <- read_csv(here("data", "models", "Table2_setB.csv"), show_col_types = FALSE)
 
 # ── Lancet Haematology palette ──
-# lancet_red is sampled from the journal's own PDF; the greys are the neutrals
-# it sets rules and secondary text in.
 lancet_red  <- "#b20d35"
 lancet_dark <- "#2d2d2d"
 lancet_grey <- "#8c8c8c"
 
-
-# The journal draws forest plots on a clean white field: no grid, a single
-# baseline rule, titles in the sans face, everything else out of the way.
 theme_forest <- function(base_size = 10) {
   theme_minimal(base_size = base_size) +
     theme(panel.grid        = element_blank(),
@@ -99,6 +100,12 @@ resolve_data <- function(analytic_file, slug) {
   here("data", "analytic", analytic_file)
 }
 
+POOLED <- "Bayesian pooled (M1)"
+HEADER <- "column_header"
+
+# One forest panel: point estimates on the left, events/totals and REML weights
+# in a side table on the right. The pooled row sits at the top and is the only
+# bold row.
 forest <- function(analytic_file, slug, title, subtitle = NULL) {
   f <- resolve_data(analytic_file, slug)
   if (!file.exists(f)) { message("missing: ", analytic_file); return(invisible(NULL)) }
@@ -110,35 +117,69 @@ forest <- function(analytic_file, slug, title, subtitle = NULL) {
     mutate(slab = sprintf("%s (%s)", first_author, pub_year))
   # multi-arm studies contribute more than one row: keep the labels distinct
   es$slab <- make.unique(es$slab, sep = " – ")
-  es <- es |> arrange(yi) |> mutate(slab = factor(slab, levels = slab))
+
+  # REML inverse-variance weights (the frequentist concordance convention)
+  es$wt <- as.numeric(weights(rma(yi, sei = sei, data = es, method = "REML",
+                                  control = list(silent = TRUE))))
 
   p <- pooled |> filter(slug == !!slug, model == "m1")
   stopifnot(nrow(p) == 1)
 
   pd <- bind_rows(
-    es |> transmute(slab = as.character(slab), or, lo, hi, pooled = FALSE),
-    tibble(slab = "Bayesian pooled (M1)", or = p$or_median,
-           lo = p$ci_low, hi = p$ci_high, pooled = TRUE))
-  pd$slab <- factor(pd$slab, levels = c("Bayesian pooled (M1)", levels(es$slab)))
+    es |>
+      arrange(yi) |>
+      transmute(slab, or, lo, hi,
+                ev_p = sprintf("%d/%d", ptcy_e, ptcy_n),
+                ev_c = sprintf("%d/%d", comp_e, comp_n),
+                wt = sprintf("%.1f", wt), pooled = FALSE),
+    tibble(slab = POOLED, or = p$or_median, lo = p$ci_low, hi = p$ci_high,
+           ev_p = "—", ev_c = "—", wt = "—", pooled = TRUE)
+  )
+  hdr <- tibble(slab = HEADER, or = NA_real_, lo = NA_real_, hi = NA_real_,
+                ev_p = "PTCy events/N", ev_c = "Comparator events/N",
+                wt = "Weight (%)", pooled = FALSE)
+  pd <- bind_rows(pd, hdr) |>
+    mutate(slab = factor(slab, levels = c(es$slab[order(es$yi)], POOLED, HEADER)))
 
-  ggplot(pd, aes(or, slab)) +
+  main <- ggplot(pd, aes(or, slab)) +
     geom_vline(xintercept = 1, linetype = "dashed",
                colour = lancet_grey, linewidth = .35) +
-    # study rows: crimson squares, the journal's forest-plot marker
-    geom_pointrange(data = filter(pd, !pooled), aes(xmin = lo, xmax = hi),
+    geom_pointrange(data = filter(pd, !pooled & slab != HEADER),
+                    aes(xmin = lo, xmax = hi),
                     shape = 15, size = .3, linewidth = .4, colour = lancet_red) +
-    # pooled row: a filled diamond, larger and in the same crimson
-    geom_pointrange(data = filter(pd, pooled), aes(xmin = lo, xmax = hi),
+    geom_pointrange(data = filter(pd, pooled),
+                    aes(xmin = lo, xmax = hi),
                     shape = 18, size = .95, linewidth = .8, colour = lancet_red) +
+    # No bold rows anywhere: vectorised face= is unsupported and misassigns
+    # weights, and markdown labels did not parse reliably here. The pooled row
+    # is distinguished by the diamond and its top position; the header row's
+    # label is blanked.
     scale_x_log10() +
+    scale_y_discrete(labels = \(x) ifelse(x == HEADER, "", x)) +
     labs(x = "Odds ratio (log scale)", y = NULL, title = title,
          subtitle = subtitle %||% sprintf("k = %d, N = %s, τ = %.2f",
                                           p$k, format(p$n_total, big.mark = " "), p$tau),
-         caption = "Study rows: raw per-study OR with Wald 95% CI. Diamond: Bayesian posterior median with 95% CrI.") +
+         caption = paste0("Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). ",
+                          "Weights: REML inverse-variance. Diamond: Bayesian posterior median, 95% CrI (M1).")) +
     theme_forest() +
-    theme(axis.text.y = element_text(
-      face = ifelse(levels(pd$slab) == "Bayesian pooled (M1)", "bold", "plain"),
-      size = rel(.85)))
+    theme(axis.text.y = element_text(size = rel(.85)))
+
+  side <- ggplot(pd, aes(y = slab)) +
+    geom_text(aes(x = 1, label = ev_p), size = 2.4, colour = lancet_dark) +
+    geom_text(aes(x = 2, label = ev_c), size = 2.4, colour = lancet_dark) +
+    geom_text(aes(x = 3, label = wt), size = 2.4, colour = lancet_dark) +
+    scale_x_continuous(limits = c(0.4, 3.6), expand = c(0, 0)) +
+    scale_y_discrete(labels = \(x) ifelse(x == HEADER, "", x)) +
+    labs(x = NULL, y = NULL) +
+    theme_forest() +
+    theme(axis.text = element_blank(),
+          axis.ticks = element_blank(),
+          axis.ticks.length = unit(0, "pt"),
+          axis.line.x = element_blank(),
+          axis.text.y = element_text(size = rel(.85)),
+          plot.caption = element_blank())
+
+  main + side + plot_layout(widths = c(2.5, 1.9))
 }
 
 `%||%` <- function(a, b) if (is.null(a)) b else a
@@ -159,7 +200,7 @@ forest("C1_overall_mortality_OS_event.csv", "c1_os",
 ```{r}
 #| label: fig-cmv-c1
 #| fig-cap: "CMV any-reactivation, comparison 1 (PTCy vs CNI + MTX/MMF)."
-#| fig-height: 7
+#| fig-height: 7.5
 forest("C1_CMV_any_reactivation.csv", "c1_cmv",
        "CMV reactivation — PTCy vs CNI + MTX/MMF")
 ```
@@ -167,62 +208,51 @@ forest("C1_CMV_any_reactivation.csv", "c1_cmv",
 ```{r}
 #| label: fig-cmv-c2
 #| fig-cap: "CMV any-reactivation, comparison 2 (PTCy vs ATG). The direction reverses relative to comparison 1."
-#| fig-height: 5
+#| fig-height: 5.5
 forest("C2_CMV_any_reactivation.csv", "c2_cmv",
        "CMV reactivation — PTCy vs ATG")
 ```
 
 ## Figure 4 — bacterial, fungal, and BK viral infection
 
-```{r}
-#| label: fig-bsi
-#| fig-cap: "Bloodstream infection, any pathogen (comparison 1)."
-#| fig-height: 4
-forest("C1_BSI_any_pathogen.csv", "c1_bsi",
-       "Bloodstream infection, any pathogen — PTCy vs CNI + MTX/MMF")
-```
+The three panels are drawn from the same model-input datasets that feed table 2
+(vendored into `data/models/` from the analysis repository), so the study rows and
+the pooled diamond cannot disagree.
 
 ```{r}
-#| label: fig-ifi
-#| fig-cap: "Invasive fungal infection, any (comparison 1). Note the very large τ."
-#| fig-height: 4
-forest("C1_IFI_any_EORTC_MSG_proven_probable_combined.csv", "c1_ifi_any",
-       "Invasive fungal infection, any — PTCy vs CNI + MTX/MMF")
+#| label: fig-infections-panels
+#| fig-cap: "Bloodstream infection, invasive fungal infection, and BK virus (comparison 1)."
+#| fig-height: 9
+p_bsi <- forest("C1_BSI_any_pathogen.csv", "c1_bsi",
+                "Bloodstream infection, any pathogen — PTCy vs CNI + MTX/MMF")
+p_ifi <- forest("C1_IFI_any_EORTC_MSG_proven_probable_combined.csv", "c1_ifi_any",
+                "Invasive fungal infection, any — PTCy vs CNI + MTX/MMF")
+p_bk  <- forest("C1_BK_virus_reactivation.csv", "c1_bk",
+                "BK virus reactivation — PTCy vs CNI + MTX/MMF")
+p_bsi / p_ifi / p_bk
 ```
-
-Panel C of figure 4 in the article is BK virus reactivation. The BK analytic dataset was
-not part of the `02_extraction/analytic/` export in the analysis repository, so it is not
-reproduced here — the pooled estimate is still carried in table 2
-(`c1_bk`, k = 11, OR 2·48 [1·82–3·38]). To add the panel, export the BK pairs from
-`outcomes.csv` into `data/analytic/C1_BK_virus_reactivation.csv` with the same columns
-as the other files and call `forest()` on it.
 
 ## Acute GVHD grade II–IV
 
 ```{r}
 #| label: fig-agvhd
 #| fig-cap: "Acute GVHD grade II–IV (comparison 1)."
-#| fig-height: 8
+#| fig-height: 8.5
 forest("C1_aGVHD_grade_II_IV.csv", "c1_agvhd",
        "Acute GVHD grade II–IV — PTCy vs CNI + MTX/MMF")
 ```
 
 ## Exporting the article figures
 
-Two of the article's figures changed when the manuscript moved to Set B: overall
-survival (comparison 1) and the comparison 2 panel of the CMV figure. Both are exported
-here in all three renditions so that `index.qmd` picks up the right one per output
-format, and so that the figures cannot disagree with table 2.
-
-The remaining article figures — the comparison 1 CMV panel, and the whole of figure 4
-(BSI, IFI, BK) — were unaffected by deduplication, so the originals from the analysis
-repository are kept.
+All article figures are exported here in all three renditions (PNG at 300 dpi for
+the web build, vector PDF and SVG for the journal), so that `index.qmd` picks up the
+right one per output format, and so that the figures cannot disagree with table 2.
 
 ```{r}
 #| label: export-figures
 #| output: false
 
-export <- function(plot, stem, w = 7, h = 9) {
+export <- function(plot, stem, w = 9, h = 9) {
   for (dev in c("png", "pdf", "svg")) {
     ggsave(here("figures", paste0(stem, ".", dev)), plot,
            width = w, height = h, dpi = 300,
@@ -233,18 +263,18 @@ export <- function(plot, stem, w = 7, h = 9) {
 
 export(forest("C1_overall_mortality_OS_event.csv", "c1_os",
               "Overall survival — PTCy vs CNI + MTX/MMF"),
-       "Figure2_OS_forest_setB", w = 7, h = 9)
+       "Figure2_OS_forest_setB", w = 9, h = 9.5)
+
+export(forest("C1_CMV_any_reactivation.csv", "c1_cmv",
+              "CMV reactivation — PTCy vs CNI + MTX/MMF"),
+       "Figure3a_CMV_C1_forest_setB", w = 9, h = 7)
 
 export(forest("C2_CMV_any_reactivation.csv", "c2_cmv",
               "CMV reactivation — PTCy vs ATG"),
-       "Figure3b_CMV_C2_forest_setB", w = 7, h = 4.5)
+       "Figure3b_CMV_C2_forest_setB", w = 9, h = 5.5)
 
-# Panel A of the CMV figure is unchanged by deduplication, but the repository ships it
-# baked into the same two-panel image as panel B, so it is redrawn here to keep both
-# panels on one source and one visual style.
-export(forest("C1_CMV_any_reactivation.csv", "c1_cmv",
-              "CMV reactivation — PTCy vs CNI + MTX/MMF"),
-       "Figure3a_CMV_C1_forest_setB", w = 7, h = 6.5)
+fig4 <- p_bsi / p_ifi / p_bk
+export(fig4, "Figure4_infections_forest", w = 9, h = 9)
 ```
 
 ## Available analytic datasets

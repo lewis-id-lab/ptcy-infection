@@ -1,11 +1,11 @@
 comp,outcome,k_extracted,k_pooled
-C1,Overall survival,117,35
+C1,Overall survival,116,34
 C1,Non-relapse mortality,109,12
 C1,Relapse-related mortality,41,34
-C1,Acute GVHD II–IV,105,28
-C1,Chronic GVHD mod–severe,62,19
+C1,Acute GVHD II–IV,104,28
+C1,Chronic GVHD mod–severe,61,19
 C1,Chronic GVHD any,28,8
-C1,CMV reactivation,47,22
+C1,CMV reactivation,46,22
 C1,Bloodstream infection,13,6
 C1,Invasive fungal infection,7,6
 C1,BK virus,27,11
@@ -22,4 +22,4 @@ C3,Overall survival,18,6
 C3,Non-relapse mortality,18,5
 C3,Relapse-related mortality,6,6
 C3,Acute GVHD II–IV,18,7
-C3,Chronic GVHD mod–severe,14,4
+C3,Chronic GVHD mod–severe,14,NA

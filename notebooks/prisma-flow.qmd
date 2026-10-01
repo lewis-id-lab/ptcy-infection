@@ -93,10 +93,11 @@ cat("\nall stages reconcile; full-text exclusion reasons sum to ", excl_ft, "\n"
 
 ## The diagram
 
-`previous = FALSE` because there is no earlier version of this review, and
-`other = FALSE` because although reference lists and citation tracking were searched
-(appendix p 2), those yields were not recorded separately and so cannot be shown as a
-second identification column.
+`previous = FALSE` because there is no earlier version of this review.
+`other = TRUE` shows the identification-via-other-methods branch: reference
+lists, citation tracking, and PROSPERO registrations were searched but their
+yields were not recorded separately, so the branch displays zeros and the
+figure legend explains why.
 
 ```{r}
 #| label: build
@@ -104,7 +105,7 @@ plot <- PRISMA_flowdiagram(
   PRISMA_data(as.data.frame(flow)),
   interactive       = FALSE,
   previous          = FALSE,   # no previous version of this review
-  other             = FALSE,   # other-methods yields not separately recorded
+  other             = TRUE,    # other-methods branch shown (zeros; see legend)
   detail_databases  = TRUE,    # show the EMBASE / PubMed / SCOPUS split
   meta_analysis     = TRUE,    # show the 117 studies carried into the models
   side_boxes        = TRUE,
@@ -135,13 +136,18 @@ dot <- gsub("LightSteelBlue2", sprintf('"%s"', lancet_tint), dot, fixed = TRUE)
 # White text on the crimson bar. This has to go on the title node itself, not on
 # the `node [...]` defaults block above it -- a fontcolor set there cascades to
 # every node declared afterwards and turns the whole diagram's text white.
-# `style = "rounded,filled"` is unique to the title bar; the rails use
-# `"filled,rounded"`, the other order.
-stopifnot(sum(gregexpr('style = "rounded,filled"', dot, fixed = TRUE)[[1]] > 0) == 1)
+# With other = TRUE the diagram has more than one `style = "rounded,filled"`
+# node; sub() rewrites only the first, which is the databases title bar.
+stopifnot(sum(gregexpr('style = "rounded,filled"', dot, fixed = TRUE)[[1]] > 0) >= 1)
 dot <- sub('style = "rounded,filled"',
            'style = "rounded,filled", fontcolor = "white"', dot, fixed = TRUE)
 
 stopifnot(!grepl("Goldenrod1|LightSteelBlue2", dot))
+
+# Lancet thousands separators: the package writes "4,145"; the journal uses a
+# thin space ("4 145"). Rewrite comma groupings inside the DOT labels.
+dot <- gsub("([0-9]),([0-9]{3})(?![0-9])", "\\1 \\2", dot, perl = TRUE)
+
 plot$x$diagram <- dot
 ```
 
