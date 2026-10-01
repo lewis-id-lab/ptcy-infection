@@ -361,6 +361,89 @@ The reported M1 uses all studies with outcome data, whereas M2 drops studies wit
 
 : Matched-set comparison of M1 and M2. M1 full set = reported primary model; M1 matched set = M1 refitted on the M2 complete-case studies; M2 = reported steroid-adjustment model. All fits use the random-slope specification with unchanged priors. {#tbl-s9-matched}
 
+### Donor-type confounding
+
+PTCy arms are enriched for haploidentical recipients (47% versus 15% of comparator arms overall). Two analyses address the resulting confounding concern for the five main C1 outcomes. First, within-study imbalance is small: the between-arm difference in haploidentical-donor percentage has median 0 in every outcome dataset, so most of the marginal imbalance is between studies — the component absorbed by the study intercepts (and removed entirely in the fixed-intercept sensitivity above). Second, a meta-regression on the between-arm difference and a donor-matched restriction (absolute difference ≤ 15 percentage points) were fitted for each outcome. The meta-regression coefficient is near zero throughout, and the donor-matched overall-survival estimate is stronger, not weaker, than the full-set estimate (0·60 \[0·44–0·80\] versus 0·76 \[0·61–0·93\]), so the C1 survival and GVHD benefits are not driven by studies in which PTCy arms carried more haploidentical recipients. Fits and summaries are exported in `donor_confounding.csv`, a supplementary data file.
+
+| Outcome | Analysis | k | OR (95% CrI) | Δ-haplo coefficient (95% CrI) |
+|:---|:---|---:|:---|:---|
+| Overall survival | M1 reported | 35 | 0·76 (0·61–0·93) | — |
+| Overall survival | M1 + Δ-haplo meta-regression | 35 | 0·77 (0·62–0·93) | 0·004 (−0·001–0·009) |
+| Overall survival | M1 donor-matched (≤15 pp) | 22 | 0·60 (0·44–0·80) | — |
+| Relapse-related mortality | M1 reported | 34 | 0·87 (0·76–0·99) | — |
+| Relapse-related mortality | M1 + Δ-haplo meta-regression | 34 | 0·87 (0·76–0·99) | 0·001 (−0·003–0·005) |
+| Relapse-related mortality | M1 donor-matched (≤15 pp) | 18 | 0·87 (0·67–1·13) | — |
+| Acute GVHD II–IV | M1 reported | 28 | 0·58 (0·43–0·77) | — |
+| Acute GVHD II–IV | M1 + Δ-haplo meta-regression | 28 | 0·59 (0·44–0·77) | 0·006 (0·000–0·012) |
+| Acute GVHD II–IV | M1 donor-matched (≤15 pp) | 17 | 0·50 (0·33–0·74) | — |
+| CMV reactivation | M1 reported | 22 | 1·22 (0·90–1·65) | — |
+| CMV reactivation | M1 + Δ-haplo meta-regression | 22 | 1·23 (0·89–1·65) | 0·001 (−0·007–0·009) |
+| CMV reactivation | M1 donor-matched (≤15 pp) | 15 | 1·06 (0·73–1·54) | — |
+| Non-relapse mortality | M1 reported | 12 | 0·81 (0·46–1·22) | — |
+| Non-relapse mortality | M1 + Δ-haplo meta-regression | 12 | 0·82 (0·47–1·23) | 0·002 (−0·009–0·013) |
+| Non-relapse mortality | M1 donor-matched (≤15 pp) | 8 | 0·58 (0·23–1·15) | — |
+
+: Donor-type confounding analyses for C1 outcomes. Δ-haplo = PTCy-arm minus comparator-arm haploidentical-donor percentage (study-level); the meta-regression coefficient is on the log-OR scale per percentage point. {#tbl-s9-donor}
+
+### Randomised-trials-only analyses
+
+The 14 randomised trials contribute to the comparisons unevenly after cohort deduplication, so these analyses use the full analytic datasets restricted to trials (one publication per trial cohort). Estimable outcome sets (k ≥ 3) exist for C1 only; every C2 outcome has at most two trials and is not estimable. Estimates for overall survival, chronic GVHD, non-relapse mortality and CMV are compatible with the pooled results, but the acute GVHD II–IV reduction is attenuated and its interval includes 1 (0·92 \[0·60–1·31\], k = 6, versus 0·58 \[0·43–0·77\] pooled), so the estimated magnitude of the acute GVHD benefit rests partly on observational comparisons. Fits and summaries are exported in `rct_only_results.csv`, a supplementary data file.
+
+| Outcome | k (trials) | OR (95% CrI) |
+|:---|---:|:---|
+| Overall survival | 7 | 0·79 (0·58–1·06) |
+| Acute GVHD II–IV | 6 | 0·92 (0·60–1·31) |
+| Chronic GVHD mod–severe | 7 | 0·31 (0·09–0·99) |
+| Non-relapse mortality | 6 | 0·84 (0·47–1·52) |
+| CMV reactivation | 3 | 1·19 (0·54–3·59) |
+
+: Randomised-trials-only M1 models, C1 outcomes with k ≥ 3. {#tbl-s9-rct}
+
+### CMV serostatus and letermovir
+
+Arm-level CMV recipient serostatus was available for only half of the CMV model arms, and directly reported letermovir use for 28 of 44; an enrolment-era proxy (post-2018 versus earlier or era-spanning) is available for all arms and is preferable to publication year, which lags adoption. Adjusting for the era proxy leaves the CMV estimate unchanged (1·23 \[0·90–1·66\]; era coefficient −0·62 \[−1·56–0·31\] on the log-OR scale), as does adjustment for directly reported letermovir use on the reported subset (1·12 \[0·79–1·60\], k = 14) and for the between-arm difference in recipient seropositivity (1·23 \[0·72–1·88\], k = 11; coefficient 0·06 \[−0·03–0·14\] per percentage point). Notably, no arm in the post-2020 sensitivity cohort had letermovir use recorded, and most of these cohorts enrolled before or across the letermovir era, so the larger post-2020 CMV estimate cannot be attributed to — or claimed to persist despite — letermovir adoption. Fits and summaries are exported in `cmv_letermovir.csv`, a supplementary data file.
+
+| Analysis | k | CMV OR (95% CrI) | Covariate coefficient (95% CrI) |
+|:---|---:|:---|:---|
+| M1 reported (any reactivation) | 22 | 1·22 (0·90–1·65) | — |
+| M1 + letermovir era (post-2018 enrolment) | 22 | 1·23 (0·90–1·66) | −0·62 (−1·56–0·31) |
+| M1 + arm-level letermovir use (reported subset) | 14 | 1·12 (0·79–1·60) | −0·02 (−4·94–4·86) |
+| M1 + between-arm CMV R+% difference | 11 | 1·23 (0·72–1·88) | 0·06 (−0·03–0·14) |
+
+: Letermovir and serostatus adjustments for C1 CMV reactivation. {#tbl-s9-letermovir}
+
+### Comparator backbone and PTCy+ATG arms
+
+C1 comparators mix CNI+MTX, CNI+MMF and CNI+MTX+MMF backbones. Splitting by backbone shows the overall-survival benefit concentrated against CNI+MTX comparators (0·53 \[0·33–0·79\], k = 12) and absent against CNI+MMF (1·30 \[0·76–2·29\], k = 5), with CNI+MTX+MMF intermediate (0·85 \[0·56–1·28\], k = 11); the acute GVHD reduction is consistent against CNI+MTX and CNI+MMF (both 0·52) but attenuated against the combined backbone (0·85 \[0·44–1·57\]). Comparator mix therefore contributes to the pooled C1 estimates. Arms receiving PTCy together with ATG are classified as PTCy arms in all three comparisons (54 arms database-wide; 27 C1-eligible, 8 C2-eligible, 17 C3-eligible); three C2 studies include such arms, and excluding them leaves the C2 estimates essentially unchanged (table). Fits and summaries are exported in `comparator_backbone.csv`, a supplementary data file.
+
+| Analysis | k | OR (95% CrI) |
+|:---|---:|:---|
+| C1 OS, comparator CNI+MTX | 12 | 0·53 (0·33–0·79) |
+| C1 OS, comparator CNI+MMF | 5 | 1·30 (0·76–2·29) |
+| C1 OS, comparator CNI+MTX+MMF | 11 | 0·85 (0·56–1·28) |
+| C1 acute GVHD II–IV, comparator CNI+MTX | 15 | 0·52 (0·35–0·74) |
+| C1 acute GVHD II–IV, comparator CNI+MMF | 3 | 0·52 (0·12–2·10) |
+| C1 acute GVHD II–IV, comparator CNI+MTX+MMF | 5 | 0·85 (0·44–1·57) |
+| C1 CMV, comparator CNI+MTX | 10 | 1·31 (0·65–2·36) |
+| C1 CMV, comparator CNI+MMF | 2 | not estimable (k < 3) |
+| C1 CMV, comparator CNI+MTX+MMF | 7 | 0·94 (0·65–1·44) |
+| C2 acute GVHD II–IV, excluding PTCy+ATG-arm studies | 6 | 0·54 (0·24–1·12) |
+| C2 CMV, excluding PTCy+ATG-arm studies | 11 | 0·79 (0·45–1·40) |
+| C2 OS, excluding PTCy+ATG-arm studies | 9 | 0·75 (0·42–1·26) |
+
+: Comparator-backbone subgroups (C1) and PTCy+ATG-arm exclusion (C2). {#tbl-s9-backbone}
+
+### CMV outcome definitions
+
+The reported CMV outcome is any reactivation, which rises under modern surveillance regardless of prophylaxis, whereas clinically significant CMV infection (csCMV) is the outcome letermovir-type prophylaxis is expected to change. A paired-arm csCMV dataset was built from the extraction database (8 studies, day +100 preferred, counts back-calculated from percentages where necessary, following the main pipeline's conventions). The csCMV estimate shows no elevation with PTCy (0·94 \[0·49–1·71\]), in contrast to any reactivation (1·22 \[0·90–1·65\]), although the csCMV set is small and self-selected. The two definitions answer different clinical questions and are reported separately rather than pooled. Fits and summaries are exported in `cmv_definitions.csv`, a supplementary data file.
+
+| Definition | k | OR (95% CrI) |
+|:---|---:|:---|
+| Clinically significant CMV infection (csCMV) | 8 | 0·94 (0·49–1·71) |
+| Any CMV reactivation (reported M1) | 22 | 1·22 (0·90–1·65) |
+
+: CMV estimates by outcome definition, C1. {#tbl-s9-cmvdef}
+
 ### Indirect comparison of the C1 and C2 pooled effects
 
 The depletion-depth interpretation in the main text contrasts the C1 and C2 pooled estimates. A formal indirect comparison — the posterior of the ratio of the two pooled odds ratios — is reported below. The two study sets are disjoint except for one three-arm study (Haebe 2023, study 167), whose shared contribution makes the test mildly conservative. The comparisons enrol different populations (predominantly haploidentical in C1, matched-donor in C2), so the contrast is confounded by population as well as comparator.
@@ -373,6 +456,10 @@ The depletion-depth interpretation in the main text contrasts the C1 and C2 pool
 : Posterior indirect contrast of the pooled PTCy effects between comparisons. P(C1 \> C2) is the posterior probability that the C1 pooled effect exceeds the C2 pooled effect.
 
 The CMV contrast is not resolved: the depletion-depth hierarchy is compatible with the data but not demonstrated by it. The BK contrast is compatible with no difference between comparators, consistent with a comparator-invariant — cyclophosphamide-specific — elevation.
+
+### Formal comparator-class meta-regression (CMV)
+
+As a formal test of the C1–C2 CMV difference, the C1 and C2 CMV datasets were pooled (k = 33) and refitted with a comparator-class main effect and a PTCy-by-comparator-class interaction added to the M1 specification. The interaction estimates the difference in the PTCy effect between comparator classes directly: a ratio of odds ratios of 0·71 (95% CrI 0·41–1·20) for C2 versus C1, with 90% posterior probability that the C1 effect is the larger. The difference is not resolved — the C2 estimate (0·86 \[0·55–1·32\]) is compatible with parity as well as with an intermediate position — so the depletion-depth ordering CNI-based \< PTCy \< ATG remains a hypothesis compatible with the data rather than a demonstrated hierarchy. The populations also differ (predominantly haploidentical in C1, matched-donor in C2), so comparator and population effects cannot be separated. Results are exported in `cmv_comparator_class.csv`, a supplementary data file.
 
 {{< pagebreak >}}
 
@@ -429,6 +516,24 @@ Certainty was assessed per the GRADE Handbook, adapted for observational evidenc
 | Invasive fungal infection | C1 | 6 | 0·63 (0·19–2·62) | −1 (τ = 1·28; extreme) | −1 (CrI crosses null) | not assessable (k = 6) | ⊕⊖⊖⊖ VERY LOW |
 
 : GRADE domain profiles for the pre-specified primary and secondary outcomes, reassessed against the cohort-deduplicated random-effects estimates (2026-09-30). Starting certainty LOW (observational evidence). C2 BSI and C2 IFI were not modelled (insufficient studies) and are not rated.
+
+### Summary-of-findings absolute effects
+
+Odds ratios are not relative risks, and relative measures alone can mislead at the event rates seen here. The table below translates each pooled odds ratio into an absolute difference per 1000 patients at the stated baseline risk (the median comparator-arm event proportion across included studies). These are illustrative translations of the odds ratios, not model-based risk estimates, and inherit the very low certainty of the underlying evidence.
+
+| Outcome | Comparison | Assumed baseline risk | OR (95% CrI) | Absolute difference per 1000 (95% CrI) |
+|:---|:---|---:|:---|---:|
+| Overall survival (mortality) | C1 | 35% | 0·76 (0·61–0·93) | −59 (−100 to −17) |
+| Overall survival (mortality) | C2 | 48% | 0·75 (0·42–1·31) | −71 (−201 to +68) |
+| Non-relapse mortality | C1 | 16% | 0·81 (0·46–1·22) | −26 (−79 to +28) |
+| Acute GVHD II–IV | C1 | 33% | 0·58 (0·43–0·77) | −108 (−155 to −56) |
+| Acute GVHD II–IV | C2 | 44% | 0·51 (0·24–1·02) | −154 (−281 to +5) |
+| CMV reactivation | C1 | 48% | 1·22 (0·90–1·65) | +50 (−26 to +124) |
+| CMV reactivation | C2 | 47% | 0·86 (0·50–1·42) | −37 (−162 to +87) |
+| Bloodstream infection | C1 | 21% | 1·42 (0·57–2·98) | +64 (−77 to +230) |
+| Invasive fungal infection | C1 | 14% | 0·63 (0·19–2·62) | −48 (−112 to +161) |
+
+: Summary-of-findings absolute effects. Baseline risk is the median comparator-arm event proportion; the intervention risk is derived from the pooled odds ratio as OR·p₀/(1−p₀+OR·p₀). Negative values are fewer events with PTCy. Source data: `absolute_effects.csv`, a supplementary data file. {#tbl-s11-sof}
 
 ## S12. Cohort overlap
 

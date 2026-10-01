@@ -1,0 +1,5 @@
+analysis,k,or_med,or_lo,or_hi,covariate,cov_beta,cov_lo,cov_hi,divergences
+M1 reported (any reactivation),22,1.224,0.901,1.652,,NA,NA,NA,0
+M1 + letermovir era (post-2018 enrolment),22,1.231,0.899,1.664,b_era_post2018,-0.617,-1.56,0.311,0
+M1 + arm-level letermovir use (reported subset),14,1.118,0.788,1.597,b_let_any,-0.019,-4.937,4.856,0
+M1 + between-arm CMV R+% difference,11,1.225,0.722,1.877,b_d_rpos_c,0.057,-0.027,0.14,0

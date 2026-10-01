@@ -1,0 +1,3 @@
+definition,k,or_med,or_lo,or_hi,tau_slope,divergences
+Clinically significant CMV infection (csCMV),8,0.943,0.494,1.714,0.643,0
+Any CMV reactivation (reported M1),22,1.224,0.901,1.652,0.532,0

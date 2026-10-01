@@ -1,0 +1,16 @@
+outcome,median_delta_haplo,analysis,k,or_med,or_lo,or_hi,beta_dhaplo,beta_dhaplo_lo,beta_dhaplo_hi,divergences
+c1_os,0,M1 reported,35,0.761,0.615,0.926,NA,NA,NA,0
+c1_os,0,M1 + delta-haplo meta-regression,35,0.765,0.62,0.928,0.004,-0.001,0.009,0
+c1_os,0,M1 donor-matched (|delta| <= 15pp),22,0.602,0.436,0.796,NA,NA,NA,0
+c1_rrm,0,M1 reported,34,0.866,0.761,0.987,NA,NA,NA,0
+c1_rrm,0,M1 + delta-haplo meta-regression,34,0.868,0.758,0.99,0.001,-0.003,0.005,0
+c1_rrm,0,M1 donor-matched (|delta| <= 15pp),18,0.868,0.67,1.126,NA,NA,NA,0
+c1_agvhd,0,M1 reported,28,0.583,0.435,0.768,NA,NA,NA,0
+c1_agvhd,0,M1 + delta-haplo meta-regression,28,0.592,0.44,0.769,0.006,0,0.012,0
+c1_agvhd,0,M1 donor-matched (|delta| <= 15pp),17,0.5,0.334,0.739,NA,NA,NA,0
+c1_cmv,0,M1 reported,22,1.224,0.901,1.652,NA,NA,NA,0
+c1_cmv,0,M1 + delta-haplo meta-regression,22,1.231,0.891,1.654,0.001,-0.007,0.009,0
+c1_cmv,0,M1 donor-matched (|delta| <= 15pp),15,1.063,0.728,1.536,NA,NA,NA,0
+c1_nrm,0,M1 reported,12,0.81,0.456,1.219,NA,NA,NA,0
+c1_nrm,0,M1 + delta-haplo meta-regression,12,0.825,0.472,1.23,0.002,-0.009,0.013,0
+c1_nrm,0,M1 donor-matched (|delta| <= 15pp),8,0.58,0.228,1.148,NA,NA,NA,0

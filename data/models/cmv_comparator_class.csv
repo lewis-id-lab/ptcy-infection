@@ -1,0 +1,4 @@
+k,prob_c1_greater,divergences,quantity,or_med,or_lo,or_hi
+33,0.904,0,PTCy effect vs CNI-based (C1),1.216,0.874,1.658
+33,0.904,0,PTCy effect vs ATG (C2),0.858,0.551,1.321
+33,0.904,0,"Difference (C2 vs C1, ratio of ORs)",0.71,0.412,1.196

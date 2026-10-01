@@ -1,0 +1,13 @@
+analysis,k,or_med,or_lo,or_hi,tau_slope,divergences,note,n_ptcy_atg_studies
+c1_os / CNI+MTX,12,0.533,0.332,0.786,0.51,0,,NA
+c1_os / CNI+MMF,5,1.298,0.761,2.293,0.264,0,,NA
+c1_os / CNI+MTX+MMF,11,0.853,0.56,1.28,0.501,0,,NA
+c1_agvhd / CNI+MTX,15,0.523,0.349,0.736,0.453,0,,NA
+c1_agvhd / CNI+MMF,3,0.515,0.122,2.101,1.098,0,,NA
+c1_agvhd / CNI+MTX+MMF,5,0.853,0.442,1.566,0.336,0,,NA
+c1_cmv / CNI+MTX,10,1.309,0.646,2.357,0.744,0,,NA
+c1_cmv / CNI+MMF,2,NA,NA,NA,NA,NA,not estimable (k < 3),NA
+c1_cmv / CNI+MTX+MMF,7,0.943,0.654,1.442,0.197,0,,NA
+c2_agvhd excluding PTCy+ATG-arm studies,6,0.542,0.238,1.117,0.64,0,,2
+c2_cmv excluding PTCy+ATG-arm studies,11,0.792,0.454,1.398,0.707,0,,1
+c2_os excluding PTCy+ATG-arm studies,9,0.749,0.424,1.258,0.675,0,,0
