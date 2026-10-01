@@ -72,13 +72,13 @@ bloodstream infection (BSI), and invasive fungal infection (IFI). We
 fitted Bayesian random-effects binomial-logistic models. PROSPERO
 registration: CRD420261372156.
 
-**Findings.** Of 4145 records, 251 studies (525 arms; 177 758 patients)
-were included, 117 in the meta-analysis. In C1 (83 studies), PTCy
+**Findings.** Of 4145 records, 251 studies (525 arms; 178 146 patients)
+were included, 106 in the meta-analysis. In C1 (73 studies), PTCy
 was associated with better OS (odds ratio 0·76 \[95% credible interval 0·62–0·93\]) and
 less acute GVHD (0·58 \[0·44–0·77\]); CMV and BSI estimates were
 elevated but imprecise (1·22 \[0·90–1·65\]; 1·42 \[0·57–2·98\], the
 latter from six studies). In C2
-(42 studies), OS favoured PTCy versus ATG (0·75 \[0·42–1·31\];
+(27 studies), OS favoured PTCy versus ATG (0·75 \[0·42–1·31\];
 imprecise) and CMV did not differ (0·86 \[0·50–1·42\]). The
 CMV estimate was larger post-2020 (1·46
 \[1·01–2·05\]). GRADE certainty was
@@ -117,7 +117,7 @@ contexts.
 
 ### Added value of this study
 
-In this large systematic review and meta-analysis (251 studies, 177 758
+In this large systematic review and meta-analysis (251 studies, 178 146
 patients), we were able to systematically pool CMV, bloodstream
 infection, and invasive fungal infection risk in the context of GVHD and
 survival within the same analytic framework. Its dual-comparator design
@@ -316,10 +316,12 @@ screening 2925 titles and abstracts, 517 articles were sought for
 full-text review; 52 could not be retrieved or were not in English. Of
 465 full-text articles assessed, 214 were excluded ([appendix pp
 6–14](appendix-preview.html#s2.-studies-excluded-at-full-text-screening-n214)),
-leaving 251 studies for the systematic review. Of these, 117 studies
-with extractable event counts contributed to the meta-analysis across
-three comparisons: C1 (83 studies), C2 (42 studies), and C3 (13
-studies).
+leaving 251 studies for the systematic review. Of these, 106 unique
+studies contributed outcome data to the meta-analysis across
+three comparisons: C1 (73 studies), C2 (27 studies), and C3 (13
+studies). Seven studies contribute to more than one comparison, so
+the comparison counts sum to 113 rather than 106; the per-outcome
+attrition from extraction to pooling is given in appendix S12.
 
 The 225 comparative studies encompassed 520 arms and 177 758 patients
 (@tbl-characteristics). Most were retrospective cohorts (132 \[59%\]) or
@@ -332,10 +334,13 @@ transplants.
 
 ### Risk of bias
 
-Of 227 observational studies assessed with ROBINS-I, 150 (66%) were at
-moderate risk of bias and 71 (31%) at serious risk, primarily due to
-confounding by donor type and conditioning intensity ([appendix pp
-15–17](appendix-preview.html#s5.-risk-of-bias)). Of 14 RCTs assessed
+Of 211 comparative observational studies assessed with ROBINS-I, 143
+(68%) were at serious risk of bias and 68 (32%) at moderate risk,
+primarily due to confounding by donor type and conditioning intensity;
+no study was rated low or critical risk ([appendix pp
+15–17](appendix-preview.html#s5.-risk-of-bias)). The 16 single-arm
+descriptive studies were also rated but are not included in these
+counts. Of 14 RCTs assessed
 with RoB 2, 11 had some concerns (predominantly unblinded outcome
 assessment), two were at high risk, and one was at low risk of bias.
 
@@ -370,7 +375,9 @@ MTX or MMF (k = 13, 1·03 \[0·68–1·49\]).
 The OS estimate favoured PTCy versus ATG but with substantial
 uncertainty (k = 9, odds ratio 0·75 \[0·42–1·31\]).
 Acute GVHD was less frequent on average, with the interval just reaching the
-null (k = 8, 0·51 \[0·24–1·02\]). NRM could not be assessed (k = 2). CMV
+null (k = 8, 0·51 \[0·24–1·02\]). NRM could not be assessed (k = 2).
+Relapse-related mortality was lower, with the interval reaching the
+null (k = 10, 0·78 \[0·55–1·02\]). CMV
 reactivation did not differ between strategies (k = 12, 0·86
 \[0·50–1·42\]), in contrast with the elevated C1 estimate.
 Infection-related mortality did not differ (k = 7, 0·98 \[0·63–1·83\]).
@@ -430,7 +437,9 @@ that were essentially null (appendix S10).
 ## Discussion
 
 This systematic review and meta-analysis encompassing 251 studies, 525
-arms, and over 177 000 patients provides a comprehensive evaluation of
+arms, and over 178 000 patients (approximately 111 500 unique
+patients after cohort deduplication) provides a comprehensive
+evaluation of
 infection risks with PTCy-based GVHD prophylaxis. Its dual-comparator
 design and simultaneous analysis of survival, GVHD, and infection
 outcomes within a unified Bayesian framework enables a mechanistic
@@ -541,10 +550,12 @@ Third, the IFI estimate (odds ratio 0·63 \[0·19–2·62\]) rests on
 extreme between-study heterogeneity in the treatment effect (τ = 1·28)
 and is likely confounded by antifungal prophylaxis practices; it is
 compatible with anything from a large reduction to a large increase.
-Fifth, cohort deduplication removes the largest registry publications
-from several outcomes where a smaller series reports the same patients
-in more detail, so the pooled totals for survival and chronic GVHD rest
-on fewer patients than the size of the review would suggest. Finally,
+Fourth, cohort deduplication removes the largest registry publications
+from the seven affected outcomes where a smaller series reports the
+same patients in more detail, so the pooled totals for survival and
+chronic GVHD rest on fewer patients than the size of the review would
+suggest; a per-outcome comparison of estimates before and after
+deduplication is provided in appendix S12. Finally,
 with two arms per study the random-effects model is just-identified at
 study level, so for sparse outcomes (k ≤ 6) the priors contribute
 materially to the estimated between-study standard deviation, and
@@ -652,6 +663,7 @@ responsibility for the analysis and manuscript contents
 | Single-arm descriptive | 26 |  |
 | Arms | 272 | 248 |
 | Total patients | 177 758 |  |
+| Unique patients after cohort deduplication | 111 511 |  |
 | RCTs | 14 (6%) |  |
 | **Study design** |  |  |
 | Retrospective cohort | 132 (59%) |  |
@@ -659,10 +671,10 @@ responsibility for the analysis and manuscript contents
 | Prospective cohort | 17 (8%) |  |
 | Publication year, median (IQR) | 2023 (2021–24) |  |
 | Follow-up, months, median (IQR) | 26 (20–36) |  |
-| **ROBINS-I overall judgement (n=227)** |  |  |
-| Moderate | 150 (66%) |  |
-| Serious | 71 (31%) |  |
-| High | 6 (3%) |  |
+| **ROBINS-I overall judgement (n=211)** |  |  |
+| Serious | 143 (68%) |  |
+| Moderate | 68 (32%) |  |
+| Low / Critical | 0 |  |
 | **Arm-level characteristics** |  |  |
 | Patients per arm, median (IQR) | 99 (46–212) | 120 (51–375) |
 | Age, years, median (IQR)\* | 52·0 (44·9–58·0) | 53·0 (43·0–57·9) |
@@ -752,10 +764,10 @@ title and abstract. 517 reports were sought for retrieval; 52 were not
 retrieved or not in English. 465 full-text reports were assessed and 214
 excluded ([appendix pp
 6–14](appendix-preview.html#s2.-studies-excluded-at-full-text-screening-n214)).
-251 studies were included in the systematic review; 117 with extractable
-event counts were included in the meta-analysis (C1 83 studies; C2 42
-studies; C3 13
-studies).](figures/Figure1_PRISMA_flow_diagram){#fig-prisma}
+251 studies were included in the systematic review; 106 unique
+studies contributed outcome data to the meta-analysis (C1 73 studies;
+C2 27 studies; C3 13 studies; 7 studies contribute to more than one
+comparison).](figures/Figure1_PRISMA_flow_diagram){#fig-prisma}
 
 {{< pagebreak >}}
 

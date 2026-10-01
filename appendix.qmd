@@ -338,28 +338,28 @@ M2 is not a mediation analysis: it estimates no indirect effect, and because it 
 
 The reported M1 uses all studies with outcome data, whereas M2 drops studies without exposure data, so an M1–M2 contrast mixes covariate adjustment with a changed study set. M1 was therefore refitted — specification and priors unchanged — on each outcome's M2 complete-case subset. For C1 overall survival the attenuation is attributable to the covariate rather than the subset: on the same 28 studies M1 gives 0·77 (0·59–0·96) and M2 gives 0·96 (0·72–1·28), against a full-set M1 of 0·76 (0·62–0·93). The same pattern holds for C2 overall survival (matched-set M1 0·69 \[0·36–1·30\] versus M2 0·90 \[0·45–1·74\]). Conversely, the C1 relapse-related-mortality interval crossing the null after steroid adjustment is attributable to the subset rather than the covariate (matched-set M1 0·87 \[0·73–1·02\]; M2 0·85 \[0·71–1·02\]). Fits and per-model summaries are exported in `m1_m2_matched.csv`, a supplementary data file.
 
-| Outcome | Model | k | OR (95% CrI) | τ |
-|:---|:---|---:|:---|---:|
-| C1 Overall survival | M1 full set | 35 | 0·76 (0·61–0·93) | 0·44 |
-| C1 Overall survival | M1 matched set | 28 | 0·77 (0·59–0·96) | 0·49 |
-| C1 Overall survival | M2 | 28 | 0·96 (0·72–1·28) | 0·46 |
-| C1 Relapse-related mortality | M1 full set | 34 | 0·87 (0·76–0·99) | 0·08 |
-| C1 Relapse-related mortality | M1 matched set | 27 | 0·87 (0·73–1·02) | 0·11 |
-| C1 Relapse-related mortality | M2 | 27 | 0·85 (0·71–1·02) | 0·10 |
-| C1 Non-relapse mortality | M1 full set | 12 | 0·81 (0·46–1·22) | 0·41 |
-| C1 Non-relapse mortality | M1 matched set | 9 | 0·74 (0·35–1·17) | 0·36 |
-| C1 Non-relapse mortality | M2 | 9 | 0·81 (0·27–1·57) | 0·39 |
-| C1 CMV reactivation | M1 full set | 22 | 1·22 (0·90–1·65) | 0·53 |
-| C1 CMV reactivation | M1 matched set | 18 | 1·13 (0·83–1·51) | 0·41 |
-| C1 CMV reactivation | M2 | 18 | 1·25 (0·87–1·75) | 0·39 |
-| C2 Overall survival | M1 full set | 9 | 0·75 (0·42–1·31) | 0·68 |
-| C2 Overall survival | M1 matched set | 8 | 0·69 (0·36–1·30) | 0·72 |
-| C2 Overall survival | M2 | 8 | 0·90 (0·45–1·74) | 0·60 |
-| C2 CMV reactivation | M1 full set | 12 | 0·86 (0·50–1·42) | 0·68 |
-| C2 CMV reactivation | M1 matched set | 12 | 0·86 (0·51–1·43) | 0·68 |
-| C2 CMV reactivation | M2 | 12 | 0·87 (0·47–1·50) | 0·71 |
+| Outcome | Model | k | N | OR (95% CrI) | τ |
+|:---|:---|---:|---:|:---|---:|
+| C1 Overall survival | M1 full set | 35 | 10 133 | 0·76 (0·61–0·93) | 0·44 |
+| C1 Overall survival | M1 matched set | 28 | 7 025 | 0·77 (0·59–0·96) | 0·49 |
+| C1 Overall survival | M2 | 28 | 7 025 | 0·96 (0·72–1·28) | 0·46 |
+| C1 Relapse-related mortality | M1 full set | 34 | 11 121 | 0·87 (0·76–0·99) | 0·08 |
+| C1 Relapse-related mortality | M1 matched set | 27 | 7 773 | 0·87 (0·73–1·02) | 0·11 |
+| C1 Relapse-related mortality | M2 | 27 | 7 773 | 0·85 (0·71–1·02) | 0·10 |
+| C1 Non-relapse mortality | M1 full set | 12 | 1 309 | 0·81 (0·46–1·22) | 0·41 |
+| C1 Non-relapse mortality | M1 matched set | 9 | 991 | 0·74 (0·35–1·17) | 0·36 |
+| C1 Non-relapse mortality | M2 | 9 | 991 | 0·81 (0·27–1·57) | 0·39 |
+| C1 CMV reactivation | M1 full set | 22 | 3 328 | 1·22 (0·90–1·65) | 0·53 |
+| C1 CMV reactivation | M1 matched set | 18 | 2 325 | 1·13 (0·83–1·51) | 0·41 |
+| C1 CMV reactivation | M2 | 18 | 2 325 | 1·25 (0·87–1·75) | 0·39 |
+| C2 Overall survival | M1 full set | 9 | 12 791 | 0·75 (0·42–1·31) | 0·68 |
+| C2 Overall survival | M1 matched set | 8 | 10 429 | 0·69 (0·36–1·30) | 0·72 |
+| C2 Overall survival | M2 | 8 | 10 429 | 0·90 (0·45–1·74) | 0·60 |
+| C2 CMV reactivation | M1 full set | 12 | 1 511 | 0·86 (0·50–1·42) | 0·68 |
+| C2 CMV reactivation | M1 matched set | 12 | 1 511 | 0·86 (0·51–1·43) | 0·68 |
+| C2 CMV reactivation | M2 | 12 | 1 511 | 0·87 (0·47–1·50) | 0·71 |
 
-: Matched-set comparison of M1 and M2. M1 full set = reported primary model; M1 matched set = M1 refitted on the M2 complete-case studies; M2 = reported steroid-adjustment model. All fits use the random-slope specification with unchanged priors. {#tbl-s9-matched}
+: Matched-set comparison of M1 and M2. M1 full set = reported primary model; M1 matched set = M1 refitted on the M2 complete-case studies; M2 = reported steroid-adjustment model. N = total patients across both arms; matched-set M1 and M2 always share the same studies and N. All fits use the random-slope specification with unchanged priors. {#tbl-s9-matched}
 
 ### Donor-type confounding
 
@@ -538,6 +538,56 @@ Odds ratios are not relative risks, and relative measures alone can mislead at t
 ## S12. Cohort overlap
 
 ![Cohort overlap map. Studies sharing patient cohorts were flagged and the most comprehensive publication designated as primary for each cohort–outcome combination (Set B, the adopted analysis).](figures/FigureS12_cohort_overlap_map){#fig-s12}
+
+### Per-outcome attrition from extraction to pooling
+
+The pooled study count is smaller than the comparison size for every outcome because the models require a harmonised timepoint with actual event counts per arm, and because cohort deduplication (Set B) retains one publication per cohort. The table below gives, for each outcome, the number of studies with paired-arm outcome records in the extraction database and the number pooled in the reported model.
+
+| Comparison | Outcome | Studies with paired-arm records | Studies pooled |
+|:---|:---|---:|---:|
+| C1 | Overall survival | 117 | 35 |
+| C1 | Non-relapse mortality | 109 | 12 |
+| C1 | Relapse-related mortality | 41 | 34 |
+| C1 | Acute GVHD II–IV | 105 | 28 |
+| C1 | Chronic GVHD mod–severe | 62 | 19 |
+| C1 | Chronic GVHD any | 28 | 8 |
+| C1 | CMV reactivation | 47 | 22 |
+| C1 | Bloodstream infection | 13 | 6 |
+| C1 | Invasive fungal infection | 7 | 6 |
+| C1 | BK virus | 27 | 11 |
+| C1 | Infection-related mortality | 18 | 13 |
+| C2 | Overall survival | 47 | 9 |
+| C2 | Non-relapse mortality | 43 | 3 |
+| C2 | Relapse-related mortality | 12 | 10 |
+| C2 | Acute GVHD II–IV | 43 | 8 |
+| C2 | Chronic GVHD mod–severe | 26 | 6 |
+| C2 | CMV reactivation | 18 | 12 |
+| C2 | BK virus | 10 | 3 |
+| C2 | Infection-related mortality | 9 | 7 |
+| C3 | Overall survival | 18 | 6 |
+| C3 | Non-relapse mortality | 18 | 5 |
+| C3 | Relapse-related mortality | 6 | 6 |
+| C3 | Acute GVHD II–IV | 18 | 7 |
+| C3 | Chronic GVHD mod–severe | 14 | 4 |
+
+: Per-outcome attrition. "Studies with paired-arm records" counts studies with extractable event data (counts or percentages) for both a PTCy and an eligible comparator arm in `outcomes.csv`; "studies pooled" is the model-input k from table 2. The difference reflects outcome-specific eligibility (harmonised timepoint, actual event counts rather than derived estimates), complete-case rules, and — for the seven deduplication-affected outcomes below — removal of duplicate cohort publications. A small number of pooled studies enter via rebuilt estimates (for example from reported hazard ratios) and so do not appear in the extracted-count column. Source data: `outcome_flow.csv`, a supplementary data file. {#tbl-s12-flow}
+
+### Estimates before and after cohort deduplication
+
+Cohort deduplication (Set B) changed seven outcomes; all other outcomes were unaffected. Set A values are the pre-deduplication estimates under the originally submitted common-effect model; Set B values are the reported estimates under the random-slope model (the specification change is documented in S6 and S9). Note that the Set A C1 overall-survival M2 result (0·86 \[0·77–0·96\]) was originally read as a residual direct survival benefit; under Set B the steroid-adjusted estimate is 0·96 \[0·72–1·28\], and M2 is now reported as an appendix-only exploratory analysis (S9).
+
+| Outcome | k, Set A | OR, Set A (common-effect) | k, Set B | OR, Set B (reported) |
+|:---|---:|:---|---:|:---|
+| C1 Overall survival (M1) | 40 | 0·79 (0·73–0·85) | 35 | 0·76 (0·61–0·93) |
+| C1 Overall survival (M2, appendix-only) | 40 | 0·86 (0·77–0·96) | 28 | 0·96 (0·72–1·28) |
+| C1 Relapse-related mortality | 38 | 0·84 (0·76–0·93) | 34 | 0·87 (0·76–0·99) |
+| C1 Chronic GVHD mod–severe | 21 | 0·33 (0·29–0·36) | 19 | 0·40 (0·22–0·68) |
+| C1 Infection-related mortality | 16 | 1·35 (1·16–1·57) | 13 | 1·03 (0·68–1·49) |
+| C2 Overall survival | 10 | 0·81 (0·74–0·90) | 9 | 0·75 (0·42–1·31) |
+| C2 Acute GVHD II–IV | 9 | 0·58 (0·44–0·77) | 8 | 0·51 (0·24–1·02) |
+| C2 CMV reactivation | 13 | 0·92 (0·73–1·15) | 12 | 0·86 (0·50–1·42) |
+
+: Estimates before (Set A) and after (Set B) cohort deduplication for the seven affected outcomes. Set A estimates are from the originally submitted common-effect models; Set B estimates are the reported random-slope models, so intervals are not directly comparable in width. {#tbl-s12-setab}
 
 ## S13. PROSPERO registration
 
