@@ -70,6 +70,8 @@ key <- tribble(
   "c3_agvhd",     "Acute GVHD II–IV",       "C3",
   "c1_cgvhd_ms",  "Chronic GVHD mod–severe","C1",
   "c2_cgvhd_ms",  "Chronic GVHD mod–severe","C2",
+  "c1_cgvhd_any", "Chronic GVHD any",       "C1",
+  "c3_cgvhd",     "Chronic GVHD any",       "C3",
   "c1_cmv",       "CMV reactivation",            "C1",
   "c2_cmv",       "CMV reactivation",            "C2",
   "c1_bsi",       "Bloodstream infection",       "C1",
@@ -79,15 +81,16 @@ key <- tribble(
   "c1_irm",       "Infection-related mortality", "C1",
   "c2_irm",       "Infection-related mortality", "C2")
 
-# GRADE ratings are a judgement recorded during the review, not a model output
+# GRADE ratings are a judgement recorded during the review, not a model
+# output. Values match appendix S11 (reassessed 2026-09-30: all VERY LOW).
 grade <- tribble(
   ~slug,         ~model, ~GRADE,
-  "c1_os",       "m1",   "Low",
-  "c2_os",       "m1",   "Low",
+  "c1_os",       "m1",   "Very low",
+  "c2_os",       "m1",   "Very low",
   "c1_nrm",      "m1",   "Very low",
-  "c1_agvhd",    "m1",   "Low",
-  "c2_agvhd",    "m1",   "Low",
-  "c1_cmv",      "m1",   "Low",
+  "c1_agvhd",    "m1",   "Very low",
+  "c2_agvhd",    "m1",   "Very low",
+  "c1_cmv",      "m1",   "Very low",
   "c2_cmv",      "m1",   "Very low",
   "c1_bsi",      "m1",   "Very low",
   "c1_ifi_any",  "m1",   "Very low")
@@ -95,9 +98,10 @@ grade <- tribble(
 
 ```{r}
 #| label: tbl-pooled
-#| tbl-cap: "Bayesian meta-analysis results by outcome and comparison (Set B, cohort-deduplicated). M1 = primary model adjusted for timepoint. M2 = steroid-mediation model. k = number of paired studies. N = total patients across all arms. τ = between-study SD (posterior median)."
+#| tbl-cap: "Bayesian meta-analysis results by outcome and comparison (Set B, cohort-deduplicated). M1 = primary model adjusted for timepoint. M2 (exploratory steroid adjustment) is reported in appendix S9 only. k = number of paired studies. N = total patients across all arms. τ = between-study SD (posterior median). 95% PI = prediction interval for the PTCy effect in a new study, from the posterior of the random PTCy-effect slope."
 
 t2 |>
+  filter(model == "m1") |>   # M2 is appendix-only (appendix S9)
   inner_join(key, by = "slug") |>
   left_join(grade, by = c("slug", "model")) |>
   mutate(
@@ -112,9 +116,10 @@ t2 |>
     N          = thin_n(n_total),
     `OR (95% CrI)` = or_cri(or_median, ci_low, ci_high),
     `τ`   = middot(tau),
+    `95% PI`   = sprintf("%s–%s", middot(pi_low), middot(pi_high)),
     GRADE      = coalesce(GRADE, "—"),
     Source     = source) |>
-  kable(align = "llcrrlrll")
+  kable(align = "llcrrllll")
 ```
 
 ## Frequentist concordance check
@@ -128,20 +133,15 @@ propagate uncertainty in τ.
 #| label: tbl-freq
 #| tbl-cap: "Bayesian posterior medians beside frequentist REML estimates."
 
-fcols <- names(freq)
-cat("freq_results_setB.csv columns:", paste(fcols, collapse = ", "), "\n\n")
-
-if (all(c("slug", "or") %in% fcols)) {
-  t2 |>
-    filter(model == "m1") |>
-    inner_join(key, by = "slug") |>
-    inner_join(freq, by = "slug", suffix = c("_bayes", "_freq")) |>
-    transmute(Outcome = outcome, Comparison = comparison, k = k_bayes,
-              Bayesian = or_cri(or_median, ci_low, ci_high)) |>
-    kable()
-} else {
-  freq |> kable()
-}
+t2 |>
+  filter(model == "m1") |>
+  inner_join(key, by = "slug") |>
+  inner_join(freq, by = "slug", suffix = c("", "_freq")) |>
+  transmute(Outcome = outcome, Comparison = comparison, k,
+            Bayesian = or_cri(or_median, ci_low, ci_high),
+            `Frequentist REML` = or_cri(freq_or, freq_lo, freq_hi),
+            `I²` = sprintf("%d%%", round(I2))) |>
+  kable()
 ```
 
 ## Publication bias

@@ -79,10 +79,9 @@ reduced acute GVHD (0·58 \[0·44–0·77\]); CMV and BSI estimates were
 elevated but imprecise (1·22 \[0·90–1·65\]; 1·42 \[0·57–2·98\]). In C2
 (42 studies), OS favoured PTCy versus ATG (0·75 \[0·42–1·31\];
 imprecise) and CMV did not differ (0·86 \[0·50–1·42\]). The
-CMV estimate was steroid-independent and larger post-2020 (1·46
-\[1·01–2·05\]); the C1 survival benefit was attenuated by steroid
-adjustment (0·96 \[0·72–1·28\]). GRADE certainty was very low for all
-outcomes.
+CMV estimate was larger post-2020 (1·46
+\[1·01–2·05\]). GRADE certainty was
+very low for all outcomes.
 
 **Interpretation.** PTCy improves survival and reduces GVHD versus
 CNI-based prophylaxis, with uncertain benefit versus ATG. Infection
@@ -127,16 +126,14 @@ contrast is indirect and not formally resolved. Elevated average infection
 risk was estimated versus CNI-based (odds ratio 1·22 \[0·90–1·65\]) but
 not ATG-based (0·86 \[0·50–1·42\]) prophylaxis, a directional pattern
 consistent with T-cell depletion in general driving infection risk,
-although both intervals are wide. Bayesian mediation analysis found the
-CMV point estimate unchanged by adjustment for steroid exposure, whereas
-the survival benefit of PTCy versus CNI-based prophylaxis was attenuated
-by steroid exposure.
+although both intervals are wide.
 
 ```{=html}
-<!-- TODO: this claim was reversed by the switch to the Set B (cohort-deduplicated)
-     analysis. The pre-deduplication analysis gave C1 OS M2 = 0·86 (0·77–0·96), read as
-     a residual direct survival benefit; Set B gives 1·04 (0·89–1·22) on 28 of 35
-     studies. Confirm the reading before submission — see the Discussion. -->
+<!-- RESOLVED 2026-10-01: M2 is now presented as an exploratory post-hoc
+     steroid-adjustment analysis, not a mediation analysis. Matched-set refits
+     (M1 on the M2 complete-case studies, appendix S9) show the C1 OS
+     attenuation (matched M1 0.77 vs M2 0.96 on the same 28 studies) comes from
+     the covariate, not the changed study set. Old TODO removed. -->
 ```
 
 ```{=html}
@@ -196,8 +193,7 @@ regimens
 To address this question, we conducted a systematic review and Bayesian
 meta-analysis to simultaneously evaluate survival, GVHD, and infection
 outcomes of PTCy-based GVHD prophylaxis across three pre-specified
-comparisons, with a GVHD-mediation analysis to decompose the pathways
-through which PTCy influences clinical outcomes.
+comparisons.
 
 ## Methods
 
@@ -241,7 +237,8 @@ overlap map is provided in the [appendix (p
 
 ### Outcomes
 
-The primary outcome was overall survival (OS). Secondary outcomes
+The primary outcome was overall survival (OS), analysed as all-cause
+mortality (death as the event) at the reported timepoint. Secondary outcomes
 included non-relapse mortality (NRM), acute GVHD grade II–IV (at day
 +100), chronic GVHD (moderate to severe), CMV reactivation (any),
 bloodstream infection (BSI, any pathogen), invasive fungal infection
@@ -253,26 +250,45 @@ infection-related mortality (IRM).
 We fitted Bayesian random-effects binomial-logistic regression models
 using `brms` (version 2.23.0) with an `rstan` backend in R (version
 4.6.0). The primary model (M1) estimated the PTCy treatment effect
-adjusted for timepoint (early \[day +100 or +180\] versus late \[≥1
-year\]) with a random intercept and a random PTCy-effect slope for
-study, so that pooled effects average over between-study heterogeneity
-in the treatment effect. Weakly informative priors were specified: N(0,
+with a random intercept and a random PTCy-effect slope for study, so
+that pooled effects average over between-study heterogeneity in the
+treatment effect. Each study contributes a single row per outcome —
+its preferred timepoint where reported (day +100 or +180 for early
+outcomes, one year for late outcomes), otherwise the nearest reported
+(fallback) timepoint — so no within-study correlation across
+timepoints arises; an indicator variable distinguishes fallback from
+preferred timepoints. Weakly informative priors were specified: N(0,
 2·5) on fixed effects, N(0, 1·5) on the intercept, and Student t(3,
 0, 1) on the between-study standard deviations (τ). Four chains of 4000
 iterations (1000 warmup) were run with `adapt_delta` = 0·95 (increased
 to 0·99 where divergent transitions occurred). Convergence was assessed
-by R̂ and effective sample size.
+by R̂ and effective sample size. Single-arm descriptive studies
+(n = 26) were retained for the PRISMA flow diagram and descriptive
+tabulation only; because they report no comparator arm, they
+contribute no outcome data to any comparative model, all of which
+are restricted to studies reporting event counts for both a PTCy
+and a non-PTCy arm.
 
-The GVHD-mediation model (M2) added arm-level systemic steroid exposure
-percentage as a covariate, providing an estimate of the PTCy effect
-independent of GVHD-mediated steroid burden. Attenuation of the
-treatment effect from M1 to M2 was interpreted as evidence of
-steroid-mediated confounding.
+An exploratory steroid-adjustment model (M2), a post-hoc amendment
+to the registered protocol (appendix S13), added arm-level systemic
+corticosteroid exposure as a covariate. Because the covariate is
+post-treatment and arm-level, and in most arms approximated from
+acute GVHD incidence rather than directly reported, M2 estimates no
+indirect effect and is reported only in the appendix (S9), together
+with its definition, provenance, results, and a matched-set
+comparison against M1.
 
 Pre-specified sensitivity analyses included restriction to post-2020
 publications (introduction of letermovir prophylaxis),
 haploidentical-dominant cohorts (≥50% haploidentical donors), and
-leave-one-out analysis. Frequentist random-effects models (restricted
+leave-one-out analysis. Hazard ratios were not pooled in the primary
+analysis because most studies reported only event counts or
+Kaplan–Meier estimates at fixed timepoints; in a post-hoc sensitivity
+analysis, the reported overall-survival hazard ratios
+(multivariable-adjusted where available, one per study, direction
+harmonised to PTCy versus comparator with death as the event) were
+pooled two-stage under a random-effects model (appendix S9).
+Frequentist random-effects models (restricted
 maximum likelihood \[REML\], `metafor` version 5.0.1) were fitted as
 concordance checks. Publication bias was assessed using robust Bayesian
 model-averaging (RoBMA). Certainty of evidence was assessed using the
@@ -318,15 +334,10 @@ assessment), two were at high risk, and one was at low risk of bias.
 ### Comparison 1: PTCy versus CNI plus MTX or MMF
 
 PTCy was associated with improved OS (k = 35, odds ratio 0·76 [95%
-credible interval 0·62–0·93]; @fig-os). Adjusting for steroid exposure
-attenuated the association (M2 0·96 [0·72–1·28], k = 28), suggesting
-that the survival advantage is mediated through GVHD suppression and the
-steroid burden that follows it rather than through an additional direct
-effect of PTCy. NRM showed a non-significant trend toward benefit (k =
+credible interval 0·62–0·93]; @fig-os). NRM showed a non-significant
+trend toward benefit (k =
 12, 0·81 \[0·46–1·22\]). Relapse-related mortality was reduced (k = 34,
-0·87 \[0·76–0·99\]); the point estimate was similar after steroid
-adjustment, although the interval then crossed the null (M2 0·85
-\[0·71–1·02\], k = 27).
+0·87 \[0·76–0·99\]).
 
 Acute GVHD grade II–IV was substantially reduced (k = 28, 0·58
 \[0·44–0·77\]), as was moderate-to-severe chronic GVHD (k = 19, 0·40
@@ -334,8 +345,7 @@ Acute GVHD grade II–IV was substantially reduced (k = 28, 0·58
 
 CMV reactivation was higher on average in the PTCy group, but the
 credible interval included the null (k = 22, 1·22 [0·90–1·65];
-@fig-cmv). The point estimate was unchanged by steroid adjustment (M2
-1·25 [0·87–1·75]) and was larger in post-2020 studies (k = 17, 1·46
+@fig-cmv). The estimate was larger in post-2020 studies (k = 17, 1·46
 [1·01–2·05]) and haploidentical-dominant cohorts (k = 12, 1·34
 [0·90–1·96]). BSI estimates likewise favoured the comparator, with wide
 intervals (k = 6, 1·42 [0·57–2·98]). BK virus reactivation showed the
@@ -349,13 +359,11 @@ MTX or MMF (k = 13, 1·03 \[0·68–1·49\]).
 ### Comparison 2: PTCy versus ATG
 
 The OS estimate favoured PTCy versus ATG but with substantial
-uncertainty (k = 9, odds ratio 0·75 \[0·42–1·31\]), and was attenuated
-toward the null by steroid adjustment (M2 0·90 \[0·45–1·74\], k = 8).
+uncertainty (k = 9, odds ratio 0·75 \[0·42–1·31\]).
 Acute GVHD was reduced on average, with the interval just reaching the
 null (k = 8, 0·51 \[0·24–1·02\]). NRM could not be assessed (k = 2). CMV
 reactivation did not differ between strategies (k = 12, 0·86
-\[0·50–1·42\]), in contrast with the elevated C1 estimate, and was
-likewise unaffected by steroid adjustment (M2 0·87 \[0·47–1·50\]).
+\[0·50–1·42\]), in contrast with the elevated C1 estimate.
 Infection-related mortality did not differ (k = 7, 0·98 \[0·63–1·83\]).
 BK virus reactivation was elevated versus ATG (k = 3, 2·49
 \[1·09–6·03\]), the only infection estimate in C2 whose interval
@@ -423,31 +431,23 @@ pathogen-specific T-cell repertoire (a collateral immunological
 cost)[@zhao2022]. In C1, this T-cell depletion manifested as higher
 average CMV reactivation (odds ratio 1·22 \[0·90–1·65\]) and BSI (1·42
 \[0·57–2·98\]), although credible intervals for both included the null.
-Neither point estimate was attenuated by adjusting for steroid exposure
-(CMV M2 1·25 \[0·87–1·75\]), suggesting that these infection risks
-operate through a pathway orthogonal to the GVHD–steroid cascade, but
-their magnitudes are uncertain.
 
-The survival benefit of PTCy, however, is attenuated by the same
-adjustment for steroid exposure (C1 OS M2 0·96 \[0·72–1·28\]), placing
-the survival advantage of PTCy on the GVHD–steroid pathway rather than
-alongside it. Taken together, the two results dissociate benefit from
-harm: what PTCy gains in survival it gains by suppressing GVHD and the
-steroid burden that follows, while what it costs in CMV and bacteraemia
-it costs through T-cell depletion, independently. That the reduction in
-relapse-related mortality (0·87 \[0·76–0·99\]) retained a similar point
-estimate after steroid adjustment (0·85 \[0·71–1·02\]) suggests a
-possible third, separate contribution from the graft-versus-tumour
-effect. This mediation analysis rests on arm-level steroid exposure, is
-available for 28 of the 35 studies contributing to the survival model,
-and should be read as hypothesis-generating.
+The survival benefit, in contrast, is biologically plausible as a
+consequence of GVHD suppression: PTCy reduced acute and chronic GVHD
+(table 2), and GVHD and its treatment are leading drivers of
+morbidity and non-relapse mortality after transplantation. An
+exploratory steroid-adjustment analysis reported in the appendix
+(S9) is compatible with — but cannot demonstrate — this
+GVHD–steroid pathway, because it adjusts for a post-treatment,
+arm-level covariate. The reduction in relapse-related mortality
+(0·87 \[0·76–0·99\]) is compatible with an additional
+graft-versus-tumour contribution.
 
 ```{=html}
-<!-- TODO: this paragraph was rewritten when the manuscript moved to the Set B
-     (cohort-deduplicated) analysis. Under the pre-deduplication fits, C1 OS M2 was
-     0·86 (0·77–0·96), and the paper argued for a residual direct survival benefit
-     beyond GVHD suppression. Set B gives 1·04 (0·89–1·22), which does not support
-     that claim. Confirm this reading with the co-authors before submission. -->
+<!-- RESOLVED 2026-10-01: mediation language removed; M2 is exploratory
+     steroid adjustment. Matched-set M1 (0.77 on the same 28 studies) shows the
+     attenuation is attributable to the covariate, not the subset. Old TODO
+     removed. -->
 ```
 
 The C2 analysis provides a partial test of this framework. If CMV
@@ -482,13 +482,12 @@ evidence base is predominantly observational, and no outcome exceeded
 low certainty under GRADE assessment; all outcomes were rated very low
 certainty. Selection bias, confounding by
 donor type, and centre-level practice variation are inherent limitations
-that cannot be fully addressed by meta-regression. Second, the
-steroid-mediation analysis uses arm-level rather than individual-patient
-data, limiting causal inference. Third, infection outcome definitions
+that cannot be fully addressed by meta-regression. Second,
+infection outcome definitions
 varied across studies (for example, any CMV reactivation versus
 clinically significant CMV infection; any positive blood culture versus
 BSI requiring intensive care), introducing measurement heterogeneity.
-Fourth, the IFI estimate (odds ratio 0·63 \[0·19–2·62\]) rests on
+Third, the IFI estimate (odds ratio 0·63 \[0·19–2·62\]) rests on
 extreme between-study heterogeneity in the treatment effect (τ = 1·28)
 and is likely confounded by antifungal prophylaxis practices; it is
 compatible with anything from a large reduction to a large increase.
@@ -628,7 +627,9 @@ responsibility for the analysis and manuscript contents
 
 : Characteristics of included studies. Data are n (%) or median (IQR)
 unless otherwise stated. \*Median of arm-level values; IQR reflects
-between-arm variability. MUD = matched unrelated donor. MMUD =
+between-arm variability. Steroid exposure is the percentage of arm
+patients receiving systemic corticosteroids for graft-versus-host
+disease (appendix S9). MUD = matched unrelated donor. MMUD =
 mismatched unrelated donor. MSD = matched sibling donor. PBSC =
 peripheral blood stem cells. BM = bone marrow. UCB = umbilical cord
 blood. MAC = myeloablative conditioning. RIC = reduced-intensity
@@ -637,51 +638,46 @@ conditioning. NMA = non-myeloablative. NR = not reported.
 
 {{< pagebreak >}}
 
-| Outcome | Comparison | Model | k | N | OR (95% CrI) | τ | GRADE |
-|:---|:---|:---|---:|---:|:---|---:|:---|
-| Overall survival | C1 | M1 | 35 | 10 133 | 0·76 (0·62–0·93) | 0·44 | Very low |
-|  | C1 | M2 | 28 | 7025 | 0·96 (0·72–1·28) | 0·46 | — |
-|  | C2 | M1 | 9 | 12 791 | 0·75 (0·42–1·31) | 0·68 | Very low |
-|  | C2 | M2 | 8 | 10 429 | 0·90 (0·45–1·74) | 0·60 | — |
-|  | C3 | M1 | 6 | 4746 | 0·92 (0·43–1·63) | 0·56 | — |
-| Non-relapse mortality | C1 | M1 | 12 | 1309 | 0·81 (0·46–1·22) | 0·41 | Very low |
-|  | C1 | M2† | 9 | 991 | 0·81 (0·27–1·57) | 0·39 | — |
-|  | C2 | M1 | — | — | k=2, not assessed | — | — |
-|  | C3 | M1 | 5 | 2529 | 0·51 (0·16–1·59) | 1·01 | — |
-| Relapse-related mortality | C1 | M1 | 34 | 11 121 | 0·87 (0·76–0·99) | 0·08 | — |
-|  | C1 | M2 | 27 | 7773 | 0·85 (0·71–1·02) | 0·10 | — |
-|  | C2 | M1 | 10 | 17 182 | 0·78 (0·55–1·02) | 0·19 | — |
-|  | C3 | M1 | 6 | 692 | 0·78 (0·35–1·73) | 0·45 | — |
-| Acute GVHD II–IV | C1 | M1 | 28 | 4197 | 0·58 (0·44–0·77) | 0·54 | Very low |
-|  | C2 | M1 | 8 | 1039 | 0·51 (0·24–1·02) | 0·81 | Very low |
-|  | C3 | M1 | 7 | 2450 | 0·43 (0·13–1·21) | 1·10 | — |
-| Chronic GVHD mod–severe | C1 | M1 | 19 | 2840 | 0·40 (0·22–0·68) | 0·96 | — |
-|  | C2 | M1 | 6 | 905 | 0·69 (0·25–1·57) | 0·74 | — |
-| Chronic GVHD any | C1 | M1 | 8 | 1732 | 0·24 (0·14–0·43) | 0·56 | — |
-|  | C3 | M1 | 4 | 383 | 0·53 (0·15–1·50) | 0·72 | — |
-| CMV reactivation | C1 | M1 | 22 | 3328 | 1·22 (0·90–1·65) | 0·53 | Very low |
-|  | C1 | M2 | 18 | 2325 | 1·25 (0·87–1·75) | 0·39 | — |
-|  | C2 | M1 | 12 | 1511 | 0·86 (0·50–1·42) | 0·68 | Very low |
-|  | C2 | M2 | 12 | 1511 | 0·87 (0·47–1·50) | 0·71 | — |
-| Bloodstream infection | C1 | M1 | 6 | 806 | 1·42 (0·57–2·98) | 0·71 | Very low |
-| Invasive fungal infection | C1 | M1 | 6 | 2243 | 0·63 (0·19–2·62) | 1·28 | Very low |
-| BK virus | C1 | M1 | 11 | 1333 | 2·39 (1·48–3·66) | 0·36 | — |
-|  | C2 | M1 | 3 | 313 | 2·49 (1·09–6·03) | 0·33 | — |
-| Infection-related mortality | C1 | M1 | 13 | 5504 | 1·03 (0·68–1·49) | 0·48 | — |
-|  | C2 | M1 | 7 | 13 346 | 0·98 (0·63–1·83) | 0·39 | — |
+| Outcome | Comparison | Model | k | N | OR (95% CrI) | τ | 95% PI | GRADE |
+|:---|:---|:---|---:|---:|:---|---:|:---|:---|
+| Overall survival | C1 | M1 | 35 | 10 133 | 0·76 (0·62–0·93) | 0·44 | 0·30–1·91 | Very low |
+|  | C2 | M1 | 9 | 12 791 | 0·75 (0·42–1·31) | 0·68 | 0·14–3·87 | Very low |
+|  | C3 | M1 | 6 | 4 746 | 0·92 (0·43–1·63) | 0·56 | 0·18–3·95 | — |
+| Non-relapse mortality | C1 | M1 | 12 | 1 309 | 0·81 (0·46–1·22) | 0·41 | 0·19–2·63 | Very low |
+|  | C2 | M1 | — | — | k=2, not assessed | — | — | — |
+|  | C3 | M1 | 5 | 2 529 | 0·51 (0·16–1·59) | 1·01 | 0·03–7·96 | — |
+| Relapse-related mortality | C1 | M1 | 34 | 11 121 | 0·87 (0·76–0·99) | 0·08 | 0·64–1·16 | — |
+|  | C2 | M1 | 10 | 17 182 | 0·78 (0·55–1·02) | 0·19 | 0·35–1·60 | — |
+|  | C3 | M1 | 6 | 692 | 0·78 (0·35–1·73) | 0·45 | 0·15–4·15 | — |
+| Acute GVHD II–IV | C1 | M1 | 28 | 4 197 | 0·58 (0·44–0·77) | 0·54 | 0·17–1·89 | Very low |
+|  | C2 | M1 | 8 | 1 039 | 0·51 (0·24–1·02) | 0·81 | 0·07–3·60 | Very low |
+|  | C3 | M1 | 7 | 2 450 | 0·43 (0·13–1·21) | 1·10 | 0·02–7·23 | — |
+| Chronic GVHD mod–severe | C1 | M1 | 19 | 2 840 | 0·40 (0·22–0·68) | 0·96 | 0·04–3·15 | — |
+|  | C2 | M1 | 6 | 905 | 0·69 (0·25–1·57) | 0·74 | 0·07–5·40 | — |
+| Chronic GVHD any | C1 | M1 | 8 | 1 732 | 0·24 (0·14–0·43) | 0·56 | 0·06–0·99 | — |
+|  | C3 | M1 | 4 | 383 | 0·53 (0·15–1·50) | 0·72 | 0·05–5·73 | — |
+| CMV reactivation | C1 | M1 | 22 | 3 328 | 1·22 (0·90–1·65) | 0·53 | 0·37–4·06 | Very low |
+|  | C2 | M1 | 12 | 1 511 | 0·86 (0·50–1·42) | 0·68 | 0·17–4·28 | Very low |
+| Bloodstream infection | C1 | M1 | 6 | 806 | 1·42 (0·57–2·98) | 0·71 | 0·17–10·19 | Very low |
+| Invasive fungal infection | C1 | M1 | 6 | 2 243 | 0·63 (0·19–2·62) | 1·28 | 0·03–21·39 | Very low |
+| BK virus | C1 | M1 | 11 | 1 333 | 2·39 (1·48–3·66) | 0·36 | 0·69–7·11 | — |
+|  | C2 | M1 | 3 | 313 | 2·49 (1·09–6·03) | 0·33 | 0·54–11·50 | — |
+| Infection-related mortality | C1 | M1 | 13 | 5 504 | 1·03 (0·68–1·49) | 0·48 | 0·31–3·30 | — |
+|  | C2 | M1 | 7 | 13 346 | 0·98 (0·63–1·83) | 0·39 | 0·31–3·78 | — |
 
 : Bayesian meta-analysis results: outcomes by comparison. Estimates are
 from the cohort-deduplicated dataset, in which one publication per
 cohort contributes to each outcome. M1 = primary model with a random
 study intercept and a random PTCy-effect slope, adjusted for timepoint;
 τ is the between-study standard deviation of the PTCy effect (posterior
-median). M2 = steroid-mediation model, fitted on the complete-case
-subset of studies reporting arm-level steroid exposure. k = number of
+median). k = number of
 paired studies. N = total patients across all arms. CrI = credible
-interval. GRADE ratings are shown for pre-specified primary and
+interval. PI = prediction interval for the PTCy effect in a new
+study, from the posterior of the random PTCy-effect slope. GRADE
+ratings are shown for pre-specified primary and
 secondary outcomes only. OR \< 1 favours PTCy for survival and GVHD
 outcomes; OR \> 1 indicates elevated risk with PTCy for infection
-outcomes. †Complete-case steroid subset (9 of 12 studies).
+outcomes.
 {#tbl-results}
 
 {{< pagebreak >}}

@@ -6,6 +6,9 @@ author:
   - name: Dimitrios P Kontoyiannis
   - name: Russell E Lewis
 number-sections: false
+# Needed for the staged standalone render in scripts/render-extras.sh, which
+# runs outside the project and so does not inherit the project bibliography.
+bibliography: references.bib
 crossref:
   fig-prefix: figure
   tbl-prefix: table
@@ -163,7 +166,7 @@ Primary model (M1), for study $s$, arm $i$:
 $$\text{events}_i \mid n_i \sim \text{Binomial}\!\left(n_i,\ \text{logit}^{-1}\!\left(\alpha + \big(\beta_{\text{PTCy}} + v_{s[i]}\big)\, x_i + \beta_{\text{tp}}\, t_i + u_{s[i]}\right)\right),
 \qquad (u_s, v_s) \sim \mathcal{N}_2(\mathbf{0}, \boldsymbol{\Sigma})$$
 
-where $x_i$ indicates a PTCy arm and $t_i$ indicates a late (≥1 year) rather than early (day +100 or +180) timepoint. Each study contributes a random intercept $u_s$ (baseline-risk variation) and a random PTCy-effect slope $v_s$, so the pooled coefficient $\beta_{\text{PTCy}}$ estimates the average study-level treatment effect and the between-study SD of $v_s$ (reported as τ) quantifies heterogeneity in the PTCy effect. With two arms per study the model is just-identified at study level, so for sparse outcomes (k ≤ 6) the prior on the SD parameters is correspondingly influential.
+where $x_i$ indicates a PTCy arm and $t_i$ indicates that the study contributed a fallback timepoint rather than the outcome's preferred timepoint (day +100 or +180 for early outcomes, one year for late outcomes). Each study contributes exactly one row per outcome — the preferred timepoint when reported, otherwise the nearest reported timepoint — so no within-study correlation across timepoints arises. Each study contributes a random intercept $u_s$ (baseline-risk variation) and a random PTCy-effect slope $v_s$, so the pooled coefficient $\beta_{\text{PTCy}}$ estimates the average study-level treatment effect and the between-study SD of $v_s$ (reported as τ) quantifies heterogeneity in the PTCy effect. With two arms per study the model is just-identified at study level, so for sparse outcomes (k ≤ 6) the prior on the SD parameters is correspondingly influential.
 
 | Parameter                   | Prior                    |
 |:----------------------------|:-------------------------|
@@ -174,7 +177,7 @@ where $x_i$ indicates a PTCy arm and $t_i$ indicates a late (≥1 year) rather t
 
 : Prior specification for the primary model.
 
-The steroid-mediation model (M2) adds arm-level systemic steroid exposure percentage, mean-centred, as an additional fixed effect, and is fitted on the complete-case subset of studies reporting steroid exposure.
+The exploratory steroid-adjustment model (M2; a post-hoc protocol amendment, S13) adds arm-level systemic corticosteroid exposure, mean-centred, as an additional fixed effect, and is fitted on the complete-case subset of studies with exposure data. M2 is reported only in this supplement: its definition, provenance, results, and limitations are given in S9.
 
 MCMC: four chains × 4000 iterations (1000 warmup), `adapt_delta` = 0·95 (increased to 0·99 where divergent transitions occurred), giving 12 000 post-warmup draws per model.
 
@@ -228,9 +231,9 @@ All models achieved R̂ \< 1·01 with zero divergent transitions and bulk ESS ab
 
 ![Posterior predictive checks, comparison 1. Each point is one study arm: the observed event proportion against its posterior predictive mean, over 500 posterior draws. The dashed line is the identity.](figures/FigureS7d_i_ppc_C1){#fig-s7d-i}
 
-![Posterior predictive checks, comparison 2. Layout and interpretation as in @fig-s7d-i.](figures/FigureS7d_ii_ppc_C2){#fig-s7d-ii}
+![Posterior predictive checks, comparison 2. Layout and interpretation as in figure S7d(i).](figures/FigureS7d_ii_ppc_C2){#fig-s7d-ii}
 
-All models show adequate calibration, with points clustered near the identity line and symmetric scatter. The C1 IFI model (k = 6) shows the widest scatter, consistent with its large τ posterior (@fig-s7c) and the heterogeneity identified in S9. No systematic over- or under-prediction is evident in any model.
+All models show adequate calibration, with points clustered near the identity line and symmetric scatter. The C1 IFI model (k = 6) shows the widest scatter, consistent with its large τ posterior (figure S7c) and the heterogeneity identified in S9. No systematic over- or under-prediction is evident in any model.
 
 {{< pagebreak >}}
 
@@ -268,7 +271,95 @@ Individual study odds ratios with 95% CIs and the pooled frequentist random-effe
 
 ![IFI leave-one-out analysis, comparison 1 (frequentist REML).](figures/FigureS9b_IFI_leave_one_out){#fig-s9b}
 
-Full frequentist results for all models are provided in `freq_results_setB.csv`, a supplementary data file, which carries the deduplicated fits where deduplication applied and the original fits otherwise (see its `source` column). Under the random-slope specification, which — like the frequentist REML models — allows the treatment effect to vary across studies, Bayesian and frequentist estimates were concordant in direction for every outcome and closely matched in magnitude: the two outcomes that diverged most under the earlier common-effect (fixed treatment effect) specification, C1 BSI (Bayesian odds ratio 1·42 \[0·57–2·98\] versus frequentist 1·29 \[0·61–2·73\]) and C1 IFI (0·63 \[0·19–2·62\] versus 0·60 \[0·21–1·74\]), now agree. The pre-specified CMV sensitivity analyses estimated a larger effect in post-2020 studies (k = 17, 1·46 \[1·01–2·05\]) and an elevated but imprecise estimate in haploidentical-dominant cohorts (k = 12, 1·34 \[0·90–1·96\]).
+In the originally submitted analysis the largest Bayesian–frequentist discrepancies were for C1 bloodstream infection (Bayesian odds ratio 1·87 \[1·33–2·62\] versus REML 1·29 \[0·61–2·73\]) and C1 invasive fungal infection (0·43 \[0·29–0·63\] versus 0·60 \[0·21–1·74\]). These gaps were not caused by the N(0, 2·5) priors on the regression coefficients, which are weak relative to the binomial likelihood even at k = 6. They arose because the submitted models fixed the treatment effect across studies (a common-effect specification) while the REML concordance models estimate a between-study variance, and heterogeneity is substantial for both outcomes (I² = 71% and 80%). A common-effect and a random-effects model answer different questions when heterogeneity is present, and at k = 6 the discrepancy is stark. Under the adopted random-slope specification, which — like REML — allows the treatment effect to vary across studies, the two approaches agree closely (BSI: Bayesian 1·42 \[0·57–2·98\] versus REML 1·29 \[0·61–2·73\]; IFI: 0·63 \[0·19–2·62\] versus 0·60 \[0·21–1·74\]). Residual differences across outcomes reflect the different likelihoods (arm-level binomial versus two-stage normal approximation with a 0·5 continuity correction) and the Bayesian propagation of τ uncertainty into wider intervals, not the coefficient priors; the τ-prior sensitivity analysis below confirms that the prior on the between-study SD has little influence even at k = 6.
+
+| Outcome | Comparison | k | Bayesian OR (95% CrI) | Frequentist REML OR (95% CI) | I² |
+|:---|:---|---:|:---|:---|---:|
+| Overall survival | C1 | 35 | 0·76 (0·62–0·93) | 0·79 (0·65–0·94) | 64% |
+| Overall survival | C2 | 9 | 0·75 (0·42–1·31) | 0·73 (0·44–1·21) | 93% |
+| Overall survival | C3 | 6 | 0·92 (0·43–1·63) | 0·92 (0·57–1·49) | 78% |
+| Non-relapse mortality | C1 | 12 | 0·81 (0·46–1·22) | 0·91 (0·68–1·23) | 0% |
+| Non-relapse mortality | C3 | 5 | 0·51 (0·16–1·59) | 0·49 (0·17–1·39) | 80% |
+| Relapse-related mortality | C1 | 34 | 0·87 (0·76–0·99) | 0·86 (0·76–0·97) | 0% |
+| Relapse-related mortality | C2 | 10 | 0·78 (0·55–1·02) | 0·78 (0·57–1·05) | 57% |
+| Relapse-related mortality | C3 | 6 | 0·78 (0·35–1·73) | 0·75 (0·44–1·29) | 7% |
+| Acute GVHD II–IV | C1 | 28 | 0·58 (0·44–0·77) | 0·61 (0·47–0·79) | 62% |
+| Acute GVHD II–IV | C2 | 8 | 0·51 (0·24–1·02) | 0·51 (0·28–0·94) | 74% |
+| Acute GVHD II–IV | C3 | 7 | 0·43 (0·13–1·21) | 0·52 (0·22–1·20) | 77% |
+| Chronic GVHD mod–severe | C1 | 19 | 0·40 (0·22–0·68) | 0·42 (0·28–0·61) | 58% |
+| Chronic GVHD mod–severe | C2 | 6 | 0·69 (0·25–1·57) | 0·77 (0·40–1·45) | 60% |
+| Chronic GVHD any | C1 | 8 | 0·24 (0·14–0·43) | 0·24 (0·15–0·40) | 63% |
+| Chronic GVHD any | C3 | 4 | 0·53 (0·15–1·50) | 0·50 (0·19–1·30) | 49% |
+| CMV reactivation | C1 | 22 | 1·22 (0·90–1·65) | 1·25 (0·94–1·66) | 62% |
+| CMV reactivation | C2 | 12 | 0·86 (0·50–1·42) | 0·83 (0·51–1·33) | 69% |
+| Bloodstream infection | C1 | 6 | 1·42 (0·57–2·98) | 1·29 (0·61–2·73) | 71% |
+| Invasive fungal infection | C1 | 6 | 0·63 (0·19–2·62) | 0·60 (0·21–1·74) | 80% |
+| BK virus | C1 | 11 | 2·39 (1·48–3·66) | 2·36 (1·63–3·42) | 17% |
+| BK virus | C2 | 3 | 2·49 (1·09–6·03) | 2·44 (1·41–4·22) | 0% |
+| Infection-related mortality | C1 | 13 | 1·03 (0·68–1·49) | 1·03 (0·72–1·46) | 57% |
+| Infection-related mortality | C2 | 7 | 0·98 (0·63–1·83) | 0·93 (0·66–1·31) | 39% |
+
+: Bayesian posterior median odds ratios beside frequentist REML estimates for every primary (M1) model. The REML models pool within-study log odds ratios with a 0·5 continuity correction where needed and carry the deduplicated fits where deduplication applied (see the `source` column of `freq_results_setB.csv`, a supplementary data file, which also reports τ, Cochran's Q and its p value). {#tbl-s9-freq}
+
+The pre-specified CMV sensitivity analyses estimated a larger effect in post-2020 studies (k = 17, 1·46 \[1·01–2·05\]) and an elevated but imprecise estimate in haploidentical-dominant cohorts (k = 12, 1·34 \[0·90–1·96\]).
+
+### τ-prior sensitivity for the k = 6 outcomes
+
+For C1 BSI and C1 IFI (k = 6), where the Student t(3, 0, 1) prior on the between-study SDs is most influential, the random-slope M1 models were refitted with a narrower (t(3, 0, 0·5)) and a wider (t(3, 0, 2)) SD prior, all other settings unchanged. The pooled odds ratios and their intervals shift little across a fourfold change in prior scale, and no conclusion changes, so these estimates are driven by the likelihood rather than the τ prior.
+
+| Outcome | SD prior | OR (95% CrI) | τ (slope SD, posterior median) |
+|:---|:---|:---|---:|
+| C1 BSI | t(3, 0, 0·5) | 1·49 (0·68–2·72) | 0·56 |
+| C1 BSI | t(3, 0, 1) — base | 1·42 (0·57–2·98) | 0·72 |
+| C1 BSI | t(3, 0, 2) | 1·37 (0·48–3·22) | 0·85 |
+| C1 IFI | t(3, 0, 0·5) | 0·59 (0·23–1·95) | 1·03 |
+| C1 IFI | t(3, 0, 1) — base | 0·63 (0·19–2·62) | 1·28 |
+| C1 IFI | t(3, 0, 2) | 0·65 (0·17–3·53) | 1·57 |
+
+: τ-prior sensitivity for the two outcomes with k = 6. Fits and full posterior summaries are exported in `prior_sensitivity_tau.csv`, a supplementary data file. {#tbl-s9-prior}
+
+### Fixed (stratified) study intercepts
+
+The primary models use a random study intercept, under which the pooled treatment effect is estimated partly from between-study contrasts and within-study randomisation is not preserved [@senn2010]. As a sensitivity analysis, every model in Table 2 was refitted with fixed (stratified) study-specific intercepts and a random PTCy-effect slope, so that the treatment effect is identified solely from within-study contrasts, as in two-stage meta-analysis of odds ratios; priors and sampler settings were otherwise unchanged. Posterior median odds ratios were concordant: the median absolute shift on the log-odds-ratio scale across the 29 models was 0·03, no estimate changed direction, and 25 of 29 shifts were below 0·1. The largest shifts occurred in sparse or steroid-adjusted models — C1 NRM (M2): 0·81 \[0·27–1·57\] to 0·61 \[0·14–1·41\]; C1 IFI: 0·63 \[0·19–2·62\] to 0·54 \[0·16–1·85\]; C3 RRM: 0·78 \[0·35–1·73\] to 0·68 \[0·29–1·39\]; C1 OS (M2): 0·96 \[0·72–1·28\] to 0·86 \[0·61–1·17\]. Only one interval conclusion changed: C2 BK virus reactivation (k = 3), whose lower credible bound moved from 1·09 to 0·97 and so no longer excludes 1, an outcome already rated low certainty. Full per-model results are provided in `fe_sensitivity_setB.csv`, a supplementary data file.
+
+Restricting the primary outcome to randomised trials is only weakly informative after cohort deduplication, which leaves two trials (odds ratio 0·73 \[0·17–3·42\]). Across the seven randomised trials in the pre-deduplication C1 overall-survival dataset the estimate was 0·79 \[0·59–1·08\], consistent in direction with the pooled result but too imprecise to carry the conclusion independently.
+
+### Hazard-ratio sensitivity for overall survival
+
+Overall survival was analysed as the odds ratio of death at fixed timepoints because most studies reported only event counts or Kaplan–Meier estimates at those timepoints; hazard ratios were available for a minority of studies, with heterogeneous covariate adjustment. In a post-hoc sensitivity analysis, one overall-survival hazard ratio per study was taken from the extraction database (multivariable-adjusted estimates preferred; the timepoint matching the analytic dataset preferred; direction harmonised to PTCy versus comparator with death as the event, inverting comparator-first estimates) and pooled two-stage in a Bayesian normal-normal random-effects model on log hazard ratios with known standard errors (same weakly-informative prior family as the primary models), with a frequentist REML concordance check.
+
+For C1 (k = 14 of 35 studies, 13 adjusted) the pooled hazard ratio was 0·88 \[0·66–1·14\] (REML 0·88 \[0·69–1·12\]), versus the primary odds ratio of 0·76 \[0·62–0·93\]. For C2 (k = 4 of 9 studies, all adjusted) it was 0·60 \[0·26–1·08\] (REML 0·59 \[0·40–0·89\]), versus 0·75 \[0·42–1·31\]. The direction of effect is consistent across estimands, but the C1 hazard-ratio estimate is attenuated towards 1 relative to the odds ratio. Plausible contributors are the multivariable adjustment carried by nearly all hazard-ratio-reporting studies — which removes confounding that the raw-count odds ratio absorbs — the smaller, self-selected subset of studies reporting hazard ratios, and the different estimand (a whole-follow-up hazard ratio versus fixed-timepoint mortality odds). The C2 estimate is imprecise at k = 4, and its REML interval, which excludes 1, is optimistic relative to the Bayesian interval with so few studies. The per-study hazard ratios used are provided in `hr_sensitivity_os.csv`, a supplementary data file.
+
+### Exploratory steroid-adjustment analysis (M2)
+
+M2 was a post-hoc amendment to the registered protocol (S13) and is exploratory; it is reported only in this appendix. It adds arm-level systemic corticosteroid exposure, mean-centred, to the M1 specification. Steroid exposure was defined as the percentage of patients in each arm receiving systemic corticosteroids for graft-versus-host disease, as reported by the study at the study's own timepoint; where a study did not report exposure directly it was approximated from the arm's acute GVHD grade II–IV cumulative incidence under a pre-specified extraction rule. The database does not distinguish the two sources, but comparing exposure values against arm-level acute GVHD grade II–IV incidences shows that 177 of the 204 steroid-complete M2 arms (87%) carry values numerically identical to the arm's GVHD incidence (≤0·5 percentage points), so most M2 covariate values are the approximation rather than a direct report. Exposure could not be obtained for 127 of 525 arms (24%), so M2 is fitted on a complete-case subset for each outcome (studies with exposure data / all studies: C1 OS 28/35, C1 RRM 27/34, C1 NRM 9/12, C1 CMV 18/22, C2 OS 8/9, C2 CMV 12/12); no values were imputed by the model.
+
+M2 is not a mediation analysis: it estimates no indirect effect, and because it adjusts for a post-treatment variable measured at arm level it is open to ecological bias and to collider bias — steroid use follows GVHD, which PTCy itself prevents, and may also mark other causes of death. Attenuation from M1 to M2 is therefore hypothesis-generating rather than evidence of mediation or confounding.
+
+The reported M1 uses all studies with outcome data, whereas M2 drops studies without exposure data, so an M1–M2 contrast mixes covariate adjustment with a changed study set. M1 was therefore refitted — specification and priors unchanged — on each outcome's M2 complete-case subset. For C1 overall survival the attenuation is attributable to the covariate rather than the subset: on the same 28 studies M1 gives 0·77 (0·59–0·96) and M2 gives 0·96 (0·72–1·28), against a full-set M1 of 0·76 (0·62–0·93). The same pattern holds for C2 overall survival (matched-set M1 0·69 \[0·36–1·30\] versus M2 0·90 \[0·45–1·74\]). Conversely, the C1 relapse-related-mortality interval crossing the null after steroid adjustment is attributable to the subset rather than the covariate (matched-set M1 0·87 \[0·73–1·02\]; M2 0·85 \[0·71–1·02\]). Fits and per-model summaries are exported in `m1_m2_matched.csv`, a supplementary data file.
+
+| Outcome | Model | k | OR (95% CrI) | τ |
+|:---|:---|---:|:---|---:|
+| C1 Overall survival | M1 full set | 35 | 0·76 (0·61–0·93) | 0·44 |
+| C1 Overall survival | M1 matched set | 28 | 0·77 (0·59–0·96) | 0·49 |
+| C1 Overall survival | M2 | 28 | 0·96 (0·72–1·28) | 0·46 |
+| C1 Relapse-related mortality | M1 full set | 34 | 0·87 (0·76–0·99) | 0·08 |
+| C1 Relapse-related mortality | M1 matched set | 27 | 0·87 (0·73–1·02) | 0·11 |
+| C1 Relapse-related mortality | M2 | 27 | 0·85 (0·71–1·02) | 0·10 |
+| C1 Non-relapse mortality | M1 full set | 12 | 0·81 (0·46–1·22) | 0·41 |
+| C1 Non-relapse mortality | M1 matched set | 9 | 0·74 (0·35–1·17) | 0·36 |
+| C1 Non-relapse mortality | M2 | 9 | 0·81 (0·27–1·57) | 0·39 |
+| C1 CMV reactivation | M1 full set | 22 | 1·22 (0·90–1·65) | 0·53 |
+| C1 CMV reactivation | M1 matched set | 18 | 1·13 (0·83–1·51) | 0·41 |
+| C1 CMV reactivation | M2 | 18 | 1·25 (0·87–1·75) | 0·39 |
+| C2 Overall survival | M1 full set | 9 | 0·75 (0·42–1·31) | 0·68 |
+| C2 Overall survival | M1 matched set | 8 | 0·69 (0·36–1·30) | 0·72 |
+| C2 Overall survival | M2 | 8 | 0·90 (0·45–1·74) | 0·60 |
+| C2 CMV reactivation | M1 full set | 12 | 0·86 (0·50–1·42) | 0·68 |
+| C2 CMV reactivation | M1 matched set | 12 | 0·86 (0·51–1·43) | 0·68 |
+| C2 CMV reactivation | M2 | 12 | 0·87 (0·47–1·50) | 0·71 |
+
+: Matched-set comparison of M1 and M2. M1 full set = reported primary model; M1 matched set = M1 refitted on the M2 complete-case studies; M2 = reported steroid-adjustment model. All fits use the random-slope specification with unchanged priors. {#tbl-s9-matched}
 
 ### Indirect comparison of the C1 and C2 pooled effects
 
@@ -345,7 +436,7 @@ Certainty was assessed per the GRADE Handbook, adapted for observational evidenc
 
 ## S13. PROSPERO registration
 
-The study protocol was registered with PROSPERO (CRD420261372156) before data extraction. Protocol amendments were: (1) a Bayesian rather than frequentist primary analysis framework; (2) addition of BK virus reactivation, infection-related mortality, and relapse-related mortality as secondary outcomes; and (3) addition of the steroid-mediation (M2) model.
+The study protocol was registered with PROSPERO (CRD420261372156) before data extraction. Protocol amendments were: (1) a Bayesian rather than frequentist primary analysis framework; (2) addition of BK virus reactivation, infection-related mortality, and relapse-related mortality as secondary outcomes; and (3) addition of the steroid-adjustment (M2) model as an exploratory analysis.
 
 ## S14. PRISMA 2020 checklist
 
