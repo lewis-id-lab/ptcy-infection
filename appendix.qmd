@@ -147,7 +147,7 @@ Full study-level (table S4a, 251 rows) and arm-level (table S4b, 525 rows) chara
 | D6 Measurement of outcomes                | 101 |      101 |       2 |
 | D7 Selection of the reported result       | 161 |       42 |       1 |
 
-: ROBINS-I domain-level risk of bias, counts by judgement (n = 211 comparative observational studies; single-arm descriptive studies excluded).
+: ROBINS-I domain-level risk of bias, counts by judgement (n = 211 comparative observational studies; single-arm descriptive studies excluded). D6 and D7 were not recorded for the same 7 studies, so those rows sum to 204; the overall judgements (serious 143, moderate 68) are recorded for all 211 studies.
 
 ![ROBINS-I traffic-light plot for all comparative observational studies.](figures/FigureS5a_ROBINS_traffic_light){#fig-s5a}
 
