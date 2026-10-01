@@ -1,0 +1,5 @@
+study_id,comparison,category,subtype,timepoint_used,tp_early,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_steroid_pct,comp_steroid_pct
+437,3,cGVHD,moderate_severe_NIH,D+365_1yr,0,490,489,17,16,2,5,11.8,31.3
+461,3,cGVHD,moderate_severe_NIH,D+365_1yr,0,518,519,21,42,2,14,24,29
+44,3,cGVHD,moderate_severe_NIH,D+730_2yr,1,44,45,99,130,19,22,14,47
+418,3,cGVHD,moderate_severe_NIH,D+730_2yr,1,462,463,33,25,2,4,18,17

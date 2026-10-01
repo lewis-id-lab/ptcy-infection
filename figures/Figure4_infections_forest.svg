@@ -113,7 +113,7 @@
 <text x='214.79' y='199.03' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
 <text x='10.46' y='31.26' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='87.75px' lengthAdjust='spacingAndGlyphs'>k = 6, N = 806, τ = 0.71</text>
 <text x='10.46' y='17.98' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='324.67px' lengthAdjust='spacingAndGlyphs'>Bloodstream infection, any pathogen — PTCy vs CNI + MTX/MMF</text>
-<text x='10.46' y='211.27' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='549.05px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian posterior median, 95% CrI (M1).</text>
+<text x='10.46' y='211.27' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.45px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
 </g>
 <defs>
   <clipPath id='cpNDQxLjE3fDYzNy41NHwzOC4wM3wxNzIuMjI='>
@@ -237,7 +237,7 @@
 <text x='214.79' y='411.38' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
 <text x='10.46' y='243.61' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='94.84px' lengthAdjust='spacingAndGlyphs'>k = 6, N = 2 243, τ = 1.28</text>
 <text x='10.46' y='230.32' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='286.22px' lengthAdjust='spacingAndGlyphs'>Invasive fungal infection, any — PTCy vs CNI + MTX/MMF</text>
-<text x='10.46' y='423.62' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='549.05px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian posterior median, 95% CrI (M1).</text>
+<text x='10.46' y='423.62' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.45px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
 </g>
 <defs>
   <clipPath id='cpNDQxLjE3fDYzNy41NHwyNTAuMzh8Mzg0LjU3'>
@@ -374,7 +374,7 @@
 <text x='213.19' y='623.72' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
 <text x='10.46' y='455.95' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='98.95px' lengthAdjust='spacingAndGlyphs'>k = 11, N = 1 333, τ = 0.36</text>
 <text x='10.46' y='442.67' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='244.81px' lengthAdjust='spacingAndGlyphs'>BK virus reactivation — PTCy vs CNI + MTX/MMF</text>
-<text x='10.46' y='635.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='549.05px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian posterior median, 95% CrI (M1).</text>
+<text x='10.46' y='635.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.45px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
 </g>
 <defs>
   <clipPath id='cpNDQzLjYxfDYzNy41NHw0NjIuNzN8NTk2Ljkx'>

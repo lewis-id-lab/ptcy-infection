@@ -1,0 +1,13 @@
+study_id,comparison,category,subtype,timepoint_used,tp_early,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_steroid_pct,comp_steroid_pct
+20,1,NRM,NRM_overall,D+365_1yr,0,29,30,26,52,2,8,NA,NA
+67,1,NRM,NRM_overall,D+365_1yr,0,78,79,41,20,21,7,NA,NA
+119,1,NRM,NRM_overall,D+365_1yr,0,137,138,34,34,6,4,13,50
+271,1,NRM,NRM_overall,D+365_1yr,0,285,284,176,276,31,48,50,51
+320,1,NRM,NRM_overall,D+365_1yr,0,346,347,28,59,1,11,14,37
+357,1,NRM,NRM_overall,D+365_1yr,0,394,395,89,90,14,14,NA,NA
+375,1,NRM,NRM_overall,D+365_1yr,0,414,415,27,28,7,12,29.6,39.3
+432,1,NRM,NRM_overall,D+365_1yr,0,482,483,25,15,0,2,12.5,35.7
+207,1,NRM,NRM_overall,D+100,1,212,213,21,21,4,3,33.3,66.7
+88,1,NRM,NRM_overall,end_of_followup,1,104,105,40,40,7,6,15,39.8
+198,1,NRM,NRM_overall,end_of_followup,1,206,207,15,25,0,4,13.3,28
+201,1,NRM,NRM_overall,end_of_followup,1,208,209,59,68,16,22,39,47.1

@@ -186,7 +186,7 @@
 <text x='216.86' y='659.72' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
 <text x='10.46' y='31.26' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='99.58px' lengthAdjust='spacingAndGlyphs'>k = 34, N = 9 836, τ = 0.46</text>
 <text x='10.46' y='17.98' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='218.02px' lengthAdjust='spacingAndGlyphs'>Overall survival — PTCy vs CNI + MTX/MMF</text>
-<text x='10.46' y='671.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='549.05px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian posterior median, 95% CrI (M1).</text>
+<text x='10.46' y='671.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.45px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
 </g>
 <defs>
   <clipPath id='cpNDUzLjUzfDYzNy41NHwzOC4wM3w2MzIuOTE='>

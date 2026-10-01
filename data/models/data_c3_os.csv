@@ -1,0 +1,7 @@
+study_id,comparison,category,subtype,timepoint_used,tp_early,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_steroid_pct,comp_steroid_pct
+397,3,overall_mortality,OS_event,D+365_1yr,0,444,445,44,22,1,1,18.2,18.2
+437,3,overall_mortality,OS_event,D+365_1yr,0,490,489,17,16,5,7,11.8,31.3
+62,3,overall_mortality,OS_event,D+730_2yr,1,70,69,67,374,23,132,30,34
+272,3,overall_mortality,OS_event,D+730_2yr,1,286,287,1830,310,684,79,33,24
+361,3,overall_mortality,OS_event,D+730_2yr,1,401,402,403,1605,179,753,NA,NA
+418,3,overall_mortality,OS_event,D+730_2yr,1,462,463,33,25,10,14,18,17

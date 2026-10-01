@@ -77,6 +77,18 @@ theme_forest <- function(base_size = 10) {
 ```{r}
 #| label: functions
 
+# Shared forest-panel implementation (single source of truth, also used by the
+# appendix figure S8 series). Pass the project `here()` so paths resolve from
+# either the project root or the notebooks/ directory.
+source(here("scripts", "forest-lib.R"))
+
+`%||%` <- function(a, b) if (is.null(a)) b else a
+```
+
+```{r}
+#| label: functions-legacy
+#| eval: false
+
 # Wald log-OR and CI from a 2x2 table, with 0.5 added only where a cell is zero.
 study_or <- function(d) {
   d |>

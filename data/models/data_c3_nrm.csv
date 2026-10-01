@@ -1,0 +1,6 @@
+study_id,comparison,category,subtype,timepoint_used,tp_early,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_steroid_pct,comp_steroid_pct
+203,3,NRM,NRM_overall,D+365_1yr,0,210,211,99,252,10,81,16,33
+272,3,NRM,NRM_overall,D+365_1yr,0,286,287,1728,293,367,41,33,24
+397,3,NRM,NRM_overall,D+365_1yr,0,444,445,44,22,1,0,18.2,18.2
+437,3,NRM,NRM_overall,D+365_1yr,0,490,489,17,16,2,7,11.8,31.3
+418,3,NRM,NRM_overall,D+100,1,462,463,33,25,3,6,18,17
