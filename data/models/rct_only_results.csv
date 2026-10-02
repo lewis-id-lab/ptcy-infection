@@ -1,6 +1,11 @@
-outcome,k_rct,or_med,or_lo,or_hi,tau_slope,divergences,note
-c1_os,7,0.789,0.585,1.065,0.137,0,
-c1_agvhd,6,0.919,0.596,1.314,0.237,0,
-c1_cgvhd_ms,7,0.312,0.089,0.993,1.208,0,
-c1_nrm,6,0.836,0.474,1.523,0.294,0,
-c1_cmv,3,1.192,0.543,3.589,0.404,0,
+outcome,design,k,note,or_med,or_lo,or_hi,tau_slope,divergences
+c1_os,rct,2,not estimable (k < 3),NA,NA,NA,NA,NA
+c1_os,obs,26,NA,0.7920009959402302,0.6281696692687695,0.9632542676345155,0.38516315,0
+c1_agvhd,rct,1,not estimable (k < 3),NA,NA,NA,NA,NA
+c1_agvhd,obs,27,NA,0.5945641011691297,0.4413951294207487,0.7771046052561023,0.5478669300000001,0
+c1_cgvhd_ms,rct,2,not estimable (k < 3),NA,NA,NA,NA,NA
+c1_cgvhd_ms,obs,14,NA,0.48108688312501136,0.26811251096978594,0.8559451790477806,0.90564692,0
+c1_nrm,rct,1,not estimable (k < 3),NA,NA,NA,NA,NA
+c1_nrm,obs,10,NA,0.9138106084476392,0.5725456626474068,1.3601213575212057,0.27578796,0
+c1_cmv,rct,0,not estimable (k < 3),NA,NA,NA,NA,NA
+c1_cmv,obs,7,NA,1.0149366103236566,0.6355846017006124,1.6390490598474372,0.30951819,0

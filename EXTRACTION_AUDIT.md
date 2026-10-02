@@ -199,6 +199,51 @@ OS C1 Egger p = 0.025 (Begg/Peters ns), trim-and-fill 6 imputed, 0.75 ->
 0.61 -> 0.83); no other outcome asymmetric. The S10 paragraph was updated,
 closing the last pre-adjudication analysis.
 
+## Reporting-emphasis audit (2026-10-02, third checklist)
+
+Executed via `scripts/refit-reporting-suite.R` on the post-adjudication
+datasets; outputs in data/models/{rct_only_results,comparator_backbone,
+donor_confounding,hr_sensitivity_os,hr_same_subset}.csv.
+
+1. **HR prominence + same-subset comparison.** OS HR pooling rerun (C1 HR
+   0.88 [0.66-1.14], k = 14; C2 0.60 [0.27-1.10], k = 4). New analysis:
+   count-based M1 restricted to the same HR-reporting studies — C1 OR 0.75
+   [0.57-0.93] (k = 13), so the HR attenuation persists on the same subset
+   and is attributable to adjustment/estimand, not subset composition.
+   A sentence reporting the HR analysis was added to the main-text
+   discussion.
+2. **RCT vs observational separation.** Material finding: after removal of
+   CIF-derived counts, trial-only analyses are no longer estimable for any
+   C1 outcome (trials report KM/CIF almost exclusively; at most 2 trials
+   per outcome retain observed counts). Earlier trial-only estimates
+   (e.g., OS 0.79 [0.59-1.08], k = 7) were built partly on pseudo-counts
+   and are superseded. Observational-only estimates now reported instead
+   (OS 0.79 [0.63-0.96], k = 26; aGVHD 0.60, k = 27; cGVHD 0.48, k = 14;
+   NRM 0.91, k = 10; CMV 1.01, k = 7), with explicit statement that trial
+   evidence with observed counts cannot carry the conclusions. Appendix
+   RCT section rewritten accordingly.
+3. **Comparator backbone + formal interaction.** Subgroups refit; new
+   backbone x PTCy interaction models show differences are NOT resolved
+   (OS: CNI+MMF vs MTX ratio 1.82 [0.76-4.53]; MTX+MMF vs MTX 1.46
+   [0.87-2.54]; aGVHD 1.08/1.58; CMV 0.77/0.70). The appendix text claiming
+   benefit "concentrated" against CNI+MTX and "absent" against CNI+MMF was
+   rewritten to state that one interval excluding 1 while another does not
+   is not evidence of a differential effect.
+4. **Donor-type covariates.** Refitted (k values now match Table 2).
+   Verified: 95% arm-level availability, zero exclusions in pooled sets,
+   missing values never zero-filled (complete-case). Documented in the
+   appendix paragraph.
+5. **Baseline confounders.** Availability table added to the appendix:
+   donor 95%, conditioning 89%, graft source 85%, steroid 76%, disease
+   risk 59%, CMV serostatus 47%, D+/R- 31%, era 100%; conditioning, graft
+   source and disease risk are not adjusted for (residual-confounding
+   limitation now stated).
+6. **Steroid M2** already framed exploratory (post-hoc amendment) with the
+   87% GVHD-derived-proxy caveat documented; no change needed.
+7. **Subgroup-inference language** fixed per item 3; the CMV C1-vs-C2
+   indirect-comparison text was already properly hedged ("does not
+   resolve").
+
 ## Recommended actions
 
 1. ~~Add an `input_class` column to outcomes.csv~~ **Done** (2026-10-02,

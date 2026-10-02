@@ -424,7 +424,13 @@ null), with correspondingly lower chronic GVHD. Overall survival was
 better versus CNI-based prophylaxis (0·73 \[0·58–0·89\]); against a
 median comparator-arm mortality of 35% this corresponds to about 68
 fewer deaths per 1000 patients. Versus ATG, the estimate also favoured
-PTCy but was imprecise (0·75 \[0·43–1·28\]). These findings align with
+PTCy but was imprecise (0·75 \[0·43–1·28\]). The survival estimate is
+supported by a hazard-ratio sensitivity analysis: on the subset of
+studies reporting (mostly adjusted) overall-survival hazard ratios, the
+pooled hazard ratio was 0·88 \[0·66–1·14\] (k = 14), while the
+count-based odds ratio on the same studies was 0·75 \[0·57–0·93\],
+a consistent direction of effect across estimands (appendix S9). These
+findings align with
 and extend the BMT CTN 1703 RCT, which established the superiority of
 PTCy in the matched-donor setting.[@bolanosmeade2023] The present
 analysis is consistent with this advantage extending across donor types,

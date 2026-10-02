@@ -318,7 +318,7 @@ For C1 BSI and C1 IFI (k = 6), where the Student t(3, 0, 1) prior on the between
 
 The primary models use a random study intercept, under which the pooled treatment effect is estimated partly from between-study contrasts and within-study randomisation is not preserved [@senn2010]. As a sensitivity analysis, every model in Table 2 was refitted with fixed (stratified) study-specific intercepts and a random PTCy-effect slope, so that the treatment effect is identified solely from within-study contrasts, as in two-stage meta-analysis of odds ratios; priors and sampler settings were otherwise unchanged. Posterior median odds ratios were concordant: the median absolute shift on the log-odds-ratio scale across the 29 models was 0·03, no estimate changed direction, and 25 of 29 shifts were below 0·1. The largest shifts occurred in sparse or steroid-adjusted models — C1 NRM (M2): 0·81 \[0·27–1·57\] to 0·61 \[0·14–1·41\]; C1 IFI: 0·63 \[0·19–2·62\] to 0·54 \[0·16–1·85\]; C3 RRM: 0·78 \[0·35–1·73\] to 0·68 \[0·29–1·39\]; C1 OS (M2): 0·95 \[0·70–1·27\] to 0·86 \[0·60–1·19\]. Only one interval conclusion changed: C2 BK virus reactivation (k = 3), whose lower credible bound moved from 1·09 to 0·97 and so no longer excludes 1, an outcome already rated low certainty. Full per-model results are provided in `fe_sensitivity_setB.csv`, a supplementary data file.
 
-Restricting the primary outcome to randomised trials is only weakly informative after cohort deduplication, which leaves two trials (odds ratio 0·73 \[0·17–3·42\]). Across the seven randomised trials in the pre-deduplication C1 overall-survival dataset the estimate was 0·79 \[0·59–1·08\], consistent in direction with the pooled result but too imprecise to carry the conclusion independently.
+Restricting the primary outcome to randomised trials is only weakly informative after cohort deduplication, which leaves two trials (odds ratio 0·73 \[0·17–3·42\]). An earlier estimate across seven randomised trials in the pre-deduplication C1 overall-survival dataset (0·79 \[0·59–1·08\]) was computed before cumulative-incidence-derived event counts were removed from pooling (2026-10-02; see the randomised-trials-only section below) and is superseded: with observed event counts only, at most two trials remain per outcome, so trial-only analyses are no longer estimable.
 
 ### Hazard-ratio sensitivity for overall survival
 
@@ -359,41 +359,43 @@ The reported M1 uses all studies with outcome data, whereas M2 drops studies wit
 
 ### Donor-type confounding
 
-PTCy arms are enriched for haploidentical recipients (47% versus 15% of comparator arms overall). Two analyses address the resulting confounding concern for the five main C1 outcomes. First, within-study imbalance is small: the between-arm difference in haploidentical-donor percentage has median 0 in every outcome dataset, so most of the marginal imbalance is between studies — the component absorbed by the study intercepts (and removed entirely in the fixed-intercept sensitivity above). Second, a meta-regression on the between-arm difference and a donor-matched restriction (absolute difference ≤ 15 percentage points) were fitted for each outcome. The meta-regression coefficient is near zero throughout, and the donor-matched overall-survival estimate is stronger, not weaker, than the full-set estimate (0·60 \[0·44–0·80\] versus 0·76 \[0·61–0·93\]), so the C1 survival and GVHD benefits are not driven by studies in which PTCy arms carried more haploidentical recipients. Fits and summaries are exported in `donor_confounding.csv`, a supplementary data file.
+PTCy arms are enriched for haploidentical recipients (47% versus 15% of comparator arms overall). Two analyses address the resulting confounding concern for the five main C1 outcomes, refitted 2026-10-02 on the post-adjudication datasets. Arm-level haploidentical-donor percentage was available for 95% of extraction-database arms (498 of 523) and for every arm in the pooled outcome datasets (zero exclusions); missing values were never treated as zero — both analyses are complete-case. First, within-study imbalance is small: the between-arm difference in haploidentical-donor percentage has median 0 in every outcome dataset, so most of the marginal imbalance is between studies — the component absorbed by the study intercepts (and removed entirely in the fixed-intercept sensitivity above). Second, a meta-regression on the between-arm difference and a donor-matched restriction (absolute difference ≤ 15 percentage points) were fitted for each outcome. The meta-regression coefficient is near zero throughout, and the donor-matched overall-survival estimate is stronger, not weaker, than the full-set estimate (0·58 \[0·41–0·78\] versus 0·73 \[0·58–0·89\]), so the C1 survival and GVHD benefits are not driven by studies in which PTCy arms carried more haploidentical recipients. Fits and summaries are exported in `donor_confounding.csv`, a supplementary data file.
 
 | Outcome | Analysis | k | OR (95% CrI) | Δ-haplo coefficient (95% CrI) |
 |:---|:---|---:|:---|:---|
-| Overall survival | M1 reported | 35 | 0·76 (0·61–0·93) | — |
-| Overall survival | M1 + Δ-haplo meta-regression | 35 | 0·77 (0·62–0·93) | 0·004 (−0·001–0·009) |
-| Overall survival | M1 donor-matched (≤15 pp) | 22 | 0·60 (0·44–0·80) | — |
+| Overall survival | M1 reported | 29 | 0·73 (0·58–0·89) | — |
+| Overall survival | M1 + Δ-haplo meta-regression | 29 | 0·74 (0·59–0·90) | 0·005 (−0·001–0·010) |
+| Overall survival | M1 donor-matched (≤15 pp) | 21 | 0·58 (0·41–0·78) | — |
 | Relapse-related mortality | M1 reported | 34 | 0·87 (0·76–0·99) | — |
 | Relapse-related mortality | M1 + Δ-haplo meta-regression | 34 | 0·87 (0·76–0·99) | 0·001 (−0·003–0·005) |
-| Relapse-related mortality | M1 donor-matched (≤15 pp) | 18 | 0·87 (0·67–1·13) | — |
-| Acute GVHD II–IV | M1 reported | 28 | 0·58 (0·43–0·77) | — |
+| Relapse-related mortality | M1 donor-matched (≤15 pp) | 18 | 0·87 (0·67–1·10) | — |
+| Acute GVHD II–IV | M1 reported | 28 | 0·58 (0·44–0·76) | — |
 | Acute GVHD II–IV | M1 + Δ-haplo meta-regression | 28 | 0·59 (0·44–0·77) | 0·006 (0·000–0·012) |
-| Acute GVHD II–IV | M1 donor-matched (≤15 pp) | 17 | 0·50 (0·33–0·74) | — |
-| CMV reactivation | M1 reported | 22 | 1·22 (0·90–1·65) | — |
-| CMV reactivation | M1 + Δ-haplo meta-regression | 22 | 1·23 (0·89–1·65) | 0·001 (−0·007–0·009) |
-| CMV reactivation | M1 donor-matched (≤15 pp) | 15 | 1·06 (0·73–1·54) | — |
-| Non-relapse mortality | M1 reported | 12 | 0·81 (0·46–1·22) | — |
-| Non-relapse mortality | M1 + Δ-haplo meta-regression | 12 | 0·82 (0·47–1·23) | 0·002 (−0·009–0·013) |
-| Non-relapse mortality | M1 donor-matched (≤15 pp) | 8 | 0·58 (0·23–1·15) | — |
+| Acute GVHD II–IV | M1 donor-matched (≤15 pp) | 17 | 0·50 (0·34–0·74) | — |
+| CMV reactivation | M1 reported | 21 | 1·20 (0·87–1·65) | — |
+| CMV reactivation | M1 + Δ-haplo meta-regression | 21 | 1·21 (0·87–1·65) | 0·001 (−0·008–0·009) |
+| CMV reactivation | M1 donor-matched (≤15 pp) | 15 | 1·01 (0·68–1·50) | — |
+| Non-relapse mortality | M1 reported | 11 | 0·84 (0·48–1·28) | — |
+| Non-relapse mortality | M1 + Δ-haplo meta-regression | 11 | 0·85 (0·48–1·27) | 0·002 (−0·009–0·014) |
+| Non-relapse mortality | M1 donor-matched (≤15 pp) | 8 | 0·58 (0·21–1·28) | — |
 
-: Donor-type confounding analyses for C1 outcomes. Δ-haplo = PTCy-arm minus comparator-arm haploidentical-donor percentage (study-level); the meta-regression coefficient is on the log-OR scale per percentage point.
+: Donor-type confounding analyses for C1 outcomes (post-adjudication refits, 2026-10-02). Δ-haplo = PTCy-arm minus comparator-arm haploidentical-donor percentage (study-level); the meta-regression coefficient is on the log-OR scale per percentage point.
+
+Arm-level baseline confounders vary widely in availability across the 523 extracted arms: donor-type composition 95%, conditioning intensity (MAC percentage) 89%, graft source (PBSC percentage) 85%, systemic-steroid exposure 76%, disease risk (high-risk percentage) 59%, CMV recipient serostatus 47%, donor-positive/recipient-negative serostatus 31%, and enrolment era 100% (study-level). Of these, donor type, CMV serostatus, letermovir era, and steroid exposure are addressed by dedicated analyses (this section, the CMV serostatus/letermovir section, and the exploratory M2 model); conditioning intensity, graft source, and disease risk are not adjusted for in any model, because between-study adjustment for arm-level percentages cannot remove within-study confounding and within-study imbalances were not systematically reported. This is a residual-confounding limitation of the pooled estimates.
 
 ### Randomised-trials-only analyses
 
-The 14 randomised trials contribute to the comparisons unevenly after cohort deduplication, so these analyses use the full analytic datasets restricted to trials (one publication per trial cohort). Estimable outcome sets (k ≥ 3) exist for C1 only; every C2 outcome has at most two trials and is not estimable. Estimates for overall survival, chronic GVHD, non-relapse mortality and CMV are compatible with the pooled results, but the acute GVHD II–IV reduction is attenuated and its interval includes 1 (0·92 \[0·60–1·31\], k = 6, versus 0·58 \[0·43–0·77\] pooled), so the estimated magnitude of the acute GVHD benefit rests partly on observational comparisons. Fits and summaries are exported in `rct_only_results.csv`, a supplementary data file.
+The 14 randomised trials contribute to the comparisons unevenly after cohort deduplication, so these analyses use the full analytic datasets (one publication per trial cohort). The trial-only estimates previously reported here are superseded because they included cumulative-incidence-derived event counts. After those derived counts were removed from pooling (2026-10-02), trial-only analyses are **no longer estimable for any C1 outcome**: the randomised trials report Kaplan–Meier and cumulative-incidence estimates almost exclusively, and restricting to observed event counts leaves at most two trials per outcome (overall survival k = 2; acute GVHD k = 1; chronic GVHD k = 2; non-relapse mortality k = 1; CMV k = 0). The observational-only estimates below (non-trial studies only) are the post-adjudication complement and should be read alongside the explicit statement that trial evidence with observed counts is insufficient to carry the survival and GVHD conclusions independently.
 
-| Outcome                 | k (trials) | OR (95% CrI)     |
-|:------------------------|-----------:|:-----------------|
-| Overall survival        |          7 | 0·79 (0·58–1·06) |
-| Acute GVHD II–IV        |          6 | 0·92 (0·60–1·31) |
-| Chronic GVHD mod–severe |          7 | 0·31 (0·09–0·99) |
-| Non-relapse mortality   |          6 | 0·84 (0·47–1·52) |
-| CMV reactivation        |          3 | 1·19 (0·54–3·59) |
+| Outcome | Design | k | OR (95% CrI) |
+|:---|:---|---:|:---|
+| Overall survival | Observational only | 26 | 0·79 (0·63–0·96) |
+| Acute GVHD II–IV | Observational only | 27 | 0·60 (0·44–0·78) |
+| Chronic GVHD mod–severe | Observational only | 14 | 0·48 (0·27–0·86) |
+| Non-relapse mortality | Observational only | 10 | 0·91 (0·57–1·36) |
+| CMV reactivation | Observational only | 7 | 1·01 (0·64–1·64) |
 
-: Randomised-trials-only M1 models, C1 outcomes with k ≥ 3.
+: Observational-only M1 models (post-adjudication datasets, 2026-10-02), C1 outcomes. Trial-only models are not estimable after the exclusion of cumulative-incidence-derived event counts (see text). Fits and summaries are exported in `rct_only_results.csv`, a supplementary data file.
 
 ### CMV serostatus and letermovir
 
@@ -410,7 +412,7 @@ Arm-level CMV recipient serostatus was available for only half of the CMV model 
 
 ### Comparator backbone and PTCy+ATG arms
 
-C1 comparators mix CNI+MTX, CNI+MMF and CNI+MTX+MMF backbones. Splitting by backbone shows the overall-survival benefit concentrated against CNI+MTX comparators (0·53 \[0·33–0·79\], k = 12) and absent against CNI+MMF (1·30 \[0·76–2·29\], k = 5), with CNI+MTX+MMF intermediate (0·85 \[0·56–1·28\], k = 11); the acute GVHD reduction is consistent against CNI+MTX and CNI+MMF (both 0·52) but attenuated against the combined backbone (0·85 \[0·44–1·57\]). Comparator mix therefore contributes to the pooled C1 estimates. Arms receiving PTCy together with ATG are classified as PTCy arms in all three comparisons (54 arms database-wide; 27 C1-eligible, 8 C2-eligible, 17 C3-eligible); three C2 studies include such arms, and excluding them leaves the C2 estimates essentially unchanged (table). Fits and summaries are exported in `comparator_backbone.csv`, a supplementary data file.
+C1 comparators mix CNI+MTX, CNI+MMF and CNI+MTX+MMF backbones. Subgroup estimates suggest the overall-survival benefit may be concentrated against CNI+MTX comparators (0·56 \[0·34–0·84\], k = 12), with no benefit against CNI+MMF (1·10 \[0·45–3·01\], k = 5) and an intermediate estimate against CNI+MTX+MMF (0·85 \[0·57–1·26\], k = 11); the acute GVHD reduction is consistent against CNI+MTX and CNI+MMF (0·53 \[0·36–0·75\] and 0·51 \[0·12–2·22\]) but attenuated against the combined backbone (0·85 \[0·45–1·57\]). However, a formal backbone × PTCy interaction model does not resolve these differences: for overall survival the ratio of odds ratios is 1·82 \[0·76–4·53\] (CNI+MMF versus CNI+MTX) and 1·46 \[0·87–2·54\] (CNI+MTX+MMF versus CNI+MTX); for acute GVHD, 1·08 \[0·48–2·46\] and 1·58 \[0·76–3·29\]; and for CMV, 0·77 \[0·28–2·52\] and 0·70 \[0·38–1·51\]. Backbone differences in the PTCy effect are therefore compatible with, but not demonstrated by, the data, and the fact that one subgroup interval excludes 1 while another does not is not itself evidence of a differential effect. Comparator mix may nonetheless contribute to the pooled C1 estimates. Arms receiving PTCy together with ATG are classified as PTCy arms in all three comparisons (54 arms database-wide; 27 C1-eligible, 8 C2-eligible, 17 C3-eligible); three C2 studies include such arms, and excluding them leaves the C2 estimates essentially unchanged (table). Fits and summaries are exported in `comparator_backbone.csv`, a supplementary data file.
 
 | Analysis | k | OR (95% CrI) |
 |:---|---:|:---|
