@@ -4,7 +4,7 @@ study_id,comparison,category,subtype,timepoint_used,tp_early,ptcy_arm_id,comp_ar
 20,1,overall_mortality,OS_event,D+365_1yr,0,29,30,26,52,4,11,NA,NA
 67,1,overall_mortality,OS_event,D+365_1yr,0,78,79,41,20,22,8,NA,NA
 178,1,overall_mortality,OS_event,D+365_1yr,0,184,185,118,76,33,18,26.3,31.6
-198,1,overall_mortality,OS_event,D+365_1yr,0,206,207,15,25,1,9,13.3,28
+198,1,overall_mortality,OS_event,D+365_1yr,0,206,207,15,25,NA,NA,13.3,28
 260,1,overall_mortality,OS_event,D+365_1yr,0,269,270,46,191,5,66,13,28.4
 271,1,overall_mortality,OS_event,D+365_1yr,0,285,284,176,276,45,75,50,51
 320,1,overall_mortality,OS_event,D+365_1yr,0,346,347,28,59,4,17,14,37

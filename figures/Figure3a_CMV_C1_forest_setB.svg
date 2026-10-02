@@ -109,8 +109,8 @@
 <polygon points='247.08,104.34 250.93,104.34 250.93,100.49 247.08,100.49 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 <polygon points='247.83,86.45 251.68,86.45 251.68,82.60 247.83,82.60 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 <polygon points='248.61,68.57 252.46,68.57 252.46,64.72 248.61,64.72 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<line x1='202.56' y1='48.76' x2='226.71' y2='48.76' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
-<polygon points='210.08,48.76 214.78,44.07 219.48,48.76 214.78,53.46 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<line x1='202.64' y1='48.76' x2='226.80' y2='48.76' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
+<polygon points='210.30,48.76 215.00,44.07 219.70,48.76 215.00,53.46 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 </g>
 <g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw1MDQuMDA=)'>
 <text x='78.48' y='444.62' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='35.91px' lengthAdjust='spacingAndGlyphs'>Kara (2021)</text>
@@ -146,7 +146,7 @@
 <text x='212.23' y='479.72' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
 <text x='10.46' y='31.26' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='99.58px' lengthAdjust='spacingAndGlyphs'>k = 22, N = 3 328, τ = 0.53</text>
 <text x='10.46' y='17.98' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='224.95px' lengthAdjust='spacingAndGlyphs'>CMV reactivation — PTCy vs CNI + MTX/MMF</text>
-<text x='10.46' y='491.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.45px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
+<text x='10.46' y='491.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.88px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
 </g>
 <defs>
   <clipPath id='cpNDQxLjA1fDYzNy41NHwzOC4wM3w0NTIuOTE='>

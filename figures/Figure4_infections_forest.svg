@@ -90,8 +90,8 @@
 <polygon points='254.02,107.05 257.87,107.05 257.87,103.20 254.02,103.20 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 <polygon points='286.91,88.41 290.76,88.41 290.76,84.57 286.91,84.57 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 <polygon points='287.19,69.78 291.04,69.78 291.04,65.93 287.19,65.93 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<line x1='213.15' y1='49.22' x2='293.79' y2='49.22' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
-<polygon points='253.11,49.22 257.81,44.52 262.51,49.22 257.81,53.92 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<line x1='213.71' y1='49.22' x2='293.90' y2='49.22' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
+<polygon points='253.05,49.22 257.75,44.52 262.45,49.22 257.75,53.92 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 </g>
 <g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw2NDguMDA=)'>
 <text x='81.12' y='163.47' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='46.48px' lengthAdjust='spacingAndGlyphs'>Koura D (2025)</text>
@@ -111,9 +111,9 @@
 <text x='240.59' y='184.92' text-anchor='middle' style='font-size: 8.00px;fill: #2D2D2D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>1.0</text>
 <text x='294.12' y='184.92' text-anchor='middle' style='font-size: 8.00px;fill: #2D2D2D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>3.0</text>
 <text x='214.79' y='199.03' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
-<text x='10.46' y='31.26' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='87.75px' lengthAdjust='spacingAndGlyphs'>k = 6, N = 806, τ = 0.71</text>
+<text x='10.46' y='31.26' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='87.75px' lengthAdjust='spacingAndGlyphs'>k = 6, N = 806, τ = 0.73</text>
 <text x='10.46' y='17.98' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='324.67px' lengthAdjust='spacingAndGlyphs'>Bloodstream infection, any pathogen — PTCy vs CNI + MTX/MMF</text>
-<text x='10.46' y='211.27' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.45px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
+<text x='10.46' y='211.27' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.88px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
 </g>
 <defs>
   <clipPath id='cpNDQxLjE3fDYzNy41NHwzOC4wM3wxNzIuMjI='>
@@ -212,8 +212,8 @@
 <polygon points='208.01,319.40 211.86,319.40 211.86,315.55 208.01,315.55 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 <polygon points='217.41,300.76 221.26,300.76 221.26,296.91 217.41,296.91 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 <polygon points='268.89,282.12 272.74,282.12 272.74,278.28 268.89,278.28 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<line x1='166.13' y1='261.56' x2='237.30' y2='261.56' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
-<polygon points='193.97,261.56 198.67,256.86 203.37,261.56 198.67,266.26 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<line x1='166.76' y1='261.56' x2='235.36' y2='261.56' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
+<polygon points='193.88,261.56 198.58,256.86 203.28,261.56 198.58,266.26 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 </g>
 <g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw2NDguMDA=)'>
 <text x='81.12' y='375.82' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='60.09px' lengthAdjust='spacingAndGlyphs'>Pirogova OV (2016)</text>
@@ -237,7 +237,7 @@
 <text x='214.79' y='411.38' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
 <text x='10.46' y='243.61' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='94.84px' lengthAdjust='spacingAndGlyphs'>k = 6, N = 2 243, τ = 1.28</text>
 <text x='10.46' y='230.32' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='286.22px' lengthAdjust='spacingAndGlyphs'>Invasive fungal infection, any — PTCy vs CNI + MTX/MMF</text>
-<text x='10.46' y='423.62' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.45px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
+<text x='10.46' y='423.62' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.88px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
 </g>
 <defs>
   <clipPath id='cpNDQxLjE3fDYzNy41NHwyNTAuMzh8Mzg0LjU3'>
@@ -346,8 +346,8 @@
 <polygon points='239.79,504.25 243.63,504.25 243.63,500.40 239.79,500.40 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 <polygon points='263.90,493.25 267.75,493.25 267.75,489.40 263.90,489.40 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 <polygon points='268.59,482.25 272.44,482.25 272.44,478.40 268.59,478.40 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<line x1='215.33' y1='469.33' x2='240.66' y2='469.33' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
-<polygon points='224.00,469.33 228.70,464.63 233.40,469.33 228.70,474.03 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<line x1='213.99' y1='469.33' x2='241.16' y2='469.33' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
+<polygon points='224.01,469.33 228.71,464.63 233.40,469.33 228.71,474.03 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 </g>
 <g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw2NDguMDA=)'>
 <text x='81.12' y='592.75' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='35.91px' lengthAdjust='spacingAndGlyphs'>Kara (2021)</text>
@@ -374,7 +374,7 @@
 <text x='213.19' y='623.72' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
 <text x='10.46' y='455.95' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='98.95px' lengthAdjust='spacingAndGlyphs'>k = 11, N = 1 333, τ = 0.36</text>
 <text x='10.46' y='442.67' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='244.81px' lengthAdjust='spacingAndGlyphs'>BK virus reactivation — PTCy vs CNI + MTX/MMF</text>
-<text x='10.46' y='635.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.45px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
+<text x='10.46' y='635.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.88px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
 </g>
 <defs>
   <clipPath id='cpNDQzLjYxfDYzNy41NHw0NjIuNzN8NTk2Ljkx'>

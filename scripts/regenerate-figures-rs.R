@@ -44,6 +44,11 @@ save3 <- function(p, stem, w, h) {
 }
 
 # ── 1. Pooled-estimate CSV for the forest-plot notebook ──
+# 2026-10-02: SKIPPED by default — Table2_setB.csv is now maintained by
+# scripts/refit-after-pdf-adjudication.R (which also carries prediction
+# intervals and per-fit provenance stamps). Set WRITE_TABLE2=1 to restore the
+# old behaviour of rebuilding the whole table from the rs fits (no PI columns).
+write_table2 <- identical(Sys.getenv("WRITE_TABLE2"), "1")
 csv_map <- tribble(
   ~slug,          ~model,        ~key,
   "c1_os",        "m1",          "c1_os_m1",
@@ -77,23 +82,27 @@ csv_map <- tribble(
   "c3_cgvhd",     "m1",          "c3_cgvhd_m1"
 )
 
-pooled_new <- pmap_dfr(csv_map, function(slug, model, key) {
-  fit <- rs(key)
-  dr <- as_draws_df(fit)
-  or <- exp(dr$b_ptcy_binary)
-  tibble(
-    slug = slug, model = model,
-    k = n_distinct(fit$data$study_id),
-    n_total = sum(fit$data$denom_n),
-    or_median = median(or),
-    ci_low = unname(quantile(or, 0.025)),
-    ci_high = unname(quantile(or, 0.975)),
-    tau = median(dr$sd_study_id__ptcy_binary),
-    source = "random-slope refit 2026-09-30"
-  )
-})
-write_csv(pooled_new, file.path(proj_dir, "data/models/Table2_setB.csv"))
-cat("wrote data/models/Table2_setB.csv:", nrow(pooled_new), "rows\n")
+if (write_table2) {
+  pooled_new <- pmap_dfr(csv_map, function(slug, model, key) {
+    fit <- rs(key)
+    dr <- as_draws_df(fit)
+    or <- exp(dr$b_ptcy_binary)
+    tibble(
+      slug = slug, model = model,
+      k = n_distinct(fit$data$study_id),
+      n_total = sum(fit$data$denom_n),
+      or_median = median(or),
+      ci_low = unname(quantile(or, 0.025)),
+      ci_high = unname(quantile(or, 0.975)),
+      tau = median(dr$sd_study_id__ptcy_binary),
+      source = "random-slope refit 2026-09-30"
+    )
+  })
+  write_csv(pooled_new, file.path(proj_dir, "data/models/Table2_setB.csv"))
+  cat("wrote data/models/Table2_setB.csv:", nrow(pooled_new), "rows\n")
+} else {
+  cat("skip Table2 rewrite (WRITE_TABLE2 != 1); figures only\n")
+}
 
 # ── 2. Figure S7b: traces, b (top) and effect-SD (bottom), OS and CMV ──
 color_scheme_set(c(jama_navy, jama_blue, jama_steel, jama_light_blue,

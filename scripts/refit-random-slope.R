@@ -107,26 +107,38 @@ for (i in seq_len(nrow(spec))) {
     next
   }
   cat("fitting:", row$key, "\n")
-  dat <- read.csv(file.path(row$dir, row$data_file)) |> mk_data(row$m2)
+  # 2026-10-02: prefer this repo's data/models/ (Set B copies, PDF-adjudicated);
+  # fall back to the analysis repo's post_block9 for files not vendored here.
+  data_path <- file.path("data/models", row$data_file)
+  if (!file.exists(data_path)) data_path <- file.path(p9_dir, row$data_file)
+  dat <- read.csv(data_path) |> mk_data(row$m2)
   rhs <- if (row$m2) {
     "events_n | trials(denom_n) ~ ptcy_binary + tp_early + steroid_pct_c + (1 + ptcy_binary | study_id)"
   } else {
     "events_n | trials(denom_n) ~ ptcy_binary + tp_early + (1 + ptcy_binary | study_id)"
   }
+  # backend = cmdstanr: rstan on this machine fails to load compiled models
+  # (TBB task_scheduler_init symbol error, 2026-10-02)
+  num_div <- function(fit) {
+    tryCatch(sum(fit$fit$diagnostic_summary()$num_divergent),
+             error = function(e) rstan::get_num_divergent(fit$fit))
+  }
   fit <- brm(
     as.formula(rhs), data = dat, family = binomial(), prior = priors_rs,
     chains = 4, iter = 4000, warmup = 1000, seed = seeds[i],
-    control = list(adapt_delta = 0.95), refresh = 0
+    control = list(adapt_delta = 0.95), refresh = 0,
+    backend = "cmdstanr"
   )
-  div <- rstan::get_num_divergent(fit$fit)
+  div <- num_div(fit)
   if (div > 0) {
     cat("  ", div, "divergences at adapt_delta 0.95; refitting at 0.99\n")
     fit <- brm(
       as.formula(rhs), data = dat, family = binomial(), prior = priors_rs,
       chains = 4, iter = 4000, warmup = 1000, seed = seeds[i],
-      control = list(adapt_delta = 0.99), refresh = 0
+      control = list(adapt_delta = 0.99), refresh = 0,
+      backend = "cmdstanr"
     )
-    div <- rstan::get_num_divergent(fit$fit)
+    div <- num_div(fit)
   }
   saveRDS(fit, out_file)
 
