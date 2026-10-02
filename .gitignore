@@ -26,3 +26,7 @@
 
 /.luarc.json
 _fits_rs/
+
+# LaTeX intermediate artifacts
+/index.tex
+/index.log

@@ -692,7 +692,7 @@ full responsibility for the analysis and manuscript contents.
 | CMV R+, %\* | 74·8 (65·8–80·1) | 69·4 (59·5–81·3) |
 | Steroid exposure, %\* | 26·6 (20·0–32·9) | 34·8 (28·4–43·7) |
 
-: Characteristics of included studies. {#tbl-characteristics} Data are n (%) or median (IQR)
+: Characteristics of included studies. Data are n (%) or median (IQR)
 unless otherwise stated. \*Median of arm-level values; IQR reflects
 between-arm variability. Steroid exposure is the percentage of arm
 patients receiving systemic corticosteroids for graft-versus-host
@@ -700,7 +700,7 @@ disease (appendix S9). MUD = matched unrelated donor. MMUD = mismatched
 unrelated donor. MSD = matched sibling donor. PBSC = peripheral blood
 stem cells. BM = bone marrow. UCB = umbilical cord blood. MAC =
 myeloablative conditioning. RIC = reduced-intensity conditioning. NMA =
-non-myeloablative. NR = not reported.
+non-myeloablative. NR = not reported. {#tbl-characteristics}
 
 {{< pagebreak >}}
 
@@ -731,7 +731,7 @@ non-myeloablative. NR = not reported.
 | Infection-related mortality | C1 | M1 | 13 | 5 504 | 1·02 (0·67–1·50) | 0·48 | 0·29–3·10 | Very low |
 |  | C2 | M1 | 7 | 13 346 | 0·98 (0·62–1·77) | 0·41 | 0·31–3·53 | Very low |
 
-: Bayesian meta-analysis results: outcomes by comparison. {#tbl-results} Estimates are
+: Bayesian meta-analysis results: outcomes by comparison. Estimates are
 from the cohort-deduplicated dataset, in which one publication per
 cohort contributes to each outcome. M1 = primary model with a random
 study intercept and a random PTCy-effect slope, adjusted for timepoint;
@@ -743,7 +743,7 @@ slope. GRADE ratings are shown for C1 and C2 comparisons of the
 pre-specified outcomes and the secondary outcomes added by protocol
 amendment (appendix S11); C3 outcomes were not rated. OR \< 1 favours
 PTCy for survival and GVHD outcomes; OR \> 1 indicates elevated risk
-with PTCy for infection outcomes.
+with PTCy for infection outcomes. {#tbl-results}
 
 {{< pagebreak >}}
 
