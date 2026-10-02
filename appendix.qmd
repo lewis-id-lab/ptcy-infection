@@ -640,7 +640,7 @@ Page and line references are to the typeset submission build: the article PDF (3
 |  | 20c | Results of sensitivity analyses | appendix p. 20 (S9) |
 |  | 20d | Results of reporting-bias assessment | appendix p. 45 (S10) |
 | **Reporting biases** | 21 | Assessment of risk of bias due to missing results | appendix p. 45 (S10) |
-| **Certainty of evidence** | 22 | Assessment of certainty of evidence for each outcome | p\. 11, line 235 (Certainty of evidence); p. 24 (Table 2, GRADE column); appendix p. 48 (S11) |
+| **Certainty of evidence** | 22 | Assessment of certainty of evidence for each outcome | p\. 11, line 235 (Certainty of evidence); p. 24 (Table 2, GRADE column); appendix p. 48 (S11; all five GRADE domains per outcome, with imprecision assessed against pre-specified clinically meaningful thresholds of OR 0·80 for benefit and 1·25 for harm) |
 | **Discussion** | 23a | General interpretation in the context of other evidence | p\. 11, line 244 (Discussion) |
 |  | 23b | Limitations of the evidence | p\. 14, line 307 (Limitations) |
 |  | 23c | Limitations of the review processes | p\. 14, line 307; appendix p. 53 (S12, cohort deduplication and duplicate-entry removal) |
