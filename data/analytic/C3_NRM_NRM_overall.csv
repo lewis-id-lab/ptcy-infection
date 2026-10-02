@@ -7,5 +7,5 @@ study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy
 437,3,NRM,NRM_overall,D+365_1yr,490,489,17,16,2,7,NA,NA,11.8,31.3
 460,3,NRM,NRM_overall,D+365_1yr,516,517,31,36,NA,NA,12.9,36.2,17,40.2
 461,3,NRM,NRM_overall,D+365_1yr,518,519,21,42,NA,NA,19,19,24,29
-418,3,NRM,NRM_overall,D+100,462,463,33,25,3,6,9,25,18,17
+418,3,NRM,NRM_overall,D+100,462,463,33,25,NA,NA,9,25,18,17
 10,3,NRM,NRM_overall,end_of_followup,22,21,607,1676,NA,NA,NA,NA,NA,NA

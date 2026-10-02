@@ -1,5 +1,5 @@
 study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy_n,comp_n,ptcy_e,comp_e,ptcy_ci_pct,comp_ci_pct,ptcy_steroid_pct,comp_steroid_pct
-6,2,overall_mortality,OS_event,D+365_1yr,10,12,68,280,26,53,38,19,60,48
+6,2,overall_mortality,OS_event,D+365_1yr,10,12,68,280,NA,NA,38,19,60,48
 39,2,overall_mortality,OS_event,D+365_1yr,41,40,90,95,NA,NA,24,33,21,48
 49,2,overall_mortality,OS_event,D+365_1yr,50,51,118,91,NA,NA,59.72,45.8,58,52
 66,2,overall_mortality,OS_event,D+365_1yr,76,77,28,28,NA,NA,39,61,25,50

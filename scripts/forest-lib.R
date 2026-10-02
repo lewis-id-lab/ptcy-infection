@@ -73,7 +73,7 @@ HEADER <- "column_header"
 # One forest panel. `pooled_spec` optionally overrides the pooled row:
 # list(label = "REML pooled", or = ., lo = ., hi = .).
 forest <- function(analytic_file, slug, title, subtitle = NULL,
-                   pooled_spec = NULL,
+                   pooled_spec = NULL, study_filter = NULL,
                    here = \(...) file.path(if (basename(getwd()) == "notebooks") ".." else ".", ...)) {
   f <- resolve_data(analytic_file, slug, here)
   if (!file.exists(f)) { message("missing: ", analytic_file); return(invisible(NULL)) }
@@ -82,6 +82,7 @@ forest <- function(analytic_file, slug, title, subtitle = NULL,
   studies <- read_csv(here("data", "studies.csv"), show_col_types = FALSE) |>
     select(study_id, first_author, pub_year)
   es <- read_csv(f, show_col_types = FALSE) |>
+    { \(d) if (!is.null(study_filter)) filter(d, study_id %in% study_filter) else d }() |>
     study_or() |>
     left_join(studies, by = "study_id") |>
     mutate(slab = sprintf("%s (%s)", first_author, pub_year))

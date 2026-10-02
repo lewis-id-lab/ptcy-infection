@@ -3,4 +3,4 @@ study_id,comparison,category,subtype,timepoint_used,tp_early,ptcy_arm_id,comp_ar
 272,3,NRM,NRM_overall,D+365_1yr,0,286,287,1728,293,367,41,33,24
 397,3,NRM,NRM_overall,D+365_1yr,0,444,445,44,22,NA,NA,18.2,18.2
 437,3,NRM,NRM_overall,D+365_1yr,0,490,489,17,16,2,7,11.8,31.3
-418,3,NRM,NRM_overall,D+100,1,462,463,33,25,3,6,18,17
+418,3,NRM,NRM_overall,D+100,1,462,463,33,25,NA,NA,18,17

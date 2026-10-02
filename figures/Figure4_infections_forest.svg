@@ -77,42 +77,34 @@
 </defs>
 <g clip-path='url(#cpODUuNjB8MzQzLjk4fDM4LjAzfDE3Mi4yMg==)'>
 <rect x='85.60' y='38.03' width='258.38' height='134.18' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
-<line x1='240.59' y1='172.22' x2='240.59' y2='38.03' style='stroke-width: 0.75; stroke: #8C8C8C; stroke-dasharray: 4.00,4.00; stroke-linecap: butt;' />
-<line x1='97.34' y1='161.04' x2='232.00' y2='161.04' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='164.93' y1='142.40' x2='289.76' y2='142.40' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='194.44' y1='123.76' x2='308.24' y2='123.76' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='179.66' y1='105.13' x2='332.23' y2='105.13' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='255.97' y1='86.49' x2='321.70' y2='86.49' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='263.43' y1='67.85' x2='314.80' y2='67.85' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<polygon points='162.75,162.96 166.60,162.96 166.60,159.11 162.75,159.11 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='225.42,144.32 229.27,144.32 229.27,140.47 225.42,140.47 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='249.41,125.69 253.26,125.69 253.26,121.84 249.41,121.84 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='254.02,107.05 257.87,107.05 257.87,103.20 254.02,103.20 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='286.91,88.41 290.76,88.41 290.76,84.57 286.91,84.57 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='287.19,69.78 291.04,69.78 291.04,65.93 287.19,65.93 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<line x1='213.71' y1='49.22' x2='293.90' y2='49.22' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
-<polygon points='253.05,49.22 257.75,44.52 262.45,49.22 257.75,53.92 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<line x1='191.15' y1='172.22' x2='191.15' y2='38.03' style='stroke-width: 0.75; stroke: #8C8C8C; stroke-dasharray: 4.00,4.00; stroke-linecap: butt;' />
+<line x1='120.10' y1='156.74' x2='295.29' y2='156.74' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='97.34' y1='130.93' x2='332.23' y2='130.93' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='214.82' y1='105.13' x2='316.01' y2='105.13' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='226.31' y1='79.32' x2='305.39' y2='79.32' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<polygon points='205.77,158.66 209.62,158.66 209.62,154.81 205.77,154.81 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='212.86,132.86 216.71,132.86 216.71,129.01 212.86,129.01 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='263.49,107.05 267.34,107.05 267.34,103.20 263.49,103.20 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='263.93,81.25 267.78,81.25 267.78,77.40 263.93,77.40 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<line x1='179.93' y1='53.52' x2='302.08' y2='53.52' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
+<polygon points='244.46,53.52 249.16,48.82 253.86,53.52 249.16,58.22 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 </g>
 <g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw2NDguMDA=)'>
-<text x='81.12' y='163.47' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='46.48px' lengthAdjust='spacingAndGlyphs'>Koura D (2025)</text>
-<text x='81.12' y='144.83' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='33.02px' lengthAdjust='spacingAndGlyphs'>Li Y (2022)</text>
-<text x='81.12' y='126.20' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='42.70px' lengthAdjust='spacingAndGlyphs'>Guo W (2026)</text>
-<text x='81.12' y='107.56' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='39.31px' lengthAdjust='spacingAndGlyphs'>Cao J (2022)</text>
-<text x='81.12' y='88.92' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='46.23px' lengthAdjust='spacingAndGlyphs'>Meyer T (2025)</text>
-<text x='81.12' y='70.29' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='38.56px' lengthAdjust='spacingAndGlyphs'>Salas (2022)</text>
-<text x='81.12' y='51.65' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='66.16px' lengthAdjust='spacingAndGlyphs'>Bayesian pooled (M1)</text>
+<text x='81.12' y='159.17' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='42.70px' lengthAdjust='spacingAndGlyphs'>Guo W (2026)</text>
+<text x='81.12' y='133.36' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='39.31px' lengthAdjust='spacingAndGlyphs'>Cao J (2022)</text>
+<text x='81.12' y='107.56' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='46.23px' lengthAdjust='spacingAndGlyphs'>Meyer T (2025)</text>
+<text x='81.12' y='81.76' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='38.56px' lengthAdjust='spacingAndGlyphs'>Salas (2022)</text>
+<text x='81.12' y='55.95' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='66.16px' lengthAdjust='spacingAndGlyphs'>Bayesian pooled (M1)</text>
 <polyline points='85.60,172.22 343.98,172.22 ' style='stroke-width: 0.85; stroke: #2D2D2D; stroke-linecap: butt;' />
-<polyline points='128.40,174.71 128.40,172.22 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
-<polyline points='181.93,174.71 181.93,172.22 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
-<polyline points='240.59,174.71 240.59,172.22 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
-<polyline points='294.12,174.71 294.12,172.22 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
-<text x='128.40' y='184.92' text-anchor='middle' style='font-size: 8.00px;fill: #2D2D2D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>0.1</text>
-<text x='181.93' y='184.92' text-anchor='middle' style='font-size: 8.00px;fill: #2D2D2D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>0.3</text>
-<text x='240.59' y='184.92' text-anchor='middle' style='font-size: 8.00px;fill: #2D2D2D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>1.0</text>
-<text x='294.12' y='184.92' text-anchor='middle' style='font-size: 8.00px;fill: #2D2D2D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>3.0</text>
+<polyline points='100.84,174.71 100.84,172.22 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
+<polyline points='191.15,174.71 191.15,172.22 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
+<polyline points='273.56,174.71 273.56,172.22 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
+<text x='100.84' y='184.92' text-anchor='middle' style='font-size: 8.00px;fill: #2D2D2D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>0.3</text>
+<text x='191.15' y='184.92' text-anchor='middle' style='font-size: 8.00px;fill: #2D2D2D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>1.0</text>
+<text x='273.56' y='184.92' text-anchor='middle' style='font-size: 8.00px;fill: #2D2D2D; font-family: "Arial";' textLength='11.12px' lengthAdjust='spacingAndGlyphs'>3.0</text>
 <text x='214.79' y='199.03' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
-<text x='10.46' y='31.26' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='87.75px' lengthAdjust='spacingAndGlyphs'>k = 6, N = 806, τ = 0.73</text>
-<text x='10.46' y='17.98' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='324.67px' lengthAdjust='spacingAndGlyphs'>Bloodstream infection, any pathogen — PTCy vs CNI + MTX/MMF</text>
+<text x='10.46' y='31.26' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='87.75px' lengthAdjust='spacingAndGlyphs'>k = 4, N = 636, τ = 0.43</text>
+<text x='10.46' y='17.98' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='390.11px' lengthAdjust='spacingAndGlyphs'>Bloodstream infection, culture-confirmed, day 100 — PTCy vs CNI + MTX/MMF</text>
 <text x='10.46' y='211.27' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.88px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
 </g>
 <defs>
@@ -122,39 +114,31 @@
 </defs>
 <g clip-path='url(#cpNDQxLjE3fDYzNy41NHwzOC4wM3wxNzIuMjI=)'>
 <rect x='441.17' y='38.03' width='196.37' height='134.18' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
-<text x='477.99' y='164.84' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>6/25</text>
-<text x='477.99' y='148.48' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>4/55</text>
-<text x='477.99' y='132.12' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>8/30</text>
-<text x='477.99' y='115.75' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>4/40</text>
-<text x='477.99' y='99.39' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='17.08px' lengthAdjust='spacingAndGlyphs'>30/68</text>
-<text x='477.99' y='83.02' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='20.88px' lengthAdjust='spacingAndGlyphs'>76/200</text>
-<text x='477.99' y='66.66' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='6.83px' lengthAdjust='spacingAndGlyphs'>—</text>
-<text x='477.99' y='50.30' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='45.92px' lengthAdjust='spacingAndGlyphs'>PTCy events/N</text>
-<text x='539.36' y='164.84' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>9/15</text>
-<text x='539.36' y='148.48' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>7/75</text>
-<text x='539.36' y='132.12' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>7/31</text>
-<text x='539.36' y='115.75' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>3/40</text>
-<text x='539.36' y='99.39' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='17.08px' lengthAdjust='spacingAndGlyphs'>22/97</text>
-<text x='539.36' y='83.02' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='20.88px' lengthAdjust='spacingAndGlyphs'>24/130</text>
-<text x='539.36' y='66.66' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='6.83px' lengthAdjust='spacingAndGlyphs'>—</text>
-<text x='539.36' y='50.30' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='64.91px' lengthAdjust='spacingAndGlyphs'>Comparator events/N</text>
-<text x='600.72' y='164.84' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>13.7</text>
-<text x='600.72' y='148.48' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>14.6</text>
-<text x='600.72' y='132.12' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>15.8</text>
-<text x='600.72' y='115.75' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>12.1</text>
-<text x='600.72' y='99.39' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>21.2</text>
-<text x='600.72' y='83.02' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>22.7</text>
-<text x='600.72' y='66.66' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='6.83px' lengthAdjust='spacingAndGlyphs'>—</text>
-<text x='600.72' y='50.30' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='33.64px' lengthAdjust='spacingAndGlyphs'>Weight (%)</text>
+<text x='477.99' y='161.68' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>8/30</text>
+<text x='477.99' y='140.03' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>4/40</text>
+<text x='477.99' y='118.39' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='17.08px' lengthAdjust='spacingAndGlyphs'>30/68</text>
+<text x='477.99' y='96.75' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='20.88px' lengthAdjust='spacingAndGlyphs'>76/200</text>
+<text x='477.99' y='75.11' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='6.83px' lengthAdjust='spacingAndGlyphs'>—</text>
+<text x='477.99' y='53.46' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='45.92px' lengthAdjust='spacingAndGlyphs'>PTCy events/N</text>
+<text x='539.36' y='161.68' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>7/31</text>
+<text x='539.36' y='140.03' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>3/40</text>
+<text x='539.36' y='118.39' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='17.08px' lengthAdjust='spacingAndGlyphs'>22/97</text>
+<text x='539.36' y='96.75' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='20.88px' lengthAdjust='spacingAndGlyphs'>24/130</text>
+<text x='539.36' y='75.11' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='6.83px' lengthAdjust='spacingAndGlyphs'>—</text>
+<text x='539.36' y='53.46' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='64.91px' lengthAdjust='spacingAndGlyphs'>Comparator events/N</text>
+<text x='600.72' y='161.68' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>10.6</text>
+<text x='600.72' y='140.03' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='9.48px' lengthAdjust='spacingAndGlyphs'>5.9</text>
+<text x='600.72' y='118.39' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>31.7</text>
+<text x='600.72' y='96.75' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='13.28px' lengthAdjust='spacingAndGlyphs'>51.9</text>
+<text x='600.72' y='75.11' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='6.83px' lengthAdjust='spacingAndGlyphs'>—</text>
+<text x='600.72' y='53.46' text-anchor='middle' style='font-size: 6.83px;fill: #2D2D2D; font-family: "Arial";' textLength='33.64px' lengthAdjust='spacingAndGlyphs'>Weight (%)</text>
 </g>
 <g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHw2NDguMDA=)'>
-<text x='436.69' y='165.45' text-anchor='end' style='font-size: 8.50px; font-family: "Arial";' textLength='58.16px' lengthAdjust='spacingAndGlyphs'>Koura D (2025)</text>
-<text x='436.69' y='149.08' text-anchor='end' style='font-size: 8.50px; font-family: "Arial";' textLength='41.30px' lengthAdjust='spacingAndGlyphs'>Li Y (2022)</text>
-<text x='436.69' y='132.72' text-anchor='end' style='font-size: 8.50px; font-family: "Arial";' textLength='53.41px' lengthAdjust='spacingAndGlyphs'>Guo W (2026)</text>
-<text x='436.69' y='116.35' text-anchor='end' style='font-size: 8.50px; font-family: "Arial";' textLength='49.17px' lengthAdjust='spacingAndGlyphs'>Cao J (2022)</text>
-<text x='436.69' y='99.99' text-anchor='end' style='font-size: 8.50px; font-family: "Arial";' textLength='57.81px' lengthAdjust='spacingAndGlyphs'>Meyer T (2025)</text>
-<text x='436.69' y='83.63' text-anchor='end' style='font-size: 8.50px; font-family: "Arial";' textLength='48.23px' lengthAdjust='spacingAndGlyphs'>Salas (2022)</text>
-<text x='436.69' y='67.26' text-anchor='end' style='font-size: 8.50px; font-family: "Arial";' textLength='82.75px' lengthAdjust='spacingAndGlyphs'>Bayesian pooled (M1)</text>
+<text x='436.69' y='162.28' text-anchor='end' style='font-size: 8.50px; font-family: "Arial";' textLength='53.41px' lengthAdjust='spacingAndGlyphs'>Guo W (2026)</text>
+<text x='436.69' y='140.64' text-anchor='end' style='font-size: 8.50px; font-family: "Arial";' textLength='49.17px' lengthAdjust='spacingAndGlyphs'>Cao J (2022)</text>
+<text x='436.69' y='118.99' text-anchor='end' style='font-size: 8.50px; font-family: "Arial";' textLength='57.81px' lengthAdjust='spacingAndGlyphs'>Meyer T (2025)</text>
+<text x='436.69' y='97.35' text-anchor='end' style='font-size: 8.50px; font-family: "Arial";' textLength='48.23px' lengthAdjust='spacingAndGlyphs'>Salas (2022)</text>
+<text x='436.69' y='75.71' text-anchor='end' style='font-size: 8.50px; font-family: "Arial";' textLength='82.75px' lengthAdjust='spacingAndGlyphs'>Bayesian pooled (M1)</text>
 <polyline points='477.99,174.71 477.99,172.22 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
 <polyline points='539.36,174.71 539.36,172.22 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
 <polyline points='600.72,174.71 600.72,172.22 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
@@ -373,7 +357,7 @@
 <text x='333.22' y='609.62' text-anchor='middle' style='font-size: 8.00px;fill: #2D2D2D; font-family: "Arial";' textLength='20.03px' lengthAdjust='spacingAndGlyphs'>100.0</text>
 <text x='213.19' y='623.72' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
 <text x='10.46' y='455.95' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='98.95px' lengthAdjust='spacingAndGlyphs'>k = 11, N = 1 333, τ = 0.36</text>
-<text x='10.46' y='442.67' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='244.81px' lengthAdjust='spacingAndGlyphs'>BK virus reactivation — PTCy vs CNI + MTX/MMF</text>
+<text x='10.46' y='442.67' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='354.58px' lengthAdjust='spacingAndGlyphs'>BK virus–associated haemorrhagic cystitis — PTCy vs CNI + MTX/MMF</text>
 <text x='10.46' y='635.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.88px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
 </g>
 <defs>

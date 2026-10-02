@@ -10,5 +10,5 @@ study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy
 146,3,cGVHD,moderate_severe_NIH,D+730_2yr,167,168,148,237,NA,NA,11,23,22,30
 243,3,cGVHD,moderate_severe_NIH,D+730_2yr,241,242,269,246,NA,NA,9,8,40,48
 244,3,cGVHD,moderate_severe_NIH,D+730_2yr,245,244,246,306,NA,NA,9,11,52,42
-418,3,cGVHD,moderate_severe_NIH,D+730_2yr,462,463,33,25,2,4,6,17,18,17
+418,3,cGVHD,moderate_severe_NIH,D+730_2yr,462,463,33,25,NA,NA,6,17,18,17
 431,3,cGVHD,moderate_severe_NIH,D+730_2yr,480,481,32,46,NA,NA,13.9,43.9,22.1,42.9

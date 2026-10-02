@@ -2,7 +2,7 @@ study_id,comparison,category,subtype,timepoint_used,tp_early,ptcy_arm_id,comp_ar
 45,1,CMV,any_reactivation,D+100,0,46,47,54,59,25,27,63,53
 119,1,CMV,any_reactivation,D+100,0,137,138,22,22,14,12,13,50
 166,1,CMV,any_reactivation,D+100,0,172,173,30,31,18,15,16.7,25.8
-183,1,CMV,any_reactivation,D+100,0,191,190,103,94,40,27,33,35
+183,1,CMV,any_reactivation,D+100,0,191,190,103,94,NA,NA,33,35
 396,1,CMV,any_reactivation,D+100,0,441,440,122,230,65,136,28.7,28.6
 88,1,CMV,any_reactivation,D+180,1,104,105,40,40,30,27,15,39.8
 201,1,CMV,any_reactivation,D+180,1,208,209,59,68,45,47,39,47.1

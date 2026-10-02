@@ -215,9 +215,13 @@ fig_s9a <- ggplot(cmv_draws, aes(x = or, y = model)) +
 save3(fig_s9a, "FigureS9a_CMV_sensitivity", 8, 4.5)
 
 # ── 6. Figure 4: BSI / IFI / BK panels with posterior density strips ──
-infection_panel <- function(key, data_file, title, panel_tag) {
+infection_panel <- function(key, data_file, title, panel_tag, study_filter = NULL) {
   fit <- rs(key)
-  dat <- read.csv(file.path(p9_dir, data_file))
+  # 2026-10-02: prefer this repo's Set B data (data/models/) when present
+  local_file <- file.path(proj_dir, "data", "models", data_file)
+  dat <- read.csv(if (file.exists(local_file)) local_file
+                  else file.path(p9_dir, data_file))
+  if (!is.null(study_filter)) dat <- dat[dat$study_id %in% study_filter, ]
   es <- escalc(measure = "OR", ai = ptcy_e, n1i = ptcy_n, ci = comp_e,
                n2i = comp_n, data = dat, add = 0.5, to = "only0") |>
     merge(studies_df[, c("study_id", "first_author", "pub_year")],
@@ -297,7 +301,9 @@ infection_panel <- function(key, data_file, title, panel_tag) {
   p_dens / p_for + plot_layout(heights = c(1, 4))
 }
 
-f4a <- infection_panel("c1_bsi_m1", "data_c1_bsi.csv", "Bloodstream infection", "A.")
+f4a <- infection_panel("c1_bsi_m1", "data_c1_bsi.csv",
+                       "Bloodstream infection (culture-confirmed, day 100)", "A.",
+                       study_filter = c(6, 9, 88, 166))
 f4b <- infection_panel("c1_ifi_m1", "data_c1_ifi_any.csv",
                        "Invasive fungal infection", "B.")
 f4c <- infection_panel("c1_bk_m1", "data_c1_bk.csv", "BK virus reactivation", "C.")

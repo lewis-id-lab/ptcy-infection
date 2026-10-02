@@ -86,6 +86,119 @@ disease, 1 CMV any-reactivation, 1 HHV6) — same arm, timepoint, values repeate
 No effect on pooled data if deduplication keys on arm/timepoint, but worth
 cleaning.
 
+## Timepoint & definition-consistency audit (2026-10-02, second checklist)
+
+**1-2. Target timepoints, windows, and actual timepoints per synthesis.**
+Target (preferred) timepoints are encoded by `tp_early = 0` in the model
+datasets: aGVHD D+100 (fallback D+180); CMV D+100 (fallback D+180, EoF);
+BSI D+100 (fallback EoF); cGVHD/NRM/OS/RRM D+365 (fallback D+730, EoF);
+BK D+100 (fallback D+180, D+365). Actual timepoints per pooled synthesis are
+tabulated in `data/models/timepoint_sensitivity.csv`; heterogeneity is
+substantial for CMV (14/22 rows end-of-follow-up), OS (23/34 rows fallback),
+and RRM (31/34 fallback).
+
+**3. Restricted-window sensitivity** (`scripts/refit-restricted-windows.R`,
+`data/models/timepoint_sensitivity.csv`): refits using target-timepoint rows
+only. Shifts of note: c1_bsi (culture-confirmed D+100 subset, k 6->4)
+OR 1.42 -> 2.17 [0.88-4.34]; c1_ifi_any (strict EORTC probable/proven,
+k 6->4) 0.63 -> 0.44; c1_cgvhd_ms (1-yr only, k 19->10) 0.41 -> 0.33;
+c1_cmv (D+100 only, k 22->5) 1.23 -> 1.11; c1_os (1-yr only, k 34->10)
+0.78 -> 0.80. c2_os/c3_os cannot be restricted (k = 2 target rows).
+
+**4. Fallback indicator adequacy.** tp_early coefficients
+(`data/models/tp_early_coefficients.csv`) are mostly compatible with zero
+but very wide (e.g., c1_bsi 0.10 [-2.0-2.2]); the indicator does not
+demonstrably absorb time differences for sparse outcomes, so the
+restricted-window estimates above are the more credible check.
+
+**5. CMV separation.** Extraction keeps any_reactivation (191 rows),
+clinically_significant_csCMV (31), and CMV_end_organ_disease (63) as
+distinct subtypes. The pooled C1 CMV synthesis is any_reactivation only;
+a csCMV sensitivity exists (k = 8, OR 0.94 [0.49-1.71] vs 1.20
+any-reactivation; `data/models/cmv_definitions.csv`). Caveat: some pooled
+"any_reactivation" rows use csCMV-like definitions (e.g., study 166
+"requiring preemptive therapy", thresholds 500-1000 copies/mL), and CMV
+end-organ disease has no pooled analysis (too sparse).
+
+**6. BK separation.** Only BK-associated haemorrhagic cystitis was ever
+extracted (149 rows); no viruria or viraemia subtypes exist in the
+database, so no mixing is possible at the synthesis level. This is a
+coverage limitation to state in the manuscript.
+
+**7. BSI/IFI definition consistency.** BSI pooled rows: 4/6 culture-confirmed
+first-episode definitions; studies 216 and 432 have vague definitions
+("no specific definition", "bacterial infection AE not specifically BSI") —
+both fall outside the D+100 target window, so the restricted c1_bsi
+estimate (2.17) is also the definition-comparable one. IFI pooled rows:
+study 167 includes 'possible' IFD and study 399 is fungal-attributed
+mortality, not IFI incidence; the restricted c1_ifi estimate (0.44)
+excludes both.
+
+**8. Censoring/competing-risk handling** is recorded per row
+(`competing_risks_handled`, `ci_method`): GVHD/NRM/RRM predominantly
+Gray CIF or crude cause-of-death proportions; OS predominantly KM.
+A residual set of pooled arms whose counts derived from censored
+estimators was PDF-verified (41 arms, 13 studies): 31 confirmed derived
+(events nulled; 14 Table 2 models refit) and 10 corrected to
+observed_count (studies 2, 122, 144, 299*, 397, 399). *299: conflicting
+verdicts; kept as derived (conservative). Resulting Table 2 changes:
+c1_os m1 OR 0.776 -> 0.729 [0.581-0.890] (k 33->29);
+c2_os m1 0.887 -> 0.751 [0.426-1.28] (k 7->6);
+c3_os m1 0.92 -> 1.05 [0.487-1.879] (k 6->5);
+c3_agvhd m1 0.44 -> 0.31 [0.064-1.46] (k 7->5);
+c1_cmv m1 1.23 -> 1.20 [0.869-1.65] (k 22->21);
+c1_nrm, c2_agvhd, c3_cgvhd, c3_nrm, c1_cgvhd_ms: <=0.03 OR shift.
+All refits 0 divergences, Rhat 1.00
+(`data/models/refit_2026-10-02_censored_pool.csv`).
+
+**BSI primary analysis change (2026-10-02).** The restricted-window,
+culture-confirmed D+100 subset (k = 4, studies 6/9/88/166) was promoted to
+the primary c1_bsi analysis (`scripts/promote-restricted-bsi.R`): OR 2.17
+[0.86-4.39], tau 0.43, PI [0.35-9.99] replaces the full-window k = 6 estimate
+(1.42 [0.58-2.99]) in Table2_setB.csv; the full-window estimate remains in
+timepoint_sensitivity.csv. Main-text, GRADE, concordance, absolute-effects,
+and outcome-flow mentions updated; Figure 4 BSI panel now shows the 4-study
+subset. Stale by design (flagged, not updated): the RoBMA model-averaged BSI
+row (appendix S10, still k = 6) and CMV/OS text numbers affected by the
+censored-pool refits (c1_os 0.776 -> 0.729; c1_cmv 1.23 -> 1.20) outside the
+BSI sentences. Appendix also gained a "BK virus outcome scope" subsection
+stating the BK outcome is haemorrhagic cystitis only (no viruria/viraemia),
+and the Figure 4 BK panel was retitled accordingly.
+
+**Text/table synchronisation (2026-10-02).** index.qmd text and the static
+Table 2 were synchronised to the post-adjudication estimates: c1_os 0.73
+[0.58-0.89] (k = 29), c2_os 0.75 [0.43-1.28] (k = 6), c1_cmv 1.20
+[0.87-1.65] (k = 21), c1_nrm 0.84 [0.48-1.28] (k = 11); derived quantities
+recomputed (OS -68 deaths/1000 at 35% baseline; CMV +46 reactivations/1000
+at 48%; indirect C1:C2 CMV ratio 1.41 [0.76-2.54] from the refit
+posteriors). The appendix RoBMA table dropped the BSI row (primary analysis
+now k = 4; publication-bias model-averaging not interpretable) with an
+explanatory note, including the caveat that the remaining RoBMA fits predate
+the censored-pool exclusions. Note: appendix GRADE/absolute-effects tables
+for OS, NRM, RRM, aGVHD, CMV, and cGVHD still carry pre-adjudication point
+estimates where those changed by <= 0.03 (c1_rrm, c2_agvhd) or moderately
+(c1_os 0.78->0.73; c1_nrm 0.81->0.84; c3_* ); a full appendix table refresh
+was completed 2026-10-02: the GRADE table was refreshed to post-adjudication
+estimates (k, OR, τ updated for 12 rows; the aGVHD C1 publication-bias cell
+now cites RoBMA rather than the pre-adjudication Egger/trim-and-fill), and
+the absolute-effects table was recomputed from the current pooled ORs and
+comparator-arm baseline risks (notable shifts: OS C1 −68 [−111 to −26] per
+1000; aGVHD C2 baseline 44->40%, −138 [−266 to +38]; CMV C1 +46 [−35 to
++123]). The RoBMA ensemble was refitted on the post-adjudication datasets
+for all 17 outcomes with k >= 6 (`scripts/refit-robma-adjudicated.R`,
+`_fits_rs/robma_adj/`): qualitative conclusions unchanged — bias evidence
+only for C1 OS (BF_bias 18.6 -> 10.4; adjusted OR 0.97 [0.71-1.16]) and C1
+aGVHD (10.9; 0.96 [0.57-1.38]); BK effect evidence 12.0 -> 9.5 (adjusted
+1.97 [1.00-3.13]); cGVHD mod-sev effect evidence 5.4. The S10 table,
+interpretation paragraph, and GRADE publication-bias cells were updated
+accordingly. The funnel-plot asymmetry tests were subsequently recomputed on
+the post-adjudication datasets (2026-10-02,
+`scripts/recompute-pub-bias.R`, `data/models/pub_bias_results.csv`):
+OS C1 Egger p = 0.025 (Begg/Peters ns), trim-and-fill 6 imputed, 0.75 ->
+0.86 [0.70-1.07]; aGVHD unchanged pattern (Egger 0.023, Begg 0.018, tf
+0.61 -> 0.83); no other outcome asymmetric. The S10 paragraph was updated,
+closing the last pre-adjudication analysis.
+
 ## Recommended actions
 
 1. ~~Add an `input_class` column to outcomes.csv~~ **Done** (2026-10-02,

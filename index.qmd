@@ -72,11 +72,12 @@ estimate infection risks. PROSPERO registration: CRD420261372156.
 
 **Findings.** Of 4145 records, 250 studies (523 arms; 177 849 patients)
 were included, 105 in the meta-analysis. In C1 (72 studies), PTCy was
-associated with better OS (odds ratio 0·76 \[95% credible interval
-0·62–0·93\]) and less acute GVHD (0·58 \[0·44–0·77\]); CMV and BSI
-estimates were elevated but imprecise (1·22 \[0·90–1·65\]; 1·42
-\[0·57–2·98\], the latter from six studies). In C2 (27 studies), OS
-favoured PTCy versus ATG (0·75 \[0·42–1·31\]) and CMV did not differ
+associated with better OS (odds ratio 0·73 \[95% credible interval
+0·58–0·89\]) and less acute GVHD (0·58 \[0·44–0·77\]); CMV and BSI
+estimates were elevated but imprecise (1·20 \[0·87–1·65\]; 2·17
+\[0·86–4·39\], the latter from four studies with culture-confirmed
+bloodstream infection). In C2 (27 studies), OS
+favoured PTCy versus ATG (0·75 \[0·43–1·28\]) and CMV did not differ
 (0·86 \[0·50–1·42\]). The CMV risk estimate increased post-2020 after
 introduction of letermovir (1·46 \[1·01–2·05\]). GRADE certainty was
 very low for all pre-specified outcomes.
@@ -120,8 +121,8 @@ survival within the same analytic framework. Its dual-comparator design
 shows that the estimated effect of PTCy on CMV risk reverses direction
 depending on the comparator's own T-cell depletion depth, although the
 contrast is indirect and not formally resolved. Elevated average
-infection risk was estimated versus CNI-based (odds ratio 1·22
-\[0·90–1·65\]) but not ATG-based (0·86 \[0·50–1·42\]) prophylaxis, a
+infection risk was estimated versus CNI-based (odds ratio 1·20
+\[0·87–1·65\]) but not ATG-based (0·86 \[0·50–1·42\]) prophylaxis, a
 directional pattern compatible with expected degree of T-cell depletion.
 However, a formal meta-regression on comparator class did not resolve
 the difference (ratio of odds ratios 0·71 \[0·41–1·20\]; appendix S9).
@@ -318,9 +319,9 @@ one was at low risk of bias.
 
 ### Comparison 1: PTCy versus CNI plus MTX or MMF
 
-PTCy was associated with improved OS (k = 34, odds ratio 0·76 [95%
-credible interval 0·61–0·93]; @fig-os). NRM showed a non-significant
-trend toward benefit (k = 12, 0·81 [0·46–1·22]). Relapse-related
+PTCy was associated with improved OS (k = 29, odds ratio 0·73 [95%
+credible interval 0·58–0·89]; @fig-os). NRM showed a non-significant
+trend toward benefit (k = 11, 0·84 [0·48–1·28]). Relapse-related
 mortality was lower (k = 34, 0·87 \[0·76–0·99\]).
 
 Acute GVHD grade II–IV was substantially less frequent (k = 28, 0·58
@@ -328,11 +329,12 @@ Acute GVHD grade II–IV was substantially less frequent (k = 28, 0·58
 \[0·22–0·68\]).
 
 CMV reactivation was higher on average in the PTCy group, but the
-credible interval included the null (k = 22, 1·22 [0·90–1·65];
+credible interval included the null (k = 21, 1·20 [0·87–1·65];
 @fig-cmv). The estimate was larger in post-2020 studies (k = 17, 1·46
 [1·01–2·05]) and haploidentical-dominant cohorts (k = 12, 1·34
-[0·90–1·96]). BSI estimates likewise favoured the comparator, with wide
-intervals (k = 6, 1·42 [0·57–2·98]); no comparison-2 BSI model was
+[0·90–1·96]). BSI likewise favoured the comparator in the primary
+analysis restricted to culture-confirmed day-100 bloodstream infection
+(k = 4, 2·17 [0·86–4·39]); no comparison-2 BSI model was
 possible. BK virus reactivation showed the largest infection effect, and
 the only one whose interval excluded the null (k = 11, 2·39 [1·48–3·66];
 @fig-infections). The IFI estimate was highly uncertain in either
@@ -344,7 +346,7 @@ mortality showed no excess with PTCy versus CNI plus MTX or MMF (k = 13,
 ### Comparison 2: PTCy versus ATG
 
 The OS estimate favoured PTCy versus ATG but with substantial
-uncertainty (k = 9, odds ratio 0·75 \[0·42–1·31\]). Acute GVHD was less
+uncertainty (k = 6, odds ratio 0·75 \[0·43–1·28\]). Acute GVHD was less
 frequent on average, with the interval just reaching the null (k = 8,
 0·51 \[0·24–1·02\]). NRM could not be assessed (k = 2). Relapse-related
 mortality was lower, with the interval reaching the null (k = 10, 0·78
@@ -419,10 +421,10 @@ II–IV versus CNI plus MTX or MMF (odds ratio 0·58; from a median
 comparator-arm incidence of 33%, about 108 fewer cases per 1000
 patients) and versus ATG (0·51, with the interval just reaching the
 null), with correspondingly lower chronic GVHD. Overall survival was
-better versus CNI-based prophylaxis (0·76 \[0·61–0·93\]); against a
-median comparator-arm mortality of 35% this corresponds to about 60
+better versus CNI-based prophylaxis (0·73 \[0·58–0·89\]); against a
+median comparator-arm mortality of 35% this corresponds to about 68
 fewer deaths per 1000 patients. Versus ATG, the estimate also favoured
-PTCy but was imprecise (0·75 \[0·42–1·31\]). These findings align with
+PTCy but was imprecise (0·75 \[0·43–1·28\]). These findings align with
 and extend the BMT CTN 1703 RCT, which established the superiority of
 PTCy in the matched-donor setting.[@bolanosmeade2023] The present
 analysis is consistent with this advantage extending across donor types,
@@ -443,8 +445,8 @@ on days +3 and +4 after transplant eliminates alloreactive T cells (the
 intended GVHD-preventive effect)[@kanakry2013; @wachsmuth2019], but
 simultaneously depletes the nascent pathogen-specific T-cell repertoire
 (a collateral immunological cost)[@zhao2022]. In C1, this T-cell
-depletion manifested as higher average CMV reactivation (odds ratio 1·22
-\[0·90–1·65\]) and BSI (1·42 \[0·57–2·98\]), although credible intervals
+depletion manifested as higher average CMV reactivation (odds ratio 1·20
+\[0·87–1·65\]) and BSI (2·17 \[0·86–4·39\]), although credible intervals
 for both included the null.
 
 The survival benefit, in contrast, is biologically plausible as a
@@ -459,9 +461,9 @@ The C2 analysis provides a partial test of this framework. If CMV excess
 were an intrinsic property of cyclophosphamide, it should persist
 regardless of comparator. Instead, the CMV estimate versus ATG was
 directionally opposite to the C1 estimate (C2 0·86 \[0·50–1·42\] versus
-C1 1·22 \[0·90–1·65\]). A formal indirect comparison of the two pooled
+C1 1·20 \[0·87–1·65\]). A formal indirect comparison of the two pooled
 effects is directionally consistent but does not resolve the difference:
-the posterior ratio of the C1 and C2 odds ratios is 1·43 \[0·80–2·63\],
+the posterior ratio of the C1 and C2 odds ratios is 1·41 \[0·76–2·54\],
 with 89% posterior probability that the C1 effect is the larger
 ([appendix S9](appendix-preview.html#s9.-sensitivity-analyses)). The
 contrast is also indirect in a stronger sense: C1 and C2 enroll
@@ -525,8 +527,8 @@ flexibility in dosing or backbone selection.
 Despite these limitations, our findings have clinical implications. For
 centres already using PTCy, the infection costs are best weighed in
 absolute terms: at the median comparator-arm rates, the CMV odds ratio
-of 1·22 corresponds to about 50 additional reactivations per 1000
-patients (a relative risk of about 1·10, not 1·22, at a 48% baseline)
+of 1·20 corresponds to about 46 additional reactivations per 1000
+patients (a relative risk of about 1·09, not 1·20, at a 48% baseline)
 and the BK odds ratio of 2·39 to about 134 additional reactivations per
 1000 from a 13% baseline, while no elevation was detected for clinically
 significant CMV infection (appendix S9). Whether these costs are shared
@@ -664,30 +666,30 @@ non-myeloablative. NR = not reported.
 
 | Outcome | Comparison | Model | k | N | OR (95% CrI) | τ | 95% PI | GRADE |
 |:---|:---|:---|---:|---:|:---|---:|:---|:---|
-| Overall survival | C1 | M1 | 34 | 9 836 | 0·76 (0·61–0·93) | 0·46 | 0·28–1·97 | Very low |
-|  | C2 | M1 | 9 | 12 791 | 0·75 (0·42–1·31) | 0·68 | 0·14–3·87 | Very low |
-|  | C3 | M1 | 6 | 4 746 | 0·92 (0·43–1·63) | 0·56 | 0·18–3·95 | — |
-| Non-relapse mortality | C1 | M1 | 12 | 1 309 | 0·81 (0·46–1·22) | 0·41 | 0·19–2·63 | Very low |
+| Overall survival | C1 | M1 | 29 | 9 295 | 0·73 (0·58–0·89) | 0·42 | 0·29–1·82 | Very low |
+|  | C2 | M1 | 6 | 12 325 | 0·75 (0·43–1·28) | 0·51 | 0·19–2·92 | Very low |
+|  | C3 | M1 | 5 | 4 688 | 1·05 (0·49–1·88) | 0·49 | 0·20–4·47 | — |
+| Non-relapse mortality | C1 | M1 | 11 | 1 231 | 0·84 (0·48–1·28) | 0·39 | 0·20–2·72 | Very low |
 |  | C2 | M1 | — | — | k=2, not assessed | — | — | — |
-|  | C3 | M1 | 5 | 2 529 | 0·51 (0·16–1·59) | 1·01 | 0·03–7·96 | — |
-| Relapse-related mortality | C1 | M1 | 34 | 11 121 | 0·87 (0·76–0·99) | 0·08 | 0·64–1·16 | Low |
-|  | C2 | M1 | 10 | 17 182 | 0·78 (0·55–1·02) | 0·19 | 0·35–1·60 | Very low |
-|  | C3 | M1 | 6 | 692 | 0·78 (0·35–1·73) | 0·45 | 0·15–4·15 | — |
-| Acute GVHD II–IV | C1 | M1 | 28 | 4 197 | 0·58 (0·44–0·77) | 0·54 | 0·17–1·89 | Very low |
-|  | C2 | M1 | 8 | 1 039 | 0·51 (0·24–1·02) | 0·81 | 0·07–3·60 | Very low |
-|  | C3 | M1 | 7 | 2 450 | 0·43 (0·13–1·21) | 1·10 | 0·02–7·23 | — |
-| Chronic GVHD mod–severe | C1 | M1 | 19 | 2 840 | 0·40 (0·22–0·68) | 0·96 | 0·04–3·15 | — |
-|  | C2 | M1 | 6 | 905 | 0·69 (0·25–1·57) | 0·74 | 0·07–5·40 | — |
-| Chronic GVHD any | C1 | M1 | 8 | 1 732 | 0·24 (0·14–0·43) | 0·56 | 0·06–0·99 | — |
-|  | C3 | M1 | 4 | 383 | 0·53 (0·15–1·50) | 0·72 | 0·05–5·73 | — |
-| CMV reactivation | C1 | M1 | 22 | 3 328 | 1·22 (0·90–1·65) | 0·53 | 0·37–4·06 | Very low |
-|  | C2 | M1 | 12 | 1 511 | 0·86 (0·50–1·42) | 0·68 | 0·17–4·28 | Very low |
-| Bloodstream infection | C1 | M1 | 6 | 806 | 1·42 (0·57–2·98) | 0·71 | 0·17–10·19 | Very low |
-| Invasive fungal infection | C1 | M1 | 6 | 2 243 | 0·63 (0·19–2·62) | 1·28 | 0·03–21·39 | Very low |
-| BK virus | C1 | M1 | 11 | 1 333 | 2·39 (1·48–3·66) | 0·36 | 0·69–7·11 | Low |
-|  | C2 | M1 | 3 | 313 | 2·49 (1·09–6·03) | 0·33 | 0·54–11·50 | Very low |
-| Infection-related mortality | C1 | M1 | 13 | 5 504 | 1·03 (0·68–1·49) | 0·48 | 0·31–3·30 | Very low |
-|  | C2 | M1 | 7 | 13 346 | 0·98 (0·63–1·83) | 0·39 | 0·31–3·78 | Very low |
+|  | C3 | M1 | 3 | 2 405 | 0·55 (0·11–2·44) | 1·09 | 0·02–13·25 | — |
+| Relapse-related mortality | C1 | M1 | 34 | 11 121 | 0·87 (0·76–0·99) | 0·08 | 0·64–1·18 | Low |
+|  | C2 | M1 | 10 | 17 182 | 0·79 (0·55–1·03) | 0·19 | 0·35–1·70 | Very low |
+|  | C3 | M1 | 6 | 692 | 0·78 (0·35–1·67) | 0·43 | 0·15–3·96 | — |
+| Acute GVHD II–IV | C1 | M1 | 28 | 4 197 | 0·58 (0·44–0·76) | 0·55 | 0·18–1·88 | Very low |
+|  | C2 | M1 | 7 | 983 | 0·53 (0·23–1·17) | 0·86 | 0·06–4·32 | Very low |
+|  | C3 | M1 | 5 | 2 326 | 0·31 (0·06–1·46) | 1·43 | 0·01–17·79 | — |
+| Chronic GVHD mod–severe | C1 | M1 | 18 | 2 762 | 0·41 (0·23–0·72) | 0·97 | 0·05–3·46 | — |
+|  | C2 | M1 | 6 | 905 | 0·70 (0·26–1·59) | 0·75 | 0·07–5·75 | — |
+| Chronic GVHD any | C1 | M1 | 8 | 1 732 | 0·24 (0·14–0·42) | 0·56 | 0·06–0·99 | — |
+|  | C3 | M1 | 3 | 325 | 0·60 (0·15–2·30) | 0·80 | 0·04–10·61 | — |
+| CMV reactivation | C1 | M1 | 21 | 3 131 | 1·20 (0·87–1·65) | 0·56 | 0·35–4·14 | Very low |
+|  | C2 | M1 | 12 | 1 511 | 0·86 (0·51–1·42) | 0·68 | 0·16–4·29 | Very low |
+| Bloodstream infection | C1 | M1 | 4 | 636 | 2·17 (0·86–4·39) | 0·43 | 0·35–9·99 | Very low |
+| Invasive fungal infection | C1 | M1 | 6 | 2 243 | 0·63 (0·19–2·44) | 1·28 | 0·02–20·02 | Very low |
+| BK virus | C1 | M1 | 11 | 1 333 | 2·39 (1·41–3·73) | 0·36 | 0·71–7·33 | Low |
+|  | C2 | M1 | 3 | 313 | 2·49 (1·08–6·24) | 0·33 | 0·55–12·13 | Very low |
+| Infection-related mortality | C1 | M1 | 13 | 5 504 | 1·02 (0·67–1·50) | 0·48 | 0·29–3·10 | Very low |
+|  | C2 | M1 | 7 | 13 346 | 0·98 (0·62–1·77) | 0·41 | 0·31–3·53 | Very low |
 
 : Bayesian meta-analysis results: outcomes by comparison. Estimates are
 from the cohort-deduplicated dataset, in which one publication per
@@ -739,16 +741,16 @@ duplicate publication
 {{< pagebreak >}}
 
 ::: {#fig-cmv layout-ncol="1"}
-![Comparison 1: PTCy vs CNI + MTX/MMF (k = 22, odds ratio 1·22
-\[0·90–1·65\])](figures/Figure3a_CMV_C1_forest_setB){#fig-cmv-a}
+![Comparison 1: PTCy vs CNI + MTX/MMF (k = 21, odds ratio 1·20
+\[0·87–1·65\])](figures/Figure3a_CMV_C1_forest_setB){#fig-cmv-a}
 
 ![Comparison 2: PTCy vs ATG (k = 12, 0·86
 \[0·50–1·42\])](figures/Figure3b_CMV_C2_forest_setB){#fig-cmv-b}
 
 **Forest plots — CMV reactivation.** Individual study odds ratios for
 any CMV reactivation, with the pooled Bayesian posterior median and 95%
-credible interval. The pooled odds ratio was 1·22 (95% credible interval
-0·90–1·65) against CNI-based prophylaxis and 0·86 (0·50–1·42) against
+credible interval. The pooled odds ratio was 1·20 (95% credible interval
+0·87–1·65) against CNI-based prophylaxis and 0·86 (0·50–1·42) against
 ATG; both intervals include the null, and the formal comparator-class
 comparison is unresolved (appendix S9). Events, totals, and REML
 inverse-variance weights are shown beside each study row.

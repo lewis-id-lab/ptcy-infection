@@ -235,12 +235,15 @@ the pooled diamond cannot disagree.
 #| label: fig-infections-panels
 #| fig-cap: "Bloodstream infection, invasive fungal infection, and BK virus (comparison 1)."
 #| fig-height: 9
+# BSI primary analysis (2026-10-02): restricted to the culture-confirmed,
+# first-episode day-100 studies (6, 9, 88, 166) — matches the Table 2 pooled row
 p_bsi <- forest("C1_BSI_any_pathogen.csv", "c1_bsi",
-                "Bloodstream infection, any pathogen — PTCy vs CNI + MTX/MMF")
+                "Bloodstream infection, culture-confirmed, day 100 — PTCy vs CNI + MTX/MMF",
+                study_filter = c(6, 9, 88, 166))
 p_ifi <- forest("C1_IFI_any_EORTC_MSG_proven_probable_combined.csv", "c1_ifi_any",
                 "Invasive fungal infection, any — PTCy vs CNI + MTX/MMF")
 p_bk  <- forest("C1_BK_virus_reactivation.csv", "c1_bk",
-                "BK virus reactivation — PTCy vs CNI + MTX/MMF")
+                "BK virus–associated haemorrhagic cystitis — PTCy vs CNI + MTX/MMF")
 p_bsi / p_ifi / p_bk
 ```
 
