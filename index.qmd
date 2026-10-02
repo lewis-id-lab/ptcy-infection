@@ -78,8 +78,8 @@ estimates were elevated but imprecise (1·22 \[0·90–1·65\]; 1·42
 \[0·57–2·98\], the latter from six studies). In C2 (27 studies), OS
 favoured PTCy versus ATG (0·75 \[0·42–1·31\]) and CMV did not differ
 (0·86 \[0·50–1·42\]). The CMV estimate was larger post-2020 after
-introduction of letermovir (1·46 \[1·01–2·05\]). GRADE certainty was very
-low for all outcomes.
+introduction of letermovir (1·46 \[1·01–2·05\]). GRADE certainty was
+very low for all outcomes.
 
 **Interpretation.** PTCy is associated with better survival and less
 GVHD versus CNI-based prophylaxis, with uncertain benefit versus ATG.
@@ -475,13 +475,12 @@ C2 2·49 \[1·09–6·03\]; ratio of pooled effects 0·95 \[0·36–2·44\]), a
 comparator-invariant pattern that is more consistent with a
 cyclophosphamide-specific effect than with T-cell depletion depth. BK
 virus reactivation with haemorrhagic cystitis is a recognised
-cyclophosphamide effect[@kaphan2021; @ruggeri2015; @chorao2025], so this signal
-argues for a PTCy-specific
-rather than a class-wide depletion mechanism. The C2 estimate rests on
-only three studies and remains prior-influenced, but the Bayesian fit
-itself converged cleanly (R̂ \< 1·01, effective sample sizes above 3000,
-no divergences), so the imprecision reflects study count, not
-non-convergence.
+cyclophosphamide effect[@kaphan2021; @ruggeri2015; @chorao2025], so this
+signal argues for a PTCy-specific rather than a class-wide depletion
+mechanism. The C2 estimate rests on only three studies and remains
+prior-influenced, but the Bayesian fit itself converged cleanly (R̂ \<
+1·01, effective sample sizes above 3000, no divergences), so the
+imprecision reflects study count, not non-convergence.
 
 Several limitations of this analysis warrant discussion. First, the
 evidence base is predominantly observational, and no outcome exceeded
@@ -648,12 +647,11 @@ unrelated donor. MSD = matched sibling donor. PBSC = peripheral blood
 stem cells. BM = bone marrow. UCB = umbilical cord blood. MAC =
 myeloablative conditioning. RIC = reduced-intensity conditioning. NMA =
 non-myeloablative. NR = not reported.
-{#tbl-characteristics}
 
 {{< pagebreak >}}
 
 | Outcome | Comparison | Model | k | N | OR (95% CrI) | τ | 95% PI | GRADE |
-|:-------|:-------|:-------|-------:|-------:|:-------|-------:|:-------|:-------|
+|:---|:---|:---|---:|---:|:---|---:|:---|:---|
 | Overall survival | C1 | M1 | 34 | 9 836 | 0·76 (0·61–0·93) | 0·46 | 0·28–1·97 | Very low |
 |  | C2 | M1 | 9 | 12 791 | 0·75 (0·42–1·31) | 0·68 | 0·14–3·87 | Very low |
 |  | C3 | M1 | 6 | 4 746 | 0·92 (0·43–1·63) | 0·56 | 0·18–3·95 | — |
@@ -690,7 +688,6 @@ effect in a new study, from the posterior of the random PTCy-effect
 slope. GRADE ratings are shown for pre-specified primary and secondary
 outcomes only. OR \< 1 favours PTCy for survival and GVHD outcomes; OR
 \> 1 indicates elevated risk with PTCy for infection outcomes.
-{#tbl-results}
 
 {{< pagebreak >}}
 
@@ -701,18 +698,16 @@ identified from databases (EMBASE 2603, PubMed 1061, SCOPUS 481) and
 1220 duplicates removed. 2925 records were screened and 2408 excluded at
 title and abstract. 517 reports were sought for retrieval; 52 were not
 retrieved or not in English (not recorded as separate counts). 465
-full-text reports were assessed and 215
-excluded ([appendix pp
+full-text reports were assessed and 215 excluded ([appendix pp
 6–14](appendix-preview.html#s2.-studies-excluded-at-full-text-screening-n214)).
 250 studies were included in the systematic review; one publication
 entered twice during extraction was removed during revision (appendix
-S12). 105 unique studies
-contributed outcome data to the meta-analysis (C1 72 studies; C2 27
-studies; C3 13 studies; 7 studies contribute to more than one
-comparison). Reference lists, citation tracking, and PROSPERO
-registrations were also searched but yielded no separately recorded
-reports, so the identification-via-other-methods branch of the diagram
-shows zero.](figures/Figure1_PRISMA_flow_diagram){#fig-prisma}
+S12). 105 unique studies contributed outcome data to the meta-analysis
+(C1 72 studies; C2 27 studies; C3 13 studies; 7 studies contribute to
+more than one comparison). Reference lists, citation tracking, and
+PROSPERO registrations were also searched but yielded no separately
+recorded reports, so the identification-via-other-methods branch of the
+diagram shows zero.](figures/Figure1_PRISMA_flow_diagram){#fig-prisma}
 
 {{< pagebreak >}}
 
@@ -722,9 +717,9 @@ computed from the extracted event counts; the diamond is the pooled
 Bayesian random-effects posterior median with 95% credible interval
 (primary model M1). Events and totals of each arm and REML
 inverse-variance weights are shown beside each study row; a 0·5
-continuity correction was applied to zero cells when computing the
-Wald intervals. k = 34 after cohort
-deduplication and removal of one duplicate publication
+continuity correction was applied to zero cells when computing the Wald
+intervals. k = 34 after cohort deduplication and removal of one
+duplicate publication
 ([appendix](appendix-preview.html#s12.-cohort-overlap)).](figures/Figure2_OS_forest_setB){#fig-os}
 
 {{< pagebreak >}}
@@ -738,12 +733,11 @@ deduplication and removal of one duplicate publication
 
 **Forest plots — CMV reactivation.** Individual study odds ratios for
 any CMV reactivation, with the pooled Bayesian posterior median and 95%
-credible interval. The pooled odds ratio was 1·22 (95% credible
-interval 0·90–1·65) against CNI-based prophylaxis and 0·86 (0·50–1·42)
-against ATG; both intervals include the null, and the formal
-comparator-class comparison is unresolved (appendix S9). Events,
-totals, and REML inverse-variance weights are shown beside each study
-row.
+credible interval. The pooled odds ratio was 1·22 (95% credible interval
+0·90–1·65) against CNI-based prophylaxis and 0·86 (0·50–1·42) against
+ATG; both intervals include the null, and the formal comparator-class
+comparison is unresolved (appendix S9). Events, totals, and REML
+inverse-variance weights are shown beside each study row.
 :::
 
 {{< pagebreak >}}
@@ -752,14 +746,14 @@ row.
 (comparison 1).** Individual study odds ratios (raw per-study estimates)
 and pooled Bayesian random-effects posterior median with 95% credible
 interval (primary model M1). Events, totals, and REML inverse-variance
-weights are shown beside each study row; a 0·5 continuity correction
-was applied to zero cells when computing the Wald intervals. Panel A:
-bloodstream infection, any pathogen (k = 6, odds
-ratio 1·42 \[0·57–2·98\]). Panel B: invasive fungal infection, any (k =
-6, 0·63 \[0·19–2·62\]; τ = 1·28). Panel C: BK virus reactivation (k =
-11, 2·39 \[1·48–3·66\]), the largest infection effect observed and the
-only one whose interval excluded the null. All panels are comparison 1
-(PTCy versus CNI plus MTX or MMF); insufficient studies were available
-to fit the corresponding comparison 2 models for BSI and IFI. None of
-these three outcomes was affected by cohort
+weights are shown beside each study row; a 0·5 continuity correction was
+applied to zero cells when computing the Wald intervals. Panel A:
+bloodstream infection, any pathogen (k = 6, odds ratio 1·42
+\[0·57–2·98\]). Panel B: invasive fungal infection, any (k = 6, 0·63
+\[0·19–2·62\]; τ = 1·28). Panel C: BK virus reactivation (k = 11, 2·39
+\[1·48–3·66\]), the largest infection effect observed and the only one
+whose interval excluded the null. All panels are comparison 1 (PTCy
+versus CNI plus MTX or MMF); insufficient studies were available to fit
+the corresponding comparison 2 models for BSI and IFI. None of these
+three outcomes was affected by cohort
 deduplication.](figures/Figure4_infections_forest){#fig-infections}
