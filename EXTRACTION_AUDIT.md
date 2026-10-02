@@ -244,6 +244,42 @@ donor_confounding,hr_sensitivity_os,hr_same_subset}.csv.
    indirect-comparison text was already properly hedged ("does not
    resolve").
 
+## Letermovir/CMV-prophylaxis audit (2026-10-02, fourth checklist)
+
+Executed via `scripts/refit-cmv-letermovir-adj.R` and the adjudicated
+sensitivity-subset refits (data/models/cmv_letermovir.csv,
+cmv_sensitivity_subsets_adj.csv).
+
+1. **28/44 reconciliation.** The appendix's "directly reported letermovir
+   use for 28 of 44" was wrong: those 28 arms are **confirmed non-use**;
+   16 are not reported; zero C1 CMV model arms have recorded use
+   (database-wide recorded use, 37 arms, touches no model arm). Appendix
+   corrected; missing vs confirmed non-use now distinguished explicitly.
+2. **Missing vs confirmed non-use** — stated in the appendix text.
+3. **Enrolment dates vs actual exposure.** The enrolment-era proxy model
+   was refit on adjudicated data (OR 1.20 [0.86-1.67], k = 21; era
+   coefficient -0.79 [-1.74-0.15]); the direct-use meta-regression was
+   found unidentifiable (no use variation: all reported arms are non-use,
+   13 studies/26 arms) and is now reported descriptively instead.
+4. **Publication-year labelling.** The "post-2020" subset is
+   publication-year-defined (17 publications; enrolment 2000-2024, mostly
+   pre-letermovir-era; 0/34 arms with recorded use). Refit on adjudicated
+   data: k = 16, OR 1.43 [0.97-2.06]. Abstract, results, methods, and
+   discussion relabelled "studies published from 2020 onward"; the
+   abstract's "increased post-2020 after introduction of letermovir"
+   attribution removed.
+5. **Comparator-class interaction** retained as inconclusive in the main
+   interpretation (already present; unchanged).
+6. **csCMV framing.** Appendix and main text now treat the csCMV estimate
+   (0.94 [0.49-1.71], k = 8) as uncertain — "compatible with anything
+   from a halving to a 71% increase" — not as evidence of no increase.
+7. **Incidental fixes in the same passages:** the results-paragraph RCT
+   sentence was contradictory (superseded trial estimates presented as
+   current); replaced with the post-adjudication statement plus
+   observational-only numbers. Donor-matched OS number updated
+   (0.58 [0.41-0.78], k = 21). Figure S9a regenerated from the refit
+   posteriors.
+
 ## Recommended actions
 
 1. ~~Add an `input_class` column to outcomes.csv~~ **Done** (2026-10-02,

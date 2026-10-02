@@ -78,8 +78,9 @@ estimates were elevated but imprecise (1·20 \[0·87–1·65\]; 2·17
 \[0·86–4·39\], the latter from four studies with culture-confirmed
 bloodstream infection). In C2 (27 studies), OS
 favoured PTCy versus ATG (0·75 \[0·43–1·28\]) and CMV did not differ
-(0·86 \[0·50–1·42\]). The CMV risk estimate increased post-2020 after
-introduction of letermovir (1·46 \[1·01–2·05\]). GRADE certainty was
+(0·86 \[0·50–1·42\]). The CMV estimate was larger in studies published
+from 2020 onward (1·43 \[0·97–2·06\]), a publication-year subset whose
+cohorts mostly enrolled before the letermovir era. GRADE certainty was
 very low for all pre-specified outcomes.
 
 **Interpretation.** PTCy is associated with better survival and less
@@ -260,7 +261,7 @@ effect and is reported only in the appendix (S9), together with its
 definition, provenance, results, and a matched-set comparison against
 M1.
 
-Pre-specified sensitivity analyses included restriction to post-2020
+Pre-specified sensitivity analyses included restriction to publications from 2020 onward (a publication-year, not enrolment-era, subset) and to
 publications (introduction of letermovir prophylaxis),
 haploidentical-dominant cohorts (≥50% haploidentical donors), and
 leave-one-out analysis. Hazard ratios were not pooled in the primary
@@ -330,9 +331,9 @@ Acute GVHD grade II–IV was substantially less frequent (k = 28, 0·58
 
 CMV reactivation was higher on average in the PTCy group, but the
 credible interval included the null (k = 21, 1·20 [0·87–1·65];
-@fig-cmv). The estimate was larger in post-2020 studies (k = 17, 1·46
-[1·01–2·05]) and haploidentical-dominant cohorts (k = 12, 1·34
-[0·90–1·96]). BSI likewise favoured the comparator in the primary
+@fig-cmv). The estimate was larger in studies published from 2020
+onward (k = 16, 1·43 [0·97–2·06]) and in haploidentical-dominant
+cohorts (k = 12, 1·34 [0·89–1·96]). BSI likewise favoured the comparator in the primary
 analysis restricted to culture-confirmed day-100 bloodstream infection
 (k = 4, 2·17 [0·86–4·39]); no comparison-2 BSI model was
 possible. BK virus reactivation showed the largest infection effect, and
@@ -371,18 +372,28 @@ donor-type imbalance was small (median between-arm difference in
 haploidentical-donor percentage 0), a meta-regression on that difference
 was null for every C1 outcome, and in donor-matched subsets (difference
 ≤15 percentage points) the C1 overall-survival estimate was, if
-anything, stronger (0·60 \[0·44–0·80\], k = 22). In
-randomised-trials-only analyses (C1, k = 3–7 per outcome), estimates for
-overall survival (0·79 \[0·58–1·06\]), chronic GVHD (0·31
-\[0·09–0·99\]), NRM (0·84 \[0·47–1·52\]) and CMV (1·19 \[0·54–3·59\])
-were compatible with the pooled results, but the acute GVHD reduction
-was attenuated (0·92 \[0·60–1·31\], k = 6). Splitting C1 comparators by
-backbone showed the survival benefit concentrated against CNI plus MTX
-(0·53 \[0·33–0·79\], k = 12) and absent against CNI plus MMF (1·30
-\[0·76–2·29\], k = 5). Restricting CMV to clinically significant
-infection rather than any reactivation removed the elevation (0·94
-\[0·49–1·71\], k = 8). Adjustment for a letermovir enrollment-era proxy
-did not change the CMV estimate (1·23 \[0·90–1·66\]).
+anything, stronger (0·58 \[0·41–0·78\], k = 21). Trial-only models were
+not estimable once cumulative-incidence-derived event counts were
+excluded (no more than two trials per outcome retain observed counts),
+so the earlier trial-only estimates, which included such counts, are
+superseded (appendix S9); observational-only estimates were compatible
+with the pooled results (overall survival 0·79 \[0·63–0·96\], k = 26;
+acute GVHD 0·60 \[0·44–0·78\], k = 27; chronic GVHD 0·48
+\[0·27–0·86\], k = 14; NRM 0·91 \[0·57–1·36\], k = 10; CMV 1·01
+\[0·64–1·64\], k = 7). Splitting C1 comparators by
+backbone suggested the survival benefit may be concentrated against CNI
+plus MTX (0·56 \[0·34–0·84\], k = 12) rather than CNI plus MMF (1·10
+\[0·45–3·01\], k = 5), although a formal interaction test did not
+resolve the difference (ratio of odds ratios 1·82 \[0·76–4·53\]).
+Restricting CMV to clinically significant infection rather than any
+reactivation gave an imprecise estimate compatible with both a decrease
+and an increase (0·94 \[0·49–1·71\], k = 8), so that result is uncertain
+rather than evidence of no increase. Adjustment for a letermovir
+enrolment-era proxy did not change the CMV estimate (1·20
+\[0·86–1·67\]); no arm in the publication-2020-onward subset had
+recorded letermovir use, and most enrolled before or across the
+letermovir era, so the larger estimate in recent publications cannot be
+attributed to letermovir adoption.
 
 ### Certainty of evidence
 
@@ -543,8 +554,9 @@ resolve the C1–C2 difference (appendix S9). Clinical strategies to
 mitigate these costs should target T-cell reconstitution (adoptive
 T-cell therapies, letermovir prophylaxis[@marty2017], earlier
 immunosuppression tapering) rather than PTCy avoidance. The larger CMV
-estimate in post-2020 studies (odds ratio 1·46 \[1·01–2·05\]) is not
-explained by letermovir-era prophylaxis: no arm in the post-2020 cohort
+estimate in studies published from 2020 onward (odds ratio 1·43
+\[0·97–2·06\]) is not explained by letermovir-era prophylaxis: no arm in
+that cohort
 had letermovir use recorded, and most of these cohorts enrolled before
 or across the letermovir era (appendix S9), so the reasons for the trend
 remain unclear. For NRM, optimising GVHD control remains a key strategy,
