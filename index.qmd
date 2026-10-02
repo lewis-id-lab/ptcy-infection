@@ -308,15 +308,21 @@ transplants.
 
 ### Risk of bias
 
-Of 210 comparative observational studies assessed with ROBINS-I, 142
-(68%) were at serious risk of bias and 68 (32%) at moderate risk,
+Of 220 comparative observational studies assessed with ROBINS-I, 149
+(68%) were at serious risk of bias and 71 (32%) at moderate risk,
 primarily due to confounding by donor type and conditioning intensity;
 no study was rated low or critical risk ([appendix pp
 15–17](appendix-preview.html#s5.-risk-of-bias)). The 16 single-arm
-descriptive studies were also rated but are not included in these
-counts. Of 14 RCTs assessed with RoB 2, 11 had some concerns
-(predominantly unblinded outcome assessment), two were at high risk, and
-one was at low risk of bias.
+descriptive studies were protocol-excluded without a formal judgement
+and are not included in these counts. Of 14 RCTs assessed with RoB 2, 11
+had some concerns, two were at high risk, and one was at low risk of
+bias. Because the measurement-of-outcome domain matters most for
+subjective endpoints, judgements were reviewed by outcome objectivity:
+concerns in the open-label trials centred on clinician-assessed outcomes
+(GVHD grading and infection ascertainment; measurement-domain some
+concerns in 3 of 14 trials), whereas objective outcomes (overall and
+relapse-related mortality, laboratory-confirmed bloodstream infection)
+were at low measurement-domain risk in every trial.
 
 ### Comparison 1: PTCy versus CNI plus MTX or MMF
 
@@ -398,22 +404,27 @@ attributed to letermovir adoption.
 ### Certainty of evidence
 
 GRADE certainty was very low for all pre-specified outcomes
-(@tbl-results), reassessed against the cohort-deduplicated
-random-effects estimates with publication-bias analyses re-run on the
-deduplicated datasets ([appendix
+(@tbl-results), reassessed against the post-adjudication random-effects
+estimates with publication-bias analyses re-run on the same datasets
+([appendix
 S10–S11](appendix-preview.html#s11.-grade-certainty-of-evidence-profiles)).
-Imprecision downgrades were applied to every pre-specified outcome whose
-credible interval includes the null (C1 NRM, C1 CMV, C1 BSI, C1 IFI, C2
-OS, C2 acute GVHD, C2 CMV). Secondary outcomes added by protocol
-amendment were rated under the same framework (appendix S11): certainty
-was low for BK virus reactivation versus CNI-based prophylaxis (2·39
-\[1·48–3·66\]) and for C1 relapse-related mortality (0·87
-\[0·76–0·99\]), and very low for C1 and C2 infection-related mortality,
-C2 relapse-related mortality, and C2 BK virus reactivation (k = 3). C1
-OS and C1 acute GVHD were downgraded for publication bias: robust
-Bayesian model-averaging found strong evidence of bias for both
-(BF~bias~ 18·6 and 14·0), with bias-adjusted estimates that were
-essentially null (appendix S10).
+Imprecision was assessed against clinically meaningful thresholds (odds
+ratio 0·80 for benefit, 1·25 for harm); downgrades were applied to every
+outcome whose credible interval spans the relevant threshold or the
+null — all pre-specified outcomes except C1 acute GVHD, whose interval
+lies entirely below 0·80. Secondary outcomes added by protocol amendment
+were rated under the same framework (appendix S11): certainty was low
+for BK virus reactivation versus CNI-based prophylaxis (2·39
+\[1·41–3·73\]; interval entirely above 1·25) and very low for C1
+relapse-related mortality (0·87 \[0·76–0·99\]; interval spans the 0·80
+benefit threshold), C1 and C2 infection-related mortality, C2
+relapse-related mortality, and C2 BK virus reactivation (k = 3). C1 OS
+and C1 acute GVHD were additionally downgraded for publication bias:
+robust Bayesian model-averaging found strong evidence of bias for both
+(BF~bias~ 10·4 and 10·9), and the bias-adjusted estimates are
+essentially null (OS 0·97 \[0·71–1·16\]; acute GVHD 0·96
+\[0·57–1·38\]; appendix S10), so the unadjusted survival and acute
+GVHD benefits are not robust to publication-bias adjustment.
 
 ## Discussion
 
@@ -690,7 +701,7 @@ non-myeloablative. NR = not reported.
 | Non-relapse mortality | C1 | M1 | 11 | 1 231 | 0·84 (0·48–1·28) | 0·39 | 0·20–2·72 | Very low |
 |  | C2 | M1 | — | — | k=2, not assessed | — | — | — |
 |  | C3 | M1 | 3 | 2 405 | 0·55 (0·11–2·44) | 1·09 | 0·02–13·25 | — |
-| Relapse-related mortality | C1 | M1 | 34 | 11 121 | 0·87 (0·76–0·99) | 0·08 | 0·64–1·18 | Low |
+| Relapse-related mortality | C1 | M1 | 34 | 11 121 | 0·87 (0·76–0·99) | 0·08 | 0·64–1·18 | Very low |
 |  | C2 | M1 | 10 | 17 182 | 0·79 (0·55–1·03) | 0·19 | 0·35–1·70 | Very low |
 |  | C3 | M1 | 6 | 692 | 0·78 (0·35–1·67) | 0·43 | 0·15–3·96 | — |
 | Acute GVHD II–IV | C1 | M1 | 28 | 4 197 | 0·58 (0·44–0·76) | 0·55 | 0·18–1·88 | Very low |

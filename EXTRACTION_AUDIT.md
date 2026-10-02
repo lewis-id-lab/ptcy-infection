@@ -280,6 +280,44 @@ cmv_sensitivity_subsets_adj.csv).
    (0.58 [0.41-0.78], k = 21). Figure S9a regenerated from the refit
    posteriors.
 
+## Publication-bias interpretation and GRADE rigour audit (2026-10-02, fifth checklist)
+
+1. **Bias analyses on final datasets — verified current.** RoBMA
+   (17 outcomes) and funnel tests k values match the frozen Table 2
+   datasets exactly (checked row by row); no rerun needed since the
+   post-adjudication refits.
+2. **Bias-adjusted conclusions.** Main-text certainty paragraph now
+   reports the updated RoBMA numbers (BF_bias 10.4 OS, 10.9 aGVHD) with
+   the bias-adjusted estimates (OS 0.97 [0.71-1.16]; aGVHD 0.96
+   [0.57-1.38]) and an explicit statement that the unadjusted survival
+   and acute GVHD benefits are not robust to publication-bias adjustment.
+3. **Small-sample null tests.** S10 now states that non-significant
+   funnel tests at k = 6-13 are low-powered and not evidence of absence.
+   Also discovered and fixed: the S10 funnel paragraph on disk was still
+   the pre-adjudication version (an earlier editor save had silently
+   failed); now updated to the recomputed values.
+4. **GRADE risk-of-bias reasoning.** ROBINS-I distribution corrected
+   (220 comparative studies: 149 serious (68%), 71 moderate; the 6
+   previously-counted single-arm studies are protocol-excluded without
+   judgement). S5 domain table recomputed for n = 220. S11 intro now
+   documents the starting-LOW reasoning explicitly.
+5. **Threshold-based imprecision.** All GRADE imprecision cells
+   reassessed against OR 0.80 (benefit) / 1.25 (harm). Consequence: C1
+   RRM downgraded LOW -> VERY LOW (interval spans 0.80); C1 BK stays LOW
+   (entirely above 1.25); C1 aGVHD imprecision downgrade removed
+   (entirely below 0.80). Index Table 2 GRADE column updated.
+6. **All GRADE domains with outcome-specific explanations.** The S11
+   table now has explicit Risk-of-bias, Indirectness, Inconsistency,
+   Imprecision, and Publication-bias columns with per-outcome notes
+   (CMV surrogate outcome, BK = cystitis not replication, C1-vs-C2
+   population mix).
+7. **RoB 2 by outcome objectivity.** New appendix paragraph: objective
+   outcomes (mortality, lab-confirmed BSI) at low measurement-domain
+   risk in all 14 trials; subjective outcomes (GVHD grading, infection
+   adjudication) at some concerns in 3 of 14 (studies 2, 105, 465);
+   2 high-risk trials identified by domain (432 D2, 72 D1). Main-text
+   RoB paragraph updated accordingly.
+
 ## Recommended actions
 
 1. ~~Add an `input_class` column to outcomes.csv~~ **Done** (2026-10-02,

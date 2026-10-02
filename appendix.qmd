@@ -135,21 +135,23 @@ Full study-level (table S4a, 251 rows) and arm-level (table S4b, 525 rows) chara
 
 | Domain                                    | Low | Moderate | Serious |
 |:------------------------------------------|----:|---------:|--------:|
-| D1 Confounding                            |   0 |       83 |     127 |
-| D2 Selection of participants              |  26 |      140 |      44 |
-| D3 Classification of interventions        |  51 |      154 |       5 |
-| D4 Deviations from intended interventions | 192 |       18 |       0 |
-| D5 Missing data                           |  69 |      140 |       1 |
-| D6 Measurement of outcomes                | 101 |      100 |       2 |
-| D7 Selection of the reported result       | 160 |       42 |       1 |
+| D1 Confounding                            |   0 |       86 |     134 |
+| D2 Selection of participants              |  30 |      142 |      46 |
+| D3 Classification of interventions        |  53 |      162 |       5 |
+| D4 Deviations from intended interventions | 199 |       20 |       0 |
+| D5 Missing data                           |  72 |      147 |       1 |
+| D6 Measurement of outcomes                | 104 |      105 |       4 |
+| D7 Selection of the reported result       | 166 |       46 |       1 |
 
-: ROBINS-I domain-level risk of bias, counts by judgement (n = 210 comparative observational studies; single-arm descriptive studies excluded). D6 and D7 were not recorded for the same 7 studies, so those rows sum to 203; the overall judgements (serious 142, moderate 68) are recorded for all 210 studies.
+: ROBINS-I domain-level risk of bias, counts by judgement (n = 220 comparative observational studies; single-arm descriptive studies protocol-excluded without judgement). D6 and D7 were not recorded for the same 7 studies, so those rows sum to 213; the overall judgements (serious 149, moderate 71) are recorded for all 220 studies.
 
 ![ROBINS-I traffic-light plot for all comparative observational studies.](figures/FigureS5a_ROBINS_traffic_light){#fig-s5a}
 
 ![ROBINS-I domain-level summary.](figures/FigureS5b_ROBINS_domain_summary){#fig-s5b}
 
 ![RoB 2 summary for the 14 randomised controlled trials.](figures/FigureS5c_RoB2_summary){#fig-s5c}
+
+Because the RoB 2 measurement-of-outcome domain (D4) is most consequential for subjective endpoints, the 14 trial assessments were reviewed by outcome objectivity. For objective outcomes — overall survival, non-relapse and relapse-related mortality, and laboratory-confirmed bloodstream infection — measurement-domain risk was low in all 14 trials. For subjective, clinician-assessed outcomes — acute and chronic GVHD grading and adjudication of infection episodes — 3 of 14 trials had some concerns in the measurement domain because outcome assessors were unblinded to allocation (studies 2, 105 and 465). Two trials were at high overall risk: one for deviations from the assigned randomised regimen (study 432, D2) and one for baseline imbalances suggestive of randomisation problems (study 72, D1). These judgements support treating the trials' mortality and virological endpoints as more dependable than their GVHD endpoints.
 
 Full justification narratives are available in `rob.csv`, submitted as a supplementary data file.
 
@@ -467,7 +469,7 @@ As a formal test of the C1–C2 CMV difference, the C1 and C2 CMV datasets were 
 
 ## S10. Publication bias
 
-Funnel-plot asymmetry was assessed on the cohort-deduplicated datasets (Egger's regression, Peters' sample-size test, Begg's rank test, and Duval–Tweedie trim-and-fill; full results in `pub_bias_results.csv`, supplementary data file). C1 overall survival showed asymmetry by Egger (p = 0·016) and Begg (p = 0·047) but not by the sample-size-based Peters test (p = 0·23); trim-and-fill imputed seven studies, shifting the frequentist estimate from 0·79 to 0·91 \[0·74–1·11\]. C1 acute GVHD showed asymmetry across tests (Egger p = 0·023; Begg p = 0·018; Peters p = 0·095), with trim-and-fill shifting the estimate from 0·61 to 0·83 \[0·61–1·13\]. No other outcome showed significant asymmetry (all p \> 0·09).
+Funnel-plot asymmetry was assessed on the post-adjudication datasets (2026-10-02; Egger's regression, Peters' sample-size test, Begg's rank test, and Duval–Tweedie trim-and-fill; full results in `pub_bias_results.csv`, supplementary data file). C1 overall survival showed asymmetry by Egger (p = 0·025) but not by the sample-size-based Peters test (p = 0·13) or Begg (p = 0·075); trim-and-fill imputed six studies, shifting the frequentist estimate from 0·75 to 0·86 \[0·70–1·07\]. C1 acute GVHD showed asymmetry across tests (Egger p = 0·023; Begg p = 0·018; Peters p = 0·072), with trim-and-fill shifting the estimate from 0·61 to 0·83 \[0·61–1·13\]. No other outcome showed significant asymmetry (all p \> 0·07). These null results should not be interpreted as evidence that bias is absent: with k = 6–13 studies the funnel-based tests have low power, and the corresponding RoBMA inclusion Bayes factors below 1 indicate at most weak evidence against publication bias for those outcomes.
 
 Robust Bayesian model-averaging (RoBMA v4.0.0; ensemble of selection-function, PET, and PEESE publication-bias models) was fitted to every outcome with k ≥ 6 on the cohort-deduplicated datasets. Model-averaged estimates and inclusion Bayes factors for the presence of an effect (BF~eff~) and of publication bias (BF~bias~) are shown below. All ensembles converged (R̂ ≤ 1·01; ESS \> 1000).
 
@@ -502,27 +504,27 @@ Three findings stand out. First, publication bias is supported only for the two 
 
 ## S11. GRADE certainty-of-evidence profiles
 
-Certainty was assessed per the GRADE Handbook, adapted for observational evidence (starting certainty LOW). The profiles below were reassessed (2026-10-02) against the post-adjudication, random-slope estimates of table 2 and the refitted publication-bias analyses of S10, and supersede all earlier profiles. Risk-of-bias and indirectness judgements are unchanged from the original assessment; the only risk-of-bias downgrade applied is to C1 NRM (steroid-mediation confounding).
+Certainty was assessed per the GRADE Handbook, adapted for observational evidence (starting certainty LOW). The profiles below were reassessed (2026-10-02) against the post-adjudication, random-slope estimates of table 2 and the refitted publication-bias analyses of S10, and supersede all earlier profiles. **Risk of bias.** Two-thirds (68%) of contributing observational studies are at serious risk of bias by ROBINS-I (S5); the evidence therefore starts at LOW for observational designs, and no further risk-of-bias downgrade is applied beyond the starting level except for C1 NRM (steroid-mediation confounding). The randomised trials are too few to shift any pooled estimate materially (S9), so their generally lower risk of bias does not raise the rating for any outcome. **Indirectness.** No outcome is downgraded for indirectness; qualifications are noted per row (any-CMV-reactivation as a surrogate for clinically significant infection; BK measured as haemorrhagic cystitis rather than viral replication; predominantly haploidentical C1 versus matched-donor C2 populations). **Imprecision** is assessed against pre-specified clinically meaningful thresholds (odds ratio 0·80 for benefit, 1·25 for harm): a downgrade is applied when the 95% credible interval spans the relevant threshold or the null.
 
-| Outcome | Comparison | k | OR (95% CrI) | Inconsistency | Imprecision | Publication bias | Certainty |
-|:---|:---|---:|:---|:---|:---|:---|:---|
-| Overall survival | C1 | 29 | 0·73 (0·58–0·89) | −1 (τ = 0·42) | 0 | −1 (RoBMA BF~bias~ = 10·4; bias-adjusted OR 0·97 \[0·71–1·16\]) | ⊕⊖⊖⊖ VERY LOW |
-| Overall survival | C2 | 6 | 0·75 (0·43–1·28) | −1 (τ = 0·51) | −1 (CrI crosses null) | not assessable | ⊕⊖⊖⊖ VERY LOW |
-| Non-relapse mortality | C1 | 11 | 0·84 (0·48–1·28) | 0 | −1 (CrI crosses null) | 0 | ⊕⊖⊖⊖ VERY LOW |
-| Acute GVHD II–IV | C1 | 28 | 0·58 (0·44–0·76) | −1 (τ = 0·55) | 0 | −1 (RoBMA BF~bias~ = 10·9; bias-adjusted OR 0·96 \[0·57–1·38\]) | ⊕⊖⊖⊖ VERY LOW |
-| Acute GVHD II–IV | C2 | 7 | 0·53 (0·23–1·17) | −1 (τ = 0·86) | −1 (CrI reaches null) | not assessable | ⊕⊖⊖⊖ VERY LOW |
-| CMV reactivation | C1 | 21 | 1·20 (0·87–1·65) | −1 (τ = 0·56) | −1 (CrI crosses null) | 0 | ⊕⊖⊖⊖ VERY LOW |
-| CMV reactivation | C2 | 12 | 0·86 (0·51–1·42) | −1 (τ = 0·68) | −1 (CrI crosses null) | 0 | ⊕⊖⊖⊖ VERY LOW |
-| Bloodstream infection | C1 | 4 | 2·17 (0·86–4·39) | 0 (τ = 0·43; culture-confirmed day-100 definitions) | −1 (CrI crosses null) | not assessable (k = 4) | ⊕⊖⊖⊖ VERY LOW |
-| Invasive fungal infection | C1 | 6 | 0·63 (0·19–2·44) | −1 (τ = 1·28; extreme) | −1 (CrI crosses null) | not assessable (k = 6) | ⊕⊖⊖⊖ VERY LOW |
-| Relapse-related mortality | C1 | 34 | 0·87 (0·76–0·99) | 0 (τ = 0·08) | 0 | 0 | ⊕⊕⊖⊖ LOW |
-| Relapse-related mortality | C2 | 10 | 0·79 (0·55–1·03) | 0 (τ = 0·19) | −1 (CrI reaches null) | not assessable | ⊕⊖⊖⊖ VERY LOW |
-| BK virus | C1 | 11 | 2·39 (1·41–3·73) | 0 (τ = 0·36) | 0 | 0 | ⊕⊕⊖⊖ LOW |
-| BK virus | C2 | 3 | 2·49 (1·08–6·24) | 0 (τ = 0·33) | −1 (k = 3; fragile lower bound) | not assessable (k = 3) | ⊕⊖⊖⊖ VERY LOW |
-| Infection-related mortality | C1 | 13 | 1·02 (0·67–1·50) | −1 (τ = 0·48) | −1 (CrI crosses null) | 0 | ⊕⊖⊖⊖ VERY LOW |
-| Infection-related mortality | C2 | 7 | 0·98 (0·62–1·77) | 0 (τ = 0·41) | −1 (CrI crosses null) | not assessable | ⊕⊖⊖⊖ VERY LOW |
+| Outcome | Comparison | k | OR (95% CrI) | Risk of bias | Indirectness | Inconsistency | Imprecision (vs OR 0·80/1·25) | Publication bias | Certainty |
+|:---|:---|---:|:---|:---|:---|:---|:---|:---|:---|
+| Overall survival | C1 | 29 | 0·73 (0·58–0·89) | 0 (start LOW, observational) | 0 | −1 (τ = 0·42) | −1 (spans 0·80 benefit threshold) | −1 (RoBMA BF~bias~ = 10·4; bias-adjusted 0·97 \[0·71–1·16\]) | ⊕⊖⊖⊖ VERY LOW |
+| Overall survival | C2 | 6 | 0·75 (0·43–1·28) | 0 (start LOW) | 0 | −1 (τ = 0·51) | −1 (spans null and both thresholds) | not assessable (k = 6) | ⊕⊖⊖⊖ VERY LOW |
+| Non-relapse mortality | C1 | 11 | 0·84 (0·48–1·28) | −1 (steroid-mediation confounding) | 0 | 0 | −1 (spans 0·80 and 1·25) | 0 | ⊕⊖⊖⊖ VERY LOW |
+| Acute GVHD II–IV | C1 | 28 | 0·58 (0·44–0·76) | 0 (start LOW) | 0 | −1 (τ = 0·55) | 0 (entirely below 0·80) | −1 (RoBMA BF~bias~ = 10·9; bias-adjusted 0·96 \[0·57–1·38\]) | ⊕⊖⊖⊖ VERY LOW |
+| Acute GVHD II–IV | C2 | 7 | 0·53 (0·23–1·17) | 0 (start LOW) | 0 | −1 (τ = 0·86) | −1 (spans 0·80) | not assessable (k = 7) | ⊕⊖⊖⊖ VERY LOW |
+| CMV reactivation | C1 | 21 | 1·20 (0·87–1·65) | 0 (start LOW) | 0 (any reactivation surrogates for clinical disease) | −1 (τ = 0·56) | −1 (spans 1·25 harm threshold) | 0 | ⊕⊖⊖⊖ VERY LOW |
+| CMV reactivation | C2 | 12 | 0·86 (0·51–1·42) | 0 (start LOW) | 0 | −1 (τ = 0·68) | −1 (spans null and 1·25) | 0 | ⊕⊖⊖⊖ VERY LOW |
+| Bloodstream infection | C1 | 4 | 2·17 (0·86–4·39) | 0 (start LOW) | 0 (culture-confirmed subset) | 0 (τ = 0·43) | −1 (spans null and 1·25) | not assessable (k = 4) | ⊕⊖⊖⊖ VERY LOW |
+| Invasive fungal infection | C1 | 6 | 0·63 (0·19–2·44) | 0 (start LOW) | 0 | −1 (τ = 1·28; extreme) | −1 (spans null and both thresholds) | not assessable (k = 6) | ⊕⊖⊖⊖ VERY LOW |
+| Relapse-related mortality | C1 | 34 | 0·87 (0·76–0·99) | 0 (start LOW) | 0 | 0 (τ = 0·08) | −1 (spans 0·80 benefit threshold) | 0 | ⊕⊖⊖⊖ VERY LOW |
+| Relapse-related mortality | C2 | 10 | 0·79 (0·55–1·03) | 0 (start LOW) | 0 | 0 (τ = 0·19) | −1 (spans 0·80) | not assessable (k = 10) | ⊕⊖⊖⊖ VERY LOW |
+| BK virus | C1 | 11 | 2·39 (1·41–3·73) | 0 (start LOW) | 0 (haemorrhagic cystitis, not replication) | 0 (τ = 0·36) | 0 (entirely above 1·25) | 0 | ⊕⊕⊖⊖ LOW |
+| BK virus | C2 | 3 | 2·49 (1·08–6·24) | 0 (start LOW) | 0 | 0 (τ = 0·33) | −1 (lower bound below 1·25; k = 3) | not assessable (k = 3) | ⊕⊖⊖⊖ VERY LOW |
+| Infection-related mortality | C1 | 13 | 1·02 (0·67–1·50) | 0 (start LOW) | 0 | −1 (τ = 0·48) | −1 (spans 0·80 and 1·25) | 0 | ⊕⊖⊖⊖ VERY LOW |
+| Infection-related mortality | C2 | 7 | 0·98 (0·62–1·77) | 0 (start LOW) | 0 | −1 (τ = 0·41) | −1 (spans 0·80 and 1·25) | not assessable (k = 7) | ⊕⊖⊖⊖ VERY LOW |
 
-: GRADE domain profiles for the pre-specified primary and secondary outcomes, reassessed against the post-adjudication random-effects estimates (2026-10-02). Starting certainty LOW (observational evidence). C2 BSI and C2 IFI were not modelled (insufficient studies) and are not rated. The final six rows cover the secondary outcomes added by protocol amendment (BK virus reactivation, infection-related mortality, relapse-related mortality; S13), rated under the same framework; C3 outcomes were not rated.
+: GRADE domain profiles for the pre-specified primary and secondary outcomes, reassessed against the post-adjudication random-effects estimates (2026-10-02). Starting certainty LOW (observational evidence; 68% of contributing studies at serious ROBINS-I risk). Imprecision is assessed against clinically meaningful thresholds (OR 0·80 benefit, 1·25 harm). On this reassessment C1 relapse-related mortality moves from LOW to VERY LOW (its interval spans the 0·80 threshold); C1 BK virus remains LOW (interval entirely above 1·25). C2 BSI and C2 IFI were not modelled (insufficient studies) and are not rated. The final six rows cover the secondary outcomes added by protocol amendment (BK virus reactivation, infection-related mortality, relapse-related mortality; S13), rated under the same framework; C3 outcomes were not rated.
 
 ### Summary-of-findings absolute effects
 
