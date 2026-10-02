@@ -347,6 +347,46 @@ cmv_sensitivity_subsets_adj.csv).
    observed counts, and publication-bias-adjusted estimates essentially
    null for OS and aGVHD.
 
+## Final read-through and consistency pass (2026-10-02, post-submission tag)
+
+Two independent read-throughs of index.qmd and appendix.qmd found ~38
+prose-level inconsistencies; all verified and fixed:
+
+1. **Critical recoveries.** Two whole analyses had been silently lost in
+   earlier failed editor saves and were restored: the HR-sensitivity
+   same-subset paragraph (still showed pre-adjudication k = 34/OR 0.76)
+   and the concordance-prose BSI parenthetical (still 1.42 vs REML).
+2. **Stale figures captions and text numbers.** Figure 2 caption k
+   34 -> 29; Figure 4 panels updated (BSI k = 4/2.17, IFI 2.44, BK
+   1.41-3.73); cGVHD text k 19 -> 18; C2 aGVHD k 8 -> 7; backbone
+   discussion numbers updated with interaction caveat; BK/IFI/IRM/CMV
+   interval standardisation throughout.
+3. **Count corrections.** Table 1: ROBINS-I n 210 -> 220 (149/71),
+   arms 271 -> 276, patients 177,461 -> 177,849; single-arm descriptive
+   16 -> 26 in the RoB paragraph; S2 exclusions 214 -> 215; S3 rows
+   251/525 -> 250/523; PTCy+ATG arms 54 -> 53 with eligibility
+   breakdown (26/8/17 + 2 ineligible); S5 caption per-domain sums
+   (D2 NI note, D4 one unrecorded).
+4. **Refits to restore consistency.** M1-on-M2-subset matched set (6
+   outcomes; m1_m2_matched.csv); tau-prior sensitivity for BSI (k = 4)
+   and IFI (prior_sensitivity_tau.csv); the full 29-model
+   fixed-intercept sensitivity on adjudicated data
+   (fe_sensitivity_setB.csv; median |shift| 0.03, 25 of 29 < 0.1, only
+   C2 BK interval conclusion changed), with the fe BSI model correctly
+   fitted on the restricted 4-study primary subset.
+5. **Editorial cleanup.** Two RESOLVED HTML comments removed; garbled
+   methods sentence repaired; cross-reference labels
+   {#tbl-characteristics} and {#tbl-results} added; "shows" softened to
+   "suggests"; letermovir and CMV-definitions tables synced to their
+   prose; S12 k = 34 statements and Set B column updated; S5/S12
+   internal contradictions resolved; 17-vs-16 publication cohort
+   reconciled.
+6. **Flagged, not resolved (user action).** The TODO comment on the
+   declaration of interests (index.qmd ~L617) — contains undisclosed-COI
+   drafting notes that must be completed before submission; and the BMT
+   CTN 1703/1801 naming inconsistency between Introduction and
+   Discussion.
+
 ## Recommended actions
 
 1. ~~Add an `input_class` column to outcomes.csv~~ **Done** (2026-10-02,
