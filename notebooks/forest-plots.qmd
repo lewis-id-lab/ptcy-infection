@@ -31,6 +31,10 @@ unshrunken per-study estimates, with pooling left to the Bayesian diamond.
 
 Every plot shows, beside the point estimates, the events and totals of each arm and
 the REML inverse-variance weight of each study, as the journal's forest plots require.
+Note that these are **frequentist REML weights**, shown for orientation only: they are
+not the Bayesian pooling weights. The Bayesian model pools through partial pooling
+(shrinkage) of study-level effects towards the posterior mean and does not assign
+per-study weights, so no Bayesian weight column exists or is implied.
 
 ```{r}
 #| label: setup
@@ -172,6 +176,8 @@ forest <- function(analytic_file, slug, title, subtitle = NULL) {
          subtitle = subtitle %||% sprintf("k = %d, N = %s, τ = %.2f",
                                           p$k, format(p$n_total, big.mark = " "), p$tau),
          caption = paste0("Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). ",
+                          "Weights are frequentist REML inverse-variance weights, shown for orientation; ",
+                          "they are not Bayesian pooling weights (the Bayesian model pools via shrinkage and assigns no per-study weights). ",
                           "Weights: REML inverse-variance. Diamond: Bayesian posterior median, 95% CrI (M1).")) +
     theme_forest() +
     theme(axis.text.y = element_text(size = rel(.85)))

@@ -318,6 +318,35 @@ cmv_sensitivity_subsets_adj.csv).
    2 high-risk trials identified by domain (432 D2, 72 D1). Main-text
    RoB paragraph updated accordingly.
 
+## Clinical-interpretability audit (2026-10-02, sixth checklist)
+
+1. **Outcome-specific counts with pooled estimates** — already satisfied:
+   Table 2 reports k and N per outcome; verified.
+2. **Absolute effects with uncertainty and horizons.** The appendix
+   summary-of-findings table gained a Time horizon column (preferred
+   timepoint + fallbacks per outcome), and main-text absolute statements
+   now carry horizons ("by one year", "by day +100").
+   data/models/absolute_effects.csv regenerated to match.
+3. **Prediction intervals** — already displayed in Table 2 (95% PI
+   column for every outcome); verified.
+4. **REML vs Bayesian weights.** The forest-plot notebook preamble and
+   figure captions now state explicitly that the displayed weights are
+   frequentist REML inverse-variance weights for orientation, not
+   Bayesian pooling weights (Bayesian pooling is shrinkage-based and
+   assigns no per-study weights).
+5. **Unsupported claims removed/softened.** "Comparator-invariant" and
+   "cyclophosphamide-specific" mechanism language in the abstract,
+   interpretation box, and conclusions replaced with "similar across
+   comparators, compatible with ... not demonstrative of"; "enabling
+   safe transplantation" in the Introduction de-claimed to "enabling
+   transplantation". The properly-hedged "absence of evidence, not
+   equivalence" wording was retained.
+6. **Conclusions reflect sensitivity results.** The conclusions now
+   state the three fragilities explicitly: HR attenuation (0.88
+   [0.66-1.14] on the adjusted subset), trial-only inestimability with
+   observed counts, and publication-bias-adjusted estimates essentially
+   null for OS and aGVHD.
+
 ## Recommended actions
 
 1. ~~Add an `input_class` column to outcomes.csv~~ **Done** (2026-10-02,

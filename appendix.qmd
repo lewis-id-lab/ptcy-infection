@@ -530,19 +530,19 @@ Certainty was assessed per the GRADE Handbook, adapted for observational evidenc
 
 Odds ratios are not relative risks, and relative measures alone can mislead at the event rates seen here. The table below translates each pooled odds ratio into an absolute difference per 1000 patients at the stated baseline risk (the median comparator-arm event proportion across included studies). These are illustrative translations of the odds ratios, not model-based risk estimates, and inherit the very low certainty of the underlying evidence.
 
-| Outcome | Comparison | Assumed baseline risk | OR (95% CrI) | Absolute difference per 1000 (95% CrI) |
-|:---|:---|---:|:---|---:|
-| Overall survival (mortality) | C1 | 35% | 0·73 (0·58–0·89) | −68 (−111 to −26) |
-| Overall survival (mortality) | C2 | 52% | 0·75 (0·43–1·28) | −71 (−204 to +61) |
-| Non-relapse mortality | C1 | 16% | 0·84 (0·48–1·28) | −22 (−77 to +37) |
-| Acute GVHD II–IV | C1 | 33% | 0·58 (0·44–0·76) | −108 (−155 to −58) |
-| Acute GVHD II–IV | C2 | 40% | 0·53 (0·23–1·17) | −138 (−266 to +38) |
-| CMV reactivation | C1 | 48% | 1·20 (0·87–1·65) | +46 (−35 to +123) |
-| CMV reactivation | C2 | 47% | 0·86 (0·51–1·42) | −38 (−160 to +88) |
-| Bloodstream infection | C1 | 21% | 2·17 (0·86–4·39) | +154 (−24 to +326) |
-| Invasive fungal infection | C1 | 14% | 0·63 (0·19–2·44) | −48 (−111 to +146) |
+| Outcome | Comparison | Time horizon | Assumed baseline risk | OR (95% CrI) | Absolute difference per 1000 (95% CrI) |
+|:---|:---|:---|---:|:---|---:|
+| Overall survival (mortality) | C1 | 1 year (2-yr/last follow-up fallbacks) | 35% | 0·73 (0·58–0·89) | −68 (−111 to −26) |
+| Overall survival (mortality) | C2 | 1 year (2-yr fallback) | 52% | 0·75 (0·43–1·28) | −71 (−204 to +61) |
+| Non-relapse mortality | C1 | 1 year (day +100/last follow-up fallbacks) | 16% | 0·84 (0·48–1·28) | −22 (−77 to +37) |
+| Acute GVHD II–IV | C1 | day +100 (day +180 fallback) | 33% | 0·58 (0·44–0·76) | −108 (−155 to −58) |
+| Acute GVHD II–IV | C2 | day +100 (day +180 fallback) | 40% | 0·53 (0·23–1·17) | −138 (−266 to +38) |
+| CMV reactivation | C1 | day +100 (day +180/last follow-up fallbacks) | 48% | 1·20 (0·87–1·65) | +46 (−35 to +123) |
+| CMV reactivation | C2 | day +100 (day +180 fallback) | 47% | 0·86 (0·51–1·42) | −38 (−160 to +88) |
+| Bloodstream infection | C1 | day +100 (culture-confirmed primary) | 21% | 2·17 (0·86–4·39) | +154 (−24 to +326) |
+| Invasive fungal infection | C1 | end of follow-up | 14% | 0·63 (0·19–2·44) | −48 (−111 to +146) |
 
-: Summary-of-findings absolute effects. Baseline risk is the median comparator-arm event proportion; the intervention risk is derived from the pooled odds ratio as OR·p₀/(1−p₀+OR·p₀). Negative values are fewer events with PTCy. Source data: `absolute_effects.csv`, a supplementary data file.
+: Summary-of-findings absolute effects with uncertainty intervals and explicit time horizons (the preferred timepoint of each outcome's analysis, with fallback timepoints in parentheses). Baseline risk is the median comparator-arm event proportion at that horizon; the intervention risk is derived from the pooled odds ratio as OR·p₀/(1−p₀+OR·p₀). Negative values are fewer events with PTCy. Source data: `absolute_effects.csv`, a supplementary data file.
 
 ## S12. Cohort overlap
 
