@@ -198,13 +198,17 @@ title-bar text has to be set on the title node itself — putting `fontcolor` in
 Carried over from the source document, and flagged as `TODO` comments in the `.qmd`
 files where they belong:
 
-1. **The bibliography is incomplete.** The ODT contained 12 live Zotero references, all
-   in the Introduction and Research in context. The Discussion cites no sources, and the
-   ODT's References section was empty. Export the full library from Zotero or EndNote to
-   `references.bib` and add the citation keys to the text.
-2. **Declaration of interests is empty** — the journal requires a statement.
-3. **The AI-assistance tool is named inconsistently** in the source (Claude Cowork in the
-   Methods, Posit Assistant in the declaration). Name the tool actually used, in both.
+1. **The bibliography was incomplete** — the ODT contained 12 live Zotero references,
+   all in the Introduction and Research in context. Discussion citations have since been
+   added (the ten prior comparative meta-analyses, the letermovir phase 3 trial, and the
+   mechanism references); export the full library from Zotero or EndNote if further
+   citations are needed.
+2. **Declaration of interests is a per-author placeholder** — MS and REL declare no
+   competing interests; DPK's disclosures must be completed before submission (TODO in
+   `index.qmd`, with his recent public disclosures summarised there).
+3. **AI-assistance tool naming is resolved** — Claude Code (Anthropic, Inc.) for PDF
+   data extraction and Posit Assistant (Posit, Inc.) for R-code debugging, named
+   consistently in the Methods and the AI declaration.
 4. **The final search date is not recorded.** The Methods said "April 31, 2026", a date
    that does not exist; it reads "April 30, 2026" here pending confirmation from the
    Covidence export log.
@@ -227,7 +231,7 @@ fits, and `Table2_setB.csv` records which is which in its `source` column.
 | C1 overall survival, M2 | k=40, OR 0·86 (0·77–0·96) | k=28, OR 1·04 (0·89–1·22) |
 | C1 relapse-related mortality | k=38, OR 0·84 (0·76–0·93) | k=34, OR 0·86 (0·77–0·97) |
 | C1 chronic GVHD mod–severe | k=21, OR 0·33 (0·29–0·36) | k=19, OR 0·47 (0·38–0·57) |
-| C1 infection-related mortality | k=16, OR 1·35 (1·16–1·57) | k=13, OR 1·19 (1·00–1·43) |
+| C1 infection-related mortality | k=16, OR 1·35 (1·16–1·57) | k=13, OR 1·03 (0·68–1·49) |
 | C2 overall survival | k=10, OR 0·81 (0·74–0·90) | k=9, OR 0·83 (0·75–0·92) |
 | C2 acute GVHD | k=9, OR 0·58 (0·44–0·77) | k=8, OR 0·63 (0·47–0·83) |
 | C2 CMV reactivation | k=13, OR 0·92 (0·73–1·15) | k=12, OR 0·97 (0·77–1·23) |
@@ -246,9 +250,17 @@ and bacteraemia costs travel a separate T-cell-depletion pathway. That is a real
 of scientific claim, not a wording change, and it is marked with `TODO` comments at both
 sites in `index.qmd`. **Confirm it before submission.**
 
-Two smaller consequences: C1 infection-related mortality now reaches the null
-(1·19 [1·00–1·43]), so its GRADE rating and the wording around it should be revisited;
-and the GRADE ratings generally were assigned against the pre-deduplication estimates.
+Two smaller consequences, both now addressed: C1 infection-related mortality includes
+the null under Set B (1·03 [0·68–1·49]; the 1·19 [1·00–1·43] recorded here earlier was
+an interim value superseded by the 2026-09-30 random-slope refit), and the Results
+wording already reads "showed no excess". The three amendment-added secondary outcomes
+(BK virus reactivation, infection-related mortality, relapse-related mortality) have
+been formally GRADE-rated in appendix S11 under the same framework — LOW for BK virus
+C1 and relapse-related mortality C1 (intervals exclude the null, low heterogeneity),
+VERY LOW for the remainder — so the "very low certainty" claims in the abstract,
+Research in context panel, and Discussion are scoped to the pre-specified outcomes.
+The S11 GRADE profiles were reassessed against the deduplicated estimates on
+2026-09-30.
 
 ### Figures
 

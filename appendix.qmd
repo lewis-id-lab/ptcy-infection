@@ -510,8 +510,14 @@ Certainty was assessed per the GRADE Handbook, adapted for observational evidenc
 | CMV reactivation | C2 | 12 | 0·86 (0·50–1·42) | −1 (τ = 0·68) | −1 (CrI crosses null) | 0 | ⊕⊖⊖⊖ VERY LOW |
 | Bloodstream infection | C1 | 6 | 1·42 (0·57–2·98) | −1 (τ = 0·71; heterogeneous definitions) | −1 (CrI crosses null) | not assessable (k = 6) | ⊕⊖⊖⊖ VERY LOW |
 | Invasive fungal infection | C1 | 6 | 0·63 (0·19–2·62) | −1 (τ = 1·28; extreme) | −1 (CrI crosses null) | not assessable (k = 6) | ⊕⊖⊖⊖ VERY LOW |
+| Relapse-related mortality | C1 | 34 | 0·87 (0·76–0·99) | 0 (τ = 0·08) | 0 | 0 | ⊕⊕⊖⊖ LOW |
+| Relapse-related mortality | C2 | 10 | 0·78 (0·55–1·02) | 0 (τ = 0·19) | −1 (CrI reaches null) | not assessable | ⊕⊖⊖⊖ VERY LOW |
+| BK virus | C1 | 11 | 2·39 (1·48–3·66) | 0 (τ = 0·36) | 0 | 0 | ⊕⊕⊖⊖ LOW |
+| BK virus | C2 | 3 | 2·49 (1·09–6·03) | 0 (τ = 0·33) | −1 (k = 3; fragile lower bound) | not assessable (k = 3) | ⊕⊖⊖⊖ VERY LOW |
+| Infection-related mortality | C1 | 13 | 1·03 (0·68–1·49) | −1 (τ = 0·48) | −1 (CrI crosses null) | 0 | ⊕⊖⊖⊖ VERY LOW |
+| Infection-related mortality | C2 | 7 | 0·98 (0·63–1·83) | 0 (τ = 0·39) | −1 (CrI crosses null) | not assessable | ⊕⊖⊖⊖ VERY LOW |
 
-: GRADE domain profiles for the pre-specified primary and secondary outcomes, reassessed against the cohort-deduplicated random-effects estimates (2026-09-30). Starting certainty LOW (observational evidence). C2 BSI and C2 IFI were not modelled (insufficient studies) and are not rated.
+: GRADE domain profiles for the pre-specified primary and secondary outcomes, reassessed against the cohort-deduplicated random-effects estimates (2026-09-30). Starting certainty LOW (observational evidence). C2 BSI and C2 IFI were not modelled (insufficient studies) and are not rated. The final six rows cover the secondary outcomes added by protocol amendment (BK virus reactivation, infection-related mortality, relapse-related mortality; S13), rated under the same framework; C3 outcomes were not rated.
 
 ### Summary-of-findings absolute effects
 
