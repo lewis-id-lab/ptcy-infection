@@ -227,22 +227,22 @@ fits, and `Table2_setB.csv` records which is which in its `source` column.
 
 | Outcome | Before | Set B (reported) |
 |:--|:--|:--|
-| C1 overall survival, M1 | k=40, OR 0·79 (0·73–0·85) | k=35, OR 0·84 (0·76–0·92) |
-| C1 overall survival, M2 | k=40, OR 0·86 (0·77–0·96) | k=28, OR 1·04 (0·89–1·22) |
-| C1 relapse-related mortality | k=38, OR 0·84 (0·76–0·93) | k=34, OR 0·86 (0·77–0·97) |
-| C1 chronic GVHD mod–severe | k=21, OR 0·33 (0·29–0·36) | k=19, OR 0·47 (0·38–0·57) |
-| C1 infection-related mortality | k=16, OR 1·35 (1·16–1·57) | k=13, OR 1·03 (0·68–1·49) |
-| C2 overall survival | k=10, OR 0·81 (0·74–0·90) | k=9, OR 0·83 (0·75–0·92) |
-| C2 acute GVHD | k=9, OR 0·58 (0·44–0·77) | k=8, OR 0·63 (0·47–0·83) |
-| C2 CMV reactivation | k=13, OR 0·92 (0·73–1·15) | k=12, OR 0·97 (0·77–1·23) |
+| C1 overall survival, M1 | k=40, OR 0·79 (0·73–0·85) | k=29, OR 0·73 (0·58–0·89) |
+| C1 overall survival, M2 | k=40, OR 0·86 (0·77–0·96) | k=24, OR 0·95 (0·70–1·29) |
+| C1 relapse-related mortality | k=38, OR 0·84 (0·76–0·93) | k=34, OR 0·87 (0·76–0·99) |
+| C1 chronic GVHD mod–severe | k=21, OR 0·33 (0·29–0·36) | k=18, OR 0·41 (0·23–0·72) |
+| C1 infection-related mortality | k=16, OR 1·35 (1·16–1·57) | k=13, OR 1·02 (0·67–1·50) |
+| C2 overall survival | k=10, OR 0·81 (0·74–0·90) | k=6, OR 0·75 (0·43–1·28) |
+| C2 acute GVHD | k=9, OR 0·58 (0·44–0·77) | k=7, OR 0·53 (0·23–1·17) |
+| C2 CMV reactivation | k=13, OR 0·92 (0·73–1·15) | k=12, OR 0·86 (0·51–1·42) |
 
 ### One conclusion changed, and needs the co-authors' sign-off
 
 The C1 survival mediation result **reversed**. Before deduplication, adjusting for
 steroid exposure attenuated the survival benefit but left it intact (M2 0·86
 [0·77–0·96]), and the paper argued for a residual direct survival effect beyond GVHD
-suppression. Under Set B, adjustment removes the benefit entirely (M2 1·04 [0·89–1·22],
-on 28 of the 35 studies).
+suppression. Under Set B, adjustment removes the benefit entirely (M2 0·95 [0·70–1·29],
+on 24 of the 29 studies).
 
 The Discussion and the Research in context panel have been rewritten to say what the Set
 B numbers say — that the survival gain travels the GVHD–steroid pathway while the CMV
@@ -251,7 +251,7 @@ of scientific claim, not a wording change, and it is marked with `TODO` comments
 sites in `index.qmd`. **Confirm it before submission.**
 
 Two smaller consequences, both now addressed: C1 infection-related mortality includes
-the null under Set B (1·03 [0·68–1·49]; the 1·19 [1·00–1·43] recorded here earlier was
+the null under Set B (1·02 [0·67–1·50]; the 1·19 [1·00–1·43] recorded here earlier was
 an interim value superseded by the 2026-09-30 random-slope refit), and the Results
 wording already reads "showed no excess". The three amendment-added secondary outcomes
 (BK virus reactivation, infection-related mortality, relapse-related mortality) have

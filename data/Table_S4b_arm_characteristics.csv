@@ -1,0 +1,524 @@
+study_id,arm_id,arm_label_in_paper,arm_role,comparison_1_eligible,comparison_2_eligible,comparison_3_eligible,n_patients,age_median_years,pct_male,disease_aml_pct,disease_all_pct,disease_mds_pct,disease_risk_high_pct,donor_haplo_pct,donor_msd_pct,donor_mud_pct,donor_predominant,graft_predominant,conditioning_mac_pct,conditioning_ric_pct,conditioning_predominant,ptcy_used,ptcy_dose_mg_kg_per_dose,ptcy_total_dose_mg_kg,cni_agent,mmf_used,mtx_used,sirolimus_used,atg_used,atg_agent,atg_total_dose_mg_kg,cmv_recipient_pos_pct,systemic_steroid_for_gvhd_exposure_pct,first_author,pub_year
+2,1,Experimental prophylaxis (cyclophosphamide-tacrolimus-mycophenolate mofetil; PTCy/Tac/MMF),PTCy_arm,Y,N,N,214,NR,62.6,50,5.6,29.4,NR,0,28,68.7,MUD,PBSC,0,100,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,NR,Bolanos-Meade J,2023
+2,2,Standard prophylaxis (tacrolimus-methotrexate; Tac/MTX),comparator_arm,Y,N,N,217,NR,58.1,46.1,12.4,30,NR,0,31.3,65,MUD,PBSC,0,100,RIC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,NR,NR,Bolanos-Meade J,2023
+4,3,HaploCy,PTCy_arm,Y,N,N,757,58,61,70,3,27,NR,100,0,0,haplo,PBSC,41,59,RIC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,72,NR,Goldsmith SR,2021
+4,4,SibCy,PTCy_arm,Y,N,N,403,46,60,77,5,18,NR,0,100,0,MSD,PBSC,55,45,MAC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,68,NR,Goldsmith SR,2021
+4,5,SibCNI,comparator_arm,Y,N,N,1605,57,58,64,4,32,NR,0,100,0,MSD,PBSC,58,42,MAC,N,NA,NA,other,mixed,mixed,NR,N,NA,NA,67,NR,Goldsmith SR,2021
+5,6,haplo-PTCy,PTCy_arm,Y,N,N,75,54,NR,NR,NR,NR,NR,100,0,0,haplo,PBSC,43,57,RIC,Y,NR,NR,tacrolimus,UNCL,N,N,N,NA,NA,72,NR,Khimani F,2021
+5,7,MUD-PTCy,PTCy_arm,Y,N,N,38,63,NR,NR,NR,NR,NR,0,0,100,MUD,PBSC,26,74,RIC,Y,NR,NR,tacrolimus,UNCL,N,N,N,NA,NA,62,NR,Khimani F,2021
+5,8,Tac/MTX,comparator_arm,Y,N,N,89,57,NR,NR,NR,NR,NR,0,0,100,MUD,PBSC,40,60,RIC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,68,NR,Khimani F,2021
+5,9,Tac/Sir,comparator_arm,Y,N,N,381,60,NR,NR,NR,NR,NR,0,0,100,MUD,PBSC,38,62,RIC,N,NA,NA,tacrolimus,N,N,Y,N,NA,NA,63,NR,Khimani F,2021
+6,10,PTCY,PTCy_arm,Y,Y,N,68,59.9,57,49,4,12,2,54,0,0,haplo,PBSC,7,15,RIC,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,59,60,Meyer T,2025
+6,11,MRD/NoATLG,comparator_arm,Y,N,N,97,58.9,57,45,5,9,5,0,100,0,MSD,PBSC,20,21,RIC,N,NA,NA,cyclosporine,Y,N,N,N,NA,NA,53,80,Meyer T,2025
+6,12,MUD/ATLG,comparator_arm,N,Y,N,280,60.8,56,50,8,8,3,0,0,100,MUD,PBSC,17,19,RIC,N,NA,NA,cyclosporine,Y,N,N,Y,rabbit_grafalon_ATLG,30,56,48,Meyer T,2025
+6,13,MM/ATLG,comparator_arm,N,Y,N,54,60.1,69,52,9,6,4,0,0,0,MMUD,PBSC,26,11,RIC,N,NA,NA,cyclosporine,Y,N,N,Y,rabbit_grafalon_ATLG,30,63,57,Meyer T,2025
+7,14,PTCy group,PTCy_arm,Y,N,N,86,34,NR,60,40,0,28,0,0,79,MUD,PBSC,24,76,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,NR,Moiseev IS,2016
+7,15,ATG group (historical control),comparator_arm,Y,N,N,125,31,NR,66,34,0,32,0,0,85,MUD,PBSC,26,74,RIC,N,NA,NA,tacrolimus,mixed,mixed,N,Y,horse_ATGAM,100,NR,NR,Moiseev IS,2016
+8,16,HaploCy,PTCy_arm,N,N,N,757,58,61,NR,NR,27,NR,100,0,0,haplo,PBSC,41,NR,RIC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,72,NR,Papanicolaou GA,2024
+8,17,SibCy,PTCy_arm,Y,N,N,403,46,60,NR,NR,18,NR,0,100,0,MSD,PBSC,55,NR,MAC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,68,NR,Papanicolaou GA,2024
+8,18,SibCNI,comparator_arm,Y,N,N,1605,57,58,NR,NR,32,NR,0,100,0,MSD,PBSC,58,NR,MAC,N,NA,NA,mixed,mixed,mixed,NR,N,NA,NA,67,NR,Papanicolaou GA,2024
+9,19,PTCY-based prophylaxis,PTCy_arm,Y,N,N,200,52,57.5,41,14.5,19,NR,20.5,6.5,36.5,mixed,PBSC,43.5,56.5,RIC,Y,50,100,tacrolimus,mixed,N,N,N,NA,NA,NR,NR,Salas,2022
+9,20,"Other GVHD prophylaxis (CNI-based, non-PTCy)",comparator_arm,Y,N,N,130,54,50.8,40,10.8,20.8,NR,0,56.1,38.5,MSD,PBSC,45.4,54.6,RIC,N,NA,NA,mixed,mixed,mixed,mixed,N,NA,NA,NR,NR,Salas,2022
+10,21,PTCy URD 8/8 (MUD with PTCy),comparator_arm,N,N,Y,1681,62,59.9,54.1,14.9,31.1,26.7,0,0,100,MUD,PBSC,39.7,42.1,mixed,Y,NR,NR,mixed,Y,N,mixed,N,NA,NA,62.9,NR,Shaffer BC,2024
+10,22,PTCy URD 7/8 (MMUD with PTCy),PTCy_arm,N,N,Y,613,57.9,45.4,53.8,20.9,25.3,25.4,0,0,0,MMUD,PBSC,39.8,43.4,mixed,Y,NR,NR,mixed,Y,N,mixed,mixed,NR,NR,64.4,NR,Shaffer BC,2024
+12,23,PTCy/Tac/MMF,PTCy_arm,Y,N,N,43,72,60.5,60.5,0,34.9,37.2,0,11.6,86,MUD,PBSC,0,100,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,58.1,Abedin S,2025
+12,24,Tac/MTX,comparator_arm,Y,N,N,53,73,67.9,54.7,3.8,34,32.1,0,15.1,83,MUD,PBSC,0,100,RIC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,NR,37.1,Abedin S,2025
+16,25,"Haplo PBSCT + PTCy, age >=60",PTCy_arm,N,N,N,55,66,67,56,2,NR,13,100,0,0,haplo,PBSC,27,73,RIC,Y,50,100,mixed,mixed,N,mixed,N,NA,NA,69,NR,Adoncecchi G,2025
+16,26,"Haplo PBSCT + PTCy, age <60",PTCy_arm,N,N,N,66,42,61,44,30,NR,29,100,0,0,haplo,PBSC,83,17,MAC,Y,50,100,mixed,mixed,N,mixed,N,NA,NA,70,NR,Adoncecchi G,2025
+19,27,Haplo/PTCy,PTCy_arm,Y,N,N,139,33,58,0,0,0,NR,100,0,0,haplo,BM,0,10,NMA,Y,NR,NR,NR,Y,N,NR,N,NA,NA,NR,45,Ahmed S,2019
+19,28,MSD/CNI,comparator_arm,Y,N,N,457,33,56,0,0,0,NR,0,100,0,MSD,PBSC,0,70,RIC,N,NA,NA,NR,mixed,mixed,NR,Y,NR,NR,NR,30,Ahmed S,2019
+20,29,FMTBI + ATG/PTCy,PTCy_arm,Y,N,N,26,59,53.8,0,100,0,NR,100,0,0,haplo,PBSC,0,100,RIC,Y,30,60,tacrolimus,Y,N,N,Y,rabbit_thymoglobulin,4.5,100,NR,Ahn J,2025
+20,30,FB + ATG (historical control),comparator_arm,Y,N,N,52,48,51.9,0,100,0,NR,100,0,0,haplo,PBSC,0,100,RIC,N,NA,NA,tacrolimus,N,Y,N,Y,rabbit_thymoglobulin,6,94.2,NR,Ahn J,2025
+24,31,ATG + PTCy combination,PTCy_arm,N,Y,N,69,NR,NR,NR,0,NR,100,NR,NR,NR,mixed,PBSC,0,100,RIC,Y,50,100,cyclosporine,N,N,N,Y,NR,4.5,NR,21.7,Alanazi W,2021
+24,32,Other GvHD prophylaxis regimens,comparator_arm,N,Y,N,90,NR,NR,NR,0,NR,100,NR,NR,NR,mixed,PBSC,63,37,MAC,N,NA,NA,cyclosporine,mixed,mixed,N,mixed,NR,NR,NR,58.9,Alanazi W,2021
+26,33,Post-CY (matched subset),PTCy_arm,Y,N,N,37,61,56.8,81,2.7,NR,NR,0,40.5,59.5,MUD,BM,0,100,RIC,Y,50,100,NA,N,N,N,mixed,NR,4,NR,46,Alousi,2015
+26,34,Tacrolimus + MTX matched control,comparator_arm,Y,N,N,37,62,59.5,81,2.7,NR,NR,0,40.5,59.5,MUD,PBSC,0,100,RIC,N,NA,NA,tacrolimus,N,Y,N,mixed,NR,NR,NR,19,Alousi,2015
+35,35,PT-CY Haplo,PTCy_arm,Y,N,N,487,NR,NR,47.8,11.7,15.2,34.3,100,0,0,haplo,PBSC,59.5,40.5,MAC,Y,NR,NR,NR,Y,N,NR,N,NA,NA,65.7,39.2,Arslan,2024
+35,36,10/10 MUD + ATG,comparator_arm,Y,N,N,7050,NR,NR,41.5,8.2,24.3,34.6,0,0,100,MUD,PBSC,52.6,47.4,MAC,N,NA,NA,NR,Y,Y,NR,Y,other,NR,55.5,27.3,Arslan,2024
+37,37,MTX/TAC,comparator_arm,Y,N,N,25,44,52,20,68,4,NR,0,68,32,MSD,PBSC,80,20,MAC,N,NA,NA,tacrolimus,N,Y,N,NR,NR,NR,NR,NR,Ashouri K,2024
+37,38,PTCy/MMF/TAC,PTCy_arm,Y,N,N,40,49,42.5,52.5,30,10,NR,0,47.5,52.5,mixed,PBSC,67.5,32.5,MAC,Y,50,100,tacrolimus,Y,N,N,NR,NR,NR,NR,NR,Ashouri K,2024
+37,39,PTCy alone,PTCy_arm,Y,N,N,9,43,44.4,33.3,55.6,11.1,NR,0,100,0,MSD,BM,100,0,MAC,Y,50,100,NA,N,N,N,NR,NR,NR,NR,NR,Ashouri K,2024
+39,40,ATG,comparator_arm,N,Y,N,95,60,NR,50,6,16,60,0,0,100,MUD,PBSC,0,0,NMA,N,NA,NA,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,8,54,48,Aydin M,2023
+39,41,PTCy,PTCy_arm,N,Y,N,90,57,NR,43,12,17,52,0,0,100,MUD,PBSC,0,0,NMA,Y,50,100,cyclosporine,N,N,N,N,NA,NA,46,21,Aydin M,2023
+43,42,PTCy group,PTCy_arm,N,Y,N,72,44,57,NR,25,NR,24,0,0,87,MUD,PBSC,63,37,MAC,Y,50,100,mixed,Y,N,Y,N,NA,NA,NR,46,Bailen,2021
+43,43,ATG group,comparator_arm,N,Y,N,60,42,62,NR,22,NR,25,0,0,82,MUD,PBSC,68,32,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,rabbit_thymoglobulin,mixed,NR,67,Bailen,2021
+44,44,MSD/MUD,PTCy_arm,N,N,Y,99,50,53,100,0,0,32,0,38.4,61.6,MUD,PBSC,64,36,MAC,Y,50,100,other,Y,N,Y,N,NA,NA,77,14,Bailen R,2022
+44,45,Haplo,comparator_arm,N,N,Y,130,51,59,100,0,0,67,100,0,0,haplo,PBSC,55,45,MAC,Y,50,100,other,Y,N,N,N,NA,NA,81,47,Bailen R,2022
+45,46,HAPLO,PTCy_arm,Y,N,N,54,50.5,50,NR,NR,NR,44,100,0,0,haplo,mixed,0,100,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,63,63,Baker M,2016
+45,47,URD,comparator_arm,Y,N,N,59,57,50.8,NR,NR,NR,51,0,0,61,MUD,PBSC,NR,NR,mixed,N,NA,NA,tacrolimus,Y,Y,N,Y,rabbit_thymoglobulin,4-6 mg/kg in divided doses,62,53,Baker M,2016
+48,48,PTCy,PTCy_arm,Y,N,N,125,60.8,60.8,37.6,13.6,17.6,32.8,NR,NR,NR,mixed,PBSC,21.6,78.4,RIC,Y,NR,NR,tacrolimus,NR,N,NR,NR,NR,NR,NR,NR,Baranwal,2025
+48,49,MTX,comparator_arm,Y,N,N,375,59.9,58.4,35.2,13.6,20.5,20.5,NR,NR,NR,mixed,PBSC,43.2,56.8,mixed,N,NA,NA,tacrolimus,NR,Y,NR,NR,NR,NR,NR,NR,Baranwal,2025
+49,50,Haploidentical (haplo-HSCT),PTCy_arm,Y,Y,N,118,26,NR,64,35,0,NR,100,0,0,haplo,NR,NR,NR,MAC,Y,40,80,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,7.5,NR,58,Barkhordar M,2021
+49,51,10/10 Matched Unrelated Donor (MUD 10/10),comparator_arm,Y,Y,N,91,19,NR,55,45,0,NR,0,0,100,MUD,NR,NR,NR,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,rabbit_thymoglobulin,5,NR,52,Barkhordar M,2021
+49,52,9/10 Mismatched Unrelated Donor (MMUD 9/10),comparator_arm,N,N,N,21,20,NR,33,66,0,NR,0,0,0,MMUD,NR,NR,NR,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,rabbit_thymoglobulin,7.5,NR,52,Barkhordar M,2021
+49,53,9/10 Mismatched Related Donor (MMRD 9/10),comparator_arm,N,N,N,18,23,NR,66,33,0,NR,0,0,0,MMUD,NR,NR,NR,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,rabbit_thymoglobulin,5,NR,76,Barkhordar M,2021
+50,54,ATG + PTCy (modified combination),PTCy_arm,Y,N,N,78,27.5,NR,69.23,30.77,0,47.3,100,0,0,haplo,PBSC,100,0,MAC,Y,40,80,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,7.5,83,34.6,Barkhordar M,2022
+50,55,ATG (standard ATG-based regimen),comparator_arm,Y,N,N,40,23,NR,60,40,0,56.7,100,0,0,haplo,PBSC,100,0,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,rabbit_thymoglobulin,10,97,57.5,Barkhordar M,2022
+51,56,ATG + PTCy,PTCy_arm,Y,N,N,78,27.5,NR,69.23,30.77,0,47.3,100,0,0,haplo,PBSC,100,0,MAC,Y,40,80,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,7.5,83,34.6,Barkhordar,2022
+51,57,ATG (standard),comparator_arm,Y,N,N,40,23,NR,60,40,0,56.7,100,0,0,haplo,PBSC,100,0,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,rabbit_thymoglobulin,10,97,57.5,Barkhordar,2022
+52,58,UD 9/10 (PTCy),PTCy_arm,Y,N,N,270,54.9,55.9,100,0,0,19.3,0,0,0,MMUD,PBSC,50.7,49.3,MAC,Y,NR,NR,mixed,Y,Y,Y,N,NA,NA,73.2,29.2,Baron F,2024
+52,59,dCBT (double-unit umbilical cord blood),comparator_arm,Y,N,N,209,55.6,51.7,100,0,0,25.4,0,0,0,UCB,UCB,20.6,79.4,RIC,N,NA,NA,mixed,Y,Y,N,N,NA,NA,61.4,44.4,Baron F,2024
+55,60,Haploidentical donor (HID) with post-transplant cyclophosphamide,PTCy_arm,Y,N,N,33,66,52,55,0,45,45,100,0,0,haplo,mixed,6,94,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,72,39,Bashey ZA,2018
+55,61,Matched related donor (MRD) with Tac/MTX,comparator_arm,Y,N,N,37,63,54,62,0,38,35,0,100,0,MSD,PBSC,32,68,RIC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,73,27,Bashey ZA,2018
+55,62,Matched unrelated donor (MUD) with Tac/MTX,comparator_arm,Y,N,N,57,65,63,60,0,40,37,0,0,100,MUD,PBSC,30,70,RIC,N,NA,NA,tacrolimus,N,Y,N,mixed,rabbit_thymoglobulin,4.5,76,37,Bashey ZA,2018
+57,63,"Haplo (haploidentical family donor, unmanipulated)",PTCy_arm,Y,N,N,389,52,54.8,100,0,0,21,100,0,0,haplo,mixed,50,50,mixed,Y,NR,NR,mixed,Y,NR,Y,Y,rabbit_thymoglobulin,NR,82,28,Battipaglia,2019
+57,64,HLA-id sibling (HLA-identical sibling donor),comparator_arm,Y,N,N,1654,52,55.7,100,0,0,11,0,100,0,MSD,PBSC,57,43,mixed,N,NA,NA,cyclosporine,Y,Y,Y,Y,rabbit_thymoglobulin,NR,70,27,Battipaglia,2019
+60,65,PTCY,PTCy_arm,N,Y,N,93,51,40,100,0,0,NR,0,0,0,MMUD,PBSC,50,50,mixed,Y,NR,NR,mixed,Y,Y,NR,N,NA,NA,45,30,Battipaglia G,2019
+60,66,ATG,comparator_arm,N,Y,N,179,53,55,100,0,0,NR,0,0,0,MMUD,PBSC,50,50,mixed,N,NA,NA,mixed,Y,Y,NR,Y,mixed,thymoglobulin median 6 (range 2.5-15); Grafalon/Fresenius median 30 (range 17-60),45,32,Battipaglia G,2019
+61,67,PTCY,PTCy_arm,N,Y,N,197,47,55,100,0,0,15,0,100,0,MSD,PBSC,59,41,MAC,Y,NR,NR,cyclosporine,Y,Y,NR,N,NA,NA,71,19,Battipaglia G,2020
+61,68,ATG,comparator_arm,N,Y,N,1913,54,53,100,0,0,19,0,100,0,MSD,PBSC,48,52,RIC,N,NA,NA,cyclosporine,Y,Y,NR,Y,mixed,NR,64,17,Battipaglia G,2020
+62,69,PTCy,comparator_arm,N,N,Y,374,56,60,100,0,0,NR,100,0,0,haplo,PBSC,43,57,RIC,Y,NR,NR,cyclosporine,Y,N,N,N,NA,NA,74,34,Battipaglia G,2022
+62,70,ATG+PTCy,PTCy_arm,N,N,Y,67,56,49.3,100,0,0,NR,100,0,0,haplo,PBSC,39,61,RIC,Y,NR,NR,cyclosporine,Y,N,N,Y,NR,mixed (2.5 in 22 pts; 5 in 28; 7.5 in 2; 10 in 8; missing in 7),66,30,Battipaglia G,2022
+63,71,PTCy,PTCy_arm,N,Y,N,2999,54.6,56.9,100,0,0,19.3,100,0,0,haplo,PBSC,48.3,51.7,mixed,Y,NR,NR,other,Y,N,N,N,NA,NA,79.2,27.5,Bazarbachi,2024
+63,72,ATG,comparator_arm,N,Y,N,358,48.1,55.9,100,0,0,13.4,100,0,0,haplo,PBSC,57.3,42.7,MAC,N,NA,NA,other,Y,Y,Y,Y,mixed,NR,79.5,30.4,Bazarbachi,2024
+63,73,PTCy + ATG,PTCy_arm,N,N,N,292,50.2,56.2,100,0,0,20.2,100,0,0,haplo,PBSC,47.6,52.4,mixed,Y,NR,NR,other,Y,N,N,Y,rabbit_thymoglobulin,NR,75.1,19.6,Bazarbachi,2024
+65,74,CSA+MTX+ATG,comparator_arm,Y,N,N,39,NR,61.5,48.7,20.5,12.8,25.6,0,0,0,MMUD,PBSC,79.5,20.5,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,rabbit_thymoglobulin,7.5,NR,39,Berger M,2022
+65,75,Tacrolimus+MMF+PTCy,PTCy_arm,Y,N,N,40,NR,62.5,45,15,5,37.5,0,0,0,MMUD,PBSC,95,5,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,7,Berger M,2022
+66,76,PTCy,PTCy_arm,N,Y,N,28,NR,NR,NR,NR,NR,NR,0,0,NR,MUD,PBSC,NR,NR,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,25,Berro M,2021
+66,77,ATG,comparator_arm,N,Y,N,28,NR,NR,NR,NR,NR,NR,0,0,NR,MUD,PBSC,NR,NR,MAC,N,NA,NA,tacrolimus,N,Y,N,Y,rabbit_thymoglobulin,NR,NR,50,Berro M,2021
+67,78,PTCy,PTCy_arm,Y,N,N,41,75,NR,46,NR,24,22,29,NR,63,mixed,NR,NR,68,RIC,Y,50,100,mixed,Y,N,Y,Y,rabbit_thymoglobulin,1,NR,NR,Bhatia,2026
+67,79,non-Cy,comparator_arm,Y,N,N,20,73,NR,35,NR,40,55,0,NR,100,MUD,NR,NR,NR,NR,N,NA,NA,mixed,Y,N,Y,Y,horse_ATGAM,60,NR,NR,Bhatia,2026
+71,80,Haplo,PTCy_arm,Y,N,N,31,62,55,32,3,16,35,100,0,0,haplo,PBSC,0,32,NMA,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,61,23,Blaise D,2016
+71,81,MRD,comparator_arm,Y,N,N,47,62,61,30,8,10,25,0,100,0,MSD,PBSC,0,100,RIC,N,NA,NA,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,5,74,21,Blaise D,2016
+71,82,UD,comparator_arm,Y,N,N,63,64,48,29,8,19,27,0,0,79.4,MUD,PBSC,0,100,RIC,N,NA,NA,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,5,28,44,Blaise D,2016
+72,83,TAC/MMF/PTCy,PTCy_arm,Y,N,N,92,64,67.4,53.3,8.7,18.5,18.5,0,31.5,54.3,MUD,PBSC,0,100,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,27,Bolanos-Meade J,2019
+72,84,TAC/MTX/Bortezomib,comparator_arm,N,N,N,89,64,65.2,51.7,13.5,18,19.1,0,32.6,59.6,MUD,PBSC,0,100,RIC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,NR,26,Bolanos-Meade J,2019
+72,85,TAC/MTX/Maraviroc,comparator_arm,N,N,N,92,64,59.8,53.3,12,16.3,20.7,0,35.9,52.2,MUD,PBSC,0,100,RIC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,NR,32,Bolanos-Meade J,2019
+72,86,TAC/MTX (controls),comparator_arm,Y,N,N,224,64,57.6,52.2,6.3,29.5,22.3,0,39.7,53.1,MUD,PBSC,0,100,RIC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,NR,30,Bolanos-Meade J,2019
+75,87,PTCY,PTCy_arm,N,Y,N,41,NR,53.7,46.3,7.3,26.8,29.3,0,0,0,MMUD,PBSC,46.4,53.7,RIC,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,63.5,65.9,Bordat J,2026
+75,88,HD-ATG,comparator_arm,N,Y,N,93,NR,66.7,34.4,24.8,7.5,29,0,0,0,MMUD,PBSC,43,57,RIC,N,NA,NA,cyclosporine,Y,Y,N,Y,mixed,NR,58.1,52.8,Bordat J,2026
+75,89,LD-ATG,comparator_arm,N,Y,N,21,NR,57.1,57.1,9.5,14.3,33.3,0,0,0,MMUD,PBSC,42.9,57.1,RIC,N,NA,NA,cyclosporine,Y,N,N,Y,mixed,NR,57.2,47.6,Bordat J,2026
+77,90,Haplo PTCy,PTCy_arm,Y,N,N,199,51.9,54.3,100,0,0,28.6,100,0,0,haplo,mixed,53.5,40.9,MAC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,79.6,28.2,Brissot E,2019
+77,91,UD 10/10,comparator_arm,Y,N,N,1111,52.4,52.9,100,0,0,30,0,0,100,MUD,PBSC,41.9,34.3,mixed,N,NA,NA,mixed,Y,Y,NR,mixed,NR,NR,63.3,30.6,Brissot E,2019
+77,92,UD 9/10,comparator_arm,Y,N,N,383,51.7,54.6,100,0,0,29.8,0,0,0,MMUD,PBSC,37.7,33.5,mixed,N,NA,NA,mixed,Y,Y,NR,mixed,NR,NR,65.4,36.3,Brissot E,2019
+78,93,PTCY,PTCy_arm,N,Y,N,174,46,56.32,100,0,0,20.11,0,0,100,MUD,PBSC,43.68,56.32,RIC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,74.85,28.8,Brissot,2020
+78,94,ATG,comparator_arm,N,Y,N,1452,56,52.27,100,0,0,20.04,0,0,100,MUD,PBSC,47.31,52.69,RIC,N,NA,NA,NR,NR,NR,NR,Y,rabbit_thymoglobulin,5,65.08,29.2,Brissot,2020
+79,95,PTCy,PTCy_arm,N,Y,N,44,64.4,68.2,47.7,4.5,18.2,NR,0,38.6,61.4,MUD,PBSC,0,100,RIC,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,56.8,36.4,Brissot E,2024
+79,96,ATG,comparator_arm,N,Y,N,37,64.3,70.3,45.9,5.4,21.6,NR,0,40.5,59.5,MUD,PBSC,0,100,RIC,N,NA,NA,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,5,47.2,24.3,Brissot E,2024
+80,97,PT-Cy/CsA,PTCy_arm,N,N,N,99,57,66.7,30.3,10.1,8.1,NR,0,30.3,69.7,MUD,PBSC,0,1,NMA,Y,50,100,cyclosporine,N,N,N,N,NA,NA,NR,30,Broers AEC,2022
+80,98,CsA/MPA,comparator_arm,N,N,N,52,58,63.5,26.9,13.5,15.4,NR,0,32.7,67.3,MUD,PBSC,3.8,1.9,NMA,N,NA,NA,cyclosporine,Y,N,N,N,NA,NA,NR,48,Broers AEC,2022
+83,99,Standard aGVHD prophylaxis (calcineurin inhibitor-based),comparator_arm,N,N,N,89,6,43.8,0,0,0,NR,7.9,16.9,NR,MUD,BM,20.2,80.9,RIC,N,NA,NA,NR,NR,NR,NR,NR,NR,NR,NR,NR,Bykova TA,2018
+83,100,"Post-transplant Cy-based prophylaxis (PtCy 50 mg/kg D+3, D+4)",PTCy_arm,N,N,N,29,3.6,65.5,0,0,0,NR,37.9,13.8,NR,mixed,BM,51.7,44.8,mixed,Y,50,100,NR,NR,NR,NR,NR,NR,NR,NR,26,Bykova TA,2018
+86,101,PTCy MMUD,PTCy_arm,Y,Y,N,22,60,41,NR,NR,14,NR,0,0,0,MMUD,BM,14,86,RIC,Y,50,100,mixed,Y,N,Y,N,NA,NA,91,18,Camargo JF,2021
+86,102,ATG MMUD,comparator_arm,Y,Y,N,37,54,41,NR,NR,27,NR,0,0,0,MMUD,PBSC,22,78,RIC,N,NA,NA,tacrolimus,N,Y,N,Y,rabbit_thymoglobulin,5-7.5,92,32,Camargo JF,2021
+86,103,PTCy haploidentical,PTCy_arm,N,N,N,19,48,53,NR,NR,11,NR,100,0,0,haplo,PBSC,5,95,RIC,Y,50,100,mixed,Y,N,Y,N,NA,NA,79,37,Camargo JF,2021
+88,104,Modified ATG-PTCy group,PTCy_arm,Y,N,N,40,46,47.5,85,0,15,72.5,100,0,0,haplo,PBSC,100,0,MAC,Y,50,50,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,7.5,NR,15,Cao J,2022
+88,105,ATG group (control),comparator_arm,Y,N,N,40,43,50,80,0,20,62.5,100,0,0,haplo,mixed,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,39.8,Cao J,2022
+89,106,PTCy-ATG-CsA,PTCy_arm,Y,N,N,434,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,PBSC,NR,NR,RIC,Y,50,NR,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,4.5,NR,NR,Carreira,2022
+89,107,PTCy-based (no ATG),PTCy_arm,Y,N,N,13,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,PBSC,NR,NR,mixed,Y,50,NR,NR,NR,NR,NR,N,NA,NA,NR,NR,Carreira,2022
+89,108,ATG-based (no PTCy),comparator_arm,Y,N,N,121,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,PBSC,NR,NR,mixed,N,NA,NA,NR,NR,NR,NR,Y,rabbit_thymoglobulin,NR,NR,NR,Carreira,2022
+89,109,Other GVHD prophylaxis (no PTCy),comparator_arm,Y,N,N,83,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,PBSC,NR,NR,mixed,N,NA,NA,NR,NR,NR,NR,N,NA,NA,NR,NR,Carreira,2022
+94,110,PTCY,PTCy_arm,N,N,N,209,57.1,58.4,19.4,0,80.6,57.3,0,0,53.6,MUD,PBSC,55.8,44.2,MAC,Y,NR,NR,NR,Y,N,NR,N,NA,NA,77.7,23,Chalandon Y,2024
+94,111,ATG,comparator_arm,N,N,N,751,60.1,64,22.6,0,77.4,47.4,0,0,74.6,MUD,PBSC,38.9,61.1,RIC,N,NA,NA,NR,Y,Y,NR,Y,mixed,NR,69.2,30,Chalandon Y,2024
+97,112,"Allo-HSCT-r receiving PT-Cy (first transplant, PT-Cy-based GVHD prophylaxis subset)",PTCy_arm,N,N,N,473,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,PBSC,NR,NR,mixed,Y,50,100,NA,Y,N,Y,N,NA,NA,NR,NR,Chiurlo M,2025
+99,113,PTCy,PTCy_arm,N,Y,N,112,60,NR,0,0,0,NR,0,38,62,MUD,NR,47,53,mixed,Y,50,100,cyclosporine,mixed,mixed,N,N,NA,NA,NR,27,Chiusolo,2026
+99,114,ATG,comparator_arm,N,Y,N,427,58,NR,0,0,0,NR,0,28,72,MUD,NR,21,79,RIC,N,NA,NA,cyclosporine,mixed,mixed,N,Y,mixed,NR,NR,30,Chiusolo,2026
+100,115,MSD,comparator_arm,N,N,Y,160,54,58,53,13,NR,28,0,100,0,MSD,PBSC,34,66,RIC,Y,NR,NR,NA,Y,N,Y,N,NA,NA,83,19,Chorao,2024
+100,116,MUD,PTCy_arm,N,N,Y,124,52,57,47,15,NR,44,0,0,100,MUD,PBSC,49,51,mixed,Y,NR,NR,NA,Y,N,Y,N,NA,NA,78,9.8,Chorao,2024
+100,117,Haplo,PTCy_arm,N,N,Y,82,57,63,49,12,NR,31,100,0,0,haplo,PBSC,32,68,RIC,Y,NR,NR,NA,Y,N,Y,N,NA,NA,81,28,Chorao,2024
+104,118,"PTCy, tacrolimus, MMF (Apr 2016-Apr 2018)",PTCy_arm,Y,N,N,49,54,53.1,59.2,16.3,10.2,16.3,0,26.5,67.3,MUD,PBSC,56.7,43.3,MAC,Y,NR,NR,tacrolimus,Y,N,N,N,NA,NA,59.2,NR,Cooper DL,2021
+104,119,Standard GVHD prophylaxis: tacrolimus + MTX +/- ATG (Jan 2014-Apr 2016),comparator_arm,Y,N,N,41,55,39,46.3,26.3,14.6,0,0,29.3,46.3,MUD,PBSC,78,22,MAC,N,NA,NA,tacrolimus,mixed,Y,N,mixed,NR,NR,46.3,NR,Cooper DL,2021
+105,120,Experimental prophylaxis (PTCy + cyclosporin),PTCy_arm,Y,N,N,66,55.3,56,58,30,12,27,0,100,0,MSD,PBSC,45,55,RIC,Y,50,100,cyclosporine,N,N,N,N,NA,NA,65,NR,Curtis DJ,2025
+105,121,Standard prophylaxis (cyclosporin + methotrexate),comparator_arm,Y,N,N,68,56.2,54,65,15,21,29,0,100,0,MSD,PBSC,43,57,RIC,N,NA,NA,cyclosporine,N,Y,N,N,NA,NA,68,NR,Curtis DJ,2025
+107,122,PT-Cy,PTCy_arm,N,Y,N,30,NR,NR,NR,NR,NR,NR,0,0,100,MUD,PBSC,13,17,NMA,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,NR,23,Dachy,2023
+107,123,ATG,comparator_arm,N,Y,N,64,NR,NR,NR,NR,NR,NR,0,0,100,MUD,PBSC,0,100,RIC,N,NA,NA,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,5,NR,45,Dachy,2023
+109,124,PMH ATG-PTCy-CNI cohort (entire),PTCy_arm,N,Y,N,341,58,57,85,15,0,NR,0,0,100,MUD,PBSC,31,69,RIC,Y,50,100,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,2.5,NR,NR,Desai N,2025
+109,125,CIBMTR CNI-MTX/MMF cohort (entire),comparator_arm,N,Y,N,520,59,54,79,21,0,NR,0,0,100,MUD,PBSC,48,52,mixed,N,NA,NA,mixed,mixed,mixed,N,N,NA,NA,NR,NR,Desai N,2025
+110,126,PTCy,PTCy_arm,Y,N,N,75,61,66,0,0,0,NR,9,25,53,MUD,PBSC,8,92,RIC,Y,NR,NR,NR,Y,N,N,Y,rabbit_thymoglobulin,2,NR,22.3,Desai N,2025
+110,127,Others (No PTCy),comparator_arm,Y,N,N,22,61,64,0,0,0,NR,0,59,27,MSD,PBSC,40,60,RIC,N,NA,NA,NR,mixed,mixed,N,mixed,rabbit_thymoglobulin,NR,NR,54.5,Desai N,2025
+111,128,Group I: CNI-MTX (or MMF),comparator_arm,Y,N,N,210,55,51.9,55.2,11.9,14.3,38.6,0,100,0,MSD,PBSC,61,39,MAC,N,NA,NA,NR,mixed,mixed,N,N,NA,NA,75.7,40.6,Desai N,2025
+111,129,Group II: ATG-CNI-MTX (or MMF),comparator_arm,Y,Y,N,34,58,61.8,47.1,17.6,14.7,26.5,0,100,0,MSD,PBSC,47.1,52.9,RIC,N,NA,NA,NR,mixed,mixed,N,Y,rabbit_thymoglobulin,2,79.4,30.6,Desai N,2025
+111,130,Group III: PTCy-ATG-CNI,PTCy_arm,Y,N,N,78,57,56.4,56.4,6.4,16.7,32.1,0,100,0,MSD,PBSC,7.7,92.3,RIC,Y,50,100,NR,N,N,N,Y,rabbit_thymoglobulin,2,74.4,16,Desai N,2025
+111,131,Group IV: PTCy-CNI-MMF,PTCy_arm,Y,Y,N,91,56,47.3,52.7,13.2,16.5,19.8,0,100,0,MSD,PBSC,52.7,47.3,MAC,Y,50,100,NR,Y,N,N,N,NA,NA,79.1,32,Desai N,2025
+112,132,Group A: PTCy-CNI-MMF,PTCy_arm,Y,Y,N,306,31,55,50,40,10,25,0,0,73,MUD,PBSC,80,14,MAC,Y,NR,NR,NR,Y,N,N,N,NA,NA,56,28.1,Desai N,2026
+112,133,Group B: CNI-MTX/MMF,comparator_arm,Y,N,N,686,29,52,52,40,8,25,0,0,94,MUD,PBSC,91,8,MAC,N,NA,NA,NR,mixed,mixed,N,N,NA,NA,59,39.9,Desai N,2026
+112,134,Group C: CNI-MTX/MMF+ATG,comparator_arm,Y,Y,N,395,29,57,55,37,8,26,0,0,87,MUD,PBSC,91,8,MAC,N,NA,NA,NR,mixed,mixed,N,Y,NR,NR,56,39.7,Desai N,2026
+118,135,MMUD with PTCy (9/10 single-allele MMUD),PTCy_arm,Y,N,N,280,52.1,58.2,100,0,0,14.3,0,0,0,MMUD,PBSC,50.4,49.6,mixed,Y,50,100,mixed,Y,Y,Y,mixed,NR,NR,73.6,31.6,Dholaria,2021
+118,136,"CBT (single or double cord blood, no PTCy)",comparator_arm,Y,N,N,902,50.5,47.7,100,0,0,16,0,0,0,UCB,UCB,46.1,53.9,mixed,N,NA,NA,mixed,Y,Y,Y,mixed,NR,NR,66.9,36,Dholaria,2021
+119,137,Haploidentical donor SCT (PTCy),PTCy_arm,Y,N,N,34,54,55.9,100,0,0,73.5,100,0,0,haplo,PBSC,NR,100,RIC,Y,NR,NR,tacrolimus,Y,N,N,N,NA,NA,41.2,13,Doppelhammer,2019
+119,138,HLA-matched donor SCT (ATG),comparator_arm,Y,N,N,34,54.5,41.2,100,0,0,67.6,0,26.5,61.8,MUD,PBSC,NR,100,RIC,N,NA,NA,cyclosporine,Y,N,N,Y,NR,NR,38.2,50,Doppelhammer,2019
+120,139,Haploidentical donor (PTCy),PTCy_arm,Y,Y,N,132,58,65,0,0,0,NR,100,0,0,haplo,BM,0,NR,NMA,Y,50,100,NR,mixed,N,N,N,NA,NA,NR,34,Dreger,2019
+120,140,MSD (matched sibling donor),comparator_arm,Y,N,N,525,55,61.5,0,0,0,NR,0,100,0,MSD,PBSC,0,NR,RIC,N,NA,NA,NR,mixed,mixed,NR,N,NA,NA,NR,32,Dreger,2019
+120,141,MUD TCD+ (with ATG or alemtuzumab),comparator_arm,N,Y,N,403,55,64.3,0,0,0,NR,0,0,100,MUD,PBSC,0,NR,RIC,N,NA,NA,NR,mixed,mixed,NR,Y,mixed,NR,NR,32,Dreger,2019
+120,142,MUD TCD- (without ATG or alemtuzumab),comparator_arm,Y,N,N,378,56,57.7,0,0,0,NR,0,0,100,MUD,PBSC,0,NR,RIC,N,NA,NA,NR,mixed,mixed,NR,N,NA,NA,NR,42,Dreger,2019
+122,143,PTCy + TAK + MMF,PTCy_arm,N,Y,N,110,NR,50.9,NR,13.6,NR,NR,84.5,0,0,haplo,PBSC,65.5,17.3,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,81.8,17.3,Dybko J,2023
+122,144,CsA + Mtx + ATG,comparator_arm,N,Y,N,35,NR,51.4,NR,20,NR,NR,0,0,0,MMUD,PBSC,85.7,5.7,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,mixed,mixed,82.9,31.4,Dybko J,2023
+123,145,PTCy + TAK + MMF (haplo-HSCT),PTCy_arm,N,N,N,110,NR,NR,NR,NR,NR,NR,100,0,0,haplo,PBSC,NR,NR,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,NR,Dybko J,2023
+123,146,PTCy + TAK + MMF (MMUD-HSCT),PTCy_arm,Y,N,N,17,NR,NR,NR,NR,NR,NR,0,0,0,MMUD,PBSC,NR,NR,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,NR,Dybko J,2023
+123,147,CsA + Mtx + ATG (MMUD-HSCT),comparator_arm,Y,N,N,35,45,51.4,NR,20,NR,NR,0,0,0,MMUD,PBSC,85.7,5.7,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,mixed,NR,82.9,60,Dybko J,2023
+124,148,PTCy-haplo,PTCy_arm,N,N,N,114,44,45.6,NR,15.8,NR,NR,100,0,0,haplo,PBSC,53.5,29.8,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,35.1,Dybko J,2024
+124,149,PTCy-MMUD,PTCy_arm,N,Y,N,23,54,56.5,NR,8.7,NR,NR,0,0,0,MMUD,PBSC,100,0,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,21.7,Dybko J,2024
+124,150,ATG-MMUD,comparator_arm,N,Y,N,37,45,48.6,NR,18.9,NR,NR,0,0,0,MMUD,PBSC,86.5,5.4,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,mixed,NR,NR,59.5,Dybko J,2024
+133,151,HaploHCT (HRT),PTCy_arm,Y,N,N,30,48,53.3,53.3,13.3,16.7,66.7,100,0,0,haplo,PBSC,100,0,MAC,Y,50,100,tacrolimus,N,N,N,N,NA,NA,20,14,Esquirol A,2020
+133,152,sUCBT (single UCB transplantation),comparator_arm,Y,N,N,47,38,57.4,55.3,19.1,0,27.7,0,0,0,UCB,UCB,100,0,MAC,N,NA,NA,cyclosporine,mixed,N,N,Y,rabbit_thymoglobulin,5,29.8,26,Esquirol A,2020
+134,153,Haploidentical HSCT with PTCy (entire cohort),PTCy_arm,N,N,N,236,50,61,32,9,17,34,100,0,0,haplo,PBSC,32,68,RIC,Y,50,100,mixed,Y,N,N,N,NA,NA,77,31,Esquirol A,2021
+136,154,PTCY,PTCy_arm,N,Y,N,82,49.91,62.2,0,0,0,29.3,0,47.6,35.4,MSD,PBSC,0,100,RIC,Y,50,100,other,mixed,N,Y,N,NA,NA,NR,22,Fox ML,2024
+136,155,SIR/TAC,comparator_arm,N,Y,N,89,52.85,62.9,0,0,0,16.9,0,22.5,58.4,MUD,PBSC,0,100,RIC,N,NA,NA,tacrolimus,N,N,Y,Y,NR,NR,NR,25,Fox ML,2024
+137,156,HAPLO,PTCy_arm,N,Y,N,330,55,NR,NR,NR,13,33,100,0,0,haplo,PBSC,0,100,RIC,Y,50,100,mixed,NR,N,Y,Y,NR,NR,NR,41.8,Fox ML,2026
+137,157,MMUD-PTCy,PTCy_arm,N,Y,N,49,60,NR,NR,NR,18,36,0,0,0,MMUD,PBSC,0,100,RIC,Y,50,100,tacrolimus,NR,N,Y,Y,NR,NR,NR,39.4,Fox ML,2026
+137,158,MMUD-OTHERS,comparator_arm,N,Y,N,74,58,NR,NR,NR,23,27,0,0,0,MMUD,PBSC,0,100,RIC,N,NA,NA,tacrolimus,Y,NR,Y,Y,NR,NR,NR,37.8,Fox ML,2026
+140,159,haplo-BM (HLA-haploidentical bone marrow with PTCy),PTCy_arm,Y,N,N,182,60,58.2,53.8,17.6,0,20.3,100,0,0,haplo,BM,0,100,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,59.3,28,Fuchs EJ,2021
+140,160,dUCB (double unrelated umbilical cord blood),comparator_arm,Y,N,N,186,58,52.2,52.7,16.7,0,18.8,0,0,0,UCB,UCB,0,100,RIC,N,NA,NA,cyclosporine,Y,N,N,N,NA,NA,56.3,35,Fuchs EJ,2021
+141,161,Triple PTCY based,PTCy_arm,Y,N,N,188,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,MAC,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,NR,NR,Galli E,2022
+141,162,Triple MTX based,comparator_arm,Y,N,N,43,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,N,NA,NA,cyclosporine,Y,Y,N,N,NA,NA,NR,NR,Galli E,2022
+142,163,Haplo + PT-Cy,PTCy_arm,N,Y,N,279,58,NR,83.5,0,16.5,24.4,100,0,0,haplo,PBSC,56.3,43.7,MAC,Y,NR,NR,NR,Y,N,N,N,NA,NA,67.8,35.6,Gantner,2026
+142,164,9/10-MUD + ATG,comparator_arm,N,Y,N,1134,58,NR,76.4,0,23.6,25.9,0,0,0,MMUD,PBSC,51.2,48.3,MAC,N,NA,NA,NR,mixed,mixed,N,Y,NR,NR,59,30.5,Gantner,2026
+144,165,haplo-HSCT,PTCy_arm,Y,N,N,117,24,47,0,0,0,NR,100,0,0,haplo,mixed,NR,NR,mixed,mixed,NR,NR,mixed,Y,mixed,N,Y,NR,10,NR,21.4,Gao M,2025
+144,166,MSD-HSCT,comparator_arm,Y,N,N,39,27,46.2,0,0,0,NR,0,100,0,MSD,mixed,NR,NR,mixed,mixed,NR,NR,mixed,Y,mixed,N,Y,NR,10,NR,23.1,Gao M,2025
+146,167,ATG-PTCy,PTCy_arm,N,N,Y,148,58,44,51.4,11.5,21.6,18.9,100,0,0,haplo,NR,30.4,NR,NR,Y,50,100,mixed,N,N,N,Y,NR,4.5,82.4,22,Garcia-Horton A,2026
+146,168,PTCy,comparator_arm,N,N,Y,237,57,35.4,50.6,17.7,16,13.9,100,0,0,haplo,NR,40.5,NR,NR,Y,50,100,NR,Y,N,N,N,NA,NA,70.5,30,Garcia-Horton A,2026
+151,169,PTCY,PTCy_arm,N,Y,N,117,40,61,0,100,0,NR,0,0,100,MUD,PBSC,77,23,MAC,Y,NR,NR,mixed,Y,N,Y,N,NA,NA,65,31,Giebel S,2023
+151,170,ATG,comparator_arm,N,Y,N,779,43,57,0,100,0,NR,0,0,100,MUD,PBSC,81.5,18.5,MAC,N,NA,NA,mixed,Y,Y,N,Y,rabbit_thymoglobulin,NR,64,30,Giebel S,2023
+158,171,Haplo-HCT with PT-Cy (whole cohort),PTCy_arm,N,N,N,138,NR,50,67.4,NR,10.9,36.2,100,0,0,haplo,PBSC,42,58,RIC,Y,NR,NR,tacrolimus,Y,N,NR,N,NA,NA,58,31.9,Goldsmith SR,2016
+166,172,"ATG-PTCy group (reduced-dose ATG 7.5 mg/kg + PTCy 20 mg/kg/d d+3,+4)",PTCy_arm,Y,N,N,30,36,63.3,56.7,23.3,20,53.3,100,0,0,haplo,mixed,100,0,MAC,Y,20,40,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,7.5,NR,16.7,Guo W,2026
+166,173,ATG group (standard-dose ATG 10 mg/kg),comparator_arm,Y,N,N,31,34,67.7,48.4,35.5,12.9,51.6,100,0,0,haplo,mixed,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,25.8,Guo W,2026
+167,174,Haplo-HSCT (PTCY),PTCy_arm,Y,Y,N,16,52,68.8,0,0,0,31,100,0,0,haplo,BM,0,100,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,50,13,Haebe S,2023
+167,175,"MRD-HSCT (CNI-based, no ATG)",comparator_arm,Y,N,N,16,53,75,0,0,0,37,0,100,0,MSD,PBSC,0,100,RIC,N,NA,NA,NR,Y,Y,Y,N,NA,NA,56,50,Haebe S,2023
+167,176,URD-HSCT (ATG + CNI-based),comparator_arm,Y,Y,N,16,51,50,0,0,0,12.5,0,0,100,MUD,PBSC,0,100,RIC,N,NA,NA,NR,Y,N,Y,Y,NR,45,44,44,Haebe S,2023
+168,177,Haplo-HCT,PTCy_arm,Y,Y,N,237,54,35,0,0,0,NR,100,0,0,haplo,PBSC,27,73,RIC,Y,NR,NR,NR,mixed,N,NR,N,NA,NA,NR,33,Hamadani M,2022
+168,178,MSD HCT,comparator_arm,Y,N,N,911,51,35,0,0,0,NR,0,100,0,MSD,PBSC,38,62,RIC,N,NA,NA,NR,NR,NR,NR,N,NA,NA,NR,31,Hamadani M,2022
+168,179,MUD TCD+ (with in vivo T-cell depletion),comparator_arm,Y,Y,N,468,53,35,0,0,0,NR,0,0,100,MUD,PBSC,33,67,RIC,N,NA,NA,NR,NR,NR,NR,Y,other,NR,NR,30,Hamadani M,2022
+168,180,MUD TCD- (without in vivo T-cell depletion),comparator_arm,Y,N,N,326,54,37,0,0,0,NR,0,0,100,MUD,PBSC,27,73,RIC,N,NA,NA,NR,NR,NR,NR,N,NA,NA,NR,37,Hamadani M,2022
+170,181,PTCy-haplo,PTCy_arm,Y,N,N,1142,54,62.4,NR,NR,NR,48.4,100,0,0,haplo,PBSC,42,58,RIC,Y,NR,NR,NR,Y,N,N,N,NA,NA,NR,26.4,Harada K,2025
+170,182,UCB-H (UCB CD34+ >=0.84 x 10^5/kg),comparator_arm,Y,N,N,3185,56,50,NR,NR,NR,50.7,0,0,0,UCB,UCB,59.5,40.5,MAC,N,NA,NA,NR,mixed,mixed,N,NR,NR,NR,NR,37.3,Harada K,2025
+170,183,UCB-L (UCB CD34+ <0.84 x 10^5/kg),comparator_arm,Y,N,N,3172,55,64.2,NR,NR,NR,50.3,0,0,0,UCB,UCB,58.4,41.6,MAC,N,NA,NA,NR,mixed,mixed,N,NR,NR,NR,NR,34.4,Harada K,2025
+178,184,Haploidentical (haplo-HSCT with PTCy),PTCy_arm,Y,N,N,118,58,59,NR,NR,NR,NR,100,0,0,haplo,PBSC,29.7,70.3,RIC,Y,50,100,mixed,Y,NR,Y,Y,NR,NR,87.3,26.3,Huntley D,2020
+178,185,MRD (HLA-matched related donor),comparator_arm,Y,N,N,76,54,66,NR,NR,NR,NR,0,100,0,MSD,PBSC,28.9,71.1,RIC,N,NA,NA,mixed,NR,NR,Y,Y,NR,NR,86.8,31.6,Huntley D,2020
+178,186,MUD (HLA-matched unrelated donor),comparator_arm,Y,N,N,62,55,52,NR,NR,NR,NR,0,0,100,MUD,PBSC,22.6,77.4,RIC,N,NA,NA,mixed,NR,NR,Y,Y,NR,NR,88.7,27.4,Huntley D,2020
+178,187,HLA mismatched (MMRD/MMUD),comparator_arm,Y,N,N,27,50,52,NR,NR,NR,NR,0,0,0,MMUD,PBSC,37,63,RIC,N,NA,NA,mixed,NR,NR,Y,Y,NR,NR,81.4,18.5,Huntley D,2020
+180,188,PTCy-Siro,PTCy_arm,Y,N,N,29,48,51.7,10.3,6.9,13.8,NR,0,27.6,72.4,MUD,PBSC,27.6,72.4,RIC,Y,50,100,NA,N,N,Y,N,NA,NA,62.1,17.2,Iqbal M,2023
+180,189,Tac-MTX,comparator_arm,Y,N,N,87,61,47.1,37.9,13.8,24.1,NR,0,32.2,67.8,MUD,PBSC,34.5,65.5,RIC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,69,34.5,Iqbal M,2023
+183,190,Cohort A: MRD/MUD CNI-based,comparator_arm,Y,N,N,94,52,53,46,13,15,55,0,84,16,MSD,NR,81,19,MAC,N,NA,NA,NR,NR,NR,NR,NR,NR,NR,73,35,Jamy O,2022
+183,191,Cohort B: MRD/MUD 1-dose PTCy/Tac/MMF,PTCy_arm,Y,N,N,103,53,50,42,9,24,60,0,2,98,MUD,NR,92,8,MAC,Y,50,50,tacrolimus,Y,N,N,NR,NR,NR,74,33,Jamy O,2022
+183,192,Cohort C: Haplo 2-dose PTCy/Tac/MMF,PTCy_arm,Y,N,N,28,50,57,61,11,4,56,100,0,0,haplo,NR,93,7,MAC,Y,50,100,tacrolimus,Y,N,N,NR,NR,NR,82,28,Jamy O,2022
+184,193,haplo-PBSCT,PTCy_arm,Y,N,N,87,61,56.3,78.2,0,20.7,56.3,100,0,0,haplo,PBSC,0,100,RIC,Y,50,50,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,5,NR,9.2,Jia Y,2025
+184,194,MUD/MSD-PBSCT,comparator_arm,Y,N,N,40,61.5,50,75,0,22.5,57.5,0,52.5,47.5,mixed,PBSC,0,100,RIC,mixed,50,50,cyclosporine,Y,mixed,N,Y,rabbit_thymoglobulin,5,NR,12.3,Jia Y,2025
+185,195,PTCy,PTCy_arm,N,Y,N,82,60,54.9,NR,NR,26,20,0,0,0,MMUD,mixed,41,NR,NR,Y,50,100,mixed,Y,N,Y,N,NA,NA,67,NR,Jimenez Jimenez,2022
+185,196,ATG,comparator_arm,N,Y,N,46,55,52.2,NR,NR,24,33,0,0,0,MMUD,PBSC,57,NR,NR,N,NA,NA,tacrolimus,N,Y,N,Y,rabbit_thymoglobulin,5-7.5,80,NR,Jimenez Jimenez,2022
+187,197,PTCy-haplo,PTCy_arm,Y,N,N,330,44.5,60.9,0,100,0,25.5,100,0,0,haplo,PBSC,50.6,49.4,mixed,Y,NR,NR,NR,NR,NR,NR,NR,NR,NR,80.6,NR,Jo T,2024
+187,198,UCB,comparator_arm,Y,N,N,1669,45,53,0,100,0,21.1,0,0,0,UCB,UCB,54.8,45.1,mixed,N,NA,NA,NR,NR,NR,NR,NR,NR,NR,80,NR,Jo T,2024
+192,199,PTcy received,PTCy_arm,Y,N,N,49,NR,NR,NR,NR,NR,NR,28.6,18.4,53.1,mixed,NR,NR,NR,NR,Y,50,100,cyclosporine,Y,N,N,mixed,NR,NR,NR,NR,Kahraman,2026
+192,200,PTcy not received,comparator_arm,Y,N,N,29,NR,NR,NR,NR,NR,NR,0,100,0,MSD,NR,NR,NR,NR,N,NA,NA,cyclosporine,Y,N,N,mixed,NR,NR,NR,NR,Kahraman,2026
+196,201,Haploidentical,PTCy_arm,Y,Y,N,185,55,63.8,0,0,0,7,100,0,0,haplo,BM,0,NR,mixed,Y,NR,NR,tacrolimus,Y,N,N,N,NA,NA,NR,27,Kanate AS,2016
+196,202,URD without ATG,comparator_arm,Y,N,N,491,55,61.3,0,0,0,9.8,0,0,100,MUD,PBSC,0,NR,mixed,N,NA,NA,mixed,mixed,mixed,mixed,N,NA,NA,NR,40,Kanate AS,2016
+196,203,URD with ATG,comparator_arm,Y,Y,N,241,55,67.6,0,0,0,15.4,0,0,100,MUD,PBSC,0,NR,mixed,N,NA,NA,mixed,mixed,mixed,mixed,Y,NR,NR,NR,49,Kanate AS,2016
+197,204,Post-AHSCT cyclophosphamide (haploidentical and 9/10 MMUD),PTCy_arm,Y,N,N,49,NR,NR,NR,NR,NR,NR,NR,0,0,haplo,mixed,NR,NR,mixed,Y,50,100,NR,NR,NR,NR,NR,NR,NR,NR,NR,Kaphan E,2021
+197,205,No post-AHSCT cyclophosphamide,comparator_arm,Y,N,N,119,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,mixed,NR,NR,mixed,N,NA,NA,NR,NR,NR,NR,NR,NR,NR,NR,NR,Kaphan E,2021
+198,206,Post-transplant Cy (PTCy + Tacrolimus + MMF),PTCy_arm,Y,N,N,15,51,53,53.3,26.7,13.3,NR,0,100,0,MSD,NR,60,40,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,100,13.3,Kara,2021
+198,207,MTX-CysA (Methotrexate + Cyclosporine A),comparator_arm,Y,N,N,25,44,60,48,28,0,NR,0,100,0,MSD,NR,72,28,MAC,N,NA,NA,cyclosporine,N,Y,N,N,NA,NA,100,28,Kara,2021
+201,208,Haplo-HSCT (PTCy),PTCy_arm,Y,N,N,59,40,54.2,NR,NR,NR,NR,100,0,0,haplo,BM,27.1,33.9,mixed,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,91.5,39,Kerbauy MN,2021
+201,209,UD-HSCT (ATG),comparator_arm,Y,N,N,68,46.5,57.4,NR,NR,NR,NR,0,0,100,MUD,mixed,77.9,19.1,MAC,N,NA,NA,NR,N,Y,N,Y,rabbit_thymoglobulin,5,88.2,47.1,Kerbauy MN,2021
+203,210,PTCy GVHD Prophylaxis,PTCy_arm,N,N,Y,99,48,61.6,40.4,32.3,5.1,5.1,0,55.6,44.4,MSD,PBSC,50.1,48.9,mixed,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,16,Kim H,2026
+203,211,Non-PTCy GVHD Prophylaxis (Tac/MTX),comparator_arm,N,N,Y,252,46,58.7,35.3,24.6,10.7,14.7,0,51.6,48.4,MSD,PBSC,41.3,47.6,mixed,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,NR,33,Kim H,2026
+207,212,PTCy/ATG,PTCy_arm,Y,N,N,21,45.47,47.6,81,0,4.8,NR,0,100,0,MSD,PBSC,100,0,MAC,Y,50,100,NA,N,N,N,Y,rabbit_thymoglobulin,5,95.2,33.3,Kunacheewa C,2020
+207,213,MTX/CSA,comparator_arm,Y,N,N,21,36.2,57.1,57.1,0,4.8,NR,0,100,0,MSD,PBSC,100,0,MAC,N,NA,NA,cyclosporine,N,Y,N,N,NA,NA,100,66.7,Kunacheewa C,2020
+208,214,Haplo-Cord,comparator_arm,Y,N,N,51,39,55,100,0,0,57,0,0,0,UCB,UCB,100,0,MAC,N,NA,NA,cyclosporine,N,N,N,Y,NR,4,NR,9.8,Kwon M,2017
+208,215,PTCY-haplo,PTCy_arm,Y,N,N,36,38,58,100,0,0,25,100,0,0,haplo,PBSC,100,0,MAC,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,NR,29,Kwon M,2017
+209,216,PTCy,PTCy_arm,Y,N,N,57,51,65,NR,18,NR,20,0,100,0,MSD,PBSC,40,60,RIC,Y,50,100,cyclosporine,mixed,N,N,N,NA,NA,NR,22.6,Kwon M,2019
+209,217,CsA-MTX,comparator_arm,Y,N,N,50,49,68,NR,22,NR,26,0,100,0,MSD,PBSC,64,36,MAC,N,NA,NA,cyclosporine,N,Y,N,N,NA,NA,NR,52.2,Kwon M,2019
+211,218,Posttransplant cyclophosphamide (PTCy),PTCy_arm,N,Y,N,49,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,PBSC,NR,NR,mixed,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,NR,NR,Langer R,2024
+211,219,ATG-based prophylaxis,comparator_arm,N,Y,N,129,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,PBSC,NR,NR,mixed,N,NA,NA,NR,NR,NR,NR,Y,NR,NR,NR,NR,Langer R,2024
+216,220,mPTCy group,PTCy_arm,Y,N,N,55,22,58.2,0,0,0,NR,100,0,0,haplo,mixed,NR,NR,mixed,Y,50,100,tacrolimus,Y,N,N,Y,other,100 (porcine ALG) or 10 (rabbit ATG),NR,18.4,Li Y,2022
+216,221,G-CSF/ATG group,comparator_arm,Y,N,N,75,22,62.7,0,0,0,NR,100,0,0,haplo,mixed,NR,NR,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,19.32,Li Y,2022
+217,222,PTCy,PTCy_arm,Y,N,N,119,61,62.2,100,0,0,NR,100,0,0,haplo,PBSC,33.6,66.4,RIC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,76.3,26.6,Li Z,2018
+217,223,ATG,comparator_arm,Y,N,N,35,59.7,57.1,100,0,0,NR,100,0,0,haplo,PBSC,48.6,51.4,mixed,N,NA,NA,NR,NR,NR,NR,Y,NR,NR,85.7,NR,Li Z,2018
+219,224,PTCy,PTCy_arm,Y,N,N,80,56,53.8,51.3,16.3,7.5,NR,100,0,0,haplo,NR,10,90,RIC,Y,50,100,NR,Y,N,N,N,NA,NA,NR,NR,Liu YC,2025
+219,225,CsA + scMTX,comparator_arm,Y,N,N,500,42,57.2,38.4,20.2,4.8,NR,0,44,52.6,MUD,NR,65.4,34.6,MAC,N,NA,NA,cyclosporine,N,Y,N,mixed,rabbit_thymoglobulin,NR,NR,NR,Liu YC,2025
+221,226,PTCy-based GVHD prophylaxis (haplo-HSCT),PTCy_arm,Y,N,N,313,46,58,74,26,0,34,100,0,0,haplo,PBSC,41,59,RIC,Y,NR,NR,NR,Y,NR,NR,N,NA,NA,NR,31,Lorentino F,2017
+221,227,ATG-based GVHD prophylaxis (haplo-HSCT),comparator_arm,Y,N,N,196,44,56,71,29,0,43,100,0,0,haplo,PBSC,64,36,MAC,N,NA,NA,NR,Y,NR,Y,Y,NR,30,NR,34,Lorentino F,2017
+226,228,CD34-selected graft,comparator_arm,N,N,N,104,51.2,54.4,55.3,26.3,16.7,31.6,0,37.7,62.3,MUD,PBSC,100,0,MAC,N,NA,NA,NA,N,N,N,Y,rabbit_thymoglobulin,NR,43.3,16.3,Luznik L,2022
+226,229,Post-transplant cyclophosphamide (PTCy),PTCy_arm,Y,N,N,109,50.9,62.3,64.9,23.7,9.6,34.2,0,37.7,62.3,MUD,BM,100,0,MAC,Y,50,100,NA,N,N,N,N,NA,NA,49.5,37.6,Luznik L,2022
+226,230,Tacrolimus and methotrexate (Tac/MTX) control,comparator_arm,Y,N,N,114,51.3,54.2,63.6,19.5,13.6,33.9,0,38.1,61.9,MUD,BM,100,0,MAC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,50,29.8,Luznik L,2022
+232,231,Haplo (HaploHCT with PTCy),PTCy_arm,Y,N,N,487,33,62.2,0,100,0,33.5,100,0,0,haplo,mixed,73.5,26.5,MAC,Y,50,100,NR,Y,N,N,N,NA,NA,79.5,32,Al Malki,2020
+232,232,MUD (8/8 matched unrelated donor with CNI-based prophylaxis +/- ATG),comparator_arm,Y,N,N,974,36,62.2,0,100,0,33.5,0,0,100,MUD,PBSC,73.5,26.5,MAC,N,NA,NA,NR,Y,Y,Y,Y,NR,NR,58,33,Al Malki,2020
+236,233,PTCy,PTCy_arm,N,Y,N,123,53,NR,19,29,2,NR,NR,25,46,MUD,PBSC,100,0,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,40,Massoud R,2022
+236,234,ATLG,comparator_arm,N,Y,N,476,53,NR,43,10,9,NR,0,16,64,MUD,PBSC,100,0,MAC,N,NA,NA,mixed,mixed,mixed,N,Y,rabbit_grafalon_ATLG,49.8,NR,36,Massoud R,2022
+238,235,PTCY/TAC/MMF,PTCy_arm,Y,N,N,107,62,51.4,39.3,12.1,24.3,14,0,0,46.7,MMUD,PBSC,27.1,72.9,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,33.7,20,Maurer K,2023
+238,236,"TAC-based (TAC/MTX, TAC/MTX/Rap, TAC/Rap pooled)",comparator_arm,Y,N,N,463,64,60.9,38.4,10.4,27.6,12.5,0,0,94.2,MUD,PBSC,26.6,73.4,RIC,N,NA,NA,tacrolimus,N,Y,Y,N,NA,NA,41.9,20,Maurer K,2023
+241,237,PTCY,PTCy_arm,Y,N,N,184,63,57.6,62,0,38,18.5,48.9,2.7,15.8,haplo,PBSC,28.8,71.2,RIC,Y,50,100,tacrolimus,NR,N,NR,N,NA,NA,NR,NR,Mehta A,2026
+241,238,No PTCY,comparator_arm,Y,N,N,402,63,59,64.2,0,35.8,18.2,0,19.9,73.1,MUD,PBSC,37.6,62.4,RIC,N,NA,NA,tacrolimus,N,Y,mixed,N,NA,NA,NR,NR,Mehta A,2026
+242,239,PTCy group,PTCy_arm,Y,N,N,41,50,51.2,36.6,17.1,NR,32,0,0,0,MMUD,BM,56,44,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,88,37,Mehta RS,2016
+242,240,Conventional GVHD prophylaxis group,comparator_arm,Y,N,N,72,54,62.5,41.7,5.6,NR,26,0,0,0,MMUD,BM,50,50,mixed,N,NA,NA,tacrolimus,N,Y,N,Y,rabbit_thymoglobulin,NR,86,36,Mehta RS,2016
+243,241,Haploidentical group,PTCy_arm,N,N,Y,275,51,NR,NR,18,NR,35,100,0,0,haplo,BM,24,76,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,81,40,Mehta RS,2022
+243,242,MUD group,comparator_arm,N,N,Y,246,61,NR,NR,4,NR,33,0,0,100,MUD,PBSC,60,40,MAC,Y,50,100,tacrolimus,mixed,N,N,N,NA,NA,70,48,Mehta RS,2022
+243,243,MSD group,comparator_arm,N,N,N,140,60,NR,NR,4,NR,26,0,100,0,MSD,PBSC,74,26,MAC,Y,50,100,tacrolimus,mixed,N,N,N,NA,NA,77,39,Mehta RS,2022
+244,244,MUD Tac/MTX/ATG,comparator_arm,N,N,Y,306,53,NR,NR,NR,NR,36,0,0,100,MUD,PBSC,60,40,MAC,N,NA,NA,tacrolimus,N,Y,N,Y,rabbit_thymoglobulin,4,65,42,Mehta RS,2022
+244,245,MUD PTCy-based,PTCy_arm,N,N,Y,246,61,NR,NR,NR,NR,40,0,0,100,MUD,PBSC,64,36,MAC,Y,50,100,tacrolimus,mixed,N,N,N,NA,NA,63,52,Mehta RS,2022
+244,246,MSD Tac/MTX,comparator_arm,Y,N,N,272,54,NR,NR,NR,NR,49,0,100,0,MSD,PBSC,63,37,MAC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,51,37,Mehta RS,2022
+244,247,MSD PTCy-based,PTCy_arm,Y,N,N,140,60,NR,NR,NR,NR,51,0,100,0,MSD,PBSC,74,26,MAC,Y,50,100,tacrolimus,mixed,N,N,N,NA,NA,49,44,Mehta RS,2022
+245,248,Younger haploidentical (donor <35 y),PTCy_arm,Y,N,N,187,41.4,56,0,100,0,NR,100,0,0,haplo,PBSC,56,45,MAC,Y,NR,NR,NR,Y,N,NR,N,NA,NA,72,16.3,Mehta RS,2023
+245,249,Older MUD (donor >=35 y),comparator_arm,Y,N,N,232,42.7,58,0,100,0,NR,0,0,100,MUD,PBSC,76,23,MAC,N,NA,NA,NR,mixed,mixed,NR,N,NA,NA,62,21.5,Mehta RS,2023
+246,250,MUD-CNI,comparator_arm,Y,N,N,7272,61,56.4,54.1,16.6,29.2,31.6,0,0,100,MUD,PBSC,47.4,52.6,RIC,N,NA,NA,mixed,Y,Y,Y,Y,NR,NR,62.2,NR,Mehta RS,2026
+246,251,MUD-PTCy,PTCy_arm,Y,N,N,1681,62,59.9,54.1,14.9,31.1,28.6,0,0,100,MUD,PBSC,39.7,60.3,RIC,Y,50,100,mixed,Y,N,Y,Y,NR,NR,62.2,NR,Mehta RS,2026
+246,252,MMUD-PTCy,PTCy_arm,N,Y,N,613,58,45.4,53.8,20.9,25.3,28.2,0,0,0,MMUD,PBSC,39.8,60.2,RIC,Y,50,100,mixed,Y,N,Y,Y,NR,NR,66.2,NR,Mehta RS,2026
+246,253,MMUD-CNI,comparator_arm,N,Y,N,459,58,57.1,52.9,20.3,26.8,39,0,0,0,MMUD,PBSC,47.7,52.3,RIC,N,NA,NA,mixed,Y,Y,Y,Y,NR,NR,68.8,NR,Mehta RS,2026
+248,254,HAPLO and PT-CY,PTCy_arm,Y,N,N,67,51,61.2,NR,NR,NR,NR,100,0,0,haplo,BM,88,12,MAC,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,86.9,24,Metafuni E,2018
+248,255,UD and ATG,comparator_arm,Y,N,N,30,48,56.7,NR,NR,NR,NR,0,0,100,MUD,PBSC,87,13,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,rabbit_thymoglobulin,7.5,93.3,30,Metafuni E,2018
+250,256,Haploidentical,PTCy_arm,Y,N,N,330,50,55.8,NR,NR,NR,NR,100,0,0,haplo,BM,51.8,48.2,MAC,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,NR,NR,Mikulska M,2018
+250,257,MRD (Matched Related Donor),comparator_arm,Y,N,N,115,44,57.4,NR,NR,NR,NR,0,100,0,MSD,NR,64.3,35.7,MAC,N,NA,NA,cyclosporine,N,Y,N,N,NA,NA,NR,NR,Mikulska M,2018
+250,258,MUD/MMRD (Matched Unrelated or 1-Ag Mismatched Related),comparator_arm,Y,N,N,81,47,67.9,NR,NR,NR,NR,0,0,NR,MUD,NR,58,42,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,NR,NR,NR,NR,Mikulska M,2018
+250,259,CBT (Cord Blood Transplant),comparator_arm,Y,N,N,27,49,59.3,NR,NR,NR,NR,0,0,0,UCB,UCB,81.5,18.5,MAC,N,NA,NA,cyclosporine,Y,N,N,Y,NR,NR,NR,NR,Mikulska M,2018
+253,260,"MAC (myeloablative conditioning, haplo-PBSCT + PTCy)",comparator_arm,N,N,Y,24,47,75,71,4,8,54,100,0,0,haplo,PBSC,100,0,MAC,Y,NR,NR,tacrolimus,Y,N,N,N,NA,NA,58,NR,Modi D,2021
+253,261,"RIC (reduced intensity conditioning, haplo-PBSCT + PTCy)",PTCy_arm,N,N,Y,65,62,57,43,15,25,37,100,0,0,haplo,PBSC,0,100,RIC,Y,NR,NR,tacrolimus,Y,N,N,N,NA,NA,64,NR,Modi D,2021
+254,262,PTcy,PTCy_arm,N,Y,N,25,62,52,76,0,24,28,0,0,0,MMUD,PBSC,20,80,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,80,24.4,Modi D,2021
+254,263,Thymoglobulin,comparator_arm,N,Y,N,51,53,53,78,0,22,39,0,0,0,MMUD,PBSC,59,41,MAC,N,NA,NA,tacrolimus,Y,N,N,Y,rabbit_thymoglobulin,4.5,80,52.9,Modi D,2021
+256,264,Haplo-HSCT with PTCy/Tac/MMF,PTCy_arm,N,N,N,63,50.69,31.7,47.6,12.7,11.1,NR,100,0,0,haplo,BM,6.3,93.7,RIC,Y,NR,NR,tacrolimus,Y,N,N,N,NA,NA,NR,NR,Mohyuddin GR,2019
+257,265,PTCy,PTCy_arm,N,Y,N,132,55,59.8,41.7,12.9,16.7,28,0,0,0,MMUD,PBSC,49.2,50.8,mixed,Y,NR,NR,mixed,Y,Y,Y,N,NA,NA,NR,28.6,Moiseev I,2025
+257,266,ATG,comparator_arm,N,Y,N,318,52.5,61.9,45.3,16.4,10.7,27,0,0,0,MMUD,PBSC,59.2,40.8,MAC,N,NA,NA,mixed,Y,Y,NR,Y,mixed,NR,NR,38.2,Moiseev I,2025
+258,267,Single-agent PTCy,PTCy_arm,Y,N,N,78,34,55,48,26,1,NR,0,100,0,MSD,BM,29,71,RIC,Y,50,100,NA,N,N,N,N,NA,NA,NR,8,Moiseev IS,2017
+258,268,CNI-based prophylaxis,comparator_arm,Y,N,N,105,31,59,49,34,5,NR,0,100,0,MSD,BM,33,67,RIC,N,NA,NA,mixed,Y,Y,N,N,NA,NA,NR,27,Moiseev IS,2017
+260,269,PTCy/TAC/MMF,PTCy_arm,Y,N,N,46,46,43,58.7,41.3,0,NR,0,33,67,MUD,PBSC,100,0,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,13,Molina A,2026
+260,270,TAC/MTX,comparator_arm,Y,N,N,191,48,48,71.7,28.3,0,NR,0,42,58,MUD,PBSC,100,0,MAC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,NR,28.4,Molina A,2026
+261,271,PTCy-Sir-MMF,PTCy_arm,Y,N,N,91,53,60,72,14,14,42,0,48,52,MUD,PBSC,100,0,MAC,Y,50,100,NA,Y,N,Y,N,NA,NA,77,19,Montoro J,2021
+261,272,TCD (CD34+ selected ex vivo T-cell depletion),comparator_arm,Y,N,N,38,50,45,69,13,18,21,0,31,37,mixed,PBSC,100,0,MAC,N,NA,NA,NA,N,N,N,Y,rabbit_thymoglobulin,5,68,11,Montoro J,2021
+262,273,Conventional CNI-based,comparator_arm,Y,N,N,270,34,59.3,0,0,0,15.2,0,74,26,MSD,PBSC,31,69,RIC,N,NA,NA,cyclosporine,Y,Y,N,N,NA,NA,NR,31,Montoro,2024
+262,274,PTCy,PTCy_arm,Y,N,N,176,33,58.5,0,0,0,17,0,50,50,mixed,PBSC,25,75,RIC,Y,NR,NR,other,Y,Y,Y,N,NA,NA,NR,26,Montoro,2024
+263,275,PTCy-haplo,PTCy_arm,Y,Y,N,489,55,61.1,100,0,0,24.1,100,0,0,haplo,PBSC,48.5,51.5,mixed,Y,50 (49.7%) or 40 (32.5%) or other (17.8%),100 (49.7%) or 80 (32.5%) or other/missing (17.8%),tacrolimus,Y,N,N,N,NA,NA,NR,24.4,Moriguchi,2024
+263,276,ATG-free MUD,comparator_arm,Y,N,N,211,53,64.5,100,0,0,19,0,0,100,MUD,PBSC,78.2,21.8,MAC,N,NA,NA,tacrolimus,Y,Y,N,N,NA,NA,NR,31.4,Moriguchi,2024
+263,277,ATG-administered MUD,comparator_arm,Y,Y,N,99,54,68.7,100,0,0,24.2,0,0,100,MUD,PBSC,75.8,24.2,MAC,N,NA,NA,tacrolimus,Y,Y,N,Y,NR,NR,NR,30.4,Moriguchi,2024
+264,278,Older patients transplanted with PTCy (n=92),PTCy_arm,N,N,N,92,71,80,71,0,13,NR,13,8,73,MUD,PBSC,NR,NR,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,NR,Morsink,2024
+268,279,HaploCy,PTCy_arm,Y,N,N,757,NR,60.6,69.8,3.4,26.8,NR,100,0,0,haplo,PBSC,41.5,58.5,RIC,Y,NR,NR,NR,NR,N,NR,N,NA,NA,NR,NR,Mulroney CM,2021
+268,280,SibCy,PTCy_arm,Y,N,N,403,NR,60.3,76.9,4.7,18.4,NR,0,100,0,MSD,PBSC,55.1,44.9,MAC,Y,NR,NR,NR,NR,N,NR,N,NA,NA,NR,NR,Mulroney CM,2021
+268,281,SibCNI,comparator_arm,Y,N,N,1605,NR,58.2,63.9,3.7,32.4,NR,0,100,0,MSD,PBSC,58.3,41.7,MAC,N,NA,NA,other,mixed,mixed,NR,N,NA,NA,NR,NR,Mulroney CM,2021
+270,282,PTCy +/- others,PTCy_arm,Y,N,N,37,NR,NR,0,0,0,NR,NR,NR,NR,NR,NR,NR,NR,NR,Y,NR,NR,NR,mixed,N,mixed,mixed,NR,NR,NR,NR,Murthy HS,2022
+270,283,CNI-based GVHD prophylaxis (no PTCy),comparator_arm,Y,N,N,229,NR,NR,0,0,0,NR,NR,NR,NR,NR,NR,NR,NR,NR,N,NA,NA,NR,mixed,mixed,N,mixed,rabbit_thymoglobulin,NR,NR,NR,Murthy HS,2022
+271,284,MUD,comparator_arm,Y,N,N,276,59,57,43.1,12.7,NR,NR,0,0,100,MUD,BM,41.3,58.7,RIC,mixed,NR,NR,tacrolimus,mixed,Y,NR,mixed,NR,NR,57,51,Mushtaq MU,2024
+271,285,Haplo,PTCy_arm,Y,N,N,176,54,68,42,9.7,NR,NR,100,0,0,haplo,PBSC,31.3,68.7,RIC,Y,NR,NR,tacrolimus,Y,N,N,N,NA,NA,62,50,Mushtaq MU,2024
+272,286,Haploidentical,PTCy_arm,N,N,Y,1830,46,63.9,0,0,0,NR,100,0,0,haplo,PBSC,22.7,77.3,RIC,Y,NR,NR,NR,Y,NR,NR,N,NA,NA,NR,33,Mussetti,2023
+272,287,Matched Unrelated (MUD 8/8),comparator_arm,N,N,Y,310,53,69.3,0,0,0,NR,0,0,100,MUD,PBSC,25.8,74.2,RIC,Y,NR,NR,NR,Y,Y,Y,N,NA,NA,NR,24,Mussetti,2023
+273,288,"Older cohort - CBT (patient age >=50, CBT)",comparator_arm,Y,N,N,2675,61,NR,62.8,13.6,21.6,51.3,0,0,0,UCB,UCB,55.8,44.2,MAC,N,NA,NA,NR,NR,NR,NR,N,NA,NA,85.5,41.9,Nagayama T,2025
+273,289,"Older cohort - Younger haplo (patient age >=50, haplo donor <40 yrs)",PTCy_arm,Y,N,N,451,61,NR,53.4,15.5,29.9,47,100,0,0,haplo,PBSC,32.4,67.6,RIC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,88.9,23.1,Nagayama T,2025
+273,290,"Older cohort - Older haplo (patient age >=50, haplo donor >=40 yrs)",PTCy_arm,Y,N,N,120,59,NR,62.5,13.3,20.8,40,100,0,0,haplo,PBSC,35.8,64.2,RIC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,87.5,26.3,Nagayama T,2025
+273,291,"Younger cohort - CBT (patient age <50, CBT)",comparator_arm,Y,N,N,1532,40,NR,59.7,27.9,9.2,35.9,0,0,0,UCB,UCB,87.1,12.9,MAC,N,NA,NA,NR,NR,NR,NR,N,NA,NA,76.1,41.2,Nagayama T,2025
+273,292,"Younger cohort - Younger haplo (patient age <50, haplo donor <40 yrs)",PTCy_arm,Y,N,N,171,34,NR,56.1,29.8,7.6,31.8,100,0,0,haplo,PBSC,80.7,19.3,MAC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,73.1,22.1,Nagayama T,2025
+273,293,"Younger cohort - Older haplo (patient age <50, haplo donor >=40 yrs)",PTCy_arm,Y,N,N,167,41,NR,50.9,36.5,10.8,25.9,100,0,0,haplo,PBSC,79.6,20.4,MAC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,80.2,39.3,Nagayama T,2025
+276,294,HaploSCT,PTCy_arm,Y,N,N,413,37.1,64.9,0,100,0,NR,100,0,0,haplo,PBSC,68,32,MAC,Y,NR,NR,NR,NR,NR,NR,Y,NR,NR,78,36.3,Nagler A,2021
+276,295,MSD,comparator_arm,Y,N,N,1891,37.7,59.8,0,100,0,NR,0,100,0,MSD,PBSC,83.2,16.8,MAC,N,NA,NA,cyclosporine,NR,Y,NR,Y,NR,NR,71.9,28.9,Nagler A,2021
+277,296,PTCy,PTCy_arm,N,Y,N,336,36,63.8,0,100,0,16.4,100,0,0,haplo,BM,78.3,21.7,MAC,Y,NR,NR,mixed,Y,N,N,N,NA,NA,79.2,30.5,Nagler A,2021
+277,297,ATG,comparator_arm,N,Y,N,98,35.5,62.2,0,100,0,30.6,100,0,0,haplo,PBSC,69.4,30.6,MAC,N,NA,NA,mixed,Y,Y,Y,Y,NR,NR,70.3,32.7,Nagler A,2021
+278,298,PTCy URD AML CR2,PTCy_arm,N,N,N,127,45.5,54.3,100,0,0,5.5,0,0,60.6,MUD,PBSC,50.4,49.6,mixed,Y,NR,NR,mixed,Y,Y,Y,mixed,NR,NR,77.8,26.2,Nagler A,2023
+279,299,de novo AML,PTCy_arm,N,N,N,1480,55.8,57.5,100,0,0,29.9,100,0,0,haplo,PBSC,50.1,49.9,mixed,Y,NR,NR,mixed,Y,NR,NR,N,NA,NA,78.7,27.2,Nagler A,2023
+279,300,secondary AML (sAML),PTCy_arm,N,N,N,231,60.8,61.9,100,0,0,32.9,100,0,0,haplo,PBSC,35.1,64.9,RIC,Y,NR,NR,mixed,Y,NR,NR,N,NA,NA,76.2,29.1,Nagler A,2023
+280,301,PTCy,PTCy_arm,Y,Y,N,707,52.7,56.4,100,0,0,25.2,0,0,66.2,MUD,PBSC,61.7,38.3,MAC,Y,NR,NR,NR,mixed,N,mixed,mixed,NR,NR,74.6,23.9,Nagler A,2024
+280,302,No PTCy,comparator_arm,Y,Y,N,6342,56.6,53.6,100,0,0,27.1,0,0,83.6,MUD,PBSC,50.2,49.8,mixed,N,NA,NA,cyclosporine,mixed,mixed,mixed,Y,NR,NR,65.6,25.2,Nagler A,2024
+281,303,PTCy/CSA or TAC/MMF,PTCy_arm,Y,N,N,402,48.7,55.7,100,0,0,22.2,0,19.2,45.3,MUD,PBSC,48.5,51.5,RIC,Y,NR,NR,mixed,Y,N,N,N,NA,NA,77.8,21.2,Nagler A,2024
+281,304,ATG/CSA or TAC/MTX,comparator_arm,Y,N,N,5648,51.5,52.1,100,0,0,25.7,0,22.6,61.4,MUD,PBSC,59,41,MAC,N,NA,NA,mixed,N,Y,N,Y,NR,NR,71.8,20.4,Nagler A,2024
+282,305,"yHaplo (young haploidentical, donor <35y)",PTCy_arm,N,N,Y,1065,56.5,59.2,100,0,0,32.2,100,0,0,haplo,PBSC,48.9,51.1,mixed,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,77.5,22.6,Nagler A,2024
+282,306,"oMMUD (old MMUD, donor >=35y, 8/10 or 9/10)",PTCy_arm,N,N,Y,147,55.1,58.5,100,0,0,25.7,0,0,0,MMUD,PBSC,49,51,mixed,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,73.8,35.7,Nagler A,2024
+282,307,"oHaplo (old haploidentical, donor >=35y)",PTCy_arm,N,N,Y,1315,57.9,55.3,100,0,0,28.1,100,0,0,haplo,PBSC,46.8,53.2,mixed,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,79.7,31,Nagler A,2024
+282,308,"yMMUD (young MMUD, donor <35y, 8/10 or 9/10)",comparator_arm,N,N,Y,271,55.8,56.8,100,0,0,22.3,0,0,0,MMUD,PBSC,53.3,46.7,mixed,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,71.3,24.3,Nagler A,2024
+287,309,PTCy,PTCy_arm,Y,N,N,118,51.9,NR,100,0,0,17.8,0,100,0,MSD,PBSC,58.5,41.5,MAC,Y,50,100,mixed,mixed,mixed,mixed,N,NA,NA,78.8,25.2,Nagler A,2022
+287,310,CSA/MTX,comparator_arm,Y,N,N,1202,45.1,NR,100,0,0,21.5,0,100,0,MSD,PBSC,81.5,18.5,MAC,N,NA,NA,cyclosporine,N,Y,N,N,NA,NA,70.2,22.9,Nagler A,2022
+289,311,Haplo-PBSCT (PTCy),PTCy_arm,Y,N,N,136,60,80.1,0,0,100,71.3,100,0,0,haplo,PBSC,36.8,63.2,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,19.9,Nakaya Y,2024
+289,312,MUD-BMT,comparator_arm,Y,N,N,465,60,67.7,0,0,100,61.1,0,0,100,MUD,BM,44.9,54.8,RIC,N,NA,NA,tacrolimus,Y,Y,N,mixed,NR,NR,NR,32.5,Nakaya Y,2024
+289,313,MUD-PBSCT,comparator_arm,Y,N,N,96,60,68.8,0,0,100,60.4,0,0,100,MUD,PBSC,53.1,46.9,MAC,N,NA,NA,tacrolimus,Y,Y,N,mixed,NR,NR,NR,30.3,Nakaya Y,2024
+290,314,PTCy-haplo,PTCy_arm,Y,N,N,330,44.5,60.9,0,100,0,25.5,100,0,0,haplo,PBSC,50.6,49.4,MAC,Y,NR,NR,NR,NR,NR,NR,NR,NR,NR,80.6,NR,Jo T,2024
+290,315,UCB,comparator_arm,Y,N,N,1669,45,53,0,100,0,21.1,0,0,0,UCB,UCB,54.8,45.1,MAC,N,NA,NA,NR,NR,NR,NR,NR,NR,NR,80,NR,Jo T,2024
+292,316,ER-SCT cohort,PTCy_arm,N,N,N,64,68,59,NR,5,NR,39,14,23,62,MUD,PBSC,NR,NR,mixed,mixed,NR,NR,tacrolimus,NR,mixed,NR,NR,NR,NR,NR,NR,Ngo-Huang,2023
+292,317,Historical controls,comparator_arm,N,N,N,140,67,62,NR,4,NR,56,8,30,62,MUD,PBSC,NR,NR,mixed,mixed,NR,NR,tacrolimus,NR,mixed,NR,NR,NR,NR,NR,NR,Ngo-Huang,2023
+293,318,"All allo-HCT recipients (whole cohort, 2015-2021)",PTCy_arm,N,N,N,421,56,66,NR,8,NR,NR,22,24,47,mixed,PBSC,25,75,RIC,mixed,NR,NR,NR,NR,NR,NR,NR,NR,NR,62,43.5,Nguyen A,2024
+296,319,PTCY-haplo,PTCy_arm,Y,N,N,169,56,61.5,0,0,0,NR,100,0,0,haplo,PBSC,20.7,79.3,RIC,Y,NR,NR,NR,Y,N,N,N,NA,NA,NR,29.6,Nishikubo M,2024
+296,320,uCBT,comparator_arm,Y,N,N,688,55,60.6,0,0,0,NR,0,0,0,UCB,UCB,36.9,63.1,RIC,N,NA,NA,NR,mixed,mixed,N,N,NA,NA,NR,36.1,Nishikubo M,2024
+297,321,PT-Cy-based GVHD prophylaxis,PTCy_arm,Y,N,N,101,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,PBSC,NR,NR,MAC,Y,NR,NR,NR,NR,NR,Y,N,NA,NA,NR,28,Noviello M,2023
+297,322,ATG-based GVHD prophylaxis,comparator_arm,Y,N,N,84,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,PBSC,NR,NR,MAC,N,NA,NA,NR,NR,NR,Y,Y,NR,NR,NR,NR,Noviello M,2023
+299,323,PT-Cy group,PTCy_arm,N,Y,N,22,49,NR,NR,NR,NR,23,0,0,0,MMUD,PBSC,32,68,RIC,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,NR,14,Nykolyszyn C,2020
+299,324,ATG group,comparator_arm,N,Y,N,40,51,NR,NR,NR,NR,10,0,0,0,MMUD,PBSC,30,70,RIC,N,NA,NA,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,5,NR,35,Nykolyszyn C,2020
+300,325,non-PTCy UD,comparator_arm,Y,N,N,1094,48,62.2,0,0,0,NR,0,0,61,MUD,PBSC,61.9,38.1,MAC,N,NA,NA,mixed,Y,Y,Y,mixed,NR,NR,NR,NR,Orti G,2023
+300,326,PTCy UD,PTCy_arm,Y,N,N,113,43.5,64.6,0,0,0,NR,0,0,54,MUD,PBSC,52.3,47.7,MAC,Y,NR,NR,mixed,Y,Y,Y,mixed,NR,NR,NR,NR,Orti G,2023
+300,327,PTCy MMRD,PTCy_arm,Y,N,N,134,45.7,61.2,0,0,0,NR,100,0,0,haplo,PBSC,66.2,33.8,MAC,Y,NR,NR,mixed,Y,N,Y,mixed,NR,NR,NR,NR,Orti G,2023
+301,328,FTBI/FLU package (HLA-mismatched related/unrelated donor with PTCy),PTCy_arm,Y,N,N,64,33,51.6,0,100,0,75,73.4,0,6.3,haplo,PBSC,100,0,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,81.3,45,Otoukesh S,2024
+301,329,FTBI/ETOP package (matched donor with Tac/Sirolimus),comparator_arm,Y,N,N,205,37,62,0,100,0,75.6,0,NR,93.7,MUD,PBSC,100,0,MAC,N,NA,NA,tacrolimus,N,N,Y,N,NA,NA,85.9,59,Otoukesh S,2024
+302,330,HRD (haploidentical with PT-Cy),PTCy_arm,Y,N,N,81,50,NR,22,3,7,21,100,0,0,haplo,PBSC,17,17,NMA,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,NR,19,Pagliardini,2019
+302,331,UD (unrelated donor with ATG),comparator_arm,Y,N,N,128,49,NR,32,18,9,15,0,0,76.6,MUD,PBSC,38,62,RIC,N,NA,NA,cyclosporine,mixed,N,N,Y,rabbit_thymoglobulin,5,NR,45,Pagliardini,2019
+304,332,ATG-PTCY,PTCy_arm,Y,N,N,62,66,63,NR,NR,39,NR,19,10,71,MUD,PBSC,5,95,RIC,Y,50,100,cyclosporine,N,N,N,Y,NR,4.5,NR,11,Pasic I,2020
+304,333,Other GVHD prophylaxis,comparator_arm,Y,N,N,71,65,63,NR,NR,18,NR,0,44,56,MUD,PBSC,7,93,RIC,N,NA,NA,cyclosporine,mixed,mixed,N,mixed,NR,NR,NR,28,Pasic I,2020
+305,334,PTCY group,PTCy_arm,Y,N,N,64,52,69,0,0,0,NR,0,0,0,MMUD,PBSC,0,100,RIC,Y,NR,NR,cyclosporine,Y,N,N,N,NA,NA,80,41,Paviglianiti A,2024
+305,335,ATG group,comparator_arm,Y,N,N,121,53,61,0,0,0,NR,0,0,0,MMUD,PBSC,0,100,RIC,N,NA,NA,cyclosporine,Y,Y,N,Y,NR,NR,79,26,Paviglianiti A,2024
+307,336,PTCy,PTCy_arm,N,Y,N,1039,53,58.9,39.7,15.1,15.2,25.6,0,0,100,MUD,PBSC,62.3,37.7,MAC,Y,NR,NR,mixed,Y,N,Y,N,NA,NA,NR,24.1,Penack O,2024
+307,337,rATG,comparator_arm,N,Y,N,7725,58.6,57.3,48.3,10.2,15.3,28.2,0,0,100,MUD,PBSC,52,48,mixed,N,NA,NA,mixed,Y,Y,Y,Y,rabbit_thymoglobulin,NR,NR,26.5,Penack O,2024
+308,338,PTCy based,PTCy_arm,Y,N,N,1069,51.3,58.7,42.8,17.3,11.2,26,0,100,0,MSD,PBSC,55.4,44.6,MAC,Y,NR,NR,mixed,Y,N,Y,N,NA,NA,NR,21.4,Penack O,2025
+308,339,ATG based,comparator_arm,Y,N,N,4140,54.3,58.6,54.5,10,13.8,26.5,0,100,0,MSD,PBSC,54.5,45.5,MAC,N,NA,NA,mixed,Y,Y,Y,Y,mixed,NR,NR,19.5,Penack O,2025
+311,340,PTCy,PTCy_arm,Y,N,N,304,56,58,52,21,27,NR,75,7,13,haplo,PBSC,44,16,MAC,Y,NR,NR,NR,mixed,N,NR,N,NA,NA,67,34.2,Perales MA,2025
+311,341,CNI (calcineurin inhibitor-based without ATG),comparator_arm,Y,N,N,1203,47,56,47,25,29,NR,1,27,31,mixed,mixed,70,23,MAC,N,NA,NA,mixed,mixed,mixed,NR,N,NA,NA,61,48.5,Perales MA,2025
+311,342,CNI+ATG (calcineurin inhibitor + ATG),comparator_arm,Y,N,N,375,53,57,41,15,44,NR,1,11,57,MUD,PBSC,60,33,MAC,N,NA,NA,mixed,mixed,mixed,NR,Y,NR,NR,58,38.7,Perales MA,2025
+312,343,Whole cohort (peri-engraftment CARV-positive allo-HCT recipients),PTCy_arm,N,N,N,112,51,51,NR,NR,10,NR,29,30,21,mixed,PBSC,45,55,RIC,mixed,NR,NR,tacrolimus,NR,N,Y,mixed,NR,NR,NR,NR,Pinana JL,2025
+318,344,Haploidentical donor (HD) with PTCy,PTCy_arm,Y,N,N,415,60.9,64.8,0,0,100,79,100,0,0,haplo,PBSC,48.2,51.8,RIC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,76.3,24,Raj K,2022
+318,345,HLA-matched sibling donor (MSD),comparator_arm,Y,N,N,1414,57.9,61.5,0,0,100,70,0,100,0,MSD,PBSC,41.7,58.3,RIC,mixed,NR,NR,NR,NR,NR,NR,mixed,NR,NR,69.6,21,Raj K,2022
+320,346,FluTBI-PTCy,PTCy_arm,Y,N,N,28,45,50,43,53.5,3.5,43,0,36,46,MUD,PBSC,100,0,MAC,Y,50,100,tacrolimus,N,N,N,N,NA,NA,NR,14,Redondo S,2023
+320,347,CyTBI,comparator_arm,Y,N,N,59,37,44,61,29,10,32,0,46,41,MSD,PBSC,100,0,MAC,N,NA,NA,tacrolimus,N,Y,N,mixed,rabbit_thymoglobulin,6,NR,37,Redondo S,2023
+321,348,Cohort-3 (PTCy-Tacrolimus),PTCy_arm,Y,N,N,81,55,53,38,20,NR,58,0,28,44,MUD,PBSC,35,65,RIC,Y,50,100,tacrolimus,N,N,N,N,NA,NA,NR,27.2,Redondo S,2024
+321,349,Cohort-1 (CNI + MTX or MMF),comparator_arm,Y,N,N,58,41,52,52,24,NR,31,0,59,34,MSD,PBSC,79,21,MAC,N,NA,NA,mixed,mixed,mixed,N,mixed,rabbit_thymoglobulin,6,NR,69,Redondo S,2024
+321,350,Cohort-2 (TAC-SIRO),comparator_arm,N,N,N,87,61,60,57,6,NR,53,0,40,55,MUD,PBSC,0,100,RIC,N,NA,NA,tacrolimus,N,N,Y,mixed,rabbit_thymoglobulin,6,NR,41.4,Redondo S,2024
+323,351,Haplo/PTCY,PTCy_arm,Y,N,N,47,35.1,62,0,100,0,100,100,0,0,haplo,PBSC,83,17,MAC,Y,NR,NR,mixed,Y,N,Y,mixed,NR,NR,74,34.4,Ru Y,2025
+323,352,MUD/ATG,comparator_arm,Y,N,N,69,35.5,61,0,100,0,100,0,0,100,MUD,PBSC,81,19,MAC,N,NA,NA,mixed,Y,Y,Y,Y,NR,NR,59,26.8,Ru Y,2025
+324,353,PTCY group,PTCy_arm,N,Y,N,193,49,NR,100,0,0,NR,100,0,0,haplo,BM,56.99,43.01,MAC,Y,50,100,mixed,Y,N,N,N,NA,NA,NR,31,Ruggeri A,2017
+324,354,ATG group,comparator_arm,N,Y,N,115,46,NR,100,0,0,NR,100,0,0,haplo,PBSC,53.91,46.09,MAC,N,NA,NA,mixed,Y,Y,Y,Y,mixed,NR,NR,21,Ruggeri A,2017
+325,355,Haplo-PTCY,PTCy_arm,Y,N,N,544,53,54.2,100,0,0,20,100,0,0,haplo,PBSC,60,40,MAC,Y,NR,NR,NR,Y,N,N,N,NA,NA,77,34.9,Ruggeri A,2022
+325,356,dUCBT,comparator_arm,Y,N,N,165,53,55.8,100,0,0,25,0,0,0,UCB,UCB,23,77,RIC,N,NA,NA,NR,NR,NR,NR,N,NA,NA,65,44.4,Ruggeri A,2022
+326,357,Haplo PT-CY,PTCy_arm,Y,N,N,96,9.8,53.1,100,0,0,30.7,100,0,0,haplo,BM,100,0,MAC,Y,NR,NR,cyclosporine,Y,N,N,N,NA,NA,NR,36.7,Ruggeri A,2024
+326,358,MUD,comparator_arm,Y,N,N,420,7.7,53.1,100,0,0,42.1,0,0,100,MUD,BM,100,0,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,NR,NR,NR,28.7,Ruggeri A,2024
+327,359,Overall cohort (409 allo-HCT recipients; PTCy used in 13%),PTCy_arm,N,N,N,409,47,60,34,13,26,NR,10,32,46,mixed,PBSC,28,NR,RIC,mixed,50,100,cyclosporine,mixed,mixed,NR,mixed,NR,NR,69,51,Saade A,2022
+328,360,PT-Cy (combined PET+LET eras),PTCy_arm,Y,N,N,211,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,mixed,NR,NR,mixed,Y,NR,NR,NR,NR,NR,NR,mixed,NR,NR,100,NR,Sadowska-Klasa A,2024
+328,361,Non-PTCy GVHD prophylaxis (CNI+MMF + CNI+MTX + Sirolimus-based + Other; combined PET+LET),comparator_arm,Y,N,N,2258,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,mixed,NR,NR,mixed,N,NA,NA,NR,mixed,mixed,mixed,mixed,NR,NR,100,NR,Sadowska-Klasa A,2024
+332,362,PT-Cy,PTCy_arm,Y,N,N,73,NR,NR,0,0,0,NR,100,0,0,haplo,NR,NR,NR,NR,Y,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,NR,Sahebi,2019
+332,363,No PT-Cy,comparator_arm,Y,N,N,17,NR,NR,0,0,0,NR,100,0,0,haplo,NR,NR,NR,NR,N,NA,NA,NR,NR,NR,NR,NR,NR,NR,NR,NR,Sahebi,2019
+334,364,Period 1 (2017-2018),PTCy_arm,N,N,N,322,58,59,52.1,6.5,15.5,27,19.3,24.5,46.3,MUD,PBSC,1.2,98.7,RIC,mixed,50,100,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,4.5,NR,19.9,Salas MQ,2022
+334,365,Period 2 (2019-2020),PTCy_arm,N,N,N,329,58,52.8,53.1,10.9,13.3,14.7,17.6,23.4,49.2,MUD,PBSC,38.1,61.6,RIC,mixed,50,100,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,2,NR,25,Salas MQ,2022
+335,366,PTCY-TK,PTCy_arm,Y,N,N,88,60,63.6,35.2,12.5,31.8,31.8,0,6.6,51.1,MUD,PBSC,29.5,70.5,RIC,Y,50,100,tacrolimus,N,N,N,N,NA,NA,NR,18.2,Salas MQ,2022
+335,367,Other GVHD Prophylaxis,comparator_arm,Y,N,N,73,59,45.2,37,4.1,31.5,35.6,0,56,40,MSD,PBSC,28.8,71.2,RIC,N,NA,NA,mixed,mixed,mixed,mixed,N,NA,NA,NR,26,Salas MQ,2022
+336,368,PTCy-based,PTCy_arm,Y,N,N,66,54,56.1,0,0,100,33.9,0,100,0,MSD,PBSC,52.3,47.7,MAC,Y,50,100,NR,Y,NR,NR,Y,NR,NR,NR,32,Salas,2024
+336,369,Other (conventional) GVHD prophylaxis,comparator_arm,Y,N,N,338,58,70.4,0,0,100,35.1,0,100,0,MSD,PBSC,38.2,61.8,RIC,N,NA,NA,NR,mixed,mixed,NR,Y,NR,NR,NR,25,Salas,2024
+337,370,ATG-Based without PTCy,comparator_arm,Y,N,N,84,54,58.3,51.8,4.8,4.8,25.5,0,0,100,MUD,PBSC,46.4,53.6,RIC,N,NA,NA,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,4.5,NR,35.7,Salas MQ,2024
+337,371,ATG(4.5)/PTCy,PTCy_arm,Y,N,N,127,58,60.6,53.8,6.4,13.7,24.4,0,0,100,MUD,PBSC,10.2,89.8,RIC,Y,50,100,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,4.5,NR,23.3,Salas MQ,2024
+337,372,ATG(2)/PTCy,PTCy_arm,Y,N,N,233,61,56.2,52.8,6.3,19.7,15.9,0,0,100,MUD,PBSC,27.5,72.5,RIC,Y,50,100,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,2,NR,16.5,Salas MQ,2024
+338,373,PTCy/Tac Group,PTCy_arm,Y,N,N,95,54,58.9,36.8,20,18.9,28.3,0,17.9,82.1,MUD,PBSC,46.3,53.7,RIC,Y,50,100,tacrolimus,N,N,N,N,NA,NA,NR,NR,Salas,2024
+338,374,No-PTCy Group,comparator_arm,Y,N,N,177,53,54.2,39,14.1,17.5,33.1,0,59.9,40.1,MSD,PBSC,45.8,54.2,RIC,N,NA,NA,mixed,mixed,mixed,N,N,NA,NA,NR,NR,Salas,2024
+340,375,Haplo/PTCy,PTCy_arm,Y,N,N,758,NR,NR,NR,NR,NR,NR,100,0,0,haplo,mixed,NR,NR,mixed,Y,NR,NR,NR,Y,N,N,N,NA,NA,NR,35,Saliba RM,2022
+340,376,MUD/conventional (+/- ATG),comparator_arm,Y,N,N,2586,NR,NR,NR,NR,NR,NR,0,0,100,MUD,mixed,NR,NR,mixed,N,NA,NA,NR,mixed,mixed,N,mixed,NR,NR,NR,44.7,Saliba RM,2022
+341,377,Flu-Cy-TBI RIC,PTCy_arm,N,N,N,15,NR,52,75,0,25,NR,73.3,13.3,20,haplo,PBSC,0,100,RIC,mixed,50,100,mixed,mixed,mixed,N,mixed,NR,NR,NR,26.6,Salinas J,2024
+341,378,Flu-Mel RIC,PTCy_arm,N,N,N,30,NR,55,80,0,20,NR,63.3,16.7,20,haplo,PBSC,0,100,RIC,mixed,50,100,mixed,mixed,mixed,N,mixed,NR,NR,NR,23.3,Salinas J,2024
+341,379,Flu-Bu2 RIC,PTCy_arm,N,N,N,7,NR,52,80,0,20,NR,42.9,42.9,14.3,mixed,PBSC,0,100,RIC,mixed,50,100,mixed,mixed,mixed,N,mixed,NR,NR,NR,0,Salinas J,2024
+343,380,PT-Cy,PTCy_arm,Y,N,N,118,NR,NR,0,100,0,NR,100,0,0,haplo,mixed,NR,NR,mixed,Y,NR,NR,NR,Y,NR,NR,N,NA,NA,NR,30.6,Santoro,2017
+343,381,ATG-based,comparator_arm,Y,N,N,90,NR,NR,0,100,0,NR,100,0,0,haplo,mixed,NR,NR,mixed,N,NA,NA,NR,Y,NR,NR,Y,mixed,mixed (Thymoglobulin median 10 mg/kg n=27; Fresenius/Grafalon median 30 mg/kg n=44; 24 unknown type),NR,NR,Santoro,2017
+344,382,Haplo,PTCy_arm,Y,N,N,250,65,62,100,0,0,18,100,0,0,haplo,BM,27,73,RIC,Y,NR,NR,mixed,Y,N,Y,Y,NR,NR,NR,30.5,Santoro,2018
+344,383,MUD 10/10,comparator_arm,Y,N,N,2589,64.8,57,100,0,0,16,0,0,100,MUD,PBSC,23,77,RIC,N,NA,NA,mixed,Y,Y,Y,Y,NR,NR,NR,33.1,Santoro,2018
+345,384,MAC haplo-SCT,PTCy_arm,N,N,N,373,55.2,NR,100,0,0,15.3,100,0,0,haplo,BM,100,0,MAC,mixed,NR,NR,NR,NR,NR,NR,mixed,NR,NR,NR,24.8,Santoro N,2019
+345,385,RIC haplo-SCT,PTCy_arm,N,N,N,539,61.3,NR,100,0,0,19.5,100,0,0,haplo,PBSC,0,100,RIC,mixed,NR,NR,NR,NR,NR,NR,mixed,NR,NR,NR,32.4,Santoro N,2019
+346,386,All allo-HCT 2015-2021 (entire cohort; PTCy-based prophylaxis in 72.4%),PTCy_arm,N,N,N,960,58,55.9,NR,NR,NR,18,16,27,46,MUD,PBSC,26.5,73.5,RIC,mixed,50,100,cyclosporine,mixed,mixed,N,mixed,rabbit_thymoglobulin,2-4.5 (mixed),NR,23.8,Santos Carreira,2023
+348,387,PTCy (9/10 MMUD),PTCy_arm,N,N,N,45,NR,61.9,53.4,22.2,13.3,75.6,0,0,0,MMUD,PBSC,100,0,MAC,Y,50,100,tacrolimus,N,Y,N,N,NA,NA,100,NR,Sayin S,2024
+348,388,"Control (MRD, MTX+CNI)",comparator_arm,N,N,N,45,NR,62.2,53.4,31.1,11.1,80,0,100,0,MSD,PBSC,100,0,MAC,N,NA,NA,cyclosporine,N,Y,N,N,NA,NA,97.8,NR,Sayin S,2024
+352,389,Haplo (PTCy),PTCy_arm,Y,Y,N,116,NR,NR,50,50,0,NR,100,0,0,haplo,BM,64.7,24.1,MAC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,NR,NR,Seber A,2025
+352,390,MSD,comparator_arm,Y,N,N,338,NR,NR,56.2,43.8,0,NR,0,100,0,MSD,BM,86.7,9.5,MAC,N,NA,NA,NR,NR,NR,NR,mixed,NR,NR,NR,NR,Seber A,2025
+352,391,MUD (8/8 ATG-based),comparator_arm,N,Y,N,141,NR,NR,42.6,57.4,0,NR,0,0,100,MUD,BM,90.8,8.5,MAC,N,NA,NA,NR,NR,NR,NR,Y,NR,NR,NR,NR,Seber A,2025
+353,392,PTCY Cohort,PTCy_arm,N,Y,N,24,51,46,63,21,NR,NR,92,NR,8,haplo,BM,71,29,MAC,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,79,NR,Serio B,2024
+353,393,ATG Cohort,comparator_arm,N,Y,N,16,45,31,75,25,NR,NR,100,NR,0,haplo,PBSC,94,6,MAC,N,NA,NA,mixed,N,Y,N,Y,NR,8.75,81,NR,Serio B,2024
+357,394,PT-CY/CSA,PTCy_arm,Y,N,N,89,34,66.3,100,0,0,2.2,0,NR,NR,mixed,PBSC,100,0,MAC,Y,50,100,cyclosporine,N,N,N,N,NA,NA,87.6,NR,Sharaf El-Deen MO,2024
+357,395,MTX/CSA,comparator_arm,Y,N,N,90,29,56.7,100,0,0,6.7,0,NR,NR,mixed,PBSC,100,0,MAC,N,NA,NA,cyclosporine,N,Y,N,N,NA,NA,92.2,NR,Sharaf El-Deen MO,2024
+358,396,ATG group (JSCT-ATG15),comparator_arm,N,Y,N,67,46,53.7,55.2,29.9,11.9,7.5,0,NR,NR,MSD,PBSC,100,0,MAC,N,NA,NA,mixed,N,Y,N,Y,rabbit_thymoglobulin,2,NR,NR,Shiratori S,2025
+358,397,PTCy group (JSCT-PTCY19),PTCy_arm,N,Y,N,41,45,63.4,34.1,26.8,19.5,24.4,0,NR,NR,MUD,PBSC,65.9,34.1,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,NR,Shiratori S,2025
+359,398,"PTCy/CsA (therapeutic group, Group A)",PTCy_arm,Y,N,N,75,34,65.3,70.7,1.3,16,NR,0,97.3,0,MSD,PBSC,100,0,MAC,Y,50,100,cyclosporine,N,N,N,N,NA,NA,NR,10.7,Shouman MT,2023
+359,399,"MTX/CsA (historical group, Group B)",comparator_arm,Y,N,N,75,28,54.7,57.3,13.4,12,NR,0,100,0,MSD,PBSC,100,0,MAC,N,NA,NA,cyclosporine,N,Y,N,N,NA,NA,NR,14.7,Shouman MT,2023
+361,400,HaploCy,PTCy_arm,N,Y,N,757,58,60.6,69.7,3.4,26.8,NR,100,0,0,haplo,mixed,41.5,58.5,RIC,Y,NR,NR,NR,Y,N,NR,N,NA,NA,NR,NR,Singh,2022
+361,401,SibCy,PTCy_arm,N,N,Y,403,47,60.3,76.9,4.7,18.4,NR,0,100,0,MSD,PBSC,55.1,44.9,MAC,Y,NR,NR,NR,Y,N,NR,N,NA,NA,NR,NR,Singh,2022
+361,402,SibCNI,comparator_arm,N,Y,Y,1605,57,58.1,63.9,3.7,32.4,NR,0,100,0,MSD,PBSC,58.3,41.7,MAC,N,NA,NA,NR,mixed,mixed,NR,N,NA,NA,NR,NR,Singh,2022
+363,403,PTCy group,PTCy_arm,N,Y,N,22,58,86.4,NR,NR,NR,18,0,0,0,MMUD,PBSC,41,59,RIC,Y,40,80,cyclosporine,Y,N,N,N,NA,NA,NR,15,Soltermann Y,2019
+363,404,Control group (ATG),comparator_arm,N,Y,N,58,50,44.8,NR,NR,NR,28,0,0,0,MMUD,PBSC,62,38,MAC,N,NA,NA,mixed,mixed,mixed,N,Y,rabbit_grafalon_ATLG,NR,NR,50,Soltermann Y,2019
+364,405,Haploidentical HSCT with PTCy,PTCy_arm,N,N,N,109,31.9,58.7,0,100,0,NR,100,0,0,haplo,PBSC,64.2,NR,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,33,Srour SA,2017
+366,406,ATLG,comparator_arm,N,Y,N,74,29,60.8,0,100,0,100,4.1,12.2,45.9,MUD,PBSC,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_grafalon_ATLG,60,54.1,33,Steiner N,2024
+366,407,PTCy,PTCy_arm,N,Y,N,73,42,56.2,0,100,0,100,13.7,24.7,43.8,MUD,PBSC,100,0,MAC,Y,50,100,mixed,Y,N,N,N,NA,NA,64.4,46,Steiner N,2024
+368,408,PTCy-haplo,PTCy_arm,Y,N,N,136,46.5,71,65,24,11,41,100,0,0,haplo,PBSC,51,49,MAC,Y,50,100,tacrolimus,Y,N,N,Y,NR,NR,NR,29,Sugita J,2022
+368,409,UCBT,comparator_arm,Y,N,N,408,49.5,71,63,23,14,41,0,0,0,UCB,UCB,52,48,MAC,N,NA,NA,NR,Y,Y,N,NR,NA,NA,NR,41,Sugita J,2022
+371,410,PTCy group,PTCy_arm,Y,N,N,44,27,68.2,20.5,29.5,29.5,40.9,100,0,0,haplo,mixed,100,0,MAC,Y,50,100,cyclosporine,Y,Y,N,N,NA,NA,NR,18.2,Tang F,2020
+371,411,G-CSF/ATG group,comparator_arm,Y,N,N,176,28,60.8,20.5,29.5,29.5,40.9,100,0,0,haplo,mixed,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,26.7,Tang F,2020
+374,412,Post-transplant CY (PTCy-based GVHD prophylaxis),PTCy_arm,Y,N,N,59,NR,NR,0,0,0,NR,NR,NR,NR,haplo,NR,NR,NR,NR,Y,NR,NR,NR,Y,NR,NR,mixed,NR,NR,NR,NR,Tarella C,2025
+374,413,No post-transplant CY (conventional GVHD prophylaxis),comparator_arm,Y,N,N,226,NR,NR,0,0,0,NR,NR,NR,NR,mixed,NR,NR,NR,NR,N,NA,NA,NR,NR,NR,NR,mixed,NR,NR,NR,NR,Tarella C,2025
+375,414,TCR/PTCY,PTCy_arm,Y,N,N,27,43,51.9,48.1,14.8,0,92.6,100,0,0,haplo,BM,29.6,70.4,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,44.4,29.6,Tischer J,2015
+375,415,cTCR/TCD,comparator_arm,Y,N,N,28,30.5,78.6,71.4,10.7,0,71.4,100,0,0,haplo,mixed,28.6,71.4,RIC,N,NA,NA,cyclosporine,N,Y,N,Y,rabbit_thymoglobulin,100,57.1,39.3,Tischer J,2015
+379,416,PTCy,PTCy_arm,Y,N,N,44,45.6,63.6,45.5,27.3,20.5,NR,0,20.5,79.5,MUD,PBSC,81.8,9.1,MAC,Y,NR,NR,NR,N,N,mixed,N,NA,NA,100,68,Ueda Oshima M,2023
+379,417,MMF,comparator_arm,Y,N,N,414,61.5,55.3,32.6,5.3,23.4,NR,0,43,57,MUD,PBSC,15,7.5,NMA,N,NA,NA,NR,Y,N,mixed,N,NA,NA,100,61,Ueda Oshima M,2023
+379,418,MTX,comparator_arm,Y,N,N,322,51.4,56.5,38.8,13.4,40.4,NR,0,41.3,58.7,MUD,PBSC,94.1,5.9,MAC,N,NA,NA,NR,N,Y,N,N,NA,NA,100,72.4,Ueda Oshima M,2023
+380,419,PTCy (SIR/CSP/PTCy),PTCy_arm,Y,N,N,72,67.6,NR,68,5,14,NR,0,0,79,MUD,PBSC,0,63,RIC,Y,50,100,cyclosporine,N,N,Y,N,NA,NA,NR,40,Ueda Oshima M,2025
+380,420,non-PTCy (SIR/CSP/MMF),comparator_arm,Y,N,N,73,66.3,NR,60,7,26,NR,0,0,81,MUD,PBSC,0,56,RIC,N,NA,NA,cyclosporine,Y,N,Y,N,NA,NA,NR,42,Ueda Oshima M,2025
+382,421,SibCy,PTCy_arm,Y,N,N,403,46,60,NR,NR,18,NR,0,100,0,MSD,PBSC,55,NR,MAC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,NR,NR,Ustun C,2024
+382,422,SibCNI,comparator_arm,Y,N,N,1605,57,58,NR,NR,32,NR,0,100,0,MSD,PBSC,58,NR,MAC,N,NA,NA,mixed,mixed,mixed,NR,N,NA,NA,NR,NR,Ustun C,2024
+383,423,MSD + PTCy,PTCy_arm,N,N,N,79,NR,NR,100,0,0,100,0,100,0,MSD,PBSC,NR,NR,mixed,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,NR,29,Villalba M,2026
+383,424,MUD + PTCy,PTCy_arm,N,N,N,111,NR,NR,100,0,0,100,0,0,100,MUD,PBSC,NR,NR,mixed,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,NR,31,Villalba M,2026
+383,425,MMUD + PTCy,PTCy_arm,N,N,N,66,NR,NR,100,0,0,100,0,0,0,MMUD,PBSC,NR,NR,mixed,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,NR,20,Villalba M,2026
+383,426,Haploidentical + PTCy,PTCy_arm,N,N,N,446,NR,NR,100,0,0,100,100,0,0,haplo,mixed,NR,NR,mixed,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,NR,23,Villalba M,2026
+384,427,ptCy,PTCy_arm,N,Y,N,119,60.9,62,100,0,0,30,0,0,34,MMUD,PBSC,57,43,MAC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,NR,29.7,Vydra,2026
+384,428,ATG,comparator_arm,N,Y,N,313,59.9,62,100,0,0,25,0,0,27,MMUD,PBSC,58,42,MAC,N,NA,NA,NR,NR,NR,NR,Y,NR,NR,NR,23.7,Vydra,2026
+389,429,PTCy group (Flu + BUCY + post-CTX),PTCy_arm,Y,N,N,52,46,57.7,34.6,40.4,13.5,NR,100,0,0,haplo,mixed,100,0,MAC,Y,50,100,cyclosporine,Y,Y,N,N,NA,NA,NR,30.8,Wang T,2022
+389,430,BUCY-ATG group,comparator_arm,Y,N,N,29,34,51.7,44.8,37.9,13.8,NR,100,0,0,haplo,mixed,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,NR,50,NR,37.9,Wang T,2022
+390,431,ATG-PTCy cohort (cohort A),PTCy_arm,Y,N,N,114,27,55.3,48.2,41.2,7.9,11.4,100,0,0,haplo,mixed,100,0,MAC,Y,14.5,29,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,26,Wang Y,2019
+390,432,ATG cohort (cohort B),comparator_arm,Y,N,N,125,24,61.6,47.2,41.6,8.8,17.6,100,0,0,haplo,mixed,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,36,Wang Y,2019
+391,433,Haploidentical HCT using PTCy,PTCy_arm,Y,N,N,393,41,54.5,0,100,0,56.5,100,0,0,haplo,PBSC,57.5,42.5,MAC,Y,NR,NR,NR,Y,N,NR,N,NA,NA,73.5,NR,Wieduwilt,2022
+391,434,HLA-matched sibling donor (MSD) HCT,comparator_arm,Y,N,N,1627,42,59.6,0,100,0,46.1,0,100,0,MSD,PBSC,80.4,19.4,MAC,mixed,NR,NR,NR,mixed,Y,NR,Y,NR,NR,70.5,NR,Wieduwilt,2022
+391,435,8/8 HLA-matched unrelated donor (MUD) HCT,comparator_arm,Y,N,N,1646,43,59.3,0,100,0,51.9,0,0,100,MUD,PBSC,76.8,23.3,MAC,mixed,NR,NR,NR,mixed,Y,NR,Y,NR,NR,64.6,NR,Wieduwilt,2022
+391,436,7/8 HLA-matched unrelated donor (7/8 HLA-MUD) HCT,comparator_arm,Y,N,N,230,38,58.3,0,100,0,43.9,0,0,0,MMUD,PBSC,82.6,17,MAC,mixed,NR,NR,NR,mixed,Y,NR,Y,NR,NR,67,NR,Wieduwilt,2022
+391,437,Umbilical cord blood (UCB) HCT,comparator_arm,Y,N,N,305,37,57.7,0,100,0,50.5,0,0,0,UCB,UCB,74.8,24.9,MAC,N,NA,NA,NR,Y,N,NR,Y,NR,NR,65.6,NR,Wieduwilt,2022
+395,438,mPTCy,PTCy_arm,Y,N,N,157,27,56.7,0,0,0,NA,69.4,0,12.7,haplo,mixed,NR,NR,NR,Y,40,80,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,6,NR,16.6,Wu L,2025
+395,439,G-CSF/ATG,comparator_arm,Y,N,N,140,29,59.3,0,0,0,NA,68.6,0,18.6,haplo,mixed,NR,NR,NR,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,4.5,NR,31.6,Wu L,2025
+396,440,G-CSF/ATG group 1,comparator_arm,Y,N,N,230,32,44.8,53.9,27.4,10,93.9,100,0,0,haplo,PBSC,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,28.6,Xu ZL,2025
+396,441,PTCy,PTCy_arm,Y,N,N,122,31,45.1,50.8,28.7,12.3,91,100,0,0,haplo,PBSC,100,0,MAC,Y,30-50,60-100,cyclosporine,Y,Y,N,N,NA,NA,NR,28.7,Xu ZL,2025
+396,442,G-CSF/ATG group 2,comparator_arm,N,N,N,226,35,50.9,49.6,35.4,11.9,94.7,100,0,0,haplo,PBSC,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,25.2,Xu ZL,2025
+396,443,PTCy+ATGlow,PTCy_arm,N,N,N,123,34,49.6,49.6,38.2,8.9,96.7,100,0,0,haplo,PBSC,100,0,MAC,Y,30-50,60-100,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,3,NR,27.9,Xu ZL,2025
+397,444,ATG + low-dose PTCy,PTCy_arm,N,N,Y,44,34,NR,NR,38.6,NR,NR,100,0,0,haplo,PBSC,100,0,MAC,Y,14.5,29,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,18.2,Xu ZL,2025
+397,445,ATG,comparator_arm,N,N,Y,22,39.5,NR,NR,31.8,NR,NR,100,0,0,haplo,PBSC,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,18.2,Xu ZL,2025
+399,446,Haplo (PTCY-based haplo-HCT),PTCy_arm,Y,N,N,241,54,55.6,100,0,0,25.3,100,0,0,haplo,PBSC,50.2,49.8,mixed,Y,NR,NR,tacrolimus,Y,Y,N,N,NA,NA,NR,25,Yanada M,2026
+399,447,UCB (single-unit UCBT),comparator_arm,Y,N,N,848,56,53.3,100,0,0,23.5,0,0,0,UCB,UCB,64.2,35.8,MAC,N,NA,NA,tacrolimus,Y,Y,N,N,NA,NA,NR,36,Yanada M,2026
+407,450,PTCY (HLA-haploidentical related with PTCY),PTCy_arm,Y,N,N,121,60,43.8,0,0,0,NR,100,0,0,haplo,PBSC,22.3,77.7,RIC,Y,mixed_40_or_50,NR,tacrolimus,NR,N,N,N,NA,NA,NR,35.6,Yoshimitsu M,2025
+407,451,MRD (HLA-matched related donor),comparator_arm,Y,N,N,91,54,51.6,0,0,0,NR,0,100,0,MSD,PBSC,36.3,63.7,RIC,N,NA,NA,mixed,NR,Y,N,NR,NR,NR,NR,47.3,Yoshimitsu M,2025
+407,452,MUD (HLA 8/8 allele-matched unrelated donor),comparator_arm,Y,N,N,160,60,50,0,0,0,NR,0,0,100,MUD,BM,25,75,RIC,N,NA,NA,mixed,NR,Y,N,NR,NR,NR,NR,34.4,Yoshimitsu M,2025
+407,453,CBT (cord blood transplantation),comparator_arm,Y,N,N,328,62,53.4,0,0,0,NR,0,0,0,UCB,UCB,19.5,80.5,RIC,N,NA,NA,mixed,NR,Y,N,NR,NR,NR,NR,35.7,Yoshimitsu M,2025
+408,454,Post-Cy (PTCy 9/10 MMUD ASCT),PTCy_arm,N,N,N,42,NR,61.9,57.1,26.2,4.8,73.8,0,0,0,MMUD,PBSC,100,0,MAC,Y,50,100,mixed,N,Y,N,N,NA,NA,NR,40.5,Yildirim M,2024
+408,455,Control (MRD 10/10 ASCT with MTX+CsA),comparator_arm,N,N,N,37,NR,62.2,59.4,32.4,2.7,91.9,0,100,0,MSD,PBSC,100,0,MAC,N,NA,NA,cyclosporine,N,Y,N,N,NA,NA,NR,29.7,Yildirim M,2024
+410,456,ПТЦ group (PTCy),PTCy_arm,Y,N,N,110,34,58.1,51.8,32.7,4.6,20,0,0,28.1,MMUD,PBSC,19,81,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,18.2,Pirogova OV,2016
+410,457,"АТГ group (ATG, historical control)",comparator_arm,Y,N,N,160,33,41.8,57.5,28.7,8.8,17.5,0,0,15.6,MMUD,PBSC,24.3,75.7,RIC,N,NA,NA,other,Y,Y,N,Y,NR,60,NR,40.4,Pirogova OV,2016
+416,458,PTCy70 (reduced-dose),PTCy_arm,N,N,Y,41,60,63.4,100,0,0,10.5,0,0,100,MUD,PBSC,22,78,RIC,Y,35,70,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,2,72.5,30.4,Desai N,2026
+416,459,PTCy100 (standard-dose contemporary control),PTCy_arm,N,N,Y,132,61,56,100,0,0,6.8,0,0,100,MUD,PBSC,43.2,56.8,RIC,Y,50,100,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,2,83.3,20.3,Desai N,2026
+417,460,PT-Cy,PTCy_arm,N,N,N,136,53,63,51,13,10,36,86,4,10,haplo,PBSC,23.5,34,mixed,Y,50,mixed 50 or 100,NR,NR,NR,NR,Y,NR,NR,NR,22,Dulery R,2021
+417,461,No PT-Cy,comparator_arm,N,N,N,195,56,58,43,16,11,23,0.5,42.5,57,mixed,PBSC,51,20,mixed,N,NA,NA,NR,NR,NR,NR,Y,NR,NR,NR,33,Dulery R,2021
+418,462,PT-Cy 70 mg/kg (reduced dose),PTCy_arm,N,N,Y,33,69,55,61,0,24,58,100,0,0,haplo,PBSC,0,45,RIC,Y,35,70,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,2.5 (RIC) or 5 (sequential),NR,18,Dulery R,2023
+418,463,PT-Cy 100 mg/kg (standard dose),comparator_arm,N,N,Y,25,67,68,68,0,12,48,100,0,0,haplo,PBSC,0,40,RIC,Y,50,100,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,2.5 (RIC) or 5 (sequential),NR,17,Dulery R,2023
+419,464,PTCy/Tac/MMF,PTCy_arm,Y,N,N,125,38.7,52,44,30.4,7.2,32,0,55.2,35.2,MSD,PBSC,100,0,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,16,El Jurdi N,2023
+419,465,CSA/MTX (historical),comparator_arm,Y,N,N,344,39.6,59.9,35.5,24.7,8.7,35.8,0,83.1,11.9,MSD,PBSC,100,0,MAC,N,NA,NA,cyclosporine,N,Y,N,N,NA,NA,NR,37,El Jurdi N,2023
+421,466,PTCy-Tacrolimus (PT Cy-tacro),PTCy_arm,Y,N,N,68,57,61,NR,NR,NR,43,0,21,36,MMUD,PBSC,0,100,RIC,Y,50,100,tacrolimus,N,N,N,N,NA,NA,74,NR,Esquirol A,2024
+421,467,CsA-MTX/MMF,comparator_arm,Y,N,N,271,52,65,NR,NR,NR,31,0,81,12,MSD,PBSC,0,100,RIC,N,NA,NA,cyclosporine,Y,Y,N,N,NA,NA,84,NR,Esquirol A,2024
+421,468,Tacrolimus-Sirolimus (Tac-Siro),comparator_arm,N,N,N,145,57,57,NR,NR,NR,30,0,31,58,MUD,PBSC,0,100,RIC,N,NA,NA,tacrolimus,N,N,Y,N,NA,NA,83,NR,Esquirol A,2024
+422,469,HAPLO arm,PTCy_arm,N,N,N,60,45,48,67,12,NR,38,100,0,0,haplo,BM,0,100,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,28,Gaballa S,2016
+422,470,9/10 MUD arm,PTCy_arm,N,N,N,46,51,50,54,11,NR,40,0,0,0,MMUD,BM,0,100,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,33,Gaballa S,2016
+424,471,PTCy-based,PTCy_arm,Y,N,N,36,64,NR,58.3,0,30.6,32.3,33.3,2.8,63.9,mixed,NR,0,NR,RIC,Y,NR,NR,tacrolimus,Y,N,N,N,NA,NA,NR,16.7,Hassan K,2025
+424,472,TAC/MTX,comparator_arm,Y,N,N,71,65,NR,50.7,0,28.2,43.6,0,26.8,70.4,MUD,NR,0,NR,RIC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,NR,26.8,Hassan K,2025
+425,473,DL1 HD-PTCy 50 mg/kg/day days +3/+4,comparator_arm,N,N,Y,5,25,60,20,60,0,40,100,0,0,haplo,BM,100,0,MAC,Y,50,100,NA,Y,N,Y,N,NA,NA,80,NR,Hyder MA,2025
+425,474,DL2 ID-PTCy 25 mg/kg/day days +3/+4,PTCy_arm,N,N,Y,23,34,60.9,21.7,43.5,0,43.5,100,0,0,haplo,BM,100,0,MAC,Y,25,50,NA,Y,N,Y,N,NA,NA,73.9,0,Hyder MA,2025
+425,475,DL3 PTCy 25 mg/kg day +4 only,PTCy_arm,N,N,Y,7,23,42.9,42.9,28.6,14.3,57.1,100,0,0,haplo,BM,100,0,MAC,Y,25,25,NA,Y,N,Y,N,NA,NA,85.7,NR,Hyder MA,2025
+426,476,HaploSCT,PTCy_arm,N,N,N,40,47,53,NR,NR,NR,38,100,0,0,haplo,PBSC,100,0,MAC,Y,50,100,tacrolimus,N,N,Y,N,NA,NA,75,20.3,Garcia-Cadenas Irene,2021
+426,477,MRD/VUD/MMUD (non-haploSCT),PTCy_arm,N,N,N,77,54,55,NR,NR,NR,37,0,29,30,mixed,PBSC,27,73,RIC,Y,50,100,tacrolimus,N,N,Y,N,NA,NA,73,29,Garcia-Cadenas Irene,2021
+430,478,PTCy,PTCy_arm,N,Y,N,16,37.8,NR,31,25,25,NR,0,0,NR,MUD,BM,87.5,12.5,MAC,Y,NR,NR,NR,NR,NR,NR,N,NA,NA,87.5,25,Kerbauy MN,2025
+430,479,ATG,comparator_arm,N,Y,N,20,45,NR,35,10,20,NR,0,0,NR,MUD,PBSC,60,40,MAC,N,NA,NA,NR,NR,Y,NR,Y,NR,NR,95,40,Kerbauy MN,2025
+431,480,ATG/PTCy,PTCy_arm,N,N,Y,32,56,56.2,46.9,18.8,28.1,50,100,0,0,haplo,PBSC,28.1,71.9,RIC,Y,50_day3_30_day4,80,mixed,Y,N,N,Y,rabbit_thymoglobulin,3.0_3.5_4.0_ALC_tailored,93.7,22.1,Kim DH,2024
+431,481,ATG,comparator_arm,N,N,Y,46,55,47.8,47.8,19.6,30.4,67.4,100,0,0,haplo,PBSC,10.9,89.1,RIC,N,NA,NA,mixed,N,Y,N,Y,rabbit_thymoglobulin,7.5,97.8,42.9,Kim DH,2024
+432,482,"PTCy+Aba (experimental, CNI-free)",PTCy_arm,Y,N,N,25,NR,56,36,28,16,NR,0,32,68,MUD,PBSC,76,24,MAC,Y,50,100,NA,N,N,N,N,NA,NA,NR,12.5,Koura D,2025
+432,483,SOC (tacrolimus + methotrexate),comparator_arm,Y,N,N,15,NR,73.3,46.7,33.3,0,NR,0,40,60,MUD,PBSC,66.7,33.3,MAC,N,NA,NA,tacrolimus,N,Y,N,N,NA,NA,NR,35.7,Koura D,2025
+433,484,PTCy-15 mg/kg (subgroup-1),PTCy_arm,N,N,Y,33,54,63.6,60.6,24.2,12.1,51.5,0,0,0,MMUD,PBSC,9.1,90.9,RIC,Y,15,30,cyclosporine,N,N,N,N,NA,NA,NR,29,Lazana I,2026
+433,485,PTCy-25 mg/kg (subgroup-2),PTCy_arm,N,N,Y,30,50,66.7,63.3,20,13.3,70,0,0,0,MMUD,PBSC,16.7,83.3,RIC,Y,25,50,cyclosporine,N,N,N,N,NA,NA,NR,20,Lazana I,2026
+433,486,"Control (alemtuzumab 10 mg + CsA + MMF, historical 2015-2019)",comparator_arm,N,N,N,31,43,54.8,45.2,12.9,12.9,45.2,0,0,0,MMUD,PBSC,48.4,51.6,mixed,N,NA,NA,cyclosporine,Y,N,N,N,NA,NA,NR,48,Lazana I,2026
+436,487,PTCY,PTCy_arm,N,N,Y,32,61,65.6,43.8,6.3,18.8,25,100,0,0,haplo,PBSC,0,100,RIC,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,28.1,59.3,Makanga DR,2020
+436,488,PTCY + ATG,PTCy_arm,N,N,Y,26,62,61.5,50,0,19.2,42.3,100,0,0,haplo,PBSC,0,100,RIC,Y,50,100,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,2.5,23.1,23.8,Makanga DR,2020
+437,489,PTCy group,comparator_arm,N,N,Y,16,43.5,56.2,43.8,31.3,NR,NR,100,0,0,haplo,NR,75,25,MAC,Y,50,100,cyclosporine,Y,N,N,N,NA,NA,100,31.3,Mandaci Sanli N,2025
+437,490,Low-dose ATG/PTCy group,PTCy_arm,N,N,Y,17,43,70.6,76.5,5.9,NR,NR,100,0,0,haplo,NR,58.8,41.2,MAC,Y,50,50,cyclosporine,Y,N,N,Y,NR,5,100,11.8,Mandaci Sanli N,2025
+438,491,"MBM (matched bone marrow, single-agent PTCy)",PTCy_arm,N,N,Y,57,31,52,44,25,4,NR,0,88,12,MSD,BM,25,75,RIC,Y,50,100,NA,N,N,N,N,NA,NA,NR,11,Moiseev IS,2018
+438,492,"MPBSC (matched PBSC, PTCy + tacrolimus + MMF 30 mg/kg)",PTCy_arm,N,N,Y,88,32,54,49,28,5,NR,0,1,99,MUD,PBSC,22,82,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,16.6,Moiseev IS,2018
+438,493,"MMG (mismatched grafts, PTCy + tacrolimus + MMF 45 mg/kg)",PTCy_arm,N,N,Y,55,27,56,47,25,4,NR,35,0,0,mixed,mixed,7,93,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,19.1,Moiseev IS,2018
+442,494,PT/Cy-haplo (HLA-haploidentical PBSCT + reduced-dose PT/Cy 25 mg/kg x 2 + TAC + MMF),PTCy_arm,Y,N,N,39,48,NR,51,23,3,49,100,0,0,haplo,PBSC,3,97,RIC,Y,25,50,tacrolimus,Y,N,N,N,NA,NA,92,62,Nakamae H,2019
+442,495,"MRD (HLA-matched related donor, primarily PB; CSA + sMTX)",comparator_arm,Y,N,N,17,45,NR,29,24,12,29,0,100,0,MSD,PBSC,59,41,MAC,N,NA,NA,cyclosporine,N,Y,N,UNCL,NR,NA,82,47,Nakamae H,2019
+446,496,"Standard-dose PTCy (50 mg/kg x 2, total 100 mg/kg) + tacrolimus",PTCy_arm,N,N,Y,59,54,52.5,NR,NR,NR,57.6,0,61,39,MSD,PBSC,39,61,RIC,Y,50,100,tacrolimus,N,N,N,N,NA,NA,NR,25.1,Redondo S,2025
+446,497,"Reduced-dose PTCy (30 mg/kg x 2, total 60 mg/kg) + tacrolimus",PTCy_arm,N,N,Y,48,59,54.2,NR,NR,NR,37.5,0,35.4,64.6,MUD,PBSC,31.3,68.8,RIC,Y,30,60,tacrolimus,N,N,N,N,NA,NA,NR,28.3,Redondo S,2025
+447,498,PT-Cy alone (group 1),PTCy_arm,N,N,Y,78,37.1,NR,72,28,0,NR,0,81,19,MSD,BM,44,56,RIC,Y,NR,NR,NA,N,N,N,N,NA,NA,77,NR,Ruggeri A,2018
+447,499,PT-Cy + 1 IS drug (group 2),PTCy_arm,N,N,Y,204,51.3,NR,84,16,0,NR,0,56,44,MSD,PBSC,49,51,mixed,Y,NR,NR,cyclosporine,mixed,mixed,N,Y,mixed,NR,66,NR,Ruggeri A,2018
+447,500,PT-Cy + 2 IS drugs (group 3),PTCy_arm,N,N,Y,141,43.9,NR,73,27,0,NR,0,45,54,MUD,PBSC,74,26,MAC,Y,NR,NR,cyclosporine,mixed,mixed,N,Y,mixed,NR,68,NR,Ruggeri A,2018
+450,501,MSD (matched sibling donor) + PTCy,PTCy_arm,N,N,Y,215,48,54,100,0,0,22,0,100,0,MSD,PBSC,58,42,MAC,Y,NR,NR,NR,mixed,NR,NR,mixed,NR,NR,77,17,Sanz J,2020
+450,502,MUD (matched unrelated donor) + PTCy,PTCy_arm,N,N,Y,235,47,56,100,0,0,34,0,0,100,MUD,PBSC,50,50,mixed,Y,NR,NR,NR,mixed,NR,NR,mixed,NR,NR,73,28,Sanz J,2020
+450,503,Haplo (haploidentical donor) + PTCy,PTCy_arm,N,N,Y,789,54,56,100,0,0,29,100,0,0,haplo,PBSC,62,38,MAC,Y,NR,NR,NR,mixed,NR,NR,mixed,NR,NR,79,26,Sanz J,2020
+453,504,PTCY,PTCy_arm,N,N,Y,421,51,59,100,0,0,20.7,0,0,64.6,MUD,PBSC,51.1,48.9,mixed,Y,NR,NR,mixed,Y,mixed,mixed,N,NA,NA,74.2,28.9,Spyridonidis A,2022
+453,505,PTCY + ATG,PTCy_arm,N,N,Y,151,49.8,57,100,0,0,18.5,0,0,65.6,MUD,PBSC,59.2,40.8,mixed,Y,NR,NR,mixed,Y,mixed,mixed,Y,mixed,thymoglobulin median 5 mg/kg (IQR 5-7.5); Grafalon median 40 mg/kg (IQR 30-60),77.2,23.1,Spyridonidis A,2022
+454,506,Intermediate-dose PTCy,PTCy_arm,N,N,Y,11,64,81.8,63.6,0,36.4,NR,18.2,9.1,54.5,MUD,PBSC,9.1,90.9,RIC,Y,25,50,tacrolimus,Y,N,N,N,NA,NA,NR,19.2,Venugopal N,2025
+454,507,Standard-dose PTCy (historical cohort),comparator_arm,N,N,Y,57,NR,NR,NR,NR,NR,NR,NR,NR,NR,mixed,NR,NR,NR,NR,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,14,Venugopal N,2025
+455,508,"Cohort A (study cohort, ATG + G-CSF + low-dose PTCy)",PTCy_arm,N,N,Y,40,28,62.5,58,20,19,NR,100,0,0,haplo,mixed,100,0,MAC,Y,14.5,29,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,17,Wang Y,2017
+455,509,"Cohort B (contemporary matched-pair control, ATG + G-CSF, no PTCy)",comparator_arm,N,N,Y,120,27,60,58,19,19,NR,100,0,0,haplo,mixed,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,33,Wang Y,2017
+455,510,"Cohort C (historical control, ATG + G-CSF, no PTCy, maternal/collateral donors)",comparator_arm,N,N,Y,46,23,67,58,21,18,NR,100,0,0,haplo,mixed,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,56,Wang Y,2017
+456,511,PT-Cy,PTCy_arm,N,N,N,31,30,67.7,0,80.6,0,NR,9.6,58.1,32.3,MSD,PBSC,100,0,MAC,Y,50,100,cyclosporine,N,N,N,N,NA,NA,NR,39,Wang L,2021
+456,512,Historical group (CsA + MTX + MMF ± ATG),comparator_arm,N,N,N,48,23,62.5,0,89.6,0,NR,0,41.7,58.3,MUD,PBSC,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,mixed,NR,"6 mg/kg (MUD subset only, per discussion)",NR,40.4,Wang L,2021
+457,513,PTCy-ATG (PTCy + tacrolimus + post-engraftment low-dose ATG),PTCy_arm,Y,Y,N,71,48,60.6,69,0,25.4,NR,94.4,0,5.6,haplo,PBSC,100,0,MAC,Y,50,100,tacrolimus,N,N,N,Y,NR,2.5,NR,NR,Wang Y,2025
+457,514,CNI (CsA + MMF + MTX) - MSD historical control,comparator_arm,Y,N,N,48,45,62.5,89.6,0,6.3,NR,0,100,0,MSD,PBSC,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,N,NA,NA,NR,NR,Wang Y,2025
+457,515,CNI-ATG (CsA + MMF + MTX + ATG) - MUD/haplo historical control,comparator_arm,N,Y,N,35,36,45.7,68.6,0,25.7,NR,45.7,0,54.3,mixed,PBSC,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,NR,8.2,NR,NR,Wang Y,2025
+460,516,Low dose ATG/PTCy,PTCy_arm,N,N,Y,31,NR,NR,NR,0,NR,NR,100,0,0,haplo,PBSC,NR,NR,mixed,Y,50,50,cyclosporine,Y,N,N,Y,NR,5,NR,17,Xu X,2021
+460,517,Standard-dose ATG,comparator_arm,N,N,Y,36,NR,NR,NR,0,NR,NR,100,0,0,haplo,PBSC,NR,NR,mixed,N,NA,NA,cyclosporine,Y,Y,N,Y,NR,10,NR,40.2,Xu X,2021
+461,518,PT-Cy + ATLG (study group),PTCy_arm,N,N,Y,21,60,57.1,61.9,9.5,NR,NR,42.9,19,19,haplo,PBSC,61.9,38.1,MAC,Y,50,100,NA,mixed,N,Y,Y,rabbit_grafalon_ATLG,5,NR,24,Xue E,2022
+461,519,PT-Cy (control group),comparator_arm,N,N,Y,42,56,61.9,54.8,14.3,NR,NR,38.1,16.7,28.6,haplo,PBSC,71.4,28.6,MAC,Y,50,100,NA,mixed,N,Y,N,NA,NA,NR,29,Xue E,2022
+462,520,Reduced-dose PTCy/ATG group,PTCy_arm,N,N,Y,61,24,64,36,49,8,18,100,0,0,haplo,PBSC,100,0,MAC,Y,40,80,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,2.5,NR,11.5,Zhang W,2023
+462,521,Standard-dose ATG group (Beijing Protocol),comparator_arm,N,N,Y,61,26,67,54,30,8,20,100,0,0,haplo,mixed,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,39.3,Zhang W,2023
+464,522,low-dose PTCy-ATG,PTCy_arm,N,N,N,53,29,52.8,45.3,41.5,11.3,50.9,0,0,100,MUD,PBSC,100,0,MAC,Y,20,40,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,6,NR,24.5,Zu Y,2022
+464,523,standard-dose ATG,comparator_arm,N,N,N,51,29,64.7,60.8,31.4,7.8,39.2,0,0,100,MUD,PBSC,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,47.1,Zu Y,2022
+465,524,Low-dose PTCy-ATG cohort,PTCy_arm,N,Y,N,80,NR,NR,NR,NR,NR,NR,0,0,51.2,MUD,PBSC,100,0,MAC,Y,20,40,cyclosporine,Y,N,N,Y,rabbit_thymoglobulin,6,NR,23.8,Zu Y,2023
+465,525,Quadruplet ATG group,comparator_arm,N,Y,N,80,NR,NR,NR,NR,NR,NR,0,0,70,MUD,PBSC,100,0,MAC,N,NA,NA,cyclosporine,Y,Y,N,Y,rabbit_thymoglobulin,10,NR,40,Zu Y,2023

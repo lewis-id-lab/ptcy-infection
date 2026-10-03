@@ -1,0 +1,251 @@
+study_id,first_author,pub_year,country,study_design,single_or_multicenter,enrollment_start_year,enrollment_end_year,follow_up_median_months,primary_for_cohort,cohort_id,total_n,n_arms,comparisons
+2,Bolanos-Meade J,2023,United States,RCT,multi,2019,2021,12,Y,1002,431,2,C1
+4,Goldsmith SR,2021,USA,registry,registry,2012,2017,NR,partial,1001,2765,3,C1
+5,Khimani F,2021,United States,retrospective_cohort,single,2012,2018,NR,Y,1004,583,4,C1
+6,Meyer T,2025,Germany,retrospective_cohort,single,2015,2022,NR,Y,1005,499,4,C1/C2
+7,Moiseev IS,2016,Russia,prospective_cohort,single,2010,2015,12,Y,1007,211,2,C1
+8,Papanicolaou GA,2024,USA,registry,registry,2012,2017,NR,partial,1001,2765,3,C1
+9,Salas,2022,Spain,retrospective_cohort,single,2014,2021,25.9,partial,1003,330,2,C1
+10,Shaffer BC,2024,United States,registry,registry,2017,2021,36.6,Y,1008,2294,2,C3
+11,Abadir,2024,Australia/New Zealand,single_arm_descriptive_excluded,multi,2010,2020,12.4,Y,1009,NA,NA,NA
+12,Abedin S,2025,USA,RCT,multi,2019,2021,NR,N,1002,96,2,C1
+14,Abid MB,2020,USA,single_arm_descriptive_excluded,single,2012,2018,NR,Y,1010,NA,NA,NA
+16,Adoncecchi G,2025,USA,single_arm_descriptive_excluded,single,2014,2019,11,N,1004,121,2,NA
+19,Ahmed S,2019,multinational,registry,registry,2008,2016,NR,Y,1011,596,2,C1
+20,Ahn J,2025,Korea,retrospective_cohort,single,2017,2023,14.1,Y,1012,78,2,C1
+24,Alanazi W,2021,Canada,retrospective_cohort,single,2014,2017,29,Y,1013,159,2,C2
+26,Alousi,2015,USA,prospective_cohort,single,2008,2011,32,Y,1014,74,2,C1
+32,Arora S,2026,India,single_arm_descriptive_excluded,single,2022,2024,15.5,Y,1015,NA,NA,NA
+35,Arslan,2024,Germany,registry,registry,2010,2020,NR,Y,1016,7537,2,C1
+37,Ashouri K,2024,USA,retrospective_cohort,single,2015,2023,NR,Y,1017,74,3,C1
+39,Aydin M,2023,Netherlands,retrospective_cohort,single,2014,2021,NR,partial,1018,185,2,C2
+43,Bailen,2021,Spain,retrospective_cohort,multi,2010,2018,NR,Y,1019,132,2,C2
+44,Bailen R,2022,Spain,retrospective_cohort,multi,2013,2019,27 (MSD/MUD); 62.5 (haplo),Y,1020,229,2,C3
+45,Baker M,2016,USA,retrospective_cohort,single,2009,2014,33.6,Y,1021,113,2,C1
+46,Balletto E,2024,Italy,single_arm_descriptive_excluded,single,2014,2019,25.7,NA,NEW_Balletto_2024,NA,NA,NA
+47,Bansal R,2021,USA,single_arm_descriptive_excluded,single,2018,2020,6.9,NA,NEW_Bansal_2021,NA,NA,NA
+48,Baranwal,2025,USA,retrospective_cohort,single,2018,2023,33.6,Y,1022,500,2,C1
+49,Barkhordar M,2021,Iran,retrospective_cohort,single,2010,2019,31.83,Y,1023,248,4,C1/C2
+50,Barkhordar M,2022,Iran,retrospective_cohort,single,2008,2020,64.32,partial,1023,118,2,C1
+51,Barkhordar,2022,Iran,retrospective_cohort,single,2008,2020,64.3,partial,1023,118,2,C1
+52,Baron F,2024,multinational,registry,registry,2013,2021,NR,partial,1024,479,2,C1
+55,Bashey ZA,2018,United States,retrospective_cohort,single,2005,2015,27,Y,1025,127,3,C1
+57,Battipaglia,2019,multinational,registry,registry,2007,2015,17.5,partial,1024,2043,2,C1
+60,Battipaglia G,2019,multinational,registry,registry,2011,2017,NR,partial,1024,272,2,C2
+61,Battipaglia G,2020,multinational,registry,registry,2008,2018,22,partial,1024,2110,2,C2
+62,Battipaglia G,2022,multinational,retrospective_cohort,registry,2011,2019,19 (PTCy) / 15 (ATG+PTCy),partial,1024,441,2,C3
+63,Bazarbachi,2024,multinational,registry,registry,2007,2021,31.8,partial,1024,3649,3,C2
+65,Berger M,2022,Italy,retrospective_cohort,multi,2011,2019,14.9,Y,1026,79,2,C1
+66,Berro M,2021,Argentina,retrospective_cohort,single,2012,2019,27.6,Y,1027,56,2,C2
+67,Bhatia,2026,USA,retrospective_cohort,single,2010,2023,NR,Y,1028,61,2,C1
+71,Blaise D,2016,France,retrospective_cohort,single,2011,2013,23,Y,1029,141,3,C1
+72,Bolanos-Meade J,2019,USA,RCT,multi,2014,2016,NR,Y,1030,497,4,C1
+75,Bordat J,2026,France,retrospective_cohort,single,2010,2024,52.4,Y,1006,155,3,C2
+77,Brissot E,2019,multinational,registry,registry,2007,2014,NR,partial,1024,1693,3,C1
+78,Brissot,2020,multinational,registry,registry,2010,2017,NR,partial,1024,1626,2,C2
+79,Brissot E,2024,France,RCT,multi,2017,2019,56,N,1024,81,2,C2
+80,Broers AEC,2022,Netherlands,RCT,multi,2013,2018,56.4,Y,1031,151,2,none
+83,Bykova TA,2018,Russia,retrospective_cohort,single,2005,2018,NR,Y,1032,118,2,none
+86,Camargo JF,2021,USA,retrospective_cohort,single,2015,2019,7.5,partial,1033,78,3,C1/C2
+88,Cao J,2022,China,retrospective_cohort,single,2014,2020,20,Y,1034,80,2,C1
+89,Carreira,2022,Canada,retrospective_cohort,single,2015,2019,NR,partial,1013,651,4,C1
+94,Chalandon Y,2024,multinational,registry,registry,2012,2019,52.8,Y,1035,960,2,none
+97,Chiurlo M,2025,Italy,retrospective_cohort,single,2015,2022,NR,Y,1036,473,1,none
+99,Chiusolo,2026,multinational,retrospective_cohort,multi,2010,2024,NR,Y,1037,539,2,C2
+100,Chorao,2024,Spain,retrospective_cohort,single,2017,2022,39,Y,1038,366,3,C3
+101,Chorao,2026,Spain,single_arm_descriptive_excluded,single,2017,2023,45,partial,Chorao_Portuguese_single_center,NA,NA,NA
+104,Cooper DL,2021,USA,retrospective_cohort,single,2014,2018,35.9,Y,1039,90,2,C1
+105,Curtis DJ,2025,Australia/New Zealand,RCT,multi,2019,2024,36.1,Y,1040,134,2,C1
+107,Dachy,2023,France,retrospective_cohort,single,2014,2021,NR,Y,1041,94,2,C2
+108,Desai N,2024,Canada,single_arm_descriptive_excluded,single,2020,2023,9.4,N,1013,NA,NA,NA
+109,Desai N,2025,Canada/USA,retrospective_cohort,multi,2015,2023,28.4,Y,1042,861,2,C2
+110,Desai N,2025,Canada,retrospective_cohort,single,2010,2023,44.4,Y,1043,97,2,C1
+111,Desai N,2025,Canada,retrospective_cohort,single,2010,2023,54,Y,1044,413,4,C1/C2
+112,Desai N,2026,USA,retrospective_cohort,registry,2017,2021,NR,partial,1008,1387,3,C1/C2
+118,Dholaria,2021,multinational,registry,registry,2010,2019,NR,partial,1024,1182,2,C1
+119,Doppelhammer,2019,Germany,retrospective_cohort,multi,2009,2016,35,Y,1045,68,2,C1
+120,Dreger,2019,multinational,retrospective_cohort,registry,2008,2015,49,Y,1046,1438,4,C1/C2
+122,Dybko J,2023,Poland,retrospective_cohort,multi,2015,2019,NR,partial,1047,145,2,C2
+123,Dybko J,2023,Poland,retrospective_cohort,multi,2015,2019,NR,partial,1047,162,3,C1
+124,Dybko J,2024,Poland,retrospective_cohort,multi,2015,2019,8.5,partial,1047,174,3,C2
+133,Esquirol A,2020,Spain,retrospective_cohort,single,2005,2017,NR,Y,1048,77,2,C1
+134,Esquirol A,2021,Spain,retrospective_cohort,multi,2013,2018,37,Y,1049,236,1,none
+136,Fox ML,2024,Spain,retrospective_cohort,multi,2012,2020,NR,Y,1050,171,2,C2
+137,Fox ML,2026,Spain,retrospective_cohort,multi,2012,2022,47.7,Y,1051,453,3,C2
+140,Fuchs EJ,2021,USA,RCT,multi,2012,2018,24,Y,1052,368,2,C1
+141,Galli E,2022,Italy,retrospective_cohort,single,2017,2020,NR,Y,1053,231,2,C1
+142,Gantner,2026,Germany,registry,multi,2009,2020,NR,partial,1016,1413,2,C2
+144,Gao M,2025,China,retrospective_cohort,multi,2016,2020,26.5,Y,1054,156,2,C1
+146,Garcia-Horton A,2026,Canada,retrospective_cohort,multi,2016,2023,NR,Y,1055,385,2,C3
+147,Ge S,2025,Canada,single_arm_descriptive_excluded,single,2016,2024,NR,Y,1056,NA,NA,NA
+151,Giebel S,2023,multinational,registry,registry,2015,2020,NR,partial,1024,896,2,C2
+152,Gimenez E,2025,Spain,single_arm_descriptive_excluded,single,2020,2024,12,Y,1057,NA,NA,NA
+155,Girmenia C,2025,Italy,single_arm_descriptive_excluded,multi,2021,2022,12,Y,1058,NA,NA,NA
+158,Goldsmith SR,2016,USA,retrospective_cohort,single,NR,NR,7.2,N,1001,138,1,none
+162,Gronvold BL,2024,Norway,single_arm_descriptive_excluded,single,2005,2019,74.4,Y,1059,NA,NA,NA
+163,Grosso,2020,USA,single_arm_descriptive_excluded,single,2008,2018,63,Y,1060,NA,NA,NA
+166,Guo W,2026,China,retrospective_cohort,single,2019,2024,38.5,Y,1061,61,2,C1
+167,Haebe S,2023,Germany,retrospective_cohort,single,2000,2017,126,Y,1062,48,3,C1/C2
+168,Hamadani M,2022,multinational,registry,registry,2008,2018,38,Y,1063,1942,4,C1/C2
+170,Harada K,2025,Japan,registry,registry,2014,2020,33,Y,1064,7499,3,C1
+178,Huntley D,2020,Spain,retrospective_cohort,multi,2012,2018,NR,Y,1065,283,4,C1
+180,Iqbal M,2023,USA,retrospective_cohort,single,2018,2021,13.2,Y,1066,116,2,C1
+183,Jamy O,2022,USA,retrospective_cohort,single,2012,2016,NR,Y,1067,225,3,C1
+184,Jia Y,2025,China,retrospective_cohort,single,2016,2023,29.8,Y,1068,127,2,C1
+185,Jimenez Jimenez,2022,USA,retrospective_cohort,multi,2010,2020,NR,Y,1069,128,2,C2
+187,Jo T,2024,Japan,registry,registry,2013,2021,NR,Y,1070,1999,2,C1
+192,Kahraman,2026,Turkey,retrospective_cohort,single,2022,2024,NR,Y,1071,78,2,C1
+193,Kampouri E,2023,USA,single_arm_descriptive_excluded,single,2015,2021,NR,Y,1072,NA,NA,NA
+196,Kanate AS,2016,United States,registry,registry,2008,2013,36,Y,1073,917,3,C1/C2
+197,Kaphan E,2021,France,retrospective_cohort,single,2014,2018,NR,Y,1074,168,2,C1
+198,Kara,2021,Turkey,retrospective_cohort,single,2016,2020,10.6,Y,1075,40,2,C1
+201,Kerbauy MN,2021,Brazil,retrospective_cohort,single,2010,2018,NR,Y,1076,127,2,C1
+203,Kim H,2026,USA,retrospective_cohort,single,2010,2024,52.8,Y,1077,351,2,C3
+207,Kunacheewa C,2020,Thailand,retrospective_cohort,single,2010,2013,71,Y,1078,42,2,C1
+208,Kwon M,2017,Spain,retrospective_cohort,multi,1999,2014,26,N,1020,87,2,C1
+209,Kwon M,2019,Spain,retrospective_cohort,multi,2010,2017,NR,Y,1079,107,2,C1
+211,Langer R,2024,Germany/Austria/Croatia/Poland,retrospective_cohort,multi,2017,2017,34.4,Y,1080,178,2,C2
+216,Li Y,2022,China,retrospective_cohort,multi,2013,2021,NR,Y,1081,130,2,C1
+217,Li Z,2018,multinational,registry,registry,2006,2016,NR,partial,1024,154,2,C1
+219,Liu YC,2025,Taiwan,retrospective_cohort,single,2003,2023,17.9,Y,1082,580,2,C1
+220,Loke WSJ,2025,Singapore,single_arm_descriptive_excluded,multi,2003,2022,56,Y,1083,NA,NA,NA
+221,Lorentino F,2017,multinational,registry,registry,2007,2014,23,partial,1024,509,2,C1
+226,Luznik L,2022,USA_Germany,RCT,multi,2015,2018,24,Y,1084,327,3,C1
+231,Malkan,2023,Turkey,single_arm_descriptive_excluded,single,2015,2022,NR,Y,1085,NA,NA,NA
+232,Al Malki,2020,multinational,retrospective_cohort,registry,2005,2018,36,partial,1024,1461,2,C1
+236,Massoud R,2022,Germany,retrospective_cohort,single,2005,2019,16,Y,1086,599,2,C2
+238,Maurer K,2023,USA,retrospective_cohort,single,2018,2021,24.3,Y,1087,570,2,C1
+241,Mehta A,2026,USA,retrospective_cohort,single,2018,2022,35,Y,1088,586,2,C1
+242,Mehta RS,2016,USA,retrospective_cohort,single,2009,2013,24,Y,1089,113,2,C1
+243,Mehta RS,2022,United States,retrospective_cohort,single,2015,2020,25,Y,1090,661,3,C3
+244,Mehta RS,2022,USA,retrospective_cohort,single,2015,2020,29,Y,1091,964,4,C1/C3
+245,Mehta RS,2023,USA,registry,registry,2013,2017,31.5,Y,1092,419,2,C1
+246,Mehta RS,2026,USA,registry,registry,2017,2021,36,N,1008,10025,4,C1/C2
+248,Metafuni E,2018,Italy,retrospective_cohort,multi,2010,2015,20.6,Y,1093,97,2,C1
+250,Mikulska M,2018,Italy,retrospective_cohort,single,2010,2016,NR,Y,1094,553,4,C1
+253,Modi D,2021,USA,retrospective_cohort,single,2012,2019,NR,Y,1095,89,2,C3
+254,Modi D,2021,USA,retrospective_cohort,single,2006,2019,NR,Y,1096,76,2,C2
+256,Mohyuddin GR,2019,USA,single_arm_descriptive_excluded,single,NR,NR,NR,Y,1097,63,1,NA
+257,Moiseev I,2025,multinational,registry,registry,2015,2021,NR,Y,1098,450,2,C2
+258,Moiseev IS,2017,Russia,retrospective_cohort,single,2006,2016,NR,Y,1099,183,2,C1
+260,Molina A,2026,USA,retrospective_cohort,single,2018,2025,30,Y,1100,237,2,C1
+261,Montoro J,2021,Spain,retrospective_cohort,multi,2016,2019,16,Y,1101,129,2,C1
+262,Montoro,2024,multinational,registry,registry,2015,2022,26,Y,1102,446,2,C1
+263,Moriguchi,2024,Japan,retrospective_cohort,registry,2013,2021,NR,Y,1103,799,3,C1/C2
+264,Morsink,2024,Netherlands,single_arm_descriptive_excluded,single,2018,2022,21.3,Y,1104,92,1,NA
+268,Mulroney CM,2021,USA,registry,registry,2012,2017,NR,partial,1001,2765,3,C1
+270,Murthy HS,2022,USA,registry,registry,2008,2018,49,Y,1105,266,2,C1
+271,Mushtaq MU,2024,USA,retrospective_cohort,single,2016,2021,24.4,Y,1106,452,2,C1
+272,Mussetti,2023,multinational,registry,registry,2010,2019,33,Y,1107,2140,2,C3
+273,Nagayama T,2025,Japan,registry,registry,2016,2021,14.5,Y,1108,5116,6,C1
+276,Nagler A,2021,multinational,registry,registry,2012,2018,25,partial,1024,2304,2,C1
+277,Nagler A,2021,multinational,registry,registry,2007,2017,24.4,partial,1024,434,2,C2
+278,Nagler A,2023,multinational,registry,registry,2010,2019,19.2,partial,1024,127,1,none
+279,Nagler A,2023,multinational,registry,registry,2010,2021,25.9,partial,1024,1711,2,none
+280,Nagler A,2024,multinational,registry,registry,2014,2021,22.8,partial,1024,7049,2,C1/C2
+281,Nagler A,2024,multinational,registry,registry,2010,2020,NR,partial,1024,6050,2,C1
+282,Nagler A,2024,multinational,registry,registry,2010,2022,27.1/22.5/31.8/19.8 (per arm: yHaplo/oMMUD/oHaplo/yMMUD),partial,1024,2798,4,C3
+287,Nagler A,2022,multinational,registry,registry,2010,2019,16.04,partial,1024,1320,2,C1
+289,Nakaya Y,2024,Japan,retrospective_cohort,registry,2014,2020,27.6,Y,1109,697,3,C1
+290,Jo T,2024,Japan,registry,registry,2013,2021,NR,Y,1070,1999,2,C1
+291,Nath K,2024,USA,single_arm_descriptive_excluded,single,2008,2019,64,Y,1110,NA,NA,NA
+292,Ngo-Huang,2023,USA,retrospective_cohort,single,2015,2018,22,Y,1111,204,2,none
+293,Nguyen A,2024,Switzerland,retrospective_cohort,single,2015,2021,NR,Y,1112,421,1,none
+296,Nishikubo M,2024,Japan,retrospective_cohort,registry,2013,2021,NR,Y,1113,857,2,C1
+297,Noviello M,2023,Italy,prospective_cohort,single,2013,2015,48,Y,1114,185,2,C1
+299,Nykolyszyn C,2020,France,retrospective_cohort,single,2010,2018,PT-Cy: 24; ATG: 68,Y,1115,62,2,C2
+300,Orti G,2023,multinational,registry,registry,2012,2019,34.9,Y,1116,1341,3,C1
+301,Otoukesh S,2024,USA,retrospective_cohort,single,2010,2020,55.2,Y,1117,269,2,C1
+302,Pagliardini,2019,France,retrospective_cohort,single,NR,NR,NR,Y,1118,209,2,C1
+304,Pasic I,2020,Canada,retrospective_cohort,single,2013,2017,12,partial,1119,133,2,C1
+305,Paviglianiti A,2024,multinational,retrospective_cohort,registry,2010,2021,NR,partial,1024,185,2,C1
+306,Pei XY,2025,China,single_arm_descriptive_excluded,single,2015,2023,39,Y,1120,NA,NA,NA
+307,Penack O,2024,multinational,registry,registry,2018,2021,25.2,Y,1121,8764,2,C2
+308,Penack O,2025,multinational,registry,registry,2017,2021,26.4,Y,1122,5209,2,C1
+311,Perales MA,2025,USA,registry,registry,2008,2019,55,Y,1123,1882,3,C1
+312,Pinana JL,2025,Spain,single_arm_descriptive_excluded,multi,2013,2023,23.3,Y,1124,112,1,NA
+318,Raj K,2022,multinational,registry,registry,2014,2017,28,Y,1125,1829,2,C1
+320,Redondo S,2023,Spain,retrospective_cohort,single,2009,2021,NR,Y,1126,87,2,C1
+321,Redondo S,2024,Spain,retrospective_cohort,single,2012,2022,NR,Y,1127,226,3,C1
+323,Ru Y,2025,multinational,retrospective_cohort,registry,2010,2022,38.4,partial,1024,116,2,C1
+324,Ruggeri A,2017,multinational,registry,registry,2007,2014,NR,partial,1024,308,2,C2
+325,Ruggeri A,2022,multinational,registry,registry,2013,2018,33,partial,1024,709,2,C1
+326,Ruggeri A,2024,multinational,registry,registry,2011,2021,NR,Y,1128,516,2,C1
+327,Saade A,2022,France,retrospective_cohort,single,2016,2019,21.1,Y,1129,409,1,none
+328,Sadowska-Klasa A,2024,USA,retrospective_cohort,single,2001,2021,24,Y,1130,2469,2,C1
+332,Sahebi,2019,multinational,registry,registry,2008,2016,24,Y,1131,90,2,C1
+334,Salas MQ,2022,Canada,retrospective_cohort,single,2017,2020,NR,Y,1132,651,2,none
+335,Salas MQ,2022,Spain,retrospective_cohort,single,2014,2021,25.4,partial,1003,161,2,C1
+336,Salas,2024,multinational,retrospective_cohort,registry,2014,2020,54,Y,1133,404,2,C1
+337,Salas MQ,2024,Canada,retrospective_cohort,single,2011,2021,NR,Y,1134,444,3,C1
+338,Salas,2024,Spain,retrospective_cohort,single,2011,2021,24,partial,1003,272,2,C1
+340,Saliba RM,2022,USA,registry,registry,2013,2017,27,Y,1135,3344,2,C1
+341,Salinas J,2024,Chile,retrospective_cohort,single,2012,2022,NR,Y,1136,52,3,none
+343,Santoro,2017,multinational,registry,registry,2007,2014,31,partial,1024,208,2,C1
+344,Santoro,2018,multinational,registry,registry,2007,2014,23,partial,1024,2839,2,C1
+345,Santoro N,2019,multinational,registry,registry,2007,2016,28,partial,1024,912,2,none
+346,Santos Carreira,2023,Canada,retrospective_cohort,single,2015,2021,25.4,Y,1137,960,1,none
+347,Sanz MA,2024,Spain,single_arm_descriptive_excluded,single,1978,2022,NR,N,1038,NA,NA,NA
+348,Sayin S,2024,Turkey,retrospective_cohort,multi,2016,2022,30,Y,1138,90,2,none
+352,Seber A,2025,Brazil,retrospective_cohort,registry,2014,2018,NR,Y,1139,595,3,C1/C2
+353,Serio B,2024,Italy,retrospective_cohort,multi,2009,2021,NR,Y,1140,40,2,C2
+357,Sharaf El-Deen MO,2024,Egypt,prospective_cohort,single,2015,2021,12,Y,1141,179,2,C1
+358,Shiratori S,2025,Japan,prospective_cohort,multi,2016,2021,23.7,Y,1142,108,2,C2
+359,Shouman MT,2023,Egypt,retrospective_cohort,multi,2015,2019,NR,Y,1143,150,2,C1
+360,Sijs-Szabo A,2023,Netherlands,single_arm_descriptive_excluded,multi,2001,2015,NR,Y,NEW_SijsSzabo_2023,NA,NA,NA
+361,Singh,2022,USA,registry,registry,2012,2017,NR,partial,1001,2765,3,C2/C3
+363,Soltermann Y,2019,Switzerland,retrospective_cohort,single,2010,2018,31,Y,1144,80,2,C2
+364,Srour SA,2017,USA/Colombia,retrospective_cohort,multi,2005,2015,12.8,Y,1145,109,1,none
+366,Steiner N,2024,Germany,retrospective_cohort,single,1993,2023,NR,partial,1086,147,2,C2
+368,Sugita J,2022,Japan,registry,registry,2012,2015,NR,Y,1064,544,2,C1
+371,Tang F,2020,China,retrospective_cohort,multi,2013,2018,46.5,Y,1146,220,2,C1
+374,Tarella C,2025,Italy,retrospective_cohort,multi,2000,2020,104.4,Y,1147,285,2,C1
+375,Tischer J,2015,Germany,retrospective_cohort,single,2006,2011,NR,Y,1148,55,2,C1
+379,Ueda Oshima M,2023,USA,retrospective_cohort,single,2007,2018,NR,Y,1149,780,3,C1
+380,Ueda Oshima M,2025,USA,RCT,single,2017,2024,36,Y,1150,145,2,C1
+382,Ustun C,2024,USA,registry,registry,2012,2017,25,partial,1001,2008,2,C1
+383,Villalba M,2026,multinational,registry,registry,2017,2022,24,partial,1024,702,4,none
+384,Vydra,2026,multinational,retrospective_cohort,registry,2010,2022,18.6,partial,1024,432,2,C2
+386,Wadhera S,2026,India,single_arm_descriptive_excluded,single,2017,2023,44,Y,1151,NA,NA,NA
+389,Wang T,2022,China,retrospective_cohort,single,2014,2020,11.8,Y,1152,81,2,C1
+390,Wang Y,2019,China,prospective_cohort,multi,2015,2018,24,Y,1153,239,2,C1
+391,Wieduwilt,2022,USA_multinational,registry,registry,2013,2017,30,Y,1092,4201,5,C1
+395,Wu L,2025,China,retrospective_cohort,single,2012,2023,28.5,Y,1154,297,2,C1
+396,Xu ZL,2025,China,retrospective_cohort,registry,2020,2022,33,Y,1155,701,4,C1
+397,Xu ZL,2025,China,RCT,single,2023,2024,8.7,Y,1156,66,2,C3
+399,Yanada M,2026,Japan,registry,registry,2017,2021,37.2,Y,1157,1089,2,C1
+405,Yong KY,2025,Australia,single_arm_descriptive_excluded,single,2015,2019,12,Y,1159,NA,NA,NA
+407,Yoshimitsu M,2025,Japan,registry,registry,2016,2021,23.7,Y,1160,700,4,C1
+408,Yildirim M,2024,Turkey,retrospective_cohort,multi,2016,2022,NR,Y,1138,79,2,none
+410,Pirogova OV,2016,Russia,prospective_cohort,single,2010,2015,10.7,Y,1161,270,2,C1
+416,Desai N,2026,Canada,prospective_cohort,single,2021,2024,22.1,partial,1042,173,2,C3
+417,Dulery R,2021,France,retrospective_cohort,single,2013,2018,36.5,Y,1162,331,2,none
+418,Dulery R,2023,France,retrospective_cohort,single,2014,2022,NR,Y,1163,58,2,C3
+419,El Jurdi N,2023,USA,prospective_cohort,single,2005,2022,15.5,Y,1164,469,2,C1
+421,Esquirol A,2024,Spain,retrospective_cohort,single,1999,2020,96,Y,1165,484,3,C1
+422,Gaballa S,2016,USA,prospective_cohort,single,2010,2014,24,Y,1166,106,2,none
+424,Hassan K,2025,USA,retrospective_cohort,single,2018,2023,NR,partial,1022,107,2,C1
+425,Hyder MA,2025,USA,prospective_cohort,single,2019,2022,28.8,Y,1167,35,3,C3
+426,Garcia-Cadenas Irene,2021,Spain,retrospective_cohort,single,2013,2020,23.4,Y,1168,117,2,none
+430,Kerbauy MN,2025,Brazil,prospective_cohort,single,2019,2021,39,Y,1169,36,2,C2
+431,Kim DH,2024,South Korea,retrospective_cohort,single,2017,2023,38,Y,1170,78,2,C3
+432,Koura D,2025,USA,RCT,single,2020,2022,12,Y,1171,40,2,C1
+433,Lazana I,2026,Greece,prospective_cohort,single,2015,2024,42,Y,1172,94,3,C3
+436,Makanga DR,2020,France,retrospective_cohort,single,2014,2019,NR,Y,1173,58,2,C3
+437,Mandaci Sanli N,2025,Turkiye,retrospective_cohort,single,2015,2024,NR,Y,1174,33,2,C3
+438,Moiseev IS,2018,Russia,prospective_cohort,single,2013,2015,NR,partial,1007,200,3,C3
+442,Nakamae H,2019,Japan,prospective_cohort,single,2013,2016,22.3,Y,1175,56,2,C1
+445,Raiola AM,2025,Italy,single_arm_descriptive_excluded,multi,2020,2022,NR,Y,1176,NA,NA,NA
+446,Redondo S,2025,Spain,retrospective_cohort,single,2017,2024,24,partial,1127,107,2,C3
+447,Ruggeri A,2018,multinational,registry,registry,2007,2015,20,partial,1009,423,3,C3
+450,Sanz J,2020,multinational,registry,registry,2010,2017,24,partial,1009,1239,3,C3
+453,Spyridonidis A,2022,multinational,registry,registry,2010,2019,22.9,partial,1009,572,2,C3
+454,Venugopal N,2025,USA,retrospective_cohort,single,2023,2024,7.5,Y,1177,68,2,C3
+455,Wang Y,2017,China,prospective_cohort,single,2015,2016,10,N,1153,206,3,C3
+456,Wang L,2021,China,prospective_cohort,single,2013,2018,18,Y,1178,79,2,none
+457,Wang Y,2025,China,retrospective_cohort,single,2015,2021,24.9,Y,1179,154,3,C1/C2
+460,Xu X,2021,China,retrospective_cohort,single,2014,2018,NR,partial,1068,67,2,C3
+461,Xue E,2022,Italy,retrospective_cohort,single,2015,2021,NR,partial,1036,63,2,C3
+462,Zhang W,2023,China,RCT,multi,2018,2022,19.1,Y,1180,122,2,C3
+464,Zu Y,2022,China,RCT,multi,2018,2021,18.5,Y,1181,104,2,none
+465,Zu Y,2023,China,RCT,multi,2019,2022,14.4,Y,1182,160,2,C2

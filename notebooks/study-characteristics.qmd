@@ -21,8 +21,8 @@ Inputs, copied verbatim from `02_extraction/` of the analysis repository
 
 | File | Rows | Contents |
 |:-----|-----:|:---------|
-| `data/studies.csv` | 251 | one row per included publication |
-| `data/arms.csv` | 525 | one row per treatment arm |
+| `data/studies.csv` | 250 | one row per included publication |
+| `data/arms.csv` | 523 | one row per treatment arm |
 | `data/rob.csv` | — | ROBINS-I / RoB 2 judgements |
 
 ```{r}
