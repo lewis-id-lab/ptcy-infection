@@ -462,9 +462,9 @@ intervals included the null.
 
 A survival benefit for PTCy versus CNI prophylaxis is biologically
 plausible as a consequence of GVHD suppression. GVHD and its treatment
-are leading drivers of non-relapse mortality [@zeiser2017], and the exploratory
-steroid-adjustment analysis (appendix S9) was compatible with this
-GVHD–steroid pathway.
+are leading drivers of non-relapse mortality [@zeiser], and the
+exploratory steroid-adjustment analysis (appendix S9) was compatible
+with this GVHD–steroid pathway.
 
 The C2 analysis provides a partial test of this framework. If CMV excess
 were an intrinsic property of cyclophosphamide, it should persist
@@ -474,16 +474,15 @@ C1 1·20 \[0·87–1·65\]). A formal indirect comparison does not resolve
 the difference: the posterior ratio of the two pooled odds ratios is
 1·41 \[0·76–2·54\], and a comparator-class meta-regression pooling both
 CMV datasets (k = 33) gave the same answer (0·71 \[0·41–1·20\]; appendix
-S9). C1 and C2 also enrol different populations (predominantly
+S9). C1 and C2 also enroll different populations (predominantly
 haploidentical versus matched-donor transplants), so comparator and
 population effects cannot be separated. The depletion-depth ordering
 (CNI-based \< PTCy \< ATG) is therefore a hypothesis compatible with the
-data, not a demonstrated hierarchy. One external comparison is
-consistent with that ordering: in a meta-analysis of combined ATG–PTCy
-prophylaxis in haploidentical transplantation, CMV reactivation was more
-frequent with the combination than with PTCy alone (risk ratio 1·42
-\[1·03–1·95\]) but did not differ from ATG alone (1·04
-\[0·74–1·45\])[@luo2025].
+data, but not proven. One external comparison is consistent with that
+ordering: in a meta-analysis of combined ATG–PTCy prophylaxis in
+haploidentical transplantation, CMV reactivation was more frequent with
+the combination than with PTCy alone (risk ratio 1·42 \[1·03–1·95\]) but
+did not differ from ATG alone (1·04 \[0·74–1·45\])[@luo2025].
 
 BK virus does not fit this pattern: the elevation was nearly identical
 against both comparators (C1 2·39 \[1·41–3·73\]; C2 2·49 \[1·08–6·24\];
@@ -519,21 +518,21 @@ credible intervals, however, this is absence of evidence rather than
 evidence of equivalence, and it should not be read as supporting
 flexibility in dosing or backbone selection.
 
-The findings nonetheless have clinical implications. For centres already
-using PTCy, the infection costs are best weighed in absolute terms: at
-the median comparator-arm rates, the CMV odds ratio of 1·20 corresponds
-to about 46 additional reactivations per 1000 patients by day +100 (a
-relative risk of about 1·09, not 1·20, at a 48% baseline) and the BK
-odds ratio of 2·39 to about 134 additional haemorrhagic cystitis cases
-per 1000 by day +100 from a 13% baseline, while no elevation was
-detected for clinically significant CMV infection (appendix S9). Whether
-these costs are shared with ATG-based regimens is unresolved: the
-comparator-class test did not resolve the C1–C2 difference (appendix
-S9). Clinical strategies to mitigate these costs should target T-cell
-reconstitution (adoptive T-cell therapies, letermovir
-prophylaxis[@marty2017], earlier immunosuppression tapering) rather than
-PTCy avoidance. The larger CMV estimate in studies published from 2020
-onward (odds ratio 1·43 \[0·97–2·06\]) is not explained by
+Depite these limitations, the analysis has potential clinical
+implications. For centres already using PTCy, the infection costs are
+best weighed in absolute terms: at the median comparator-arm rates, the
+CMV odds ratio of 1·20 corresponds to about 46 additional reactivations
+per 1000 patients by day +100 (a relative risk of about 1·09, not 1·20,
+at a 48% baseline) and the BK odds ratio of 2·39 to about 134 additional
+haemorrhagic cystitis cases per 1000 by day +100 from a 13% baseline,
+while no elevation was detected for clinically significant CMV infection
+(appendix S9). Whether these costs are shared with ATG-based regimens is
+unresolved: the comparator-class test did not resolve the C1–C2
+difference (appendix S9). Clinical strategies to mitigate these costs
+should target T-cell reconstitution (adoptive T-cell therapies,
+letermovir prophylaxis[@marty2017], earlier immunosuppression tapering)
+rather than PTCy avoidance. The larger CMV estimate in studies published
+from 2020 onward (odds ratio 1·43 \[0·97–2·06\]) is not explained by
 letermovir-era prophylaxis: no arm in that cohort had letermovir use
 recorded, and most of these cohorts enrolled before or across the
 letermovir era (appendix S9), so the reasons for the trend remain
@@ -548,15 +547,8 @@ directionally consistent with the depth of T-cell depletion without
 establishing it, whereas BK virus elevation was similar across
 comparators, compatible with a cyclophosphamide-specific mechanism. All
 infection estimates were imprecise and these mechanistic readings are
-hypothesis-generating. The headline benefits are also fragile in three
-sensitivity directions: the pooled adjusted hazard ratio for survival is
-attenuated towards 1 relative to the odds ratio (0·88 \[0·66–1·14\] on a
-smaller, multivariable-adjusted subset); trial-only analyses are not
-estimable with observed event counts, so the survival and GVHD benefits
-rest on observational comparisons; and publication-bias model-averaging
-returns essentially null bias-adjusted estimates for overall survival
-(0·97 \[0·71–1·16\]) and acute GVHD (0·96 \[0·57–1·38\]). Where present,
-these costs are best addressed through strategies targeting immune
+hypothesis-generating. The potential excess infction risk of PTCy versus
+CNIs may be best addressed through strategies targeting immune
 reconstitution. The present analysis provides a unified framework for
 interpreting the benefit–harm balance of PTCy; given very low certainty
 of evidence for the pre-specified outcomes, its findings are hypotheses
@@ -574,16 +566,10 @@ for the decision to submit for publication.
 
 ## Declaration of interests
 
-MS and REL declare no competing interests. DPK's declaration of
-interests is pending.
-
-```{=html}
-<!-- TODO: complete DPK's declaration of interests before submission.
-     His recent publications disclose honoraria and research support
-     (Gilead, Astellas), consulting fees (Astellas, Merck, Knight), and
-     data-review committee roles (Cidara, AbbVie, Scynexis, Mycoses
-     Study Group). Confirm current disclosures with DPK per ICMJE. -->
-```
+MS and REL declare no competing interests. DPK: honoraria and research
+support (Gilead, Astellas), consulting fees (Astellas, Merck, Knight),
+and data-review committee roles (Cidara, AbbVie, Scynexis, Mycoses Study
+Group)
 
 ## Data sharing
 
@@ -664,7 +650,7 @@ disease (appendix S9). MUD = matched unrelated donor. MMUD = mismatched
 unrelated donor. MSD = matched sibling donor. PBSC = peripheral blood
 stem cells. BM = bone marrow. UCB = umbilical cord blood. MAC =
 myeloablative conditioning. RIC = reduced-intensity conditioning. NMA =
-non-myeloablative. NR = not reported. {#tbl-characteristics}
+non-myeloablative. NR = not reported.
 
 {{< pagebreak >}}
 
@@ -707,7 +693,7 @@ slope. GRADE ratings are shown for C1 and C2 comparisons of the
 pre-specified outcomes and the secondary outcomes added by protocol
 amendment (appendix S11); C3 outcomes were not rated. OR \< 1 favours
 PTCy for survival and GVHD outcomes; OR \> 1 indicates elevated risk
-with PTCy for infection outcomes. {#tbl-results}
+with PTCy for infection outcomes.
 
 {{< pagebreak >}}
 
