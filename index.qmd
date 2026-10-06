@@ -51,42 +51,40 @@ Correspondence: Prof Russell E Lewis, Department of Molecular Medicine,
 
 ## Summary
 
-**Background.** Post-transplant cyclophosphamide (PTCy) is used for
-graft-versus-host disease (GVHD) prophylaxis after allogeneic
-haematopoietic stem-cell transplantation (allo-HSCT), but its impact on
-infection risk versus longer-established prophylaxis regimens has not
-been systematically quantified.
+**Background.** Post-transplant cyclophosphamide (PTCy) is increasingly
+used to prevent graft-versus-host disease (GVHD) after allogeneic
+haematopoietic stem-cell transplantation (allo-HSCT), but may increase
+infection risk compared with established prophylaxis. We evaluated
+survival, GVHD, and infection outcomes.
 
-**Methods.** In this systematic review and Bayesian meta-analysis, we
-searched EMBASE, PubMed, and SCOPUS from database inception to April 30,
-2026 for studies comparing PTCy-based GVHD prophylaxis with alternative
-regimens in adult allo-HSCT recipients. Comparisons were PTCy versus
-calcineurin inhibitor (CNI) plus methotrexate or mycophenolate (C1),
-PTCy versus anti-thymocyte globulin (ATG; C2), and within-PTCy variants
-(C3). Outcomes were overall survival (OS; primary), non-relapse
-mortality (NRM), acute GVHD grade II–IV, CMV reactivation, bloodstream
-infection (BSI), and invasive fungal infection (IFI). We fitted Bayesian
-random-effects binomial-logistic models to estimate infection risks.
-PROSPERO registration: CRD420261372156.
+**Methods.** We searched EMBASE, PubMed, and SCOPUS to April 30, 2026,
+for studies comparing PTCy-based prophylaxis with alternatives in adults
+undergoing allo-HSCT. Comparisons were PTCy versus calcineurin inhibitor
+(CNI) plus methotrexate or mycophenolate (C1), versus anti-thymocyte
+globulin (ATG; C2), and between PTCy-based regimens (C3). Outcomes
+included overall survival (primary), non-relapse mortality, acute GVHD,
+CMV reactivation, bloodstream infection (BSI), and invasive fungal
+infection. Odds ratios (ORs) were pooled by Bayesian random-effects
+meta-analysis (PROSPERO CRD420261372156).
 
 **Findings.** Of 4145 records, 250 studies (523 arms; 177 849 patients)
-were included, 105 in the meta-analysis. In C1 (72 studies), PTCy was
-associated with better OS (odds ratio 0·73 \[95% credible interval
-0·58–0·89\]) and less acute GVHD (0·58 \[0·44–0·76\]); CMV and BSI
-estimates were elevated but imprecise (1·20 \[0·87–1·65\]; 2·17
-\[0·86–4·39\], the latter from four culture-confirmed studies). In C2
-(27 studies), OS favoured PTCy versus ATG (0·75 \[0·43–1·28\]) and CMV
-did not differ (0·86 \[0·51–1·42\]). The increased CMV estimate was
-larger in studies published from 2020 onward (1·43 \[0·97–2·06\]) .GRADE
-certainty was very low for all pre-specified outcomes.
+were included, 105 in the meta-analysis. Versus CNI-based prophylaxis,
+PTCy was associated with lower odds of death (OR 0·73, 95% credible
+interval 0·58–0·89) and of grade II–IV acute GVHD (0·58, 0·44–0·76). CMV
+reactivation was more frequent but uncertain (1·20, 0·87–1·65), and more
+so in studies published from 2020 (1·43, 0·97–2·06); the BSI estimate
+was larger but based on four studies (2·17, 0·86–4·39). Versus ATG,
+survival favoured PTCy imprecisely (0·75, 0·43–1·28) and CMV
+reactivation did not differ (0·86, 0·51–1·42). Certainty of evidence was
+very low for all prespecified outcomes.
 
-**Interpretation.** PTCy is associated with better survival and less
-GVHD versus CNI-based prophylaxis, with uncertain benefit versus ATG.
-Infection estimates were compatible with increased CMV and bacterial
-infection risk versus less T-cell-depleting regimens, but estimates were
-less precise. CMV direction fits a T-cell-depletion class effect; BK
-virus elevation was similar across comparators, compatible with a
-cyclophosphamide-specific effect.
+**Interpretation.** PTCy was associated with less GVHD and possibly
+better survival than CNI-based prophylaxis, with possible but
+imprecisely estimated increases in CMV and bacterial infection. The CMV
+pattern fits an effect of T-cell depletion depth, whereas a similar BK
+virus increase against both comparators suggests a
+cyclophosphamide-specific effect. These associations support close viral
+monitoring rather than avoidance of PTCy.
 
 **Funding.** There was no funding source for this study.
 
@@ -95,86 +93,104 @@ cyclophosphamide-specific effect.
 ::: panel
 ### Evidence before this study
 
-We searched PubMed, EMBASE and SCOPUS for systematic reviews and
-meta-analyses of post-transplant cyclophosphamide in allogeneic
-haematopoietic stem-cell transplantation published from database
-inception to April 30, 2026, using the terms "post-transplant
-cyclophosphamide" AND ("meta-analysis" OR "systematic review"). We
-identified ten comparative meta-analyses [@yu2019; @poonsombudlert2019;
-@gagelmann2019; @arcuri2019; @gao2021; @arcuri2021; @tang2023; @luo2025;
-@jin2025; @shahsavand2026] encompassing 6–30 studies each. All evaluated
-survival and GVHD outcomes; only three [@tang2023; @luo2025; @jin2025]
-pooled infection outcomes between prophylaxis regimens, each with few
-contributing studies per infection type and comparison. No prior study
-compared PTCy against both CNI-based and ATG-based comparators in a
-unified framework, and none has proposed a mechanistic explanation for
-the apparently contradictory infection findings across comparator
-contexts.
+We searched PubMed, EMBASE, and SCOPUS from database inception to April
+30, 2026, for systematic reviews and meta-analyses of post-transplant
+cyclophosphamide (PTCy) in allogeneic haematopoietic stem-cell
+transplantation, using the terms "post-transplant cyclophosphamide" AND
+("meta-analysis" OR "systematic review"). We found ten comparative
+meta-analyses,[@yu2019; @poonsombudlert2019; @gagelmann2019;
+@arcuri2019; @gao2021; @arcuri2021; @tang2023; @luo2025; @jin2025;
+@shahsavand2026] each including 6–30 studies. All examined survival and
+graft-versus-host disease (GVHD), but only three[@tang2023; @luo2025;
+@jin2025] pooled infection outcomes, with few studies per infection and
+comparator. None compared PTCy with both calcineurin inhibitor
+(CNI)-based and anti-thymocyte globulin (ATG)-based prophylaxis, so it
+remained unclear whether infections seen with PTCy reflect the drug
+itself or T-cell depletion in general.
 
 ### Added value of this study
 
-In this large systematic review and meta-analysis (250 studies, 177 849
-patients), we were able to systematically pool CMV, bloodstream
-infection, and invasive fungal infection risk in the context of GVHD and
-survival within the same analytic framework. Its dual-comparator design
-suggests that the estimated effect of PTCy on CMV risk may reverse
-direction depending on the comparator's own T-cell depletion depth,
-although the contrast is indirect and not formally resolved. Elevated
-average infection risk was estimated versus CNI-based (odds ratio 1·20
-\[0·87–1·65\]) but not ATG-based (0·86 \[0·51–1·42\]) prophylaxis, a
-directional pattern compatible with expected degree of T-cell depletion.
-However, a formal meta-regression on comparator class did not resolve
-the difference (ratio of odds ratios 0·71 \[0·41–1·20\]; appendix S9).
+This systematic review (250 studies; 177 849 patients) is the first to
+evaluate survival, GVHD, CMV, bloodstream infection, and invasive fungal
+infection together, comparing PTCy with both a less T-cell-depleting
+regimen (CNI plus methotrexate or mycophenolate) and a more depleting
+one (ATG). CMV reactivation was more frequent with PTCy than with
+CNI-based prophylaxis (odds ratio 1·20, 95% credible interval 0·87–1·65)
+but not compared with ATG (0·86, 0·51–1·42), a pattern compatible with
+the comparators' depth of T-cell depletion, although a formal test did
+not confirm the difference (ratio of odds ratios 0·71, 0·41–1·20). BK
+virus reactivation, by contrast, was increased to a similar extent
+against both comparators.
 
 ### Implications of all the available evidence
 
-PTCy is associated with better overall survival and less GVHD across
-comparator types, although certainty of evidence is very low for all
-pre-specified outcomes. Infection estimates are imprecise and pattern
-differently by pathogen: CMV estimates are directionally consistent with
-the comparator's T-cell depletion depth, whereas BK virus elevation was
-similar across comparators, compatible with a cyclophosphamide-specific
-effect. These results suggest that clinical strategies to mitigate these
-risks should target T-cell reconstitution (adoptive T-cell therapy,
-optimised letermovir prophylaxis, earlier immunosuppression tapering)
-rather than PTCy avoidance. Within-PTCy regimen variants show no
-detectable differences, but with k = 4–7 per outcome this is absence of
-evidence, not evidence of equivalence.
+PTCy is associated with less GVHD and better overall survival than
+CNI-based prophylaxis, although certainty of evidence is very low and
+adjustment for publication bias weakened these benefits. Infection risks
+differ by pathogen: CMV risk may follow the depth of T-cell depletion,
+whereas BK virus risk may be specific to cyclophosphamide. For
+clinicians, this argues for close CMV and BK virus monitoring and for
+strategies that support immune recovery (optimised letermovir
+prophylaxis, earlier tapering of immunosuppression, adoptive T-cell
+therapy) rather than avoiding PTCy. Different PTCy-based regimens showed
+no detectable differences, but with three to six studies per outcome
+this is absence of evidence, not evidence of equivalence.
 :::
 
 ## Introduction
 
-Post-transplant cyclophosphamide (PTCy) has transformed allogeneic
-haematopoietic stem-cell transplantation (allo-HSCT) by enabling
-transplantation across HLA barriers and simplifying graft-versus-host
-disease (GVHD) prophylaxis.[@odonnell2002] Originally developed for
-haploidentical transplants[@luznik2008], PTCy is now widely used across
-all donor types[@kanakry2016], and as shown in the BMT CTN 1703/1801
-randomised controlled trial (RCT), is superior to conventional
-calcineurin inhibitor (CNI)-based prophylaxis in terms of GVHD-free,
-relapse-free survival.[@bolanosmeade2023]
+Allogeneic haematopoietic stem-cell transplantation (allo-HSCT) is
+potentially curative for many haematological malignancies, but
+graft-versus-host disease (GVHD) remains a major cause of morbidity and
+mortality after transplantation.[@zeiser2017] GVHD prophylaxis must
+therefore strike a difficult balance: enough control of donor T cells to
+prevent GVHD, without unduly delaying immune reconstitution, weakening
+the graft-versus-leukaemia effect, or increasing susceptibility to
+infection.
 
-Uncertainty remains regarding a possible increased risk of infection
-with PTCy versus more estalbished prophylaxis regimens after transplant.
-Compared to CNI-based prophylaxis, CIBMTR registry studies have reported
-that PTCy-based regimens are associated with increased cytomegalovirus
-(CMV) reactivation[@goldsmith2021] and a higher incidence of bacterial
-bloodstream infections with comparable or reduced rates of fungal
-infections.[@papanicolaou2024] This excess risk, however, has been
-difficult to quantify because prior meta-analyses have been restricted
-to single comparisons, limited to 6–20 studies, and have rarely included
-infection as a primary outcome. The absence of a unified analytic
-framework spanning multiple comparator contexts raises a fundamental
-question: are infection risks attributable to PTCy itself, or to the
-depth of T-cell depletion inherent to any intensive GVHD prophylaxis?
-Answering this question requires simultaneous comparison of PTCy against
-both less depleting (CNI plus methotrexate) and more depleting
-(anti-thymocyte globulin \[ATG\]) regimens.
+Post-transplant cyclophosphamide (PTCy) has substantially changed this
+balance. Developed for haploidentical transplantation, it enables
+transplantation across HLA barriers and has made haploidentical donors a
+widely available alternative when no matched donor
+exists.[@odonnell2002; @luznik2008] Its use has since extended to
+matched related and unrelated donors,[@kanakry2016] and in the BMT CTN
+1703/1801 randomised controlled trial (RCT), PTCy-based prophylaxis was
+superior to conventional calcineurin inhibitor (CNI)-based prophylaxis
+for GVHD-free, relapse-free survival.[@bolanosmeade2023]
 
-To address this question, we conducted a systematic review and Bayesian
-meta-analysis to simultaneously evaluate survival, GVHD, and infection
-outcomes of PTCy-based GVHD prophylaxis across three pre-specified
-comparisons.
+These benefits must be weighed against effects on immune recovery.
+Cyclophosphamide given on days +3 and +4 preferentially eliminates the
+proliferating alloreactive T cells responsible for GVHD,[@kanakry2013;
+@wachsmuth2019] but may also slow recovery of pathogen-specific
+immunity,[@zhao2022] which matters because infections remain major causes of non-relapse mortality after allo-HSCT.[@styczynski2020]
+
+Whether PTCy itself increases infection risk is uncertain. Compared with
+CNI-based prophylaxis, CIBMTR registry studies have reported more
+cytomegalovirus (CMV) reactivation[@goldsmith2021] and bacterial
+bloodstream infection (BSI) with PTCy, with similar or fewer invasive
+fungal infections (IFI).[@papanicolaou2024] These signals are
+biologically plausible, but infection risk after transplantation also
+depends on donor type, conditioning intensity, graft source, GVHD and
+its corticosteroid treatment, and antimicrobial prophylaxis, so
+associations with PTCy need not reflect a direct effect of
+cyclophosphamide.
+
+The key clinical question is therefore whether the infection profile of
+PTCy is specific to the drug or a consequence of intensive T-cell
+depletion in general. If the latter, similar infections would be
+expected with other strongly T-cell-depleting regimens; if particular
+infections are more frequent with PTCy than with both less and more
+depleting approaches, a cyclophosphamide-specific effect becomes more
+likely. Comparing PTCy against both a less depleting comparator (CNI
+plus methotrexate or mycophenolate) and a more depleting one
+(anti-thymocyte globulin \[ATG\]) offers a way to separate these
+explanations. No previous meta-analysis compared PTCy with both; each included 6–30 studies and focused mainly on GVHD and survival rather than infection.
+
+We therefore did a systematic review and Bayesian meta-analysis of
+PTCy-based GVHD prophylaxis in adults undergoing allo-HSCT, evaluating
+survival, non-relapse mortality, GVHD, and infection outcomes across
+three prespecified comparisons: PTCy versus CNI plus methotrexate or
+mycophenolate, PTCy versus ATG, and different PTCy-based regimens.
 
 ## Methods
 
@@ -284,276 +300,277 @@ There was no funding source for this study.
 
 ### Search results and study characteristics
 
-The database search identified 4145 records (EMBASE 2603, PubMed 1061,
-SCOPUS 481), of which 1220 were duplicates (@fig-prisma). After
-screening 2925 titles and abstracts, 517 articles were sought for
-full-text review; 52 could not be retrieved or were not in English. Of
-465 full-text articles assessed, 215 were excluded ([appendix pp
-6–14](appendix-preview.html#s2.-studies-excluded-at-full-text-screening-n214)),
-leaving 250 studies for the systematic review. Of these, 105 unique
-studies contained sufficient outcome data to contribute to the
-meta-analysis across three comparisons: C1 (72 studies), C2 (27
-studies), and C3 (13 studies). Seven studies contributed to more than
-one comparison, so the comparison counts sum to 112 rather than 105; the
-per-outcome attrition from extraction to pooling is given in appendix
-S12.
+The search identified 4145 records (EMBASE 2603, PubMed 1061, SCOPUS
+481), of which 1220 were duplicates (@fig-prisma). After screening 2925
+titles and abstracts, 517 articles were sought for full-text review; 52
+could not be retrieved or were not in English. Of 465 full-text articles
+assessed, 215 were excluded ([appendix pp
+6–14](appendix-preview.html#s2.-studies-excluded-at-full-text-screening-n215)),
+leaving 250 studies for the systematic review. Of these, 105 contributed
+outcome data to the meta-analysis: 72 compared PTCy with CNI plus
+methotrexate (MTX) or mycophenolate mofetil (MMF) (C1), 27 compared PTCy
+with ATG (C2), and 13 compared different PTCy-based regimens (C3); seven
+studies contributed to more than one comparison (per-outcome attrition
+in appendix S12).
 
-The 224 comparative studies encompassed 518 arms and 177 461 patients
-(@tbl-characteristics). Most were retrospective cohorts (131 \[58%\]) or
-registry analyses (62 \[28%\]); 14 (6%) were RCTs. Median publication
-year was 2023 (IQR 2021–24), with median follow-up of 26 months (IQR
-20–36). PTCy arms were predominantly haploidentical donor transplants
-(127 \[47%\]) whereas comparator arms were predominantly matched
-unrelated (94 \[38%\]) or matched sibling (54 \[22%\]) donor
-transplants.
+The 224 comparative studies included 518 treatment arms and 177 461
+patients (@tbl-characteristics). Most were retrospective cohorts (131
+\[58%\]) or registry studies (62 \[28%\]); only 14 (6%) were RCTs.
+Median publication year was 2023 (IQR 2021–24) and median follow-up 26
+months (22–36).
+
+PTCy was used mostly in haploidentical transplantation (126 \[46%\] of
+PTCy arms), whereas comparator arms were mostly matched unrelated (94
+\[38%\]) or matched sibling (54 \[22%\]) donor transplants. Because
+donor type itself influences GVHD, infection, and survival, this
+imbalance was addressed in sensitivity analyses.
 
 ### Risk of bias
 
-Of 220 comparative observational studies assessed with ROBINS-I, 149
-(68%) were at serious risk of bias and 71 (32%) at moderate risk,
-primarily due to confounding by donor type and conditioning intensity;
-no study was rated low or critical risk ([appendix pp
-15–17](appendix-preview.html#s5.-risk-of-bias)). Single-arm descriptive
-studies (n = 26) were excluded from the comparative analyses and are not
-included in these counts. Of 14 RCTs assessed with RoB 2, 11 had some
-concerns, two were at high risk, and one was at low risk of bias.
-Because the measurement-of-outcome domain matters most for subjective
-endpoints, judgements were reviewed by outcome objectivity: concerns in
-the open-label trials centred on clinician-assessed outcomes (GVHD
-grading and infection ascertainment; measurement-domain some concerns in
-3 of 14 trials), whereas objective outcomes (overall and relapse-related
-mortality, laboratory-confirmed bloodstream infection) were at low
-measurement-domain risk in every trial.
+Of 210 comparative observational studies assessed with ROBINS-I, 142 (68%) were at serious and 68 (32%) at moderate risk of bias, mainly because of
+confounding by donor type and conditioning intensity; none was at low or
+critical risk ([appendix pp
+15–17](appendix-preview.html#s5.-risk-of-bias)). Of the 14 RCTs
+(assessed with RoB 2), 11 had some concerns, two were at high risk, and
+one was at low risk. Measurement concerns (three trials) affected clinician-judged outcomes such as GVHD grading and infection ascertainment, not objective outcomes such as mortality or laboratory-confirmed BSI.
 
-### Comparison 1: PTCy versus CNI plus MTX or MMF
+### PTCy versus CNI plus MTX or MMF
 
-PTCy was associated with improved OS (k = 29, odds ratio 0·73 [95%
-credible interval 0·58–0·89]; @fig-os). NRM showed a non-significant
-trend toward benefit (k = 11, 0·84 [0·48–1·28]). Relapse-related
-mortality was lower (k = 34, 0·87 \[0·76–0·99\]).
+#### Survival and GVHD
 
-Acute GVHD grade II–IV was substantially less frequent (k = 28, 0·58
-\[0·44–0·77\]), as was moderate-to-severe chronic GVHD (k = 18, 0·41
-\[0·23–0·72\]).
+Compared with CNI plus MTX or MMF, PTCy was associated with better
+overall survival (k = 29; odds ratio \[OR\] 0·73, 95% credible interval
+\[CrI\] 0·58–0·89; @fig-os). Non-relapse mortality (NRM) showed a trend
+towards benefit, but the estimate was uncertain (k = 11; 0·84,
+0·48–1·28), and relapse-related mortality was modestly lower (k = 34;
+0·87, 0·76–0·99). The effect on GVHD was more consistent: PTCy was
+associated with less grade II–IV acute GVHD (k = 28; 0·58, 0·44–0·76)
+and less moderate-to-severe chronic GVHD (k = 18; 0·41, 0·23–0·72).
 
-CMV reactivation was higher on average in the PTCy group, but the
-credible interval included the null (k = 21, 1·20 [0·87–1·65];
-@fig-cmv). The estimate was larger in studies published from 2020 onward
-(k = 16, 1·43 [0·97–2·06]) and in haploidentical-dominant cohorts (k =
-12, 1·34 [0·89–1·96]). BSIs likewise favoured the comparator vs. PTCy in
-the primary analysis restricted to culture-confirmed day-100 bloodstream
-infection (k = 4, 2·17 [0·86–4·39]); no comparison-2 BSI model was
-possible. BK virus reactivation showed the largest infection effect with
-PTCy, and the only one whose interval excluded the null (k = 11, 2·39
-[1·41–3·73]; @fig-infections). The IFI estimate was highly uncertain in
-either direction (k = 6, 0·63 [0·19–2·44]), with extreme between-study
-heterogeneity in the treatment effect (τ = 1·28). Infection-related
-mortality showed no excess with PTCy versus CNI plus MTX or MMF (k = 13,
-1·02 \[0·67–1·50\]).
+#### Infections
 
-### Comparison 2: PTCy versus ATG
+The infection findings were less consistent than the GVHD findings. CMV
+reactivation was more frequent with PTCy on average, but the credible
+interval included no difference (k = 21; 1·20, 0·87–1·65; @fig-cmv). The
+estimate was larger in studies published from 2020 onward (k = 16; 1·43,
+0·97–2·06) and in haploidentical-dominant cohorts (k = 12; 1·34,
+0·89–1·96). In the primary BSI analysis, restricted to culture-confirmed
+infection by day +100, the odds were about twice as high with PTCy (k =
+4; 2·17, 0·86–4·39), but with only four studies this estimate is highly
+uncertain; no BSI model was possible for comparison 2. BK virus
+reactivation showed the clearest signal, and was the only infection
+outcome whose credible interval excluded no difference (k = 11; 2·39,
+1·41–3·73; @fig-infections). There was no clear difference in IFI (k =
+6; 0·63, 0·19–2·44), an estimate based on few studies with extreme
+between-study variation (τ = 1·28). Infection-related mortality was not
+increased with PTCy (k = 13; 1·02, 0·67–1·50).
 
-The OS estimate favoured PTCy versus ATG but with substantial
-uncertainty (k = 6, odds ratio 0·75 \[0·43–1·28\]). Acute GVHD was less
-frequent on average, with the interval just reaching the null (k = 7,
-0·53 \[0·23–1·17\]). NRM could not be assessed (k = 2). Relapse-related
-mortality was lower, with the interval reaching the null (k = 10, 0·79
-\[0·55–1·03\]). CMV reactivation did not differ between strategies (k =
-12, 0·86 \[0·51–1·42\]), in contrast with the elevated C1 estimate.
-Infection-related mortality did not differ (k = 7, 0·98 \[0·62–1·77\]).
-BK virus reactivation was elevated versus ATG (k = 3, 2·49
-\[1·09–6·03\]), the only infection estimate in C2 whose interval
-excluded the null.
+### PTCy versus ATG
 
-### Comparison 3: within-PTCy variants
+Fewer studies compared PTCy with ATG, so these estimates were less
+certain. Overall survival favoured PTCy, but not conclusively (k = 6;
+0·75, 0·43–1·28), as did acute GVHD (k = 7; 0·53, 0·23–1·17) and
+relapse-related mortality (k = 10; 0·79, 0·55–1·03). NRM could not be
+assessed because only two studies provided usable data. The infection
+pattern differed from comparison 1: CMV reactivation did not differ
+between PTCy and ATG (k = 12; 0·86, 0·51–1·42), nor did
+infection-related mortality (k = 7; 0·98, 0·62–1·77). BK virus
+reactivation was again higher with PTCy (k = 3; 2·49, 1·08–6·24),
+although this estimate rests on only three studies.
 
-No significant differences were detected between PTCy-based regimen
-variants for any outcome (OS 0·92, NRM 0·51, acute GVHD 0·43, chronic
-GVHD 0·53, relapse-related mortality 0·78; all credible intervals
-crossed the null; k = 4–7 per outcome).
+### Different PTCy-based regimens
 
-### Confounding and robustness analyses
+We found no clear differences between PTCy-based regimen variants for
+overall survival (OR 1·05), NRM (0·55), acute GVHD (0·31), chronic GVHD
+(0·60), or relapse-related mortality (0·78); all credible intervals
+included no difference. With only three to six studies per outcome, this
+reflects insufficient evidence to detect a difference, not evidence that
+the regimens are equivalent.
 
-Sensitivity analyses are reported in full in appendix S9. Within-study
-donor-type imbalance was small (median between-arm difference in
-haploidentical-donor percentage 0), a meta-regression on that difference
-was null for every C1 outcome, and in donor-matched subsets (difference
-≤15 percentage points) the C1 overall-survival estimate was, if
-anything, stronger (0·58 \[0·41–0·78\], k = 21). Trial-only models were
-not estimable once cumulative-incidence-derived event counts were
-excluded (no more than two trials per outcome retain observed counts),
-so the earlier trial-only estimates, which included such counts, are
-superseded (appendix S9); observational-only estimates were compatible
-with the pooled results (overall survival 0·79 \[0·63–0·96\], k = 26;
-acute GVHD 0·60 \[0·44–0·78\], k = 27; chronic GVHD 0·48 \[0·27–0·86\],
-k = 14; NRM 0·91 \[0·57–1·36\], k = 10; CMV 1·01 \[0·64–1·64\], k = 7).
-Splitting C1 comparators by backbone suggested the survival benefit may
-be concentrated against CNI plus MTX (0·56 \[0·34–0·84\], k = 12) rather
-than CNI plus MMF (1·10 \[0·45–3·01\], k = 5), although a formal
-interaction test did not resolve the difference (ratio of odds ratios
-1·82 \[0·76–4·53\]). Restricting CMV to clinically significant infection
-rather than any reactivation gave an imprecise estimate compatible with
-both a decrease and an increase (0·94 \[0·49–1·71\], k = 8), so that
-result is uncertain rather than evidence of no increase. Adjustment for
-a letermovir enrolment-era proxy did not change the CMV estimate (1·20
-\[0·86–1·67\]); no arm in the publication-2020-onward subset had
-recorded letermovir use, and most enrolled before or across the
-letermovir era, so the larger estimate in recent publications cannot be
-attributed to letermovir adoption.
+### Sensitivity analyses
+
+The main findings were broadly unchanged in sensitivity analyses
+(appendix S9). Within individual studies, the proportion of
+haploidentical donors differed little between arms (median difference
+0), adjusting for this difference did not change any comparison 1
+estimate, and restricting to studies with closely matched donor types
+(difference ≤15 percentage points) strengthened rather than weakened the
+survival association (k = 21; 0·58, 0·41–0·78). Trial-only analyses were
+not possible, because no more than two trials per outcome reported
+observed event counts; analyses restricted to observational studies gave
+results similar to the main analysis (overall survival 0·79, 0·63–0·96,
+k = 26; acute GVHD 0·59, 0·44–0·78, k = 27; chronic GVHD 0·48,
+0·27–0·86, k = 14; NRM 0·91, 0·57–1·36, k = 10; CMV 1·01, 0·64–1·64, k =
+7). Pooled overall-survival hazard ratios (mostly multivariable-adjusted) showed a consistent but attenuated effect (hazard ratio 0·88, 0·66–1·14, k = 14; count-based
+OR in the same studies 0·75, 0·57–0·93).
+
+The survival association appeared stronger against CNI plus MTX (0·56,
+0·34–0·84; k = 12) than against CNI plus MMF (1·10, 0·44–3·01; k = 5),
+but a formal test did not confirm that the comparator backbone explains
+this difference (ratio of ORs 1·82, 0·76–4·53). For CMV, restricting to
+clinically significant infection rather than any reactivation gave an
+estimate compatible with both a decrease and an increase (0·94,
+0·49–1·71; k = 8), which does not establish that clinically significant
+CMV infection is unaffected by PTCy. Adjusting for a letermovir
+enrolment-era proxy did not change the CMV estimate (1·20, 0·86–1·67).
+No arm in the 2020-onward subset had recorded letermovir use, and most
+of these cohorts enrolled before or across the letermovir era, so the
+larger recent estimate cannot be attributed to letermovir.
 
 ### Certainty of evidence
 
-GRADE certainty was very low for all pre-specified outcomes
-(@tbl-results), reassessed against the post-adjudication random-effects
-estimates with publication-bias analyses re-run on the same datasets
-([appendix
-S10–S11](appendix-preview.html#s11.-grade-certainty-of-evidence-profiles)).
-Imprecision was assessed against clinically meaningful thresholds (odds
-ratio 0·80 for benefit, 1·25 for harm); downgrades were applied to every
-outcome whose credible interval spans the relevant threshold or the null
-— all pre-specified outcomes except C1 acute GVHD, whose interval lies
-entirely below 0·80. Secondary outcomes added by protocol amendment were
-rated under the same framework (appendix S11): certainty was low for BK
-virus reactivation versus CNI-based prophylaxis (2·39 \[1·41–3·73\];
-interval entirely above 1·25) and very low for C1 relapse-related
-mortality (0·87 \[0·76–0·99\]; interval spans the 0·80 benefit
-threshold), C1 and C2 infection-related mortality, C2 relapse-related
-mortality, and C2 BK virus reactivation (k = 3). C1 OS and C1 acute GVHD
-were additionally downgraded for publication bias: robust Bayesian
-model-averaging found strong evidence of bias for both (BF~bias~ 10·4
-and 10·9), and the bias-adjusted estimates are essentially null (OS 0·97
-\[0·71–1·16\]; acute GVHD 0·96 \[0·57–1·38\]; appendix S10), so the
-unadjusted survival and acute GVHD benefits are not robust to
-publication-bias adjustment.
+Certainty of evidence (GRADE) was very low for all prespecified outcomes
+(@tbl-results; [appendix
+S10–S11](appendix-preview.html#s11.-grade-certainty-of-evidence-profiles)),
+mainly because of the predominance of observational studies, risk of
+confounding, between-study inconsistency, and imprecision. Imprecision
+was judged against clinically meaningful thresholds (OR 0·80 for
+benefit, 1·25 for harm). Every prespecified outcome was downgraded for
+imprecision except C1 acute GVHD, whose interval lay entirely below
+0·80; this outcome was nevertheless rated very low because of
+inconsistency and publication bias. Among secondary outcomes added by
+protocol amendment, certainty was low for BK virus reactivation versus
+CNI-based prophylaxis and very low for the remainder (appendix S11).
+
+Publication-bias analyses (robust Bayesian model-averaging) found strong
+evidence of bias for both overall survival and acute GVHD in comparison
+1 (Bayes factors for bias 10·4 and 10·9). After adjustment, both
+estimates were close to no effect (overall survival 0·97, 0·71–1·16;
+acute GVHD 0·96, 0·57–1·38; appendix S10), so the size of the unadjusted
+benefits should be interpreted cautiously.
 
 ## Discussion
 
-This review of 250 studies (523 arms; over 177 000 patients) provides a
-unified Bayesian evaluation of survival, GVHD, and infection outcomes
-with PTCy-based prophylaxis, supporting mechanistic interpretation not
-possible in single-comparison reviews.
+This systematic review and meta-analysis of 250 studies (over 177 000
+patients) evaluated the benefits and infection risks of PTCy-based GVHD
+prophylaxis within a single analytic framework. Its central finding is
+that the infection profile of PTCy may depend on both the comparator and
+the pathogen.
 
-PTCy was associated with less acute GVHD grade II–IV versus CNI plus MTX
-or MMF (odds ratio 0·58; from a median comparator-arm incidence of 33%,
-about 108 fewer cases per 1000 patients) and versus ATG (0·51, with the
-interval just reaching the null), with correspondingly lower chronic
-GVHD. Overall survival was better for PTCy versus CNI-based prophylaxis
-(0·73 \[0·58–0·89\]); against a median comparator-arm mortality of 35%
-at one year this corresponds to about 68 fewer deaths per 1000 patients
-by one year. Versus ATG, the estimate also favoured PTCy, but was
-imprecise (0·75 \[0·43–1·28\]). The survival estimate is supported by a
-hazard-ratio sensitivity analysis: on the subset of studies reporting
-(mostly adjusted) overall-survival hazard ratios, the pooled hazard
-ratio was 0·88 \[0·66–1·14\] (k = 14), while the count-based odds ratio
-on the same studies was 0·75 \[0·57–0·93\], thus indicating a a
-consistent direction of effect (appendix S9). These findings extend the
-BMT CTN 1703 RCT's matched-donor result[@bolanosmeade2023] across donor
+### Survival and GVHD
+
+The reduction in GVHD is consistent with how PTCy works: given shortly
+after transplantation, it targets the rapidly dividing donor T cells
+responsible for alloreactivity.[@kanakry2013; @wachsmuth2019] In
+comparison 1, PTCy was associated with about 108 fewer cases of grade
+II–IV acute GVHD per 1000 patients (from a median comparator-arm
+incidence of 33%) and about 68 fewer deaths per 1000 patients by one
+year (from a median comparator-arm mortality of 35%). Better GVHD
+control may reduce the need for prolonged immunosuppression and
+corticosteroids, which contribute to both infection and non-relapse
+mortality: GVHD and its treatment are leading drivers of non-relapse
+mortality,[@zeiser2017] and an exploratory steroid-adjustment analysis
+(appendix S9) was compatible with this pathway. These findings extend
+the matched-donor result of BMT CTN 1703[@bolanosmeade2023] across donor
 types, conditioning regimens, and geographic settings, although the ATG
-comparison was underpowered relative to C1.
+comparison was underpowered relative to comparison 1.
 
-The main contribution of this analysis is the clarification of
-apparently contradictory infection findings. PTCy on days +3 and +4
-eliminates alloreactive T cells (the intended GVHD-preventive
-effect)[@kanakry2013; @wachsmuth2019] but depletes the nascent
-pathogen-specific T-cell repertoire (a collateral cost)[@zhao2022]. For
-the C1 comparisonm this revealed higher average risk of CMV reactivation
-(1·20 \[0·87–1·65\]) and BSI (2·17 \[0·86–4·39\]), although both
-intervals included the null.
+### CMV
 
-A survival benefit for PTCy versus CNI prophylaxis is biologically
-plausible as a consequence of GVHD suppression. GVHD and its treatment
-are leading drivers of non-relapse mortality [@zeiser], and the
-exploratory steroid-adjustment analysis (appendix S9) was compatible
-with this GVHD–steroid pathway.
-
-The C2 analysis provides a partial test of this framework. If CMV excess
-were an intrinsic property of cyclophosphamide, it should persist
-regardless of comparator. Instead, the CMV estimate versus ATG was
-directionally opposite to the C1 estimate (C2 0·86 \[0·51–1·42\] versus
-C1 1·20 \[0·87–1·65\]). A formal indirect comparison does not resolve
-the difference: the posterior ratio of the two pooled odds ratios is
-1·41 \[0·76–2·54\], and a comparator-class meta-regression pooling both
-CMV datasets (k = 33) gave the same answer (0·71 \[0·41–1·20\]; appendix
-S9). C1 and C2 also enroll different populations (predominantly
-haploidentical versus matched-donor transplants), so comparator and
-population effects cannot be separated. The depletion-depth ordering
+The odds of CMV reactivation were about 20% higher with PTCy than with
+CNI-based prophylaxis, with substantial uncertainty, but were not
+increased compared with ATG. One explanation is that CMV risk follows
+the depth of T-cell depletion rather than cyclophosphamide itself:
+CNI-based prophylaxis, PTCy, and ATG deplete T cells to increasing
+degrees, and impaired CMV-specific cellular immunity is a key
+determinant of reactivation.[@zhao2022] The data cannot prove this. A
+formal comparison of the two pooled CMV estimates did not resolve the
+difference (ratio of ORs 1·41, 0·76–2·54), nor did a meta-regression on
+comparator class pooling both datasets (k = 33; 0·71, 0·41–1·20;
+appendix S9). Moreover, the two comparisons enrolled different
+populations (mainly haploidentical transplants in comparison 1, matched
+donors in comparison 2), so differences between them may reflect the
+patients rather than the prophylaxis. The depletion-depth ordering
 (CNI-based \< PTCy \< ATG) is therefore a hypothesis compatible with the
-data, but not proven. One external comparison is consistent with that
-ordering: in a meta-analysis of combined ATG–PTCy prophylaxis in
-haploidentical transplantation, CMV reactivation was more frequent with
-the combination than with PTCy alone (risk ratio 1·42 \[1·03–1·95\]) but
-did not differ from ATG alone (1·04 \[0·74–1·45\])[@luo2025].
+data, not a demonstrated hierarchy. One external comparison supports it:
+in a meta-analysis of haploidentical transplantation, CMV reactivation
+was more frequent with combined ATG–PTCy than with PTCy alone (risk
+ratio 1·42, 1·03–1·95) but similar to ATG alone (1·04,
+0·74–1·45).[@luo2025]
 
-BK virus does not fit this pattern: the elevation was nearly identical
-against both comparators (C1 2·39 \[1·41–3·73\]; C2 2·49 \[1·08–6·24\];
-ratio 0·96 \[0·33–2·50\]), compatible with a cyclophosphamide-specific
-rather than class-wide depletion effect, and haemorrhagic cystitis is a
-recognised cyclophosphamide effect[@kaphan2021; @ruggeri2015;
-@chorao2025]. The C2 estimate rests on only three studies and remains
-prior-influenced.
+### BK virus
 
-Several limitations warrant discussion. First, the evidence base is
-predominantly observational and all pre-specified outcomes were rated
-very low certainty under GRADE; selection bias, confounding by donor
-type, and centre-level practice variation cannot be fully addressed by
-meta-regression. Second, infection outcome definitions varied across
-studies (for example, any CMV reactivation versus clinically significant
-infection; any positive blood culture versus BSI requiring intensive
-care), introducing measurement heterogeneity. Third, the IFI estimate
-(0·63 \[0·19–2·44\]) rests on extreme between-study heterogeneity (τ =
-1·28), is likely confounded by antifungal prophylaxis practices, and is
-compatible with anything from a large reduction to a large increase.
-Fourth, cohort deduplication removes the largest registry publications
-from the seven affected outcomes where a smaller series reports the same
-patients in more detail, so the survival and chronic GVHD totals rest on
-fewer patients than the review's size suggests (appendix S12). Finally,
-with two arms per study the random-effects model is just-identified, so
-for sparse outcomes (k ≤ 6) the priors contribute materially to the
-between-study standard deviation, and those credible intervals should be
-read as lower bounds on the true uncertainty.
+BK virus showed a different pattern: the increase was almost identical
+against CNI-based prophylaxis and ATG (OR 2·39 *vs* 2·49; ratio 0·96,
+0·33–2·50). This is compatible with a cyclophosphamide-specific effect
+rather than a general effect of T-cell depletion; cyclophosphamide is a
+recognised cause of haemorrhagic cystitis, of which BK virus
+reactivation is a major driver after allo-HSCT.[@kaphan2021;
+@ruggeri2015; @chorao2025] With only three prior-influenced studies versus ATG, this interpretation is preliminary.
 
-The within-PTCy comparison (C3) found no detectable differences between
-regimen variants for any outcome. With k = 4–7 per outcome and wide
-credible intervals, however, this is absence of evidence rather than
-evidence of equivalence, and it should not be read as supporting
-flexibility in dosing or backbone selection.
+### Bacterial and fungal infections
 
-Depite these limitations, the analysis has potential clinical
-implications. For centres already using PTCy, the infection costs are
-best weighed in absolute terms: at the median comparator-arm rates, the
-CMV odds ratio of 1·20 corresponds to about 46 additional reactivations
-per 1000 patients by day +100 (a relative risk of about 1·09, not 1·20,
-at a 48% baseline) and the BK odds ratio of 2·39 to about 134 additional
-haemorrhagic cystitis cases per 1000 by day +100 from a 13% baseline,
-while no elevation was detected for clinically significant CMV infection
-(appendix S9). Whether these costs are shared with ATG-based regimens is
-unresolved: the comparator-class test did not resolve the C1–C2
-difference (appendix S9). Clinical strategies to mitigate these costs
-should target T-cell reconstitution (adoptive T-cell therapies,
-letermovir prophylaxis[@marty2017], earlier immunosuppression tapering)
-rather than PTCy avoidance. The larger CMV estimate in studies published
-from 2020 onward (odds ratio 1·43 \[0·97–2·06\]) is not explained by
-letermovir-era prophylaxis: no arm in that cohort had letermovir use
-recorded, and most of these cohorts enrolled before or across the
-letermovir era (appendix S9), so the reasons for the trend remain
-unclear. For NRM, optimising GVHD control remains a key strategy, as
-approaches towards reducing GVHD severity and attendant steroid exposure
-should translate into NRM benefit.
+The data suggest a possible increase in bacterial BSI with PTCy, but
+with four studies the size of this risk cannot be established. There was
+no convincing evidence that PTCy affects IFI: the few available studies
+were highly heterogeneous, probably reflecting differences in antifungal
+prophylaxis, and the estimate is compatible with anything from a large
+reduction to a large increase. Importantly, infection-related mortality
+was not increased.
 
-In conclusion, PTCy is associated with better overall survival and less
-GVHD versus CNI-based prophylaxis, with less certain benefit versus ATG.
-Infection estimates pattern differently by pathogen: CMV estimates are
-directionally consistent with the depth of T-cell depletion without
-establishing it, whereas BK virus elevation was similar across
-comparators, compatible with a cyclophosphamide-specific mechanism. All
-infection estimates were imprecise and these mechanistic readings are
-hypothesis-generating. The potential excess infction risk of PTCy versus
-CNIs may be best addressed through strategies targeting immune
-reconstitution. The present analysis provides a unified framework for
-interpreting the benefit–harm balance of PTCy; given very low certainty
-of evidence for the pre-specified outcomes, its findings are hypotheses
-for adequately powered randomised trials rather than a basis for
-guideline recommendations.
+### Balancing benefits and risks
+
+For clinicians, PTCy should not be regarded simply as "higher-risk" or
+"lower-risk" for infection. The data instead suggest a trade-off: better
+GVHD control and possibly better survival, alongside greater
+susceptibility to selected infections, particularly CMV and BK virus.
+Absolute effects are more informative than ORs here. At the median
+comparator-arm rates, the CMV OR of 1·20 corresponds to about 46
+additional reactivations per 1000 patients by day +100 (a relative risk
+of about 1·09 at a 48% baseline), and refers to reactivation rather than
+clinically significant disease; the BK OR of 2·39 corresponds to about
+134 additional cases per 1000 patients from a 13% baseline, although BK
+definitions and screening varied between studies. These findings support
+careful CMV and BK virus monitoring in patients receiving PTCy,
+appropriate antiviral prophylaxis such as letermovir,[@marty2017] and
+prompt treatment of clinically significant infection. They do not
+justify avoiding PTCy because of infection concerns; mitigation is more
+likely to come from strategies that improve immune recovery, such as
+effective CMV prophylaxis, earlier tapering of unnecessary
+immunosuppression, and adoptive transfer of pathogen-specific T cells;
+future studies should measure immune reconstitution alongside infection
+outcomes. The larger CMV estimate in recent publications remains
+unexplained, but was not attributable to letermovir.
+
+### Limitations
+
+This study has several limitations. First, most evidence was
+observational; although sensitivity analyses were generally consistent,
+residual confounding by donor type, conditioning intensity, transplant
+platform, antimicrobial prophylaxis, and centre practice cannot be
+excluded. Second, infection definitions varied (for example, any CMV
+reactivation versus clinically significant infection; any positive blood
+culture versus BSI requiring intensive care). Third, several estimates
+rest on few studies (four for BSI, six for IFI, three for BK virus
+versus ATG), and with two arms per study the random-effects model is
+just-identified, so for sparse outcomes (k ≤ 6) the priors materially
+influence the estimated between-study variation and credible intervals
+should be read as lower bounds on the true uncertainty. Fourth, IFI
+showed extreme heterogeneity, probably reflecting antifungal prophylaxis
+and local practice. Fifth, cohort deduplication removed the largest
+registry publications from seven outcomes where a smaller series reports
+the same patients in more detail, so the survival and chronic GVHD
+analyses rest on fewer patients than the size of the review suggests
+(appendix S12). Finally, publication bias is a concern: the survival and
+acute GVHD benefits were substantially attenuated after adjustment, so
+the magnitude of benefit in the primary analysis should not be assumed
+to be the true treatment effect. Similarly, the absence of differences
+between PTCy-based regimens, with three to six studies per outcome, does
+not support flexibility in dosing or backbone selection.
+
+In conclusion, PTCy-based prophylaxis was associated with less acute and
+chronic GVHD and better overall survival than CNI plus MTX or MMF,
+although this evidence was predominantly observational and weakened by
+publication-bias adjustment. The infection findings were
+pathogen-specific: possible increases in CMV reactivation and bacterial
+BSI versus CNI-based prophylaxis, the most consistent increase in BK
+virus reactivation, and no clear CMV increase versus ATG. Whether CMV
+risk follows T-cell depletion depth and BK risk follows cyclophosphamide
+itself remains a hypothesis. The evidence supports a benefit–risk
+trade-off: PTCy provides effective GVHD control, and clinicians should
+remain attentive to CMV, BK virus, and potentially bacterial infections.
+Given the very low certainty of evidence, these findings should inform,
+not replace, adequately powered randomised trials.
 
 ## Contributors
 
@@ -600,12 +617,13 @@ full responsibility for the analysis and manuscript contents.
 
 ## Tables
 
+::: {#tbl-characteristics}
 | Characteristic | PTCy arms (n=271) | Comparator arms (n=247) |
 |:---|:---|:---|
 | **Studies** |  |  |
 | Comparative (≥2 arms) | 224 |  |
 | Single-arm descriptive | 26 |  |
-| Arms | 276 | 247 |
+| Arms | 271 | 247 |
 | Total patients | 177 849 |  |
 | Unique patients after cohort deduplication | 111 214 |  |
 | RCTs | 14 (6%) |  |
@@ -615,9 +633,9 @@ full responsibility for the analysis and manuscript contents.
 | Prospective cohort | 17 (8%) |  |
 | Publication year, median (IQR) | 2023 (2021–24) |  |
 | Follow-up, months, median (IQR) | 26 (22–36) |  |
-| **ROBINS-I overall judgement (n=220)** |  |  |
-| Serious | 149 (68%) |  |
-| Moderate | 71 (32%) |  |
+| **ROBINS-I overall judgement (n=210)** |  |  |
+| Serious | 142 (68%) |  |
+| Moderate | 68 (32%) |  |
 | Low / Critical | 0 |  |
 | **Arm-level characteristics** |  |  |
 | Patients per arm, median (IQR) | 99 (46–212) | 119 (50–375) |
@@ -642,7 +660,7 @@ full responsibility for the analysis and manuscript contents.
 | CMV R+, %\* | 74·8 (65·8–80·1) | 69·4 (59·5–81·3) |
 | Steroid exposure, %\* | 26·6 (20·0–32·9) | 34·8 (28·4–43·7) |
 
-: Characteristics of included studies. Data are n (%) or median (IQR)
+Characteristics of included studies. Data are n (%) or median (IQR)
 unless otherwise stated. \*Median of arm-level values; IQR reflects
 between-arm variability. Steroid exposure is the percentage of arm
 patients receiving systemic corticosteroids for graft-versus-host
@@ -651,11 +669,13 @@ unrelated donor. MSD = matched sibling donor. PBSC = peripheral blood
 stem cells. BM = bone marrow. UCB = umbilical cord blood. MAC =
 myeloablative conditioning. RIC = reduced-intensity conditioning. NMA =
 non-myeloablative. NR = not reported.
+:::
 
 {{< pagebreak >}}
 
+::: {#tbl-results}
 | Outcome | Comparison | Model | k | N | OR (95% CrI) | τ | 95% PI | GRADE |
-|:-------|:-------|:-------|-------:|-------:|:-------|-------:|:-------|:-------|
+|:---|:---|:---|---:|---:|:---|---:|:---|:---|
 | Overall survival | C1 | M1 | 29 | 9 295 | 0·73 (0·58–0·89) | 0·42 | 0·29–1·82 | Very low |
 |  | C2 | M1 | 6 | 12 325 | 0·75 (0·43–1·28) | 0·51 | 0·19–2·92 | Very low |
 |  | C3 | M1 | 5 | 4 688 | 1·05 (0·49–1·88) | 0·49 | 0·20–4·47 | — |
@@ -681,7 +701,7 @@ non-myeloablative. NR = not reported.
 | Infection-related mortality | C1 | M1 | 13 | 5 504 | 1·02 (0·67–1·50) | 0·48 | 0·29–3·10 | Very low |
 |  | C2 | M1 | 7 | 13 346 | 0·98 (0·62–1·77) | 0·41 | 0·31–3·53 | Very low |
 
-: Bayesian meta-analysis results: outcomes by comparison. Estimates are
+Bayesian meta-analysis results: outcomes by comparison. Estimates are
 from the cohort-deduplicated dataset, in which one publication per
 cohort contributes to each outcome. M1 = primary model with a random
 study intercept and a random PTCy-effect slope, adjusted for timepoint;
@@ -694,6 +714,7 @@ pre-specified outcomes and the secondary outcomes added by protocol
 amendment (appendix S11); C3 outcomes were not rated. OR \< 1 favours
 PTCy for survival and GVHD outcomes; OR \> 1 indicates elevated risk
 with PTCy for infection outcomes.
+:::
 
 {{< pagebreak >}}
 

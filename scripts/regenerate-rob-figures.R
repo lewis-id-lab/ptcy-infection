@@ -134,7 +134,8 @@ fig_s5b <- ggplot(summary_long, aes(x = n, y = fct_rev(domain),
                                "No information")) +
   scale_x_continuous(labels = scales::percent) +
   labs(x = NULL, y = NULL,
-       title = "ROBINS-I domain-level summary (n = 211)") +
+       title = sprintf("ROBINS-I domain-level summary (n = %d)",
+                       n_distinct(robins$study_id))) +
   theme_jama(base_size = 10)
 save_fig(fig_s5b, "FigureS5b_ROBINS_domain_summary", width = 8, height = 4)
 
