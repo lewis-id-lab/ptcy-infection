@@ -65,44 +65,44 @@
 <g clip-path='url(#cpODUuNjB8MzQwLjc3fDM4LjAzfDI3Mi45MQ==)'>
 <rect x='85.60' y='38.03' width='255.17' height='234.88' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
 <line x1='204.33' y1='272.91' x2='204.33' y2='38.03' style='stroke-width: 0.75; stroke: #8C8C8C; stroke-dasharray: 4.00,4.00; stroke-linecap: butt;' />
-<line x1='120.16' y1='261.36' x2='252.29' y2='261.36' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='157.88' y1='242.11' x2='238.28' y2='242.11' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='97.20' y1='222.86' x2='317.49' y2='222.86' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='188.25' y1='203.60' x2='231.51' y2='203.60' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='193.79' y1='184.35' x2='253.10' y2='184.35' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='201.79' y1='165.10' x2='249.09' y2='165.10' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='209.43' y1='145.85' x2='260.12' y2='145.85' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='215.08' y1='126.59' x2='261.26' y2='126.59' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='221.16' y1='107.34' x2='262.26' y2='107.34' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='202.48' y1='88.09' x2='329.17' y2='88.09' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='214.11' y1='68.84' x2='326.91' y2='68.84' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<polygon points='184.30,263.29 188.15,263.29 188.15,259.44 184.30,259.44 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='196.15,244.03 200.00,244.03 200.00,240.18 196.15,240.18 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='205.42,224.78 209.27,224.78 209.27,220.93 205.42,220.93 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='207.96,205.53 211.80,205.53 211.80,201.68 207.96,201.68 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='221.52,186.28 225.37,186.28 225.37,182.43 221.52,182.43 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='223.51,167.02 227.36,167.02 227.36,163.17 223.51,163.17 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='232.85,147.77 236.70,147.77 236.70,143.92 232.85,143.92 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='236.25,128.52 240.10,128.52 240.10,124.67 236.25,124.67 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='239.79,109.27 243.63,109.27 243.63,105.42 239.79,105.42 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='263.90,90.02 267.75,90.02 267.75,86.17 263.90,86.17 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='268.59,70.76 272.44,70.76 272.44,66.91 268.59,66.91 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<line x1='215.33' y1='49.59' x2='240.66' y2='49.59' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
-<polygon points='224.00,49.59 228.70,44.89 233.40,49.59 228.70,54.28 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<line x1='120.16' y1='262.24' x2='252.29' y2='262.24' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='157.88' y1='244.44' x2='238.28' y2='244.44' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='97.20' y1='226.65' x2='317.49' y2='226.65' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='188.25' y1='208.85' x2='231.51' y2='208.85' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='193.79' y1='191.06' x2='253.10' y2='191.06' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='201.79' y1='173.27' x2='249.09' y2='173.27' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='209.43' y1='155.47' x2='260.12' y2='155.47' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='215.08' y1='137.68' x2='261.26' y2='137.68' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='221.16' y1='119.89' x2='262.26' y2='119.89' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='202.48' y1='102.09' x2='329.17' y2='102.09' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='214.11' y1='84.30' x2='326.91' y2='84.30' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<polygon points='184.30,264.16 188.15,264.16 188.15,260.31 184.30,260.31 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='196.15,246.37 200.00,246.37 200.00,242.52 196.15,242.52 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='205.42,228.57 209.27,228.57 209.27,224.72 205.42,224.72 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='207.96,210.78 211.80,210.78 211.80,206.93 207.96,206.93 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='221.52,192.99 225.37,192.99 225.37,189.14 221.52,189.14 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='223.51,175.19 227.36,175.19 227.36,171.34 223.51,171.34 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='232.85,157.40 236.70,157.40 236.70,153.55 232.85,153.55 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='236.25,139.60 240.10,139.60 240.10,135.75 236.25,135.75 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='239.79,121.81 243.63,121.81 243.63,117.96 239.79,117.96 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='263.90,104.02 267.75,104.02 267.75,100.17 263.90,100.17 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='268.59,86.22 272.44,86.22 272.44,82.37 268.59,82.37 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<line x1='213.99' y1='66.50' x2='241.16' y2='66.50' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
+<polygon points='224.01,66.50 228.71,61.81 233.40,66.50 228.71,71.20 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 </g>
 <g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHwzMjQuMDA=)'>
-<text x='81.12' y='263.79' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='35.91px' lengthAdjust='spacingAndGlyphs'>Kara (2021)</text>
-<text x='81.12' y='244.54' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='48.91px' lengthAdjust='spacingAndGlyphs'>Tischer J (2015)</text>
-<text x='81.12' y='225.29' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='49.52px' lengthAdjust='spacingAndGlyphs'>Curtis DJ (2025)</text>
-<text x='81.12' y='206.04' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='59.33px' lengthAdjust='spacingAndGlyphs'>Kerbauy MN (2021)</text>
-<text x='81.12' y='186.79' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='51.78px' lengthAdjust='spacingAndGlyphs'>Montoro J (2021)</text>
-<text x='81.12' y='167.53' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='46.86px' lengthAdjust='spacingAndGlyphs'>Baker M (2016)</text>
-<text x='81.12' y='148.28' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='52.16px' lengthAdjust='spacingAndGlyphs'>Khimani F (2021)</text>
-<text x='81.12' y='129.03' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='70.66px' lengthAdjust='spacingAndGlyphs'>Ueda Oshima M (2025)</text>
-<text x='81.12' y='109.78' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='51.41px' lengthAdjust='spacingAndGlyphs'>Kaphan E (2021)</text>
-<text x='81.12' y='90.52' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='48.00px' lengthAdjust='spacingAndGlyphs'>Haebe S (2023)</text>
-<text x='81.12' y='71.27' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='41.58px' lengthAdjust='spacingAndGlyphs'>Galli E (2022)</text>
-<text x='81.12' y='52.02' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='66.16px' lengthAdjust='spacingAndGlyphs'>Bayesian pooled (M1)</text>
+<text x='81.12' y='264.67' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='35.91px' lengthAdjust='spacingAndGlyphs'>Kara (2021)</text>
+<text x='81.12' y='246.88' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='48.91px' lengthAdjust='spacingAndGlyphs'>Tischer J (2015)</text>
+<text x='81.12' y='229.08' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='49.52px' lengthAdjust='spacingAndGlyphs'>Curtis DJ (2025)</text>
+<text x='81.12' y='211.29' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='59.33px' lengthAdjust='spacingAndGlyphs'>Kerbauy MN (2021)</text>
+<text x='81.12' y='193.49' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='51.78px' lengthAdjust='spacingAndGlyphs'>Montoro J (2021)</text>
+<text x='81.12' y='175.70' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='46.86px' lengthAdjust='spacingAndGlyphs'>Baker M (2016)</text>
+<text x='81.12' y='157.91' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='52.16px' lengthAdjust='spacingAndGlyphs'>Khimani F (2021)</text>
+<text x='81.12' y='140.11' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='70.66px' lengthAdjust='spacingAndGlyphs'>Ueda Oshima M (2025)</text>
+<text x='81.12' y='122.32' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='51.41px' lengthAdjust='spacingAndGlyphs'>Kaphan E (2021)</text>
+<text x='81.12' y='104.53' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='48.00px' lengthAdjust='spacingAndGlyphs'>Haebe S (2023)</text>
+<text x='81.12' y='86.73' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='41.58px' lengthAdjust='spacingAndGlyphs'>Galli E (2022)</text>
+<text x='81.12' y='68.94' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='66.16px' lengthAdjust='spacingAndGlyphs'>Bayesian pooled (M1)</text>
 <polyline points='85.60,272.91 340.77,272.91 ' style='stroke-width: 0.85; stroke: #2D2D2D; stroke-linecap: butt;' />
 <polyline points='139.88,275.40 139.88,272.91 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
 <polyline points='204.33,275.40 204.33,272.91 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
@@ -115,7 +115,7 @@
 <text x='213.19' y='299.72' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
 <text x='10.46' y='31.26' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='98.95px' lengthAdjust='spacingAndGlyphs'>k = 11, N = 1 333, τ = 0.36</text>
 <text x='10.46' y='17.98' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='244.81px' lengthAdjust='spacingAndGlyphs'>BK virus reactivation — PTCy vs CNI + MTX/MMF</text>
-<text x='10.46' y='311.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.45px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
+<text x='10.46' y='311.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.88px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
 </g>
 <defs>
   <clipPath id='cpNDQzLjYxfDYzNy41NHwzOC4wM3wyNzIuOTE='>

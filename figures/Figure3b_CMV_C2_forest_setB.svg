@@ -65,47 +65,47 @@
 <g clip-path='url(#cpODEuMTB8MzQyLjAzfDM4LjAzfDM0NC45MQ==)'>
 <rect x='81.10' y='38.03' width='260.93' height='306.88' style='stroke-width: 0.97; stroke: none; fill: #FFFFFF;' />
 <line x1='171.58' y1='344.91' x2='171.58' y2='38.03' style='stroke-width: 0.75; stroke: #8C8C8C; stroke-dasharray: 4.00,4.00; stroke-linecap: butt;' />
-<line x1='92.96' y1='330.96' x2='156.92' y2='330.96' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='107.48' y1='307.71' x2='172.03' y2='307.71' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='105.08' y1='284.47' x2='175.54' y2='284.47' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='121.93' y1='261.22' x2='168.14' y2='261.22' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='131.95' y1='237.97' x2='191.58' y2='237.97' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='144.28' y1='214.72' x2='184.48' y2='214.72' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='136.32' y1='191.47' x2='200.79' y2='191.47' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='136.31' y1='168.23' x2='221.25' y2='168.23' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='165.83' y1='144.98' x2='200.41' y2='144.98' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='168.81' y1='121.73' x2='197.81' y2='121.73' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='179.02' y1='98.48' x2='217.65' y2='98.48' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<line x1='149.50' y1='75.23' x2='330.17' y2='75.23' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
-<polygon points='123.02,332.89 126.87,332.89 126.87,329.04 123.02,329.04 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='137.83,309.64 141.68,309.64 141.68,305.79 137.83,305.79 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='138.38,286.39 142.23,286.39 142.23,282.54 138.38,282.54 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='143.11,263.14 146.96,263.14 146.96,259.29 143.11,259.29 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='159.84,239.89 163.69,239.89 163.69,236.05 159.84,236.05 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='162.46,216.65 166.31,216.65 166.31,212.80 162.46,212.80 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='166.63,193.40 170.48,193.40 170.48,189.55 166.63,189.55 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='176.85,170.15 180.70,170.15 180.70,166.30 176.85,166.30 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='181.20,146.90 185.05,146.90 185.05,143.05 181.20,143.05 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='181.38,123.65 185.23,123.65 185.23,119.80 181.38,119.80 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='196.41,100.40 200.26,100.40 200.26,96.56 196.41,96.56 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<polygon points='237.91,77.16 241.76,77.16 241.76,73.31 237.91,73.31 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
-<line x1='152.19' y1='51.98' x2='181.68' y2='51.98' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
-<polygon points='162.54,51.98 167.24,47.28 171.93,51.98 167.24,56.68 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<line x1='92.96' y1='331.95' x2='156.92' y2='331.95' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='107.48' y1='310.33' x2='172.03' y2='310.33' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='105.08' y1='288.72' x2='175.54' y2='288.72' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='121.93' y1='267.11' x2='168.14' y2='267.11' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='131.95' y1='245.50' x2='191.58' y2='245.50' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='144.28' y1='223.89' x2='184.48' y2='223.89' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='136.32' y1='202.28' x2='200.79' y2='202.28' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='136.31' y1='180.67' x2='221.25' y2='180.67' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='165.83' y1='159.06' x2='200.41' y2='159.06' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='168.81' y1='137.45' x2='197.81' y2='137.45' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='179.02' y1='115.83' x2='217.65' y2='115.83' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<line x1='149.50' y1='94.22' x2='330.17' y2='94.22' style='stroke-width: 0.85; stroke: #B20D35; stroke-linecap: butt;' />
+<polygon points='123.02,333.87 126.87,333.87 126.87,330.02 123.02,330.02 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='137.83,312.26 141.68,312.26 141.68,308.41 137.83,308.41 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='138.38,290.65 142.23,290.65 142.23,286.80 138.38,286.80 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='143.11,269.04 146.96,269.04 146.96,265.19 143.11,265.19 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='159.84,247.43 163.69,247.43 163.69,243.58 159.84,243.58 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='162.46,225.81 166.31,225.81 166.31,221.97 162.46,221.97 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='166.63,204.20 170.48,204.20 170.48,200.35 166.63,200.35 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='176.85,182.59 180.70,182.59 180.70,178.74 176.85,178.74 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='181.20,160.98 185.05,160.98 185.05,157.13 181.20,157.13 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='181.38,139.37 185.23,139.37 185.23,135.52 181.38,135.52 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='196.41,117.76 200.26,117.76 200.26,113.91 196.41,113.91 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<polygon points='237.91,96.15 241.76,96.15 241.76,92.30 237.91,92.30 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
+<line x1='152.19' y1='72.61' x2='181.68' y2='72.61' style='stroke-width: 1.71; stroke: #B20D35; stroke-linecap: butt;' />
+<polygon points='162.54,72.61 167.24,67.91 171.93,72.61 167.24,77.31 ' style='stroke-width: 1.29; stroke: none; fill: #B20D35;' />
 </g>
 <g clip-path='url(#cpMC4wMHw2NDguMDB8MC4wMHwzOTYuMDA=)'>
-<text x='76.62' y='333.40' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='46.88px' lengthAdjust='spacingAndGlyphs'>Bordat J (2026)</text>
-<text x='76.62' y='310.15' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='43.08px' lengthAdjust='spacingAndGlyphs'>Modi D (2021)</text>
-<text x='76.62' y='286.90' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='45.72px' lengthAdjust='spacingAndGlyphs'>Berro M (2021)</text>
-<text x='76.62' y='263.65' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='46.12px' lengthAdjust='spacingAndGlyphs'>Dybko J (2023)</text>
-<text x='76.62' y='240.40' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='62.48px' lengthAdjust='spacingAndGlyphs'>Soltermann Y (2019)</text>
-<text x='76.62' y='217.16' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='46.23px' lengthAdjust='spacingAndGlyphs'>Meyer T (2025)</text>
-<text x='76.62' y='193.91' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='62.77px' lengthAdjust='spacingAndGlyphs'>Nykolyszyn C (2020)</text>
-<text x='76.62' y='170.66' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='59.33px' lengthAdjust='spacingAndGlyphs'>Kerbauy MN (2025)</text>
-<text x='76.62' y='147.41' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='43.97px' lengthAdjust='spacingAndGlyphs'>Fox ML (2024)</text>
-<text x='76.62' y='124.16' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='43.97px' lengthAdjust='spacingAndGlyphs'>Fox ML (2026)</text>
-<text x='76.62' y='100.91' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='49.89px' lengthAdjust='spacingAndGlyphs'>Steiner N (2024)</text>
-<text x='76.62' y='77.67' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='48.00px' lengthAdjust='spacingAndGlyphs'>Haebe S (2023)</text>
-<text x='76.62' y='54.42' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='66.16px' lengthAdjust='spacingAndGlyphs'>Bayesian pooled (M1)</text>
+<text x='76.62' y='334.38' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='46.88px' lengthAdjust='spacingAndGlyphs'>Bordat J (2026)</text>
+<text x='76.62' y='312.77' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='43.08px' lengthAdjust='spacingAndGlyphs'>Modi D (2021)</text>
+<text x='76.62' y='291.16' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='45.72px' lengthAdjust='spacingAndGlyphs'>Berro M (2021)</text>
+<text x='76.62' y='269.55' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='46.12px' lengthAdjust='spacingAndGlyphs'>Dybko J (2023)</text>
+<text x='76.62' y='247.93' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='62.48px' lengthAdjust='spacingAndGlyphs'>Soltermann Y (2019)</text>
+<text x='76.62' y='226.32' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='46.23px' lengthAdjust='spacingAndGlyphs'>Meyer T (2025)</text>
+<text x='76.62' y='204.71' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='62.77px' lengthAdjust='spacingAndGlyphs'>Nykolyszyn C (2020)</text>
+<text x='76.62' y='183.10' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='59.33px' lengthAdjust='spacingAndGlyphs'>Kerbauy MN (2025)</text>
+<text x='76.62' y='161.49' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='43.97px' lengthAdjust='spacingAndGlyphs'>Fox ML (2024)</text>
+<text x='76.62' y='139.88' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='43.97px' lengthAdjust='spacingAndGlyphs'>Fox ML (2026)</text>
+<text x='76.62' y='118.27' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='49.89px' lengthAdjust='spacingAndGlyphs'>Steiner N (2024)</text>
+<text x='76.62' y='96.66' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='48.00px' lengthAdjust='spacingAndGlyphs'>Haebe S (2023)</text>
+<text x='76.62' y='75.05' text-anchor='end' style='font-size: 6.80px;fill: #2D2D2D; font-family: "Arial";' textLength='66.16px' lengthAdjust='spacingAndGlyphs'>Bayesian pooled (M1)</text>
 <polyline points='81.10,344.91 342.03,344.91 ' style='stroke-width: 0.85; stroke: #2D2D2D; stroke-linecap: butt;' />
 <polyline points='105.57,347.40 105.57,344.91 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
 <polyline points='171.58,347.40 171.58,344.91 ' style='stroke-width: 0.64; stroke: #2D2D2D; stroke-linecap: butt;' />
@@ -118,7 +118,7 @@
 <text x='211.57' y='371.72' text-anchor='middle' style='font-size: 9.00px;fill: #2D2D2D; font-family: "Arial";' textLength='85.50px' lengthAdjust='spacingAndGlyphs'>Odds ratio (log scale)</text>
 <text x='10.46' y='31.26' style='font-size: 8.50px;fill: #8C8C8C; font-family: "Arial";' textLength='98.95px' lengthAdjust='spacingAndGlyphs'>k = 12, N = 1 511, τ = 0.68</text>
 <text x='10.46' y='17.98' style='font-size: 10.50px; font-weight: bold;fill: #2D2D2D; font-family: "Arial";' textLength='166.91px' lengthAdjust='spacingAndGlyphs'>CMV reactivation — PTCy vs ATG</text>
-<text x='10.46' y='383.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.45px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
+<text x='10.46' y='383.96' style='font-size: 7.50px;fill: #8C8C8C; font-family: "Arial";' textLength='484.88px' lengthAdjust='spacingAndGlyphs'>Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). Weights: REML inverse-variance. Diamond: Bayesian pooled (M1).</text>
 </g>
 <defs>
   <clipPath id='cpNDM5LjIzfDYzNy41NHwzOC4wM3wzNDQuOTE='>

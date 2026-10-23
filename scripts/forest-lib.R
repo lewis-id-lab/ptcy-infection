@@ -133,7 +133,9 @@ forest <- function(analytic_file, slug, title, subtitle = NULL,
                     aes(xmin = lo, xmax = hi),
                     shape = 18, size = .95, linewidth = .8, colour = lancet_red) +
     scale_x_log10() +
-    scale_y_discrete(labels = \(x) ifelse(x == HEADER, "", x)) +
+    # drop = FALSE keeps the (empty) header row so this panel's rows stay
+    # aligned 1:1 with the side panel, which draws the header text
+    scale_y_discrete(labels = \(x) ifelse(x == HEADER, "", x), drop = FALSE) +
     labs(x = "Odds ratio (log scale)", y = NULL, title = title,
          subtitle = subtitle,
          caption = paste0("Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). ",
@@ -147,7 +149,7 @@ forest <- function(analytic_file, slug, title, subtitle = NULL,
     geom_text(aes(x = 2, label = ev_c), size = 2.4, colour = lancet_dark) +
     geom_text(aes(x = 3, label = wt), size = 2.4, colour = lancet_dark) +
     scale_x_continuous(limits = c(0.4, 3.6), expand = c(0, 0)) +
-    scale_y_discrete(labels = \(x) ifelse(x == HEADER, "", x)) +
+    scale_y_discrete(labels = \(x) ifelse(x == HEADER, "", x), drop = FALSE) +
     labs(x = NULL, y = NULL) +
     theme_forest() +
     theme(axis.text = element_blank(),

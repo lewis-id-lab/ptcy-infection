@@ -171,7 +171,7 @@ forest <- function(analytic_file, slug, title, subtitle = NULL) {
     # is distinguished by the diamond and its top position; the header row's
     # label is blanked.
     scale_x_log10() +
-    scale_y_discrete(labels = \(x) ifelse(x == HEADER, "", x)) +
+    scale_y_discrete(labels = \(x) ifelse(x == HEADER, "", x), drop = FALSE) +
     labs(x = "Odds ratio (log scale)", y = NULL, title = title,
          subtitle = subtitle %||% sprintf("k = %d, N = %s, τ = %.2f",
                                           p$k, format(p$n_total, big.mark = " "), p$tau),
@@ -187,7 +187,7 @@ forest <- function(analytic_file, slug, title, subtitle = NULL) {
     geom_text(aes(x = 2, label = ev_c), size = 2.4, colour = lancet_dark) +
     geom_text(aes(x = 3, label = wt), size = 2.4, colour = lancet_dark) +
     scale_x_continuous(limits = c(0.4, 3.6), expand = c(0, 0)) +
-    scale_y_discrete(labels = \(x) ifelse(x == HEADER, "", x)) +
+    scale_y_discrete(labels = \(x) ifelse(x == HEADER, "", x), drop = FALSE) +
     labs(x = NULL, y = NULL) +
     theme_forest() +
     theme(axis.text = element_blank(),
