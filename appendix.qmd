@@ -131,6 +131,24 @@ Full study-level (table S4a, 250 rows) and arm-level (table S4b, 523 rows) chara
 
 {{< pagebreak >}}
 
+## S4. References of included studies
+
+Complete reference list of the 250 studies included in the systematic
+review. The Study column is the internal study identifier used throughout
+tables S4a and S4b and the risk-of-bias files. The Meta-analysis column
+lists the comparison(s) to which the study contributed outcome data (C1:
+PTCy versus CNI-based prophylaxis; C2: PTCy versus ATG; C3: between
+PTCy-based regimens); an em dash marks the 145 studies retained for
+descriptive tabulation only. 105 studies contributed to at least one
+comparison.
+
+{{< include appendix-s4-references.md >}}
+
+: References of the 250 included studies, with the comparisons each study
+contributed to.
+
+{{< pagebreak >}}
+
 ## S5. Risk of bias
 
 | Domain                                    | Low | Moderate | Serious |
