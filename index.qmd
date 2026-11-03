@@ -311,8 +311,7 @@ titles and abstracts, 517 articles were sought for full-text review; 52
 could not be retrieved or were not in English. Of 465 full-text articles
 assessed, 215 were excluded ([appendix pp
 6–14](appendix-preview.html#s2.-studies-excluded-at-full-text-screening-n215)),
-leaving 250 studies for the systematic review. Of these, 105 had
-sufficient details to contribute outcome data to the meta-analysis: 72
+leaving 250 studies for the systematic review. Of these, 105 contributed outcome data to the meta-analysis: 72
 compared PTCy with CNI plus methotrexate (MTX) or mycophenolate mofetil
 (MMF) (C1), 27 compared PTCy with ATG (C2), and 13 compared different
 PTCy-based regimens (C3); seven studies contributed to more than one
@@ -469,8 +468,7 @@ incidence of 33%) and about 68 fewer deaths per 1000 patients by one
 year (from a median comparator-arm mortality of 35%). Better GVHD
 control may reduce the need for prolonged immunosuppression and
 corticosteroids, which contribute to both infection and non-relapse
-mortality, as GVHD and its treatment are leading drivers of non-relapse
-mortality,[@zeiser2017]An exploratory steroid-adjustment analysis
+mortality, as GVHD and its treatment are leading drivers of non-relapse mortality.[@zeiser2017] An exploratory steroid-adjustment analysis
 (appendix S9) was compatible with this pathway. These findings extend
 the matched-donor result of BMT CTN 1703[@bolanosmeade2023] across donor
 types, conditioning regimens, and geographic settings, although the ATG
@@ -688,7 +686,7 @@ non-myeloablative. NR = not reported.
 
 ::: {#tbl-results}
 | Outcome | Comparison | Model | k | N | OR (95% CrI) | τ | 95% PI | GRADE |
-|:---|:---|:---|---:|---:|:---|---:|:---|:---|
+|:-------|:-------|:-------|-------:|-------:|:-------|-------:|:-------|:-------|
 | Overall survival | C1 | M1 | 29 | 9 295 | 0·73 (0·58–0·89) | 0·42 | 0·29–1·82 | Very low |
 |  | C2 | M1 | 6 | 12 325 | 0·75 (0·43–1·28) | 0·51 | 0·19–2·92 | Very low |
 |  | C3 | M1 | 5 | 4 688 | 1·05 (0·49–1·88) | 0·49 | 0·20–4·47 | — |

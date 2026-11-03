@@ -38,6 +38,11 @@ STAGE="$(mktemp -d)"
 trap 'rm -rf "$STAGE"' EXIT
 cp appendix.qmd references.bib "$STAGE"/
 cp -r _extensions figures "$STAGE"/
+# files pulled in with {{< include >}} (e.g. appendix-s4-references.md)
+shopt -s nullglob
+includes=(appendix-*.md)
+shopt -u nullglob
+(( ${#includes[@]} )) && cp "${includes[@]}" "$STAGE"/
 
 for fmt in docx pdf; do
   echo "[extras] rendering appendix.qmd -> lancet-haematology-$fmt"
