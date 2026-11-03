@@ -98,19 +98,16 @@ monitoring rather than avoidance of PTCy.
 We searched PubMed, EMBASE, and SCOPUS from database inception to April
 30, 2026, for systematic reviews and meta-analyses of post-transplant
 cyclophosphamide (PTCy) in allogeneic haematopoietic stem-cell
-transplantation, using the terms "post-transplant cyclophosphamide" AND
-("meta-analysis" OR "systematic review"). We found ten comparative
+transplantation, using the terms "post-transplant cyclophosphamide" AND ("meta-analysis" OR "systematic review"), restricted to English-language publications. We found ten comparative
 meta-analyses, each including 6–30 studies. All examined survival and
-graft-versus-host disease (GVHD), but only three pooled infection outcomes, with few studies per infection and
-comparator. None compared PTCy with both calcineurin inhibitor
+graft-versus-host disease (GVHD), but only three pooled infection outcomes, with few studies per infection and comparator. Where study design was reported, the pooled evidence came mainly from retrospective observational studies, with few randomised trials. None compared PTCy with both calcineurin inhibitor
 (CNI)-based and anti-thymocyte globulin (ATG)-based prophylaxis, so it
 remained unclear whether infections seen with PTCy reflect the drug
 itself or T-cell depletion in general.
 
 ### Added value of this study
 
-This systematic review (250 studies; 177 849 patients) is the first to
-evaluate survival, GVHD, CMV, bloodstream infection, and invasive fungal
+This systematic review (250 studies; 177 849 patients) evaluates survival, GVHD, CMV, bloodstream infection, and invasive fungal
 infection together, comparing PTCy with both a less T-cell-depleting
 regimen (CNI plus methotrexate or mycophenolate) and a more depleting
 one (ATG). CMV reactivation was more frequent with PTCy than with
