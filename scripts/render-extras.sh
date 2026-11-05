@@ -36,7 +36,7 @@ mkdir -p "$OUT"
 # the project instead.
 STAGE="$(mktemp -d)"
 trap 'rm -rf "$STAGE"' EXIT
-cp appendix.qmd references.bib "$STAGE"/
+cp appendix.qmd references.bib appendix-s4-references.md "$STAGE"/
 cp -r _extensions figures "$STAGE"/
 
 for fmt in docx pdf; do
