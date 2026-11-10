@@ -110,12 +110,22 @@ fit_one <- function(data, seed) {
                 control = list(adapt_delta = 0.999, max_treedepth = 14), refresh = 0, recompile = FALSE)
   draws <- as_draws_df(fit)
   hr_draws <- exp(draws$b_Intercept)
+  # 95% prediction interval: the HR expected in a new study, from the posterior
+  # of the mean and the between-study SD
+  set.seed(seed)
+  hr_new <- exp(rnorm(nrow(draws), draws$b_Intercept, draws$sd_study__Intercept))
   reml <- rma(yi, sei = sei, data = data, method = "REML")
+  # Egger-type regression of log HR on its standard error, random-effects version
+  egger <- regtest(reml, model = "rma", predictor = "sei")
   diag <- summary(fit)
   tibble(
     k = nrow(data), k_rct = sum(data$study_design == "RCT"), k_adjusted = sum(data$adjusted),
     hr = median(hr_draws), hr_lo = quantile(hr_draws, 0.025), hr_hi = quantile(hr_draws, 0.975),
     p_hr_below_1 = mean(hr_draws < 1),
+    pi_lo = quantile(hr_new, 0.025), pi_hi = quantile(hr_new, 0.975),
+    egger_z = egger$zval, egger_p = egger$pval,
+    # pooled HR extrapolated to a study with zero standard error
+    egger_limit_hr = exp(egger$est), egger_limit_lo = exp(egger$ci.lb), egger_limit_hi = exp(egger$ci.ub),
     tau = median(draws$sd_study__Intercept),
     tau_lo = quantile(draws$sd_study__Intercept, 0.025), tau_hi = quantile(draws$sd_study__Intercept, 0.975),
     rhat_max = max(diag$fixed$Rhat, diag$random$study$Rhat),
@@ -131,7 +141,30 @@ hr_results <- analysis_sets |>
   select(-data, -seed) |>
   unnest(res)
 
+# Funnel plot, overall survival, all matched HRs: pooled REML estimate with
+# pseudo 95% limits that ignore between-study variance
+funnel_data <- hr_one |>
+  filter(outcome == "OS") |>
+  mutate(design = if_else(study_design == "RCT", "Randomised trial", "Observational"))
+funnel_ref <- hr_results |>
+  filter(outcome == "OS", set == "all matched HRs") |>
+  select(comparison, reml_hr) |>
+  crossing(sei = seq(0, max(funnel_data$sei), length.out = 50)) |>
+  mutate(centre = log(reml_hr), lower = centre - qnorm(0.975) * sei, upper = centre + qnorm(0.975) * sei)
+
+funnel_plot <- ggplot2::ggplot(funnel_data, ggplot2::aes(x = yi, y = sei)) +
+  ggplot2::geom_line(data = funnel_ref, ggplot2::aes(x = lower), linetype = "dashed") +
+  ggplot2::geom_line(data = funnel_ref, ggplot2::aes(x = upper), linetype = "dashed") +
+  ggplot2::geom_line(data = funnel_ref, ggplot2::aes(x = centre)) +
+  ggplot2::geom_point(ggplot2::aes(shape = design)) +
+  ggplot2::scale_y_reverse() +
+  ggplot2::scale_x_continuous(breaks = log(c(0.1, 0.25, 0.5, 1, 2, 4)), labels = c(0.1, 0.25, 0.5, 1, 2, 4)) +
+  ggplot2::facet_wrap(ggplot2::vars(comparison)) +
+  ggplot2::labs(x = "Hazard ratio, PTCy vs comparator (log scale)", y = "Standard error of log HR",
+                shape = NULL, title = "Exploratory: overall survival, matched hazard ratios")
+
 dir.create("audit", showWarnings = FALSE)
+ggplot2::ggsave("audit/hr_exploratory_funnel_os_2026-11-10.png", funnel_plot, width = 9, height = 4.5, dpi = 200)
 write_csv(mutate(hr_results, across(where(is.double), \(x) round(x, 3))), "audit/hr_exploratory_2026-11-10.csv")
 write_csv(
   hr_one |> select(comparison, outcome, study_id, first_author, pub_year, study_design, cohort_id,

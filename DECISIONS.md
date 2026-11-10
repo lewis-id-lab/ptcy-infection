@@ -163,3 +163,32 @@ inference.
   intervals; the trials with no hazard ratio stored (BMT CTN 1703 main
   report, Brissot 2024, Fuchs 2021, Koura 2025, Zu 2023). HOVON-96 (Broers
   2022) has no C1- or C2-eligible arm by the stored flags.
+
+## 2026-11-10 — Exploratory HR models: prediction intervals and small-study effects added (post hoc)
+
+- **Status:** exploratory, post hoc, requested by RL after the pooled
+  hazard ratios above had been seen. Same construction and script
+  (`scripts/hr-exploratory-os-nrm.R`); the pooled estimates are unchanged.
+- **Added:** 95% prediction intervals (from the posterior of the mean and
+  between-study SD); Egger-type random-effects regression of log HR on its
+  standard error (`metafor::regtest`, overall survival sets only); funnel
+  plot `audit/hr_exploratory_funnel_os_2026-11-10.png`.
+- **Overall survival:**
+  - C1 all matched (k = 54): prediction interval 0·41–1·90; Egger z = −2·54,
+    p = 0·011.
+  - C1 excluding non-primary cohort reports (k = 53): prediction interval
+    0·42–1·80; Egger z = −1·65, p = 0·10. The difference from the row above
+    is one study (Abedin 2025).
+  - C1 no ATG recorded (k = 21): prediction interval 0·39–1·76; Egger
+    z = −2·93, p = 0·003.
+  - C2 (k = 18): prediction interval 0·34–1·53; Egger z = −3·98, p < 0·001.
+  - Regression estimates at zero standard error: C1 1·19 (0·92–1·54), C2
+    1·22 (0·94–1·58). These are extrapolations, not corrected estimates.
+- **Reading:** five Egger tests on overlapping sets, uncorrected. Asymmetry
+  is a small-study effect and has several possible causes (selective
+  reporting of hazard ratios, heterogeneity, confounding that differs by
+  study size); it is not by itself evidence of publication bias.
+- **Worklists for re-extraction** (`scripts/reextraction-worklist.R`):
+  `audit/worklist_trials_without_hr_2026-11-10.csv` (10 of 14 trials lack a
+  matched hazard ratio for overall survival or non-relapse mortality) and
+  `audit/worklist_c1_comparator_atg_2026-11-10.csv` (90 arms, 81 studies).
