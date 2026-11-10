@@ -321,3 +321,16 @@ inference.
   `scripts/regenerate-s12-cohort-overlap.R` (24 multi-publication cohorts).
   This supersedes the statement in the previous entry that the committed
   figure had not been replaced.
+
+## 2026-11-10 — "Better overall survival" reworded in Results and Discussion
+
+- **Decision (RL):** bring the Results survival paragraph and the Discussion
+  opening into line with the conclusion. Results now says "lower odds of
+  death" for the primary estimate; the Discussion opening says a survival
+  benefit was not demonstrated. Wording by the assistant.
+- **Left as they are:** "possibly better survival" in the benefit–risk
+  paragraph of the Discussion, and "strengthened rather than weakened the
+  survival association" in the sensitivity analyses.
+- **Checklist Part B reviewed against the current files** (no edits made):
+  B14 no longer applies; B12 partly applies; B15 does not apply to the CMV
+  sets and could not be checked for BK; the other sixteen still apply.

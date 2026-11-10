@@ -357,8 +357,8 @@ one was at low risk.
 
 #### Survival and GVHD
 
-Compared with CNI plus MTX or MMF, PTCy was associated with better
-overall survival (k = 29; odds ratio \[OR\] 0·73, 95% credible interval
+Compared with CNI plus MTX or MMF, PTCy was associated with lower odds
+of death (k = 29; odds ratio \[OR\] 0·73, 95% credible interval
 \[CrI\] 0·58–0·89; @fig-os). Non-relapse mortality (NRM) showed a trend
 towards benefit, but the estimate was uncertain (k = 11; 0·84,
 0·48–1·28), and relapse-related mortality was modestly lower (k = 33;
@@ -456,7 +456,7 @@ benefits should be interpreted cautiously.
 
 ## Discussion
 
-This systematic review and meta-analysis of 247 studies (516 treatment arms; over 175 000 patients) evaluated the benefits and infection risks of PTCy-based GVHD prophylaxis within a single analytic framework. Compared with CNI plus MTX or MMF, PTCy was associated with less acute and chronic GVHD and better overall survival, but also with signals for more CMV reactivation, bacterial BSI, and BK virus reactivation, which were generally less certain than the GVHD findings. Against ATG, the survival and GVHD advantages were smaller and more uncertain, and CMV reactivation was not increased. The infection profile of PTCy may therefore depend on both the comparator and the pathogen.
+This systematic review and meta-analysis of 247 studies (516 treatment arms; over 175 000 patients) evaluated the benefits and infection risks of PTCy-based GVHD prophylaxis within a single analytic framework. Compared with CNI plus MTX or MMF, PTCy was associated with less acute and chronic GVHD; a survival benefit was not demonstrated. There were also signals for more CMV reactivation, bacterial BSI, and BK virus reactivation, which were generally less certain than the GVHD findings. Against ATG, the survival and GVHD estimates were more uncertain, and CMV reactivation was not increased. The infection profile of PTCy may therefore depend on both the comparator and the pathogen.
 
 ### Survival and GVHD
 
