@@ -427,3 +427,24 @@ inference.
   cross-reference warning and the appendix Word file builds. Earlier
   article renders in this session were checked only for word counts and
   errors, not warnings, which is why this was missed.
+
+## 2026-11-10 — Preview PDF builds; rendered Word files checked against source
+
+- **LaTeX packages installed (at RL's request):** `xcharter` and `lato`,
+  from the frozen TeX Live 2025 repository
+  (`ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/tlnet-final`),
+  because the local TinyTeX is TeX Live 2025 and the current mirrors serve
+  2026. TinyTeX itself was not upgraded.
+- **Full `quarto render` (Quarto 1.9.35) at commit `3459815`:** exit code 0,
+  no Quarto warnings or errors; article HTML, Word and PDF, appendix Word
+  and PDF, and the typeset preview PDF all built. No tracked file changed.
+  The preview's LaTeX log has 124 overfull-box messages (layout only).
+- **Word files checked by the assistant by reading the document XML, not by
+  eye:** Table 1 (40 rows), Table 2 (25 rows) and the two appendix S12
+  tables (25 and 9 rows) match the source cell for cell. Figure 1 is built
+  as a figure with one caption. No unresolved cross-references in the Word
+  files or the three PDFs. Page layout, fonts and figure sizes were not
+  checked.
+- **Noted, not changed:** the article PDF is 35 pages and the appendix PDF
+  104 pages; the PRISMA checklist in S14 cites a 31-page article and a
+  72-page appendix, so its page and line references are stale.
