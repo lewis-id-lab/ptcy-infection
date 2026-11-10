@@ -448,3 +448,27 @@ inference.
 - **Noted, not changed:** the article PDF is 35 pages and the appendix PDF
   104 pages; the PRISMA checklist in S14 cites a 31-page article and a
   72-page appendix, so its page and line references are stale.
+
+## 2026-11-10 — PRISMA checklist (S14) page and line references rebuilt
+
+- **What was done (assistant; positions read from the PDFs with pdftools):**
+  all 41 location entries in the S14 checklist were rewritten against the
+  article PDF built at commit `3459815` (35 pages, 464 numbered lines) and
+  the appendix PDF rebuilt with the revised checklist (105 pages). The
+  appendix positions were re-read after the edit, because the edit itself
+  moved S15 from page 101 to 102.
+- **Changes beyond numbers:**
+  - Item 4 quoted "To address this question…", which is not in the
+    manuscript; it now cites "We therefore performed…" (lines 119–123).
+  - Section names updated to the current headings (Search results and study
+    characteristics; Sensitivity analyses; concluding paragraph of the
+    Discussion).
+  - Item 25 no longer cites a Funding line in the Summary, because the
+    Summary has none.
+  - Tables 1 and 2 are cited as page ranges (pp. 26–27 and 28–31).
+- **Not changed:** item 22 still says "pre-specified" thresholds (checklist
+  B13). The references will go stale again whenever the article or appendix
+  text changes length.
+- **Seen while checking the article PDF (not fixed):** in Table 2 the τ
+  column heading is blank and the prediction-interval column overprints the
+  GRADE column. The Word file is not affected.
