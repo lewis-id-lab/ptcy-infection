@@ -418,10 +418,10 @@ estimate, and restricting to studies with closely matched donor types
 survival association (k = 21; 0·58, 0·41–0·78). Trial-only analyses were
 not possible, because no more than two trials per outcome reported
 observed event counts; analyses restricted to observational studies gave
-results similar to the main analysis (overall survival 0·79, 0·63–0·96,
-k = 26; acute GVHD 0·59, 0·44–0·78, k = 27; chronic GVHD 0·48,
-0·27–0·86, k = 14; NRM 0·91, 0·57–1·36, k = 10; CMV 1·01, 0·64–1·64, k =
-7). Pooling the reported overall-survival hazard ratios, which were mostly multivariable-adjusted, gave a consistent but attenuated direction of effect
+results similar to the main analysis (overall survival 0·73, 0·58–0·90,
+k = 27; acute GVHD 0·59, 0·44–0·78, k = 27; chronic GVHD 0·47,
+0·27–0·81, k = 16; NRM 0·91, 0·57–1·36, k = 10; CMV 1·21, 0·87–1·66, k =
+20). Pooling the reported overall-survival hazard ratios, which were mostly multivariable-adjusted, gave a consistent but attenuated direction of effect
 (hazard ratio 0·88, 0·66–1·14, k = 14; count-based OR in the same
 studies 0·75, 0·57–0·93).
 
@@ -774,7 +774,6 @@ full-text reports were assessed and 218 excluded ([appendix pp
 entered twice during extraction were removed (appendix
 S12). 104 unique studies contributed outcome data to the meta-analysis
 (C1 71 studies; C2 27 studies; C3 13 studies; 7 studies contribute to
-
 more than one comparison). Reference lists, citation tracking, and
 PROSPERO registrations were also searched but yielded no separately
 recorded reports, so the identification-via-other-methods branch of the

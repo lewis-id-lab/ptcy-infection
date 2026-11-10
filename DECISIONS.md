@@ -399,3 +399,31 @@ inference.
 - **Appendix wording (RL):** the PTCy+ATG exclusion sentence in S9 now says
   that no study pooled for C2 overall survival contained such an arm, so
   that row repeats the primary model and is not a sensitivity analysis.
+
+## 2026-11-10 — Observational-only refits adopted in the manuscript
+
+- **Decision (RL), after seeing old versus new estimates:** the refits on
+  the primary model sets replace the reported observational-only values for
+  C1 overall survival (0·73, 0·58–0·90, k = 27), chronic GVHD (0·47,
+  0·27–0·81, k = 16) and CMV (1·21, 0·87–1·66, k = 20) in `index.qmd`,
+  appendix S9 and `data/models/rct_only_results.csv`. The CMV trial count is
+  corrected from 0 to 1. Acute GVHD and non-relapse mortality are unchanged.
+- The S9 text now says these analyses use the primary model sets, not the
+  full analytic datasets. The earlier fits (`rep_c1_*_obs.rds`) are kept;
+  the adopted fits are `rep_c1_*_obs_primaryset.rds`.
+
+## 2026-11-10 — Full render; two formatting faults from the duplicate-removal edit found and fixed
+
+- **Full `quarto render` (Quarto 1.9.35):** article HTML, Word and PDF and
+  the appendix Word and PDF built. The typeset preview PDF failed: the
+  LaTeX font package XCharter is not installed in TinyTeX. No tracked file
+  was changed by the render.
+- **Fault introduced by the assistant in commit `46af767`:** the script that
+  applied the count replacements left a stray blank line in two places.
+  In `index.qmd` it split the figure 1 legend, so figure 1 was not built as
+  a figure and `@fig-prisma` did not resolve. In `appendix.qmd` it split
+  the Set A / Set B table in S12 after the relapse-related mortality row.
+  Both blank lines are removed; the article renders without the
+  cross-reference warning and the appendix Word file builds. Earlier
+  article renders in this session were checked only for word counts and
+  errors, not warnings, which is why this was missed.

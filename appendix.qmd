@@ -410,15 +410,15 @@ Arm-level baseline confounders vary widely in availability across the 516 extrac
 
 ### Randomised-trials-only analyses
 
-The 14 randomised trials contribute to the comparisons unevenly after cohort deduplication, so these analyses use the full analytic datasets (one publication per trial cohort). Because the adopted analysis excludes cumulative-incidence- and Kaplan–Meier-derived event counts from pooling (Methods; S13), trial-only analyses are **not estimable for any C1 outcome**: the randomised trials report Kaplan–Meier and cumulative-incidence estimates almost exclusively, and restricting to observed event counts leaves at most two trials per outcome (overall survival k = 2; acute GVHD k = 1; chronic GVHD k = 2; non-relapse mortality k = 1; CMV k = 0). The observational-only estimates below (non-trial studies only) should be read alongside the explicit statement that trial evidence with observed counts is insufficient to carry the survival and GVHD conclusions independently.
+The 14 randomised trials contribute to the comparisons unevenly after cohort deduplication, so these analyses use the primary model sets, with the randomised trials removed for the observational-only models. Because the adopted analysis excludes cumulative-incidence- and Kaplan–Meier-derived event counts from pooling (Methods; S13), trial-only analyses are **not estimable for any C1 outcome**: the randomised trials report Kaplan–Meier and cumulative-incidence estimates almost exclusively, and restricting to observed event counts leaves at most two trials per outcome (overall survival k = 2; acute GVHD k = 1; chronic GVHD k = 2; non-relapse mortality k = 1; CMV k = 1). The observational-only estimates below (non-trial studies only) should be read alongside the explicit statement that trial evidence with observed counts is insufficient to carry the survival and GVHD conclusions independently.
 
 | Outcome | Design | k | OR (95% CrI) |
 |:---|:---|---:|:---|
-| Overall survival | Observational only | 26 | 0·79 (0·63–0·96) |
+| Overall survival | Observational only | 27 | 0·73 (0·58–0·90) |
 | Acute GVHD II–IV | Observational only | 27 | 0·60 (0·44–0·78) |
-| Chronic GVHD mod–severe | Observational only | 14 | 0·48 (0·27–0·86) |
+| Chronic GVHD mod–severe | Observational only | 16 | 0·47 (0·27–0·81) |
 | Non-relapse mortality | Observational only | 10 | 0·91 (0·57–1·36) |
-| CMV reactivation | Observational only | 7 | 1·01 (0·64–1·64) |
+| CMV reactivation | Observational only | 20 | 1·21 (0·87–1·66) |
 
 : Observational-only M1 models, C1 outcomes. Trial-only models are not estimable after the exclusion of cumulative-incidence-derived event counts (see text). Fits and summaries are exported in `rct_only_results.csv`, a supplementary data file.
 
@@ -624,7 +624,6 @@ Cohort deduplication (Set B) changed seven outcomes; all other outcomes were una
 | C1 Overall survival (M1) | 40 | 0·79 (0·73–0·85) | 29 | 0·73 (0·58–0·89) |
 | C1 Overall survival (M2, appendix-only) | 40 | 0·86 (0·77–0·96) | 24 | 0·95 (0·70–1·29) |
 | C1 Relapse-related mortality | 38 | 0·84 (0·76–0·93) | 33 | 0·86 (0·75–0·98) |
-
 | C1 Chronic GVHD mod–severe | 21 | 0·33 (0·29–0·36) | 18 | 0·41 (0·23–0·72) |
 | C1 Infection-related mortality | 16 | 1·35 (1·16–1·57) | 13 | 1·02 (0·67–1·50) |
 | C2 Overall survival | 10 | 0·81 (0·74–0·90) | 6 | 0·75 (0·43–1·28) |
