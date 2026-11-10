@@ -84,9 +84,9 @@ benefits towards the null (0·97, 0·71–1·16 and 0·96, 0·57–1·38).
 Certainty was very low for all outcomes except BK-HC versus CNI-based
 prophylaxis (low).
 
-**Interpretation.** PTCy was associated with less GVHD and possibly
-better survival than CNI-based prophylaxis, although both benefits
-attenuated after publication-bias adjustment; CMV and bacterial
+**Interpretation.** PTCy was associated with less GVHD than CNI-based
+prophylaxis. Survival benefit was not demonstrated: the association
+weakened in hazard-ratio and bias-adjusted analyses. CMV and bacterial
 infection were numerically increased. The CMV pattern fits T-cell
 depletion depth; the similar BK-HC increase against both comparators
 suggests a cyclophosphamide-specific effect. Close viral
@@ -140,9 +140,11 @@ these outcomes.
 
 ### Implications of all the available evidence
 
-PTCy is associated with less GVHD and better overall survival than
-CNI-based prophylaxis, although certainty of evidence is very low and
-adjustment for publication bias weakened these benefits. Infection risks
+PTCy is associated with less GVHD than CNI-based prophylaxis, but a
+survival benefit has not been demonstrated: the lower odds of death in
+the primary analysis (odds ratio 0·73) were not sustained when hazard
+ratios were pooled (0·88, 0·66–1·14) or after publication-bias
+adjustment (0·97, 0·71–1·16), and certainty of evidence is very low. Infection risks
 differ by pathogen: CMV risk may follow the depth of T-cell depletion,
 whereas BK virus risk may be specific to cyclophosphamide-induced
 bladder mucosal injury. For clinicians, this argues for close CMV and BK virus monitoring and for
@@ -630,9 +632,12 @@ regimens, with three to six studies per outcome, does not support
 flexibility in dosing or backbone selection.
 
 In conclusion, PTCy-based prophylaxis was associated with less acute and
-chronic GVHD and better overall survival than CNI plus MTX or MMF,
-although this evidence was predominantly observational and the survival
-and acute GVHD benefits were weakened by publication-bias adjustment.
+chronic GVHD than CNI plus MTX or MMF. A survival benefit was not
+demonstrated: the lower odds of death in the primary analysis did not
+persist when hazard ratios were pooled or after publication-bias
+adjustment, and the prediction interval was wide (0·29–1·82). This
+evidence was predominantly observational, and the acute GVHD estimate
+was also weakened by publication-bias adjustment.
 The infection findings were pathogen-specific: PTCy was associated with
 possible increases in CMV reactivation and bacterial BSI versus
 CNI-based prophylaxis and with the most consistent increase in BK virus

@@ -255,3 +255,27 @@ inference.
     Set A data are outside this repository.
   - `audit/pooled_studies_audit_2026-11-10.csv` and the worklists predate
     the removal and still list entries 51 and 123.
+
+## 2026-11-10 — A3 survival wording applied; figure S7d(i) regenerated
+
+- **Decision (RL):** apply the three proposed A3 passages to `index.qmd`
+  (Summary Interpretation, Research in context Implications, conclusion):
+  a survival benefit is stated as not demonstrated. The supporting numbers
+  are the manuscript's existing analyses (pooled hazard ratio 0·88,
+  0·66–1·14; publication-bias-adjusted 0·97, 0·71–1·16; prediction interval
+  0·29–1·82), not the exploratory hazard-ratio models of this date.
+  Wording drafted by the assistant. Other A3 items (Results "better overall
+  survival", Discussion "68 fewer deaths per 1000", "extend across donor
+  types") and A4/A5/A9 wording in the same passages are unchanged.
+- **Word counts after the change** (Quarto 1.9.35): summary 300 (limit 300),
+  body 3952 (limit 3500).
+- **Figures:**
+  - S7d(i) (posterior predictive checks, C1) regenerated with the refitted
+    C1 RRM model. It needs the gitignored fits in `_fits_rs/` and the theme
+    file `~/ptcy_metaanalys/05_website/_common.R`, so it cannot be rebuilt
+    from this repository alone.
+  - S7c (τ posteriors) does not include the RRM model (OS, NRM, aGVHD, CMV,
+    BSI, IFI only), so it was not stale. This corrects the entry above.
+  - S12 (cohort overlap map) was not regenerated: no script that produces it
+    was found in this repository or in `~/ptcy_metaanalys`. The committed
+    file dates from the initial project commit.
