@@ -1,0 +1,7 @@
+outcome,version,k_primary,trials_removed,k,n_total,or_med,or_lo,or_hi,tau_slope,max_rhat,min_bulk_ess,divergences
+c1_os,reported (analytic files),29,2,26,14348,0.792,0.6282,0.9633,0.3852,1.0026,3204.5096,0
+c1_os,"refit (primary set, trials removed)",29,2,27,8835,0.73,0.5767,0.905,0.4406,1.0008,3569.865,0
+c1_cgvhd_ms,reported (analytic files),18,2,14,2133,0.4811,0.2681,0.8559,0.9056,1.0016,3247.4603,0
+c1_cgvhd_ms,"refit (primary set, trials removed)",18,2,16,2304,0.4695,0.2688,0.8102,0.8699,1.0022,3037.7273,0
+c1_cmv,reported (analytic files),21,1,7,811,1.0149,0.6356,1.639,0.3095,1.0009,2956.1303,0
+c1_cmv,"refit (primary set, trials removed)",21,1,20,3091,1.2145,0.8659,1.6621,0.5595,1.001,3997.8387,0

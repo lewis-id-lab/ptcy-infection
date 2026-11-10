@@ -368,3 +368,34 @@ inference.
 - `data/models/comparator_backbone.csv`: k for the two C2 PTCy+ATG-exclusion
   rows corrected to the number of studies in the saved fits (acute GVHD 6 →
   5; overall survival 9 → 6), matching the appendix. Estimates unchanged.
+
+## 2026-11-10 — Observational-only models refitted on the primary sets (checklist B3/B4)
+
+- **Decision (RL):** refit the observational-only models for C1 overall
+  survival, chronic GVHD (moderate–severe) and CMV on the primary model
+  inputs (`data/models/data_c1_*.csv`, rows with event counts in both arms)
+  with randomised trials removed. Same M1 specification, priors and sampler
+  settings as the reported observational-only fits; new seeds.
+  Script: `scripts/refit-obs-only-primary-sets.R`; output
+  `audit/obs_only_refit_2026-11-10.csv`.
+- **Seen before the refit:** the reported observational-only estimates, the
+  primary estimates, and the finding above that the reported fits used
+  different study sets.
+- **Results (OR, 95% CrI; reported → refit):**
+  - Overall survival: 0·79 (0·63–0·96), k = 26 → 0·73 (0·58–0·90), k = 27.
+  - Chronic GVHD: 0·48 (0·27–0·86), k = 14 → 0·47 (0·27–0·81), k = 16.
+  - CMV: 1·01 (0·64–1·64), k = 7 → 1·21 (0·87–1·66), k = 20.
+  - No divergences; R-hat ≤ 1·002.
+- **Reading:** each refit differs from its primary model only by the removal
+  of one or two small trials, so it is close to the primary estimate by
+  construction (primary: 0·73, 0·41 and 1·20). It shows that the trials do
+  not drive the pooled estimates; it is not independent support for them.
+  The CMV trial removed is Koura 2025 (study 432; 25 and 15 patients), so
+  the appendix statement that no trial contributes to CMV is wrong.
+- **Not changed yet:** `index.qmd`, `appendix.qmd`,
+  `data/models/rct_only_results.csv` and the earlier fits. The manuscript
+  still quotes the reported values, including in the Results sensitivity
+  paragraph.
+- **Appendix wording (RL):** the PTCy+ATG exclusion sentence in S9 now says
+  that no study pooled for C2 overall survival contained such an arm, so
+  that row repeats the primary model and is not a sensitivity analysis.
