@@ -21,6 +21,8 @@ local NOT_BODY = {
   ["declaration of interests"] = true, ["acknowledgments"] = true,
   ["acknowledgements"] = true, ["data sharing"] = true,
   ["use of artificial intelligence"] = true,
+  -- tables and figure legends do not count towards the journal limit
+  ["tables"] = true, ["figures"] = true,
 }
 
 local function norm(s)
@@ -54,15 +56,21 @@ end
 
 -- ── 2. word counting ──────────────────────────────────────────────────────
 local function count_words(blocks)
+  -- Remove what the journal does not count *before* counting: a single walk
+  -- is bottom-up, so Str tokens inside these elements would already have been
+  -- counted by the time the element itself is dropped. Citation markers are
+  -- not words (their keys would otherwise count, one per reference).
+  local stripped = pandoc.walk_block(pandoc.Div(blocks), {
+    Cite = function() return {} end,
+    Table = function() return {} end,
+    Figure = function() return {} end,
+  })
   local n = 0
-  pandoc.walk_block(pandoc.Div(blocks), {
+  pandoc.walk_block(stripped, {
     Str = function(el)
       -- a token counts as a word if it contains at least one letter or digit
       if el.text:match("[%w]") then n = n + 1 end
     end,
-    -- the journal excludes these from the running word count
-    Table = function() return {} end,
-    Figure = function() return {} end,
   })
   return n
 end
