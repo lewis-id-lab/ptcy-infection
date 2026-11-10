@@ -334,3 +334,37 @@ inference.
 - **Checklist Part B reviewed against the current files** (no edits made):
   B14 no longer applies; B12 partly applies; B15 does not apply to the CMV
   sets and could not be checked for BK; the other sixteen still apply.
+
+## 2026-11-10 — Checklist B5–B7 corrected in the appendix; B3/B4 traced (no refit)
+
+- **B5–B7 (counts only, no estimate changed; assistant, checked against the
+  saved fits):** the stored k values counted input rows, including rows
+  without event counts that the models drop.
+  - C2 overall survival excluding PTCy+ATG-arm studies: k 9 → 6. The fit
+    contains the same six studies as the primary C2 survival model, so this
+    exclusion removes no pooled study.
+  - C2 acute GVHD excluding PTCy+ATG-arm studies: k 6 → 5 (studies 24 and 49
+    excluded from the seven pooled). Same cause; found while fixing B5.
+  - C1 CMV letermovir text: 44 arms / 28 confirmed non-use → 42 / 26.
+  - `data/models/comparator_backbone.csv` still holds k = 9 and 6.
+- **B3/B4 (finding, not fixed):** the trial-only and observational-only
+  models (`scripts/refit-reporting-suite.R`, section 1) were not fitted on
+  the primary model sets. They read `data/analytic/*.csv`, not
+  `data/models/data_c1_*.csv`, and keep the largest study per cohort
+  instead of the designated primary publication.
+  - CMV: the analytic file holds only 21 studies, 7 with event counts; 13
+    observational studies in the primary CMV model are absent from it.
+  - Overall survival: studies 9 and 281 are fitted in place of 338 and 52
+    (same cohorts), and study 180 has no counts in the analytic file.
+  - Chronic GVHD: study 180 has no counts and study 375 is absent.
+  - Acute GVHD and non-relapse mortality match the primary observational
+    sets.
+  - By stored study design the primary sets hold 27, 27, 16, 10 and 20
+    observational studies (OS, aGVHD, cGVHD, NRM, CMV) and 2, 1, 2, 1 and 1
+    trials; the appendix states 0 trials for CMV.
+
+## 2026-11-10 — comparator_backbone.csv k corrected
+
+- `data/models/comparator_backbone.csv`: k for the two C2 PTCy+ATG-exclusion
+  rows corrected to the number of studies in the saved fits (acute GVHD 6 →
+  5; overall survival 9 → 6), matching the appendix. Estimates unchanged.
