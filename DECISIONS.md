@@ -472,3 +472,30 @@ inference.
 - **Seen while checking the article PDF (not fixed):** in Table 2 the τ
   column heading is blank and the prediction-interval column overprints the
   GRADE column. The Word file is not affected.
+
+## 2026-11-10 — Article PDF: missing glyphs and Table 2 layout fixed
+
+- **Faults:** in the article PDF, τ, ≤ and ≥ did not print anywhere (Latin
+  Modern Roman has no such glyphs; 22, 4 and 11 occurrences), and in Table 2
+  the prediction-interval column overprinted the GRADE column because the
+  nine columns had equal widths.
+- **Changes (PDF output only):**
+  - `_extensions/lancet-haematology/_extension.yml`: the PDF header takes τ,
+    ≤ and ≥ from the math font and defines `\lancetwidetable` (footnotesize,
+    single spacing, narrower column gaps).
+  - `_extensions/lancet-haematology/lancet-haematology.lua`: column widths
+    for the pooled-results table, applied to LaTeX output only.
+  - `index.qmd`: raw LaTeX blocks around Table 2 that switch the compact
+    setting on and off. They are ignored by Word and HTML.
+- **Checks (assistant):** `word/document.xml` in the Word file is
+  byte-identical before and after; word counts unchanged (300 and 3500);
+  no missing-character messages remain in the LaTeX log; the preview PDF
+  still builds and is unchanged in size.
+- **Consequences:** the article PDF is 33 pages, not 35 (Table 2 now runs
+  over pp. 28–29, figures 1–4 are on pp. 30–33). Section pages and line
+  numbers did not move. The S14 checklist was updated for the page count,
+  Table 2 and figures 1–4. The header is shared with the appendix PDF, so
+  the three glyphs now print there too; its pagination did not change.
+- **Not changed:** decimal points in the PDF are set with visible space on
+  each side ("0 · 73"); this is how the PDF font sets the middle dot and
+  was already so.

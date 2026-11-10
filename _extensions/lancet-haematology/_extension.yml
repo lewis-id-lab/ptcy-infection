@@ -51,6 +51,13 @@ contributes:
           \usepackage{lineno}
           \linenumbers
           \usepackage[document]{ragged2e}
+          % Latin Modern Roman has no tau, <= or >= glyph, so these printed
+          % as blanks; take them from the math font instead.
+          \catcode`\τ=\active \protected\def τ{\ensuremath{\tau}}
+          \catcode`\≤=\active \protected\def ≤{\ensuremath{\leq}}
+          \catcode`\≥=\active \protected\def ≥{\ensuremath{\geq}}
+          % Compact setting for wide tables; used around table 2 in index.qmd.
+          \newcommand{\lancetwidetable}{\footnotesize\setstretch{1}\setlength{\tabcolsep}{3pt}}
       default-image-extension: pdf
 
     # ── screen preview ──────────────────────────────────────────────────

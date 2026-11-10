@@ -118,5 +118,21 @@ function Pandoc(doc)
   return doc
 end
 
+-- ── 3. column widths for the pooled-results table (LaTeX only) ────────────
+-- Pandoc gives the nine columns of table 2 equal widths, so in the PDF the
+-- prediction-interval column ran into the GRADE column. Word and HTML are
+-- left alone.
+local RESULTS_WIDTHS = { 0.18, 0.10, 0.08, 0.05, 0.09, 0.17, 0.07, 0.15, 0.11 }
+
+local function widen_results_table(tbl)
+  if not FORMAT:match("latex") then return nil end
+  if #tbl.colspecs ~= #RESULTS_WIDTHS then return nil end
+  if not pandoc.utils.stringify(tbl.head):match("95%% PI") then return nil end
+  for i, w in ipairs(RESULTS_WIDTHS) do
+    tbl.colspecs[i] = { tbl.colspecs[i][1], w }
+  end
+  return tbl
+end
+
 -- Meta must run before Pandoc
-return { { Meta = Meta }, { Pandoc = Pandoc } }
+return { { Meta = Meta }, { Pandoc = Pandoc }, { Table = widen_results_table } }

@@ -716,6 +716,10 @@ non-myeloablative. NR = not reported.
 
 {{< pagebreak >}}
 
+```{=latex}
+\begingroup\providecommand{\lancetwidetable}{}\lancetwidetable
+```
+
 ::: {#tbl-results}
 | Outcome | Comparison | Model | k | N | OR (95% CrI) | τ | 95% PI | GRADE |
 |:-------|:-------|:-------|-------:|-------:|:-------|-------:|:-------|:-------|
@@ -758,6 +762,10 @@ amendment (appendix S11); C3 outcomes were not rated. OR \< 1 favours
 PTCy for survival and GVHD outcomes; OR \> 1 indicates elevated risk
 with PTCy for infection outcomes.
 :::
+
+```{=latex}
+\endgroup
+```
 
 {{< pagebreak >}}
 
