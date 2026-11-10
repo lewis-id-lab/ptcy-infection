@@ -86,3 +86,80 @@ inference.
   3924. The counter includes Methods and the "Role of the funding source"
   subsection and excludes Research in context, tables, figure legends and
   citations.
+
+## 2026-11-10 — Pushed to GitHub
+
+- `main` pushed to `origin/main` at `902a8e6` (merge `fd512ca` plus the
+  decision record, audit scripts and outputs, and the word-limit change).
+  Only `main` was pushed. Pre-push scan of the pushed diff: no Word, Excel
+  or R data files; no identifier-like text or e-mail addresses in added
+  lines.
+
+## 2026-11-10 — Why C1 contains comparators with ATG (assistant inference)
+
+- **Finding:** the "no ATG" part of the C1 definition was written down but
+  never enforced in code.
+  - The definition is in the upstream schema
+    (`~/ptcy_metaanalys/PTCy_MA_database_schema_v1.0.md`, line 108) and in
+    the extractor instructions (`extraction_protocol/EXTRACTION_SPEC.md`,
+    §4): C1 is CNI + MTX or MMF with no ATG and no ex-vivo T-cell depletion.
+  - `comparison_1_eligible` was set per arm by the AI extractor at
+    extraction. The JSON schema the extractor wrote to describes the field
+    only as "PTCy vs CNI+MTX/MMF".
+  - The only validation rule on the flags (R4 in `validate.py` and
+    `export_to_csv.R`) checks that each eligible arm has an eligible
+    comparator in the same study. Neither validator refers to `atg_used`.
+  - No script found in `03_models/` or `PTCY_analysis/` upstream, or in
+    `scripts/` here, filters on `atg_used` when building the C1 model sets;
+    they select on the flag alone.
+- **Size:** of 163 C1-eligible comparator arms in `data/arms.csv`, 68 have
+  `atg_used = Y` and 22 `mixed`; of 148 C1-eligible PTCy arms, 27 are `Y` and
+  10 `mixed`. All 90 flagged comparator arms come from studies recorded as
+  extracted in May 2026 and verified.
+- **Status:** inference from a text search of the upstream directory, not an
+  exhaustive read (the two conversation exports were not read). Confidence
+  that no programmatic check existed: high. Whether the stored `atg_used`
+  values are themselves right is unknown; checking the flagged arms against
+  the papers would settle it.
+
+## 2026-11-10 — Exploratory hazard-ratio pooling, OS and NRM, C1 and C2 (post hoc)
+
+- **Status: exploratory and post hoc.** Requested by RL after the revision
+  checklist (A1/A2) and after the feasibility counts above. Not a primary
+  analysis, not pre-specified, and not the existing HR sensitivity analysis
+  (`scripts/hr-sensitivity-os.R`, Set B studies only, C1 k = 14). Nothing in
+  the manuscript was changed.
+- **Seen before it was run:** the observed-count results in the manuscript,
+  the existing HR sensitivity result (C1 OS 0·88, 0·66–1·14), the checklist,
+  and the C1 audit showing ATG recorded in many C1 arms.
+- **Construction** (`scripts/hr-exploratory-os-nrm.R`): all studies with C1-
+  or C2-eligible arms by the stored flags; only hazard ratios with both
+  interval bounds whose stated reference arm is an eligible arm on the other
+  side; one HR per study (adjusted preferred, then closest to one year, then
+  larger arm pair); one study per `cohort_id`; direction harmonised to PTCy
+  versus comparator; Bayesian normal-normal random effects with the priors of
+  the existing HR script; REML check. Outputs:
+  `audit/hr_exploratory_2026-11-10.csv` and
+  `audit/hr_exploratory_inputs_2026-11-10.csv`.
+- **Sets fixed before results were seen:** "all matched HRs", and for C1 "no
+  ATG recorded in either arm".
+- **Set added after results were seen:** "excluding non-primary cohort
+  reports". Reason: the main BMT CTN 1703 report (study 2) has no hazard
+  ratio in the database, so the cohort rule let its age ≥ 70 subset report
+  (Abedin 2025, study 12; OS HR 0·08, 0·02–0·33, n = 96) stand in for the
+  trial.
+- **Results (HR, 95% CrI; k; trials):**
+  - C1 OS: all 0·87 (0·77–0·99), k = 54, 5 trials; excluding non-primary
+    0·89 (0·79–1·00), k = 53; no ATG recorded 0·84 (0·69–1·00), k = 21.
+  - C1 NRM: all 0·85 (0·71–1·01), k = 47, 3 trials; excluding non-primary
+    0·86 (0·73–1·03), k = 46; no ATG recorded 0·82 (0·62–1·07), k = 16.
+  - C2 OS: 0·74 (0·57–0·90), k = 18, no trials.
+  - C2 NRM: 0·88 (0·61–1·20), k = 17, no trials.
+  - REML estimates agree to within 0·01; I² 67–82%; no divergences,
+    R-hat 1·00.
+- **Not done / not checked:** hazard-ratio direction, adjustment sets and
+  timepoints against source papers; whether NRM hazard ratios are
+  cause-specific or subdistribution; small-study effects; prediction
+  intervals; the trials with no hazard ratio stored (BMT CTN 1703 main
+  report, Brissot 2024, Fuchs 2021, Koura 2025, Zu 2023). HOVON-96 (Broers
+  2022) has no C1- or C2-eligible arm by the stored flags.
