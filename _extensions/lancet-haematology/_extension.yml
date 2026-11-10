@@ -23,9 +23,11 @@ contributes:
         # The prose already uses · — leave off unless you paste in new
         # numbers with plain decimal points, then flip to true.
         middot: false
-        # word-count limits checked at render time (Articles)
+        # word-count limits checked at render time. Systematic reviews and
+        # meta-analyses: 300-word summary, 3500-word main text (Lancet
+        # formatting guidelines, July 2025). 4500 applies to randomised trials.
         summary-words: 300
-        body-words: 4500
+        body-words: 3500
 
     # ── submission Word file ────────────────────────────────────────────
     docx:

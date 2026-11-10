@@ -1,0 +1,885 @@
+study_id,comparison,outcome,extracted,counts,cif_interval,cif_point,hr_any,hr_matched,study_design,rct
+2,C1,CMV reactivation,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+2,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+2,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+2,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+2,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+2,C1,Infection-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+4,C1,CMV reactivation,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+5,C1,Bloodstream infection,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+5,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+5,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C1,Bloodstream infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C2,Bloodstream infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C2,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C1,Infection-related mortality,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C2,Infection-related mortality,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C2,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C1,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C2,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+7,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+7,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+7,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+7,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+7,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,prospective_cohort,FALSE
+7,C1,Invasive fungal infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,prospective_cohort,FALSE
+7,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,prospective_cohort,FALSE
+8,C1,Overall survival,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+8,C1,Non-relapse mortality,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+9,C1,Bloodstream infection,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+9,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+9,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+9,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+9,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+10,C3,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+10,C3,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+10,C3,Non-relapse mortality,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+10,C3,Overall survival,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+12,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+12,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+12,C1,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,RCT,TRUE
+12,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,RCT,TRUE
+12,C1,Infection-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+19,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+19,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+19,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+20,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+20,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+20,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+24,C2,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+24,C2,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+24,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+24,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+35,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+35,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+35,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+37,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+37,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+39,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+39,C2,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+39,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+39,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+43,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+43,C2,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+43,C2,Non-relapse mortality,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+43,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+43,C2,CMV reactivation,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+44,C3,Acute GVHD II-IV,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+44,C3,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+44,C3,Non-relapse mortality,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+44,C3,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+45,C1,Acute GVHD II-IV,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+45,C1,Chronic GVHD mod-severe,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+45,C1,CMV reactivation,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+45,C1,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+45,C1,Infection-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+45,C1,BK haemorrhagic cystitis,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+45,C1,Overall survival,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+48,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+49,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+49,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+49,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+49,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+49,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+49,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+50,C1,CMV reactivation,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+50,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+50,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+50,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+51,C1,CMV reactivation,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+51,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+51,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+51,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+51,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+52,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+52,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+52,C1,Overall survival,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+52,C1,Infection-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+55,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+55,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+55,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+55,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+57,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+57,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+57,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+57,C1,Infection-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+60,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+60,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+60,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+61,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+61,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+61,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+62,C3,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+62,C3,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+62,C3,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+63,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+63,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+63,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+63,C2,Infection-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+65,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+65,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+65,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+66,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+66,C2,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+66,C2,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+66,C2,Infection-related mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+66,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+66,C2,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+66,C2,Bloodstream infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+67,C1,Non-relapse mortality,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+67,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+71,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+71,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+71,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+71,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+72,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,RCT,TRUE
+72,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,RCT,TRUE
+72,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,RCT,TRUE
+72,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,RCT,TRUE
+75,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+75,C2,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+75,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+75,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+75,C2,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+75,C2,Infection-related mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+75,C2,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+75,C2,Bloodstream infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+77,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+77,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+77,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+78,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+78,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+78,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+79,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,RCT,TRUE
+79,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+79,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,RCT,TRUE
+79,C2,CMV reactivation,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+86,C1,CMV reactivation,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+86,C2,CMV reactivation,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+86,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+86,C2,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+86,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+86,C2,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+86,C1,Infection-related mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+86,C2,Infection-related mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+86,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+86,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+88,C1,Bloodstream infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+88,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+88,C1,Acute GVHD II-IV,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+88,C1,Chronic GVHD mod-severe,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+88,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+88,C1,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+89,C1,Bloodstream infection,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,retrospective_cohort,FALSE
+99,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+99,C2,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+99,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+99,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+100,C3,CMV reactivation,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+100,C3,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+100,C3,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+100,C3,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+100,C3,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+104,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+104,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+104,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+104,C1,Overall survival,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+105,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+105,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,RCT,TRUE
+105,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+107,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+107,C2,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+107,C2,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+107,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+110,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+110,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+110,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+110,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+111,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+111,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,retrospective_cohort,FALSE
+111,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+111,C2,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,retrospective_cohort,FALSE
+111,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+111,C2,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,retrospective_cohort,FALSE
+111,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+111,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,retrospective_cohort,FALSE
+111,C1,Bloodstream infection,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+111,C2,Bloodstream infection,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,retrospective_cohort,FALSE
+112,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+112,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,retrospective_cohort,FALSE
+112,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+112,C2,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,retrospective_cohort,FALSE
+112,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+112,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,retrospective_cohort,FALSE
+112,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+112,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+118,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+118,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+118,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+119,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+119,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+119,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+119,C1,Non-relapse mortality,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+119,C1,Overall survival,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+120,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+120,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+120,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+120,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+120,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+120,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+122,C2,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+122,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+122,C2,Overall survival,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+122,C2,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+124,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+124,C2,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+124,C2,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+124,C2,Overall survival,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+133,C1,CMV reactivation,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+133,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+133,C1,Acute GVHD II-IV,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+133,C1,Chronic GVHD mod-severe,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+133,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+136,C2,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+136,C2,Invasive fungal infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+136,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+136,C2,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+136,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+136,C2,Infection-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+136,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+137,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+137,C2,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+137,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+137,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+137,C2,CMV reactivation,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+137,C2,Invasive fungal infection,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+140,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+140,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+140,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+140,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+141,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,retrospective_cohort,FALSE
+142,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+142,C2,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+142,C2,Overall survival,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+144,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+144,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+144,C1,Overall survival,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+144,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+146,C3,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+146,C3,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+146,C3,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+146,C3,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+146,C3,Infection-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+151,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+151,C2,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+151,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+166,C1,Acute GVHD II-IV,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+166,C1,Chronic GVHD mod-severe,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+166,C1,CMV reactivation,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+166,C1,Bloodstream infection,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+166,C1,Invasive fungal infection,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+166,C1,Infection-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+166,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+166,C1,Overall survival,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C2,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C2,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C1,Overall survival,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C2,Overall survival,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C2,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C1,Invasive fungal infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C2,Invasive fungal infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+167,C2,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+168,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+168,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+168,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+168,C2,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+168,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+168,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+168,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,registry,FALSE
+168,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,registry,FALSE
+170,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+170,C1,Infection-related mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+170,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+170,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+178,C1,CMV reactivation,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+178,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+178,C1,Overall survival,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+180,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+180,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+180,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+180,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+180,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+183,C1,CMV reactivation,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+183,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+183,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+183,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+183,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+184,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+184,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+184,C1,Non-relapse mortality,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+184,C1,Overall survival,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+184,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+185,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+185,C2,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+185,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+187,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+187,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+196,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+196,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+196,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+196,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+196,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+196,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+197,C1,BK haemorrhagic cystitis,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+198,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+198,C1,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+198,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+198,C1,Non-relapse mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+198,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+201,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+201,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+201,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+201,C1,Non-relapse mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+203,C3,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+203,C3,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+203,C3,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+207,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+207,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+207,C1,Non-relapse mortality,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+207,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+208,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+208,C1,Invasive fungal infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+208,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+208,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+208,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+208,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+208,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+209,C1,CMV reactivation,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+209,C1,Non-relapse mortality,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+209,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+209,C1,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+209,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+211,C2,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+216,C1,Acute GVHD II-IV,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+216,C1,CMV reactivation,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+216,C1,Bloodstream infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+216,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+216,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+217,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+217,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+217,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+219,C1,Invasive fungal infection,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+219,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+221,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+221,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+221,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+226,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,RCT,TRUE
+226,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,RCT,TRUE
+226,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+226,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,RCT,TRUE
+226,C1,CMV reactivation,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+232,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+232,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+232,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+236,C2,CMV reactivation,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+236,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+236,C2,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+236,C2,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+236,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+238,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+238,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+238,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+238,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+238,C1,CMV reactivation,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+242,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+242,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+242,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+243,C3,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+243,C3,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+243,C3,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+243,C3,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+244,C3,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+244,C3,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+244,C3,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+244,C3,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+244,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+244,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+244,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+244,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+245,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+245,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+245,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+245,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+246,C1,Chronic GVHD mod-severe,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+246,C1,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+246,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+248,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+248,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+248,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+248,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+250,C1,Bloodstream infection,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,retrospective_cohort,FALSE
+250,C1,Non-relapse mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+253,C3,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+253,C3,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+253,C3,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+254,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+254,C2,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+254,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+254,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+254,C2,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+257,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+257,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+257,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+258,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+258,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+258,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+258,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+260,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+260,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+260,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+260,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+261,C1,Acute GVHD II-IV,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+261,C1,Chronic GVHD mod-severe,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+261,C1,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+261,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+261,C1,CMV reactivation,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+261,C1,Infection-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+262,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+262,C1,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+262,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+263,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+263,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+263,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+263,C2,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+263,C1,Overall survival,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+263,C2,Overall survival,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+263,C1,Infection-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+263,C2,Infection-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+268,C1,Infection-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+270,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+271,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,retrospective_cohort,FALSE
+271,C1,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,retrospective_cohort,FALSE
+271,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+271,C1,Non-relapse mortality,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,retrospective_cohort,FALSE
+272,C3,Acute GVHD II-IV,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+272,C3,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+272,C3,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+273,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+273,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+273,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+276,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+276,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+276,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+277,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+277,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+277,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+280,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+280,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+280,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+280,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+280,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+280,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+281,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+281,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+281,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+282,C3,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+282,C3,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+287,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,registry,FALSE
+287,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,registry,FALSE
+287,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,registry,FALSE
+287,C1,Infection-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+289,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+289,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+289,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+290,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+290,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+296,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+296,C1,Overall survival,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+296,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+296,C1,Infection-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+299,C2,Acute GVHD II-IV,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+299,C2,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+299,C2,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+299,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+299,C2,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+299,C2,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+299,C2,Infection-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+300,C1,Overall survival,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+300,C1,Non-relapse mortality,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+300,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+301,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+301,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+301,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+301,C1,Infection-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+302,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+302,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+302,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+302,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+304,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+304,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+304,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+304,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+305,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+305,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+305,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+307,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+307,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+307,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+307,C2,Infection-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+308,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+308,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+308,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+311,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+318,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+318,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+318,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+320,C1,Acute GVHD II-IV,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+320,C1,Chronic GVHD mod-severe,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+320,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+320,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+321,C1,Acute GVHD II-IV,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+321,C1,Chronic GVHD mod-severe,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+321,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+323,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+323,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+323,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+324,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,registry,FALSE
+324,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,registry,FALSE
+324,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,registry,FALSE
+325,C1,Acute GVHD II-IV,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+325,C1,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+325,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+326,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+326,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+326,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+332,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+335,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+335,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+335,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+335,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+335,C1,CMV reactivation,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+335,C1,Bloodstream infection,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+335,C1,BK haemorrhagic cystitis,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+336,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+336,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+336,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+336,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+337,C1,Bloodstream infection,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+337,C1,CMV reactivation,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+337,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+337,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+337,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+337,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+338,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+338,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+338,C1,CMV reactivation,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+338,C1,Bloodstream infection,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+338,C1,BK haemorrhagic cystitis,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+338,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+338,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+340,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,registry,FALSE
+340,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,registry,FALSE
+343,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+343,C1,Non-relapse mortality,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+343,C1,Overall survival,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+344,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+344,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+344,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+352,C1,Non-relapse mortality,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,retrospective_cohort,FALSE
+352,C2,Non-relapse mortality,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,retrospective_cohort,FALSE
+352,C1,Overall survival,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,retrospective_cohort,FALSE
+352,C2,Overall survival,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,retrospective_cohort,FALSE
+353,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+353,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+353,C2,Non-relapse mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+357,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,prospective_cohort,FALSE
+357,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+357,C1,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+358,C2,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+358,C2,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+358,C2,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+358,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+359,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+359,C1,Acute GVHD II-IV,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+359,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+359,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+359,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+361,C2,Overall survival,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,registry,FALSE
+361,C3,Overall survival,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,registry,FALSE
+363,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+363,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+363,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+363,C2,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+366,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+366,C2,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+366,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+366,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+366,C2,CMV reactivation,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+368,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+368,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+368,C1,Overall survival,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+371,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+371,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+371,C1,Non-relapse mortality,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+371,C1,Overall survival,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+374,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+374,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+375,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+375,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+375,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+375,C1,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+375,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+375,C1,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+375,C1,Infection-related mortality,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+379,C1,CMV reactivation,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+379,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+379,C1,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+380,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+380,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,RCT,TRUE
+380,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,RCT,TRUE
+380,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,RCT,TRUE
+380,C1,CMV reactivation,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,RCT,TRUE
+380,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,RCT,TRUE
+382,C1,Bloodstream infection,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,registry,FALSE
+382,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+382,C1,Overall survival,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+384,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+384,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+384,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+389,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+389,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+389,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+389,C1,CMV reactivation,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+390,C1,CMV reactivation,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+390,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+390,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+390,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+390,C1,Overall survival,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+395,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+395,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+395,C1,CMV reactivation,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+395,C1,Overall survival,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+396,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+396,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+396,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+396,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+396,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+397,C3,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+397,C3,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+397,C3,CMV reactivation,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+397,C3,Non-relapse mortality,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+397,C3,Overall survival,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+399,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+399,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+399,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+399,C1,Infection-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+399,C1,Invasive fungal infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+407,C1,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,registry,FALSE
+407,C1,Overall survival,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,registry,FALSE
+407,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,registry,FALSE
+410,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+410,C1,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+410,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+410,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+410,C1,Invasive fungal infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,prospective_cohort,FALSE
+410,C1,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,prospective_cohort,FALSE
+418,C3,Bloodstream infection,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+418,C3,CMV reactivation,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+418,C3,BK haemorrhagic cystitis,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+418,C3,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+418,C3,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+418,C3,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+418,C3,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+419,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+419,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+419,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+419,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+421,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+421,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+421,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+421,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,retrospective_cohort,FALSE
+424,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+424,C1,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+424,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+425,C3,Acute GVHD II-IV,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,prospective_cohort,FALSE
+430,C2,Acute GVHD II-IV,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+430,C2,CMV reactivation,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+430,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+431,C3,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+431,C3,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+431,C3,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+431,C3,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+431,C3,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+432,C1,Acute GVHD II-IV,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,RCT,TRUE
+432,C1,Chronic GVHD mod-severe,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,RCT,TRUE
+432,C1,Overall survival,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,RCT,TRUE
+432,C1,Non-relapse mortality,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,RCT,TRUE
+432,C1,CMV reactivation,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,RCT,TRUE
+432,C1,Bloodstream infection,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,RCT,TRUE
+432,C1,Infection-related mortality,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,RCT,TRUE
+437,C3,Acute GVHD II-IV,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+437,C3,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+437,C3,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+437,C3,BK haemorrhagic cystitis,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+437,C3,Non-relapse mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+437,C3,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+442,C1,Acute GVHD II-IV,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+442,C1,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+442,C1,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+442,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,prospective_cohort,FALSE
+455,C3,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,prospective_cohort,FALSE
+455,C3,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,prospective_cohort,FALSE
+455,C3,CMV reactivation,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,prospective_cohort,FALSE
+455,C3,Non-relapse mortality,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,prospective_cohort,FALSE
+455,C3,Overall survival,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,prospective_cohort,FALSE
+457,C1,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,retrospective_cohort,FALSE
+457,C2,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+457,C1,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+457,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+457,C1,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,retrospective_cohort,FALSE
+457,C2,Overall survival,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,retrospective_cohort,FALSE
+460,C3,Acute GVHD II-IV,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+460,C3,Chronic GVHD mod-severe,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+460,C3,CMV reactivation,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+460,C3,Non-relapse mortality,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+460,C3,Infection-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+460,C3,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+461,C3,Invasive fungal infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+461,C3,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+461,C3,Chronic GVHD mod-severe,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+461,C3,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+461,C3,Overall survival,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+465,C2,Acute GVHD II-IV,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+465,C2,Chronic GVHD mod-severe,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+465,C2,Non-relapse mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+465,C2,Overall survival,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,RCT,TRUE
+465,C2,CMV reactivation,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,RCT,TRUE
+465,C2,Bloodstream infection,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+2,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+5,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+5,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+6,C2,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+9,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+12,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+19,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+24,C2,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+39,C2,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+43,C2,BK haemorrhagic cystitis,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+45,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+50,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+50,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+51,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+52,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+61,C2,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+65,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+66,C2,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+71,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+79,C2,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+88,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+104,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+105,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+105,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+111,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+111,C2,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+119,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+124,C2,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+136,C2,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+136,C2,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+137,C2,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+137,C2,BK haemorrhagic cystitis,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+140,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+144,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+146,C3,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+166,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+166,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+170,C1,BK haemorrhagic cystitis,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+184,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+198,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+207,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+207,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+209,C1,BK haemorrhagic cystitis,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+226,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+243,C3,BK haemorrhagic cystitis,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+244,C3,BK haemorrhagic cystitis,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+244,C1,BK haemorrhagic cystitis,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+248,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+258,C1,BK haemorrhagic cystitis,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+261,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+261,C1,BK haemorrhagic cystitis,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+271,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+280,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+280,C2,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+299,C2,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+301,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+305,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+307,C2,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+318,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+325,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+335,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+337,C1,BK haemorrhagic cystitis,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+353,C2,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+357,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,prospective_cohort,FALSE
+359,C1,BK haemorrhagic cystitis,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+366,C2,BK haemorrhagic cystitis,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+371,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+374,C1,Relapse-related mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+375,C1,Relapse-related mortality,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,retrospective_cohort,FALSE
+389,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+391,C1,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+396,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+397,C3,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+397,C3,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+399,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+407,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,registry,FALSE
+410,C1,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,prospective_cohort,FALSE
+418,C3,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+425,C3,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,prospective_cohort,FALSE
+425,C3,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,prospective_cohort,FALSE
+431,C3,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+432,C1,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+437,C3,Relapse-related mortality,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+461,C3,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,retrospective_cohort,FALSE
+462,C3,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+462,C3,Relapse-related mortality,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+465,C2,BK haemorrhagic cystitis,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,RCT,TRUE
+26,C1,Acute GVHD II-IV,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,prospective_cohort,FALSE
+26,C1,Chronic GVHD mod-severe,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,prospective_cohort,FALSE
+26,C1,Non-relapse mortality,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,prospective_cohort,FALSE
+26,C1,Overall survival,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,prospective_cohort,FALSE
+26,C1,CMV reactivation,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,prospective_cohort,FALSE
+109,C2,Acute GVHD II-IV,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,retrospective_cohort,FALSE
+109,C2,Non-relapse mortality,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,retrospective_cohort,FALSE
+142,C2,Non-relapse mortality,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+268,C1,Non-relapse mortality,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+268,C1,Overall survival,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+361,C2,Non-relapse mortality,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+361,C3,Non-relapse mortality,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+391,C1,Overall survival,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+391,C1,Non-relapse mortality,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+391,C1,Acute GVHD II-IV,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+391,C1,Chronic GVHD mod-severe,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,registry,FALSE
+416,C3,Bloodstream infection,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,prospective_cohort,FALSE
+447,C3,Acute GVHD II-IV,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+447,C3,Non-relapse mortality,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+447,C3,Overall survival,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+450,C3,Acute GVHD II-IV,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+450,C3,Non-relapse mortality,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+450,C3,Overall survival,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+453,C3,Acute GVHD II-IV,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+453,C3,Non-relapse mortality,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+453,C3,Overall survival,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,registry,FALSE
+462,C3,Acute GVHD II-IV,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,RCT,TRUE
+462,C3,Chronic GVHD mod-severe,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,RCT,TRUE
+462,C3,Non-relapse mortality,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,RCT,TRUE
+462,C3,Overall survival,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,RCT,TRUE
