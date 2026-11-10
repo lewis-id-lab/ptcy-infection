@@ -192,3 +192,66 @@ inference.
   `audit/worklist_trials_without_hr_2026-11-10.csv` (10 of 14 trials lack a
   matched hazard ratio for overall survival or non-relapse mortality) and
   `audit/worklist_c1_comparator_atg_2026-11-10.csv` (90 arms, 81 studies).
+
+## 2026-11-10 — Three duplicate database entries removed (checklist A7)
+
+- **Decision (RL):** remove entries 51, 123 and 290, each a second entry of a
+  publication already in the database (same DOI as 50, 122 and 187), and
+  update the manuscript.
+- **What was done** (`scripts/remove-duplicate-entries.R`): rows for the three
+  identifiers dropped from `studies`, `arms`, `outcomes`, `rob`, tables
+  S4a/S4b, the audit flags, five C1 analytic files, `data_c1_rrm.csv` and the
+  appendix S4 reference list; overlap cross-references in studies 49, 122 and
+  124 updated. Untouched rows are byte-identical.
+- **Not identical extractions (assistant observation, not checked against
+  the papers):**
+  - 122 and 123 have different arm structures for the same paper: 122 has one
+    PTCy arm (n = 110) against ATG (n = 35), flagged C2; 123 splits PTCy into
+    haploidentical (n = 110) and MMUD (n = 17) arms and was flagged C1. The
+    retained entry (122) therefore has 17 fewer patients. Which split is
+    right needs the paper.
+  - 50 and 51 carry different ROBINS-I overall judgements for the same paper
+    (serious and moderate). The retained entry (50) is "serious".
+- **PRISMA flow (assistant inference from precedent):** following the Wu 2025
+  duplicate (appendix S12), the three entries were moved from "included" to
+  full-text exclusions as duplicate publications (215 → 218; duplicate
+  publication 14 → 17; included 250 → 247), so the flow still reconciles to
+  465 reports assessed. Whether Covidence held these as separate reports was
+  not checked; the Covidence export would settle it.
+- **Counts:** 247 studies, 516 arms, 175 570 patients (221 comparative
+  studies, 511 arms, 175 182 patients); 104 pooled (C1 71, C2 27, C3 13, 7
+  in more than one); ROBINS-I 207 (141 serious, 66 moderate). Every
+  database-derived count is recomputed by `scripts/manuscript-counts.R`; the
+  before/after list is `audit/duplicate_removal_count_changes_2026-11-10.csv`.
+  Unique patients after cohort deduplication (111 214) is unchanged.
+- **Model affected:** only C1 relapse-related mortality, where entries 50 and
+  51 were both pooled with identical counts. Refitted without 51
+  (`scripts/run-rrm-cascade-duplicate-removal.R`), same specification and
+  seed as the reported fit:
+  - M1: k 34 → 33; OR 0·87 (0·76–0·99) → 0·86 (0·75–0·98); τ 0·08; prediction
+    interval 0·64–1·17.
+  - M2 0·84 (0·70–1·01), k = 26; matched-set M1 0·86 (0·73–1·01).
+  - REML 0·85 (0·76–0·96); fixed-intercept 0·85 (0·74–0·97); donor
+    meta-regression 0·86 (0·75–0·98); donor-matched 0·85 (0·65–1·08), k = 17.
+  - RoBMA 0·95 (0·78–1·00), BF for effect 0·62, for bias 1·0. This one row
+    was fitted with RoBMA 4.1.1; the appendix states 4.0.0 for the others.
+  - Donor, matched-set and RoBMA refits used new seeds for the first two
+    (the original seed sequence is not recoverable for a single model) and
+    the original seed for RoBMA.
+  - Only the C1 RRM rows of the derived CSVs were rewritten; other rows were
+    restored to their committed text so no other number moves by formatting
+    or Monte Carlo noise. Stale fits are kept in
+    `_fits_rs/_stale_duplicate_removal_2026-11-10/`.
+- **Figures regenerated:** figure 1 (PRISMA), S5a/S5b (ROBINS-I, n = 207),
+  S8d (RRM forest).
+- **Known to be stale after this change:**
+  - Figures S7c and S7d(i) (τ posteriors and posterior predictive checks,
+    which include the C1 RRM fit) and S12 (cohort overlap map) were not
+    regenerated.
+  - Appendix S9 "175 of the 202 steroid-complete arms (87%)" and the CMV
+    serostatus availability percentages (47%, 31%) could not be reproduced
+    from the data with the formulas tried, so they were left as they were.
+  - The Set A (pre-deduplication) C1 RRM row (k = 38) was not refitted; the
+    Set A data are outside this repository.
+  - `audit/pooled_studies_audit_2026-11-10.csv` and the worklists predate
+    the removal and still list entries 51 and 123.

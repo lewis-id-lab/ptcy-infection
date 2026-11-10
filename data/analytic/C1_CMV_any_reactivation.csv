@@ -3,7 +3,6 @@ study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy
 4,1,CMV,any_reactivation,D+100,3,5,757,1605,NA,NA,40,21,NA,NA
 45,1,CMV,any_reactivation,D+100,46,47,54,59,25,27,45,46,63,53
 50,1,CMV,any_reactivation,D+100,54,55,78,40,NA,NA,69.2,70,34.6,57.5
-51,1,CMV,any_reactivation,D+100,56,57,78,40,NA,NA,70,69.2,34.6,57.5
 86,1,CMV,any_reactivation,D+100,101,102,22,37,NA,NA,41,77,18,32
 119,1,CMV,any_reactivation,D+100,137,138,22,22,14,12,NA,NA,13,50
 166,1,CMV,any_reactivation,D+100,172,173,30,31,18,15,60,48.4,16.7,25.8

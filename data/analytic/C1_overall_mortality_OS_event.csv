@@ -8,7 +8,6 @@ study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy
 48,1,overall_mortality,OS_event,D+365_1yr,48,49,125,375,NA,NA,19.8,23.4,NA,NA
 49,1,overall_mortality,OS_event,D+365_1yr,50,51,118,91,NA,NA,59.72,45.8,58,52
 50,1,overall_mortality,OS_event,D+365_1yr,54,55,78,40,NA,NA,33.33,35,34.6,57.5
-51,1,overall_mortality,OS_event,D+365_1yr,56,57,78,40,NA,NA,33.33,35,34.6,57.5
 67,1,overall_mortality,OS_event,D+365_1yr,78,79,41,20,NA,NA,54,40,NA,NA
 72,1,overall_mortality,OS_event,D+365_1yr,83,86,92,224,NA,NA,29,29,27,30
 105,1,overall_mortality,OS_event,D+365_1yr,120,121,66,68,NA,NA,17,27,NA,NA

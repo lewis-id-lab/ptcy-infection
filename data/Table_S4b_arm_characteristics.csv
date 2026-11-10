@@ -54,8 +54,6 @@ study_id,arm_id,arm_label_in_paper,arm_role,comparison_1_eligible,comparison_2_e
 49,53,9/10 Mismatched Related Donor (MMRD 9/10),comparator_arm,N,N,N,18,23,NR,66,33,0,NR,0,0,0,MMUD,NR,NR,NR,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,rabbit_thymoglobulin,5,NR,76,Barkhordar M,2021
 50,54,ATG + PTCy (modified combination),PTCy_arm,Y,N,N,78,27.5,NR,69.23,30.77,0,47.3,100,0,0,haplo,PBSC,100,0,MAC,Y,40,80,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,7.5,83,34.6,Barkhordar M,2022
 50,55,ATG (standard ATG-based regimen),comparator_arm,Y,N,N,40,23,NR,60,40,0,56.7,100,0,0,haplo,PBSC,100,0,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,rabbit_thymoglobulin,10,97,57.5,Barkhordar M,2022
-51,56,ATG + PTCy,PTCy_arm,Y,N,N,78,27.5,NR,69.23,30.77,0,47.3,100,0,0,haplo,PBSC,100,0,MAC,Y,40,80,cyclosporine,N,N,N,Y,rabbit_thymoglobulin,7.5,83,34.6,Barkhordar,2022
-51,57,ATG (standard),comparator_arm,Y,N,N,40,23,NR,60,40,0,56.7,100,0,0,haplo,PBSC,100,0,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,rabbit_thymoglobulin,10,97,57.5,Barkhordar,2022
 52,58,UD 9/10 (PTCy),PTCy_arm,Y,N,N,270,54.9,55.9,100,0,0,19.3,0,0,0,MMUD,PBSC,50.7,49.3,MAC,Y,NR,NR,mixed,Y,Y,Y,N,NA,NA,73.2,29.2,Baron F,2024
 52,59,dCBT (double-unit umbilical cord blood),comparator_arm,Y,N,N,209,55.6,51.7,100,0,0,25.4,0,0,0,UCB,UCB,20.6,79.4,RIC,N,NA,NA,mixed,Y,Y,N,N,NA,NA,61.4,44.4,Baron F,2024
 55,60,Haploidentical donor (HID) with post-transplant cyclophosphamide,PTCy_arm,Y,N,N,33,66,52,55,0,45,45,100,0,0,haplo,mixed,6,94,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,72,39,Bashey ZA,2018
@@ -143,9 +141,6 @@ study_id,arm_id,arm_label_in_paper,arm_role,comparison_1_eligible,comparison_2_e
 120,142,MUD TCD- (without ATG or alemtuzumab),comparator_arm,Y,N,N,378,56,57.7,0,0,0,NR,0,0,100,MUD,PBSC,0,NR,RIC,N,NA,NA,NR,mixed,mixed,NR,N,NA,NA,NR,42,Dreger,2019
 122,143,PTCy + TAK + MMF,PTCy_arm,N,Y,N,110,NR,50.9,NR,13.6,NR,NR,84.5,0,0,haplo,PBSC,65.5,17.3,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,81.8,17.3,Dybko J,2023
 122,144,CsA + Mtx + ATG,comparator_arm,N,Y,N,35,NR,51.4,NR,20,NR,NR,0,0,0,MMUD,PBSC,85.7,5.7,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,mixed,mixed,82.9,31.4,Dybko J,2023
-123,145,PTCy + TAK + MMF (haplo-HSCT),PTCy_arm,N,N,N,110,NR,NR,NR,NR,NR,NR,100,0,0,haplo,PBSC,NR,NR,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,NR,Dybko J,2023
-123,146,PTCy + TAK + MMF (MMUD-HSCT),PTCy_arm,Y,N,N,17,NR,NR,NR,NR,NR,NR,0,0,0,MMUD,PBSC,NR,NR,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,NR,Dybko J,2023
-123,147,CsA + Mtx + ATG (MMUD-HSCT),comparator_arm,Y,N,N,35,45,51.4,NR,20,NR,NR,0,0,0,MMUD,PBSC,85.7,5.7,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,mixed,NR,82.9,60,Dybko J,2023
 124,148,PTCy-haplo,PTCy_arm,N,N,N,114,44,45.6,NR,15.8,NR,NR,100,0,0,haplo,PBSC,53.5,29.8,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,35.1,Dybko J,2024
 124,149,PTCy-MMUD,PTCy_arm,N,Y,N,23,54,56.5,NR,8.7,NR,NR,0,0,0,MMUD,PBSC,100,0,MAC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,21.7,Dybko J,2024
 124,150,ATG-MMUD,comparator_arm,N,Y,N,37,45,48.6,NR,18.9,NR,NR,0,0,0,MMUD,PBSC,86.5,5.4,MAC,N,NA,NA,cyclosporine,N,Y,N,Y,mixed,NR,NR,59.5,Dybko J,2024
@@ -312,8 +307,6 @@ study_id,arm_id,arm_label_in_paper,arm_role,comparison_1_eligible,comparison_2_e
 289,311,Haplo-PBSCT (PTCy),PTCy_arm,Y,N,N,136,60,80.1,0,0,100,71.3,100,0,0,haplo,PBSC,36.8,63.2,RIC,Y,50,100,tacrolimus,Y,N,N,N,NA,NA,NR,19.9,Nakaya Y,2024
 289,312,MUD-BMT,comparator_arm,Y,N,N,465,60,67.7,0,0,100,61.1,0,0,100,MUD,BM,44.9,54.8,RIC,N,NA,NA,tacrolimus,Y,Y,N,mixed,NR,NR,NR,32.5,Nakaya Y,2024
 289,313,MUD-PBSCT,comparator_arm,Y,N,N,96,60,68.8,0,0,100,60.4,0,0,100,MUD,PBSC,53.1,46.9,MAC,N,NA,NA,tacrolimus,Y,Y,N,mixed,NR,NR,NR,30.3,Nakaya Y,2024
-290,314,PTCy-haplo,PTCy_arm,Y,N,N,330,44.5,60.9,0,100,0,25.5,100,0,0,haplo,PBSC,50.6,49.4,MAC,Y,NR,NR,NR,NR,NR,NR,NR,NR,NR,80.6,NR,Jo T,2024
-290,315,UCB,comparator_arm,Y,N,N,1669,45,53,0,100,0,21.1,0,0,0,UCB,UCB,54.8,45.1,MAC,N,NA,NA,NR,NR,NR,NR,NR,NR,NR,80,NR,Jo T,2024
 292,316,ER-SCT cohort,PTCy_arm,N,N,N,64,68,59,NR,5,NR,39,14,23,62,MUD,PBSC,NR,NR,mixed,mixed,NR,NR,tacrolimus,NR,mixed,NR,NR,NR,NR,NR,NR,Ngo-Huang,2023
 292,317,Historical controls,comparator_arm,N,N,N,140,67,62,NR,4,NR,56,8,30,62,MUD,PBSC,NR,NR,mixed,mixed,NR,NR,tacrolimus,NR,mixed,NR,NR,NR,NR,NR,NR,Ngo-Huang,2023
 293,318,"All allo-HCT recipients (whole cohort, 2015-2021)",PTCy_arm,N,N,N,421,56,66,NR,8,NR,NR,22,24,47,mixed,PBSC,25,75,RIC,mixed,NR,NR,NR,NR,NR,NR,NR,NR,NR,62,43.5,Nguyen A,2024

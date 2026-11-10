@@ -24,7 +24,8 @@ robins <- rob |>
   left_join(studies |> select(study_id, first_author, pub_year, study_design),
             by = "study_id") |>
   filter(study_design != "single_arm_descriptive_excluded")
-stopifnot(n_distinct(robins$study_id) == 210)
+# 207 after removal of three duplicate entries on 2026-11-10 (was 210)
+stopifnot(n_distinct(robins$study_id) == 207)
 
 domain_cols <- c("d1", "d2", "d3", "d4", "d5", "d6", "d7")
 judgement_colours <- c("low" = "#4CAF50", "moderate" = "#FFB74D",

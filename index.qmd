@@ -67,8 +67,8 @@ bloodstream infection (BSI), invasive fungal infection, and BK
 virus–associated haemorrhagic cystitis (BK-HC), pooled by Bayesian
 random-effects meta-analysis (PROSPERO CRD420261372156).
 
-**Findings.** Of 4145 records, 250 studies (523 arms; 177 849 patients)
-were included, 105 in the meta-analysis (9 295 in the primary survival
+**Findings.** Of 4145 records, 247 studies (516 arms; 175 570 patients)
+were included, 104 in the meta-analysis (9 295 in the primary survival
 analysis). Versus CNI-based prophylaxis, PTCy was associated with lower
 odds of death (OR 0·73, 95% credible interval 0·58–0·89) and grade
 II–IV acute GVHD (0·58, 0·44–0·76). CMV reactivation was numerically
@@ -115,7 +115,7 @@ itself or T-cell depletion in general.
 
 ### Added value of this study
 
-This systematic review and Bayesian meta-analysis (250 studies; 177 849
+This systematic review and Bayesian meta-analysis (247 studies; 175 570
 patients) jointly evaluated survival, GVHD, CMV reactivation, BK
 virus–associated haemorrhagic cystitis, bloodstream infection, and
 invasive fungal disease,
@@ -340,33 +340,33 @@ The search identified 4145 records (EMBASE 2603, PubMed 1061, SCOPUS
 481), of which 1220 were duplicates (@fig-prisma). After screening 2925
 titles and abstracts, 517 articles were sought for full-text review; 52
 could not be retrieved or were not in English. Of 465 full-text articles
-assessed, 215 were excluded ([appendix pp
-6–14](appendix-preview.html#s2.-studies-excluded-at-full-text-screening-n215)),
-leaving 250 studies for the systematic review. Of these, 105 had sufficient details to contribute outcome data to the meta-analysis: 72
+assessed, 218 were excluded ([appendix pp
+6–14](appendix-preview.html#s2.-studies-excluded-at-full-text-screening-n218)),
+leaving 247 studies for the systematic review. Of these, 104 had sufficient details to contribute outcome data to the meta-analysis: 71
 compared PTCy with CNI plus methotrexate (MTX) or mycophenolate mofetil
 (MMF) (C1), 27 compared PTCy with ATG (C2), and 13 compared different
 PTCy-based regimens (C3); seven studies contributed to more than one
-comparison. Pooling was smaller still for individual outcomes: of 116
+comparison. Pooling was smaller still for individual outcomes: of 113
 studies with paired-arm survival records, 29 contributed to the primary
 overall-survival analysis after outcome-specific eligibility, timepoint
 harmonisation, and cohort deduplication (per-outcome attrition in
 appendix S12).
 
-The 224 comparative studies included 518 treatment arms and 177 461
-patients (@tbl-characteristics; 523 arms and 177 849 patients including
-the 26 single-arm descriptive studies). Most were retrospective cohorts (131
-\[58%\]) or registry studies (62 \[28%\]); only 14 (6%) were RCTs.
+The 221 comparative studies included 511 treatment arms and 175 182
+patients (@tbl-characteristics; 516 arms and 175 570 patients including
+the 26 single-arm descriptive studies). Most were retrospective cohorts (129
+\[58%\]) or registry studies (61 \[28%\]); only 14 (6%) were RCTs.
 Median publication year was 2023 (IQR 2021–24) and median follow-up 26
 months (22–36).
 
-PTCy was used mostly in haploidentical transplantation (126 \[46%\] of
+PTCy was used mostly in haploidentical transplantation (123 \[46%\] of
 PTCy arms), whereas comparator arms were mostly matched unrelated (94
-\[38%\]) or matched sibling (54 \[22%\]) donor transplants. This matters because donor type itself influences GVHD, infection, and survival; analyses addressing this imbalance are described below.
+\[39%\]) or matched sibling (54 \[22%\]) donor transplants. This matters because donor type itself influences GVHD, infection, and survival; analyses addressing this imbalance are described below.
 
 ### Risk of bias
 
-Of 210 comparative observational studies assessed with ROBINS-I, 142
-(68%) were at serious and 68 (32%) at moderate risk of bias, mainly
+Of 207 comparative observational studies assessed with ROBINS-I, 141
+(68%) were at serious and 66 (32%) at moderate risk of bias, mainly
 because of confounding by donor type and conditioning intensity; none
 was at low or critical risk ([appendix pp
 15–17](appendix-preview.html#s5.-risk-of-bias)). Of the 14 RCTs
@@ -381,8 +381,8 @@ Compared with CNI plus MTX or MMF, PTCy was associated with better
 overall survival (k = 29; odds ratio \[OR\] 0·73, 95% credible interval
 \[CrI\] 0·58–0·89; @fig-os). Non-relapse mortality (NRM) showed a trend
 towards benefit, but the estimate was uncertain (k = 11; 0·84,
-0·48–1·28), and relapse-related mortality was modestly lower (k = 34;
-0·87, 0·76–0·99). The effect on GVHD was more consistent: PTCy was
+0·48–1·28), and relapse-related mortality was modestly lower (k = 33;
+0·86, 0·75–0·98). The effect on GVHD was more consistent: PTCy was
 associated with less grade II–IV acute GVHD (k = 28; 0·58, 0·44–0·76)
 and less moderate-to-severe chronic GVHD (k = 18; 0·41, 0·23–0·72).
 
@@ -483,7 +483,7 @@ benefits should be interpreted cautiously.
 
 ## Discussion
 
-This systematic review and meta-analysis of 250 studies (523 treatment arms; over 177 000 patients) evaluated the benefits and infection risks of PTCy-based GVHD prophylaxis within a single analytic framework. Compared with CNI plus MTX or MMF, PTCy was associated with less acute and chronic GVHD and better overall survival, but also with signals for more CMV reactivation, bacterial BSI, and BK virus reactivation, which were generally less certain than the GVHD findings. Against ATG, the survival and GVHD advantages were smaller and more uncertain, and CMV reactivation was not increased. The infection profile of PTCy may therefore depend on both the comparator and the pathogen.
+This systematic review and meta-analysis of 247 studies (516 treatment arms; over 175 000 patients) evaluated the benefits and infection risks of PTCy-based GVHD prophylaxis within a single analytic framework. Compared with CNI plus MTX or MMF, PTCy was associated with less acute and chronic GVHD and better overall survival, but also with signals for more CMV reactivation, bacterial BSI, and BK virus reactivation, which were generally less certain than the GVHD findings. Against ATG, the survival and GVHD advantages were smaller and more uncertain, and CMV reactivation was not increased. The infection profile of PTCy may therefore depend on both the comparator and the pathogen.
 
 ### Survival and GVHD
 
@@ -584,7 +584,7 @@ surveillance, and reporting may have contributed.
 
 ### Reporting of infectious complications in allo-HSCT GVHD prophylaxis studies
 
-Only 105 of the 250 included studies (42%) had sufficient information on
+Only 104 of the 247 included studies (42%) had sufficient information on
 infectious complications for analysis, and inconsistencies in infection
 reporting and definitions made data pooling more difficult. There is
 clearly a need for a minimum core reporting dataset for infection events
@@ -698,47 +698,47 @@ responsibility for the analysis and manuscript contents.
 ## Tables
 
 ::: {#tbl-characteristics}
-| Characteristic | PTCy arms (n=271) | Comparator arms (n=247) |
+| Characteristic | PTCy arms (n=267) | Comparator arms (n=244) |
 |:---|:---|:---|
 | **Studies** |  |  |
-| Comparative (≥2 arms) | 224 |  |
+| Comparative (≥2 arms) | 221 |  |
 | Single-arm descriptive | 26 |  |
-| Arms | 271 | 247 |
-| Total patients | 177 849 |  |
+| Arms | 267 | 244 |
+| Total patients | 175 570 |  |
 | Unique patients after cohort deduplication | 111 214 |  |
 | RCTs | 14 (6%) |  |
 | **Study design** |  |  |
-| Retrospective cohort | 131 (58%) |  |
-| Registry analysis | 62 (28%) |  |
+| Retrospective cohort | 129 (58%) |  |
+| Registry analysis | 61 (28%) |  |
 | Prospective cohort | 17 (8%) |  |
 | Publication year, median (IQR) | 2023 (2021–24) |  |
 | Follow-up, months, median (IQR) | 26 (22–36) |  |
-| **ROBINS-I overall judgement (n=210)** |  |  |
-| Serious | 142 (68%) |  |
-| Moderate | 68 (32%) |  |
+| **ROBINS-I overall judgement (n=207)** |  |  |
+| Serious | 141 (68%) |  |
+| Moderate | 66 (32%) |  |
 | Low / Critical | 0 |  |
 | **Arm-level characteristics** |  |  |
-| Patients per arm, median (IQR) | 99 (46–212) | 119 (50–375) |
-| Age, years, median (IQR)\* | 52·0 (45·0–58·0) | 53·0 (43·0–57·9) |
-| Male, %\* | 57·3 (54·0–61·6) | 57·4 (53·0–61·8) |
+| Patients per arm, median (IQR) | 99 (46–212) | 120 (51–375) |
+| Age, years, median (IQR)\* | 52·0 (45·0–58·0) | 53·0 (43·0–58·0) |
+| Male, %\* | 57·1 (54·0–61·6) | 57·5 (53·0–61·9) |
 | **Donor type (predominant)** |  |  |
-| Haploidentical | 126 (46%) | 35 (14%) |
-| MUD (10/10) | 64 (24%) | 94 (38%) |
-| MMUD (9/10 or lower) | 29 (11%) | 28 (11%) |
+| Haploidentical | 123 (46%) | 34 (14%) |
+| MUD (10/10) | 64 (24%) | 94 (39%) |
+| MMUD (9/10 or lower) | 28 (10%) | 27 (11%) |
 | MSD | 29 (11%) | 54 (22%) |
-| Mixed / other / NR | 23 (8%) | 36 (15%) |
+| Mixed / other / NR | 23 (9%) | 35 (14%) |
 | **Graft source (predominant)** |  |  |
-| PBSC | 204 (75%) | 181 (73%) |
-| BM | 31 (11%) | 11 (4%) |
-| UCB | — | 18 (7%) |
+| PBSC | 200 (75%) | 179 (73%) |
+| BM | 31 (12%) | 11 (5%) |
+| UCB | — | 17 (7%) |
 | Mixed / NR | 36 (13%) | 37 (15%) |
 | **Conditioning (predominant)** |  |  |
-| RIC | 110 (41%) | 85 (34%) |
-| MAC | 106 (39%) | 119 (48%) |
+| RIC | 110 (41%) | 85 (35%) |
+| MAC | 102 (38%) | 116 (48%) |
 | NMA | 7 (3%) | 3 (1%) |
 | Mixed / NR | 48 (18%) | 40 (16%) |
-| CMV R+, %\* | 74·8 (65·8–80·1) | 69·4 (59·5–81·3) |
-| Steroid exposure, %\* | 26·6 (20·0–32·9) | 34·8 (28·4–43·7) |
+| CMV R+, %\* | 74·6 (65·7–80·0) | 69·0 (59·0–81·0) |
+| Steroid exposure, %\* | 26·6 (20·0–32·4) | 34·5 (28·3–42·2) |
 
 Characteristics of included studies. Data are n (%) or median (IQR)
 unless otherwise stated. \*Median of arm-level values; IQR reflects
@@ -762,7 +762,7 @@ non-myeloablative. NR = not reported.
 | Non-relapse mortality | C1 | M1 | 11 | 1 231 | 0·84 (0·48–1·28) | 0·39 | 0·20–2·72 | Very low |
 |  | C2 | M1 | — | — | k=2, not assessed | — | — | — |
 |  | C3 | M1 | 3 | 2 405 | 0·55 (0·11–2·44) | 1·09 | 0·02–13·25 | — |
-| Relapse-related mortality | C1 | M1 | 34 | 11 121 | 0·87 (0·76–0·99) | 0·08 | 0·64–1·18 | Very low |
+| Relapse-related mortality | C1 | M1 | 33 | 11 003 | 0·86 (0·75–0·98) | 0·08 | 0·64–1·17 | Very low |
 |  | C2 | M1 | 10 | 17 182 | 0·79 (0·55–1·03) | 0·19 | 0·35–1·70 | Very low |
 |  | C3 | M1 | 6 | 692 | 0·78 (0·35–1·67) | 0·43 | 0·15–3·96 | — |
 | Acute GVHD II–IV | C1 | M1 | 28 | 4 197 | 0·58 (0·44–0·76) | 0·55 | 0·18–1·88 | Very low |
@@ -805,12 +805,13 @@ identified from databases (EMBASE 2603, PubMed 1061, SCOPUS 481) and
 1220 duplicates removed. 2925 records were screened and 2408 excluded at
 title and abstract. 517 reports were sought for retrieval; 52 were not
 retrieved or not in English (not recorded as separate counts). 465
-full-text reports were assessed and 215 excluded ([appendix pp
-6–14](appendix-preview.html#s2.-studies-excluded-at-full-text-screening-n214)).
-250 studies were included in the systematic review; one publication
-entered twice during extraction was removed (appendix
-S12). 105 unique studies contributed outcome data to the meta-analysis
-(C1 72 studies; C2 27 studies; C3 13 studies; 7 studies contribute to
+full-text reports were assessed and 218 excluded ([appendix pp
+6–14](appendix-preview.html#s2.-studies-excluded-at-full-text-screening-n218)).
+247 studies were included in the systematic review; four publications
+entered twice during extraction were removed (appendix
+S12). 104 unique studies contributed outcome data to the meta-analysis
+(C1 71 studies; C2 27 studies; C3 13 studies; 7 studies contribute to
+
 more than one comparison). Reference lists, citation tracking, and
 PROSPERO registrations were also searched but yielded no separately
 recorded reports, so the identification-via-other-methods branch of the

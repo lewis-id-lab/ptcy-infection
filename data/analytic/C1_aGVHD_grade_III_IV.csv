@@ -5,7 +5,6 @@ study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy
 9,1,aGVHD,grade_III_IV,D+100,19,20,200,130,NA,NA,6.5,13.1,NA,NA
 20,1,aGVHD,grade_III_IV,D+100,29,30,26,52,4,8,15.4,15.4,NA,NA
 50,1,aGVHD,grade_III_IV,D+100,54,55,78,40,NA,NA,8.97,30,34.6,57.5
-51,1,aGVHD,grade_III_IV,D+100,56,57,78,40,NA,NA,8.97,30,34.6,57.5
 57,1,aGVHD,grade_III_IV,D+100,63,64,389,1654,NA,NA,NA,NA,28,27
 65,1,aGVHD,grade_III_IV,D+100,75,74,40,39,0,NA,0,11,7,39
 67,1,aGVHD,grade_III_IV,D+100,78,79,41,20,2,3,NA,NA,NA,NA

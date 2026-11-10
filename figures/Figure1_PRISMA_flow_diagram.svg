@@ -241,7 +241,7 @@
           <text text-anchor="middle" x="464.5" y="-366" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Conference abstract (n = 116)</text>
           <text text-anchor="middle" x="464.5" y="-354" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Single-arm or no PTCy contrast (n = 41)</text>
           <text text-anchor="middle" x="464.5" y="-342" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Review (not primary study) (n = 21)</text>
-          <text text-anchor="middle" x="464.5" y="-330" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Duplicate publication (n = 14)</text>
+          <text text-anchor="middle" x="464.5" y="-330" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Duplicate publication (n = 17)</text>
           <text text-anchor="middle" x="464.5" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Systematic review or meta-analysis (n = 11)</text>
           <text text-anchor="middle" x="464.5" y="-306" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Non-eligible population (n = 5)</text>
           <text text-anchor="middle" x="464.5" y="-294" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Protocol or survey only (n = 4)</text>
@@ -256,7 +256,7 @@
         <a xlink:title="New studies included in review">
           <polygon fill="none" stroke="#000000" points="302.5,-180 50.5,-180 50.5,-126 302.5,-126 302.5,-180"/>
           <text text-anchor="middle" x="176.5" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Studies included in systematic review</text>
-          <text text-anchor="middle" x="176.5" y="-144" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">(n = 250)</text>
+          <text text-anchor="middle" x="176.5" y="-144" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">(n = 247)</text>
         </a>
       </g>
     </g>
@@ -334,7 +334,7 @@
         <a xlink:title="Total studies included in meta-analysis">
           <polygon fill="none" stroke="#000000" points="302.5,-90 50.5,-90 50.5,-36 302.5,-36 302.5,-90"/>
           <text text-anchor="middle" x="176.5" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Studies included in meta-analysis</text>
-          <text text-anchor="middle" x="176.5" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">(n = 105)</text>
+          <text text-anchor="middle" x="176.5" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">(n = 104)</text>
         </a>
       </g>
     </g>

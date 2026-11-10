@@ -9,7 +9,6 @@ study_id,comparison,category,subtype,timepoint_used,tp_early,ptcy_arm_id,comp_ar
 19,1,relapse_related_mortality,RRM_any_cause_relapse,end_of_followup,1,27,28,139,457,24,110,45,30
 45,1,relapse_related_mortality,RRM_any_cause_relapse,end_of_followup,1,46,47,54,59,16,19,63,53
 50,1,relapse_related_mortality,RRM_any_cause_relapse,end_of_followup,1,54,55,78,40,19,8,34.6,57.5
-51,1,relapse_related_mortality,RRM_any_cause_relapse,end_of_followup,1,56,57,78,40,19,8,34.6,57.5
 52,1,relapse_related_mortality,RRM_any_cause_relapse,end_of_followup,1,58,59,270,209,47,47,29.2,44.4
 65,1,relapse_related_mortality,RRM_any_cause_relapse,end_of_followup,1,75,74,40,39,8,6,7,39
 71,1,relapse_related_mortality,RRM_any_cause_relapse,end_of_followup,1,80,81,31,47,6,5,23,21

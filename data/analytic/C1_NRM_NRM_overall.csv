@@ -6,7 +6,6 @@ study_id,comparison,category,subtype,timepoint_used,ptcy_arm_id,comp_arm_id,ptcy
 45,1,NRM,NRM_overall,D+365_1yr,46,47,54,59,NA,NA,24,24,63,53
 49,1,NRM,NRM_overall,D+365_1yr,50,51,118,91,NA,NA,37.89,24.3,58,52
 50,1,NRM,NRM_overall,D+365_1yr,54,55,78,40,NA,NA,25.64,30,34.6,57.5
-51,1,NRM,NRM_overall,D+365_1yr,56,57,78,40,NA,NA,25.64,30,34.6,57.5
 65,1,NRM,NRM_overall,D+365_1yr,75,74,40,39,NA,NA,8,36,7,39
 67,1,NRM,NRM_overall,D+365_1yr,78,79,41,20,21,7,51,35,NA,NA
 72,1,NRM,NRM_overall,D+365_1yr,83,86,92,224,NA,NA,11,16,27,30

@@ -27,7 +27,6 @@ study_id,first_author,pub_year,country,study_design,single_or_multicenter,enroll
 48,Baranwal,2025,USA,retrospective_cohort,single,2018,2023,33.6,Y,1022,500,2,C1
 49,Barkhordar M,2021,Iran,retrospective_cohort,single,2010,2019,31.83,Y,1023,248,4,C1/C2
 50,Barkhordar M,2022,Iran,retrospective_cohort,single,2008,2020,64.32,partial,1023,118,2,C1
-51,Barkhordar,2022,Iran,retrospective_cohort,single,2008,2020,64.3,partial,1023,118,2,C1
 52,Baron F,2024,multinational,registry,registry,2013,2021,NR,partial,1024,479,2,C1
 55,Bashey ZA,2018,United States,retrospective_cohort,single,2005,2015,27,Y,1025,127,3,C1
 57,Battipaglia,2019,multinational,registry,registry,2007,2015,17.5,partial,1024,2043,2,C1
@@ -66,7 +65,6 @@ study_id,first_author,pub_year,country,study_design,single_or_multicenter,enroll
 119,Doppelhammer,2019,Germany,retrospective_cohort,multi,2009,2016,35,Y,1045,68,2,C1
 120,Dreger,2019,multinational,retrospective_cohort,registry,2008,2015,49,Y,1046,1438,4,C1/C2
 122,Dybko J,2023,Poland,retrospective_cohort,multi,2015,2019,NR,partial,1047,145,2,C2
-123,Dybko J,2023,Poland,retrospective_cohort,multi,2015,2019,NR,partial,1047,162,3,C1
 124,Dybko J,2024,Poland,retrospective_cohort,multi,2015,2019,8.5,partial,1047,174,3,C2
 133,Esquirol A,2020,Spain,retrospective_cohort,single,2005,2017,NR,Y,1048,77,2,C1
 134,Esquirol A,2021,Spain,retrospective_cohort,multi,2013,2018,37,Y,1049,236,1,none
@@ -147,7 +145,6 @@ study_id,first_author,pub_year,country,study_design,single_or_multicenter,enroll
 282,Nagler A,2024,multinational,registry,registry,2010,2022,27.1/22.5/31.8/19.8 (per arm: yHaplo/oMMUD/oHaplo/yMMUD),partial,1024,2798,4,C3
 287,Nagler A,2022,multinational,registry,registry,2010,2019,16.04,partial,1024,1320,2,C1
 289,Nakaya Y,2024,Japan,retrospective_cohort,registry,2014,2020,27.6,Y,1109,697,3,C1
-290,Jo T,2024,Japan,registry,registry,2013,2021,NR,Y,1070,1999,2,C1
 291,Nath K,2024,USA,single_arm_descriptive_excluded,single,2008,2019,64,Y,1110,NA,NA,NA
 292,Ngo-Huang,2023,USA,retrospective_cohort,single,2015,2018,22,Y,1111,204,2,none
 293,Nguyen A,2024,Switzerland,retrospective_cohort,single,2015,2021,NR,Y,1112,421,1,none

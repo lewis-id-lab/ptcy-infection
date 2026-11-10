@@ -1,0 +1,56 @@
+quantity,value_before,value_after
+Studies included,250,247
+Comparative studies,224,221
+"Arms, all studies",523,516
+"Arms, comparative studies",518,511
+"PTCy arms, comparative studies",271,267
+"Comparator arms, comparative studies",247,244
+"Patients, all studies",177849,175570
+"Patients, comparative studies",177461,175182
+Design: retrospective_cohort,131 (58%),129 (58%)
+Design: registry,62 (28%),61 (28%)
+ROBINS-I studies assessed,210,207
+ROBINS-I overall serious,142 (68%),141 (68%)
+ROBINS-I overall moderate,68 (32%),66 (32%)
+ROBINS-I D1 low / moderate / serious,0 / 83 / 127,0 / 81 / 126
+ROBINS-I D2 low / moderate / serious,26 / 140 / 44,25 / 138 / 44
+ROBINS-I D3 low / moderate / serious,51 / 154 / 5,51 / 152 / 4
+ROBINS-I D4 low / moderate / serious,192 / 18 / 0,190 / 17 / 0
+ROBINS-I D5 low / moderate / serious,69 / 140 / 1,68 / 138 / 1
+ROBINS-I D6 low / moderate / serious,101 / 100 / 2,100 / 98 / 2
+ROBINS-I D7 low / moderate / serious,160 / 42 / 1,158 / 41 / 1
+Table 1 Patients per arm (PTCy | comparator),99 (46-212) | 119 (50-375),99 (46-212) | 120 (51-375)
+"Table 1 Age, years (PTCy | comparator)",52.0 (45.0-58.0) | 53.0 (43.0-57.9),52.0 (45.0-58.0) | 53.0 (43.0-58.0)
+"Table 1 Male, % (PTCy | comparator)",57.3 (54.0-61.6) | 57.4 (53.0-61.8),57.1 (54.0-61.6) | 57.5 (53.0-61.9)
+"Table 1 CMV R+, % (PTCy | comparator)",74.8 (65.8-80.1) | 69.4 (59.5-81.3),74.6 (65.7-80.0) | 69.0 (59.0-81.0)
+"Table 1 Steroid exposure, % (PTCy | comparator)",26.6 (20.0-32.9) | 34.8 (28.4-43.7),26.6 (20.0-32.4) | 34.5 (28.3-42.2)
+Table 1 Donor haploidentical (PTCy | comparator),126 (46%) | 35 (14%),123 (46%) | 34 (14%)
+Table 1 Donor MUD (PTCy | comparator),64 (24%) | 94 (38%),64 (24%) | 94 (39%)
+Table 1 Donor MMUD (PTCy | comparator),29 (11%) | 28 (11%),28 (10%) | 27 (11%)
+Table 1 Donor mixed/other/NR (PTCy | comparator),23 (8%) | 36 (15%),23 (9%) | 35 (14%)
+Table 1 Graft PBSC (PTCy | comparator),204 (75%) | 181 (73%),200 (75%) | 179 (73%)
+Table 1 Graft BM (PTCy | comparator),31 (11%) | 11 (4%),31 (12%) | 11 (5%)
+Table 1 Graft UCB (PTCy | comparator),0 (0%) | 18 (7%),0 (0%) | 17 (7%)
+Table 1 Conditioning RIC (PTCy | comparator),110 (41%) | 85 (34%),110 (41%) | 85 (35%)
+Table 1 Conditioning MAC (PTCy | comparator),106 (39%) | 119 (48%),102 (38%) | 116 (48%)
+S4 reference rows,250,247
+Studies pooled (any comparison),105,104
+Studies descriptive only,145,143
+Studies pooled in C1,72,71
+"Paired-arm records, C1 Overall survival",116,113
+"Paired-arm records, C1 Non-relapse mortality",109,106
+"Paired-arm records, C1 Relapse-related mortality",41,40
+"Paired-arm records, C1 Acute GVHD II-IV",104,102
+"Paired-arm records, C1 Chronic GVHD any",28,27
+"Paired-arm records, C1 CMV reactivation",46,44
+"Paired-arm records, C1 BK haemorrhagic cystitis",27,26
+"PTCy+ATG arms, database-wide",53,52
+"PTCy+ATG arms, C1 / C2 / C3 eligible",26 / 8 / 17,25 / 8 / 17
+Arms with haploidentical-donor percentage,498 of 523 (95%),491 of 516 (95%)
+Arms with MAC percentage,467 of 523 (89%),462 of 516 (90%)
+Arms with PBSC percentage,445 of 523 (85%),438 of 516 (85%)
+Arms with steroid exposure,396 of 523 (76%),393 of 516 (76%)
+Arms without steroid exposure,127 of 523 (24%),123 of 516 (24%)
+Arms with high-risk disease percentage,307 of 523 (59%),303 of 516 (59%)
+Arms with CMV recipient serostatus,243 of 523 (46%),238 of 516 (46%)
+Arms with CMV D+/R- serostatus,165 of 523 (32%),165 of 516 (32%)
