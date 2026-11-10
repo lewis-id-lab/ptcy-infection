@@ -56,6 +56,10 @@ contributes:
           \catcode`\τ=\active \protected\def τ{\ensuremath{\tau}}
           \catcode`\≤=\active \protected\def ≤{\ensuremath{\leq}}
           \catcode`\≥=\active \protected\def ≥{\ensuremath{\geq}}
+          % Latin Modern sets the middle dot (the Lancet decimal point) in a box
+          % as wide as a letter, so "0·73" printed as "0 · 73"; set it in a box
+          % the width of a full stop instead.
+          \catcode`\·=\active \protected\def ·{\makebox[0.28em][c]{\char"00B7}}
           % Compact setting for wide tables; used around table 2 in index.qmd.
           \newcommand{\lancetwidetable}{\footnotesize\setstretch{1}\setlength{\tabcolsep}{3pt}}
       default-image-extension: pdf
