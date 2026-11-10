@@ -279,3 +279,45 @@ inference.
   - S12 (cohort overlap map) was not regenerated: no script that produces it
     was found in this repository or in `~/ptcy_metaanalys`. The committed
     file dates from the initial project commit.
+
+## 2026-11-10 — Body of index.qmd cut to the 3500-word limit; S12 rebuild script
+
+- **Decision (RL):** cut about 450 words from the body, starting with the
+  passages the checklist marks as movable to the appendix. The choice of the
+  other cuts was the assistant's and has not been reviewed.
+- **Cuts where the detail remains in the appendix:** per-outcome attrition
+  sentence (S12); prior, sampler and convergence details (S6, S7);
+  steroid-adjustment model description (S9, S13); hazard-ratio sensitivity
+  method (S9); RoB 2 measurement-domain sentence (S5); comparator-backbone
+  subgroup estimates (S9); letermovir cohort detail (S9); GRADE imprecision
+  detail for acute GVHD (S11).
+- **Cuts of repeated or explanatory text:** second statement that single-arm
+  studies were not pooled; why donor type matters; EBV/HHV-6 sentence
+  shortened; sparse-outcome limitation shortened (this also removes "probably
+  narrower than they should be", checklist B12).
+- **Cuts that change content (checklist A3 and B14):**
+  - "about 68 fewer deaths per 1000 patients by one year" removed.
+  - "This offers a plausible explanation for how PTCy could be associated
+    with better survival despite concerns about infection" removed.
+  - "extend across donor types, conditioning regimens, and geographic
+    settings" removed.
+  - The infection-reporting subsection was shortened to two sentences and
+    its heading dropped. Its first sentence now says 104 of 247 studies
+    could be pooled for any outcome, instead of saying they had sufficient
+    information on infectious complications.
+- **Not changed:** the Discussion opening and the Results still say "better
+  overall survival", which no longer matches the Summary and conclusion.
+- **Figure S12:** `scripts/regenerate-s12-cohort-overlap.R` rebuilds the
+  cohort overlap map from `data/studies.csv` and `data/cohorts.csv`. The rule
+  (cohorts with two or more included publications) reproduces the 25 bars of
+  the committed figure on the pre-removal data. A preview on the corrected
+  data (24 cohorts) is at `audit/FigureS12_preview_2026-11-10.png`; the
+  committed figure has not been replaced.
+
+## 2026-11-10 — Figure S12 replaced
+
+- **Decision (RL), after seeing the preview:** the committed figure S12
+  files were replaced by the output of
+  `scripts/regenerate-s12-cohort-overlap.R` (24 multi-publication cohorts).
+  This supersedes the statement in the previous entry that the committed
+  figure had not been replaced.
