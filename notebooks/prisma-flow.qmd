@@ -94,10 +94,11 @@ cat("\nall stages reconcile; full-text exclusion reasons sum to ", excl_ft, "\n"
 ## The diagram
 
 `previous = FALSE` because there is no earlier version of this review.
-`other = TRUE` shows the identification-via-other-methods branch: reference
-lists, citation tracking, and PROSPERO registrations were searched but their
-yields were not recorded separately, so the branch displays zeros and the
-figure legend explains why.
+`other = FALSE` omits the identification-via-other-methods branch. Reference
+lists, citation tracking, and PROSPERO registrations were searched, but no
+report was recorded as coming from them, so the branch would show only zeros.
+The figure legend states that these sources were searched and added no
+reports.
 
 ```{r}
 #| label: build
@@ -105,7 +106,7 @@ plot <- PRISMA_flowdiagram(
   PRISMA_data(as.data.frame(flow)),
   interactive       = FALSE,
   previous          = FALSE,   # no previous version of this review
-  other             = TRUE,    # other-methods branch shown (zeros; see legend)
+  other             = FALSE,   # other-methods branch omitted (no records; see legend)
   detail_databases  = TRUE,    # show the EMBASE / PubMed / SCOPUS split
   meta_analysis     = TRUE,    # show the 117 studies carried into the models
   side_boxes        = TRUE,
@@ -136,8 +137,8 @@ dot <- gsub("LightSteelBlue2", sprintf('"%s"', lancet_tint), dot, fixed = TRUE)
 # White text on the crimson bar. This has to go on the title node itself, not on
 # the `node [...]` defaults block above it -- a fontcolor set there cascades to
 # every node declared afterwards and turns the whole diagram's text white.
-# With other = TRUE the diagram has more than one `style = "rounded,filled"`
-# node; sub() rewrites only the first, which is the databases title bar.
+# sub() rewrites only the first `style = "rounded,filled"` node, which is the
+# databases title bar (with other = TRUE there would be a second one).
 stopifnot(sum(gregexpr('style = "rounded,filled"', dot, fixed = TRUE)[[1]] > 0) >= 1)
 dot <- sub('style = "rounded,filled"',
            'style = "rounded,filled", fontcolor = "white"', dot, fixed = TRUE)

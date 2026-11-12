@@ -528,3 +528,122 @@ inference.
   - Not tables, but found by the same check: the search-strategy code
     blocks in S1 (pp. 2–5) run past the right edge of the page, and the
     model equation in S6 runs into the right margin.
+
+## 2026-11-12 — Pre-submission review list worked through (not committed)
+
+- **Request (RL):** address the pre-submission review list. The list was
+  written against an earlier draft; items already resolved on 2026-11-10 were
+  left alone (observational-only k for overall survival, chronic GVHD and CMV;
+  C2 overall survival excluding PTCy+ATG k = 9; 250 studies / 177 849
+  patients). Wording below is the assistant's and has not been reviewed.
+- **Checked against the saved fits and data (assistant):**
+  - Observational-only acute GVHD: `rct_only_results.csv` gives 0·5946, so
+    appendix S9 0·60 → 0·59 (text already 0·59).
+  - CNI+MMF subgroup: `comparator_backbone.csv` gives 0·4447 and 2·2145, so
+    S9 text 0·45 → 0·44 and 2·22 → 2·21 (table already correct).
+  - C2 non-relapse mortality: Table 2 ("k=2, not assessed") is right under
+    amendment 6. The saved fit `rs_c2_nrm_m1.rds` (2 October) has three
+    studies, but study 66 is `cumulative_incidence_derived_count`. Attrition
+    table 3 → "2 (not pooled)". The fit file is stale and still feeds the
+    posterior predictive figure scripts; figures not checked.
+  - "Rebuilt estimates (for example from reported hazard ratios)" removed
+    from the S12 attrition note: EXTRACTION_AUDIT §3–4 found no such
+    conversions in the model inputs.
+  - `data/models/outcome_flow.csv` `k_pooled` set to the Table 2 values (it
+    held pre-adjudication counts and is cited as the table's source); C2 NRM
+    set to NA.
+- **Found while reconciling the donor-type text (not on the list):** the
+  donor-matched (≤15 points) fits contain 18, 14 and 7 studies for C1 overall
+  survival, CMV and non-relapse mortality, not the stated 21, 15 and 8 (same
+  cause as checklist B5–B7: stored k counted input rows without event
+  counts). Corrected in `index.qmd`, appendix S9 and `donor_confounding.csv`;
+  estimates unchanged.
+- **Donor type:** "differed little between arms (median difference 0)"
+  replaced. In the pooled C1 survival set the haploidentical percentage is
+  identical between arms in 17 of 29 studies and at least 50 points higher
+  with PTCy in 11; CMV 14 and 7 of 21. The Discussion's "mainly
+  haploidentical … matched donors" is replaced by counts from the pooled CMV
+  sets (PTCy arm predominantly haploidentical in 12 of 21 C1 and 4 of 12 C2
+  studies).
+- **Introduction, reference 11:** Papanicolaou 2024 reports fungal infection
+  by day 180 in 7%, 6% and 4% of the HaploCy, SibCy and SibCNI groups
+  (p < 0·001), so "similar or fewer" was wrong; reworded and Ustun 2024 cited
+  for bacterial infection. Checked against the abstract as shown by a
+  repository copy and the publisher page, not PubMed (blocked) and not the
+  full text. The `ustun2024` BibTeX author list is truncated after ten
+  names ("and others"); three given names are initials only.
+- **CIBMTR cohort 1001 and the pooling:** Goldsmith (CMV) and Ustun (BSI)
+  have cumulative incidence only and are excluded by amendment 6.
+  Papanicolaou has observed counts (24/403 vs 59/1605, stored as
+  `IFI_any / investigator_reported_any`) and is excluded because the IFI
+  model takes only the `EORTC_MSG_proven_probable_combined` subtype. Whether
+  that is intended is RL's call; note that the pooled set already contains
+  study 167 (includes possible IFD) and study 399 (fungal-attributed
+  mortality). Exploratory REML check by the assistant, not adopted and not
+  in the manuscript: 0·60 (0·21–1·74), k = 6, becomes 0·73 (0·29–1·84),
+  k = 7, with Papanicolaou added.
+- **Observed-counts rule:** justification added to Methods, attrition counts
+  to Results (113 → 29, 106 → 11, 102 → 28; the list's 116/109/104 predate
+  the duplicate removal), and a limitation. The seven-trial derived-count
+  estimate is now quoted in Results as a sensitivity analysis under a
+  non-primary construction.
+  - **Unresolved:** the appendix and the review list give 0·79 (0·59–1·08);
+    the only stored record (`rct_only_results.csv` at commit `4f48420`) gives
+    0·789 (0·585–1·065). The fit file no longer exists and the analytic files
+    have since had derived counts removed, so neither can be reproduced here.
+    The text value was kept. Refitting from the Set A data would settle it.
+  - HOVON-96 (study 80; PT-Cy/CsA vs CsA/MPA) is flagged ineligible for all
+    three comparisons, so it is absent for that reason and not because of
+    the rule. On its face it meets the C1 definition (assistant inference
+    from the arm labels, moderate confidence; the paper would settle it).
+    Brissot 2024 (study 79) is C2, Kaplan–Meier-derived and not primary for
+    its cohort.
+- **Patients:** Summary, Research in context and Discussion now quote
+  111 214 unique patients; Results and Table 1 keep 175 570 and say it
+  counts overlapping cohorts more than once.
+- **Limitations:** search limits and the observed-counts rule added; the
+  sparse-outcome sentence now says the intervals depend on the prior
+  (appendix S9) instead of calling them a lower bound. Cut to make room: the
+  IFI-heterogeneity limitation (repeats the Discussion) and the closing
+  sentence on PTCy regimen variants (repeats Results).
+- **Not done:**
+  - PROSPERO: what was registered as primary and whether the six amendments
+    are in the record. The record could not be read from here; needs RL.
+    Title versus primary outcome is left for the same decision.
+  - Body is 3583 words (limit 3500; Quarto 1.9.35), Summary 300. No further
+    cuts made.
+  - Article-only Word render; no full render, tests or figure regeneration.
+    S14 page and line references are stale again.
+
+## 2026-11-12 — Body cut to 3490 words; full render; S14 rebuilt
+
+- **Decision (RL), after seeing the proposed cuts:** five cuts in the
+  Discussion's "Balancing benefits and risks", future-research and concluding
+  paragraphs. Wording by the assistant. Content changes: "possibly better
+  survival" and "PTCy provides effective GVHD control" removed (the first
+  contradicted the stated survival conclusion; see the 2026-11-10 entry that
+  left it); "104 of 247 could be pooled" removed from the Discussion (still in
+  Results); the mitigation list shortened (fuller list remains in Research in
+  context).
+- **Full `quarto render` (Quarto 1.9.35):** exit 0, no warnings or errors in
+  the log; Summary 300 (limit 300), body 3490 (limit 3500).
+- **S14:** `scripts/rebuild-prisma-checklist-refs.R` changed the references
+  on the first pass (article 33 pages, appendix 105 pages); after a second
+  full render it reported no change.
+- **Not checked:** rendered Word/PDF files against source by eye or XML;
+  figures were not regenerated (no figure input changed except the stale
+  `rs_c2_nrm_m1.rds` noted in the previous entry, which was not refitted).
+
+## 2026-11-12 — Figure 1: identification-via-other-methods branch removed
+
+- **Decision (RL):** drop the other-methods branch (grey boxes and arrows)
+  because no records flow through it. `notebooks/prisma-flow.qmd` now calls
+  `PRISMA_flowdiagram(other = FALSE)`; counts and `data/prisma_flow.csv`
+  unchanged. The figure 1 legend now says the branch is not shown, and still
+  says reference lists, citation tracking and PROSPERO were searched.
+- **Note (assistant):** PRISMA 2020 offers the databases-only template for
+  reviews that did not search other sources. This review did search them,
+  so the legend sentence is what tells readers that; keep it.
+- **Render (Quarto 1.9.35):** exit 0, no warnings; body 3490 words. The
+  figure is narrower and taller, the article PDF went from 33 to 34 pages,
+  and S14 was rebuilt (two passes; converged).
