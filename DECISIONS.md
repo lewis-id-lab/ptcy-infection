@@ -647,3 +647,83 @@ inference.
 - **Render (Quarto 1.9.35):** exit 0, no warnings; body 3490 words. The
   figure is narrower and taller, the article PDF went from 33 to 34 pages,
   and S14 was rebuilt (two passes; converged).
+
+## 2026-11-12 — Registered outcomes reported; S13 rewritten as deviations; IFI sensitivity fits (not in manuscript)
+
+- **Seen before this change:** RL pasted the PROSPERO record's main and
+  additional outcomes and analysis section. It matches
+  `~/ptcy_metaanalys/PTCy_PROSPERO_Protocol_Final.docx` (version 2, 17 April
+  2026) verbatim. Registered primary outcomes: BSI any pathogen (day +30),
+  CMV reactivation (day +100), EORTC/MSG proven/probable IFI as mould and
+  yeast (day +180). Overall survival, acute and chronic GVHD are not in the
+  record. The manuscript had called OS "the primary outcome" and described
+  survival and GVHD as pre-specified. All pooled estimates had been seen.
+- **Decision (RL), option 1:** report the registered infection outcomes as
+  primary and OS, GVHD, RRM and BK-HC as added after registration. Reason for
+  OS as main analysis outcome (RL's wording): survival was more completely
+  reported than the registered infection outcomes. Supported by the S12
+  attrition column (C1 paired-arm records: OS 113, CMV 44, BSI 13, IFI 7).
+  RL will file the amendments on PROSPERO on 2026-11-13. RL decided not to
+  edit the record to make OS appear pre-specified.
+- **Text (assistant drafts, approved by RL):**
+  - Summary Methods: registered primary outcomes first; survival, GVHD and
+    BK-HC added after registration.
+  - Methods Outcomes: registered primary and secondary outcomes stated;
+    added outcomes; OS designated main analysis outcome and why; BSI and IFI
+    definitions changed because few studies reported them as registered (C1
+    paired observed counts: BSI day +30, 1 study; IFI mould 2, yeast 1, day
+    +180 1).
+  - "Primary"/"pre-specified" removed where it implied OS or the added
+    outcomes were registered: Summary, Research in context, Methods
+    eligibility and sensitivity sentences, Results GRADE paragraph,
+    Limitations, conclusion, Table 2 note, S9 CMV sentence, S11 caption,
+    S14 GRADE-threshold wording (also in
+    `scripts/rebuild-prisma-checklist-refs.R`).
+  - Appendix S13: registered outcomes and model stated; seven numbered
+    deviations with reasons; earlier amendment (1) "Bayesian rather than
+    frequentist" dropped because the registration was already Bayesian, and
+    IRM no longer described as added (it was registered).
+  - S13 "Registered analyses not reported" paragraph lists the sensitivity
+    analyses and moderators not performed, using protocol v2 wording. The
+    pasted record did not include those sections; that v2 matches the record
+    there too is an assistant inference (high confidence, since the outcome
+    and analysis sections match verbatim). Check against the record on
+    2026-11-13.
+- **Cuts (approved by RL):** Summary "towards the null"; Methods
+  timepoint-correlation clause and PTCy+ATG sensitivity pointer; Results
+  csCMV clause; Discussion "Importantly, infection-related mortality was not
+  increased".
+- **Render (Quarto 1.9.35):** exit 0, no warnings; Summary 299 (limit 300),
+  body 3493 (limit 3500). S14 rebuilt; converged on the second pass (article
+  34 pages, appendix 107).
+- **To update after the PROSPERO amendment is filed:** S13 says the
+  deviations "are not recorded in the PROSPERO record".
+- **Prior sensitivity (RL, same day):** S13 deviation 8 added. The
+  registered re-runs (half-Cauchy(0, 0·5), half-Normal(0, 1·0) on τ) were
+  replaced by Student-t(3, 0, 0·5) and t(3, 0, 2) re-runs for C1 BSI and C1
+  IFI only (S9). Full render after this: exit 0, no warnings, word counts
+  unchanged; S14 already current (article 34 pages, appendix 107).
+
+### IFI sensitivity analysis, registered outcome "any IFI investigator-reported" (C1; post hoc; not in the manuscript)
+
+- **Requested by RL** after the primary IFI estimate had been seen.
+  Specification as reported M1 (random intercept and PTCy slope by study,
+  tp_early, priors N(0, 2·5), N(0, 1·5), t(3, 0, 1); 4 chains × 4000, warmup
+  1000; cmdstanr). Seeds 6317 and 2958. Fits:
+  `_fits_rs/sens_c1_ifi_invrep_papanicolaou_only.rds` and
+  `_fits_rs/sens_c1_ifi_invrep_all_investigator.rds` (gitignored). Code was
+  run interactively, not saved as a script.
+- **Results (OR, 95% CrI; P(OR > 1); τ):**
+  - Primary, reported fit (k = 6): 0·63 (0·19–2·44); 0·22; 1·28.
+  - + Papanicolaou 2024, SibCy vs SibCNI, 24/403 vs 59/1605, day +180
+    (k = 7): 0·75 (0·26–2·48); 0·29; 1·22.
+  - + also Kunacheewa 2020 (2/21 vs 2/21) and Koura 2025 (4/25 vs 3/15),
+    the only other C1 studies with paired investigator-reported any-IFI
+    counts (k = 9): 0·76 (0·32–1·97); 0·26; 1·05. Added by the assistant;
+    not requested.
+  - R-hat 1·00, no divergences at adapt_delta 0·95, bulk ESS ≥ 3298.
+- **Choices:** Papanicolaou's HaploCy arm is not flagged C1-eligible, so the
+  SibCy arm was used. Its fungal infections include non-sterile-site Candida
+  (extraction notes), so the definition is broader than EORTC/MSG.
+- **Reading:** the estimate moves towards 1 and the interval stays wide; the
+  "no clear difference" reading does not change.

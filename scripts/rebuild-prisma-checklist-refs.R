@@ -116,7 +116,7 @@ loc <- c(
   "20c" = sprintf("appendix p. %d (S9)", S[["S9"]]),
   "20d" = sprintf("appendix p. %d (S10)", S[["S10"]]),
   "21" = sprintf("appendix p. %d (S10)", S[["S10"]]),
-  "22" = sprintf("%s (Certainty of evidence); %s (Table 2, GRADE column); appendix p. %d (S11; all five GRADE domains per outcome, with imprecision assessed against pre-specified clinically meaningful thresholds of OR 0·80 for benefit and 1·25 for harm)",
+  "22" = sprintf("%s (Certainty of evidence); %s (Table 2, GRADE column); appendix p. %d (S11; all five GRADE domains per outcome, with imprecision assessed against clinically meaningful thresholds, defined at the analysis stage, of OR 0·80 for benefit and 1·25 for harm)",
                  pl("^Certainty of evidence$"), table2, S[["S11"]]),
   "23a" = sprintf("%s (Discussion)", pl("^Discussion$")),
   "23b" = sprintf("%s (Limitations)", limitations),

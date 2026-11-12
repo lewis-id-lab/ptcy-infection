@@ -322,7 +322,7 @@ The largest Bayesian–frequentist discrepancies under a common-effect Bayesian 
 
 : Bayesian posterior median odds ratios beside frequentist REML estimates for every primary (M1) model. The REML models pool within-study log odds ratios with a 0·5 continuity correction where needed and carry the deduplicated fits where deduplication applied (see the `source` column of `freq_results_setB.csv`, a supplementary data file, which also reports τ, Cochran's Q and its p value).
 
-The pre-specified CMV sensitivity analyses estimated a larger effect in studies published from 2020 onward (k = 16, 1·43 \[0·97–2·06\]; a publication-year restriction, not an enrolment-era one) and an elevated but imprecise estimate in haploidentical-dominant cohorts (k = 12, 1·34 \[0·89–1·96\]).
+The CMV sensitivity analyses estimated a larger effect in studies published from 2020 onward (k = 16, 1·43 \[0·97–2·06\]; a publication-year restriction, not an enrolment-era one) and an elevated but imprecise estimate in haploidentical-dominant cohorts (k = 12, 1·34 \[0·89–1·96\]).
 
 ### τ-prior sensitivity for the sparse outcomes (k = 4–6)
 
@@ -551,7 +551,7 @@ Certainty was assessed per the GRADE Handbook, adapted for observational evidenc
 | Infection-related mortality | C1 | 13 | 1·02 (0·67–1·50) | 0 (start LOW) | 0 | −1 (τ = 0·48) | −1 (spans 0·80 and 1·25) | 0 | ⊕⊖⊖⊖ VERY LOW |
 | Infection-related mortality | C2 | 7 | 0·98 (0·62–1·77) | 0 (start LOW) | 0 | −1 (τ = 0·41) | −1 (spans 0·80 and 1·25) | not assessable (k = 7) | ⊕⊖⊖⊖ VERY LOW |
 
-: GRADE domain profiles for the pre-specified primary and secondary outcomes. Starting certainty LOW (observational evidence; 68% of contributing studies at serious ROBINS-I risk). Imprecision is assessed against clinically meaningful thresholds (OR 0·80 benefit, 1·25 harm). C1 relapse-related mortality is rated VERY LOW (its interval spans the 0·80 threshold); C1 BK virus–associated haemorrhagic cystitis retains LOW (credible interval entirely above the 1·25 harm threshold, τ = 0·36, and no evidence of publication bias by RoBMA). C2 BSI and C2 IFI were not modelled (insufficient studies) and are not rated. The rows for BK-HC, infection-related mortality, and relapse-related mortality cover the secondary outcomes added by protocol amendment (S13), rated under the same framework; C3 outcomes were not rated.
+: GRADE domain profiles for the C1 and C2 outcomes. Starting certainty LOW (observational evidence; 68% of contributing studies at serious ROBINS-I risk). Imprecision is assessed against clinically meaningful thresholds (OR 0·80 benefit, 1·25 harm). C1 relapse-related mortality is rated VERY LOW (its interval spans the 0·80 threshold); C1 BK virus–associated haemorrhagic cystitis retains LOW (credible interval entirely above the 1·25 harm threshold, τ = 0·36, and no evidence of publication bias by RoBMA). C2 BSI and C2 IFI were not modelled (insufficient studies) and are not rated. Overall survival, the GVHD outcomes, relapse-related mortality, and BK-HC were added after registration (S13) and are rated under the same framework as the registered outcomes; C3 outcomes were not rated.
 
 ### Summary-of-findings absolute effects
 
@@ -634,55 +634,70 @@ Cohort deduplication (Set B) changed seven outcomes; all other outcomes were una
 
 ## S13. PROSPERO registration
 
-The study protocol was registered with PROSPERO (CRD420261372156) before data extraction. Protocol amendments were: (1) a Bayesian rather than frequentist primary analysis framework; (2) addition of BK virus–associated haemorrhagic cystitis, infection-related mortality, and relapse-related mortality as secondary outcomes; (3) addition of the steroid-adjustment (M2) model as an exploratory analysis; (4) adoption of a random-slope specification (random study intercept plus random PTCy-effect slope) in place of a common-effect model, after early analyses showed the common-effect specification masked between-study heterogeneity for infection outcomes (S9); (5) redefinition of the primary bloodstream-infection analysis as culture-confirmed bacterial BSI by day +100, with any-pathogen BSI retained as a sensitivity analysis (S9); and (6) exclusion from pooling of event counts derived from cumulative-incidence or Kaplan–Meier estimates rather than reported as observed counts, after discrepancies were found between derived and reported counts during data verification. In addition, the GRADE imprecision thresholds (odds ratio 0·80 for benefit, 1·25 for harm; S11) were defined at the analysis stage rather than in the registered protocol.
+The study protocol was registered with PROSPERO (CRD420261372156) before data extraction.
+
+**Registered outcomes and analysis.** The registered primary outcomes were bacterial bloodstream infection (BSI) with any pathogen (cumulative incidence by day +30; day +100 as secondary timepoint), CMV reactivation or viraemia at any reported threshold (day +100; day +180), and EORTC/MSG 2020 proven or probable invasive fungal infection (IFI), stratified as invasive mould and invasive yeast disease (day +180; one year). Registered additional outcomes were infection-related mortality and non-relapse mortality (one year; day +100); clinically significant CMV infection, CMV end-organ disease, investigator-reported IFI, and severe bacterial infection (Sepsis-3 or CTCAE grade ≥3) as sensitivity outcomes; and time-to-event metrics as narrative supporting data. The registered model was a Bayesian random-effects binomial model with arm-specific random effects by cohort (`events | trials(n) ~ 0 + arm + (0 + arm | cohort_id)`), priors N(0, 1·5) on the log odds ratio and half-normal(0, 0·5) on the between-study SD, and four chains of 4000 iterations.
+
+**Deviations from the registration.** All deviations below were decided after data extraction had begun. They are not recorded in the PROSPERO record.
+
+1. *Outcomes added.* Overall survival, acute GVHD grade II–IV, moderate-to-severe chronic GVHD, relapse-related mortality, and BK virus–associated haemorrhagic cystitis were added. Overall survival was designated the main analysis outcome after data extraction, when survival was found to be more completely reported than the registered infection outcomes (C1 studies with paired-arm records: overall survival 113, CMV 44, BSI 13, IFI 7; S12).
+2. *BSI.* The primary BSI analysis is culture-confirmed bacterial BSI by day +100, because only one C1 study reported paired observed counts at day +30; any-pathogen BSI is retained as a sensitivity analysis (S9).
+3. *IFI.* IFI is analysed as any IFI (mould and yeast combined) at the latest reported timepoint, because few C1 studies reported mould (two) or yeast (one) disease separately or reported IFI at day +180 (one). The pooled set includes one study whose definition includes possible IFI (Haebe 2023) and one reporting fungal-attributed mortality (Yanada 2026).
+4. *Model and priors.* A random study intercept and a random PTCy-effect slope by study, with an indicator for fallback timepoints, replaced the registered arm-specific cohort random effects; cohort overlap is handled by deduplication (S12). Priors are N(0, 2·5) on regression coefficients, N(0, 1·5) on the intercept, and Student-t(3, 0, 1) on the between-study SDs (S6). The random slope was adopted after early analyses with a common-effect specification masked between-study heterogeneity for infection outcomes (S9).
+5. *Steroid adjustment.* The steroid-adjustment model (M2) was added as an exploratory analysis (S9).
+6. *Observed counts.* Event counts derived from cumulative-incidence or Kaplan–Meier estimates, rather than reported as observed counts, were excluded from pooling, after discrepancies were found between derived and reported counts during data verification.
+7. *GRADE thresholds.* The imprecision thresholds (odds ratio 0·80 for benefit, 1·25 for harm; S11) were defined at the analysis stage.
+8. *Prior sensitivity.* The registered prior sensitivity analysis (re-runs with τ ~ half-Cauchy(0, 0·5) and half-Normal(0, 1·0)) was replaced by re-runs with Student-t(3, 0, 0·5) and Student-t(3, 0, 2) priors on the between-study SDs, bracketing the adopted Student-t(3, 0, 1) prior, for the sparse outcomes C1 BSI and C1 IFI only (S9).
+
+**Registered analyses not reported.** Investigator-reported IFI and severe bacterial infection were not analysed, and CMV end-organ disease was too sparsely reported to pool. The following registered sensitivity analyses were not performed: inclusion of conference abstracts; restriction to studies rated low or moderate risk of bias; and a parallel Poisson/negative-binomial model for studies reporting incidence rates per patient-time rather than cumulative incidence. Meta-regression was not performed on the following registered moderators: graft source (peripheral blood, bone marrow, cord blood); conditioning intensity (myeloablative, reduced-intensity, non-myeloablative); antimold prophylaxis regimen (for IFI outcomes specifically); PTCy dose (standard 50 mg/kg × 2 versus reduced); region (Europe, North America, Asia, other); and ATG dose category within Comparison 2. The registered moderators donor type, letermovir era and use, CMV serostatus distribution, and publication era (pre-2018 versus 2018 onwards) were examined only in modified form (between-arm haploidentical-donor difference, enrolment-era proxy, recipient serostatus difference, and restriction to publications from 2020 onward; S9).
 
 ## S14. PRISMA 2020 checklist
 
-Page and line references are to the typeset submission build: the article PDF (34 pages, continuous line numbering) and this appendix (105 pages, separately paginated). Locations cite the page and, for main-text sections, the line at which the relevant content begins.
+Page and line references are to the typeset submission build: the article PDF (34 pages, continuous line numbering) and this appendix (107 pages, separately paginated). Locations cite the page and, for main-text sections, the line at which the relevant content begins.
 
 | Section and topic | Item | Checklist item | Location (page, line) |
 |:---|:---|:---|:---|
 | **Title** | 1 | Identify the report as a systematic review | p\. 1, line 1 (title page) |
-| **Abstract** | 2 | Structured summary (PRISMA 2020 for Abstracts) | p\. 1, line 7 – p. 2, line 38 (Summary) |
-| **Rationale** | 3 | Rationale for the review in the context of existing knowledge | p\. 4, line 83 (Introduction); p. 2, line 39 (Research in context) |
-| **Objectives** | 4 | Explicit statement of objectives and questions | p\. 6, lines 118–122 ("We therefore performed…"); appendix p. 89 (S13, PROSPERO CRD420261372156) |
-| **Eligibility criteria** | 5 | Inclusion and exclusion criteria and grouping rationale | p\. 6, line 124 (Methods — Search strategy and selection criteria); appendix p. 6 (S2) |
-| **Information sources** | 6 | Databases, registers, websites, organisations, citation searching, with dates | p\. 6, line 124; appendix p. 1 (S1: EMBASE, PubMed/MEDLINE, SCOPUS, inception–April 2026); p. 31 (figure 1) |
+| **Abstract** | 2 | Structured summary (PRISMA 2020 for Abstracts) | p\. 1, line 7 – p. 2, line 37 (Summary) |
+| **Rationale** | 3 | Rationale for the review in the context of existing knowledge | p\. 4, line 82 (Introduction); p. 2, line 38 (Research in context) |
+| **Objectives** | 4 | Explicit statement of objectives and questions | p\. 6, lines 117–121 ("We therefore performed…"); appendix p. 89 (S13, PROSPERO CRD420261372156) |
+| **Eligibility criteria** | 5 | Inclusion and exclusion criteria and grouping rationale | p\. 6, line 123 (Methods — Search strategy and selection criteria); appendix p. 6 (S2) |
+| **Information sources** | 6 | Databases, registers, websites, organisations, citation searching, with dates | p\. 6, line 123; appendix p. 1 (S1: EMBASE, PubMed/MEDLINE, SCOPUS, inception–April 2026); p. 31 (figure 1) |
 | **Search strategy** | 7 | Full search strategies for all sources | appendix p. 1 (S1, complete search strings per database) |
-| **Selection process** | 8 | Methods used to decide inclusion (screeners, independence, automation) | p\. 6, line 124 (Methods: two reviewers in Covidence); p. 31 (figure 1) |
-| **Data collection process** | 9 | Methods used to collect data (reviewers, forms, verification) | p\. 6, line 124 (Methods: structured extraction template, AI-assisted extraction with manual verification) |
-| **Data items** | 10 | All variables and outcomes sought; methods for handling multiple measures | p\. 8, line 157 (Methods — Outcomes); pp. 26–28 (Table 1); appendix p. 6 (S3–S4); extraction database (supplementary data) |
-| **Study risk of bias assessment** | 11 | Tools and process for assessing risk of bias in included studies | p\. 6, line 124 (Methods: ROBINS-I, RoB 2, two reviewers); appendix p. 25 (S5) |
-| **Effect measures** | 12 | Effect measures used for each outcome | p\. 8, line 167 (Methods — Statistical analysis, odds ratios at fixed timepoints); appendix p. 39 (S9, hazard-ratio sensitivity) |
-| **Synthesis methods** | 13a | Processes for deciding which studies were eligible for each synthesis | p\. 6, line 124; appendix p. 85 (S12, per-outcome attrition) |
-|  | 13b | Data preparation methods | p\. 8, line 167; appendix p. 29 (S6); analytic code (Data sharing, p. 19, line 416) |
+| **Selection process** | 8 | Methods used to decide inclusion (screeners, independence, automation) | p\. 6, line 123 (Methods: two reviewers in Covidence); p. 31 (figure 1) |
+| **Data collection process** | 9 | Methods used to collect data (reviewers, forms, verification) | p\. 6, line 123 (Methods: structured extraction template, AI-assisted extraction with manual verification) |
+| **Data items** | 10 | All variables and outcomes sought; methods for handling multiple measures | p\. 8, line 156 (Methods — Outcomes); pp. 26–28 (Table 1); appendix p. 6 (S3–S4); extraction database (supplementary data) |
+| **Study risk of bias assessment** | 11 | Tools and process for assessing risk of bias in included studies | p\. 6, line 123 (Methods: ROBINS-I, RoB 2, two reviewers); appendix p. 25 (S5) |
+| **Effect measures** | 12 | Effect measures used for each outcome | p\. 8, line 171 (Methods — Statistical analysis, odds ratios at fixed timepoints); appendix p. 39 (S9, hazard-ratio sensitivity) |
+| **Synthesis methods** | 13a | Processes for deciding which studies were eligible for each synthesis | p\. 6, line 123; appendix p. 85 (S12, per-outcome attrition) |
+|  | 13b | Data preparation methods | p\. 8, line 171; appendix p. 29 (S6); analytic code (Data sharing, p. 19, line 414) |
 |  | 13c | Tabulation or visualisation of individual results and syntheses | p\. 29 (Table 2); pp. 32–34 (Figures 2–4); appendix p. 35 (S8) |
-|  | 13d | Methods used to synthesise results and rationale for their choice | p\. 8, line 167 (Bayesian random-effects binomial-logistic models); appendix p. 29 (S6, specification, priors, MCMC) |
+|  | 13d | Methods used to synthesise results and rationale for their choice | p\. 8, line 171 (Bayesian random-effects binomial-logistic models); appendix p. 29 (S6, specification, priors, MCMC) |
 |  | 13e | Assessment of heterogeneity in effect estimates | p\. 29 (Table 2, τ and 95% prediction intervals); appendix p. 31 (S7); appendix p. 39 (S9) |
 |  | 13f | Assessment of robustness (sensitivity analyses) | appendix p. 39 (S9: fixed study intercepts, matched M1/M2 sets, donor-type, RCT-only, serostatus/letermovir, comparator backbone, outcome definitions, τ-prior) |
 | **Reporting bias assessment** | 14 | Methods for assessing risk of bias due to missing results (reporting biases) | appendix p. 68 (S10, RoBMA) |
-| **Certainty assessment** | 15 | Methods for assessing certainty (confidence) in the body of evidence | p\. 8, line 167 (Methods: GRADE); appendix p. 72 (S11) |
-| **Study selection** | 16a | Results of the search and selection process, ideally with a flow diagram | p\. 9, line 195 (Results — Search results and study characteristics); p. 31 (figure 1) |
+| **Certainty assessment** | 15 | Methods for assessing certainty (confidence) in the body of evidence | p\. 8, line 171 (Methods: GRADE); appendix p. 72 (S11) |
+| **Study selection** | 16a | Results of the search and selection process, ideally with a flow diagram | p\. 9, line 197 (Results — Search results and study characteristics); p. 31 (figure 1) |
 |  | 16b | Studies excluded with reasons | appendix p. 6 (S2, full-text exclusions with reasons) |
 | **Study characteristics** | 17 | Characteristics of included studies | pp. 26–28 (Table 1); appendix p. 6 (S3–S4) |
-| **Risk of bias in studies** | 18 | Risk-of-bias assessments for each study and domain | p\. 10, line 216 (Results — Risk of bias); appendix pp. 25–27 (S5; figures S5a–S5c) |
+| **Risk of bias in studies** | 18 | Risk-of-bias assessments for each study and domain | p\. 10, line 218 (Results — Risk of bias); appendix pp. 25–27 (S5; figures S5a–S5c) |
 | **Results of individual studies** | 19 | Summary statistics and effect estimates for each study | pp. 32–34 (Figures 2–4); appendix p. 35 (S8: per-study odds ratios, events/totals, weights); supplementary data files |
-| **Results of syntheses** | 20a | Results of each synthesis, including summary statistics and certainty | p\. 29 (Table 2); p. 10, line 222 (Comparison 1); p. 12, line 245 (Comparison 2); p. 12, line 254 (Comparison 3) |
-|  | 20b | Results of investigations of causes of heterogeneity | p\. 12, line 260 (Sensitivity analyses); appendix p. 39 (S9) |
+| **Results of syntheses** | 20a | Results of each synthesis, including summary statistics and certainty | p\. 29 (Table 2); p. 11, line 224 (Comparison 1); p. 12, line 247 (Comparison 2); p. 12, line 256 (Comparison 3) |
+|  | 20b | Results of investigations of causes of heterogeneity | p\. 12, line 262 (Sensitivity analyses); appendix p. 39 (S9) |
 |  | 20c | Results of sensitivity analyses | appendix p. 39 (S9) |
 |  | 20d | Results of reporting-bias assessment | appendix p. 68 (S10) |
 | **Reporting biases** | 21 | Assessment of risk of bias due to missing results | appendix p. 68 (S10) |
-| **Certainty of evidence** | 22 | Assessment of certainty of evidence for each outcome | p\. 13, line 282 (Certainty of evidence); p. 29 (Table 2, GRADE column); appendix p. 72 (S11; all five GRADE domains per outcome, with imprecision assessed against pre-specified clinically meaningful thresholds of OR 0·80 for benefit and 1·25 for harm) |
-| **Discussion** | 23a | General interpretation in the context of other evidence | p\. 14, line 295 (Discussion) |
-|  | 23b | Limitations of the evidence | p\. 17, line 370 (Limitations) |
-|  | 23c | Limitations of the review processes | p\. 17, line 370; appendix p. 85 (S12, cohort deduplication and duplicate-entry removal) |
-|  | 23d | Implications for practice, policy, and future research | p\. 18, line 392 (concluding paragraph of the Discussion) |
-| **Registration and protocol** | 24a | Registration information and protocol access | p\. 6, line 124 (Methods); appendix p. 89 (S13, PROSPERO CRD420261372156) |
+| **Certainty of evidence** | 22 | Assessment of certainty of evidence for each outcome | p\. 13, line 283 (Certainty of evidence); p. 29 (Table 2, GRADE column); appendix p. 72 (S11; all five GRADE domains per outcome, with imprecision assessed against clinically meaningful thresholds, defined at the analysis stage, of OR 0·80 for benefit and 1·25 for harm) |
+| **Discussion** | 23a | General interpretation in the context of other evidence | p\. 14, line 294 (Discussion) |
+|  | 23b | Limitations of the evidence | p\. 17, line 368 (Limitations) |
+|  | 23c | Limitations of the review processes | p\. 17, line 368; appendix p. 85 (S12, cohort deduplication and duplicate-entry removal) |
+|  | 23d | Implications for practice, policy, and future research | p\. 18, line 390 (concluding paragraph of the Discussion) |
+| **Registration and protocol** | 24a | Registration information and protocol access | p\. 6, line 123 (Methods); appendix p. 89 (S13, PROSPERO CRD420261372156) |
 |  | 24b | Protocol amendments | appendix p. 89 (S13, all amendments listed) |
-|  | 24c | Protocol access | PROSPERO CRD420261372156; p. 19, line 416 (Data sharing) |
-| **Support** | 25 | Sources of financial or non-financial support, and role of funders | p\. 9, line 192 (Role of the funding source: none) |
-| **Competing interests** | 26 | Competing interests of review authors | p\. 19, line 412 (Declaration of interests) |
-| **Availability of data, code, and materials** | 27 | Public access to data, analytic code, and other materials | p\. 19, line 416 (Data sharing: extraction database and analytic datasets on GitHub; manuscript source and notebooks on GitHub Pages); appendix p. 102 (S15, software) |
+|  | 24c | Protocol access | PROSPERO CRD420261372156; p. 19, line 414 (Data sharing) |
+| **Support** | 25 | Sources of financial or non-financial support, and role of funders | p\. 9, line 194 (Role of the funding source: none) |
+| **Competing interests** | 26 | Competing interests of review authors | p\. 19, line 410 (Declaration of interests) |
+| **Availability of data, code, and materials** | 27 | Public access to data, analytic code, and other materials | p\. 19, line 414 (Data sharing: extraction database and analytic datasets on GitHub; manuscript source and notebooks on GitHub Pages); appendix p. 104 (S15, software) |
 
 : PRISMA 2020 checklist for the review, with page and line references to the typeset submission build.
 

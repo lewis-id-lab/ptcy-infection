@@ -61,15 +61,15 @@ infection.
 for studies comparing PTCy-based with alternative prophylaxis in adults
 undergoing allo-HSCT. Comparisons were PTCy versus calcineurin inhibitor
 (CNI)-based prophylaxis, versus anti-thymocyte globulin (ATG), and
-between PTCy-based regimens. Outcomes were overall
-survival (primary), non-relapse mortality, acute GVHD, CMV reactivation,
-bloodstream infection (BSI), invasive fungal infection, and BK
-virus–associated haemorrhagic cystitis (BK-HC), pooled by Bayesian
-random-effects meta-analysis (PROSPERO CRD420261372156).
+between PTCy-based regimens. Registered primary outcomes were CMV
+reactivation, bloodstream infection (BSI), and invasive fungal infection;
+overall survival, GVHD, and BK virus–associated haemorrhagic cystitis
+(BK-HC) were added after registration. We used Bayesian random-effects
+meta-analysis (PROSPERO CRD420261372156).
 
 **Findings.** Of 4145 records, 247 studies (516 arms; 111 214 unique
-patients) were included, 104 in the meta-analysis (9295 in the primary
-survival analysis). Versus CNI-based prophylaxis, PTCy was associated with lower
+patients) were included, 104 in the meta-analysis (9295 in the survival
+analysis). Versus CNI-based prophylaxis, PTCy was associated with lower
 odds of death (OR 0·73, 95% credible interval 0·58–0·89) and grade
 II–IV acute GVHD (0·58, 0·44–0·76). CMV reactivation was numerically
 more frequent (OR 1·20, 0·87–1·65), particularly in studies published
@@ -80,7 +80,7 @@ favoured PTCy (0·75, 0·43–1·28) and CMV reactivation did not differ
 (0·86, 0·51–1·42). BK-HC was increased against both CNI-based
 prophylaxis (2·39, 1·41–3·73) and ATG (2·49, 1·08–6·24; three studies).
 Publication-bias adjustment attenuated the survival and acute GVHD
-benefits towards the null (0·97, 0·71–1·16 and 0·96, 0·57–1·38).
+benefits (0·97, 0·71–1·16 and 0·96, 0·57–1·38).
 Certainty was very low for all outcomes except BK-HC versus CNI-based
 prophylaxis (low).
 
@@ -142,7 +142,7 @@ these outcomes.
 
 PTCy is associated with less GVHD than CNI-based prophylaxis, but a
 survival benefit has not been demonstrated: the lower odds of death in
-the primary analysis (odds ratio 0·73) were not sustained when hazard
+the main analysis (odds ratio 0·73) were not sustained when hazard
 ratios were pooled (0·88, 0·66–1·14) or after publication-bias
 adjustment (0·97, 0·71–1·16), and certainty of evidence is very low. Infection risks
 differ by pathogen: CMV risk may follow the depth of T-cell depletion,
@@ -231,7 +231,7 @@ complete search strategy is provided in the [appendix (pp
 included studies and relevant reviews were hand-searched.
 
 Studies were eligible for pooling if they reported at least one
-pre-specified outcome with extractable event counts (numerator and
+review outcome with extractable event counts (numerator and
 denominator) for at least two arms differing in GVHD prophylaxis
 strategy. Event counts derived from cumulative-incidence or
 Kaplan–Meier estimates, rather than reported as observed counts, were
@@ -267,15 +267,21 @@ is provided in the [appendix (p
 
 ### Outcomes
 
-The primary outcome was overall survival (OS), analysed as all-cause
-mortality (death as the event) at the reported timepoint. Secondary
-outcomes included non-relapse mortality (NRM), acute GVHD grade II–IV
-(at day +100), chronic GVHD (moderate to severe), CMV reactivation
-(any), bloodstream infection (BSI; primary analysis culture-confirmed
-bacterial BSI by day +100, with any-pathogen BSI examined as a
-sensitivity analysis), invasive fungal infection (IFI, any),
-relapse-related mortality (RRM), BK virus–associated haemorrhagic
-cystitis (BK-HC), and infection-related mortality (IRM). Epstein–Barr
+The registered primary outcomes were bloodstream infection (BSI) with
+any pathogen by day +30, CMV reactivation by day +100, and EORTC/MSG
+proven or probable invasive mould and yeast infection by day +180;
+non-relapse mortality (NRM) and infection-related mortality (IRM) were
+registered secondary outcomes. Overall survival (OS; all-cause mortality
+at the reported timepoint), acute GVHD grade II–IV (day +100),
+moderate-to-severe chronic GVHD, relapse-related mortality (RRM), and BK
+virus–associated haemorrhagic cystitis (BK-HC) were added after data
+extraction, and OS was then designated the main analysis outcome,
+because survival was more completely reported than the registered
+infection outcomes. Because few studies reported the registered
+definitions and timepoints, BSI was analysed as culture-confirmed
+bacterial BSI by day +100 (any-pathogen BSI as a sensitivity analysis)
+and invasive fungal infection (IFI) as any IFI at the latest reported
+timepoint. All deviations are listed in appendix S13. Epstein–Barr
 virus and human herpesvirus-6 infections were not pooled because
 definitions and monitoring were too inconsistent across studies.
 
@@ -289,20 +295,18 @@ pooled effects average over between-study heterogeneity in the treatment
 effect. Each study contributed one pair of arms at a single timepoint
 per outcome — the preferred timepoint where reported (day +100 or +180
 for early outcomes, one year for late outcomes), otherwise the nearest
-reported (fallback) timepoint — so no within-study correlation across
-timepoints arises. An
+reported (fallback) timepoint. An
 indicator variable distinguished fallback from preferred timepoints.
 Priors were weakly informative; prior specification, sampler settings,
 and convergence diagnostics are given in appendix S6 and S7. Arms
 receiving PTCy
 together with anti-thymocyte globulin were classified as PTCy arms in
-all three comparisons; a sensitivity analysis excluding the C2 studies
-containing such arms is reported in appendix S9.
+all three comparisons.
 
 An exploratory steroid-adjustment model (M2), a post-hoc amendment to
 the registered protocol, is reported only in the appendix (S9 and S13).
 
-Pre-specified sensitivity analyses included restriction to publications
+Sensitivity analyses included restriction to publications
 from 2020 onward (a publication-year subset), to haploidentical-dominant
 cohorts (≥50% haploidentical donors), and leave-one-out analysis. Hazard
 ratios were not pooled in the primary analysis because most studies
@@ -438,23 +442,20 @@ Comparator-backbone subgroups did not differ on formal testing (appendix
 S9). For CMV, restricting to
 clinically significant infection rather than any reactivation gave an
 estimate compatible with both a decrease and an increase (0·94,
-0·49–1·71; k = 8), which does not establish that clinically significant
-CMV infection is unaffected by PTCy. Adjusting for a letermovir
+0·49–1·71; k = 8). Adjusting for a letermovir
 enrolment-era proxy did not change the CMV estimate (1·20, 0·86–1·67),
 and no arm in the 2020-onward subset had recorded letermovir use.
 
 ### Certainty of evidence
 
-Certainty of evidence (GRADE) was very low for all prespecified outcomes
-(@tbl-results; [appendix
+Certainty of evidence (GRADE) was very low for all outcomes except BK
+virus–associated haemorrhagic cystitis versus CNI-based prophylaxis
+(low; @tbl-results; [appendix
 S10–S11](appendix-preview.html#s11.-grade-certainty-of-evidence-profiles)),
 mainly because of the predominance of observational studies, risk of
 confounding, between-study inconsistency, and imprecision. Imprecision
 was judged against clinically meaningful thresholds (OR 0·80 for
-benefit, 1·25 for harm). Among secondary outcomes added by
-protocol amendment, certainty was low for BK virus–associated
-haemorrhagic cystitis versus
-CNI-based prophylaxis and very low for the remainder (appendix S11).
+benefit, 1·25 for harm).
 
 Publication-bias analyses (robust Bayesian model-averaging) found strong
 evidence of bias for both overall survival and acute GVHD in comparison
@@ -530,8 +531,7 @@ with four studies the size of this risk cannot be established. There was
 no convincing evidence that PTCy affects IFI. The few available studies
 were highly heterogeneous, probably reflecting differences in antifungal
 prophylaxis and fungal diagnostic strategies, and the estimate is
-compatible with anything from a large reduction to a large increase. Importantly, infection-related mortality
-was not increased.
+compatible with anything from a large reduction to a large increase.
 
 ### Balancing benefits and risks
 
@@ -587,12 +587,12 @@ without trial registries or grey literature, and 116 conference
 abstracts were excluded. Finally, publication bias, to which these
 limits may have contributed, is a concern: the survival and acute GVHD benefits were
 substantially attenuated after adjustment, so the magnitude of benefit
-in the primary analysis should not be assumed to be the true treatment
+in the main analysis should not be assumed to be the true treatment
 effect.
 
 In conclusion, PTCy-based prophylaxis was associated with less acute and
 chronic GVHD than CNI plus MTX or MMF. A survival benefit was not
-demonstrated: the lower odds of death in the primary analysis did not
+demonstrated: the lower odds of death in the main analysis did not
 persist when hazard ratios were pooled or after publication-bias
 adjustment, and the prediction interval was wide (0·29–1·82). This
 evidence was predominantly observational, and the acute GVHD estimate
@@ -754,9 +754,8 @@ study intercept and a random PTCy-effect slope, adjusted for timepoint;
 median). k = number of paired studies. N = total patients across all
 arms. CrI = credible interval. PI = prediction interval for the PTCy
 effect in a new study, from the posterior of the random PTCy-effect
-slope. GRADE ratings are shown for C1 and C2 comparisons of the
-pre-specified outcomes and the secondary outcomes added by protocol
-amendment (appendix S11); C3 outcomes were not rated. OR \< 1 favours
+slope. GRADE ratings are shown for C1 and C2 comparisons (appendix S11); C3
+outcomes were not rated. OR \< 1 favours
 PTCy for survival and GVHD outcomes; OR \> 1 indicates elevated risk
 with PTCy for infection outcomes.
 :::
