@@ -893,3 +893,23 @@ inference.
     shown. Refitting the primary C1 OS under 4.1.1 would settle it.
   - The appendix software table (S15) still lists RoBMA 4.0.0 only; the C1
     RRM row (2026-11-10) and this fit used 4.1.1.
+
+### RoBMA 4.0.0 versus 4.1.1 checked; S15 updated (2026-11-13)
+
+- **Refit (RL request):** primary C1 overall-survival RoBMA under 4.1.1
+  (BayesTools 0.4.0), same data (`data/models/data_c1_os.csv`, unchanged since
+  2026-10-02; k = 29), same escalc call, original seed (4683 = first draw
+  after `set.seed(4186)` in `scripts/refit-robma-adjudicated.R`; the first
+  draw does not depend on how many models the script fits). Run
+  interactively; fit `_fits_rs/robma_adj/robma_c1_os_refit_v4.1.1.rds`.
+- **Result:** 4.0.0 stored 0·974 (0·711–1·16), BF effect 0·29, BF bias 10·4;
+  4.1.1 refit 0·976 (0·713–1·16), BF effect 0·28, BF bias 10·2 (R-hat ≤ 1·01,
+  ESS ≥ 1867). Same model-averaged result within MCMC error (not
+  bit-identical; at two decimals the point estimate rounds to 0·98 instead
+  of 0·97). The reported 4.0.0 values are unchanged in the manuscript.
+  This confirms the basis of the two-stage RoBMA summary.
+- **S15:** RoBMA row now lists 4.0.0 and 4.1.1, says 4.1.1 was used for the
+  C1 relapse-related mortality model and the two-stage hazard-ratio
+  analysis, and gives the version check. Render exit 0, no warnings, word
+  counts unchanged (299, 3490). S14 changed on the first pass (appendix 109
+  pages) and converged on the second.

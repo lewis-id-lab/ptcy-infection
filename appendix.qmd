@@ -668,7 +668,7 @@ The study protocol was registered with PROSPERO (CRD420261372156) before data ex
 
 ## S14. PRISMA 2020 checklist
 
-Page and line references are to the typeset submission build: the article PDF (34 pages, continuous line numbering) and this appendix (108 pages, separately paginated). Locations cite the page and, for main-text sections, the line at which the relevant content begins.
+Page and line references are to the typeset submission build: the article PDF (34 pages, continuous line numbering) and this appendix (109 pages, separately paginated). Locations cite the page and, for main-text sections, the line at which the relevant content begins.
 
 | Section and topic | Item | Checklist item | Location (page, line) |
 |:---|:---|:---|:---|
@@ -727,7 +727,7 @@ All analyses were performed in R (version 4·6·0; R: A Language and Environment
 | StanHeaders | 2.39.1 | Stan model compilation |
 | posterior | 1.7.0 | Posterior draw handling and summaries |
 | metafor | 5.2.1 | Frequentist REML concordance models, leave-one-out analysis, log-odds-ratio calculations |
-| RoBMA | 4.0.0 | Robust Bayesian model-averaging assessment of publication bias |
+| RoBMA | 4.0.0; 4.1.1 | Robust Bayesian model-averaging assessment of publication bias (S10). Version 4.1.1 was used for the C1 relapse-related mortality model (refitted after a duplicate entry was removed; S12) and the two-stage hazard-ratio analysis (S9); all other models used 4.0.0. Refitting C1 overall survival under 4.1.1 with the original seed reproduced the 4.0.0 result (OR 0·976 \[0·713–1·16\] versus 0·974 \[0·711–1·16\]; BF~bias~ 10·2 versus 10·4) |
 | bayesplot | 1.16.0 | MCMC diagnostic figures (trace plots, posterior densities) |
 | ggplot2 | 4.0.3 | All figures |
 | ggridges | 0.5.7 | τ posterior density figure |
