@@ -351,6 +351,21 @@ Overall survival was analysed as the odds ratio of death at fixed timepoints bec
 
 For C1 (k = 14 of 29 studies, 13 adjusted) the pooled hazard ratio was 0·88 \[0·66–1·14\] (REML 0·88 \[0·69–1·12\]), versus the primary odds ratio of 0·73 \[0·58–0·89\]. For C2 (k = 4 of 6 studies, all adjusted) it was 0·60 \[0·27–1·10\], versus 0·75 \[0·43–1·28\]. To separate subset composition from estimand and adjustment, the count-based model was also refitted restricted to the same hazard-ratio-reporting studies: the C1 count estimate on that subset is 0·75 \[0·57–0·93\] (k = 13 of the 14 hazard-ratio studies with valid counts), so the attenuation of the hazard ratio towards 1 persists within the same study subset. The C2 count estimate on the same subset is 0·60 \[0·21–1·61\] (k = 2 of 4), identical in point estimate to the hazard ratio. The direction of effect is therefore consistent across estimands. The C1 attenuation is compatible with an effect of the multivariable adjustment carried by nearly all hazard-ratio-reporting studies — which removes confounding that the raw-count odds ratio absorbs — and of the different estimand (a whole-follow-up hazard ratio versus fixed-timepoint mortality odds), although a 13-study subset cannot demonstrate this definitively; it is not explained by which studies report hazard ratios. The C2 estimate is imprecise at k = 4. The per-study hazard ratios used are provided in `hr_sensitivity_os.csv`, and the same-subset comparison in `hr_same_subset.csv`, both supplementary data files.
 
+### Two-stage hazard-ratio analysis including studies without observed counts (post hoc)
+
+To examine the evidence excluded by the observed-counts rule (S13, deviation 6), each C1 study with paired survival data contributed one log hazard ratio (PTCy versus comparator): a reported hazard ratio with 95% CI where available (adjusted preferred); otherwise Kaplan–Meier mortality estimates with 95% CIs in both arms at the timepoint nearest one year, contrasted on the complementary log-log scale (log\[−log S\]), with standard errors from the transformed CIs; otherwise observed counts on the same scale with delta-method standard errors. One publication per cohort was retained (the designated primary publication where it had an estimate). Estimates were pooled in a Bayesian normal–normal random-effects model with the priors of the hazard-ratio sensitivity analysis above, with a REML check. The analysis was specified after all other results had been seen; it assumes proportional hazards, mixes adjusted and unadjusted contrasts, and its estimand (a hazard ratio) differs from the primary odds ratio.
+
+Of 114 C1 studies with paired survival records, 97 had a usable estimate and 76 remained after deduplication (51 reported hazard ratios, 19 Kaplan–Meier contrasts, 6 count contrasts; seven randomised trials), including 28 of the 29 studies in the primary model and 48 studies excluded by the observed-counts rule.
+
+| Analysis | k | HR (95% CrI) | REML HR (95% CI) |
+|:---|---:|:---|:---|
+| All studies | 76 | 0·87 (0·78–0·96) | 0·87 (0·78–0·96) |
+| Designated cohort-primary publications only | 73 | 0·85 (0·77–0·94) | 0·85 (0·77–0·94) |
+| Unadjusted contrasts only (no reported hazard ratios) | 58 | 0·84 (0·75–0·94) | 0·85 (0·76–0·94) |
+| Randomised trials only | 7 | 0·82 (0·64–1·07) | 0·82 (0·69–0·98) |
+
+: Two-stage hazard-ratio analysis, C1 overall survival (post hoc). Between-study SD 0·34 and 95% prediction interval 0·44–1·70 for the all-studies model; I² 79%. Robust Bayesian model-averaging of the all-studies set (as in S10; RoBMA v4.1.1) gave a model-averaged hazard ratio of 1·00 (0·97–1·13), with strong evidence of publication bias (BF~bias~ 267). Per-study inputs are provided in `hr_twostage_os_c1_inputs.csv`, a supplementary data file.
+
 ### Exploratory steroid-adjustment analysis (M2)
 
 M2 was a post-hoc amendment to the registered protocol (S13) and is exploratory; it is reported only in this appendix. It adds arm-level systemic corticosteroid exposure, mean-centred, to the M1 specification. Steroid exposure was defined as the percentage of patients in each arm receiving systemic corticosteroids for graft-versus-host disease, as reported by the study at the study's own timepoint; where a study did not report exposure directly it was approximated from the arm's acute GVHD grade II–IV cumulative incidence under a pre-specified extraction rule. The database does not distinguish the two sources, but comparing exposure values against arm-level acute GVHD grade II–IV incidences shows that 175 of the 202 steroid-complete arms across the six M2 outcome datasets (87%) carry values numerically identical to the arm's GVHD incidence (≤0·5 percentage points), so most M2 covariate values are the approximation rather than a direct report. Exposure could not be obtained for 123 of 516 arms (24%), so M2 is fitted on a complete-case subset for each outcome (studies with exposure data / studies pooled in M1: C1 OS 24/29, C1 RRM 26/33, C1 NRM 9/11, C1 CMV 17/21, C2 OS 5/6, C2 CMV 12/12); no values were imputed by the model.
@@ -653,14 +668,14 @@ The study protocol was registered with PROSPERO (CRD420261372156) before data ex
 
 ## S14. PRISMA 2020 checklist
 
-Page and line references are to the typeset submission build: the article PDF (34 pages, continuous line numbering) and this appendix (107 pages, separately paginated). Locations cite the page and, for main-text sections, the line at which the relevant content begins.
+Page and line references are to the typeset submission build: the article PDF (34 pages, continuous line numbering) and this appendix (108 pages, separately paginated). Locations cite the page and, for main-text sections, the line at which the relevant content begins.
 
 | Section and topic | Item | Checklist item | Location (page, line) |
 |:---|:---|:---|:---|
 | **Title** | 1 | Identify the report as a systematic review | p\. 1, line 1 (title page) |
 | **Abstract** | 2 | Structured summary (PRISMA 2020 for Abstracts) | p\. 1, line 7 – p. 2, line 37 (Summary) |
 | **Rationale** | 3 | Rationale for the review in the context of existing knowledge | p\. 4, line 82 (Introduction); p. 2, line 38 (Research in context) |
-| **Objectives** | 4 | Explicit statement of objectives and questions | p\. 6, lines 117–121 ("We therefore performed…"); appendix p. 89 (S13, PROSPERO CRD420261372156) |
+| **Objectives** | 4 | Explicit statement of objectives and questions | p\. 6, lines 117–121 ("We therefore performed…"); appendix p. 90 (S13, PROSPERO CRD420261372156) |
 | **Eligibility criteria** | 5 | Inclusion and exclusion criteria and grouping rationale | p\. 6, line 123 (Methods — Search strategy and selection criteria); appendix p. 6 (S2) |
 | **Information sources** | 6 | Databases, registers, websites, organisations, citation searching, with dates | p\. 6, line 123; appendix p. 1 (S1: EMBASE, PubMed/MEDLINE, SCOPUS, inception–April 2026); p. 31 (figure 1) |
 | **Search strategy** | 7 | Full search strategies for all sources | appendix p. 1 (S1, complete search strings per database) |
@@ -669,14 +684,14 @@ Page and line references are to the typeset submission build: the article PDF (3
 | **Data items** | 10 | All variables and outcomes sought; methods for handling multiple measures | p\. 8, line 156 (Methods — Outcomes); pp. 26–28 (Table 1); appendix p. 6 (S3–S4); extraction database (supplementary data) |
 | **Study risk of bias assessment** | 11 | Tools and process for assessing risk of bias in included studies | p\. 6, line 123 (Methods: ROBINS-I, RoB 2, two reviewers); appendix p. 25 (S5) |
 | **Effect measures** | 12 | Effect measures used for each outcome | p\. 8, line 171 (Methods — Statistical analysis, odds ratios at fixed timepoints); appendix p. 39 (S9, hazard-ratio sensitivity) |
-| **Synthesis methods** | 13a | Processes for deciding which studies were eligible for each synthesis | p\. 6, line 123; appendix p. 85 (S12, per-outcome attrition) |
-|  | 13b | Data preparation methods | p\. 8, line 171; appendix p. 29 (S6); analytic code (Data sharing, p. 19, line 414) |
+| **Synthesis methods** | 13a | Processes for deciding which studies were eligible for each synthesis | p\. 6, line 123; appendix p. 86 (S12, per-outcome attrition) |
+|  | 13b | Data preparation methods | p\. 8, line 171; appendix p. 29 (S6); analytic code (Data sharing, p. 19, line 415) |
 |  | 13c | Tabulation or visualisation of individual results and syntheses | p\. 29 (Table 2); pp. 32–34 (Figures 2–4); appendix p. 35 (S8) |
 |  | 13d | Methods used to synthesise results and rationale for their choice | p\. 8, line 171 (Bayesian random-effects binomial-logistic models); appendix p. 29 (S6, specification, priors, MCMC) |
 |  | 13e | Assessment of heterogeneity in effect estimates | p\. 29 (Table 2, τ and 95% prediction intervals); appendix p. 31 (S7); appendix p. 39 (S9) |
 |  | 13f | Assessment of robustness (sensitivity analyses) | appendix p. 39 (S9: fixed study intercepts, matched M1/M2 sets, donor-type, RCT-only, serostatus/letermovir, comparator backbone, outcome definitions, τ-prior) |
-| **Reporting bias assessment** | 14 | Methods for assessing risk of bias due to missing results (reporting biases) | appendix p. 68 (S10, RoBMA) |
-| **Certainty assessment** | 15 | Methods for assessing certainty (confidence) in the body of evidence | p\. 8, line 171 (Methods: GRADE); appendix p. 72 (S11) |
+| **Reporting bias assessment** | 14 | Methods for assessing risk of bias due to missing results (reporting biases) | appendix p. 69 (S10, RoBMA) |
+| **Certainty assessment** | 15 | Methods for assessing certainty (confidence) in the body of evidence | p\. 8, line 171 (Methods: GRADE); appendix p. 73 (S11) |
 | **Study selection** | 16a | Results of the search and selection process, ideally with a flow diagram | p\. 9, line 197 (Results — Search results and study characteristics); p. 31 (figure 1) |
 |  | 16b | Studies excluded with reasons | appendix p. 6 (S2, full-text exclusions with reasons) |
 | **Study characteristics** | 17 | Characteristics of included studies | pp. 26–28 (Table 1); appendix p. 6 (S3–S4) |
@@ -685,19 +700,19 @@ Page and line references are to the typeset submission build: the article PDF (3
 | **Results of syntheses** | 20a | Results of each synthesis, including summary statistics and certainty | p\. 29 (Table 2); p. 11, line 224 (Comparison 1); p. 12, line 247 (Comparison 2); p. 12, line 256 (Comparison 3) |
 |  | 20b | Results of investigations of causes of heterogeneity | p\. 12, line 262 (Sensitivity analyses); appendix p. 39 (S9) |
 |  | 20c | Results of sensitivity analyses | appendix p. 39 (S9) |
-|  | 20d | Results of reporting-bias assessment | appendix p. 68 (S10) |
-| **Reporting biases** | 21 | Assessment of risk of bias due to missing results | appendix p. 68 (S10) |
-| **Certainty of evidence** | 22 | Assessment of certainty of evidence for each outcome | p\. 13, line 283 (Certainty of evidence); p. 29 (Table 2, GRADE column); appendix p. 72 (S11; all five GRADE domains per outcome, with imprecision assessed against clinically meaningful thresholds, defined at the analysis stage, of OR 0·80 for benefit and 1·25 for harm) |
+|  | 20d | Results of reporting-bias assessment | appendix p. 69 (S10) |
+| **Reporting biases** | 21 | Assessment of risk of bias due to missing results | appendix p. 69 (S10) |
+| **Certainty of evidence** | 22 | Assessment of certainty of evidence for each outcome | p\. 13, line 283 (Certainty of evidence); p. 29 (Table 2, GRADE column); appendix p. 73 (S11; all five GRADE domains per outcome, with imprecision assessed against clinically meaningful thresholds, defined at the analysis stage, of OR 0·80 for benefit and 1·25 for harm) |
 | **Discussion** | 23a | General interpretation in the context of other evidence | p\. 14, line 294 (Discussion) |
-|  | 23b | Limitations of the evidence | p\. 17, line 368 (Limitations) |
-|  | 23c | Limitations of the review processes | p\. 17, line 368; appendix p. 85 (S12, cohort deduplication and duplicate-entry removal) |
+|  | 23b | Limitations of the evidence | p\. 17, line 367 (Limitations) |
+|  | 23c | Limitations of the review processes | p\. 17, line 367; appendix p. 86 (S12, cohort deduplication and duplicate-entry removal) |
 |  | 23d | Implications for practice, policy, and future research | p\. 18, line 390 (concluding paragraph of the Discussion) |
-| **Registration and protocol** | 24a | Registration information and protocol access | p\. 6, line 123 (Methods); appendix p. 89 (S13, PROSPERO CRD420261372156) |
-|  | 24b | Protocol amendments | appendix p. 89 (S13, all amendments listed) |
-|  | 24c | Protocol access | PROSPERO CRD420261372156; p. 19, line 414 (Data sharing) |
+| **Registration and protocol** | 24a | Registration information and protocol access | p\. 6, line 123 (Methods); appendix p. 90 (S13, PROSPERO CRD420261372156) |
+|  | 24b | Protocol amendments | appendix p. 90 (S13, all amendments listed) |
+|  | 24c | Protocol access | PROSPERO CRD420261372156; p. 19, line 415 (Data sharing) |
 | **Support** | 25 | Sources of financial or non-financial support, and role of funders | p\. 9, line 194 (Role of the funding source: none) |
-| **Competing interests** | 26 | Competing interests of review authors | p\. 19, line 410 (Declaration of interests) |
-| **Availability of data, code, and materials** | 27 | Public access to data, analytic code, and other materials | p\. 19, line 414 (Data sharing: extraction database and analytic datasets on GitHub; manuscript source and notebooks on GitHub Pages); appendix p. 104 (S15, software) |
+| **Competing interests** | 26 | Competing interests of review authors | p\. 19, line 411 (Declaration of interests) |
+| **Availability of data, code, and materials** | 27 | Public access to data, analytic code, and other materials | p\. 19, line 415 (Data sharing: extraction database and analytic datasets on GitHub; manuscript source and notebooks on GitHub Pages); appendix p. 105 (S15, software) |
 
 : PRISMA 2020 checklist for the review, with page and line references to the typeset submission build.
 

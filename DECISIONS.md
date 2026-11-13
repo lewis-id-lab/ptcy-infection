@@ -727,3 +727,169 @@ inference.
   (extraction notes), so the definition is broader than EORTC/MSG.
 - **Reading:** the estimate moves towards 1 and the interval stays wide; the
   "no clear difference" reading does not change.
+
+## 2026-11-13 — Observed-counts rule: C1 survival studies excluded, and their hazard ratios (exploratory, post hoc; not in the manuscript)
+
+- **Requested by RL** after all manuscript estimates and the 2026-11-10
+  exploratory HR models had been seen. Run interactively (R console); not saved
+  as a script. Outputs in the session scratch directory only.
+- **Excluded by the rule alone (C1 overall survival):** 111 studies have paired
+  PTCy and C1-comparator survival records with counts or percentages (S12 says
+  113; definition not reconciled). 37 have, at some timepoint, both arms with
+  an observed count, a count from a reported crude percentage, or an "other
+  reconstruction" (the classes found in the pooled inputs); 74 do not. Of the
+  37, 29 are pooled (8 lost to timepoint or deduplication rules). The 74:
+  43 retrospective, 22 registry, 5 RCTs (Bolaños-Meade 2019, Curtis 2025,
+  Fuchs 2021, Luznik 2022, Ueda Oshima 2025), 4 prospective.
+  - HR with 95% CI against a C1 comparator arm, by a simple stored-field
+    check: 38 (43 by the construction of the 10 November script, which also
+    picks up HRs stored on the comparator row: studies 49, 120, 170, 196,
+    289). Kaplan–Meier estimate with CI in both arms: 37. Either: 54.
+- **Cross-check against the 10 November C1 survival HR model (k = 54):**
+  31 of the 38 are in it; the other 7 are represented by another publication
+  of the same cohort. The 54 comprise 36 rule-excluded, 13 rule-passing and 5
+  with no paired count/percentage record.
+- **Cohort-primary restriction:** kept studies that are the designated primary
+  publication in `data/cohorts.csv` (or the only publication of their
+  cohort); the one survival-specific override (Aydin 2023) is already the
+  designated primary. Dropped 5: Abedin 2025 (RCT subset of BMT CTN 1703,
+  HR 0·08), Mulroney 2021, Nagler 2024, Salas 2024, Wieduwilt 2022. Note: the
+  manuscript's survival set uses Salas 2024 (338) for cohort 1003, so this
+  cohort-level rule is not the same as the cohort–outcome designation used
+  for pooling.
+- **Results (Bayesian normal-normal on log HR, priors and sampler as the
+  10 November script; seeds 4127, 7731, 1956, 8462; R-hat 1·00, no
+  divergences; REML in brackets):**
+  - All matched HRs, k = 54 (reproduces 0·87): 0·88 (0·78–0·99) [0·88].
+  - Cohort-primary only, k = 49 (4 RCTs, 40 adjusted): 0·90 (0·79–1·01)
+    [0·90, 0·80–1·01]; P(HR < 1) 0·97.
+  - Cohort-primary, rule-excluded, k = 35: 0·84 (0·73–0·96) [0·84].
+  - Cohort-primary, rule-passing, k = 11: 1·01 (0·70–1·42) [1·00].
+- **Reading (assistant):** restricting to cohort-primary studies moves the
+  pooled HR from 0·88 to 0·90 and the upper bound to just above 1, mainly by
+  dropping Abedin 2025. The studies the rule excluded do not point to a
+  weaker survival association than the pooled ones. Several overlapping
+  post hoc subsets, mostly adjusted observational HRs, directions not
+  checked against the papers.
+
+## 2026-11-13 — Two-stage log-HR analysis of C1 overall survival including rule-excluded studies (exploratory, post hoc; not in the manuscript)
+
+- **Requested by RL** (approach B), after all manuscript estimates and the
+  hazard-ratio subsets above had been seen. Script
+  `scripts/hr-twostage-os-c1.R`; outputs
+  `audit/hr_twostage_os_c1_{results,inputs}_2026-11-13.csv`. Construction and
+  choices are in the script header: per study, reported HR (C1-matched;
+  adjusted preferred) > Kaplan–Meier mortality with CIs in both arms
+  (complementary log-log contrast, SEs from the transformed CIs) > observed
+  counts (same contrast, delta-method SE); designated cohort-primary
+  publication preferred. The survival percentage field was read as mortality
+  (132 of 135 rows with both a count and a percentage agree).
+- **Coverage:** 114 C1 studies with paired survival records; 97 have a usable
+  estimate, 76 after cohort deduplication (51 reported HR, 19 KM with CI,
+  6 counts; 3 represented by a non-designated publication). 28 of the 29
+  count-pooled studies and 48 rule-excluded studies are included; 7 trials.
+  17 paired studies have no usable estimate.
+- **Results (Bayesian normal–normal, priors of hr-exploratory-os-nrm.R, seed
+  5583 → per-set seeds; R-hat 1·00, no divergences; REML in brackets):**
+  - Main, k = 76: HR 0·87 (0·78–0·96) [0·87, 0·78–0·96]; τ 0·34; prediction
+    interval 0·44–1·70; I² 79%.
+  - Designated cohort-primary only, k = 73: 0·85 (0·77–0·94).
+  - Excluding KM estimates with mortality > 60% in an arm, k = 74: 0·87
+    (0·79–0·96).
+  - Unadjusted only (KM with CI > counts; no reported HRs), k = 58: 0·84
+    (0·75–0·94).
+  - Randomised trials, k = 7: 0·82 (0·64–1·07) [0·82, 0·69–0·98; I² 0%].
+- **Reading (assistant):** with 2·6 times as many studies the association
+  persists and is smaller than the count-based OR 0·73 (0·58–0·89). The OR and
+  HR are different estimands (at ~35% mortality an OR of 0·73 corresponds to
+  an HR of roughly 0·78), so part of the gap is scale. Mixes adjusted and
+  unadjusted contrasts, different horizons, assumes proportional hazards;
+  directions and CI methods not checked against the papers.
+
+### Same construction for C1 CMV reactivation (2026-11-13; exploratory, post hoc; not in the manuscript)
+
+- `scripts/hr-twostage-os-c1.R` now takes outcome settings (`ts_*` variables;
+  defaults reproduce the survival results above exactly, checked with
+  `all.equal`). CMV run: any reactivation, target day +100, seed 3391,
+  Goldsmith 2021 (study 4) restricted to SibCy vs SibCNI as RL asked (its
+  HaploCy arm is also flagged C1-eligible, so the largest-pair rule would
+  otherwise have used it). Outputs `audit/hr_twostage_cmv_c1_*_2026-11-13.csv`.
+  For a cumulative-incidence outcome the contrast is a ratio of cumulative
+  (subdistribution) hazards; the 3 reported HRs may be cause-specific.
+- **Coverage:** 44 C1 studies with paired CMV records; 36 after
+  deduplication (24 counts, 9 KM/cumulative incidence with CI, 3 reported
+  HR; 4 trials); all 21 count-pooled studies included.
+- **Goldsmith 2021:** day +100, 36% (30–42) vs 21% (18–24): HR 1·89
+  (1·45–2·47).
+- **Results (R-hat 1·00, no divergences; REML in brackets):**
+  - Main, k = 36: 1·14 (0·93–1·39) [1·14, 0·94–1·38]; τ 0·49; PI 0·40–3·19.
+  - Without Goldsmith, k = 35: 1·11 (0·91–1·36).
+  - Same 21 studies as the count model: 1·21 (0·91–1·61); count-based OR
+    1·20 (0·87–1·65).
+  - Cohort-primary only, k = 34: 1·13 (0·92–1·38). Unadjusted only, k = 34:
+    1·14 (0·92–1·39). Excluding arms with incidence > 60%, k = 33: 1·22
+    (0·99–1·50). Trials, k = 4: 1·15 (0·60–2·25).
+- Seeds 8274 and 6120 for the two interactive refits (without Goldsmith;
+  same 21 studies), which used the script's `fit_one`.
+
+## 2026-11-13 — Two-stage survival HR added to appendix S9; HR wording changed in three places; RoBMA on the two-stage HRs
+
+- **Decision (RL), after seeing the two-stage results and the drafts:**
+  - Appendix S9: new post hoc subsection "Two-stage hazard-ratio analysis
+    including studies without observed counts" (all studies, cohort-primary,
+    unadjusted only, trials only). Supplementary file
+    `data/models/hr_twostage_os_c1_inputs.csv` (copy of the audit output; 76
+    study-level rows, no patient-level data).
+  - Limitation "Second": cites 0·87 (0·78–0·96), 76 studies, 48 excluded by
+    the rule.
+  - Research in context and Conclusion: "not sustained / did not persist
+    when hazard ratios were pooled" replaced by "smaller when hazard ratios
+    were pooled … close to null after publication-bias adjustment"; Research
+    in context now quotes 0·87 (0·78–0·96) instead of the 14-study 0·88
+    (0·66–1·14). Reason: the 76-study interval excludes 1, so the old wording
+    no longer held. "A survival benefit has not been demonstrated" kept.
+  - Cuts: Discussion CMV indirect-comparison clause (meta-regression kept);
+    Results "which were mostly multivariable-adjusted" and "direction of
+    effect".
+- **Render (Quarto 1.9.35):** exit 0, no warnings; Summary 299, body 3490.
+  S14 rebuilt; converged on the second pass (article 34 pages, appendix 108).
+- **RoBMA on the 76 two-stage log HRs (exploratory; not in the manuscript):**
+  RoBMA 4.1.1, default ensemble, log HRs passed with `measure = "OR"` (same
+  call and prior scaling as `scripts/refit-robma-setb.R`), seed 7062, run
+  interactively. Fit `_fits_rs/robma/robma_twostage_os_c1.rds`; summary
+  `audit/robma_twostage_os_c1_2026-11-13.csv`.
+  - Model-averaged HR 1·00 (0·97–1·13); inclusion BF for effect 0·11 (about
+    9 to 1 against an effect), for heterogeneity about 15 000, for
+    publication bias 267 (posterior probability 0·996). Max R-hat 1·02,
+    min ESS 1650.
+  - `summary(type = ...)` is ignored by RoBMA 4.1.1 (warning), so the
+    estimate is the package default (model-averaged), as presumably for the
+    primary fits.
+  - Reading (assistant): the bias adjustment removes the two-stage
+    association as it did the primary one (OR 0·97, 0·71–1·16). The
+    selection models are driven by large, precise registry HRs near 1
+    against smaller studies with larger effects; small-study effects have
+    several causes besides publication bias.
+
+### RoBMA summary basis checked; S9 caption updated (2026-11-13)
+
+- **Decision (RL):** the S9 two-stage table caption now gives the RoBMA result
+  (model-averaged HR 1·00, 0·97–1·13; BF~bias~ 267) in place of "No
+  publication-bias adjustment was applied". Render exit 0, no warnings, word
+  counts unchanged (299, 3490); S14 already current (34 and 108 pages).
+- **Summary basis (assistant check):** both are model-averaged.
+  - Primary fits (`_fits_rs/robma_adj/`, RoBMA 4.0.0,
+    `scripts/refit-robma-adjudicated.R`): `summary(fit, type = "ensemble")$estimates`,
+    exp of the posterior mean of mu and its 2·5%/97·5% quantiles, stored in
+    `robma_adj_summary.csv` (C1 OS 0·974, 0·711–1·16; BF bias 10·4) and
+    labelled "model-averaged" in S10.
+  - Two-stage fit (4.1.1): `summary.brma()` ignores `type` and has
+    `conditional = FALSE` by default, so `$estimates` is model-averaged; same
+    extraction code. Conditional on an effect it would be 1·05 (0·87–1·31).
+  - Not verifiable directly: the 4.0.0 fits cannot be summarised under
+    4.1.1/BayesTools 0.4.0 ("does not contain parameter-map metadata"), so
+    equivalence of the two versions' default ensembles (4.1.1 default
+    `model_type = "PSMA"`, matching the S10 description) is inferred, not
+    shown. Refitting the primary C1 OS under 4.1.1 would settle it.
+  - The appendix software table (S15) still lists RoBMA 4.0.0 only; the C1
+    RRM row (2026-11-10) and this fit used 4.1.1.
