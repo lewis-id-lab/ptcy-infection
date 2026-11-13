@@ -1,0 +1,77 @@
+study_id,first_author,pub_year,study_design,cohort_id,designated_primary,source,timepoint,adjusted,yi,sei,pair_n,km_high_mortality,hr
+35,Arslan,2024,registry,1016,TRUE,reported HR,D+365_1yr,TRUE,0.239,0.074,7537,FALSE,1.27
+308,Penack O,2025,registry,1122,TRUE,reported HR,D+730_2yr,TRUE,-0.0101,0.0793,5209,FALSE,0.99
+170,Harada K,2025,registry,1064,TRUE,reported HR,D+730_2yr,TRUE,-0.0488,0.0558,4327,FALSE,0.952
+273,Nagayama T,2025,registry,1108,TRUE,reported HR,D+730_2yr,TRUE,-0.1863,0.0796,3126,FALSE,0.83
+187,Jo T,2024,registry,1070,TRUE,reported HR,D+365_1yr,TRUE,-0.0943,0.1211,1999,FALSE,0.91
+318,Raj K,2022,registry,1125,TRUE,reported HR,D+730_2yr,TRUE,0.6575,0.2254,1829,FALSE,1.93
+300,Orti G,2023,registry,1116,TRUE,reported HR,D+365_1yr,TRUE,0.2107,0.2189,1207,FALSE,1.235
+399,Yanada M,2026,registry,1157,TRUE,reported HR,D+730_2yr,TRUE,-0.077,0.1401,1089,FALSE,0.926
+296,Nishikubo M,2024,retrospective_cohort,1113,TRUE,reported HR,D+730_2yr,TRUE,-0.1165,0.1303,857,FALSE,0.89
+263,Moriguchi,2024,retrospective_cohort,1103,TRUE,reported HR,D+730_2yr,TRUE,0.1863,0.1445,700,FALSE,1.205
+196,Kanate AS,2016,registry,1073,TRUE,reported HR,D+365_1yr,TRUE,0.1863,0.1486,676,FALSE,1.205
+120,Dreger,2019,retrospective_cohort,1046,TRUE,reported HR,D+365_1yr,TRUE,0.1054,0.1325,657,FALSE,1.111
+289,Nakaya Y,2024,retrospective_cohort,1109,TRUE,reported HR,D+365_1yr,TRUE,-0.0198,0.1645,601,FALSE,0.98
+19,Ahmed S,2019,registry,1011,TRUE,reported HR,D+365_1yr,TRUE,0.0677,0.1549,596,FALSE,1.07
+238,Maurer K,2023,retrospective_cohort,1087,TRUE,reported HR,D+730_2yr,TRUE,-0.462,0.2338,570,FALSE,0.63
+326,Ruggeri A,2024,registry,1128,TRUE,reported HR,D+730_2yr,TRUE,0.3293,0.2581,516,FALSE,1.39
+52,Baron F,2024,registry,1024,TRUE,reported HR,D+730_2yr,TRUE,-0.5068,0.2192,479,FALSE,0.602
+419,El Jurdi N,2023,prospective_cohort,1164,TRUE,reported HR,D+730_2yr,TRUE,-0.7133,0.262,469,FALSE,0.49
+352,Seber A,2025,retrospective_cohort,1139,TRUE,reported HR,D+730_2yr,TRUE,0.207,0.2468,454,FALSE,1.23
+271,Mushtaq MU,2024,retrospective_cohort,1106,TRUE,reported HR,D+365_1yr,TRUE,0.1625,0.1642,452,FALSE,1.176
+262,Montoro,2024,registry,1102,TRUE,reported HR,D+730_2yr,TRUE,-0.5621,0.1768,446,FALSE,0.57
+2,Bolanos-Meade J,2023,RCT,1002,TRUE,Kaplan-Meier with CI,D+365_1yr,FALSE,-0.2202,0.1923,420,FALSE,0.802
+245,Mehta RS,2023,registry,1092,TRUE,reported HR,D+365_1yr,TRUE,-0.571,0.2165,419,FALSE,0.565
+244,Mehta RS,2022,retrospective_cohort,1091,TRUE,reported HR,D+730_2yr,TRUE,-0.2231,0.2011,412,FALSE,0.8
+336,Salas,2024,retrospective_cohort,1133,TRUE,reported HR,D+365_1yr,TRUE,0.1823,0.2558,404,FALSE,1.2
+140,Fuchs EJ,2021,RCT,1052,TRUE,Kaplan-Meier with CI,D+730_2yr,FALSE,-0.3231,0.1608,368,FALSE,0.724
+396,Xu ZL,2025,retrospective_cohort,1155,TRUE,Kaplan-Meier with CI,end_of_followup,FALSE,0.9042,0.2416,352,FALSE,2.47
+9,Salas,2022,retrospective_cohort,1003,TRUE,Kaplan-Meier with CI,D+730_2yr,FALSE,-0.1473,0.2001,330,FALSE,0.863
+337,Salas MQ,2024,retrospective_cohort,1134,TRUE,reported HR,D+365_1yr,FALSE,-0.1985,0.2209,317,FALSE,0.82
+72,Bolanos-Meade J,2019,RCT,1030,TRUE,reported HR,D+365_1yr,TRUE,-0.0202,0.1952,316,FALSE,0.98
+111,Desai N,2025,retrospective_cohort,1044,TRUE,reported HR,D+730_2yr,TRUE,-0.6931,0.2803,301,FALSE,0.5
+395,Wu L,2025,retrospective_cohort,1154,TRUE,Kaplan-Meier with CI,D+730_2yr,FALSE,-0.2852,0.3329,297,FALSE,0.752
+374,Tarella C,2025,retrospective_cohort,1147,TRUE,reported HR,D+365_1yr,TRUE,-0.5108,0.2364,285,FALSE,0.6
+410,Pirogova OV,2016,prospective_cohort,1161,TRUE,reported HR,D+730_2yr,TRUE,-0.8916,0.2151,270,FALSE,0.41
+301,Otoukesh S,2024,retrospective_cohort,1117,TRUE,reported HR,other,FALSE,0.4762,0.2428,269,FALSE,1.61
+390,Wang Y,2019,prospective_cohort,1153,TRUE,reported HR,D+730_2yr,TRUE,-0.755,0.3888,239,FALSE,0.47
+260,Molina A,2026,retrospective_cohort,1100,TRUE,observed counts,D+365_1yr,FALSE,-1.3041,0.4643,237,FALSE,0.271
+226,Luznik L,2022,RCT,1084,TRUE,reported HR,D+730_2yr,FALSE,0.0198,0.2687,223,FALSE,1.02
+371,Tang F,2020,retrospective_cohort,1146,TRUE,reported HR,other,TRUE,0.619,0.3052,220,FALSE,1.857
+407,Yoshimitsu M,2025,registry,1160,TRUE,reported HR,D+730_2yr,TRUE,0.1133,0.2092,212,FALSE,1.12
+7,Moiseev IS,2016,prospective_cohort,1007,TRUE,reported HR,D+730_2yr,TRUE,-0.844,0.2527,211,FALSE,0.43
+302,Pagliardini,2019,retrospective_cohort,1118,TRUE,reported HR,D+730_2yr,TRUE,-0.5108,0.2877,209,FALSE,0.6
+49,Barkhordar M,2021,retrospective_cohort,1023,TRUE,reported HR,D+365_1yr,TRUE,0.2107,0.2387,209,FALSE,1.235
+178,Huntley D,2020,retrospective_cohort,1065,TRUE,observed counts,D+365_1yr,FALSE,0.1936,0.2941,194,FALSE,1.214
+258,Moiseev IS,2017,retrospective_cohort,1099,TRUE,reported HR,D+730_2yr,TRUE,-0.7154,0.3206,183,FALSE,0.489
+357,Sharaf El-Deen MO,2024,prospective_cohort,1141,TRUE,reported HR,D+365_1yr,TRUE,-0.1744,0.3643,179,FALSE,0.84
+6,Meyer T,2025,retrospective_cohort,1005,TRUE,Kaplan-Meier with CI,D+365_1yr,FALSE,0.2929,0.2877,165,FALSE,1.34
+144,Gao M,2025,retrospective_cohort,1054,TRUE,reported HR,D+730_2yr,FALSE,0.174,0.5691,156,FALSE,1.19
+380,Ueda Oshima M,2025,RCT,1150,TRUE,reported HR,D+365_1yr,FALSE,0.0488,0.4452,145,FALSE,1.05
+105,Curtis DJ,2025,RCT,1040,TRUE,reported HR,D+365_1yr,FALSE,-0.5276,0.3602,134,FALSE,0.59
+304,Pasic I,2020,retrospective_cohort,1119,TRUE,reported HR,D+730_2yr,FALSE,-0.5621,0.2493,133,FALSE,0.57
+216,Li Y,2022,retrospective_cohort,1081,TRUE,Kaplan-Meier with CI,D+730_2yr,FALSE,-1.2313,0.7749,130,FALSE,0.292
+261,Montoro J,2021,retrospective_cohort,1101,TRUE,reported HR,D+730_2yr,TRUE,0.9555,0.3537,129,FALSE,2.6
+184,Jia Y,2025,retrospective_cohort,1068,TRUE,observed counts,D+730_2yr,FALSE,-0.159,0.4132,127,FALSE,0.853
+457,Wang Y,2025,retrospective_cohort,1179,TRUE,Kaplan-Meier with CI,D+730_2yr,FALSE,-2.0002,0.9838,119,FALSE,0.135
+180,Iqbal M,2023,retrospective_cohort,1066,TRUE,Kaplan-Meier with CI,D+365_1yr,FALSE,-0.5383,0.7795,116,FALSE,0.584
+242,Mehta RS,2016,retrospective_cohort,1089,TRUE,reported HR,D+730_2yr,FALSE,-0.2231,0.2627,113,FALSE,0.8
+45,Baker M,2016,retrospective_cohort,1021,TRUE,observed counts,end_of_followup,FALSE,-0.0941,0.2504,113,FALSE,0.91
+110,Desai N,2025,retrospective_cohort,1043,TRUE,reported HR,D+730_2yr,TRUE,-0.7133,0.3837,97,FALSE,0.49
+248,Metafuni E,2018,retrospective_cohort,1093,TRUE,Kaplan-Meier with CI,D+730_2yr,FALSE,-0.705,0.4101,97,FALSE,0.494
+71,Blaise D,2016,retrospective_cohort,1029,TRUE,Kaplan-Meier with CI,D+730_2yr,FALSE,-0.6354,0.4097,94,FALSE,0.53
+55,Bashey ZA,2018,retrospective_cohort,1025,TRUE,reported HR,D+730_2yr,TRUE,-0.0943,0.3285,90,FALSE,0.91
+332,Sahebi,2019,registry,1131,TRUE,Kaplan-Meier with CI,D+730_2yr,FALSE,-0.8108,0.515,90,TRUE,0.444
+320,Redondo S,2023,retrospective_cohort,1126,TRUE,Kaplan-Meier with CI,D+365_1yr,FALSE,-0.5239,0.9452,87,FALSE,0.592
+88,Cao J,2022,retrospective_cohort,1034,TRUE,Kaplan-Meier with CI,D+730_2yr,FALSE,-0.2898,0.3918,80,FALSE,0.748
+65,Berger M,2022,retrospective_cohort,1026,TRUE,reported HR,D+730_2yr,TRUE,-1.0729,0.2895,79,FALSE,0.342
+20,Ahn J,2025,retrospective_cohort,1012,TRUE,reported HR,D+365_1yr,TRUE,-0.7765,0.7241,78,FALSE,0.46
+133,Esquirol A,2020,retrospective_cohort,1048,TRUE,reported HR,D+365_1yr,TRUE,-1.0498,0.5207,77,FALSE,0.35
+119,Doppelhammer,2019,retrospective_cohort,1045,TRUE,observed counts,D+730_2yr,FALSE,0.2903,0.3914,68,FALSE,1.337
+166,Guo W,2026,retrospective_cohort,1061,TRUE,Kaplan-Meier with CI,D+730_2yr,FALSE,-0.3379,0.5977,61,FALSE,0.713
+375,Tischer J,2015,retrospective_cohort,1148,TRUE,Kaplan-Meier with CI,D+365_1yr,FALSE,-0.5792,0.3996,55,TRUE,0.56
+432,Koura D,2025,RCT,1171,TRUE,observed counts,D+365_1yr,FALSE,-0.9844,0.9138,40,FALSE,0.374
+167,Haebe S,2023,retrospective_cohort,1062,TRUE,Kaplan-Meier with CI,end_of_followup,FALSE,0,0.5778,32,FALSE,1
+246,Mehta RS,2026,registry,1008,FALSE,Kaplan-Meier with CI,end_of_followup,FALSE,-0.0852,0.0416,9566,FALSE,0.918
+382,Ustun C,2024,registry,1001,FALSE,reported HR,D+365_1yr,TRUE,0.5188,0.133,2008,FALSE,1.68
+208,Kwon M,2017,retrospective_cohort,1020,FALSE,Kaplan-Meier with CI,D+730_2yr,FALSE,-0.1249,0.3691,87,FALSE,0.883

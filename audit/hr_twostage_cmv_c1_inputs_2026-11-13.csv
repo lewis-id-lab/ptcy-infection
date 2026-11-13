@@ -1,0 +1,37 @@
+study_id,first_author,pub_year,study_design,cohort_id,designated_primary,source,timepoint,adjusted,yi,sei,pair_n,km_high_mortality,hr
+4,Goldsmith SR,2021,registry,1001,TRUE,Kaplan-Meier with CI,D+100,FALSE,0.6383,0.136,2008,FALSE,1.893
+219,Liu YC,2025,retrospective_cohort,1082,TRUE,observed counts,end_of_followup,FALSE,0.6696,0.1526,580,FALSE,1.954
+5,Khimani F,2021,retrospective_cohort,1004,TRUE,observed counts,end_of_followup,FALSE,1.6139,0.2179,456,FALSE,5.022
+2,Bolanos-Meade J,2023,RCT,1002,TRUE,Kaplan-Meier with CI,D+100,FALSE,0.0288,0.3692,420,FALSE,1.029
+336,Salas,2024,retrospective_cohort,1133,TRUE,observed counts,end_of_followup,FALSE,0.8056,0.1955,403,FALSE,2.238
+379,Ueda Oshima M,2023,retrospective_cohort,1149,TRUE,reported HR,D+100,TRUE,0.4947,0.2372,366,FALSE,1.64
+396,Xu ZL,2025,retrospective_cohort,1155,TRUE,observed counts,D+100,FALSE,-0.1617,0.1544,352,FALSE,0.851
+395,Wu L,2025,retrospective_cohort,1154,TRUE,reported HR,D+730_2yr,TRUE,-0.2357,0.1446,297,FALSE,0.79
+410,Pirogova OV,2016,prospective_cohort,1161,TRUE,observed counts,end_of_followup,FALSE,-0.2188,0.1731,270,FALSE,0.803
+226,Luznik L,2022,RCT,1084,TRUE,Kaplan-Meier with CI,D+180,FALSE,-0.0447,0.4418,223,FALSE,0.956
+7,Moiseev IS,2016,prospective_cohort,1007,TRUE,observed counts,end_of_followup,FALSE,-0.3781,0.1993,211,FALSE,0.685
+178,Huntley D,2020,retrospective_cohort,1065,TRUE,Kaplan-Meier with CI,D+365_1yr,FALSE,-0.2707,0.1942,194,TRUE,0.763
+144,Gao M,2025,retrospective_cohort,1054,TRUE,observed counts,end_of_followup,FALSE,-0.0798,0.3697,156,FALSE,0.923
+359,Shouman MT,2023,retrospective_cohort,1143,TRUE,observed counts,end_of_followup,FALSE,0.6512,0.3951,150,FALSE,1.918
+380,Ueda Oshima M,2025,RCT,1150,TRUE,reported HR,D+100,FALSE,0.4511,0.4345,145,FALSE,1.57
+216,Li Y,2022,retrospective_cohort,1081,TRUE,Kaplan-Meier with CI,D+365_1yr,FALSE,-0.0586,0.2571,130,FALSE,0.943
+261,Montoro J,2021,retrospective_cohort,1101,TRUE,Kaplan-Meier with CI,D+365_1yr,FALSE,-1.0274,0.294,129,TRUE,0.358
+201,Kerbauy MN,2021,retrospective_cohort,1076,TRUE,observed counts,D+180,FALSE,0.2023,0.224,127,FALSE,1.224
+184,Jia Y,2025,retrospective_cohort,1068,TRUE,observed counts,D+365_1yr,FALSE,0.6862,0.4572,127,FALSE,1.986
+180,Iqbal M,2023,retrospective_cohort,1066,TRUE,observed counts,end_of_followup,FALSE,-0.8146,0.577,116,FALSE,0.443
+45,Baker M,2016,retrospective_cohort,1021,TRUE,Kaplan-Meier with CI,D+100,FALSE,-0.0302,0.2929,113,FALSE,0.97
+248,Metafuni E,2018,retrospective_cohort,1093,TRUE,observed counts,other,FALSE,0.1742,0.4447,97,FALSE,1.19
+6,Meyer T,2025,retrospective_cohort,1005,TRUE,observed counts,D+365_1yr,FALSE,-0.1391,0.3216,91,FALSE,0.87
+389,Wang T,2022,retrospective_cohort,1152,TRUE,observed counts,end_of_followup,FALSE,0.0501,0.3378,81,FALSE,1.051
+88,Cao J,2022,retrospective_cohort,1034,TRUE,observed counts,D+180,FALSE,0.2039,0.2801,80,FALSE,1.226
+133,Esquirol A,2020,retrospective_cohort,1048,TRUE,Kaplan-Meier with CI,end_of_followup,FALSE,-0.3835,0.3526,77,TRUE,0.682
+166,Guo W,2026,retrospective_cohort,1061,TRUE,observed counts,D+100,FALSE,0.3157,0.3532,61,FALSE,1.371
+104,Cooper DL,2021,retrospective_cohort,1039,TRUE,observed counts,end_of_followup,FALSE,0.5061,0.4157,48,FALSE,1.659
+119,Doppelhammer,2019,retrospective_cohort,1045,TRUE,observed counts,D+100,FALSE,0.2492,0.4068,44,FALSE,1.283
+207,Kunacheewa C,2020,retrospective_cohort,1078,TRUE,observed counts,end_of_followup,FALSE,0.5087,0.5313,42,FALSE,1.663
+432,Koura D,2025,RCT,1171,TRUE,observed counts,end_of_followup,FALSE,0.1975,0.8669,40,FALSE,1.218
+198,Kara,2021,retrospective_cohort,1075,TRUE,observed counts,end_of_followup,FALSE,-1.01,0.5416,40,FALSE,0.364
+375,Tischer J,2015,retrospective_cohort,1148,TRUE,observed counts,D+180,FALSE,-0.8347,0.5842,34,FALSE,0.434
+167,Haebe S,2023,retrospective_cohort,1062,TRUE,observed counts,end_of_followup,FALSE,0.8511,0.9172,19,FALSE,2.342
+338,Salas,2024,retrospective_cohort,1003,FALSE,Kaplan-Meier with CI,D+180,FALSE,-0.4024,0.2035,272,FALSE,0.669
+208,Kwon M,2017,retrospective_cohort,1020,FALSE,observed counts,D+180,FALSE,1.1062,0.3696,87,FALSE,3.023

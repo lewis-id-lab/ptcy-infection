@@ -1,0 +1,6 @@
+set,k,k_rct,k_reported_hr,k_km,k_counts,k_substitute_publication,hr,hr_lo,hr_hi,p_hr_below_1,pi_lo,pi_hi,tau,reml_hr,reml_lo,reml_hi,reml_i2,rhat_max,divergences,note
+Main: reported HR > KM with CI > counts,76,7,51,19,6,3,0.865,0.78,0.958,0.998,0.437,1.698,0.339,0.865,0.784,0.955,78.56,1,0,NA
+Designated cohort-primary publications only,73,7,50,17,6,0,0.853,0.766,0.942,0.999,0.428,1.668,0.337,0.853,0.771,0.943,74.489,1.001,0,NA
+Excluding KM-derived estimates with mortality > 60% in an arm,74,7,51,17,6,3,0.873,0.787,0.962,0.997,0.448,1.763,0.335,0.873,0.791,0.964,78.857,1,0,NA
+Unadjusted only: KM with CI > counts (no reported HRs),58,6,0,44,14,3,0.844,0.754,0.939,0.999,0.446,1.541,0.295,0.846,0.763,0.938,74.54,1.002,0,NA
+Randomised trials only,7,7,4,2,1,0,0.822,0.635,1.066,0.943,0.487,1.393,0.129,0.82,0.686,0.981,0,1.001,0,NA
