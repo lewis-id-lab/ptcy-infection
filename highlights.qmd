@@ -1,0 +1,9 @@
+---
+title: "Highlights"
+---
+
+- 247 studies (111,214 patients) compared PTCy with CNI- and ATG-based prophylaxis
+- PTCy was associated with less acute and chronic GVHD than CNI-based prophylaxis
+- The survival association weakened in hazard-ratio and bias-adjusted analyses
+- CMV reactivation was numerically more frequent vs CNI-based prophylaxis, not ATG
+- BK virus hemorrhagic cystitis was more frequent with PTCy against both comparators

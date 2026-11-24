@@ -2,7 +2,7 @@ project:
   type: manuscript
   output-dir: _manuscript
   # A manuscript project renders only the article and its notebooks, and it can
-  # carry only one pdf format. The appendix and the typeset preview are built by
+  # carry only one pdf format. The appendix is built by
   # this hook instead. See scripts/render-extras.sh.
   post-render:
     - scripts/render-extras.sh
@@ -23,6 +23,7 @@ manuscript:
   resources:
     - data/**
     - figures/**
+    - appendix-figures/**
 
 bibliography: references.bib
 
@@ -32,8 +33,8 @@ format:
     # Make the "Other Formats" links save the file instead of opening Chrome's
     # built-in PDF viewer. See assets/force-download.html.
     include-after-body: assets/force-download.html
-  lancet-haematology-docx: default
-  lancet-haematology-pdf: default
+  tct-docx: default
+  tct-pdf: default
 
 execute:
   echo: false

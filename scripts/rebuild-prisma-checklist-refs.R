@@ -44,19 +44,20 @@ pp <- function(r) if (r[1] == r[2]) sprintf("p. %d", r[1]) else sprintf("pp. %d�
 # a location at the start of a table cell needs "p\." so it is not read as a list
 lead <- function(x) str_replace(x, "^p\\. ", "p\\\\. ")
 
-summary_start <- at("^Summary$")
-summary_end <- filter(art, line_no == at("^Research in context")$line_no - 1)
+summary_start <- at("^Abstract$")
+summary_end <- at("^Keywords:")
 objective_start <- at("We therefore performed a systematic review")
-objective_end <- at("^Methods$")$line_no - 1
+objective_end <- at("^Materials and Methods$")$line_no - 1
 
 methods <- pl("^Search strategy and selection criteria")
 stats <- pl("^Statistical analysis$")
-data_sharing <- pl("^Data sharing$")
+data_sharing <- pl("^Data Availability$")
 limitations <- pl("^Limitations$")
 
 table1 <- pp(pages_of(art_pages, "Comparator arms \\(n=\\d+\\)|CMV R\\+, %"))
 table2 <- pp(pages_of(art_pages, "95% PI\\s+GRADE"))
-fig <- map_int(1:4, \(i) pages_of(art_pages, fixed(sprintf("Figure %d:", i)))[1])
+# The figure pages carry a bare "Figure n" label line (legends are on a separate page)
+fig <- map_int(1:4, \(i) pages_of(art_pages, regex(sprintf("(^|\\n)\\s*\\d*\\s*Figure %d\\s*(\\n|$)", i)))[1])
 figs_2_4 <- pp(c(fig[2], fig[4]))
 
 # Section headings are matched with their titles: "S9. " alone also occurs in
@@ -73,28 +74,28 @@ S <- map_int(headings, \(pat) {
   if (!length(p)) stop("appendix section not found: ", pat)
   p[1]
 })
-s5_range <- pp(c(S[["S5"]], max(which(str_detect(app_pages, "RoB 2 summary for the 14 randomised")))))
+s5_range <- pp(c(S[["S5"]], max(which(str_detect(app_pages, "RoB 2 summary for the 14 randomized")))))
 
 loc <- c(
   "1" = sprintf("p. 1, line %d (title page)", at("^Post-transplant cyclophosphamide as graft")$line_no),
-  "2" = sprintf("p. %d, line %d – p. %d, line %d (Summary)", summary_start$page, summary_start$line_no,
+  "2" = sprintf("p. %d, line %d – p. %d, line %d (Abstract)", summary_start$page, summary_start$line_no,
                 summary_end$page, summary_end$line_no),
-  "3" = sprintf("%s (Introduction); %s (Research in context)", pl("^Introduction$"), pl("^Research in context")),
+  "3" = sprintf("%s (Introduction)", pl("^Introduction$")),
   "4" = sprintf("p. %d, lines %d–%d (\"We therefore performed…\"); appendix p. %d (S13, PROSPERO CRD420261372156)",
                 objective_start$page, objective_start$line_no, objective_end, S[["S13"]]),
-  "5" = sprintf("%s (Methods — Search strategy and selection criteria); appendix p. %d (S2)", methods, S[["S2"]]),
+  "5" = sprintf("%s (Materials and Methods — Search strategy and selection criteria); appendix p. %d (S2)", methods, S[["S2"]]),
   "6" = sprintf("%s; appendix p. %d (S1: EMBASE, PubMed/MEDLINE, SCOPUS, inception–April 2026); p. %d (figure 1)",
                 methods, S[["S1"]], fig[1]),
   "7" = sprintf("appendix p. %d (S1, complete search strings per database)", S[["S1"]]),
-  "8" = sprintf("%s (Methods: two reviewers in Covidence); p. %d (figure 1)", methods, fig[1]),
-  "9" = sprintf("%s (Methods: structured extraction template, AI-assisted extraction with manual verification)", methods),
-  "10" = sprintf("%s (Methods — Outcomes); %s (Table 1); appendix p. %d (S3–S4); extraction database (supplementary data)",
+  "8" = sprintf("%s (Materials and Methods: two reviewers in Covidence); p. %d (figure 1)", methods, fig[1]),
+  "9" = sprintf("%s (Materials and Methods: structured extraction template, AI-assisted extraction with manual verification)", methods),
+  "10" = sprintf("%s (Materials and Methods — Outcomes); %s (Table 1); appendix p. %d (S3–S4); extraction database (supplementary data)",
                  pl("^Outcomes$"), table1, S[["S3"]]),
-  "11" = sprintf("%s (Methods: ROBINS-I, RoB 2, two reviewers); appendix p. %d (S5)", methods, S[["S5"]]),
-  "12" = sprintf("%s (Methods — Statistical analysis, odds ratios at fixed timepoints); appendix p. %d (S9, hazard-ratio sensitivity)",
+  "11" = sprintf("%s (Materials and Methods: ROBINS-I, RoB 2, two reviewers); appendix p. %d (S5)", methods, S[["S5"]]),
+  "12" = sprintf("%s (Materials and Methods — Statistical analysis, odds ratios at fixed timepoints); appendix p. %d (S9, hazard-ratio sensitivity)",
                  stats, S[["S9"]]),
   "13a" = sprintf("%s; appendix p. %d (S12, per-outcome attrition)", methods, S[["S12"]]),
-  "13b" = sprintf("%s; appendix p. %d (S6); analytic code (Data sharing, %s)", stats, S[["S6"]], data_sharing),
+  "13b" = sprintf("%s; appendix p. %d (S6); analytic code (Data Availability, %s)", stats, S[["S6"]], data_sharing),
   "13c" = sprintf("%s (Table 2); %s (Figures 2–4); appendix p. %d (S8)", table2, figs_2_4, S[["S8"]]),
   "13d" = sprintf("%s (Bayesian random-effects binomial-logistic models); appendix p. %d (S6, specification, priors, MCMC)",
                   stats, S[["S6"]]),
@@ -102,7 +103,7 @@ loc <- c(
                   table2, S[["S7"]], S[["S9"]]),
   "13f" = sprintf("appendix p. %d (S9: fixed study intercepts, matched M1/M2 sets, donor-type, RCT-only, serostatus/letermovir, comparator backbone, outcome definitions, τ-prior)", S[["S9"]]),
   "14" = sprintf("appendix p. %d (S10, RoBMA)", S[["S10"]]),
-  "15" = sprintf("%s (Methods: GRADE); appendix p. %d (S11)", stats, S[["S11"]]),
+  "15" = sprintf("%s (Materials and Methods: GRADE); appendix p. %d (S11)", stats, S[["S11"]]),
   "16a" = sprintf("%s (Results — Search results and study characteristics); p. %d (figure 1)",
                   pl("^Search results and study characteristics"), fig[1]),
   "16b" = sprintf("appendix p. %d (S2, full-text exclusions with reasons)", S[["S2"]]),
@@ -116,18 +117,18 @@ loc <- c(
   "20c" = sprintf("appendix p. %d (S9)", S[["S9"]]),
   "20d" = sprintf("appendix p. %d (S10)", S[["S10"]]),
   "21" = sprintf("appendix p. %d (S10)", S[["S10"]]),
-  "22" = sprintf("%s (Certainty of evidence); %s (Table 2, GRADE column); appendix p. %d (S11; all five GRADE domains per outcome, with imprecision assessed against clinically meaningful thresholds, defined at the analysis stage, of OR 0·80 for benefit and 1·25 for harm)",
+  "22" = sprintf("%s (Certainty of evidence); %s (Table 2, GRADE column); appendix p. %d (S11; all five GRADE domains per outcome, with imprecision assessed against clinically meaningful thresholds, defined at the analysis stage, of OR 0.80 for benefit and 1.25 for harm)",
                  pl("^Certainty of evidence$"), table2, S[["S11"]]),
   "23a" = sprintf("%s (Discussion)", pl("^Discussion$")),
   "23b" = sprintf("%s (Limitations)", limitations),
   "23c" = sprintf("%s; appendix p. %d (S12, cohort deduplication and duplicate-entry removal)", limitations, S[["S12"]]),
-  "23d" = sprintf("%s (concluding paragraph of the Discussion)", pl("^In conclusion, PTCy-based")),
-  "24a" = sprintf("%s (Methods); appendix p. %d (S13, PROSPERO CRD420261372156)", methods, S[["S13"]]),
+  "23d" = sprintf("%s (Conclusions)", pl("^Conclusions$")),
+  "24a" = sprintf("%s (Materials and Methods); appendix p. %d (S13, PROSPERO CRD420261372156)", methods, S[["S13"]]),
   "24b" = sprintf("appendix p. %d (S13, all amendments listed)", S[["S13"]]),
-  "24c" = sprintf("PROSPERO CRD420261372156; %s (Data sharing)", data_sharing),
-  "25" = sprintf("%s (Role of the funding source: none)", pl("^Role of the funding source")),
-  "26" = sprintf("%s (Declaration of interests)", pl("^Declaration of interests")),
-  "27" = sprintf("%s (Data sharing: extraction database and analytic datasets on GitHub; manuscript source and notebooks on GitHub Pages); appendix p. %d (S15, software)",
+  "24c" = sprintf("PROSPERO CRD420261372156; %s (Data Availability)", data_sharing),
+  "25" = sprintf("%s (Financial Disclosure Statement: no funding source)", pl("^Financial Disclosure Statement")),
+  "26" = sprintf("%s (Financial Disclosure Statement); %s (Acknowledgments: conflict of interest statement)", pl("^Financial Disclosure Statement"), pl("^Acknowledgments$")),
+  "27" = sprintf("%s (Data Availability: extraction database and analytic datasets on GitHub; manuscript source and notebooks on GitHub Pages); appendix p. %d (S15, software)",
                  data_sharing, S[["S15"]])
 )
 loc <- map_chr(loc, lead)

@@ -1,0 +1,76 @@
+title: Transplantation and Cellular Therapy
+author: Russell E. Lewis
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+
+    # ── settings shared by every output of this format ──────────────────
+    # Guide for Authors (TCT, ASTCT/Elsevier): AMA references with superscript
+    # numbers placed outside periods and commas; double-spaced; standard paper
+    # with 1-inch margins; structured abstract of 250-500 words.
+    common:
+      csl: ama-tct.csl
+      filters:
+        - tct.lua
+      lang: en-US
+      number-sections: false
+      link-citations: true
+      citations-hover: false
+      reference-location: document
+      citeproc: true
+      # superscript citation numbers go after a following period or comma
+      notes-after-punctuation: true
+      # checked at render time by tct.lua
+      tct:
+        abstract-min-words: 250
+        abstract-max-words: 500
+        highlight-max-chars: 85
+
+    # ── submission Word file ────────────────────────────────────────────
+    # Reference document: Times New Roman 12 pt, double spaced, US Letter,
+    # 1-inch margins, continuous line numbers, page numbers in the footer,
+    # single-spaced table cells.
+    docx:
+      reference-doc: tct-reference.docx
+      filters:
+        - tct.lua
+        - at: post-render
+          path: tct-titleblock.lua
+      fig-align: left
+      default-image-extension: png
+
+    # ── reviewer PDF ────────────────────────────────────────────────────
+    pdf:
+      documentclass: article
+      filters:
+        - tct.lua
+        - at: post-render
+          path: tct-titleblock.lua
+      papersize: letter
+      geometry:
+        - margin=1in
+      fontsize: 12pt
+      linestretch: 2
+      indent: false
+      colorlinks: true
+      include-in-header:
+        text: |
+          \usepackage{newtxtext}  % Times text; math stays Computer Modern (newtxmath clashes with amssymb)
+          \usepackage{lineno}
+          \linenumbers
+          \usepackage[document]{ragged2e}
+          % Typed Unicode tau, <= and >= in running text: take them from the math font.
+          \catcode`\τ=\active \protected\def τ{\ensuremath{\tau}}
+          \catcode`\≤=\active \protected\def ≤{\ensuremath{\leq}}
+          \catcode`\≥=\active \protected\def ≥{\ensuremath{\geq}}
+          % Compact setting for wide tables; used around table 2 in index.qmd.
+          \newcommand{\widetable}{\footnotesize\setstretch{1}\setlength{\tabcolsep}{3pt}}
+      default-image-extension: pdf
+
+    # ── screen preview ──────────────────────────────────────────────────
+    html:
+      theme: cosmo
+      toc: true
+      toc-depth: 2
+      default-image-extension: svg

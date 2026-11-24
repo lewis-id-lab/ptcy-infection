@@ -6,7 +6,7 @@
 # pooled row from table 2; S8j is the four-panel comparison-3 summary with
 # REML pooled rows, matching its previous role.
 #
-# Overwrites figures/FigureS8{a-j}_*.{png,pdf,svg}.
+# Overwrites appendix-figures/FigureS8{a-j}_*.{png,pdf,svg}.
 
 suppressPackageStartupMessages({
   library(dplyr)
@@ -47,7 +47,7 @@ panels <- tribble(
   "FigureS8e_cGVHD_forest",      "C1_cGVHD_moderate_severe_NIH.csv",               "c1_cgvhd_ms",   "Chronic GVHD mod–severe — PTCy vs CNI + MTX/MMF",               6.5,
   "FigureS8f_BSI_forest",        "C1_BSI_any_pathogen.csv",                        "c1_bsi",        "Bloodstream infection, any pathogen — PTCy vs CNI + MTX/MMF",   3.5,
   "FigureS8g_IFI_forest",        "C1_IFI_any_EORTC_MSG_proven_probable_combined.csv", "c1_ifi_any",  "Invasive fungal infection, any — PTCy vs CNI + MTX/MMF",        3.5,
-  "FigureS8h_BK_forest",         "C1_BK_virus_reactivation.csv",                   "c1_bk",         "BK virus–associated haemorrhagic cystitis — PTCy vs CNI + MTX/MMF", 4.5,
+  "FigureS8h_BK_forest",         "C1_BK_virus_reactivation.csv",                   "c1_bk",         "BK virus–associated hemorrhagic cystitis — PTCy vs CNI + MTX/MMF", 4.5,
   "FigureS8i_IRM_forest",        "C1_infection_related_mortality_IRM_any_cause_infectious.csv", "c1_irm", "Infection-related mortality — PTCy vs CNI + MTX/MMF",       5
 )
 for (i in seq_len(nrow(panels))) {

@@ -44,13 +44,14 @@ glimpse(t2)
 
 ## Formatting the published table
 
-Odds ratios are set to two decimal places with the middle dot the journal uses for
-decimals, and totals are set with a thin space as the thousands separator.
+Odds ratios are set to two decimal places with a full stop as the decimal point
+(the Lancet version used the middle dot), and totals are set with a thin space as
+the thousands separator.
 
 ```{r}
 #| label: helpers
 
-middot  <- function(x, d = 2) str_replace(sprintf("%.*f", d, x), fixed("."), "·")
+middot  <- function(x, d = 2) sprintf("%.*f", d, x)
 or_cri  <- function(or, lo, hi) sprintf("%s (%s–%s)", middot(or), middot(lo), middot(hi))
 thin_n  <- function(n) format(n, big.mark = " ", trim = TRUE)
 

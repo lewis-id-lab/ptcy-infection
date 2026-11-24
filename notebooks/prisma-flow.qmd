@@ -111,30 +111,29 @@ plot <- PRISMA_flowdiagram(
   meta_analysis     = TRUE,    # show the 117 studies carried into the models
   side_boxes        = TRUE,
   fontsize          = 10,
-  font              = "Helvetica"
+  font              = "Arial"
 )
 ```
 
 ### Journal colours
 
-The package writes its colour arguments straight into the Graphviz source
-unquoted, so a hex value such as `#B20D35` is a DOT syntax error and only X11
-colour names get through. The diagram is therefore built with the defaults and
-recoloured afterwards, by rewriting those names in the DOT with quoted hex.
+Transplantation and Cellular Therapy charges for color in print, so the diagram is
+set in grayscale. The package writes its color arguments straight into the Graphviz
+source unquoted, so a hex value is a DOT syntax error and only X11 color names get
+through. The diagram is therefore built with the defaults and recolored afterwards,
+by rewriting those names in the DOT with quoted hex.
 
 ```{r}
 #| label: recolour
-lancet_red   <- "#B20D35"   # sampled from the journal's own PDF
-lancet_tint  <- "#F7DFDF"
-lancet_dark  <- "#2D2D2D"
+bar_dark  <- "#404040"   # title bar
+rail_tint <- "#E6E6E6"   # Identification / Screening / Included rails
 
 dot <- plot$x$diagram
 
-# The title bar and the Identification / Screening / Included rails.
-dot <- gsub("Goldenrod1",      sprintf('"%s"', lancet_red),  dot, fixed = TRUE)
-dot <- gsub("LightSteelBlue2", sprintf('"%s"', lancet_tint), dot, fixed = TRUE)
+dot <- gsub("Goldenrod1",      sprintf('"%s"', bar_dark),  dot, fixed = TRUE)
+dot <- gsub("LightSteelBlue2", sprintf('"%s"', rail_tint), dot, fixed = TRUE)
 
-# White text on the crimson bar. This has to go on the title node itself, not on
+# White text on the dark bar. This has to go on the title node itself, not on
 # the `node [...]` defaults block above it -- a fontcolor set there cascades to
 # every node declared afterwards and turns the whole diagram's text white.
 # sub() rewrites only the first `style = "rounded,filled"` node, which is the
@@ -145,9 +144,7 @@ dot <- sub('style = "rounded,filled"',
 
 stopifnot(!grepl("Goldenrod1|LightSteelBlue2", dot))
 
-# Lancet thousands separators: the package writes "4,145"; the journal uses a
-# thin space ("4 145"). Rewrite comma groupings inside the DOT labels.
-dot <- gsub("([0-9]),([0-9]{3})(?![0-9])", "\\1 \\2", dot, perl = TRUE)
+# Thousands separators: the package writes "4,145", which is AMA style; keep it.
 
 plot$x$diagram <- dot
 ```
@@ -164,6 +161,14 @@ for (ft in c("PNG", "PDF", "SVG")) {
     overwrite = TRUE
   )
 }
+# 600-dpi TIFF for the journal, rasterized from the SVG at 7.5 in (two-column) width.
+svg <- here("figures", "Figure1_PRISMA_flow_diagram.svg")
+png600 <- tempfile(fileext = ".png")
+rsvg::rsvg_png(svg, png600, width = 7.5 * 600)
+system2("sips", c("-s", "format", "tiff", "-s", "formatOptions", "lzw",
+                  "-s", "dpiWidth", "600", "-s", "dpiHeight", "600", png600,
+                  "--out", here("figures", "Figure1_PRISMA_flow_diagram.tiff")),
+        stdout = FALSE)
 ```
 
 ```{r}

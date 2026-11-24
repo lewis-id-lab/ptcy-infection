@@ -19,7 +19,7 @@ suppressPackageStartupMessages({
 analysis_dir <- path.expand("~/ptcy_metaanalys")
 sb_dir <- file.path(analysis_dir, "03_models/set_b")
 p9_dir <- file.path(analysis_dir, "03_models/post_block9")
-fig_dir <- path.expand("~/ptcy-infection/figures")
+fig_dir <- path.expand("~/ptcy-infection/appendix-figures")
 
 # forest_study(), theme_jama() and the JAMA palette live in the website's shared
 # setup; it resolves paths relative to 05_website, so source it from there.

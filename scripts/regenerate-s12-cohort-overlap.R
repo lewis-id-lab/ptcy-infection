@@ -3,7 +3,7 @@
 # data/cohorts.csv. The original generator was not kept, so the layout is
 # matched by eye to the committed figure (8 x 7 in; log x axis; bars labelled
 # with their counts).
-# Writes figures/FigureS12_cohort_overlap_map.{png,pdf,svg}. Set `s12_out_dir`
+# Writes appendix-figures/FigureS12_cohort_overlap_map.{png,pdf,svg}. Set `s12_out_dir`
 # before sourcing to write somewhere else (for a preview).
 # Run from project root: source("scripts/regenerate-s12-cohort-overlap.R")
 
@@ -48,7 +48,7 @@ fig_s12 <- ggplot(overlap, aes(x = publications, y = cohort_label)) +
     panel.grid.major.x = element_line(colour = "#EBEBEB", linewidth = 0.4)
   )
 
-out_dir <- if (exists("s12_out_dir")) s12_out_dir else "figures"
+out_dir <- if (exists("s12_out_dir")) s12_out_dir else "appendix-figures"
 for (dev in c("png", "pdf", "svg")) {
   ggsave(file.path(out_dir, paste0("FigureS12_cohort_overlap_map.", dev)), fig_s12,
          width = 8, height = 7, dpi = 300, bg = "white",

@@ -5,11 +5,7 @@
 #     and notebooks, and ignores `project: render:`. The appendix is a separate
 #     document by design: the journal wants it as its own file.
 #
-#   * the typeset preview -- a project can carry only one pdf format, and that
-#     slot belongs to the plain submission PDF. Rendering a second pdf format in
-#     the same pass makes Quarto try to move both to _manuscript/index.pdf.
-#
-# Outputs are moved into the project output directory so everything sits together.
+#   # Outputs are moved into the project output directory so everything sits together.
 set -euo pipefail
 
 # The hook fires again when we call `quarto render` below; bail out on re-entry.
@@ -31,13 +27,13 @@ mkdir -p "$OUT"
 
 # appendix.qmd is registered as a manuscript notebook so it appears in the
 # site's Notebooks section, and Quarto renders registered notebooks only to
-# their HTML preview -- a direct `--to lancet-haematology-*` render silently
+# their HTML preview -- a direct `--to tct-*` render silently
 # produces nothing. Render the submission copies from a staging copy outside
 # the project instead.
 STAGE="$(mktemp -d)"
 trap 'rm -rf "$STAGE"' EXIT
 cp appendix.qmd references.bib appendix-s4-references.md "$STAGE"/
-cp -r _extensions figures "$STAGE"/
+cp -r _extensions figures appendix-figures "$STAGE"/
 # files pulled in with {{< include >}} (e.g. appendix-s4-references.md)
 shopt -s nullglob
 includes=(appendix-*.md)
@@ -45,13 +41,18 @@ shopt -u nullglob
 (( ${#includes[@]} )) && cp "${includes[@]}" "$STAGE"/
 
 for fmt in docx pdf; do
-  echo "[extras] rendering appendix.qmd -> lancet-haematology-$fmt"
-  (cd "$STAGE" && quarto render appendix.qmd --to "lancet-haematology-$fmt" --quiet)
+  echo "[extras] rendering appendix.qmd -> tct-$fmt"
+  (cd "$STAGE" && quarto render appendix.qmd --to "tct-$fmt" --quiet)
   mv -f "$STAGE/appendix.$fmt" "$OUT/appendix.$fmt"
   echo "[extras] wrote $OUT/appendix.$fmt"
 done
 
-# The typeset reading copy. Its own output-file keeps it clear of index.pdf.
-echo "[extras] rendering index.qmd -> lancet-haematology-preview-pdf"
-quarto render index.qmd --to lancet-haematology-preview-pdf --quiet
-echo "[extras] wrote $OUT/index-preview.pdf"
+# Highlights: a separate editable file with "Highlights" in its name (TCT).
+cp highlights.qmd "$STAGE"/
+echo "[extras] rendering highlights.qmd -> tct-docx"
+(cd "$STAGE" && quarto render highlights.qmd --to tct-docx --quiet)
+mv -f "$STAGE/highlights.docx" "$OUT/Highlights.docx"
+echo "[extras] wrote $OUT/Highlights.docx"
+
+# (The Lancet typeset preview, index-preview.pdf, is not built for Transplantation
+# and Cellular Therapy, which has no equivalent.)

@@ -19,25 +19,28 @@ suppressPackageStartupMessages({
   library(patchwork)
 })
 
-lancet_red  <- "#b20d35"
-lancet_dark <- "#2d2d2d"
-lancet_grey <- "#8c8c8c"
+# Transplantation and Cellular Therapy: grayscale (color is charged in print),
+# Arial lettering.
+fig_ink  <- "#000000"
+fig_grey <- "#666666"
+fig_font <- "Arial"
 
-theme_forest <- function(base_size = 10) {
-  theme_minimal(base_size = base_size) +
+theme_forest <- function(base_size = 9, base_family = fig_font) {
+  theme_minimal(base_size = base_size, base_family = base_family) +
     theme(panel.grid        = element_blank(),
-          axis.line.x       = element_line(colour = lancet_dark, linewidth = .4),
-          axis.ticks.x      = element_line(colour = lancet_dark, linewidth = .3),
+          axis.line.x       = element_line(colour = fig_ink, linewidth = .4),
+          axis.ticks.x      = element_line(colour = fig_ink, linewidth = .3),
           axis.ticks.length.x = unit(2.5, "pt"),
-          axis.text         = element_text(colour = lancet_dark),
-          axis.title.x      = element_text(colour = lancet_dark, size = rel(.9),
+          axis.text         = element_text(colour = fig_ink),
+          axis.title.x      = element_text(colour = fig_ink, size = rel(.9),
                                            margin = margin(t = 6)),
-          plot.title        = element_text(face = "bold", colour = lancet_dark,
+          plot.title        = element_text(face = "bold", colour = fig_ink,
                                            hjust = 0, size = rel(1.05)),
-          plot.subtitle     = element_text(colour = lancet_grey, hjust = 0,
+          plot.subtitle     = element_text(colour = fig_grey, hjust = 0,
                                            size = rel(.85)),
-          plot.caption      = element_text(colour = lancet_grey, hjust = 0,
+          plot.caption      = element_text(colour = fig_grey, hjust = 0,
                                            size = rel(.75)),
+          plot.tag          = element_text(face = "bold", size = rel(1.3)),
           plot.title.position   = "plot",
           plot.caption.position = "plot",
           plot.background  = element_rect(fill = "white", colour = NA),
@@ -72,8 +75,9 @@ HEADER <- "column_header"
 
 # One forest panel. `pooled_spec` optionally overrides the pooled row:
 # list(label = "REML pooled", or = ., lo = ., hi = .).
-forest <- function(analytic_file, slug, title, subtitle = NULL,
+forest <- function(analytic_file, slug, title = NULL, subtitle = NULL,
                    pooled_spec = NULL, study_filter = NULL,
+                   caption = TRUE, tag = NULL,
                    here = \(...) file.path(if (basename(getwd()) == "notebooks") ".." else ".", ...)) {
   f <- resolve_data(analytic_file, slug, here)
   if (!file.exists(f)) { message("missing: ", analytic_file); return(invisible(NULL)) }
@@ -101,7 +105,7 @@ forest <- function(analytic_file, slug, title, subtitle = NULL,
                         lo = p$ci_low, hi = p$ci_high)
     if (is.null(subtitle)) {
       subtitle <- sprintf("k = %d, N = %s, τ = %.2f",
-                          p$k, format(p$n_total, big.mark = " "), p$tau)
+                          p$k, format(p$n_total, big.mark = ","), p$tau)
     }
   }
 
@@ -125,48 +129,60 @@ forest <- function(analytic_file, slug, title, subtitle = NULL,
 
   main <- ggplot(pd, aes(or, slab)) +
     geom_vline(xintercept = 1, linetype = "dashed",
-               colour = lancet_grey, linewidth = .35) +
+               colour = fig_grey, linewidth = .35) +
     geom_pointrange(data = filter(pd, !pooled & slab != HEADER),
                     aes(xmin = lo, xmax = hi),
-                    shape = 15, size = .3, linewidth = .4, colour = lancet_red) +
+                    shape = 15, size = .3, linewidth = .4, colour = fig_ink) +
     geom_pointrange(data = filter(pd, pooled),
                     aes(xmin = lo, xmax = hi),
-                    shape = 18, size = .95, linewidth = .8, colour = lancet_red) +
-    scale_x_log10() +
+                    shape = 18, size = .95, linewidth = .8, colour = fig_ink) +
+    # plain numbers on the axis (no 1e-02 notation)
+    scale_x_log10(labels = \(x) format(x, scientific = FALSE, drop0trailing = TRUE, trim = TRUE)) +
     # drop = FALSE keeps the (empty) header row so this panel's rows stay
     # aligned 1:1 with the side panel, which draws the header text
     scale_y_discrete(labels = \(x) ifelse(x == HEADER, "", x), drop = FALSE) +
+    # Article figures carry no title or caption on the image (TCT puts both in
+    # the legend); appendix panels keep them.
     labs(x = "Odds ratio (log scale)", y = NULL, title = title,
-         subtitle = subtitle,
-         caption = paste0("Study rows: raw per-study OR with Wald 95% CI (0·5 correction for zero cells). ",
-                          "Weights: REML inverse-variance. Diamond: ",
-                          pooled_spec$label, ".")) +
+         subtitle = subtitle, tag = tag,
+         caption = if (isTRUE(caption))
+           paste0("Study rows: raw per-study OR with Wald 95% CI (0.5 correction for zero cells). ",
+                  "Weights: REML inverse-variance. Diamond: ", pooled_spec$label, ".")) +
     theme_forest() +
     theme(axis.text.y = element_text(size = rel(.85)))
 
   side <- ggplot(pd, aes(y = slab)) +
-    geom_text(aes(x = 1, label = ev_p), size = 2.4, colour = lancet_dark) +
-    geom_text(aes(x = 2, label = ev_c), size = 2.4, colour = lancet_dark) +
-    geom_text(aes(x = 3, label = wt), size = 2.4, colour = lancet_dark) +
+    geom_text(aes(x = 1, label = ev_p), size = 2.4, colour = fig_ink, family = fig_font) +
+    geom_text(aes(x = 2, label = ev_c), size = 2.4, colour = fig_ink, family = fig_font) +
+    geom_text(aes(x = 3, label = wt), size = 2.4, colour = fig_ink, family = fig_font) +
     scale_x_continuous(limits = c(0.4, 3.6), expand = c(0, 0)) +
     scale_y_discrete(labels = \(x) ifelse(x == HEADER, "", x), drop = FALSE) +
     labs(x = NULL, y = NULL) +
     theme_forest() +
     theme(axis.text = element_blank(),
           axis.ticks = element_blank(),
+          axis.ticks.x = element_blank(),
           axis.ticks.length = unit(0, "pt"),
           axis.line.x = element_blank(),
-          axis.text.y = element_text(size = rel(.85)),
+          # study labels are drawn once, on the forest panel
+          axis.text.y = element_blank(),
           plot.caption = element_blank())
 
   main + side + plot_layout(widths = c(2.5, 1.9))
 }
 
-export_fig <- function(plot, stem, w = 9, h = 9,
+# Writes PNG (300 dpi, for Word and the web build), PDF (vector, fonts embedded),
+# SVG (web) and TIFF (600 dpi, LZW) -- TCT asks for 600-dpi art in EPS/PDF or TIFF.
+# Default width 7.5 in is the journal's two-column (190 mm) figure.
+export_fig <- function(plot, stem, w = 7.5, h = 8,
                        here = \(...) file.path(if (basename(getwd()) == "notebooks") ".." else ".", ...)) {
-  for (dev in c("png", "pdf", "svg")) {
-    ggsave(here("figures", paste0(stem, ".", dev)), plot,
-           width = w, height = h, dpi = 300, device = dev, bg = "white")
-  }
+  # Appendix figures (FigureS*, TableS*) go to their own folder.
+  dir <- if (grepl("^(Figure|Table)S", stem)) "appendix-figures" else "figures"
+  out <- \(ext) here(dir, paste0(stem, ".", ext))
+  ggsave(out("png"), plot, width = w, height = h, dpi = 300, device = ragg::agg_png, bg = "white")
+  ggsave(out("pdf"), plot, width = w, height = h, device = cairo_pdf, bg = "white")
+  ggsave(out("svg"), plot, width = w, height = h, device = svglite::svglite, bg = "white")
+  ggsave(out("tiff"), plot, width = w, height = h, dpi = 600, device = ragg::agg_tiff,
+         compression = "lzw", bg = "white")
   invisible(stem)
 }

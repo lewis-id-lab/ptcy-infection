@@ -47,11 +47,11 @@ theme_jama <- function(base_size = 11) {
 }
 
 save_fig <- function(plot, name, width, height, dpi = 300) {
-  ggsave(file.path("figures", paste0(name, ".png")), plot,
+  ggsave(file.path("appendix-figures", paste0(name, ".png")), plot,
          width = width, height = height, dpi = dpi, bg = "white")
-  ggsave(file.path("figures", paste0(name, ".pdf")), plot,
+  ggsave(file.path("appendix-figures", paste0(name, ".pdf")), plot,
          width = width, height = height)
-  ggsave(file.path("figures", paste0(name, ".svg")), plot,
+  ggsave(file.path("appendix-figures", paste0(name, ".svg")), plot,
          width = width, height = height)
 }
 

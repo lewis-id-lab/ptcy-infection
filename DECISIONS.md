@@ -913,3 +913,101 @@ inference.
   analysis, and gives the version check. Render exit 0, no warnings, word
   counts unchanged (299, 3490). S14 changed on the first pass (appendix 109
   pages) and converged on the second.
+
+## 2026-11-24 — Resubmission to Transplantation and Cellular Therapy: decimals and appendix figure folder (not committed; format change pending)
+
+- **Request (RL):** reformat the manuscript, appendix and figures for
+  *Transplantation and Cellular Therapy* (TCT); put appendix figures in their own
+  folder; change Lancet middle-dot decimals to full stops.
+- **Done:**
+  - Decimal middle dots replaced by full stops wherever a digit stands on both
+    sides: `index.qmd` (380), `appendix.qmd` (978), `notebooks/forest-plots.qmd`,
+    `scripts/forest-lib.R`, `scripts/rebuild-prisma-checklist-refs.R`; the
+    table-2 helper in `notebooks/pooled-estimates.qmd` no longer inserts them.
+    The two multiplication dots in the S11 absolute-effect formula
+    (`OR·p₀`) became `×`. No other characters changed (word-level diff checked).
+  - Not changed, because they are records of the Lancet version: earlier
+    entries in this file, `README.md`, `cover-letter.md`, the PROSPERO draft.
+  - Appendix images (`FigureS*`, `TableS*`; 24 stems × png/pdf/svg) moved with
+    `git mv` from `figures/` to `appendix-figures/`. Updated: image paths in
+    `appendix.qmd` (21), output folders in `forest-lib.R`, the notebook copy of
+    the export helper, `regenerate-{figures-rs,appendix-s7-s8,rob-figures,
+    s12-cohort-overlap,s8-figures}.R`, the render hook, `_quarto.yml` resources.
+    Every image path in both documents resolves.
+- **Not done:** the TCT format. The ASTCT author page and the Elsevier guide for
+  authors both returned HTTP 403 to the assistant; the requirements are needed
+  before the extension, the documents or the figures are changed.
+- **Figures still show middle dots** (19 SVGs, mainly the "0·5 correction"
+  caption on forest plots, and figure 4). They are to be regenerated once, in
+  the TCT figure style. Note: `regenerate-figures-rs.R` sources `_common.R`
+  from `~/ptcy_metaanalys`, and README says S7/S8 in the appendix are
+  pre-deduplication versions, so regenerating them may change content, not
+  only decimals; compare before adopting.
+- **No render** after these changes.
+
+## 2026-11-24 — Reformatted for Transplantation and Cellular Therapy (not committed)
+
+- **Request (RL):** reformat manuscript, appendix and figures to the TCT Guide for
+  Authors (pasted by RL into the conversation; the journal pages returned HTTP 403
+  to the assistant), with American spelling.
+- **Seen before this change:** all results; no estimate, count or analysis changed.
+  Wording of new text (abstract headings, title page, Financial Disclosure
+  Statement, sex/gender paragraph and limitation, figure legends, highlights,
+  AI-declaration rewording) is the assistant's and has not been reviewed.
+- **Format:** new extension `_extensions/tct/` (`tct-docx`, `tct-pdf`, `tct-html`);
+  `_quarto.yml` and `scripts/render-extras.sh` switched to it; Lancet typeset
+  preview no longer built (extension kept). AMA 11 CSL from the CSL repository with
+  the DOI prefix changed to https://doi.org/; `shortjournal` added to 33 entries of
+  `references.bib` (23 from PubMed esummary by PMID, 10 by hand). Word reference
+  document built from pandoc's default: Times New Roman 12 pt, double spaced, US
+  Letter, 1-inch margins, continuous line numbers, page-number footer,
+  single-spaced table cells. PDF: newtxtext (Times) only; newtxmath clashed with
+  amssymb. Filter `tct-titleblock.lua` drops Quarto's automatic author/date lines in
+  documents with an explicit `.title-page` block (article, not appendix).
+- **Article structure:** title page (phone and fax are placeholders `[PHONE]`,
+  `[FAX]`); Financial Disclosure Statement (funding + interests); structured
+  abstract (Background, Objective(s), Study Design, Results, Conclusion(s); 367
+  words + keywords) built from the former Summary, with an Objective(s) sentence
+  and two Study Design sentences (model, RoBMA, GRADE) added; 12 keywords (RL's
+  list of 16 Nov, American spelling); "Methods" → "Materials and Methods";
+  "Role of the funding source" moved into the Financial Disclosure Statement;
+  Conclusions given its own heading; Contributors and interests moved into
+  Acknowledgments; "Data sharing" → "Data Availability"; AI section retitled to
+  Elsevier's required title with their template sentence (content unchanged);
+  figures split into Figure Legends and caption-less Figures pages; final page
+  lists the supplementary items. Appendix call-outs are now "Supplementary
+  Appendix Sn" (page numbers dropped). **Research in context panel removed**
+  (Lancet-only); its posterior probabilities P(OR > 1) 0.88 (CMV vs CNI) and
+  P(OR < 1) 0.74 (vs ATG) appear nowhere else in the article now.
+- **Sex and gender (TCT SGBA policy):** Methods subsection and a clause in the
+  fourth limitation. "Sex was not among the registered moderators" rests on the
+  PROSPERO draft's list of registered meta-regression covariates (protocol v2),
+  not on a fresh reading of the record; moderate-high confidence.
+- **Spelling and numbers:** reviewed British→American word list applied to
+  `index.qmd`, `appendix.qmd` and notebook prose (included-study titles in
+  `appendix-s4-references.md` and the *British Journal of Haematology* name left
+  as published); "stem-cell transplantation" → "stem cell transplantation". AMA 11
+  commas in numbers of 4+ digits, thin-space separators removed; years, the postal
+  code, BMT CTN 1703/1801, seeds, cohort identifiers 1154/1158 and line/page
+  numbers excluded (dry-run lists checked).
+- **Figures:** `scripts/forest-lib.R` (used by the article notebook and the S8
+  script) now draws grayscale (TCT charges for print color), Arial, no title or
+  caption on article figures (they are in the legends), panel tags A–C, comma
+  separators, plain-number log axes, study labels once (the side table had
+  repeated them), and exports PNG 300 dpi, cairo PDF, SVG and LZW TIFF 600 dpi at
+  7.5 in (two-column). Regenerated: figures 1–4 and S8a–S8j. S8 text compared
+  with the committed SVGs: k, N and τ identical in all panels; only axis-label
+  formatting differs, so the README note that S8 is pre-deduplication was stale.
+  PRISMA notebook: grayscale bar and rails, Arial, package commas kept, TIFF via
+  rsvg + sips. Figure 4 legend: no density strip (the article figure is the
+  notebook's forest-only version, not `regenerate-figures-rs.R`'s).
+- **Not regenerated:** S5a–c, S7b–d, S9a–b and S12 (no middle dots; colored
+  online-only supplementary figures; S7/S9a need `~/ptcy_metaanalys`). Unused
+  files with middle dots remain: `figures/Figure2_OS_forest`, `Figure3_CMV_forest`,
+  `Figure3_aGVHD_forest` (pre-deduplication) and `appendix-figures/TableS9b_*`.
+- **Render (Quarto 1.9.35):** exit 0, no warnings; abstract 395 by the filter
+  (includes the 28-word keyword line), main text 3585 words; article PDF 39
+  pages, appendix 109. S14 rebuilt (`rebuild-prisma-checklist-refs.R` anchors
+  updated: Abstract, Introduction only, Materials and Methods, Data
+  Availability, Conclusions, Financial Disclosure Statement, Acknowledgments,
+  figure-page labels allowing line numbers); converged.

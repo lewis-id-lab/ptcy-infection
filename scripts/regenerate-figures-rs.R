@@ -4,7 +4,7 @@
 #
 # Outputs:
 #   data/models/Table2_setB.csv        pooled estimates for notebooks/forest-plots.qmd
-#   figures/FigureS7b/c/d, S9a         appendix figures from the new fits
+#   appendix-figures/FigureS7b/c/d, S9a  appendix figures from the new fits
 #   figures/Figure4_infections_forest  main-text infection panels (BSI/IFI/BK)
 #
 # S8 frequentist forests are data-driven and unaffected by the model switch;
@@ -36,6 +36,8 @@ studies_df <- read_csv(file.path(analysis_dir, "02_extraction/studies.csv"),
 rs <- function(key) readRDS(file.path(rs_dir, paste0("rs_", key, ".rds")))
 
 save3 <- function(p, stem, w, h) {
+  # Appendix figures (FigureS*) go to their own folder.
+  if (grepl("^(Figure|Table)S", stem)) fig_dir <- file.path(proj_dir, "appendix-figures")
   ggsave(file.path(fig_dir, paste0(stem, ".png")), p, width = w, height = h, dpi = 320)
   ggsave(file.path(fig_dir, paste0(stem, ".pdf")), p, width = w, height = h,
          device = cairo_pdf)

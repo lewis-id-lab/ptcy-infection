@@ -6,6 +6,23 @@ A [Quarto manuscript](https://quarto.org/docs/manuscripts/) project for:
 > graft-versus-host disease prophylaxis after allogeneic haematopoietic stem-cell
 > transplantation: a systematic review and Bayesian meta-analysis of infection risk.*
 
+> **Target journal changed on 2026-11-24: *Transplantation and Cellular Therapy*
+> (ASTCT/Elsevier).** The project now renders with the `tct` format extension
+> (`_extensions/tct/`): AMA references (`ama-tct.csl`, DOIs as https links, NLM
+> journal abbreviations from `shortjournal` in `references.bib`), American spelling,
+> full-stop decimals and comma thousands separators, Times New Roman 12 pt, double
+> spacing, US Letter with 1-inch margins, continuous line numbers. The Word file
+> follows the journal's order: title page, Financial Disclosure Statement, structured
+> abstract (250-500 words) and keywords, Introduction, Materials and Methods,
+> Results, Discussion, Conclusions, Acknowledgments, Data Availability, generative-AI
+> declaration, References, Tables, Figure Legends, Figures, Supplementary Material.
+> `quarto render` also writes `_manuscript/Highlights.docx` (from `highlights.qmd`).
+> Main-text figures are in `figures/`, appendix figures in `appendix-figures/`, each as
+> PNG, vector PDF, SVG and (for the regenerated ones) 600-dpi TIFF, in grayscale and
+> Arial. The sections below on the Lancet format and the typeset preview describe the
+> earlier Lancet Haematology version and are kept for the record; see `DECISIONS.md`
+> (2026-11-24) for what changed.
+
 One source, three outputs: a submission `.docx`, a reviewer `.pdf`, and a manuscript
 website that publishes the computational notebooks alongside the article.
 
